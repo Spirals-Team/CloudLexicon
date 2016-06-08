@@ -6,4 +6,5 @@ The generator of the URI dataset for OCCI 1.2 is available [here](https://github
 
 * [OCCI Infrastructure](infrastructure.csv)
 * [OCCI Platform](platform.csv)
+* [OCCI SLA](sla.csv)
 * [OCCI Monitoring](monitoring.csv)
