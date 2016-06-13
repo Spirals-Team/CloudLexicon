@@ -30,4 +30,3 @@ OCCI,Service Level Agreements,{provider_specific_path}/agreement_term/,GET,https
 OCCI,Service Level Agreements,{provider_specific_path}/agreement_term/,POST,https://redmine.ogf.org/attachments/224/slas.pdf
 OCCI,Service Level Agreements,{provider_specific_path}/agreement_term/,PUT,https://redmine.ogf.org/attachments/224/slas.pdf
 OCCI,Service Level Agreements,{provider_specific_path}/agreement_term/,DELETE,https://redmine.ogf.org/attachments/224/slas.pdf
-
