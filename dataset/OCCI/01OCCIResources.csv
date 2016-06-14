@@ -1,0 +1,288 @@
+OCCI,Compute Resource Templates Profile,RESOURCE,small,GET,{provider_specific_path}/small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,small,POST,{provider_specific_path}/small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,small,PUT,{provider_specific_path}/small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,small,DELETE,{provider_specific_path}/small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,medium,GET,{provider_specific_path}/medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,medium,POST,{provider_specific_path}/medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,medium,PUT,{provider_specific_path}/medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,medium,DELETE,{provider_specific_path}/medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,large,GET,{provider_specific_path}/large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,large,POST,{provider_specific_path}/large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,large,PUT,{provider_specific_path}/large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,large,DELETE,{provider_specific_path}/large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_small,GET,{provider_specific_path}/mem_small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_small,POST,{provider_specific_path}/mem_small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_small,PUT,{provider_specific_path}/mem_small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_small,DELETE,{provider_specific_path}/mem_small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_medium,GET,{provider_specific_path}/mem_medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_medium,POST,{provider_specific_path}/mem_medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_medium,PUT,{provider_specific_path}/mem_medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_medium,DELETE,{provider_specific_path}/mem_medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_large,GET,{provider_specific_path}/mem_large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_large,POST,{provider_specific_path}/mem_large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_large,PUT,{provider_specific_path}/mem_large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_large,DELETE,{provider_specific_path}/mem_large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Infrastructure,RESOURCE,network,GET,{provider_specific_path}/network/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,network,POST,{provider_specific_path}/network/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,network,DELETE,{provider_specific_path}/network/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,network,POST,{provider_specific_path}/network/?action=up,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,up,POST,{provider_specific_path}/network/?action=up,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,network,POST,{provider_specific_path}/network/?action=down,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,down,POST,{provider_specific_path}/network/?action=down,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,network,GET,{provider_specific_path}/network/{network_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{network_id},GET,{provider_specific_path}/network/{network_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,network,POST,{provider_specific_path}/network/{network_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{network_id},POST,{provider_specific_path}/network/{network_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,network,PUT,{provider_specific_path}/network/{network_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{network_id},PUT,{provider_specific_path}/network/{network_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,network,DELETE,{provider_specific_path}/network/{network_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{network_id},DELETE,{provider_specific_path}/network/{network_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,network,POST,{provider_specific_path}/network/{network_id}?action=up,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,up,POST,{provider_specific_path}/network/{network_id}?action=up,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,network,POST,{provider_specific_path}/network/{network_id}?action=down,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,down,POST,{provider_specific_path}/network/{network_id}?action=down,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,GET,{provider_specific_path}/compute/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,POST,{provider_specific_path}/compute/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,DELETE,{provider_specific_path}/compute/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,POST,{provider_specific_path}/compute/?action=start,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,start,POST,{provider_specific_path}/compute/?action=start,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,POST,{provider_specific_path}/compute/?action=stop,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,stop,POST,{provider_specific_path}/compute/?action=stop,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,POST,{provider_specific_path}/compute/?action=restart,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,restart,POST,{provider_specific_path}/compute/?action=restart,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,POST,{provider_specific_path}/compute/?action=suspend,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,suspend,POST,{provider_specific_path}/compute/?action=suspend,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,POST,{provider_specific_path}/compute/?action=save,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,save,POST,{provider_specific_path}/compute/?action=save,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,GET,{provider_specific_path}/compute/{compute_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{compute_id},GET,{provider_specific_path}/compute/{compute_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,POST,{provider_specific_path}/compute/{compute_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{compute_id},POST,{provider_specific_path}/compute/{compute_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,PUT,{provider_specific_path}/compute/{compute_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{compute_id},PUT,{provider_specific_path}/compute/{compute_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,DELETE,{provider_specific_path}/compute/{compute_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{compute_id},DELETE,{provider_specific_path}/compute/{compute_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,POST,{provider_specific_path}/compute/{compute_id}?action=start,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,start,POST,{provider_specific_path}/compute/{compute_id}?action=start,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,POST,{provider_specific_path}/compute/{compute_id}?action=stop,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,stop,POST,{provider_specific_path}/compute/{compute_id}?action=stop,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,POST,{provider_specific_path}/compute/{compute_id}?action=restart,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,restart,POST,{provider_specific_path}/compute/{compute_id}?action=restart,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,POST,{provider_specific_path}/compute/{compute_id}?action=suspend,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,suspend,POST,{provider_specific_path}/compute/{compute_id}?action=suspend,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,compute,POST,{provider_specific_path}/compute/{compute_id}?action=save,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,save,POST,{provider_specific_path}/compute/{compute_id}?action=save,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storage,GET,{provider_specific_path}/storage/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storage,POST,{provider_specific_path}/storage/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storage,DELETE,{provider_specific_path}/storage/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storage,POST,{provider_specific_path}/storage/?action=online,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,online,POST,{provider_specific_path}/storage/?action=online,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storage,POST,{provider_specific_path}/storage/?action=offline,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,offline,POST,{provider_specific_path}/storage/?action=offline,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storage,GET,{provider_specific_path}/storage/{storage_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{storage_id},GET,{provider_specific_path}/storage/{storage_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storage,POST,{provider_specific_path}/storage/{storage_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{storage_id},POST,{provider_specific_path}/storage/{storage_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storage,PUT,{provider_specific_path}/storage/{storage_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{storage_id},PUT,{provider_specific_path}/storage/{storage_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storage,DELETE,{provider_specific_path}/storage/{storage_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{storage_id},DELETE,{provider_specific_path}/storage/{storage_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storage,POST,{provider_specific_path}/storage/{storage_id}?action=online,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,online,POST,{provider_specific_path}/storage/{storage_id}?action=online,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storage,POST,{provider_specific_path}/storage/{storage_id}?action=offline,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,ACTION,offline,POST,{provider_specific_path}/storage/{storage_id}?action=offline,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storagelink,GET,{provider_specific_path}/storagelink/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storagelink,POST,{provider_specific_path}/storagelink/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storagelink,DELETE,{provider_specific_path}/storagelink/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storagelink,GET,{provider_specific_path}/storagelink/{storagelink_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{storagelink_id},GET,{provider_specific_path}/storagelink/{storagelink_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storagelink,POST,{provider_specific_path}/storagelink/{storagelink_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{storagelink_id},POST,{provider_specific_path}/storagelink/{storagelink_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storagelink,PUT,{provider_specific_path}/storagelink/{storagelink_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{storagelink_id},PUT,{provider_specific_path}/storagelink/{storagelink_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,storagelink,DELETE,{provider_specific_path}/storagelink/{storagelink_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{storagelink_id},DELETE,{provider_specific_path}/storagelink/{storagelink_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,networkinterface,GET,{provider_specific_path}/networkinterface/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,networkinterface,POST,{provider_specific_path}/networkinterface/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,networkinterface,DELETE,{provider_specific_path}/networkinterface/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,networkinterface,GET,{provider_specific_path}/networkinterface/{networkinterface_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{networkinterface_id},GET,{provider_specific_path}/networkinterface/{networkinterface_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,networkinterface,POST,{provider_specific_path}/networkinterface/{networkinterface_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{networkinterface_id},POST,{provider_specific_path}/networkinterface/{networkinterface_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,networkinterface,PUT,{provider_specific_path}/networkinterface/{networkinterface_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{networkinterface_id},PUT,{provider_specific_path}/networkinterface/{networkinterface_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,networkinterface,DELETE,{provider_specific_path}/networkinterface/{networkinterface_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,{networkinterface_id},DELETE,{provider_specific_path}/networkinterface/{networkinterface_id},https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,ipnetwork,GET,{provider_specific_path}/ipnetwork/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,ipnetwork,POST,{provider_specific_path}/ipnetwork/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,ipnetwork,PUT,{provider_specific_path}/ipnetwork/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,ipnetwork,DELETE,{provider_specific_path}/ipnetwork/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,ipnetworkinterface,GET,{provider_specific_path}/ipnetworkinterface/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,ipnetworkinterface,POST,{provider_specific_path}/ipnetworkinterface/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,ipnetworkinterface,PUT,{provider_specific_path}/ipnetworkinterface/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,ipnetworkinterface,DELETE,{provider_specific_path}/ipnetworkinterface/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,os_tpl,GET,{provider_specific_path}/os_tpl/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,os_tpl,POST,{provider_specific_path}/os_tpl/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,os_tpl,PUT,{provider_specific_path}/os_tpl/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,os_tpl,DELETE,{provider_specific_path}/os_tpl/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,resource_tpl,GET,{provider_specific_path}/resource_tpl/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,resource_tpl,POST,{provider_specific_path}/resource_tpl/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,resource_tpl,PUT,{provider_specific_path}/resource_tpl/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,resource_tpl,DELETE,{provider_specific_path}/resource_tpl/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,ssh_key,GET,{provider_specific_path}/ssh_key/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,ssh_key,POST,{provider_specific_path}/ssh_key/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,ssh_key,PUT,{provider_specific_path}/ssh_key/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,ssh_key,DELETE,{provider_specific_path}/ssh_key/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,user_data,GET,{provider_specific_path}/user_data/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,user_data,POST,{provider_specific_path}/user_data/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,user_data,PUT,{provider_specific_path}/user_data/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Infrastructure,RESOURCE,user_data,DELETE,{provider_specific_path}/user_data/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
+OCCI,Monitoring,RESOURCE,sensor,GET,{provider_specific_path}/sensor/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,sensor,POST,{provider_specific_path}/sensor/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,sensor,DELETE,{provider_specific_path}/sensor/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,sensor,GET,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{sensor_id},GET,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,sensor,POST,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{sensor_id},POST,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,sensor,PUT,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{sensor_id},PUT,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,sensor,DELETE,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{sensor_id},DELETE,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,GET,{provider_specific_path}/collector/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,POST,{provider_specific_path}/collector/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,DELETE,{provider_specific_path}/collector/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,GET,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{collector_id},GET,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,POST,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{collector_id},POST,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,PUT,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{collector_id},PUT,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,DELETE,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{collector_id},DELETE,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,metric,GET,{provider_specific_path}/metric/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,metric,POST,{provider_specific_path}/metric/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,metric,PUT,{provider_specific_path}/metric/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,metric,DELETE,{provider_specific_path}/metric/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,aggregator,GET,{provider_specific_path}/aggregator/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,aggregator,POST,{provider_specific_path}/aggregator/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,aggregator,PUT,{provider_specific_path}/aggregator/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,aggregator,DELETE,{provider_specific_path}/aggregator/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,publisher,GET,{provider_specific_path}/publisher/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,publisher,POST,{provider_specific_path}/publisher/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,publisher,PUT,{provider_specific_path}/publisher/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,publisher,DELETE,{provider_specific_path}/publisher/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Platform,RESOURCE,application,GET,{provider_specific_path}/application/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,application,POST,{provider_specific_path}/application/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,application,DELETE,{provider_specific_path}/application/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,application,POST,{provider_specific_path}/application/?action=start,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,ACTION,start,POST,{provider_specific_path}/application/?action=start,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,application,POST,{provider_specific_path}/application/?action=stop,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,ACTION,stop,POST,{provider_specific_path}/application/?action=stop,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,application,GET,{provider_specific_path}/application/{application_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,{application_id},GET,{provider_specific_path}/application/{application_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,application,POST,{provider_specific_path}/application/{application_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,{application_id},POST,{provider_specific_path}/application/{application_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,application,PUT,{provider_specific_path}/application/{application_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,{application_id},PUT,{provider_specific_path}/application/{application_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,application,DELETE,{provider_specific_path}/application/{application_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,{application_id},DELETE,{provider_specific_path}/application/{application_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,application,POST,{provider_specific_path}/application/{application_id}?action=start,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,ACTION,start,POST,{provider_specific_path}/application/{application_id}?action=start,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,application,POST,{provider_specific_path}/application/{application_id}?action=stop,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,ACTION,stop,POST,{provider_specific_path}/application/{application_id}?action=stop,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,component,GET,{provider_specific_path}/component/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,component,POST,{provider_specific_path}/component/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,component,DELETE,{provider_specific_path}/component/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,component,POST,{provider_specific_path}/component/?action=start,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,ACTION,start,POST,{provider_specific_path}/component/?action=start,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,component,POST,{provider_specific_path}/component/?action=stop,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,ACTION,stop,POST,{provider_specific_path}/component/?action=stop,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,component,GET,{provider_specific_path}/component/{component_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,{component_id},GET,{provider_specific_path}/component/{component_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,component,POST,{provider_specific_path}/component/{component_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,{component_id},POST,{provider_specific_path}/component/{component_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,component,PUT,{provider_specific_path}/component/{component_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,{component_id},PUT,{provider_specific_path}/component/{component_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,component,DELETE,{provider_specific_path}/component/{component_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,{component_id},DELETE,{provider_specific_path}/component/{component_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,component,POST,{provider_specific_path}/component/{component_id}?action=start,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,ACTION,start,POST,{provider_specific_path}/component/{component_id}?action=start,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,component,POST,{provider_specific_path}/component/{component_id}?action=stop,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,ACTION,stop,POST,{provider_specific_path}/component/{component_id}?action=stop,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,componentlink,GET,{provider_specific_path}/componentlink/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,componentlink,POST,{provider_specific_path}/componentlink/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,componentlink,DELETE,{provider_specific_path}/componentlink/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,componentlink,GET,{provider_specific_path}/componentlink/{componentlink_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,{componentlink_id},GET,{provider_specific_path}/componentlink/{componentlink_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,componentlink,POST,{provider_specific_path}/componentlink/{componentlink_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,{componentlink_id},POST,{provider_specific_path}/componentlink/{componentlink_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,componentlink,PUT,{provider_specific_path}/componentlink/{componentlink_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,{componentlink_id},PUT,{provider_specific_path}/componentlink/{componentlink_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,componentlink,DELETE,{provider_specific_path}/componentlink/{componentlink_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,{componentlink_id},DELETE,{provider_specific_path}/componentlink/{componentlink_id},https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,app_tpl,GET,{provider_specific_path}/app_tpl/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,app_tpl,POST,{provider_specific_path}/app_tpl/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,app_tpl,PUT,{provider_specific_path}/app_tpl/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,app_tpl,DELETE,{provider_specific_path}/app_tpl/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,res_tpl,GET,{provider_specific_path}/res_tpl/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,res_tpl,POST,{provider_specific_path}/res_tpl/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,res_tpl,PUT,{provider_specific_path}/res_tpl/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,res_tpl,DELETE,{provider_specific_path}/res_tpl/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,database,GET,{provider_specific_path}/database/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,database,POST,{provider_specific_path}/database/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,database,PUT,{provider_specific_path}/database/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,database,DELETE,{provider_specific_path}/database/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,databaselink,GET,{provider_specific_path}/databaselink/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,databaselink,POST,{provider_specific_path}/databaselink/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,databaselink,PUT,{provider_specific_path}/databaselink/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Platform,RESOURCE,databaselink,DELETE,{provider_specific_path}/databaselink/,https://redmine.ogf.org/attachments/222/platform.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,GET,{provider_specific_path}/agreement/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,POST,{provider_specific_path}/agreement/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,DELETE,{provider_specific_path}/agreement/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,POST,{provider_specific_path}/agreement/?action=accept,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,ACTION,accept,POST,{provider_specific_path}/agreement/?action=accept,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,POST,{provider_specific_path}/agreement/?action=reject,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,ACTION,reject,POST,{provider_specific_path}/agreement/?action=reject,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,POST,{provider_specific_path}/agreement/?action=suspend,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,ACTION,suspend,POST,{provider_specific_path}/agreement/?action=suspend,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,POST,{provider_specific_path}/agreement/?action=resume,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,ACTION,resume,POST,{provider_specific_path}/agreement/?action=resume,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,POST,{provider_specific_path}/agreement/?action=terminate,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,ACTION,terminate,POST,{provider_specific_path}/agreement/?action=terminate,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,GET,{provider_specific_path}/agreement/{agreement_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,{agreement_id},GET,{provider_specific_path}/agreement/{agreement_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,POST,{provider_specific_path}/agreement/{agreement_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,{agreement_id},POST,{provider_specific_path}/agreement/{agreement_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,PUT,{provider_specific_path}/agreement/{agreement_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,{agreement_id},PUT,{provider_specific_path}/agreement/{agreement_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,DELETE,{provider_specific_path}/agreement/{agreement_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,{agreement_id},DELETE,{provider_specific_path}/agreement/{agreement_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,POST,{provider_specific_path}/agreement/{agreement_id}?action=accept,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,ACTION,accept,POST,{provider_specific_path}/agreement/{agreement_id}?action=accept,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,POST,{provider_specific_path}/agreement/{agreement_id}?action=reject,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,ACTION,reject,POST,{provider_specific_path}/agreement/{agreement_id}?action=reject,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,POST,{provider_specific_path}/agreement/{agreement_id}?action=suspend,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,ACTION,suspend,POST,{provider_specific_path}/agreement/{agreement_id}?action=suspend,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,POST,{provider_specific_path}/agreement/{agreement_id}?action=resume,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,ACTION,resume,POST,{provider_specific_path}/agreement/{agreement_id}?action=resume,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement,POST,{provider_specific_path}/agreement/{agreement_id}?action=terminate,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,ACTION,terminate,POST,{provider_specific_path}/agreement/{agreement_id}?action=terminate,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_link,GET,{provider_specific_path}/agreement_link/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_link,POST,{provider_specific_path}/agreement_link/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_link,DELETE,{provider_specific_path}/agreement_link/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_link,GET,{provider_specific_path}/agreement_link/{agreement_link_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,{agreement_link_id},GET,{provider_specific_path}/agreement_link/{agreement_link_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_link,POST,{provider_specific_path}/agreement_link/{agreement_link_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,{agreement_link_id},POST,{provider_specific_path}/agreement_link/{agreement_link_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_link,PUT,{provider_specific_path}/agreement_link/{agreement_link_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,{agreement_link_id},PUT,{provider_specific_path}/agreement_link/{agreement_link_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_link,DELETE,{provider_specific_path}/agreement_link/{agreement_link_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,{agreement_link_id},DELETE,{provider_specific_path}/agreement_link/{agreement_link_id},https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_tpl,GET,{provider_specific_path}/agreement_tpl/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_tpl,POST,{provider_specific_path}/agreement_tpl/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_tpl,PUT,{provider_specific_path}/agreement_tpl/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_tpl,DELETE,{provider_specific_path}/agreement_tpl/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_term,GET,{provider_specific_path}/agreement_term/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_term,POST,{provider_specific_path}/agreement_term/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_term,PUT,{provider_specific_path}/agreement_term/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Service Level Agreements,RESOURCE,agreement_term,DELETE,{provider_specific_path}/agreement_term/,https://redmine.ogf.org/attachments/224/slas.pdf
