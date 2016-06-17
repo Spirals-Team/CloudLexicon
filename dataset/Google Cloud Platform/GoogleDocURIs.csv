@@ -1,4 +1,5 @@
 compute,https://cloud.google.com/compute/docs/reference/latest/
+dns,https://cloud.google.com/dns/api/v1/
 container-engine,https://cloud.google.com/container-engine/reference/rest
 storage,https://cloud.google.com/storage/docs/json_api/v1/
 transfer,https://cloud.google.com/storage/transfer/reference/rest/
