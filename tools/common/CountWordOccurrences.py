@@ -3,11 +3,11 @@
 import csv
 import sys
 
-class WordCounter(dict):
+class Occurrence(dict):
     def __missing__(self, key):
         return 0
 
-wordCounter = WordCounter()
+wordOccurrences = Occurrence()
 
 # Line command CSV file arguments
 for file in sys.argv[1:]:
@@ -15,10 +15,10 @@ for file in sys.argv[1:]:
     freader = csv.reader(f, delimiter = ',', quoting=csv.QUOTE_NONE)
     for row in freader:
       word = row[0]
-      wordCounter[word] += 1
+      wordOccurrences[word] += 1
 
 
-for item in wordCounter.items():
+for item in wordOccurrences.items():
   print item[0] + ',' + str(item[1])
 
  

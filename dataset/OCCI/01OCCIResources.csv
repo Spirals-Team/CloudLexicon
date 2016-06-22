@@ -1,27 +1,3 @@
-OCCI,Compute Resource Templates Profile,RESOURCE,small,GET,{provider_specific_path}/small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,small,POST,{provider_specific_path}/small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,small,PUT,{provider_specific_path}/small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,small,DELETE,{provider_specific_path}/small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,medium,GET,{provider_specific_path}/medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,medium,POST,{provider_specific_path}/medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,medium,PUT,{provider_specific_path}/medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,medium,DELETE,{provider_specific_path}/medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,large,GET,{provider_specific_path}/large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,large,POST,{provider_specific_path}/large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,large,PUT,{provider_specific_path}/large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,large,DELETE,{provider_specific_path}/large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,mem_small,GET,{provider_specific_path}/mem_small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,mem_small,POST,{provider_specific_path}/mem_small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,mem_small,PUT,{provider_specific_path}/mem_small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,mem_small,DELETE,{provider_specific_path}/mem_small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,mem_medium,GET,{provider_specific_path}/mem_medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,mem_medium,POST,{provider_specific_path}/mem_medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,mem_medium,PUT,{provider_specific_path}/mem_medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,mem_medium,DELETE,{provider_specific_path}/mem_medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,mem_large,GET,{provider_specific_path}/mem_large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,mem_large,POST,{provider_specific_path}/mem_large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,mem_large,PUT,{provider_specific_path}/mem_large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
-OCCI,Compute Resource Templates Profile,RESOURCE,mem_large,DELETE,{provider_specific_path}/mem_large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
 OCCI,Infrastructure,RESOURCE,network,GET,{provider_specific_path}/network/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
 OCCI,Infrastructure,RESOURCE,network,POST,{provider_specific_path}/network/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
 OCCI,Infrastructure,RESOURCE,network,DELETE,{provider_specific_path}/network/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
@@ -137,40 +113,6 @@ OCCI,Infrastructure,RESOURCE,user_data,GET,{provider_specific_path}/user_data/,h
 OCCI,Infrastructure,RESOURCE,user_data,POST,{provider_specific_path}/user_data/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
 OCCI,Infrastructure,RESOURCE,user_data,PUT,{provider_specific_path}/user_data/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
 OCCI,Infrastructure,RESOURCE,user_data,DELETE,{provider_specific_path}/user_data/,https://redmine.ogf.org/attachments/220/infrastructure.pdf
-OCCI,Monitoring,RESOURCE,sensor,GET,{provider_specific_path}/sensor/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,sensor,POST,{provider_specific_path}/sensor/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,sensor,DELETE,{provider_specific_path}/sensor/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,sensor,GET,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,{sensor_id},GET,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,sensor,POST,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,{sensor_id},POST,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,sensor,PUT,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,{sensor_id},PUT,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,sensor,DELETE,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,{sensor_id},DELETE,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,collector,GET,{provider_specific_path}/collector/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,collector,POST,{provider_specific_path}/collector/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,collector,DELETE,{provider_specific_path}/collector/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,collector,GET,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,{collector_id},GET,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,collector,POST,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,{collector_id},POST,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,collector,PUT,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,{collector_id},PUT,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,collector,DELETE,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,{collector_id},DELETE,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,metric,GET,{provider_specific_path}/metric/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,metric,POST,{provider_specific_path}/metric/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,metric,PUT,{provider_specific_path}/metric/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,metric,DELETE,{provider_specific_path}/metric/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,aggregator,GET,{provider_specific_path}/aggregator/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,aggregator,POST,{provider_specific_path}/aggregator/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,aggregator,PUT,{provider_specific_path}/aggregator/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,aggregator,DELETE,{provider_specific_path}/aggregator/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,publisher,GET,{provider_specific_path}/publisher/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,publisher,POST,{provider_specific_path}/publisher/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,publisher,PUT,{provider_specific_path}/publisher/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
-OCCI,Monitoring,RESOURCE,publisher,DELETE,{provider_specific_path}/publisher/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
 OCCI,Platform,RESOURCE,application,GET,{provider_specific_path}/application/,https://redmine.ogf.org/attachments/222/platform.pdf
 OCCI,Platform,RESOURCE,application,POST,{provider_specific_path}/application/,https://redmine.ogf.org/attachments/222/platform.pdf
 OCCI,Platform,RESOURCE,application,DELETE,{provider_specific_path}/application/,https://redmine.ogf.org/attachments/222/platform.pdf
@@ -286,3 +228,61 @@ OCCI,Service Level Agreements,RESOURCE,agreement_term,GET,{provider_specific_pat
 OCCI,Service Level Agreements,RESOURCE,agreement_term,POST,{provider_specific_path}/agreement_term/,https://redmine.ogf.org/attachments/224/slas.pdf
 OCCI,Service Level Agreements,RESOURCE,agreement_term,PUT,{provider_specific_path}/agreement_term/,https://redmine.ogf.org/attachments/224/slas.pdf
 OCCI,Service Level Agreements,RESOURCE,agreement_term,DELETE,{provider_specific_path}/agreement_term/,https://redmine.ogf.org/attachments/224/slas.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,small,GET,{provider_specific_path}/small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,small,POST,{provider_specific_path}/small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,small,PUT,{provider_specific_path}/small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,small,DELETE,{provider_specific_path}/small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,medium,GET,{provider_specific_path}/medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,medium,POST,{provider_specific_path}/medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,medium,PUT,{provider_specific_path}/medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,medium,DELETE,{provider_specific_path}/medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,large,GET,{provider_specific_path}/large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,large,POST,{provider_specific_path}/large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,large,PUT,{provider_specific_path}/large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,large,DELETE,{provider_specific_path}/large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_small,GET,{provider_specific_path}/mem_small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_small,POST,{provider_specific_path}/mem_small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_small,PUT,{provider_specific_path}/mem_small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_small,DELETE,{provider_specific_path}/mem_small/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_medium,GET,{provider_specific_path}/mem_medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_medium,POST,{provider_specific_path}/mem_medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_medium,PUT,{provider_specific_path}/mem_medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_medium,DELETE,{provider_specific_path}/mem_medium/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_large,GET,{provider_specific_path}/mem_large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_large,POST,{provider_specific_path}/mem_large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_large,PUT,{provider_specific_path}/mem_large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Compute Resource Templates Profile,RESOURCE,mem_large,DELETE,{provider_specific_path}/mem_large/,https://redmine.ogf.org/attachments/218/resource_profile_crtp-1.1_v2.pdf
+OCCI,Monitoring,RESOURCE,sensor,GET,{provider_specific_path}/sensor/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,sensor,POST,{provider_specific_path}/sensor/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,sensor,DELETE,{provider_specific_path}/sensor/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,sensor,GET,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{sensor_id},GET,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,sensor,POST,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{sensor_id},POST,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,sensor,PUT,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{sensor_id},PUT,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,sensor,DELETE,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{sensor_id},DELETE,{provider_specific_path}/sensor/{sensor_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,GET,{provider_specific_path}/collector/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,POST,{provider_specific_path}/collector/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,DELETE,{provider_specific_path}/collector/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,GET,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{collector_id},GET,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,POST,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{collector_id},POST,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,PUT,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{collector_id},PUT,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,collector,DELETE,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,{collector_id},DELETE,{provider_specific_path}/collector/{collector_id},https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,metric,GET,{provider_specific_path}/metric/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,metric,POST,{provider_specific_path}/metric/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,metric,PUT,{provider_specific_path}/metric/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,metric,DELETE,{provider_specific_path}/metric/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,aggregator,GET,{provider_specific_path}/aggregator/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,aggregator,POST,{provider_specific_path}/aggregator/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,aggregator,PUT,{provider_specific_path}/aggregator/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,aggregator,DELETE,{provider_specific_path}/aggregator/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,publisher,GET,{provider_specific_path}/publisher/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,publisher,POST,{provider_specific_path}/publisher/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,publisher,PUT,{provider_specific_path}/publisher/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex
+OCCI,Monitoring,RESOURCE,publisher,DELETE,{provider_specific_path}/publisher/,https://raw.githubusercontent.com/occiware/occi-wg/monitoring/monitoring.tex

@@ -1,11 +1,4 @@
-OCCI,492
-RESOURCE,252
-Infrastructure,192
-Platform,110
-Service Level Agreements,82
-Monitoring,60
-Compute Resource Templates Profile,48
-ACTION,36
+action,36
 compute,17
 agreement,17
 storage,11
@@ -24,8 +17,8 @@ user_data,4
 suspend,4
 ssh_key,4
 small,4
-res_tpl,4
 resource_tpl,4
+res_tpl,4
 publisher,4
 os_tpl,4
 metric,4

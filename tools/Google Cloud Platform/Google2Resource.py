@@ -26,6 +26,8 @@ with open(file, 'rU') as f:
 				code = code.replace('<var class="apiparam">','{')
 				code = code.replace('</var>','}')
 
+				code = code.replace('<br/>','/')
+
 				if code.find('/') == -1:
 					#It is not a URI
 					continue
