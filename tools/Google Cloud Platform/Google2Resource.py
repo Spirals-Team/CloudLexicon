@@ -45,7 +45,7 @@ with open(file, 'rU') as f:
 						continue
 					if ':' not in token:
 						#Resource
-						print provider + ',' + service + ',' + 'RESOURCE' + ',' + token + ',' + httpMethod + ',' + uri + ',' + reference
+						print(provider + ',' + service + ',' + 'RESOURCE' + ',' + token + ',' + httpMethod + ',' + uri + ',' + reference)
 					else:
 						#Action
-						print provider + ',' + service + ',' + 'ACTION' + ',' + token.split(':',1)[1] + ',' + httpMethod + ',' +  uri + ',' + reference
+						print(provider + ',' + service + ',' + 'ACTION' + ',' + token.split(':',1)[1] + ',' + httpMethod + ',' +  uri + ',' + reference)

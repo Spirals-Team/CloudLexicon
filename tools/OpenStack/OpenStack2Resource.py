@@ -29,11 +29,11 @@ with open(file, 'rU') as f:
 					#Resource
 					for httpMethod in openstack['paths'][uri]:
 						if httpMethod != 'parameters':
-							print provider + ',' + service + ',' + 'RESOURCE' + ',' + token + ',' + httpMethod.upper() +  ',' + uri + ',' + reference
+							print provider + ',' + service + ',' + 'RESOURCE' + ',' + token + ',' + httpMethod.upper() +  ',' + uri + ',' + reference + ',' + openstack['paths'][uri][httpMethod]['description']
 				else:
 					#Action
 					for httpMethod in openstack['paths'][uri]:
 						if httpMethod != 'parameters':
 # Warning operationId is not something used in OpenStack URIs
 #							print provider + ',' + service + ',' + 'ACTION' + ',' + openstack['paths'][uri][httpMethod]['operationId'] + ',' + httpMethod.upper() + ',' +  uri + ',' + reference
-							print provider + ',' + service + ',' + 'ACTION' + ',' + 'action' + ',' + httpMethod.upper() + ',' +  uri + ',' + reference
+							print provider + ',' + service + ',' + 'ACTION' + ',' + 'action' + ',' + httpMethod.upper() + ',' +  uri + ',' + reference + ',' + openstack['paths'][uri][httpMethod]['description']

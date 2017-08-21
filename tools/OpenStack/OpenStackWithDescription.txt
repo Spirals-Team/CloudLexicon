@@ -1,0 +1,1312 @@
+OpenStack,dbaas,RESOURCE,instances,DELETE,/v1.0/{accountId}/instances/{instanceId}/databases/{databaseName},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Deletes a specified database.
+
+OpenStack,dbaas,RESOURCE,databases,DELETE,/v1.0/{accountId}/instances/{instanceId}/databases/{databaseName},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Deletes a specified database.
+
+OpenStack,dbaas,RESOURCE,instances,DELETE,/v1.0/{accountId}/instances/{instanceId}/users/{name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Deletes a specified user for a specified database instance.
+
+OpenStack,dbaas,RESOURCE,users,DELETE,/v1.0/{accountId}/instances/{instanceId}/users/{name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Deletes a specified user for a specified database instance.
+
+OpenStack,dbaas,RESOURCE,instances,DELETE,/v1.0/{accountId}/instances/{instanceId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Deletes a specified database instance, including any associated data.
+
+OpenStack,dbaas,RESOURCE,instances,GET,/v1.0/{accountId}/instances/{instanceId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Shows database instance details.
+
+OpenStack,dbaas,RESOURCE,flavors,GET,/v1.0/{accountId}/flavors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Lists information for all available flavors.
+
+OpenStack,dbaas,RESOURCE,flavors,GET,/v1.0/{accountId}/flavors/{flavorId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Shows flavor details.
+
+OpenStack,dbaas,RESOURCE,instances,POST,/v1.0/{accountId}/instances/{instanceId}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Restarts the database service on an instance.
+
+OpenStack,dbaas,ACTION,action,POST,/v1.0/{accountId}/instances/{instanceId}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Restarts the database service on an instance.
+
+OpenStack,dbaas,RESOURCE,instances,POST,/v1.0/{accountId}/instances,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Creates a database instance.
+
+OpenStack,dbaas,RESOURCE,instances,GET,/v1.0/{accountId}/instances,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Lists information, including status, for all database instances.
+
+OpenStack,dbaas,RESOURCE,instances,POST,/v1.0/{accountId}/instances/{instanceId}/users,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Creates a user for a specified database instance.
+
+OpenStack,dbaas,RESOURCE,instances,GET,/v1.0/{accountId}/instances/{instanceId}/users,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Lists the users in a specified database instance.
+
+OpenStack,dbaas,RESOURCE,users,POST,/v1.0/{accountId}/instances/{instanceId}/users,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Creates a user for a specified database instance.
+
+OpenStack,dbaas,RESOURCE,users,GET,/v1.0/{accountId}/instances/{instanceId}/users,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Lists the users in a specified database instance.
+
+OpenStack,dbaas,RESOURCE,instances,POST,/v1.0/{accountId}/instances/{instanceId}/root,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Enables the root user for a specified database instance and returns the root password.
+
+OpenStack,dbaas,RESOURCE,instances,GET,/v1.0/{accountId}/instances/{instanceId}/root,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Shows root-enabled status for a database instance.
+
+OpenStack,dbaas,RESOURCE,root,POST,/v1.0/{accountId}/instances/{instanceId}/root,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Enables the root user for a specified database instance and returns the root password.
+
+OpenStack,dbaas,RESOURCE,root,GET,/v1.0/{accountId}/instances/{instanceId}/root,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Shows root-enabled status for a database instance.
+
+OpenStack,dbaas,RESOURCE,instances,POST,/v1.0/{accountId}/instances/{instanceId}/databases,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Creates a database within a specified instance.
+
+OpenStack,dbaas,RESOURCE,instances,GET,/v1.0/{accountId}/instances/{instanceId}/databases,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Lists databases for a specified instance.
+
+OpenStack,dbaas,RESOURCE,databases,POST,/v1.0/{accountId}/instances/{instanceId}/databases,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Creates a database within a specified instance.
+
+OpenStack,dbaas,RESOURCE,databases,GET,/v1.0/{accountId}/instances/{instanceId}/databases,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.json,Lists databases for a specified instance.
+
+OpenStack,flavor-access-v2.1,RESOURCE,flavors,GET,/v2.1/flavors/1,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/flavor-access-v2.1.json,Extends flavor show to add access attribute to the flavor show response.
+
+OpenStack,flavor-access-v2.1,RESOURCE,flavors,POST,/v2.1/flavors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/flavor-access-v2.1.json,Adds access attribute to the flavor create response.
+
+OpenStack,flavor-access-v2.1,RESOURCE,flavors,POST,/v2.1/flavors/10/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/flavor-access-v2.1.json,Removes flavor access for tenant.
+
+OpenStack,flavor-access-v2.1,ACTION,action,POST,/v2.1/flavors/10/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/flavor-access-v2.1.json,Removes flavor access for tenant.
+
+OpenStack,flavor-access-v2.1,RESOURCE,flavors,GET,/v2.1/flavors/10/flavor-access,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/flavor-access-v2.1.json,Returns access list by flavor id.
+
+OpenStack,flavor-access-v2.1,RESOURCE,flavor-access,GET,/v2.1/flavors/10/flavor-access,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/flavor-access-v2.1.json,Returns access list by flavor id.
+
+OpenStack,flavor-access-v2.1,RESOURCE,flavors,GET,/v2.1/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/flavor-access-v2.1.json,Extends flavor detail to add access attribute to the response of flavor detail.
+
+OpenStack,flavor-access-v2.1,RESOURCE,detail,GET,/v2.1/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/flavor-access-v2.1.json,Extends flavor detail to add access attribute to the response of flavor detail.
+
+OpenStack,identity-admin,RESOURCE,users,GET,/v2.0/users/{user_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Gets detailed information about a specified user by user ID.
+
+OpenStack,identity-admin,RESOURCE,users,GET,/v2.0/users/{name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Gets detailed information about a specified user by user name.
+
+OpenStack,identity-admin,RESOURCE,tenants,GET,/v2.0/tenants/{tenantId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Gets detailed information about a specified tenant by ID.
+
+OpenStack,identity-admin,RESOURCE,users,POST,/v2.0/users,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Adds a user.
+
+OpenStack,identity-admin,RESOURCE,extensions,GET,/v2.0/extensions/{alias},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Gets detailed information for a specified extension.
+
+OpenStack,identity-admin,RESOURCE,tokens,GET,/v2.0/tokens/{tokenId}/endpoints,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Lists the endpoints associated with a specified token.
+
+OpenStack,identity-admin,RESOURCE,endpoints,GET,/v2.0/tokens/{tokenId}/endpoints,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Lists the endpoints associated with a specified token.
+
+OpenStack,identity-admin,RESOURCE,tenants,GET,/v2.0/tenants/{tenantId}/users/{userId}/roles,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Lists roles for a specified user on a specified tenant. Excludes global roles.
+
+OpenStack,identity-admin,RESOURCE,users,GET,/v2.0/tenants/{tenantId}/users/{userId}/roles,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Lists roles for a specified user on a specified tenant. Excludes global roles.
+
+OpenStack,identity-admin,RESOURCE,roles,GET,/v2.0/tenants/{tenantId}/users/{userId}/roles,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Lists roles for a specified user on a specified tenant. Excludes global roles.
+
+OpenStack,identity-admin,RESOURCE,users,GET,/v2.0/users/{user_id}/roles,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Lists global roles for a specified user. Excludes tenant roles.
+
+OpenStack,identity-admin,RESOURCE,roles,GET,/v2.0/users/{user_id}/roles,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Lists global roles for a specified user. Excludes tenant roles.
+
+OpenStack,identity-admin,RESOURCE,extensions,GET,/v2.0/extensions,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Lists available extensions.
+
+OpenStack,identity-admin,RESOURCE,tenants,GET,/v2.0/tenants,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Gets detailed information about a specified tenant by name.
+
+OpenStack,identity-admin,RESOURCE,users,PUT,/v2.0/users/{userId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Updates a user.
+
+OpenStack,identity-admin,RESOURCE,users,DELETE,/v2.0/users/{userId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Deletes a user.
+
+OpenStack,identity-admin,RESOURCE,tokens,POST,/v2.0/tokens,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Authenticates and generates a token.
+
+OpenStack,identity-admin,RESOURCE,tokens,HEAD,/v2.0/tokens/{tokenId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Validates a token and confirms that it belongs to a specified tenant, for performance.
+
+OpenStack,identity-admin,RESOURCE,tokens,GET,/v2.0/tokens/{tokenId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity-admin.json,Validates a token and confirms that it belongs to a specified tenant.
+
+OpenStack,identity,RESOURCE,extensions,GET,/v2.0/extensions/{alias},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity.json,Gets detailed information for a specified extension.
+
+OpenStack,identity,RESOURCE,extensions,GET,/v2.0/extensions,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity.json,Lists available extensions.
+
+OpenStack,identity,RESOURCE,tenants,GET,/v2.0/tenants,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity.json,Lists tenants to which the specified token has access.
+
+OpenStack,identity,RESOURCE,tokens,POST,/v2.0/tokens,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/identity.json,Authenticates and generates a token.
+
+OpenStack,metering-labels,RESOURCE,metering,DELETE,/v2.0/metering/metering-labels/{metering_label_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Deletes a l3 metering label.
+
+OpenStack,metering-labels,RESOURCE,metering,GET,/v2.0/metering/metering-labels/{metering_label_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Shows informations for a specified metering label.
+
+OpenStack,metering-labels,RESOURCE,metering-labels,DELETE,/v2.0/metering/metering-labels/{metering_label_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Deletes a l3 metering label.
+
+OpenStack,metering-labels,RESOURCE,metering-labels,GET,/v2.0/metering/metering-labels/{metering_label_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Shows informations for a specified metering label.
+
+OpenStack,metering-labels,RESOURCE,metering,POST,/v2.0/metering/metering-labels,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Creates a l3 metering label.
+
+OpenStack,metering-labels,RESOURCE,metering,GET,/v2.0/metering/metering-labels,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Lists all l3 metering labels that belong to the specified tenant.
+
+OpenStack,metering-labels,RESOURCE,metering-labels,POST,/v2.0/metering/metering-labels,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Creates a l3 metering label.
+
+OpenStack,metering-labels,RESOURCE,metering-labels,GET,/v2.0/metering/metering-labels,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Lists all l3 metering labels that belong to the specified tenant.
+
+OpenStack,metering-labels,RESOURCE,metering,POST,/v2.0/metering/metering-label-rules,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Creates a l3 metering label rule.
+
+OpenStack,metering-labels,RESOURCE,metering,GET,/v2.0/metering/metering-label-rules,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Lists a summary of all l3 metering label rules belonging to the specified tenant.
+
+OpenStack,metering-labels,RESOURCE,metering-label-rules,POST,/v2.0/metering/metering-label-rules,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Creates a l3 metering label rule.
+
+OpenStack,metering-labels,RESOURCE,metering-label-rules,GET,/v2.0/metering/metering-label-rules,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Lists a summary of all l3 metering label rules belonging to the specified tenant.
+
+OpenStack,metering-labels,RESOURCE,metering,DELETE,/v2.0/metering/metering-label-rules/{metering-label-rule-id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Deletes a specified l3 metering label rule.
+
+OpenStack,metering-labels,RESOURCE,metering,GET,/v2.0/metering/metering-label-rules/{metering-label-rule-id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Shows detailed informations for a specified metering label rule.
+
+OpenStack,metering-labels,RESOURCE,metering-label-rules,DELETE,/v2.0/metering/metering-label-rules/{metering-label-rule-id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Deletes a specified l3 metering label rule.
+
+OpenStack,metering-labels,RESOURCE,metering-label-rules,GET,/v2.0/metering/metering-label-rules/{metering-label-rule-id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/metering-labels.json,Shows detailed informations for a specified metering label rule.
+
+OpenStack,orchestration-api,RESOURCE,resource_types,GET,/v1/{tenant_id}/resource_types,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Lists the supported template resource types.
+
+OpenStack,orchestration-api,RESOURCE,stacks,DELETE,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/abandon,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Deletes a specified stack but leaves its resources intact, and returns data describing the stack and its resources.
+
+OpenStack,orchestration-api,RESOURCE,abandon,DELETE,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/abandon,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Deletes a specified stack but leaves its resources intact, and returns data describing the stack and its resources.
+
+OpenStack,orchestration-api,RESOURCE,stacks,POST,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots/{snapshot_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Restore a stack snapshot.
+
+OpenStack,orchestration-api,RESOURCE,stacks,DELETE,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots/{snapshot_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Delete a stack snapshot.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots/{snapshot_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Show the details of a snapshot.
+
+OpenStack,orchestration-api,RESOURCE,snapshots,POST,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots/{snapshot_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Restore a stack snapshot.
+
+OpenStack,orchestration-api,RESOURCE,snapshots,DELETE,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots/{snapshot_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Delete a stack snapshot.
+
+OpenStack,orchestration-api,RESOURCE,snapshots,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots/{snapshot_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Show the details of a snapshot.
+
+OpenStack,orchestration-api,RESOURCE,stacks,POST,/v1/{tenant_id}/stacks/preview,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Previews a stack.
+
+OpenStack,orchestration-api,RESOURCE,preview,POST,/v1/{tenant_id}/stacks/preview,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Previews a stack.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events/{event_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows details for a specified event.
+
+OpenStack,orchestration-api,RESOURCE,resources,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events/{event_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows details for a specified event.
+
+OpenStack,orchestration-api,RESOURCE,events,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events/{event_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows details for a specified event.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks/{stack_name}/events,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Finds the canonical URL for the event list of a specified stack.
+
+OpenStack,orchestration-api,RESOURCE,events,GET,/v1/{tenant_id}/stacks/{stack_name}/events,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Finds the canonical URL for the event list of a specified stack.
+
+OpenStack,orchestration-api,RESOURCE,software_deployments,POST,/v1/{tenant_id}/software_deployments,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Creates a software deployment.
+
+OpenStack,orchestration-api,RESOURCE,software_deployments,GET,/v1/{tenant_id}/software_deployments,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Lists all available software deployments.
+
+OpenStack,orchestration-api,RESOURCE,software_deployments,GET,/v1/{tenant_id}/software_deployments/metadata/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows the deployment configuration metadata for a specified server.
+
+OpenStack,orchestration-api,RESOURCE,metadata,GET,/v1/{tenant_id}/software_deployments/metadata/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows the deployment configuration metadata for a specified server.
+
+OpenStack,orchestration-api,RESOURCE,validate,POST,/v1/{tenant_id}/validate,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Validates a specified template.
+
+OpenStack,orchestration-api,RESOURCE,resource_types,GET,/v1/{tenant_id}/resource_types/{type_name}/template,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows the template representation for a specified resource type.
+
+OpenStack,orchestration-api,RESOURCE,template,GET,/v1/{tenant_id}/resource_types/{type_name}/template,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows the template representation for a specified resource type.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Lists events for a specified stack resource.
+
+OpenStack,orchestration-api,RESOURCE,resources,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Lists events for a specified stack resource.
+
+OpenStack,orchestration-api,RESOURCE,events,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Lists events for a specified stack resource.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks/{stack_name}/resources,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Finds the canonical URL for the resource list of a specified stack.
+
+OpenStack,orchestration-api,RESOURCE,resources,GET,/v1/{tenant_id}/stacks/{stack_name}/resources,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Finds the canonical URL for the resource list of a specified stack.
+
+OpenStack,orchestration-api,RESOURCE,resource_types,GET,/v1/{tenant_id}/resource_types/{type_name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows the interface schema for a specified resource type.
+
+OpenStack,orchestration-api,RESOURCE,software_configs,POST,/v1/{tenant_id}/software_configs,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Creates a software configuration.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/template,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Gets a template for a specified stack.
+
+OpenStack,orchestration-api,RESOURCE,template,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/template,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Gets a template for a specified stack.
+
+OpenStack,orchestration-api,RESOURCE,software_deployments,PUT,/v1/{tenant_id}/software_deployments/{deployment_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Updates a specified software deployment.
+
+OpenStack,orchestration-api,RESOURCE,software_deployments,DELETE,/v1/{tenant_id}/software_deployments/{deployment_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Deletes a specified software deployment.
+
+OpenStack,orchestration-api,RESOURCE,software_deployments,GET,/v1/{tenant_id}/software_deployments/{deployment_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows details for a specified software deployment.
+
+OpenStack,orchestration-api,RESOURCE,stacks,PUT,/v1/{tenant_id}/stacks/{stack_name}/{stack_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Updates a specified stack.
+
+OpenStack,orchestration-api,RESOURCE,stacks,DELETE,/v1/{tenant_id}/stacks/{stack_name}/{stack_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Deletes a specified stack.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows details for a specified stack.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/events,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Lists events for a specified stack.
+
+OpenStack,orchestration-api,RESOURCE,events,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/events,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Lists events for a specified stack.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Lists resources in a stack.
+
+OpenStack,orchestration-api,RESOURCE,resources,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Lists resources in a stack.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows data for a specified resource.
+
+OpenStack,orchestration-api,RESOURCE,resources,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows data for a specified resource.
+
+OpenStack,orchestration-api,RESOURCE,software_configs,DELETE,/v1/{tenant_id}/software_configs/{config_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Deletes a software configuration.
+
+OpenStack,orchestration-api,RESOURCE,software_configs,GET,/v1/{tenant_id}/software_configs/{config_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows details for a software configuration.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows metadata for a specified resource.
+
+OpenStack,orchestration-api,RESOURCE,resources,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows metadata for a specified resource.
+
+OpenStack,orchestration-api,RESOURCE,metadata,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows metadata for a specified resource.
+
+OpenStack,orchestration-api,RESOURCE,stacks,POST,/v1/{tenant_id}/stacks,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Creates a stack from existing resources.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Lists active stacks.
+
+OpenStack,orchestration-api,RESOURCE,build_info,GET,/v1/{tenant_id}/build_info,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Shows build information for a heat deployment.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks/{stack_name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Finds the canonical URL for a specified stack.
+
+OpenStack,orchestration-api,RESOURCE,stacks,POST,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Takes a snapshot of all the resources in the stack.
+
+OpenStack,orchestration-api,RESOURCE,stacks,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,List the snapshots of a stack.
+
+OpenStack,orchestration-api,RESOURCE,snapshots,POST,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Takes a snapshot of all the resources in the stack.
+
+OpenStack,orchestration-api,RESOURCE,snapshots,GET,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,List the snapshots of a stack.
+
+OpenStack,orchestration-api,RESOURCE,stacks,POST,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/signal,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Sends a signal to a specified resource.
+
+OpenStack,orchestration-api,RESOURCE,resources,POST,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/signal,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Sends a signal to a specified resource.
+
+OpenStack,orchestration-api,RESOURCE,signal,POST,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/signal,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Sends a signal to a specified resource.
+
+OpenStack,orchestration-api,RESOURCE,stacks,POST,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/actions,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Resumes a suspended stack.
+
+OpenStack,orchestration-api,RESOURCE,actions,POST,/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/actions,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/orchestration-api.json,Resumes a suspended stack.
+
+OpenStack,os-admin-actions-v2.1,RESOURCE,servers,POST,/v2.1/servers/{server_id}/action/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-admin-actions-v2.1.json,Unpauses a PAUSED server and changes its status to ACTIVE.
+
+OpenStack,os-admin-actions-v2.1,ACTION,action,POST,/v2.1/servers/{server_id}/action/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-admin-actions-v2.1.json,Unpauses a PAUSED server and changes its status to ACTIVE.
+
+OpenStack,os-admin-actions-v2.1,ACTION,action,POST,/v2.1/servers/{server_id}/action/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-admin-actions-v2.1.json,Unpauses a PAUSED server and changes its status to ACTIVE.
+
+OpenStack,os-admin-actions,RESOURCE,servers,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-admin-actions.json,Adds a floating IP address to an instance.
+
+OpenStack,os-admin-actions,ACTION,action,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-admin-actions.json,Adds a floating IP address to an instance.
+
+OpenStack,os-agents-v2.1,RESOURCE,os-agents,PUT,/v2.1/os-agents/{id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-agents-v2.1.json,Updates an agent build.
+
+OpenStack,os-agents-v2.1,RESOURCE,os-agents,POST,/v2.1/os-agents,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-agents-v2.1.json,Creates an agent build.
+
+OpenStack,os-agents-v2.1,RESOURCE,os-agents,GET,/v2.1/os-agents,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-agents-v2.1.json,Lists agent builds.
+
+OpenStack,os-agents,RESOURCE,os-agents,PUT,/v2/{tenant_id}/os-agents/{id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-agents.json,Updates an agent build.
+
+OpenStack,os-agents,RESOURCE,os-agents,POST,/v2/{tenant_id}/os-agents,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-agents.json,Creates an agent build.
+
+OpenStack,os-agents,RESOURCE,os-agents,DELETE,/v2/{tenant_id}/os-agents,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-agents.json,Deletes an existing agent build.
+
+OpenStack,os-agents,RESOURCE,os-agents,GET,/v2/{tenant_id}/os-agents,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-agents.json,Lists all agent builds.
+
+OpenStack,os-aggregates-v2.1,RESOURCE,os-aggregates,POST,/v2.1/os-aggregates/{aggregate_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-aggregates-v2.1.json,Removes a host from the specified aggregate.
+
+OpenStack,os-aggregates-v2.1,ACTION,action,POST,/v2.1/os-aggregates/{aggregate_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-aggregates-v2.1.json,Removes a host from the specified aggregate.
+
+OpenStack,os-aggregates-v2.1,RESOURCE,os-aggregates,POST,/v2.1/os-aggregates,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-aggregates-v2.1.json,Creates an aggregate, given its name and availability zone.
+
+OpenStack,os-aggregates-v2.1,RESOURCE,os-aggregates,GET,/v2.1/os-aggregates,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-aggregates-v2.1.json,Lists aggregates id, name, and availability\_zone for an aggregate.
+
+OpenStack,os-aggregates-v2.1,RESOURCE,os-aggregates,GET,/v2.1/os-aggregates/{aggregate_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-aggregates-v2.1.json,Updates either or both the name and availability zone for a specified aggregate.
+
+OpenStack,os-aggregates,RESOURCE,os-aggregates,PUT,/v2/{tenant_id}/os-aggregates/{aggregate_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-aggregates.json,Updates the name, and optionally the availability zone, for a specified aggregate.
+
+OpenStack,os-aggregates,RESOURCE,os-aggregates,GET,/v2/{tenant_id}/os-aggregates/{aggregate_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-aggregates.json,Gets details about a specified aggregate.
+
+OpenStack,os-aggregates,RESOURCE,os-aggregates,DELETE,/v2/{tenant_id}/os-aggregates/{aggregate_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-aggregates.json,Deletes an aggregate.
+
+OpenStack,os-aggregates,RESOURCE,os-aggregates,POST,/v2/{tenant_id}/os-aggregates/{aggregate_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-aggregates.json,Removes a host from an aggregate.
+
+OpenStack,os-aggregates,ACTION,action,POST,/v2/{tenant_id}/os-aggregates/{aggregate_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-aggregates.json,Removes a host from an aggregate.
+
+OpenStack,os-aggregates,RESOURCE,os-aggregates,POST,/v2/{tenant_id}/os-aggregates,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-aggregates.json,Creates an aggregate.
+
+OpenStack,os-aggregates,RESOURCE,os-aggregates,GET,/v2/{tenant_id}/os-aggregates,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-aggregates.json,Lists all aggregates.
+
+OpenStack,os-block-device-mapping-v2-boot,RESOURCE,servers,POST,/v2/{tenant_id}/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-block-device-mapping-v2-boot.json,Creates a server with a block device mapping.
+
+OpenStack,os-block-device-mapping-v2-boot,RESOURCE,servers,GET,/v2/{tenant_id}/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-block-device-mapping-v2-boot.json,Lists IDs, names, and links for all servers.
+
+OpenStack,os-cells-v2.1,RESOURCE,os-cells,GET,/v2.1/os-cells/cell3,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-cells-v2.1.json,Shows data for a specified cell.
+
+OpenStack,os-cells-v2.1,RESOURCE,cell3,GET,/v2.1/os-cells/cell3,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-cells-v2.1.json,Shows data for a specified cell.
+
+OpenStack,os-cells-v2.1,RESOURCE,os-cells,GET,/v2.1/os-cells/nova/capacities,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-cells-v2.1.json,Shows capacities for a specified cell.
+
+OpenStack,os-cells-v2.1,RESOURCE,nova,GET,/v2.1/os-cells/nova/capacities,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-cells-v2.1.json,Shows capacities for a specified cell.
+
+OpenStack,os-cells-v2.1,RESOURCE,capacities,GET,/v2.1/os-cells/nova/capacities,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-cells-v2.1.json,Shows capacities for a specified cell.
+
+OpenStack,os-cells-v2.1,RESOURCE,os-cells,GET,/v2.1/os-cells,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-cells-v2.1.json,Lists cells with details.
+
+OpenStack,os-certificates-v2.1,RESOURCE,os-certificates,GET,/v2.1/os-certificates/root,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-certificates-v2.1.json,Shows details for a specified certificate.
+
+OpenStack,os-certificates-v2.1,RESOURCE,root,GET,/v2.1/os-certificates/root,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-certificates-v2.1.json,Shows details for a specified certificate.
+
+OpenStack,os-certificates-v2.1,RESOURCE,os-certificates,POST,/v2.1/os-certificates,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-certificates-v2.1.json,Creates a certificate.
+
+OpenStack,os-certificates,RESOURCE,os-certificates,POST,/v2/{tenant_id}/os-certificates,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-certificates.json,Creates a root certificate.
+
+OpenStack,os-certificates,RESOURCE,os-certificates,GET,/v2/{tenant_id}/os-certificates,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-certificates.json,Shows details for a root certificate owned by a specified tenant ID.
+
+OpenStack,os-cloudpipe,RESOURCE,os-cloudpipe,POST,/v2/{tenant_id}/os-cloudpipe/configure-project,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-cloudpipe.json,Updates the virtual private network (VPN) IP address and port for a specified cloudpipe instance.
+
+OpenStack,os-cloudpipe,RESOURCE,configure-project,POST,/v2/{tenant_id}/os-cloudpipe/configure-project,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-cloudpipe.json,Updates the virtual private network (VPN) IP address and port for a specified cloudpipe instance.
+
+OpenStack,os-cloudpipe,RESOURCE,os-cloudpipe,POST,/v2/{tenant_id}/os-cloudpipe,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-cloudpipe.json,Creates a cloudpipe.
+
+OpenStack,os-cloudpipe,RESOURCE,os-cloudpipe,GET,/v2/{tenant_id}/os-cloudpipe,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-cloudpipe.json,Lists cloudpipes.
+
+OpenStack,os-compute-2,RESOURCE,servers,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Creates a new image. Specify the `createImage` action in the request body.
+
+OpenStack,os-compute-2,ACTION,action,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Creates a new image. Specify the `createImage` action in the request body.
+
+OpenStack,os-compute-2,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors/{flavor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Gets details for a specified flavor.
+
+OpenStack,os-compute-2,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id}/ips,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists networks and addresses for a specified tenant and server.
+
+OpenStack,os-compute-2,RESOURCE,ips,GET,/v2/{tenant_id}/servers/{server_id}/ips,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists networks and addresses for a specified tenant and server.
+
+OpenStack,os-compute-2,RESOURCE,images,PUT,/v2/{tenant_id}/images/{image_id}/metadata/{key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Creates or updates a metadata item by key for a specified image.
+
+OpenStack,os-compute-2,RESOURCE,images,DELETE,/v2/{tenant_id}/images/{image_id}/metadata/{key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Deletes a metadata item by key for a specified image.
+
+OpenStack,os-compute-2,RESOURCE,images,GET,/v2/{tenant_id}/images/{image_id}/metadata/{key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Shows details for a metadata item by key for a specified image.
+
+OpenStack,os-compute-2,RESOURCE,metadata,PUT,/v2/{tenant_id}/images/{image_id}/metadata/{key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Creates or updates a metadata item by key for a specified image.
+
+OpenStack,os-compute-2,RESOURCE,metadata,DELETE,/v2/{tenant_id}/images/{image_id}/metadata/{key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Deletes a metadata item by key for a specified image.
+
+OpenStack,os-compute-2,RESOURCE,metadata,GET,/v2/{tenant_id}/images/{image_id}/metadata/{key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Shows details for a metadata item by key for a specified image.
+
+OpenStack,os-compute-2,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists IDs, names, and links for available flavors.
+
+OpenStack,os-compute-2,RESOURCE,images,GET,/v2/{tenant_id}/images,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists IDs, names, and links for available images.
+
+OpenStack,os-compute-2,RESOURCE,servers,GET,/v2/{tenant_id}/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists details for all servers.
+
+OpenStack,os-compute-2,RESOURCE,detail,GET,/v2/{tenant_id}/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists details for all servers.
+
+OpenStack,os-compute-2,RESOURCE,extensions,GET,/v2/{tenant_id}/extensions,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists available extensions.
+
+OpenStack,os-compute-2,RESOURCE,servers,PUT,/v2/{tenant_id}/servers/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Updates the editable attributes of the specified server.
+
+OpenStack,os-compute-2,RESOURCE,servers,DELETE,/v2/{tenant_id}/servers/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Deletes a specified server.
+
+OpenStack,os-compute-2,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Gets details for a specified server.
+
+OpenStack,os-compute-2,RESOURCE,servers,PUT,/v2/{tenant_id}/servers/{server_id}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Creates or replaces metadata items for a specified server.
+
+OpenStack,os-compute-2,RESOURCE,servers,POST,/v2/{tenant_id}/servers/{server_id}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Updates metadata items by key for a specified server.
+
+OpenStack,os-compute-2,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Shows metadata for a specified server.
+
+OpenStack,os-compute-2,RESOURCE,metadata,PUT,/v2/{tenant_id}/servers/{server_id}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Creates or replaces metadata items for a specified server.
+
+OpenStack,os-compute-2,RESOURCE,metadata,POST,/v2/{tenant_id}/servers/{server_id}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Updates metadata items by key for a specified server.
+
+OpenStack,os-compute-2,RESOURCE,metadata,GET,/v2/{tenant_id}/servers/{server_id}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Shows metadata for a specified server.
+
+OpenStack,os-compute-2,RESOURCE,images,DELETE,/v2/{tenant_id}/images/{image_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Deletes a specified image.
+
+OpenStack,os-compute-2,RESOURCE,images,GET,/v2/{tenant_id}/images/{image_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Gets details for a specified image.
+
+OpenStack,os-compute-2,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists all details for available flavors.
+
+OpenStack,os-compute-2,RESOURCE,detail,GET,/v2/{tenant_id}/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists all details for available flavors.
+
+OpenStack,os-compute-2,RESOURCE,images,PUT,/v2/{tenant_id}/images/{image_id}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Creates or replaces metadata for a specified image.
+
+OpenStack,os-compute-2,RESOURCE,images,POST,/v2/{tenant_id}/images/{image_id}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Updates metadata items by key for a specified image.
+
+OpenStack,os-compute-2,RESOURCE,images,GET,/v2/{tenant_id}/images/{image_id}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Shows metadata for a specified image.
+
+OpenStack,os-compute-2,RESOURCE,metadata,PUT,/v2/{tenant_id}/images/{image_id}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Creates or replaces metadata for a specified image.
+
+OpenStack,os-compute-2,RESOURCE,metadata,POST,/v2/{tenant_id}/images/{image_id}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Updates metadata items by key for a specified image.
+
+OpenStack,os-compute-2,RESOURCE,metadata,GET,/v2/{tenant_id}/images/{image_id}/metadata,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Shows metadata for a specified image.
+
+OpenStack,os-compute-2,RESOURCE,servers,POST,/v2/{tenant_id}/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Creates a server.
+
+OpenStack,os-compute-2,RESOURCE,servers,GET,/v2/{tenant_id}/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists IDs, names, and links for all servers.
+
+OpenStack,os-compute-2,RESOURCE,servers,PUT,/v2/{tenant_id}/servers/{server_id}/metadata/{key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Sets a metadata item by key for a specified server.
+
+OpenStack,os-compute-2,RESOURCE,servers,DELETE,/v2/{tenant_id}/servers/{server_id}/metadata/{key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Deletes a metadata item by key for a specified server.
+
+OpenStack,os-compute-2,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id}/metadata/{key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Shows details for a metadata item by key for a specified server.
+
+OpenStack,os-compute-2,RESOURCE,metadata,PUT,/v2/{tenant_id}/servers/{server_id}/metadata/{key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Sets a metadata item by key for a specified server.
+
+OpenStack,os-compute-2,RESOURCE,metadata,DELETE,/v2/{tenant_id}/servers/{server_id}/metadata/{key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Deletes a metadata item by key for a specified server.
+
+OpenStack,os-compute-2,RESOURCE,metadata,GET,/v2/{tenant_id}/servers/{server_id}/metadata/{key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Shows details for a metadata item by key for a specified server.
+
+OpenStack,os-compute-2,RESOURCE,extensions,GET,/v2/{tenant_id}/extensions/{alias},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Gets details about the specified extension.
+
+OpenStack,os-compute-2,RESOURCE,limits,GET,/v2/{tenant_id}/limits,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists the current limits for the account.
+
+OpenStack,os-compute-2,RESOURCE,images,GET,/v2/{tenant_id}/images/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists all details for available images.
+
+OpenStack,os-compute-2,RESOURCE,detail,GET,/v2/{tenant_id}/images/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists all details for available images.
+
+OpenStack,os-compute-2,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id}/ips/{network_label},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists addresses for a specified tenant, server, and network.
+
+OpenStack,os-compute-2,RESOURCE,ips,GET,/v2/{tenant_id}/servers/{server_id}/ips/{network_label},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-compute-2.json,Lists addresses for a specified tenant, server, and network.
+
+OpenStack,os-config-drive-v2.1,RESOURCE,servers,GET,/v2.1/servers/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-config-drive-v2.1.json,Shows details for a specified server.
+
+OpenStack,os-config-drive-v2.1,RESOURCE,servers,GET,/v2.1/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-config-drive-v2.1.json,Lists server details for a specified user.
+
+OpenStack,os-config-drive-v2.1,RESOURCE,detail,GET,/v2.1/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-config-drive-v2.1.json,Lists server details for a specified user.
+
+OpenStack,os-console-output,RESOURCE,servers,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-console-output.json,Gets console output for a server instance.
+
+OpenStack,os-console-output,ACTION,action,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-console-output.json,Gets console output for a server instance.
+
+OpenStack,os-consoles,RESOURCE,servers,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-consoles.json,Gets a console for a server instance.
+
+OpenStack,os-consoles,ACTION,action,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-consoles.json,Gets a console for a server instance.
+
+OpenStack,os-coverage,RESOURCE,os-coverage,POST,/v2/{tenant_id}/os-coverage/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-coverage.json,Stops coverage reporting.
+
+OpenStack,os-coverage,ACTION,action,POST,/v2/{tenant_id}/os-coverage/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-coverage.json,Stops coverage reporting.
+
+OpenStack,os-createserverext,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-createserverext.json,Shows information for a specified server including the configuration drive extended attribute.
+
+OpenStack,os-createserverext,RESOURCE,servers,POST,/v2/{tenant_id}/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-createserverext.json,Creates a server with the configuration drive extended attribute.
+
+OpenStack,os-createserverext,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id}/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-createserverext.json,Lists details for all servers including the configuration drive extended attribute.
+
+OpenStack,os-createserverext,RESOURCE,detail,GET,/v2/{tenant_id}/servers/{server_id}/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-createserverext.json,Lists details for all servers including the configuration drive extended attribute.
+
+OpenStack,os-deferred-delete-v2.1,RESOURCE,servers,POST,/v2.1/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-deferred-delete-v2.1.json,Restores a previously deleted instance.
+
+OpenStack,os-deferred-delete-v2.1,ACTION,action,POST,/v2.1/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-deferred-delete-v2.1.json,Restores a previously deleted instance.
+
+OpenStack,os-deferred-delete,RESOURCE,servers,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-deferred-delete.json,Restores a deleted server.
+
+OpenStack,os-deferred-delete,ACTION,action,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-deferred-delete.json,Restores a deleted server.
+
+OpenStack,os-diagnostics,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id}/diagnostics,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-diagnostics.json,Gets basic usage data for a specified server.
+
+OpenStack,os-diagnostics,RESOURCE,diagnostics,GET,/v2/{tenant_id}/servers/{server_id}/diagnostics,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-diagnostics.json,Gets basic usage data for a specified server.
+
+OpenStack,os-disk-config,RESOURCE,servers,GET,/v2/{tenant_id}/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-disk-config.json,Lists servers with detailed config drive information.
+
+OpenStack,os-disk-config,RESOURCE,detail,GET,/v2/{tenant_id}/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-disk-config.json,Lists servers with detailed config drive information.
+
+OpenStack,os-disk-config,RESOURCE,servers,PUT,/v2/{tenant_id}/servers/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-disk-config.json,Updates a specified server.
+
+OpenStack,os-disk-config,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-disk-config.json,Shows information for a specified server.
+
+OpenStack,os-disk-config,RESOURCE,images,GET,/v2/{tenant_id}/images/{image_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-disk-config.json,Gets information for a specified image.
+
+OpenStack,os-disk-config,RESOURCE,servers,POST,/v2/{tenant_id}/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-disk-config.json,Creates a server.
+
+OpenStack,os-disk-config,RESOURCE,servers,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-disk-config.json,Rebuilds a specified server.
+
+OpenStack,os-disk-config,ACTION,action,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-disk-config.json,Rebuilds a specified server.
+
+OpenStack,os-disk-config,RESOURCE,images,GET,/v2/{tenant_id}/images/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-disk-config.json,Lists images.
+
+OpenStack,os-disk-config,RESOURCE,detail,GET,/v2/{tenant_id}/images/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-disk-config.json,Lists images.
+
+OpenStack,os-evacuate-v2.1,RESOURCE,servers,POST,/v2.1/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-evacuate-v2.1.json,Evacuates a server from a failed host to a new one.
+
+OpenStack,os-evacuate-v2.1,ACTION,action,POST,/v2.1/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-evacuate-v2.1.json,Evacuates a server from a failed host to a new one.
+
+OpenStack,os-ext-az,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-ext-az.json,Shows information for a specified server, including its availability zone.
+
+OpenStack,os-ext-az,RESOURCE,servers,GET,/v2/{tenant_id}/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-ext-az.json,Lists details for servers, including their current availability zone.
+
+OpenStack,os-ext-az,RESOURCE,detail,GET,/v2/{tenant_id}/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-ext-az.json,Lists details for servers, including their current availability zone.
+
+OpenStack,os-ext-img-size,RESOURCE,images,GET,/v2/{tenant_id}/images/{image_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-ext-img-size.json,Gets details for a specified image. Includes the image size.
+
+OpenStack,os-ext-img-size,RESOURCE,images,GET,/v2/{tenant_id}/images/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-ext-img-size.json,Lists details for available images. Includes the image size.
+
+OpenStack,os-ext-img-size,RESOURCE,detail,GET,/v2/{tenant_id}/images/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-ext-img-size.json,Lists details for available images. Includes the image size.
+
+OpenStack,os-ext-ips,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-ext-ips.json,Shows the type of IP assigned to a specified server, either fixed or floating.
+
+OpenStack,os-ext-ips,ACTION,action,GET,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-ext-ips.json,Shows the type of IP assigned to a specified server, either fixed or floating.
+
+OpenStack,os-ext-ips,RESOURCE,servers,GET,/v2/{tenant_id}/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-ext-ips.json,Lists servers and shows their IPs by type. Type is either fixed or floating.
+
+OpenStack,os-ext-ips,RESOURCE,detail,GET,/v2/{tenant_id}/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-ext-ips.json,Lists servers and shows their IPs by type. Type is either fixed or floating.
+
+OpenStack,os-extended-availability-zone-v2.1,RESOURCE,servers,GET,/v2.1/servers/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-availability-zone-v2.1.json,Shows details for a specified server.
+
+OpenStack,os-extended-availability-zone-v2.1,RESOURCE,servers,GET,/v2.1/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-availability-zone-v2.1.json,Lists server details for a specified user.
+
+OpenStack,os-extended-availability-zone-v2.1,RESOURCE,detail,GET,/v2.1/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-availability-zone-v2.1.json,Lists server details for a specified user.
+
+OpenStack,os-extended-server-attributes-v2.1,RESOURCE,servers,GET,/v2.1/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-server-attributes-v2.1.json,Shows details for a specified server.
+
+OpenStack,os-extended-server-attributes-v2.1,RESOURCE,servers,GET,/v2.1/servers/details,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-server-attributes-v2.1.json,Lists server details for a specified user.
+
+OpenStack,os-extended-server-attributes-v2.1,RESOURCE,details,GET,/v2.1/servers/details,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-server-attributes-v2.1.json,Lists server details for a specified user.
+
+OpenStack,os-extended-server-attributes,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-server-attributes.json,Shows extended server attributes for a specified server.
+
+OpenStack,os-extended-server-attributes,RESOURCE,servers,GET,/v2/{tenant_id}/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-server-attributes.json,Lists detailed extended server attribute information for all servers.
+
+OpenStack,os-extended-status-v2.1,RESOURCE,servers,GET,/v2.1/servers/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-status-v2.1.json,Shows details for a specified server.
+
+OpenStack,os-extended-status-v2.1,RESOURCE,servers,GET,/v2.1/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-status-v2.1.json,Lists servers with details for a specified user.
+
+OpenStack,os-extended-status-v2.1,RESOURCE,detail,GET,/v2.1/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-status-v2.1.json,Lists servers with details for a specified user.
+
+OpenStack,os-extended-status,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-status.json,Shows the extended status attributes in the response for a specified server.
+
+OpenStack,os-extended-status,RESOURCE,servers,GET,/v2/{tenant_id}/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-status.json,Lists the extended status attributes in the detailed response for all servers.
+
+OpenStack,os-extended-status,RESOURCE,detail,GET,/v2/{tenant_id}/servers/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-extended-status.json,Lists the extended status attributes in the detailed response for all servers.
+
+OpenStack,os-fixed-ips,RESOURCE,os-fixed-ips,GET,/v2/{tenant_id}/os-fixed-ips/{fixed_ip},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-fixed-ips.json,Shows information for a specified fixed IP address.
+
+OpenStack,os-fixed-ips,RESOURCE,os-fixed-ips,POST,/v2/{tenant_id}/os-fixed-ips/{fixed_ip}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-fixed-ips.json,Reserves or releases a fixed IP.
+
+OpenStack,os-fixed-ips,ACTION,action,POST,/v2/{tenant_id}/os-fixed-ips/{fixed_ip}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-fixed-ips.json,Reserves or releases a fixed IP.
+
+OpenStack,os-flavor-access,RESOURCE,flavors,POST,/v2/{tenant_id}/flavors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-access.json,Creates a private flavor.
+
+OpenStack,os-flavor-access,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-access.json,Lists flavors and includes the access type, which is public or private.
+
+OpenStack,os-flavor-access,RESOURCE,flavors,POST,/v2/{tenant_id}/flavors/{flavor_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-access.json,Gives a specified tenant access to the specified private flavor.
+
+OpenStack,os-flavor-access,RESOURCE,flavors,DELETE,/v2/{tenant_id}/flavors/{flavor_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-access.json,Revokes access from the specified tenant for the specified private flavor.
+
+OpenStack,os-flavor-access,ACTION,action,POST,/v2/{tenant_id}/flavors/{flavor_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-access.json,Gives a specified tenant access to the specified private flavor.
+
+OpenStack,os-flavor-access,ACTION,action,DELETE,/v2/{tenant_id}/flavors/{flavor_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-access.json,Revokes access from the specified tenant for the specified private flavor.
+
+OpenStack,os-flavor-access,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors/{flavor_id}/os-flavor-access,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-access.json,Lists tenants with access to the specified private flavor.
+
+OpenStack,os-flavor-access,RESOURCE,os-flavor-access,GET,/v2/{tenant_id}/flavors/{flavor_id}/os-flavor-access,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-access.json,Lists tenants with access to the specified private flavor.
+
+OpenStack,os-flavor-access,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors/{flavor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-access.json,Gets the flavor access type, which is public or private.
+
+OpenStack,os-flavor-extra-specs,RESOURCE,flavors,POST,/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-extra-specs.json,Creates extra-specs or keys for the specified flavor.
+
+OpenStack,os-flavor-extra-specs,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-extra-specs.json,Lists the extra-specs or keys for the specified flavor.
+
+OpenStack,os-flavor-extra-specs,RESOURCE,os-extra_specs,POST,/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-extra-specs.json,Creates extra-specs or keys for the specified flavor.
+
+OpenStack,os-flavor-extra-specs,RESOURCE,os-extra_specs,GET,/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-extra-specs.json,Lists the extra-specs or keys for the specified flavor.
+
+OpenStack,os-flavor-extra-specs,RESOURCE,flavors,DELETE,/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs/{key_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-extra-specs.json,Deletes a specified extra-spec by key.
+
+OpenStack,os-flavor-extra-specs,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs/{key_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-extra-specs.json,Gets the value of the specified key.
+
+OpenStack,os-flavor-extra-specs,RESOURCE,os-extra_specs,DELETE,/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs/{key_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-extra-specs.json,Deletes a specified extra-spec by key.
+
+OpenStack,os-flavor-extra-specs,RESOURCE,os-extra_specs,GET,/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs/{key_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-extra-specs.json,Gets the value of the specified key.
+
+OpenStack,os-flavor-manage-v2.1,RESOURCE,flavors,POST,/v2.1/flavors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-manage-v2.1.json,Creates a flavor.
+
+OpenStack,os-flavor-manage-v2.1,RESOURCE,flavors,DELETE,/v2.1/flavors/{flavor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-manage-v2.1.json,Deletes a flavor.
+
+OpenStack,os-flavor-rxtx-v2.1,RESOURCE,flavors,POST,/v2.1/flavors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-rxtx-v2.1.json,Creates a flavor.
+
+OpenStack,os-flavor-rxtx-v2.1,RESOURCE,flavors,GET,/v2.1/flavors/{flavor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-rxtx-v2.1.json,Shows details for a specified flavor.
+
+OpenStack,os-flavor-rxtx-v2.1,RESOURCE,flavors,GET,/v2.1/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-rxtx-v2.1.json,Lists flavors with details.
+
+OpenStack,os-flavor-rxtx-v2.1,RESOURCE,detail,GET,/v2.1/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-rxtx-v2.1.json,Lists flavors with details.
+
+OpenStack,os-flavor-rxtx,RESOURCE,flavors,POST,/v2/{tenant_id}/flavors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-rxtx.json,Creates a flavor. Includes the rxtx\_factor extended attribute.
+
+OpenStack,os-flavor-rxtx,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-rxtx.json,Lists details for available flavors and includes the rxtx\_factor extended attribute.
+
+OpenStack,os-flavor-rxtx,RESOURCE,detail,GET,/v2/{tenant_id}/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-rxtx.json,Lists details for available flavors and includes the rxtx\_factor extended attribute.
+
+OpenStack,os-flavor-rxtx,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors/{flavor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-rxtx.json,Gets details for a specified flavor. Includes the rxtx\_factor extended attribute.
+
+OpenStack,os-flavor-swap,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors/{flavor_id}/os-flavor-swap,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-swap.json,Lists the flavor specs including swap value for the specified flavor. The swap value is the amount of swap disk space, in GBs, to allocate to a server.
+
+OpenStack,os-flavor-swap,RESOURCE,os-flavor-swap,GET,/v2/{tenant_id}/flavors/{flavor_id}/os-flavor-swap,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavor-swap.json,Lists the flavor specs including swap value for the specified flavor. The swap value is the amount of swap disk space, in GBs, to allocate to a server.
+
+OpenStack,os-flavorextradata,RESOURCE,flavors,POST,/v2/{tenant_id}/flavors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavorextradata.json,Creates a flavor. Includes the rxtx\_factor, OS-FLV-EXT-DATA:ephemeral, and swap extended attributes.
+
+OpenStack,os-flavorextradata,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavorextradata.json,Lists available flavors. Includes the rxtx\_factor, OS-FLV-EXT-DATA:ephemeral, and swap extended attributes.
+
+OpenStack,os-flavorextradata,RESOURCE,detail,GET,/v2/{tenant_id}/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavorextradata.json,Lists available flavors. Includes the rxtx\_factor, OS-FLV-EXT-DATA:ephemeral, and swap extended attributes.
+
+OpenStack,os-flavorextradata,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors/{flavor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavorextradata.json,Gets details for a specified flavor. Includes the rxtx\_factor, OS-FLV-EXT-DATA:ephemeral, and swap extended attributes.
+
+OpenStack,os-flavormanage,RESOURCE,flavors,POST,/v2/{tenant_id}/flavors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavormanage.json,Creates a flavor.
+
+OpenStack,os-flavormanage,RESOURCE,flavors,DELETE,/v2/{tenant_id}/flavors/{flavor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavormanage.json,Deletes a flavor.
+
+OpenStack,os-flavors-v2.1,RESOURCE,flavors,GET,/v2.1/flavors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavors-v2.1.json,Lists flavors.
+
+OpenStack,os-flavors-v2.1,RESOURCE,flavors,GET,/v2.1/flavors/{flavor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavors-v2.1.json,Shows information for a specified flavor.
+
+OpenStack,os-flavors-v2.1,RESOURCE,flavors,GET,/v2.1/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavors-v2.1.json,Lists flavors with details.
+
+OpenStack,os-flavors-v2.1,RESOURCE,detail,GET,/v2.1/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavors-v2.1.json,Lists flavors with details.
+
+OpenStack,os-flavorspecs-v2.1,RESOURCE,flavors,PUT,/v2.1/flavors/{flavor_id}/flavor-extra-specs/{flavor_extra_spec_key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavorspecs-v2.1.json,Updates specified extra spec value by the key.
+
+OpenStack,os-flavorspecs-v2.1,RESOURCE,flavors,GET,/v2.1/flavors/{flavor_id}/flavor-extra-specs/{flavor_extra_spec_key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavorspecs-v2.1.json,Shows an extra spec for specified flavor by the key.
+
+OpenStack,os-flavorspecs-v2.1,RESOURCE,flavor-extra-specs,PUT,/v2.1/flavors/{flavor_id}/flavor-extra-specs/{flavor_extra_spec_key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavorspecs-v2.1.json,Updates specified extra spec value by the key.
+
+OpenStack,os-flavorspecs-v2.1,RESOURCE,flavor-extra-specs,GET,/v2.1/flavors/{flavor_id}/flavor-extra-specs/{flavor_extra_spec_key},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavorspecs-v2.1.json,Shows an extra spec for specified flavor by the key.
+
+OpenStack,os-flavorspecs-v2.1,RESOURCE,flavors,POST,/v2.1/flavors/{flavor_id}/flavor-extra-specs,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavorspecs-v2.1.json,Creates and updates flavor extra specs.
+
+OpenStack,os-flavorspecs-v2.1,RESOURCE,flavors,GET,/v2.1/flavors/{flavor_id}/flavor-extra-specs,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavorspecs-v2.1.json,Lists extra specs for specified flavor.
+
+OpenStack,os-flavorspecs-v2.1,RESOURCE,flavor-extra-specs,POST,/v2.1/flavors/{flavor_id}/flavor-extra-specs,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavorspecs-v2.1.json,Creates and updates flavor extra specs.
+
+OpenStack,os-flavorspecs-v2.1,RESOURCE,flavor-extra-specs,GET,/v2.1/flavors/{flavor_id}/flavor-extra-specs,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flavorspecs-v2.1.json,Lists extra specs for specified flavor.
+
+OpenStack,os-floating-ip-dns,RESOURCE,os-floating-ip-dns,PUT,/v2/{tenant_id}/os-floating-ip-dns/{domain},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ip-dns.json,Creates or updates a DNS domain.
+
+OpenStack,os-floating-ip-dns,RESOURCE,os-floating-ip-dns,DELETE,/v2/{tenant_id}/os-floating-ip-dns/{domain},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ip-dns.json,Deletes a DNS domain and all associated host entries.
+
+OpenStack,os-floating-ip-dns,RESOURCE,os-floating-ip-dns,PUT,/v2/{tenant_id}/os-floating-ip-dns/{domain}/entries/{name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ip-dns.json,Creates or updates a DNS entry.
+
+OpenStack,os-floating-ip-dns,RESOURCE,os-floating-ip-dns,DELETE,/v2/{tenant_id}/os-floating-ip-dns/{domain}/entries/{name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ip-dns.json,Deletes a specified DNS entry.
+
+OpenStack,os-floating-ip-dns,RESOURCE,os-floating-ip-dns,GET,/v2/{tenant_id}/os-floating-ip-dns/{domain}/entries/{name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ip-dns.json,Finds a unique DNS entry for a specified domain and name.
+
+OpenStack,os-floating-ip-dns,RESOURCE,entries,PUT,/v2/{tenant_id}/os-floating-ip-dns/{domain}/entries/{name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ip-dns.json,Creates or updates a DNS entry.
+
+OpenStack,os-floating-ip-dns,RESOURCE,entries,DELETE,/v2/{tenant_id}/os-floating-ip-dns/{domain}/entries/{name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ip-dns.json,Deletes a specified DNS entry.
+
+OpenStack,os-floating-ip-dns,RESOURCE,entries,GET,/v2/{tenant_id}/os-floating-ip-dns/{domain}/entries/{name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ip-dns.json,Finds a unique DNS entry for a specified domain and name.
+
+OpenStack,os-floating-ip-dns,RESOURCE,os-floating-ip-dns,GET,/v2/{tenant_id}/os-floating-ip-dns,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ip-dns.json,Lists registered DNS domains published by the DNS drivers.
+
+OpenStack,os-floating-ip-dns,RESOURCE,os-floating-ip-dns,GET,/v2/{tenant_id}/os-floating-ip-dns/{domain}/entries/{ip},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ip-dns.json,Lists DNS entries for a specified domain and IP.
+
+OpenStack,os-floating-ip-dns,RESOURCE,entries,GET,/v2/{tenant_id}/os-floating-ip-dns/{domain}/entries/{ip},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ip-dns.json,Lists DNS entries for a specified domain and IP.
+
+OpenStack,os-floating-ip-pools,RESOURCE,os-floating-ip-pools,GET,/v2/{tenant_id}/os-floating-ip-pools,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ip-pools.json,Lists floating IP pools.
+
+OpenStack,os-floating-ips-bulk,RESOURCE,os-floating-ips-bulk,POST,/v2/{tenant_id}/os-floating-ips-bulk,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ips-bulk.json,Bulk-creates floating IPs.
+
+OpenStack,os-floating-ips-bulk,RESOURCE,os-floating-ips-bulk,GET,/v2/{tenant_id}/os-floating-ips-bulk,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ips-bulk.json,Lists all floating IPs.
+
+OpenStack,os-floating-ips-bulk,RESOURCE,os-floating-ips-bulk,GET,/v2/{tenant_id}/os-floating-ips-bulk/{host_name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ips-bulk.json,Lists all floating IPs for a specified host.
+
+OpenStack,os-floating-ips-bulk,RESOURCE,os-floating-ips-bulk,POST,/v2/{tenant_id}/os-floating-ips-bulk/delete,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ips-bulk.json,Bulk-deletes floating IPs.
+
+OpenStack,os-floating-ips-bulk,RESOURCE,delete,POST,/v2/{tenant_id}/os-floating-ips-bulk/delete,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ips-bulk.json,Bulk-deletes floating IPs.
+
+OpenStack,os-floating-ips,RESOURCE,os-floating-ips,POST,/v2/{tenant_id}/os-floating-ips,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ips.json,Allocates a new floating IP address to a tenant or account.
+
+OpenStack,os-floating-ips,RESOURCE,os-floating-ips,GET,/v2/{tenant_id}/os-floating-ips,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ips.json,Lists floating IP addresses associated with the tenant or account.
+
+OpenStack,os-floating-ips,RESOURCE,servers,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ips.json,Removes a floating IP from an instance.
+
+OpenStack,os-floating-ips,ACTION,action,POST,/v2/{tenant_id}/servers/{server_id}/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ips.json,Removes a floating IP from an instance.
+
+OpenStack,os-floating-ips,RESOURCE,os-floating-ips,DELETE,/v2/{tenant_id}/os-floating-ips/{id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ips.json,Deallocates the floating IP address associated with floating\_IP\_address\_ID.
+
+OpenStack,os-floating-ips,RESOURCE,os-floating-ips,GET,/v2/{tenant_id}/os-floating-ips/{id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-floating-ips.json,Shows information for a specified floating IP address.
+
+OpenStack,os-flv-disabled,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flv-disabled.json,Lists available flavors. Includes the `OS-FLV-DISABLED:disabled` attribute.
+
+OpenStack,os-flv-disabled,RESOURCE,detail,GET,/v2/{tenant_id}/flavors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flv-disabled.json,Lists available flavors. Includes the `OS-FLV-DISABLED:disabled` attribute.
+
+OpenStack,os-flv-disabled,RESOURCE,flavors,GET,/v2/{tenant_id}/flavors/{flavor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-flv-disabled.json,Gets details for a specified flavor. Includes the `OS-FLV-DISABLED:disabled` attribute.
+
+OpenStack,os-hosts-v2.1,RESOURCE,os-hosts,GET,/v2.1/os-hosts/{host_name}/startup,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts-v2.1.json,Starts a host.
+
+OpenStack,os-hosts-v2.1,RESOURCE,startup,GET,/v2.1/os-hosts/{host_name}/startup,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts-v2.1.json,Starts a host.
+
+OpenStack,os-hosts-v2.1,RESOURCE,os-hosts,GET,/v2.1/os-hosts,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts-v2.1.json,Lists hosts.
+
+OpenStack,os-hosts-v2.1,RESOURCE,os-hosts,GET,/v2.1/os-hosts/{host_name}/shutdown,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts-v2.1.json,Shuts down a host.
+
+OpenStack,os-hosts-v2.1,RESOURCE,shutdown,GET,/v2.1/os-hosts/{host_name}/shutdown,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts-v2.1.json,Shuts down a host.
+
+OpenStack,os-hosts-v2.1,RESOURCE,os-hosts,GET,/v2.1/os-hosts/{host_name}/reboot,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts-v2.1.json,Reboots a host.
+
+OpenStack,os-hosts-v2.1,RESOURCE,reboot,GET,/v2.1/os-hosts/{host_name}/reboot,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts-v2.1.json,Reboots a host.
+
+OpenStack,os-hosts-v2.1,RESOURCE,os-hosts,PUT,/v2.1/os-hosts/{host_name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts-v2.1.json,Enables or puts a host in maintenance mode.
+
+OpenStack,os-hosts-v2.1,RESOURCE,os-hosts,GET,/v2.1/os-hosts/{host_name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts-v2.1.json,Shows details for a specified host.
+
+OpenStack,os-hosts,RESOURCE,os-hosts,PUT,/v2/{tenant_id}/os-hosts/{host_name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts.json,Enables a host or puts it in maintenance mode.
+
+OpenStack,os-hosts,RESOURCE,os-hosts,GET,/v2/{tenant_id}/os-hosts/{host_name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts.json,Shows information for a specified host.
+
+OpenStack,os-hosts,RESOURCE,os-hosts,GET,/v2/{tenant_id}/os-hosts/{host_name}/shutdown,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts.json,Shuts down a host.
+
+OpenStack,os-hosts,RESOURCE,shutdown,GET,/v2/{tenant_id}/os-hosts/{host_name}/shutdown,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts.json,Shuts down a host.
+
+OpenStack,os-hosts,RESOURCE,os-hosts,GET,/v2/{tenant_id}/os-hosts/{host_name}/reboot,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts.json,Reboots a host.
+
+OpenStack,os-hosts,RESOURCE,reboot,GET,/v2/{tenant_id}/os-hosts/{host_name}/reboot,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts.json,Reboots a host.
+
+OpenStack,os-hosts,RESOURCE,os-hosts,GET,/v2/{tenant_id}/os-hosts/{host_name}/startup,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts.json,Starts a host.
+
+OpenStack,os-hosts,RESOURCE,startup,GET,/v2/{tenant_id}/os-hosts/{host_name}/startup,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts.json,Starts a host.
+
+OpenStack,os-hosts,RESOURCE,os-hosts,GET,/v2/{tenant_id}/os-hosts,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hosts.json,Lists hosts.
+
+OpenStack,os-hypervisors-v2.1,RESOURCE,os-hypervisors,GET,/v2.1/os-hypervisors/{hypervisor_id}/uptime,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors-v2.1.json,Shows the uptime for a specified hypervisor.
+
+OpenStack,os-hypervisors-v2.1,RESOURCE,uptime,GET,/v2.1/os-hypervisors/{hypervisor_id}/uptime,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors-v2.1.json,Shows the uptime for a specified hypervisor.
+
+OpenStack,os-hypervisors-v2.1,RESOURCE,os-hypervisors,GET,/v2.1/os-hypervisors/{hypervisor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors-v2.1.json,Shows details for a specified hypervisor.
+
+OpenStack,os-hypervisors-v2.1,RESOURCE,os-hypervisors,GET,/v2.1/os-hypervisors/search,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors-v2.1.json,Searches hypervisors by specified host name.
+
+OpenStack,os-hypervisors-v2.1,RESOURCE,search,GET,/v2.1/os-hypervisors/search,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors-v2.1.json,Searches hypervisors by specified host name.
+
+OpenStack,os-hypervisors-v2.1,RESOURCE,os-hypervisors,GET,/v2.1/os-hypervisors/statistics,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors-v2.1.json,Shows statistics for all hypervisors.
+
+OpenStack,os-hypervisors-v2.1,RESOURCE,statistics,GET,/v2.1/os-hypervisors/statistics,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors-v2.1.json,Shows statistics for all hypervisors.
+
+OpenStack,os-hypervisors-v2.1,RESOURCE,os-hypervisors,GET,/v2.1/os-hypervisors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors-v2.1.json,Lists hypervisors.
+
+OpenStack,os-hypervisors-v2.1,RESOURCE,os-hypervisors,GET,/v2.1/os-hypervisors/{hypervisor_id}/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors-v2.1.json,Lists servers that run on a specified hypervisor.
+
+OpenStack,os-hypervisors-v2.1,RESOURCE,servers,GET,/v2.1/os-hypervisors/{hypervisor_id}/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors-v2.1.json,Lists servers that run on a specified hypervisor.
+
+OpenStack,os-hypervisors,RESOURCE,os-hypervisors,GET,/v2/{tenant_id}/os-hypervisors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors.json,Lists hypervisors information for each server obtained through the hypervisor-specific API, such as libvirt or XenAPI.
+
+OpenStack,os-hypervisors,RESOURCE,os-hypervisors,GET,/v2/{tenant_id}/os-hypervisors/statistics,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors.json,Shows hypervisor statistics over all compute nodes.
+
+OpenStack,os-hypervisors,RESOURCE,statistics,GET,/v2/{tenant_id}/os-hypervisors/statistics,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors.json,Shows hypervisor statistics over all compute nodes.
+
+OpenStack,os-hypervisors,RESOURCE,os-hypervisors,GET,/v2/{tenant_id}/os-hypervisors/{hypervisor_hostname},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors.json,Shows the up time for a specified hypervisor.
+
+OpenStack,os-hypervisors,RESOURCE,os-hypervisors,GET,/v2/{tenant_id}/os-hypervisors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors.json,Shows information for a specified hypervisor. Typically configured as an admin-only extension by using `policy.json` settings.
+
+OpenStack,os-hypervisors,RESOURCE,detail,GET,/v2/{tenant_id}/os-hypervisors/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors.json,Shows information for a specified hypervisor. Typically configured as an admin-only extension by using `policy.json` settings.
+
+OpenStack,os-hypervisors,RESOURCE,os-hypervisors,GET,/v2/{tenant_id}/os-hypervisors/{hypervisor_hostname}/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors.json,Lists instances that belong to specific hypervisors.
+
+OpenStack,os-hypervisors,RESOURCE,servers,GET,/v2/{tenant_id}/os-hypervisors/{hypervisor_hostname}/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-hypervisors.json,Lists instances that belong to specific hypervisors.
+
+OpenStack,os-image-1.0,RESOURCE,shared-images,GET,/v1/shared-images/{owner},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Lists the VM images shared with a specified owner. The owner ID is the tenant ID.
+
+OpenStack,os-image-1.0,RESOURCE,images,PUT,/v1/images/{image_id}/members/{owner_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Adds a member to an image.
+
+OpenStack,os-image-1.0,RESOURCE,images,DELETE,/v1/images/{image_id}/members/{owner_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Removes a member from an image.
+
+OpenStack,os-image-1.0,RESOURCE,members,PUT,/v1/images/{image_id}/members/{owner_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Adds a member to an image.
+
+OpenStack,os-image-1.0,RESOURCE,members,DELETE,/v1/images/{image_id}/members/{owner_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Removes a member from an image.
+
+OpenStack,os-image-1.0,RESOURCE,images,PUT,/v1/images/{image_id}/members,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Replaces a membership list for an image.
+
+OpenStack,os-image-1.0,RESOURCE,members,PUT,/v1/images/{image_id}/members,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Replaces a membership list for an image.
+
+OpenStack,os-image-1.0,RESOURCE,images,POST,/v1/images,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Registers a virtual machine (VM) image.
+
+OpenStack,os-image-1.0,RESOURCE,images,GET,/v1/images,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Lists public VM images.
+
+OpenStack,os-image-1.0,RESOURCE,images,PUT,/v1/images/{image_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Updates an image, uploads an image file, or updates metadata for an image.
+
+OpenStack,os-image-1.0,RESOURCE,images,DELETE,/v1/images/{image_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Deletes the specified image.
+
+OpenStack,os-image-1.0,RESOURCE,images,GET,/v1/images/{image_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Shows the image details as headers and the image binary in the body of the response.
+
+OpenStack,os-image-1.0,RESOURCE,images,GET,/v1/images/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Lists details for available images.
+
+OpenStack,os-image-1.0,RESOURCE,detail,GET,/v1/images/detail,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-1.0.json,Lists details for available images.
+
+OpenStack,os-image-schemas-v2,RESOURCE,schemas,GET,/v2/schemas/members,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-schemas-v2.json,Gets a json-schema document that represents an image members entity. (Since Images v2.1.)
+
+OpenStack,os-image-schemas-v2,RESOURCE,members,GET,/v2/schemas/members,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-schemas-v2.json,Gets a json-schema document that represents an image members entity. (Since Images v2.1.)
+
+OpenStack,os-image-schemas-v2,RESOURCE,schemas,GET,/v2/schemas/images,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-schemas-v2.json,Gets a json-schema document that represents an images entity. (Since Images v2.0.)
+
+OpenStack,os-image-schemas-v2,RESOURCE,images,GET,/v2/schemas/images,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-schemas-v2.json,Gets a json-schema document that represents an images entity. (Since Images v2.0.)
+
+OpenStack,os-image-schemas-v2,RESOURCE,schemas,GET,/v2/schemas/member,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-schemas-v2.json,Gets a json-schema document that represents an image member entity. (Since Images v2.1.)
+
+OpenStack,os-image-schemas-v2,RESOURCE,member,GET,/v2/schemas/member,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-schemas-v2.json,Gets a json-schema document that represents an image member entity. (Since Images v2.1.)
+
+OpenStack,os-image-schemas-v2,RESOURCE,schemas,GET,/v2/schemas/image,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-schemas-v2.json,Gets a json-schema document that represents an image entity. (Since Images v2.0.)
+
+OpenStack,os-image-schemas-v2,RESOURCE,image,GET,/v2/schemas/image,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-schemas-v2.json,Gets a json-schema document that represents an image entity. (Since Images v2.0.)
+
+OpenStack,os-image-v2,RESOURCE,images,PUT,/v2/images/{image_id}/file,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Uploads binary image data. (Since Image API v2.0.)
+
+OpenStack,os-image-v2,RESOURCE,images,GET,/v2/images/{image_id}/file,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Downloads binary image data. (Since Image API v2.0.)
+
+OpenStack,os-image-v2,RESOURCE,file,PUT,/v2/images/{image_id}/file,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Uploads binary image data. (Since Image API v2.0.)
+
+OpenStack,os-image-v2,RESOURCE,file,GET,/v2/images/{image_id}/file,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Downloads binary image data. (Since Image API v2.0.)
+
+OpenStack,os-image-v2,RESOURCE,images,DELETE,/v2/images/{image_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Deletes a specified image. (Since Image API v2.0.)
+
+OpenStack,os-image-v2,RESOURCE,images,PATCH,/v2/images/{image_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Updates a specified image. (Since Image API v2.0.)
+
+OpenStack,os-image-v2,RESOURCE,images,GET,/v2/images/{image_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Gets details for a specified image. (Since Image API v2.0.)
+
+OpenStack,os-image-v2,RESOURCE,images,POST,/v2/images/{image_id}/members,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Adds a specified tenant ID as an image member. (Since Image API v2.1.)
+
+OpenStack,os-image-v2,RESOURCE,images,GET,/v2/images/{image_id}/members,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Lists the tenants with whom this image has been shared. (Since Image API v2.1.)
+
+OpenStack,os-image-v2,RESOURCE,members,POST,/v2/images/{image_id}/members,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Adds a specified tenant ID as an image member. (Since Image API v2.1.)
+
+OpenStack,os-image-v2,RESOURCE,members,GET,/v2/images/{image_id}/members,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Lists the tenants with whom this image has been shared. (Since Image API v2.1.)
+
+OpenStack,os-image-v2,RESOURCE,images,PUT,/v2/images/{image_id}/members/{member_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Sets the specified status for the specified member of the specified image. (Since Image API v2.1.)
+
+OpenStack,os-image-v2,RESOURCE,images,DELETE,/v2/images/{image_id}/members/{member_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Deletes a specified tenant ID from the member list of the specified image. (Since Image API v2.1.)
+
+OpenStack,os-image-v2,RESOURCE,images,GET,/v2/images/{image_id}/members/{member_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Shows image member details.
+
+OpenStack,os-image-v2,RESOURCE,members,PUT,/v2/images/{image_id}/members/{member_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Sets the specified status for the specified member of the specified image. (Since Image API v2.1.)
+
+OpenStack,os-image-v2,RESOURCE,members,DELETE,/v2/images/{image_id}/members/{member_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Deletes a specified tenant ID from the member list of the specified image. (Since Image API v2.1.)
+
+OpenStack,os-image-v2,RESOURCE,members,GET,/v2/images/{image_id}/members/{member_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Shows image member details.
+
+OpenStack,os-image-v2,RESOURCE,images,PUT,/v2/images/{image_id}/tags/{tag},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Adds a specified tag to a specified image. (Since Image API v2.0.)
+
+OpenStack,os-image-v2,RESOURCE,images,DELETE,/v2/images/{image_id}/tags/{tag},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Deletes a specified tag from a specified image. (Since Image API v2.0.)
+
+OpenStack,os-image-v2,RESOURCE,tags,PUT,/v2/images/{image_id}/tags/{tag},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Adds a specified tag to a specified image. (Since Image API v2.0.)
+
+OpenStack,os-image-v2,RESOURCE,tags,DELETE,/v2/images/{image_id}/tags/{tag},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Deletes a specified tag from a specified image. (Since Image API v2.0.)
+
+OpenStack,os-image-v2,RESOURCE,images,POST,/v2/images,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Creates a virtual machine (VM) image. (Since Image API v2.0.)
+
+OpenStack,os-image-v2,RESOURCE,images,GET,/v2/images,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-image-v2.json,Lists public virtual machine (VM) images. (Since Image API v2.0.)
+
+OpenStack,os-instance-actions-v2.1,RESOURCE,servers,GET,/v2.1/servers/{server_id}/os-instance-actions,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-instance-actions-v2.1.json,Lists actions for a specified instance.
+
+OpenStack,os-instance-actions-v2.1,RESOURCE,os-instance-actions,GET,/v2.1/servers/{server_id}/os-instance-actions,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-instance-actions-v2.1.json,Lists actions for a specified instance.
+
+OpenStack,os-instance-actions-v2.1,RESOURCE,servers,GET,/v2.1/servers/{server_id}/os-instance-actions/{request_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-instance-actions-v2.1.json,Shows information about a specified instance action.
+
+OpenStack,os-instance-actions-v2.1,RESOURCE,os-instance-actions,GET,/v2.1/servers/{server_id}/os-instance-actions/{request_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-instance-actions-v2.1.json,Shows information about a specified instance action.
+
+OpenStack,os-instance-actions,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id}/os-instance-actions/{action_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-instance-actions.json,Gets details for a specified action for a specified server instance. Deployers set permissions for this request in the `policy.json` file. By default, only administrators can get details for an action.
+
+OpenStack,os-instance-actions,RESOURCE,os-instance-actions,GET,/v2/{tenant_id}/servers/{server_id}/os-instance-actions/{action_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-instance-actions.json,Gets details for a specified action for a specified server instance. Deployers set permissions for this request in the `policy.json` file. By default, only administrators can get details for an action.
+
+OpenStack,os-instance-actions,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id}/os-instance-actions,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-instance-actions.json,Lists history of successful actions for a specified server. Deployers set permissions for this request in the `policy.json` file. By default, all users can list actions.
+
+OpenStack,os-instance-actions,RESOURCE,os-instance-actions,GET,/v2/{tenant_id}/servers/{server_id}/os-instance-actions,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-instance-actions.json,Lists history of successful actions for a specified server. Deployers set permissions for this request in the `policy.json` file. By default, all users can list actions.
+
+OpenStack,os-instance-usage-audit-log-v2.1,RESOURCE,os-instance-usage-audit-log,GET,/v2.1/os-instance-usage-audit-log,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-instance-usage-audit-log-v2.1.json,Lists usage audits for a specified instance.
+
+OpenStack,os-instance-usage-audit-log-v2.1,RESOURCE,os-instance-usage-audit-log,GET,/v2.1/os-instance-usage-audit-log/{datetime},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-instance-usage-audit-log-v2.1.json,Lists instance usage audits that occurred before a specified time.
+
+OpenStack,os-interface,RESOURCE,servers,DELETE,/v2/{tenant_id}/servers/{server_id}/os-interface/{attachment_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-interface.json,Detaches a specified port interface.
+
+OpenStack,os-interface,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id}/os-interface/{attachment_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-interface.json,Shows information about a specified port interface.
+
+OpenStack,os-interface,RESOURCE,os-interface,DELETE,/v2/{tenant_id}/servers/{server_id}/os-interface/{attachment_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-interface.json,Detaches a specified port interface.
+
+OpenStack,os-interface,RESOURCE,os-interface,GET,/v2/{tenant_id}/servers/{server_id}/os-interface/{attachment_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-interface.json,Shows information about a specified port interface.
+
+OpenStack,os-interface,RESOURCE,servers,POST,/v2/{tenant_id}/servers/{server_id}/os-interface,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-interface.json,Creates and uses a port interface to attach the port to a server instance.
+
+OpenStack,os-interface,RESOURCE,servers,GET,/v2/{tenant_id}/servers/{server_id}/os-interface,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-interface.json,Lists port interfaces.
+
+OpenStack,os-interface,RESOURCE,os-interface,POST,/v2/{tenant_id}/servers/{server_id}/os-interface,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-interface.json,Creates and uses a port interface to attach the port to a server instance.
+
+OpenStack,os-interface,RESOURCE,os-interface,GET,/v2/{tenant_id}/servers/{server_id}/os-interface,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-interface.json,Lists port interfaces.
+
+OpenStack,os-keypairs,RESOURCE,os-keypairs,GET,/v2/{tenant_id}/os-keypairs/{keypair_name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-keypairs.json,Shows a keypair associated with the account.
+
+OpenStack,os-keypairs,RESOURCE,os-keypairs,DELETE,/v2/{tenant_id}/os-keypairs/{keypair_name},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-keypairs.json,Deletes a keypair.
+
+OpenStack,os-keypairs,RESOURCE,os-keypairs,POST,/v2/{tenant_id}/os-keypairs,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-keypairs.json,Generates or imports a keypair.
+
+OpenStack,os-keypairs,RESOURCE,os-keypairs,GET,/v2/{tenant_id}/os-keypairs,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-keypairs.json,Lists keypairs that are associated with the account.
+
+OpenStack,OS-KSADM-admin,RESOURCE,tenants,GET,/v2.0/tenants/{tenantId}/users,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Lists all users for a tenant.
+
+OpenStack,OS-KSADM-admin,RESOURCE,users,GET,/v2.0/tenants/{tenantId}/users,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Lists all users for a tenant.
+
+OpenStack,OS-KSADM-admin,RESOURCE,users,GET,/v2.0/users/{userId}/roles,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Lists global roles for a specified user.
+
+OpenStack,OS-KSADM-admin,RESOURCE,roles,GET,/v2.0/users/{userId}/roles,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Lists global roles for a specified user.
+
+OpenStack,OS-KSADM-admin,RESOURCE,tenants,POST,/v2.0/tenants/{tenantId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Updates a tenant.
+
+OpenStack,OS-KSADM-admin,RESOURCE,tenants,DELETE,/v2.0/tenants/{tenantId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Deletes a tenant.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,DELETE,/v2.0/OS-KSADM/roles/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Deletes a role.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,GET,/v2.0/OS-KSADM/roles/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Gets information for a specified role.
+
+OpenStack,OS-KSADM-admin,RESOURCE,roles,DELETE,/v2.0/OS-KSADM/roles/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Deletes a role.
+
+OpenStack,OS-KSADM-admin,RESOURCE,roles,GET,/v2.0/OS-KSADM/roles/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Gets information for a specified role.
+
+OpenStack,OS-KSADM-admin,RESOURCE,tenants,PUT,/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Adds a specified role to a user for a tenant.
+
+OpenStack,OS-KSADM-admin,RESOURCE,tenants,DELETE,/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Deletes a specified role from a user on a tenant.
+
+OpenStack,OS-KSADM-admin,RESOURCE,users,PUT,/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Adds a specified role to a user for a tenant.
+
+OpenStack,OS-KSADM-admin,RESOURCE,users,DELETE,/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Deletes a specified role from a user on a tenant.
+
+OpenStack,OS-KSADM-admin,RESOURCE,roles,PUT,/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Adds a specified role to a user for a tenant.
+
+OpenStack,OS-KSADM-admin,RESOURCE,roles,DELETE,/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Deletes a specified role from a user on a tenant.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,PUT,/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Adds a specified role to a user for a tenant.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,DELETE,/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Deletes a specified role from a user on a tenant.
+
+OpenStack,OS-KSADM-admin,RESOURCE,users,POST,/v2.0/users,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Adds a user.
+
+OpenStack,OS-KSADM-admin,RESOURCE,users,GET,/v2.0/users,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Lists users.
+
+OpenStack,OS-KSADM-admin,RESOURCE,users,PUT,/v2.0/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Adds a specific global role to a user.
+
+OpenStack,OS-KSADM-admin,RESOURCE,users,DELETE,/v2.0/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Deletes a specific global role from a user.
+
+OpenStack,OS-KSADM-admin,RESOURCE,roles,PUT,/v2.0/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Adds a specific global role to a user.
+
+OpenStack,OS-KSADM-admin,RESOURCE,roles,DELETE,/v2.0/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Deletes a specific global role from a user.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,PUT,/v2.0/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Adds a specific global role to a user.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,DELETE,/v2.0/users/{userId}/roles/OS-KSADM/{roleId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Deletes a specific global role from a user.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,POST,/v2.0/OS-KSADM/services,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Adds a service.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,GET,/v2.0/OS-KSADM/services,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Lists services.
+
+OpenStack,OS-KSADM-admin,RESOURCE,services,POST,/v2.0/OS-KSADM/services,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Adds a service.
+
+OpenStack,OS-KSADM-admin,RESOURCE,services,GET,/v2.0/OS-KSADM/services,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Lists services.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,GET,/v2.0/OS-KSADM/services/,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Gets a service by name.
+
+OpenStack,OS-KSADM-admin,RESOURCE,services,GET,/v2.0/OS-KSADM/services/,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Gets a service by name.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,POST,/v2.0/OS-KSADM/roles,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Adds a role.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,GET,/v2.0/OS-KSADM/roles,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Gets a role by name.
+
+OpenStack,OS-KSADM-admin,RESOURCE,roles,POST,/v2.0/OS-KSADM/roles,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Adds a role.
+
+OpenStack,OS-KSADM-admin,RESOURCE,roles,GET,/v2.0/OS-KSADM/roles,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Gets a role by name.
+
+OpenStack,OS-KSADM-admin,RESOURCE,tenants,POST,/v2.0/tenants,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Creates a tenant.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,GET,/v2.0/OS-KSADM/roles/,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Lists roles.
+
+OpenStack,OS-KSADM-admin,RESOURCE,roles,GET,/v2.0/OS-KSADM/roles/,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Lists roles.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,DELETE,/v2.0/OS-KSADM/services/{serviceId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Deletes a service.
+
+OpenStack,OS-KSADM-admin,RESOURCE,OS-KSADM,GET,/v2.0/OS-KSADM/services/{serviceId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Gets a service.
+
+OpenStack,OS-KSADM-admin,RESOURCE,services,DELETE,/v2.0/OS-KSADM/services/{serviceId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Deletes a service.
+
+OpenStack,OS-KSADM-admin,RESOURCE,services,GET,/v2.0/OS-KSADM/services/{serviceId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Gets a service.
+
+OpenStack,OS-KSADM-admin,RESOURCE,users,PUT,/v2.0/users/{userId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Updates a user.
+
+OpenStack,OS-KSADM-admin,RESOURCE,users,DELETE,/v2.0/users/{userId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSADM-admin.json,Deletes a user.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,OS-KSCATALOG,PUT,/v2.0/OS-KSCATALOG/endpointTemplates/{endpointTemplateId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Updates endpoint template.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,OS-KSCATALOG,DELETE,/v2.0/OS-KSCATALOG/endpointTemplates/{endpointTemplateId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Deletes an endpoint template.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,OS-KSCATALOG,GET,/v2.0/OS-KSCATALOG/endpointTemplates/{endpointTemplateId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Gets endpoint templates.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,endpointTemplates,PUT,/v2.0/OS-KSCATALOG/endpointTemplates/{endpointTemplateId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Updates endpoint template.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,endpointTemplates,DELETE,/v2.0/OS-KSCATALOG/endpointTemplates/{endpointTemplateId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Deletes an endpoint template.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,endpointTemplates,GET,/v2.0/OS-KSCATALOG/endpointTemplates/{endpointTemplateId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Gets endpoint templates.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,tenants,DELETE,/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints/{endpointId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Deletes an endpoint from a tenant.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,tenants,GET,/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints/{endpointId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Gets endpoint for a tenant.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,OS-KSCATALOG,DELETE,/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints/{endpointId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Deletes an endpoint from a tenant.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,OS-KSCATALOG,GET,/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints/{endpointId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Gets endpoint for a tenant.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,endpoints,DELETE,/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints/{endpointId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Deletes an endpoint from a tenant.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,endpoints,GET,/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints/{endpointId},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Gets endpoint for a tenant.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,tenants,POST,/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Adds endpoint to a tenant.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,tenants,GET,/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Lists endpoints for a tenant.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,OS-KSCATALOG,POST,/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Adds endpoint to a tenant.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,OS-KSCATALOG,GET,/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Lists endpoints for a tenant.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,endpoints,POST,/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Adds endpoint to a tenant.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,endpoints,GET,/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Lists endpoints for a tenant.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,OS-KSCATALOG,POST,/v2.0/OS-KSCATALOG/endpointTemplates,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Adds endpoint template.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,OS-KSCATALOG,GET,/v2.0/OS-KSCATALOG/endpointTemplates,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Lists endpoint templates.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,endpointTemplates,POST,/v2.0/OS-KSCATALOG/endpointTemplates,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Adds endpoint template.
+
+OpenStack,OS-KSCATALOG-admin,RESOURCE,endpointTemplates,GET,/v2.0/OS-KSCATALOG/endpointTemplates,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSCATALOG-admin.json,Lists endpoint templates.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,users,GET,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials/{type},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Lists credentials by type.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,OS-KSADM,GET,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials/{type},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Lists credentials by type.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,credentials,GET,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials/{type},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Lists credentials by type.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,OS-KSEC2:ec2Credentials,GET,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials/{type},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Lists credentials by type.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,users,POST,/v2.0/users/{userId}/OS-KSADM/credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Adds a credential to a user.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,users,GET,/v2.0/users/{userId}/OS-KSADM/credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Lists credentials.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,OS-KSADM,POST,/v2.0/users/{userId}/OS-KSADM/credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Adds a credential to a user.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,OS-KSADM,GET,/v2.0/users/{userId}/OS-KSADM/credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Lists credentials.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,credentials,POST,/v2.0/users/{userId}/OS-KSADM/credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Adds a credential to a user.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,credentials,GET,/v2.0/users/{userId}/OS-KSADM/credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Lists credentials.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,users,POST,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Updates credentials for a specified user.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,users,DELETE,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Deletes user credentials.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,users,GET,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Gets user credentials.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,OS-KSADM,POST,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Updates credentials for a specified user.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,OS-KSADM,DELETE,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Deletes user credentials.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,OS-KSADM,GET,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Gets user credentials.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,credentials,POST,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Updates credentials for a specified user.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,credentials,DELETE,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Deletes user credentials.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,credentials,GET,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Gets user credentials.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,OS-KSEC2:ec2Credentials,POST,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Updates credentials for a specified user.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,OS-KSEC2:ec2Credentials,DELETE,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Deletes user credentials.
+
+OpenStack,OS-KSEC2-admin,RESOURCE,OS-KSEC2:ec2Credentials,GET,/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSEC2-admin.json,Gets user credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,users,POST,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Updates credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,users,DELETE,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Deletes user credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,users,GET,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Gets user credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,OS-OS-KSS3,POST,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Updates credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,OS-OS-KSS3,DELETE,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Deletes user credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,OS-OS-KSS3,GET,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Gets user credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,credentials,POST,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Updates credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,credentials,DELETE,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Deletes user credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,credentials,GET,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Gets user credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,s3credentials,POST,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Updates credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,s3credentials,DELETE,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Deletes user credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,s3credentials,GET,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Gets user credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,users,POST,/v2.0/users/{userId}/OS-OS-KSS3/credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Adds a credential to a user.
+
+OpenStack,OS-KSS3-admin,RESOURCE,users,GET,/v2.0/users/{userId}/OS-OS-KSS3/credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Lists credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,OS-OS-KSS3,POST,/v2.0/users/{userId}/OS-OS-KSS3/credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Adds a credential to a user.
+
+OpenStack,OS-KSS3-admin,RESOURCE,OS-OS-KSS3,GET,/v2.0/users/{userId}/OS-OS-KSS3/credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Lists credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,credentials,POST,/v2.0/users/{userId}/OS-OS-KSS3/credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Adds a credential to a user.
+
+OpenStack,OS-KSS3-admin,RESOURCE,credentials,GET,/v2.0/users/{userId}/OS-OS-KSS3/credentials,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Lists credentials.
+
+OpenStack,OS-KSS3-admin,RESOURCE,users,GET,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials/{type},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Lists credentials by type.
+
+OpenStack,OS-KSS3-admin,RESOURCE,OS-OS-KSS3,GET,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials/{type},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Lists credentials by type.
+
+OpenStack,OS-KSS3-admin,RESOURCE,credentials,GET,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials/{type},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Lists credentials by type.
+
+OpenStack,OS-KSS3-admin,RESOURCE,s3credentials,GET,/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials/{type},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSS3-admin.json,Lists credentials by type.
+
+OpenStack,OS-KSVALIDATE-admin,RESOURCE,OS-KSVALIDATE,HEAD,/v2.0/OS-KSVALIDATE/token/validate,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSVALIDATE-admin.json,Checks that a token is valid and that it belongs to a specified tenant and service IDs, for performance.
+
+OpenStack,OS-KSVALIDATE-admin,RESOURCE,OS-KSVALIDATE,GET,/v2.0/OS-KSVALIDATE/token/validate,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSVALIDATE-admin.json,Checks that a token is valid and that it belongs to a specified tenant and service IDs. Returns the permissions for a particular client.
+
+OpenStack,OS-KSVALIDATE-admin,RESOURCE,token,HEAD,/v2.0/OS-KSVALIDATE/token/validate,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSVALIDATE-admin.json,Checks that a token is valid and that it belongs to a specified tenant and service IDs, for performance.
+
+OpenStack,OS-KSVALIDATE-admin,RESOURCE,token,GET,/v2.0/OS-KSVALIDATE/token/validate,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSVALIDATE-admin.json,Checks that a token is valid and that it belongs to a specified tenant and service IDs. Returns the permissions for a particular client.
+
+OpenStack,OS-KSVALIDATE-admin,RESOURCE,validate,HEAD,/v2.0/OS-KSVALIDATE/token/validate,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSVALIDATE-admin.json,Checks that a token is valid and that it belongs to a specified tenant and service IDs, for performance.
+
+OpenStack,OS-KSVALIDATE-admin,RESOURCE,validate,GET,/v2.0/OS-KSVALIDATE/token/validate,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSVALIDATE-admin.json,Checks that a token is valid and that it belongs to a specified tenant and service IDs. Returns the permissions for a particular client.
+
+OpenStack,OS-KSVALIDATE-admin,RESOURCE,OS-KSVALIDATE,GET,/v2.0/OS-KSVALIDATE/token/endpoints,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSVALIDATE-admin.json,Lists endpoints associated with a specific token.
+
+OpenStack,OS-KSVALIDATE-admin,RESOURCE,token,GET,/v2.0/OS-KSVALIDATE/token/endpoints,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSVALIDATE-admin.json,Lists endpoints associated with a specific token.
+
+OpenStack,OS-KSVALIDATE-admin,RESOURCE,endpoints,GET,/v2.0/OS-KSVALIDATE/token/endpoints,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/OS-KSVALIDATE-admin.json,Lists endpoints associated with a specific token.
+
+OpenStack,os-layer3-ext,RESOURCE,routers,PUT,/v2.0/routers/{router_id}/add_router_interface,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Adds an internal interface to a logical router.
+
+OpenStack,os-layer3-ext,RESOURCE,add_router_interface,PUT,/v2.0/routers/{router_id}/add_router_interface,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Adds an internal interface to a logical router.
+
+OpenStack,os-layer3-ext,RESOURCE,routers,POST,/v2.0/routers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Creates a logical router.
+
+OpenStack,os-layer3-ext,RESOURCE,routers,GET,/v2.0/routers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Lists logical routers that are accessible to the tenant who submits the request.
+
+OpenStack,os-layer3-ext,RESOURCE,floatingips,POST,/v2.0/floatingips,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Creates a floating IP, and, if you specify port information, associates the floating IP with an internal port.
+
+OpenStack,os-layer3-ext,RESOURCE,floatingips,GET,/v2.0/floatingips,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Lists floating IPs that are accessible to the tenant who submits the request.
+
+OpenStack,os-layer3-ext,RESOURCE,routers,PUT,/v2.0/routers/{router_id}/remove_router_interface,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Removes an internal interface from a logical router.
+
+OpenStack,os-layer3-ext,RESOURCE,remove_router_interface,PUT,/v2.0/routers/{router_id}/remove_router_interface,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Removes an internal interface from a logical router.
+
+OpenStack,os-layer3-ext,RESOURCE,floatingips,PUT,/v2.0/floatingips/{floatingip_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Updates a floating IP and its association with an internal port.
+
+OpenStack,os-layer3-ext,RESOURCE,floatingips,DELETE,/v2.0/floatingips/{floatingip_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Deletes a floating IP and, if present, its associated port.
+
+OpenStack,os-layer3-ext,RESOURCE,floatingips,GET,/v2.0/floatingips/{floatingip_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Shows details for a specified floating IP.
+
+OpenStack,os-layer3-ext,RESOURCE,routers,PUT,/v2.0/routers/{router_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Updates a logical router.
+
+OpenStack,os-layer3-ext,RESOURCE,routers,DELETE,/v2.0/routers/{router_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Deletes a logical router and, if present, its external gateway interface.
+
+OpenStack,os-layer3-ext,RESOURCE,routers,GET,/v2.0/routers/{router_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-layer3-ext.json,Shows details for a specified router.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,POST,/v1.0/lb/pools,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Creates a load balancer pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,GET,/v1.0/lb/pools,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Lists pools.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,pools,POST,/v1.0/lb/pools,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Creates a load balancer pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,pools,GET,/v1.0/lb/pools,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Lists pools.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,PUT,/v1.0/lb/vips/{vip_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Updates a specified load balancer VIP.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,DELETE,/v1.0/lb/vips/{vip_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Deletes a specified load balancer VIP.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,GET,/v1.0/lb/vips/{vip_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Shows details for a specified VIP.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,vips,PUT,/v1.0/lb/vips/{vip_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Updates a specified load balancer VIP.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,vips,DELETE,/v1.0/lb/vips/{vip_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Deletes a specified load balancer VIP.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,vips,GET,/v1.0/lb/vips/{vip_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Shows details for a specified VIP.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,POST,/v1.0/lb/members,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Creates a load balancer member.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,GET,/v1.0/lb/members,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Lists members.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,members,POST,/v1.0/lb/members,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Creates a load balancer member.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,members,GET,/v1.0/lb/members,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Lists members.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,PUT,/v1.0/lb/pools/{pool_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Updates a specified load balancer pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,DELETE,/v1.0/lb/pools/{pool_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Deletes a specified load balancer pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,GET,/v1.0/lb/pools/{pool_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Shows details for a specified pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,pools,PUT,/v1.0/lb/pools/{pool_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Updates a specified load balancer pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,pools,DELETE,/v1.0/lb/pools/{pool_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Deletes a specified load balancer pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,pools,GET,/v1.0/lb/pools/{pool_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Shows details for a specified pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,POST,/v1.0/lb/vips,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Creates a load balancer VIP.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,GET,/v1.0/lb/vips,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Lists VIPs.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,vips,POST,/v1.0/lb/vips,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Creates a load balancer VIP.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,vips,GET,/v1.0/lb/vips,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Lists VIPs.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,PUT,/v1.0/lb/healthmonitors/{health_monitor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Updates a specified load balancer health monitor.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,DELETE,/v1.0/lb/healthmonitors/{health_monitor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Deletes a specified load balancer health monitor.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,GET,/v1.0/lb/healthmonitors/{health_monitor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Shows details for a specified health monitor.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,healthmonitors,PUT,/v1.0/lb/healthmonitors/{health_monitor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Updates a specified load balancer health monitor.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,healthmonitors,DELETE,/v1.0/lb/healthmonitors/{health_monitor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Deletes a specified load balancer health monitor.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,healthmonitors,GET,/v1.0/lb/healthmonitors/{health_monitor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Shows details for a specified health monitor.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,POST,/v1.0/lb/healthmonitors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Creates a load balancer health monitor.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,GET,/v1.0/lb/healthmonitors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Lists health monitors.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,healthmonitors,POST,/v1.0/lb/healthmonitors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Creates a load balancer health monitor.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,healthmonitors,GET,/v1.0/lb/healthmonitors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Lists health monitors.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,POST,/v1.0/lb/pools/{pool_id}/health_monitors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Associates a health monitor with a specified pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,pools,POST,/v1.0/lb/pools/{pool_id}/health_monitors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Associates a health monitor with a specified pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,health_monitors,POST,/v1.0/lb/pools/{pool_id}/health_monitors,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Associates a health monitor with a specified pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,DELETE,/v1.0/lb/pools/{pool_id}/health_monitors/{health_monitor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Disassociates a specified health monitor from a pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,pools,DELETE,/v1.0/lb/pools/{pool_id}/health_monitors/{health_monitor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Disassociates a specified health monitor from a pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,health_monitors,DELETE,/v1.0/lb/pools/{pool_id}/health_monitors/{health_monitor_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Disassociates a specified health monitor from a pool.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,PUT,/v1.0/lb/members/{member_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Updates a specified load balancer member.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,DELETE,/v1.0/lb/members/{member_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Deletes a specified load balancer member.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,lb,GET,/v1.0/lb/members/{member_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Shows details for a specified member.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,members,PUT,/v1.0/lb/members/{member_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Updates a specified load balancer member.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,members,DELETE,/v1.0/lb/members/{member_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Deletes a specified load balancer member.
+
+OpenStack,os-lbaasv1.0-ext,RESOURCE,members,GET,/v1.0/lb/members/{member_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-lbaasv1.0-ext.json,Shows details for a specified member.
+
+OpenStack,os-limits-v2.1,RESOURCE,limits,GET,/v2.1/limits,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-limits-v2.1.json,Show global and rate limit information.
+
+OpenStack,os-limits,RESOURCE,limits,GET,/v2/{tenant_id}/limits,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-limits.json,Shows absolute limits for a tenant.
+
+OpenStack,os-migrations-v2.1,RESOURCE,os-migrations,GET,/v2.1/os-migrations,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-migrations-v2.1.json,Lists in-progress migrations.
+
+OpenStack,os-migrations,RESOURCE,os-migrations,GET,/v2/{tenant_id}/os-migrations,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-migrations.json,Enables an administrative user to fetch in-progress migrations for a region or specified cell in a region.
+
+OpenStack,os-multi-server-create,RESOURCE,servers,POST,/v2/{tenant_id}/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-multi-server-create.json,Creates one or more servers with an optional reservation ID.
+
+OpenStack,os-multinic-v2.1,RESOURCE,servers,POST,/v2.1/servers,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-multinic-v2.1.json,Removes an IP from a specified instance.
+
+OpenStack,os-multinic-v2.1,RESOURCE,servers,POST,/v2.1/servers/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-multinic-v2.1.json,Adds an IP to a specified network on an instance.
+
+OpenStack,os-multinic-v2.1,ACTION,action,POST,/v2.1/servers/action,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-multinic-v2.1.json,Adds an IP to a specified network on an instance.
+
+OpenStack,os-networks-multi-provider-ext,RESOURCE,networks,GET,/v2.0/networks/{network_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-networks-multi-provider-ext.json,Shows details for a specified network with multiple segments.
+
+OpenStack,os-networks-multi-provider-ext,RESOURCE,networks,POST,/v2.0/networks,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-networks-multi-provider-ext.json,Creates a network with multiple segment mappings.
+
+OpenStack,os-networks-multi-provider-ext,RESOURCE,networks,GET,/v2.0/networks,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-networks-multi-provider-ext.json,Lists networks that are accessible to the tenant who submits the request. Networks with multiple segments include the `segments` list in the response.
+
+OpenStack,os-networks-provider-ext,RESOURCE,networks,PUT,/v2.0/networks/{network_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-networks-provider-ext.json,Updates a specified network.
+
+OpenStack,os-networks-provider-ext,RESOURCE,networks,DELETE,/v2.0/networks/{network_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-networks-provider-ext.json,Deletes a specified network.
+
+OpenStack,os-networks-provider-ext,RESOURCE,networks,GET,/v2.0/networks/{network_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-networks-provider-ext.json,Shows details for a specified network.
+
+OpenStack,os-networks-provider-ext,RESOURCE,networks,POST,/v2.0/networks,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-networks-provider-ext.json,Creates a network.
+
+OpenStack,os-networks-provider-ext,RESOURCE,networks,GET,/v2.0/networks,http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-networks-provider-ext.json,Lists networks that are accessible to the tenant who submits the request.
+
+OpenStack,os-networks,RESOURCE,networks,PUT,/v2.0/networks/{network_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-networks.json,Updates a specified network.
+
+OpenStack,os-networks,RESOURCE,networks,DELETE,/v2.0/networks/{network_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-networks.json,Deletes a specified network and its associated resources.
+
+OpenStack,os-networks,RESOURCE,networks,GET,/v2.0/networks/{network_id},http://rackerlabs.github.io/wadl2swagger/openstack/swagger/os-networks.json,Shows information for a specified network.
+
