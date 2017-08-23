@@ -1,0 +1,160 @@
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers,Returns a list of your servers.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,post,/servers,Adds a new server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/fixed_instance_sizes,Returns available flavours for fixed servers.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/fixed_instance_sizes/{fixed_instance_size_id},Returns information about one flavour,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id},Returns server's information.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,delete,/servers/{server_id},Removes a server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,put,/servers/{server_id},Modifies a server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id}/hardware,Returns information about the server's hardware.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,put,/servers/{server_id}/hardware,Modifies the server's hardware.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id}/hardware/hdds,Returns a list of the server's hard disks.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,post,/servers/{server_id}/hardware/hdds,Adds new hard disk(s) to the server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id}/hardware/hdds/{hdd_id},Returns information about a server's hard disk.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,delete,/servers/{server_id}/hardware/hdds/{hdd_id},Removes a server's hard disk.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,put,/servers/{server_id}/hardware/hdds/{hdd_id},Modifies the size of a server's hard disk.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id}/image,Returns information about a server's image.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,put,/servers/{server_id}/image,Reinstalls a new image into a server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id}/ips,Returns a list of the server's IPs.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,post,/servers/{server_id}/ips,Adds a new IP to the server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id}/ips/{ip_id},Returns information about a server's IP.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,delete,/servers/{server_id}/ips/{ip_id},Releases an IP and optionally removes it,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id}/ips/{ip_id}/firewall_policy,Lists firewall policies assigned to the IP,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,delete,/servers/{server_id}/ips/{ip_id}/firewall_policy,Removes firewall policy from the IP,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,put,/servers/{server_id}/ips/{ip_id}/firewall_policy,Adds a new firewall policy to the IP,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id}/ips/{ip_id}/load_balancers,Lists all load balancers assigned to the IP,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,post,/servers/{server_id}/ips/{ip_id}/load_balancers,Adds a new load balancer to the IP,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,delete,/servers/{server_id}/ips/{ip_id}/load_balancers/{load_balancer_id},Removes load balancer from the IP,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id}/status,Returns information about a server's status.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,put,/servers/{server_id}/status/action,Changes server status,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id}/dvd,Returns information about the DVD loaded into the virtual DVD unit of a server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,delete,/servers/{server_id}/dvd,Unloads a DVD from the virtual DVD unit of a server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,put,/servers/{server_id}/dvd,Loads a DVD into the virtual DVD unit of a server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id}/private_networks,Returns a list of the server's private networks.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,post,/servers/{server_id}/private_networks,Assigns a private network to the server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id}/private_networks/{private_network_id},Returns information about a server's private network.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,delete,/servers/{server_id}/private_networks/{private_network_id},Unassigns a private network from the server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,get,/servers/{server_id}/snapshots,Returns a list of the server's snapshots.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,post,/servers/{server_id}/snapshots,Creates a new snapshot of the server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,delete,/servers/{server_id}/snapshots/{snapshot_id},Removes a snapshot,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,put,/servers/{server_id}/snapshots/{snapshot_id},Restores a snapshot into the server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Servers,RESOURCE,servers,post,/servers/{server_id}/clone,Clones a server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Images,RESOURCE,images,get,/images,Returns a list of your images.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Images,RESOURCE,images,post,/images,Adds a new image.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Images,RESOURCE,images,get,/images/{image_id},Returns information about an image.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Images,RESOURCE,images,delete,/images/{image_id},Removes an image.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Images,RESOURCE,images,put,/images/{image_id},Modifies an image.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Shared Storages,RESOURCE,shared storages,get,/shared_storages,Returns a list of your shared storages.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Shared Storages,RESOURCE,shared storages,post,/shared_storages,Creates a new shared storage.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Shared Storages,RESOURCE,shared storages,get,/shared_storages/{shared_storage_id},Returns information about a shared storage.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Shared Storages,RESOURCE,shared storages,delete,/shared_storages/{shared_storage_id},Removes a shared storage.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Shared Storages,RESOURCE,shared storages,put,/shared_storages/{shared_storage_id},Modifies a shared storage.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Shared Storages,RESOURCE,shared storages,get,/shared_storages/{shared_storage_id}/servers,Returns a list of the servers attached to a shared storage.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Shared Storages,RESOURCE,shared storages,post,/shared_storages/{shared_storage_id}/servers,Attaches servers to a shared storage.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Shared Storages,RESOURCE,shared storages,get,/shared_storages/{shared_storage_id}/servers/{server_id},Returns information about a server attached to a shared storage.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Shared Storages,RESOURCE,shared storages,delete,/shared_storages/{shared_storage_id}/servers/{server_id},Unattaches a server from a shared storage.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Shared Storages,RESOURCE,shared storages,get,/shared_storages/access,Returns the credentials for accessing the shared storages.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Shared Storages,RESOURCE,shared storages,put,/shared_storages/access,Changes the password for accessing the shared storages.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Firewall Policies,RESOURCE,firewall policies,get,/firewall_policies,Returns a list of your firewall policies.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Firewall Policies,RESOURCE,firewall policies,post,/firewall_policies,Creates a new firewall policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Firewall Policies,RESOURCE,firewall policies,get,/firewall_policies/{firewall_id},Returns information about a firewall policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Firewall Policies,RESOURCE,firewall policies,delete,/firewall_policies/{firewall_id},Removes a firewall policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Firewall Policies,RESOURCE,firewall policies,put,/firewall_policies/{firewall_id},Modifies a firewall policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Firewall Policies,RESOURCE,firewall policies,get,/firewall_policies/{firewall_id}/server_ips,Returns a list of the servers/IPs attached to a firewall policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Firewall Policies,RESOURCE,firewall policies,post,/firewall_policies/{firewall_id}/server_ips,Assigns servers/IPs to a firewall policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Firewall Policies,RESOURCE,firewall policies,get,/firewall_policies/{firewall_id}/server_ips/{server_ip},Returns information about a server/IP assigned to a firewall policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Firewall Policies,RESOURCE,firewall policies,delete,/firewall_policies/{firewall_id}/server_ips/{server_ip},Unassigns a server/IP from a firewall policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Firewall Policies,RESOURCE,firewall policies,get,/firewall_policies/{firewall_id}/rules,Returns a list of the rules of a firewall policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Firewall Policies,RESOURCE,firewall policies,post,/firewall_policies/{firewall_id}/rules,Adds new rules to a firewall policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Firewall Policies,RESOURCE,firewall policies,get,/firewall_policies/{firewall_id}/rules/{rule_id},Returns information about a rule of a firewall policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Firewall Policies,RESOURCE,firewall policies,delete,/firewall_policies/{firewall_id}/rules/{rule_id},Removes a rule from a firewall policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Load Balancers,RESOURCE,load balancers,get,/load_balancers,Returns a list of your load balancers.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Load Balancers,RESOURCE,load balancers,post,/load_balancers,Creates a new load balancer.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Load Balancers,RESOURCE,load balancers,get,/load_balancers/{load_balancer_id},Returns information about a load balancer.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Load Balancers,RESOURCE,load balancers,delete,/load_balancers/{load_balancer_id},Removes a load balancer.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Load Balancers,RESOURCE,load balancers,put,/load_balancers/{load_balancer_id},Modifies a load balancer.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Load Balancers,RESOURCE,load balancers,get,/load_balancers/{load_balancer_id}/server_ips,Returns a list of the servers/IPs attached to a load balancer.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Load Balancers,RESOURCE,load balancers,post,/load_balancers/{load_balancer_id}/server_ips,Assigns servers/IPs to a load balancer.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Load Balancers,RESOURCE,load balancers,get,/load_balancers/{load_balancer_id}/server_ips/{server_ip},Returns information about a server/IP assigned to a load balancer.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Load Balancers,RESOURCE,load balancers,delete,/load_balancers/{load_balancer_id}/server_ips/{server_ip},Unassigns a server/IP from a load balancer.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Load Balancers,RESOURCE,load balancers,get,/load_balancers/{load_balancer_id}/rules,Returns a list of the rules of a load balancer.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Load Balancers,RESOURCE,load balancers,post,/load_balancers/{load_balancer_id}/rules,Adds new rules to a load balancer.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Load Balancers,RESOURCE,load balancers,get,/load_balancers/{load_balancer_id}/rules/{rule_id},Returns information about a rule of a load balancer.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Load Balancers,RESOURCE,load balancers,delete,/load_balancers/{load_balancer_id}/rules/{rule_id},Removes a rule from a load balancer.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Public IPs,RESOURCE,public ips,get,/public_ips,Returns a list of your public IPs.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Public IPs,RESOURCE,public ips,post,/public_ips,Creates a new public IP.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Public IPs,RESOURCE,public ips,get,/public_ips/{ip_id},Returns information about a public IP.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Public IPs,RESOURCE,public ips,delete,/public_ips/{ip_id},Removes a public IP.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Public IPs,RESOURCE,public ips,put,/public_ips/{ip_id},Modifies the reverse DNS of a public IP.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Private Networks,RESOURCE,private networks,get,/private_networks,Returns a list of your private networks.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Private Networks,RESOURCE,private networks,post,/private_networks,Creates a new private network.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Private Networks,RESOURCE,private networks,get,/private_networks/{private_network_id},Returns information about a private network.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Private Networks,RESOURCE,private networks,delete,/private_networks/{private_network_id},Removes a private network.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Private Networks,RESOURCE,private networks,put,/private_networks/{private_network_id},Modifies a private network.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Private Networks,RESOURCE,private networks,get,/private_networks/{private_network_id}/servers,Returns a list of the servers attached to a private network.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Private Networks,RESOURCE,private networks,post,/private_networks/{private_network_id}/servers,Attaches servers to a private network.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Private Networks,RESOURCE,private networks,get,/private_networks/{private_network_id}/servers/{server_id},Returns information about a server attached to a private network.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Private Networks,RESOURCE,private networks,delete,/private_networks/{private_network_id}/servers/{server_id},Unattaches a server from a private network.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,VPN,RESOURCE,vpn,get,/vpns,Returns a list of your VPN,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,VPN,RESOURCE,vpn,post,/vpns,Adds a new VPN,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,VPN,RESOURCE,vpn,get,/vpns/{vpn_id},Returns information about a VPN,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,VPN,RESOURCE,vpn,delete,/vpns/{vpn_id},Removes a VPN,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,VPN,RESOURCE,vpn,put,/vpns/{vpn_id},Modify VPN configuration file,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,VPN,RESOURCE,vpn,get,/vpns/{vpn_id}/configuration_file,Download your VPN configuration file,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Center,RESOURCE,monitoring center,get,/monitoring_center,Lists usages and alerts of monitoring servers.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Center,RESOURCE,monitoring center,get,/monitoring_center/{server_id},Returns the usage of the resources for the specified time range.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,get,/monitoring_policies,Returns a list of your monitoring policies.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,post,/monitoring_policies,Creates a new monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,get,/monitoring_policies/{monitoring_policy_id},Returns information about a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,delete,/monitoring_policies/{monitoring_policy_id},Removes a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,put,/monitoring_policies/{monitoring_policy_id},Modifies a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,get,/monitoring_policies/{monitoring_policy_id}/ports,Returns a list of the ports of a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,post,/monitoring_policies/{monitoring_policy_id}/ports,Adds new ports to a monitoring policy,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,get,/monitoring_policies/{monitoring_policy_id}/ports/{port_id},Returns information about a port of a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,delete,/monitoring_policies/{monitoring_policy_id}/ports/{port_id},Removes a port from a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,put,/monitoring_policies/{monitoring_policy_id}/ports/{port_id},Modifies a port from a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,get,/monitoring_policies/{monitoring_policy_id}/processes,Returns a list of the processes of a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,post,/monitoring_policies/{monitoring_policy_id}/processes,Adds new processes to a monitoring policy,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,get,/monitoring_policies/{monitoring_policy_id}/processes/{process_id},Returns information about a process of a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,delete,/monitoring_policies/{monitoring_policy_id}/processes/{process_id},Removes a process from a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,put,/monitoring_policies/{monitoring_policy_id}/processes/{process_id},Modifies a process from a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,get,/monitoring_policies/{monitoring_policy_id}/servers,Returns a list of the servers attached to a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,post,/monitoring_policies/{monitoring_policy_id}/servers,Attaches servers to a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,get,/monitoring_policies/{monitoring_policy_id}/servers/{server_id},Returns information about a server attached to a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Monitoring Policies,RESOURCE,monitoring policies,delete,/monitoring_policies/{monitoring_policy_id}/servers/{server_id},Unattaches a server from a monitoring policy.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Logs,RESOURCE,logs,get,/logs,Returns a list with logs.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Logs,RESOURCE,logs,get,/logs/{log_id},Returns information about a log,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Users,RESOURCE,users,get,/users,Returns a list with all users.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Users,RESOURCE,users,post,/users,Creates a new user.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Users,RESOURCE,users,get,/users/{user_id},Returns information about a user.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Users,RESOURCE,users,delete,/users/{user_id},Removes a user.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Users,RESOURCE,users,put,/users/{user_id},Modifies user information.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Users,RESOURCE,users,get,/users/{user_id}/api,Information about API.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Users,RESOURCE,users,put,/users/{user_id}/api,Allows to enable or disable the API.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Users,RESOURCE,users,get,/users/{user_id}/api/key,Shows the API key,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Users,RESOURCE,users,put,/users/{user_id}/api/key,Changes the API key,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Users,RESOURCE,users,get,/users/{user_id}/api/ips,IP's from which access to API is allowed.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Users,RESOURCE,users,post,/users/{user_id}/api/ips,Allows a new IP,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Users,RESOURCE,users,delete,/users/{user_id}/api/ips/{ip},Deletes an IP and forbides API access for it.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Users,RESOURCE,users,get,/users/current_user_permissions,Returns a list with current user permissions,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Roles,RESOURCE,roles,get,/roles,Returns a list with all roles,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Roles,RESOURCE,roles,post,/roles,Creates a new role,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Roles,RESOURCE,roles,get,/roles/{role_id},Returns information about a role.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Roles,RESOURCE,roles,delete,/roles/{role_id},Removes role,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Roles,RESOURCE,roles,put,/roles/{role_id},Modifies role information,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Roles,RESOURCE,roles,get,/roles/{role_id}/permissions,Lists role's permissions,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Roles,RESOURCE,roles,put,/roles/{role_id}/permissions,Adds permissions to the role,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Roles,RESOURCE,roles,get,/roles/{role_id}/users,Returns users assigned to role,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Roles,RESOURCE,roles,post,/roles/{role_id}/users,Add users to role,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Roles,RESOURCE,roles,get,/roles/{role_id}/users/{user_id},Returns information about a user,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Roles,RESOURCE,roles,delete,/roles/{role_id}/users/{user_id},Removes user from role,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Roles,RESOURCE,roles,post,/roles/{role_id}/clone,Clones a role,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Usages,RESOURCE,usages,get,/usages,Returns a list of your usages.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Server Appliances,RESOURCE,server appliances,get,/server_appliances,Returns a list of all the appliances that you can use for creating a server.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Server Appliances,RESOURCE,server appliances,get,/server_appliances/{id},Information about specific appliance,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,DVD ISO,RESOURCE,dvd iso,get,/dvd_isos,Returns a list of all the operative systems and tools that you can load into your virtual DVD unit.,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,DVD ISO,RESOURCE,dvd iso,get,/dvd_isos/{id},Information about specific ISO image,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Ping,RESOURCE,ping,get,/ping,Returns "PONG" if API is running,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Ping Authentification,RESOURCE,ping authentification,get,/ping_auth,Returns "PONG" if the API is running and the token is valid,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Pricing,RESOURCE,pricing,get,/pricing,Returns prices for all available resources in Cloud Panel,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Datacenters,RESOURCE,datacenters,get,/datacenters,Returns information about available datacenters to create your resources,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
+1&1 Cloud Server,Datacenters,RESOURCE,datacenters,get,/datacenters/{datacenter_id},Returns information about a datacenter,https://cloudpanel-api.1and1.com/documentation/v1/en/documentation.html
