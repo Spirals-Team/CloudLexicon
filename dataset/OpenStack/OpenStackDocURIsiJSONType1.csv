@@ -1,0 +1,14 @@
+Application Catalog service (murano),https://developer.openstack.org/api-ref/application-catalog/v1/index.html
+Block Storage service (cinder),https://developer.openstack.org/api-ref/block-storage/v3/index.html
+Clustering service (senlin),https://developer.openstack.org/api-ref/clustering/
+Compute service (nova),https://developer.openstack.org/api-ref/compute/
+Data Processing service (sahara),https://developer.openstack.org/api-ref/data-processing/
+Identity service (keystone),https://developer.openstack.org/api-ref/identity/v3/index.html
+Identity service (keystone),https://developer.openstack.org/api-ref/identity/v3-ext/index.html
+Image service (glance),https://developer.openstack.org/api-ref/image/v2/index.html
+Image service (glance),https://developer.openstack.org/api-ref/image/v2/metadefs-index.html
+Load-balancer service (octavia),https://developer.openstack.org/api-ref/load-balancer/v2/index.html
+Messaging service (zaqar),https://developer.openstack.org/api-ref/message/
+Networking service (neutron),https://developer.openstack.org/api-ref/network/v2/index.html
+Search service (searchlight),https://developer.openstack.org/api-ref/search/
+Shared File Systems service (manila),https://developer.openstack.org/api-ref/shared-file-system/
