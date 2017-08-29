@@ -27,4 +27,4 @@
 # This script executes all computations on the Rackspace dataset.
 #
 
-. ../../toolchain/runAllForOpenStackOrRackscape.sh Rackspace
+../../toolchain/runAllForOpenStackOrRackscape.sh Rackspace

@@ -27,4 +27,4 @@
 # This script executes all computations on the OpenStack dataset.
 #
 
-. ../../toolchain/runAllForOpenStackOrRackscape.sh OpenStack
+../../toolchain/runAllForOpenStackOrRackscape.sh OpenStack
