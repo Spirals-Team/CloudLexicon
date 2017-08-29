@@ -38,4 +38,4 @@ echo Generating the URI dataset for ${PROVIDER}...
 python ExtractDatasetURIs.py "${DATASETS_DIR}/GCP-APIs.csv" > "${DATASETS_DIR}/DatasetURIs.csv"
 
 # Execute CloudLex tool chain.
-. .${TOOLCHAIN_DIR}/run-cloudlex-tool-chain.sh
+. ${TOOLCHAIN_DIR}/run-cloudlex-tool-chain.sh
