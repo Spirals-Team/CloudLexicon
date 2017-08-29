@@ -1,0 +1,156 @@
+<CloudComputing>
+    <Provider name="Docker Engine">
+        <Service name="Docker Remote Authentication API">
+            <Resource uri="http://api.example.com">
+                <Controller uri="http://api.example.com/auth" verb="auth">
+                    <Method name="POST" description="Check auth configuration"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="Docker Remote Build API">
+            <Resource uri="http://api.example.com">
+                <Controller uri="http://api.example.com/build" verb="build">
+                    <Method name="POST" description="Build an image from Dockerfile via stdin"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="Docker Remote Commit API">
+            <Resource uri="http://api.example.com">
+                <Controller uri="http://api.example.com/commit" verb="commit">
+                    <Method name="POST" description="Create a new image from a containers changes"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="Docker Remote Containers API">
+            <Resource uri="http://api.example.com/containers">
+                <Controller uri="http://api.example.com/containers/create" verb="create">
+                    <Method name="POST" description="Create a container"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://api.example.com/containers/{id}">
+                <Method name="DELETE" description="Remove a container"/>
+                <Controller uri="http://api.example.com/containers/{id}/start" verb="start">
+                    <Method name="POST" description="Start a container"/>
+                </Controller>
+                <Controller uri="http://api.example.com/containers/{id}/stop" verb="stop">
+                    <Method name="POST" description="Stop a container"/>
+                </Controller>
+                <Controller uri="http://api.example.com/containers/{id}/attach" verb="attach">
+                    <Method name="POST" description="Attach to a container"/>
+                </Controller>
+                <Controller uri="http://api.example.com/containers/{id}/exec" verb="exec">
+                    <Method name="POST" description="Image tarball format"/>
+                </Controller>
+                <Controller uri="http://api.example.com/containers/{id}/unpause" verb="unpause">
+                    <Method name="POST" description="Unpause a container"/>
+                </Controller>
+                <Controller uri="http://api.example.com/containers/{id}/export" verb="export">
+                    <Method name="GET" description="Export a container"/>
+                </Controller>
+                <Controller uri="http://api.example.com/containers/{id}/wait" verb="wait">
+                    <Method name="POST" description="Wait a container"/>
+                </Controller>
+                <Controller uri="http://api.example.com/containers/{id}/pause" verb="pause">
+                    <Method name="POST" description="Pause a container"/>
+                </Controller>
+                <Controller uri="http://api.example.com/containers/{id}/restart" verb="restart">
+                    <Method name="POST" description="Restart a container"/>
+                </Controller>
+                <Controller uri="http://api.example.com/containers/{id}/copy" verb="copy">
+                    <Method name="POST" description="Copy files or folders from a container"/>
+                </Controller>
+                <Controller uri="http://api.example.com/containers/{id}/resize?h=&lt;height&gt;&amp;w=&lt;width&gt;" verb="resize?h=&lt;height&gt;&amp;w=&lt;width&gt;">
+                    <Method name="POST" description="Resize a container TTY"/>
+                </Controller>
+                <Controller uri="http://api.example.com/containers/{id}/kill" verb="kill">
+                    <Method name="POST" description="Kill a container"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://api.example.com/containers/{id}/top">
+                <Method name="GET" description="List processes running inside a container"/>
+            </Resource>
+            <Resource uri="http://api.example.com/containers/{id}/logs">
+                <Method name="GET" description="Get container logs"/>
+            </Resource>
+            <Resource uri="http://api.example.com/containers/{id}/json">
+                <Method name="GET" description="Inspect a container"/>
+            </Resource>
+            <Resource uri="http://api.example.com/containers/{id}/changes">
+                <Method name="GET" description="Inspect changes on a containers filesystem"/>
+            </Resource>
+            <Resource uri="http://api.example.com/containers/json">
+                <Method name="GET" description="List containers"/>
+            </Resource>
+        </Service>
+        <Service name="Docker Remote Events API">
+            <Resource uri="http://api.example.com/events">
+                <Method name="GET" description="Monitor Dockers events"/>
+            </Resource>
+        </Service>
+        <Service name="Docker Remote Exec API">
+            <Resource uri="http://api.example.com/exec/{id}">
+                <Controller uri="http://api.example.com/exec/{id}/resize" verb="resize">
+                    <Method name="POST" description="Exec Resize"/>
+                </Controller>
+                <Controller uri="http://api.example.com/exec/{id}/start" verb="start">
+                    <Method name="POST" description="Exec Start"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://api.example.com/exec/{id}/json">
+                <Method name="GET" description="Exec Inspect"/>
+            </Resource>
+        </Service>
+        <Service name="Docker Remote Images API">
+            <Resource uri="http://api.example.com/images">
+                <Controller uri="http://api.example.com/images/load" verb="load">
+                    <Method name="POST" description="Load a tarball with a set of images and tags into docker"/>
+                </Controller>
+                <Controller uri="http://api.example.com/images/search" verb="search">
+                    <Method name="GET" description="Search images"/>
+                </Controller>
+                <Controller uri="http://api.example.com/images/get" verb="get">
+                    <Method name="GET" description="Get a tarball containing all images."/>
+                </Controller>
+                <Controller uri="http://api.example.com/images/create" verb="create">
+                    <Method name="POST" description="Create an image"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://api.example.com/images/{name}">
+                <Method name="DELETE" description="Remove an image"/>
+                <Controller uri="http://api.example.com/images/{name}/push" verb="push">
+                    <Method name="POST" description="Push an image on the registry"/>
+                </Controller>
+                <Controller uri="http://api.example.com/images/{name}/get" verb="get">
+                    <Method name="GET" description="Get a tarball containing all images in a repository"/>
+                </Controller>
+                <Controller uri="http://api.example.com/images/{name}/tag" verb="tag">
+                    <Method name="POST" description="Tag an image into a repository"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://api.example.com/images/{name}/history">
+                <Method name="GET" description="Get the history of an image"/>
+            </Resource>
+            <Resource uri="http://api.example.com/images/{name}/json">
+                <Method name="GET" description="Inspect an image"/>
+            </Resource>
+            <Resource uri="http://api.example.com/images/json">
+                <Method name="GET" description="List Images"/>
+            </Resource>
+        </Service>
+        <Service name="Docker Remote Info API">
+            <Resource uri="http://api.example.com/info">
+                <Method name="GET" description="Display system-wide information"/>
+            </Resource>
+        </Service>
+        <Service name="Docker Remote Ping API">
+            <Resource uri="http://api.example.com/_ping">
+                <Method name="GET" description="Ping the docker server"/>
+            </Resource>
+        </Service>
+        <Service name="Docker Remote Version API">
+            <Resource uri="http://api.example.com/version">
+                <Method name="GET" description="Show the docker version information"/>
+            </Resource>
+        </Service>
+    </Provider>
+</CloudComputing>

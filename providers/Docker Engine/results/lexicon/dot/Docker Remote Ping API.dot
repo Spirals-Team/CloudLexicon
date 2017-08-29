@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Docker Engine - Docker Remote Ping API", fontsize=24]
+splines=true
+"_ping" [color=blue, fontcolor=blue, shape=doublecircle]
+}

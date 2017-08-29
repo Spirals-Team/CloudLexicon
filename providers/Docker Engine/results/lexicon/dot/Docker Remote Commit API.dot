@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Docker Engine - Docker Remote Commit API", fontsize=24]
+splines=true
+"Docker Engine" [color=blue, fontcolor=blue, shape=doublecircle]
+"commit" [color=orange, fontcolor=orange, shape=box]
+"commit" -> "Docker Engine" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

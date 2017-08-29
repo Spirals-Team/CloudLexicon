@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Docker Engine - Docker Remote Build API", fontsize=24]
+splines=true
+"Docker Engine" [color=blue, fontcolor=blue, shape=doublecircle]
+"build" [color=orange, fontcolor=orange, shape=box]
+"build" -> "Docker Engine" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Docker Engine - Docker Remote Authentication API", fontsize=24]
+splines=true
+"Docker Engine" [color=blue, fontcolor=blue, shape=doublecircle]
+"auth" [color=orange, fontcolor=orange, shape=box]
+"auth" -> "Docker Engine" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

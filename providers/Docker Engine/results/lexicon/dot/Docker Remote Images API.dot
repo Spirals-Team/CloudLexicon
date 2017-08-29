@@ -1,0 +1,21 @@
+digraph LexiconGraph {
+graph[label="Docker Engine - Docker Remote Images API", fontsize=24]
+splines=true
+"images" [color=blue, fontcolor=blue, shape=doublecircle]
+"history" -> "images" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"history" [color=blue, fontcolor=blue, shape=ellipse]
+"push" [color=orange, fontcolor=orange, shape=box]
+"push" -> "images" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"json" -> "images" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"json" [color=blue, fontcolor=blue, shape=ellipse]
+"get" [color=orange, fontcolor=orange, shape=box]
+"get" -> "images" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"tag" [color=orange, fontcolor=orange, shape=box]
+"tag" -> "images" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"load" [color=orange, fontcolor=orange, shape=box]
+"load" -> "images" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"search" [color=orange, fontcolor=orange, shape=box]
+"search" -> "images" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"create" [color=orange, fontcolor=orange, shape=box]
+"create" -> "images" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Docker Engine - Docker Remote Events API", fontsize=24]
+splines=true
+"events" [color=blue, fontcolor=blue, shape=doublecircle]
+}

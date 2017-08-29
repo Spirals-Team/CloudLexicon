@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Docker Engine - Docker Remote Exec API", fontsize=24]
+splines=true
+"json" [color=blue, fontcolor=blue, shape=doublecircle]
+"resize" [color=orange, fontcolor=orange, shape=box]
+"start" [color=orange, fontcolor=orange, shape=box]
+}

@@ -1,0 +1,144 @@
+--------------------------------------------------------------------------------
+Read-Only Pattern - 13 detected:
+ * http://api.example.com/containers/{id}/top
+ * http://api.example.com/containers/{id}/logs
+ * http://api.example.com/containers/{id}/json
+ * http://api.example.com/containers/{id}/changes
+ * http://api.example.com/containers/json
+ * http://api.example.com/events
+ * http://api.example.com/exec/{id}/json
+ * http://api.example.com/images/{name}/history
+ * http://api.example.com/images/{name}/json
+ * http://api.example.com/images/json
+ * http://api.example.com/info
+ * http://api.example.com/_ping
+ * http://api.example.com/version
+
+--------------------------------------------------------------------------------
+Resource Pattern - 3 detected:
+ * http://api.example.com/containers/{id}
+ * http://api.example.com/exec/{id}
+ * http://api.example.com/images/{name}
+
+--------------------------------------------------------------------------------
+Singleton Resource Pattern - 9 detected:
+ * http://api.example.com
+ * http://api.example.com
+ * http://api.example.com
+ * http://api.example.com/containers/json
+ * http://api.example.com/events
+ * http://api.example.com/images/json
+ * http://api.example.com/info
+ * http://api.example.com/_ping
+ * http://api.example.com/version
+
+--------------------------------------------------------------------------------
+SubResource Pattern - 7 detected:
+ * http://api.example.com/containers/{id}/top
+ * http://api.example.com/containers/{id}/logs
+ * http://api.example.com/containers/{id}/json
+ * http://api.example.com/containers/{id}/changes
+ * http://api.example.com/exec/{id}/json
+ * http://api.example.com/images/{name}/history
+ * http://api.example.com/images/{name}/json
+
+--------------------------------------------------------------------------------
+Collection Pattern - 2 detected:
+ * http://api.example.com/containers
+ * http://api.example.com/images
+
+--------------------------------------------------------------------------------
+Controller Pattern - 21 detected:
+ * http://api.example.com/auth
+ * http://api.example.com/build
+ * http://api.example.com/commit
+ * http://api.example.com/containers/create
+ * http://api.example.com/containers/{id}/start
+ * http://api.example.com/containers/{id}/stop
+ * http://api.example.com/containers/{id}/attach
+ * http://api.example.com/containers/{id}/exec
+ * http://api.example.com/containers/{id}/unpause
+ * http://api.example.com/containers/{id}/wait
+ * http://api.example.com/containers/{id}/pause
+ * http://api.example.com/containers/{id}/restart
+ * http://api.example.com/containers/{id}/copy
+ * http://api.example.com/containers/{id}/resize?h=&lt;height&gt;&amp;w=&lt;width&gt;
+ * http://api.example.com/containers/{id}/kill
+ * http://api.example.com/exec/{id}/resize
+ * http://api.example.com/exec/{id}/start
+ * http://api.example.com/images/{name}/push
+ * http://api.example.com/images/{name}/tag
+ * http://api.example.com/images/load
+ * http://api.example.com/images/create
+
+--------------------------------------------------------------------------------
+Singular Collection Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Missing POST Method Anti-Pattern - 2 detected:
+ * http://api.example.com/containers
+ * http://api.example.com/images
+
+--------------------------------------------------------------------------------
+Missing GET Method Anti-Pattern - 8 detected:
+ * http://api.example.com
+ * http://api.example.com
+ * http://api.example.com
+ * http://api.example.com/containers
+ * http://api.example.com/containers/{id}
+ * http://api.example.com/exec/{id}
+ * http://api.example.com/images
+ * http://api.example.com/images/{name}
+
+--------------------------------------------------------------------------------
+Missing DELETE Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Unexpected DELETE Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Only Controllers Anti-Pattern - 3 detected:
+ * http://api.example.com
+ * http://api.example.com
+ * http://api.example.com
+
+--------------------------------------------------------------------------------
+Not Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Create Verb Controller Anti-Pattern - 2 detected:
+ * http://api.example.com/containers/create
+ * http://api.example.com/images/create
+
+--------------------------------------------------------------------------------
+Retrieve Verb Controller Anti-Pattern - 3 detected:
+ * http://api.example.com/images/{name}/get
+ * http://api.example.com/images/search
+ * http://api.example.com/images/get
+
+--------------------------------------------------------------------------------
+Update Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Delete Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Method Controller Anti-Pattern - 4 detected:
+ * http://api.example.com/containers/{id}/export
+ * http://api.example.com/images/{name}/get
+ * http://api.example.com/images/search
+ * http://api.example.com/images/get
+
+--------------------------------------------------------------------------------
+More Than One Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Controller Method Anti-Pattern - 4 detected:
+ * GET http://api.example.com/containers/{id}/export
+ * GET http://api.example.com/images/{name}/get
+ * GET http://api.example.com/images/search
+ * GET http://api.example.com/images/get
+
+--------------------------------------------------------------------------------
+Untagged Resources and Controllers  - 0 detected:
+

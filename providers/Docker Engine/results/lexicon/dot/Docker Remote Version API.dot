@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Docker Engine - Docker Remote Version API", fontsize=24]
+splines=true
+"version" [color=blue, fontcolor=blue, shape=doublecircle]
+}

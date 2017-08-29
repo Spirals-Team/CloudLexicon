@@ -1,0 +1,45 @@
+['./datasets/DatasetURIs.csv']
+
+-------------------- API --------------------
+
+Number of providers = 1
+Number of services = 10
+Number of resources = 21
+Number of controllers = 25
+Number of queries = 0
+Number of methods = 40
+ - 21 POST (52.50%)
+ - 17 GET (42.50%)
+ - 2 DELETE (5.00%)
+
+-------------------- LEXICON --------------------
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+******************************     0 terms are common to 0 of 1 providers      ******************************
+******************************     32 terms are common to 1 of 1 providers      ******************************
+
+Number of terms = 32
+Number of nouns = 11 (34.38%)
+Number of verbs = 21 (65.62%)
+Number of singular terms = 6 (18.75%)
+Number of plural terms = 26 (81.25%)
+Number of lower case terms = 32 (100.00%)
+Number of upper case terms = 0 (0.00%)
+Number of camel case terms = 0 (0.00%)
+Number of hyphen terms = 1 (3.12%)
+Number of underscore terms = 0 (0.00%)
+Number of business terms = 30 (93.75%)
+Number of engineering terms = 2 (6.25%)
+
+
+-------------------- QUALITY --------------------
+
+Docker Engine is REST ;-)
+scoreRest = 0.375
+Docker Engine: GOOD API naming or API Naming Uniformity Pattern
+scoreNaming = 1.0
+Docker Engine: BAD business API design or Engineering-Oriented API Naming Anti-Pattern 2 (6.25%)
+scoreBusiness = 0.9375
+Total score = 0.770833333333
