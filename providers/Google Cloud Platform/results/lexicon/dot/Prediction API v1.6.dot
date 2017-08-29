@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Prediction API v1.6", fontsize=24]
+splines=true
+"trainedmodels" [color=blue, fontcolor=blue, shape=doublecircle]
+"predict" [color=orange, fontcolor=orange, shape=box]
+"predict" -> "trainedmodels" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"analyze" [color=orange, fontcolor=orange, shape=box]
+"analyze" -> "trainedmodels" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"list" [color=orange, fontcolor=orange, shape=box]
+"list" -> "trainedmodels" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

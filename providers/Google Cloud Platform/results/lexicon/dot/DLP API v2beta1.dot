@@ -1,0 +1,16 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - DLP API v2beta1", fontsize=24]
+splines=true
+"content" [color=blue, fontcolor=blue, shape=doublecircle]
+"rootCategories" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"redact" [color=orange, fontcolor=orange, shape=box]
+"redact" -> "content" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"inspect" [color=orange, fontcolor=orange, shape=box]
+"inspect" -> "content" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"infoTypes" -> "rootCategories" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"infoTypes" [color=blue, fontcolor=blue, shape=ellipse]
+"cancel" [color=orange, fontcolor=orange, shape=box]
+"cancel" -> "operations" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"findings" [color=orange, fontcolor=orange, shape=box]
+}

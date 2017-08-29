@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Cloud Natural Language API v1", fontsize=24]
+splines=true
+"documents" [color=blue, fontcolor=blue, shape=doublecircle]
+"analyzeSyntax" [color=orange, fontcolor=orange, shape=box]
+"analyzeSyntax" -> "documents" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"annotateText" [color=orange, fontcolor=orange, shape=box]
+"annotateText" -> "documents" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"analyzeEntities" [color=orange, fontcolor=orange, shape=box]
+"analyzeEntities" -> "documents" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"analyzeSentiment" [color=orange, fontcolor=orange, shape=box]
+"analyzeSentiment" -> "documents" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

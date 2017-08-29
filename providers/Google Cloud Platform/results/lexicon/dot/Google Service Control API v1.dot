@@ -1,0 +1,10 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Service Control API v1", fontsize=24]
+splines=true
+"allocateQuota" [color=orange, fontcolor=orange, shape=box]
+"startReconciliation" [color=orange, fontcolor=orange, shape=box]
+"endReconciliation" [color=orange, fontcolor=orange, shape=box]
+"releaseQuota" [color=orange, fontcolor=orange, shape=box]
+"report" [color=orange, fontcolor=orange, shape=box]
+"check" [color=orange, fontcolor=orange, shape=box]
+}

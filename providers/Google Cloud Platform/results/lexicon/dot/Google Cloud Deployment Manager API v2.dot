@@ -1,0 +1,21 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Cloud Deployment Manager API v2", fontsize=24]
+splines=true
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"deployments" [color=blue, fontcolor=blue, shape=doublecircle]
+"types" [color=blue, fontcolor=blue, shape=doublecircle]
+"manifests" -> "deployments" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"manifests" [color=blue, fontcolor=blue, shape=ellipse]
+"resources" -> "deployments" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"resources" [color=blue, fontcolor=blue, shape=ellipse]
+"stop" [color=orange, fontcolor=orange, shape=box]
+"stop" -> "deployments" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"cancelPreview" [color=orange, fontcolor=orange, shape=box]
+"cancelPreview" -> "deployments" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"testIamPermissions" [color=orange, fontcolor=orange, shape=box]
+"testIamPermissions" -> "deployments" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"getIamPolicy" [color=orange, fontcolor=orange, shape=box]
+"getIamPolicy" -> "deployments" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"setIamPolicy" [color=orange, fontcolor=orange, shape=box]
+"setIamPolicy" -> "deployments" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

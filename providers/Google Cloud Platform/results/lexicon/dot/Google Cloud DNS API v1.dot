@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Cloud DNS API v1", fontsize=24]
+splines=true
+"managedZones" [color=blue, fontcolor=blue, shape=doublecircle]
+"changes" -> "managedZones" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"changes" [color=blue, fontcolor=blue, shape=ellipse]
+"rrsets" -> "managedZones" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"rrsets" [color=blue, fontcolor=blue, shape=ellipse]
+}

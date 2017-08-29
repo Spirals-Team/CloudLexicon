@@ -1,0 +1,21 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - BigQuery Data Transfer Service API v1", fontsize=24]
+splines=true
+"dataSources" [color=blue, fontcolor=blue, shape=doublecircle]
+"locations" [color=blue, fontcolor=blue, shape=doublecircle]
+"transferConfigs" [color=blue, fontcolor=blue, shape=doublecircle]
+"setEnabled" [color=orange, fontcolor=orange, shape=box]
+"isEnabled" [color=orange, fontcolor=orange, shape=box]
+"checkValidCreds" [color=orange, fontcolor=orange, shape=box]
+"checkValidCreds" -> "dataSources" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"setEnabled" -> "locations" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"isEnabled" -> "locations" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"transferConfigs" -> "locations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"scheduleRuns" [color=orange, fontcolor=orange, shape=box]
+"scheduleRuns" -> "transferConfigs" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"runs" -> "transferConfigs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"runs" [color=blue, fontcolor=blue, shape=ellipse]
+"transferLogs" [color=orange, fontcolor=orange, shape=box]
+"transferLogs" -> "runs" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"dataSources" -> "locations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+}

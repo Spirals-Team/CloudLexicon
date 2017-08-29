@@ -1,0 +1,203 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Google Cloud Platform - Stackdriver Monitoring API v3"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="https://monitoring.googleapis.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="black", fontcolor="black"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/v3", shape="ellipse", color="black", fontcolor="black"]
+node2 -> node3 [color="black", fontcolor="black"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="/projects", shape="ellipse", color="black", fontcolor="black"]
+node3 -> node4 [color="blue", fontcolor="blue"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/{projectId}\n Resource\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node4 -> node5 [color="blue", fontcolor="blue"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="/monitoredResourceDescriptors\n Read-Only Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node5 -> node6 [color="green", fontcolor="green"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node5 -> node7 [color="blue", fontcolor="blue"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="/{monitoredResourceDescriptorsId}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node7 -> node8 [color="green", fontcolor="green"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node4 -> node9 [color="orange", fontcolor="orange"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="/collectdTimeSeries\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node9 -> node10 [color="green", fontcolor="green"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node4 -> node11 [color="blue", fontcolor="blue"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="/timeSeries\n SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node11 -> node12 [color="green", fontcolor="green"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node11 -> node13 [color="green", fontcolor="green"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node4 -> node14 [color="blue", fontcolor="blue"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="/groups\n Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node14 -> node15 [color="green", fontcolor="green"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node14 -> node16 [color="green", fontcolor="green"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node14 -> node17 [color="blue", fontcolor="blue"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="/{groupsId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node17 -> node18 [color="green", fontcolor="green"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node17 -> node19 [color="green", fontcolor="green"]
+subgraph cluster_19 {
+label=""
+color=white
+fontcolor=white
+node19 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node17 -> node20 [color="green", fontcolor="green"]
+subgraph cluster_20 {
+label=""
+color=white
+fontcolor=white
+node20 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node17 -> node21 [color="blue", fontcolor="blue"]
+subgraph cluster_21 {
+label=""
+color=white
+fontcolor=white
+node21 [label="/members\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node21 -> node22 [color="green", fontcolor="green"]
+subgraph cluster_22 {
+label=""
+color=white
+fontcolor=white
+node22 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node4 -> node23 [color="blue", fontcolor="blue"]
+subgraph cluster_23 {
+label=""
+color=white
+fontcolor=white
+node23 [label="/metricDescriptors\n Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node23 -> node24 [color="green", fontcolor="green"]
+subgraph cluster_24 {
+label=""
+color=white
+fontcolor=white
+node24 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node23 -> node25 [color="green", fontcolor="green"]
+subgraph cluster_25 {
+label=""
+color=white
+fontcolor=white
+node25 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node23 -> node26 [color="blue", fontcolor="blue"]
+subgraph cluster_26 {
+label=""
+color=white
+fontcolor=white
+node26 [label="/{metricDescriptorsId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node26 -> node27 [color="green", fontcolor="green"]
+subgraph cluster_27 {
+label=""
+color=white
+fontcolor=white
+node27 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node26 -> node28 [color="green", fontcolor="green"]
+subgraph cluster_28 {
+label=""
+color=white
+fontcolor=white
+node28 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}
+}

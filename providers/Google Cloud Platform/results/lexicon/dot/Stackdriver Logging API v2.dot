@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Stackdriver Logging API v2", fontsize=24]
+splines=true
+"sinks" [color=blue, fontcolor=blue, shape=doublecircle]
+"logs" [color=blue, fontcolor=blue, shape=doublecircle]
+"entries" [color=blue, fontcolor=blue, shape=doublecircle]
+"monitoredResourceDescriptors" [color=blue, fontcolor=blue, shape=doublecircle]
+"metrics" [color=blue, fontcolor=blue, shape=doublecircle]
+"write" [color=orange, fontcolor=orange, shape=box]
+"write" -> "entries" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"list" [color=orange, fontcolor=orange, shape=box]
+"list" -> "entries" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

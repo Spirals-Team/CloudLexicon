@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Cloud Runtime Configuration API v1", fontsize=24]
+splines=true
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"cancel" [color=orange, fontcolor=orange, shape=box]
+"cancel" -> "operations" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

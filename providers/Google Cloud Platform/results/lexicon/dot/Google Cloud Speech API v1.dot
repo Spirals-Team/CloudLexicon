@@ -1,0 +1,12 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Cloud Speech API v1", fontsize=24]
+splines=true
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"speech" [color=blue, fontcolor=blue, shape=doublecircle]
+"cancel" [color=orange, fontcolor=orange, shape=box]
+"cancel" -> "operations" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"recognize" [color=orange, fontcolor=orange, shape=box]
+"recognize" -> "speech" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"longrunningrecognize" [color=orange, fontcolor=orange, shape=box]
+"longrunningrecognize" -> "speech" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

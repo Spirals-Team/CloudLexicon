@@ -1,0 +1,15 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Storage Transfer API v1", fontsize=24]
+splines=true
+"v1" [color=blue, fontcolor=blue, shape=doublecircle]
+"transferOperations" -> "v1" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"transferOperations" [color=blue, fontcolor=blue, shape=ellipse]
+"pause" [color=orange, fontcolor=orange, shape=box]
+"pause" -> "transferOperations" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"resume" [color=orange, fontcolor=orange, shape=box]
+"resume" -> "transferOperations" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"cancel" [color=orange, fontcolor=orange, shape=box]
+"cancel" -> "transferOperations" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"transferJobs" [color=orange, fontcolor=orange, shape=box]
+"transferJobs" -> "v1" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

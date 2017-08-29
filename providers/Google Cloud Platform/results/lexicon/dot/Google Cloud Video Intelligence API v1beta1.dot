@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Cloud Video Intelligence API v1beta1", fontsize=24]
+splines=true
+"videos" [color=blue, fontcolor=blue, shape=doublecircle]
+"annotate" [color=orange, fontcolor=orange, shape=box]
+"annotate" -> "videos" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

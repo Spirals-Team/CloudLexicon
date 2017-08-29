@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Stackdriver Trace API v2", fontsize=24]
+splines=true
+"traces" [color=blue, fontcolor=blue, shape=doublecircle]
+"listSpans" [color=orange, fontcolor=orange, shape=box]
+"listSpans" -> "traces" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"batchWrite" [color=orange, fontcolor=orange, shape=box]
+"batchWrite" -> "traces" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

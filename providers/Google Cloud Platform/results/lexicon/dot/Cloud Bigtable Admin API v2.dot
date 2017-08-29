@@ -1,0 +1,16 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Cloud Bigtable Admin API v2", fontsize=24]
+splines=true
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"instances" [color=blue, fontcolor=blue, shape=doublecircle]
+"cancel" [color=orange, fontcolor=orange, shape=box]
+"cancel" -> "operations" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"tables" -> "instances" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"tables" [color=blue, fontcolor=blue, shape=ellipse]
+"dropRowRange" [color=orange, fontcolor=orange, shape=box]
+"dropRowRange" -> "tables" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"modifyColumnFamilies" [color=orange, fontcolor=orange, shape=box]
+"modifyColumnFamilies" -> "tables" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"clusters" -> "instances" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"clusters" [color=blue, fontcolor=blue, shape=ellipse]
+}

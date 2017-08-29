@@ -1,0 +1,14 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Cloud Dataproc API v1", fontsize=24]
+splines=true
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"clusters" [color=blue, fontcolor=blue, shape=doublecircle]
+"jobs" [color=blue, fontcolor=blue, shape=doublecircle]
+"cancel" [color=orange, fontcolor=orange, shape=box]
+"cancel" -> "operations" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"diagnose" [color=orange, fontcolor=orange, shape=box]
+"diagnose" -> "clusters" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"cancel" -> "jobs" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"submit" [color=orange, fontcolor=orange, shape=box]
+"submit" -> "jobs" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

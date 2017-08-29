@@ -1,0 +1,18 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Cloud User Accounts API vm_beta", fontsize=24]
+splines=true
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"users" [color=blue, fontcolor=blue, shape=doublecircle]
+"groups" [color=blue, fontcolor=blue, shape=doublecircle]
+"linuxAccountViews" [color=blue, fontcolor=blue, shape=doublecircle]
+"addPublicKey" [color=orange, fontcolor=orange, shape=box]
+"addPublicKey" -> "users" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"removePublicKey" -> "addPublicKey" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"removePublicKey" [color=orange, fontcolor=orange, shape=box]
+"removePublicKey" -> "users" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"addMember" [color=orange, fontcolor=orange, shape=box]
+"addMember" -> "groups" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"removeMember" -> "addMember" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"removeMember" [color=orange, fontcolor=orange, shape=box]
+"removeMember" -> "groups" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

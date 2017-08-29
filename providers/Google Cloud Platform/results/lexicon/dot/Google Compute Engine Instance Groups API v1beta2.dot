@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Compute Engine Instance Groups API v1beta2", fontsize=24]
+splines=true
+"resourceViews" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"resources" -> "resourceViews" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"setService" [color=orange, fontcolor=orange, shape=box]
+"setService" -> "resourceViews" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"getService" [color=orange, fontcolor=orange, shape=box]
+"getService" -> "resourceViews" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"addResources" [color=orange, fontcolor=orange, shape=box]
+"addResources" -> "resourceViews" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"removeResources" -> "addResources" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"resources" [color=blue, fontcolor=blue, shape=ellipse]
+"removeResources" [color=orange, fontcolor=orange, shape=box]
+"removeResources" -> "resourceViews" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

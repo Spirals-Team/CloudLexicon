@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Cloud Billing API v1", fontsize=24]
+splines=true
+"services" [color=blue, fontcolor=blue, shape=doublecircle]
+"billingAccounts" [color=blue, fontcolor=blue, shape=doublecircle]
+"billingInfo" [color=blue, fontcolor=blue, shape=doublecircle]
+"skus" -> "services" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"skus" [color=blue, fontcolor=blue, shape=ellipse]
+"projects" -> "billingAccounts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"projects" [color=blue, fontcolor=blue, shape=ellipse]
+}

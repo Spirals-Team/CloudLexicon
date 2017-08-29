@@ -1,0 +1,10 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Cloud Translation API v2", fontsize=24]
+splines=true
+"v2" [color=blue, fontcolor=blue, shape=doublecircle]
+"languages" -> "v2" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"languages" [color=blue, fontcolor=blue, shape=ellipse]
+"language" -> "languages" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"detect" [color=orange, fontcolor=orange, shape=box]
+"detect" -> "v2" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

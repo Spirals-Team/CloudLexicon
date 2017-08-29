@@ -1,0 +1,12 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Service User API v1", fontsize=24]
+splines=true
+"services" [color=blue, fontcolor=blue, shape=doublecircle]
+"search" [color=orange, fontcolor=orange, shape=box]
+"search" -> "services" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"enable" [color=orange, fontcolor=orange, shape=box]
+"enable" -> "services" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"disable" -> "enable" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"disable" [color=orange, fontcolor=orange, shape=box]
+"disable" -> "services" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

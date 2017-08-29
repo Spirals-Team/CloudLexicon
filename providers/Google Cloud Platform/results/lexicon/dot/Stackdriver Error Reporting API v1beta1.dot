@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Stackdriver Error Reporting API v1beta1", fontsize=24]
+splines=true
+"events" [color=blue, fontcolor=blue, shape=doublecircle]
+"groupStats" [color=blue, fontcolor=blue, shape=doublecircle]
+"report" [color=orange, fontcolor=orange, shape=box]
+"report" -> "events" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"groups" -> "groupStats" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

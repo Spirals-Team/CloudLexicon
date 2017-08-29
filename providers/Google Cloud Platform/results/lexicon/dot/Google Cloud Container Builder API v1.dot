@@ -1,0 +1,10 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Cloud Container Builder API v1", fontsize=24]
+splines=true
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"builds" [color=blue, fontcolor=blue, shape=doublecircle]
+"triggers" [color=blue, fontcolor=blue, shape=doublecircle]
+"cancel" [color=orange, fontcolor=orange, shape=box]
+"cancel" -> "operations" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"cancel" -> "builds" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

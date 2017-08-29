@@ -1,0 +1,47 @@
+['./datasets/DatasetURIs.csv']
+
+-------------------- API --------------------
+
+Number of providers = 1
+Number of services = 43
+Number of resources = 433
+Number of controllers = 300
+Number of queries = 0
+Number of methods = 994
+ - 45 PUT (4.53%)
+ - 396 POST (39.84%)
+ - 47 PATCH (4.73%)
+ - 117 DELETE (11.77%)
+ - 389 GET (39.13%)
+
+-------------------- LEXICON --------------------
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+******************************     0 terms are common to 0 of 1 providers      ******************************
+******************************     349 terms are common to 1 of 1 providers      ******************************
+
+Number of terms = 349
+Number of nouns = 165 (47.28%)
+Number of verbs = 184 (52.72%)
+Number of singular terms = 35 (10.03%)
+Number of plural terms = 314 (89.97%)
+Number of lower case terms = 172 (49.28%)
+Number of upper case terms = 0 (0.00%)
+Number of camel case terms = 177 (50.72%)
+Number of hyphen terms = 1 (0.29%)
+Number of underscore terms = 0 (0.00%)
+Number of business terms = 347 (99.43%)
+Number of engineering terms = 2 (0.57%)
+
+
+-------------------- QUALITY --------------------
+
+Google Cloud Platform is REST ;-)
+scoreRest = 0.698189134809
+Google Cloud Platform: GOOD API naming or API Naming Uniformity Pattern
+scoreNaming = 0.507163323782
+Google Cloud Platform: BAD business API design or Engineering-Oriented API Naming Anti-Pattern 2 (0.57%)
+scoreBusiness = 0.994269340974
+Total score = 0.733207266522

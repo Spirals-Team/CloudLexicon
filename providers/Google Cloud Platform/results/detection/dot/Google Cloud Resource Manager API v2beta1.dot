@@ -1,0 +1,154 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Google Cloud Platform - Google Cloud Resource Manager API v2beta1"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="https://cloudresourcemanager.googleapis.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="black", fontcolor="black"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/v2beta1", shape="ellipse", color="black", fontcolor="black"]
+node2 -> node3 [color="blue", fontcolor="blue"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="/folders\n Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node3 -> node4 [color="green", fontcolor="green"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node3 -> node5 [color="green", fontcolor="green"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node3 -> node6 [color="orange", fontcolor="orange"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label=":search\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node6 -> node7 [color="green", fontcolor="green"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node3 -> node8 [color="blue", fontcolor="blue"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="/{foldersId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node8 -> node9 [color="green", fontcolor="green"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node8 -> node10 [color="green", fontcolor="green"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node8 -> node11 [color="green", fontcolor="green"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node8 -> node12 [color="orange", fontcolor="orange"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label=":undelete\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node12 -> node13 [color="green", fontcolor="green"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node8 -> node14 [color="orange", fontcolor="orange"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label=":move\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node14 -> node15 [color="green", fontcolor="green"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node8 -> node16 [color="orange", fontcolor="orange"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label=":getIamPolicy\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node16 -> node17 [color="green", fontcolor="green"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node8 -> node18 [color="orange", fontcolor="orange"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label=":testIamPermissions\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node18 -> node19 [color="green", fontcolor="green"]
+subgraph cluster_19 {
+label=""
+color=white
+fontcolor=white
+node19 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node8 -> node20 [color="orange", fontcolor="orange"]
+subgraph cluster_20 {
+label=""
+color=white
+fontcolor=white
+node20 [label=":setIamPolicy\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node20 -> node21 [color="green", fontcolor="green"]
+subgraph cluster_21 {
+label=""
+color=white
+fontcolor=white
+node21 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}

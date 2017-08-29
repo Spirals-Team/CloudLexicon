@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Stackdriver Monitoring API v3", fontsize=24]
+splines=true
+"monitoredResourceDescriptors" [color=blue, fontcolor=blue, shape=doublecircle]
+"timeSeries" [color=blue, fontcolor=blue, shape=doublecircle]
+"groups" [color=blue, fontcolor=blue, shape=doublecircle]
+"metricDescriptors" [color=blue, fontcolor=blue, shape=doublecircle]
+"collectdTimeSeries" [color=orange, fontcolor=orange, shape=box]
+"members" -> "groups" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"members" [color=blue, fontcolor=blue, shape=ellipse]
+}

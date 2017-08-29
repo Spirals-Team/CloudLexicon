@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Cloud OS Login API v1alpha", fontsize=24]
+splines=true
+"loginProfile" [color=blue, fontcolor=blue, shape=doublecircle]
+"importSshPublicKey" [color=orange, fontcolor=orange, shape=box]
+}

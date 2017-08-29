@@ -1,0 +1,343 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Google Cloud Platform - Google Cloud Pub/Sub API v1"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="https://pubsub.googleapis.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="black", fontcolor="black"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/v1", shape="ellipse", color="black", fontcolor="black"]
+node2 -> node3 [color="black", fontcolor="black"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="/projects", shape="ellipse", color="black", fontcolor="black"]
+node3 -> node4 [color="black", fontcolor="black"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/{projectId}", shape="ellipse", color="black", fontcolor="black"]
+node4 -> node5 [color="blue", fontcolor="blue"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="/topics\n Read-Only Collection\nbut\nMissing POST Method", shape="ellipse", color="red", fontcolor="red"]
+node5 -> node6 [color="green", fontcolor="green"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node5 -> node7 [color="blue", fontcolor="blue"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="/{topicsId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node7 -> node8 [color="green", fontcolor="green"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node7 -> node9 [color="green", fontcolor="green"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node7 -> node10 [color="green", fontcolor="green"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node7 -> node11 [color="orange", fontcolor="orange"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label=":publish\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node11 -> node12 [color="green", fontcolor="green"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node7 -> node13 [color="orange", fontcolor="orange"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label=":getIamPolicy\nbut\nNot POST Method Controller", shape="octagon", color="red", fontcolor="red"]
+node13 -> node14 [color="green", fontcolor="green"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="GET\nbut\nNot POST Controller Method", shape="box", color="red", fontcolor="red"]
+}
+}
+node7 -> node15 [color="orange", fontcolor="orange"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label=":testIamPermissions\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node15 -> node16 [color="green", fontcolor="green"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node7 -> node17 [color="orange", fontcolor="orange"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label=":setIamPolicy\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node17 -> node18 [color="green", fontcolor="green"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node7 -> node19 [color="blue", fontcolor="blue"]
+subgraph cluster_19 {
+label=""
+color=white
+fontcolor=white
+node19 [label="/subscriptions\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node19 -> node20 [color="green", fontcolor="green"]
+subgraph cluster_20 {
+label=""
+color=white
+fontcolor=white
+node20 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node4 -> node21 [color="black", fontcolor="black"]
+subgraph cluster_21 {
+label=""
+color=white
+fontcolor=white
+node21 [label="/snapshots", shape="ellipse", color="black", fontcolor="black"]
+node21 -> node22 [color="blue", fontcolor="blue"]
+subgraph cluster_22 {
+label=""
+color=white
+fontcolor=white
+node22 [label="/{snapshotsId}\n Resource\nbut\nMissing GET Method\nOnly Controllers", shape="ellipse", color="red", fontcolor="red"]
+node22 -> node23 [color="orange", fontcolor="orange"]
+subgraph cluster_23 {
+label=""
+color=white
+fontcolor=white
+node23 [label=":getIamPolicy\nbut\nNot POST Method Controller", shape="octagon", color="red", fontcolor="red"]
+node23 -> node24 [color="green", fontcolor="green"]
+subgraph cluster_24 {
+label=""
+color=white
+fontcolor=white
+node24 [label="GET\nbut\nNot POST Controller Method", shape="box", color="red", fontcolor="red"]
+}
+}
+node22 -> node25 [color="orange", fontcolor="orange"]
+subgraph cluster_25 {
+label=""
+color=white
+fontcolor=white
+node25 [label=":testIamPermissions\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node25 -> node26 [color="green", fontcolor="green"]
+subgraph cluster_26 {
+label=""
+color=white
+fontcolor=white
+node26 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node22 -> node27 [color="orange", fontcolor="orange"]
+subgraph cluster_27 {
+label=""
+color=white
+fontcolor=white
+node27 [label=":setIamPolicy\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node27 -> node28 [color="green", fontcolor="green"]
+subgraph cluster_28 {
+label=""
+color=white
+fontcolor=white
+node28 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node4 -> node29 [color="blue", fontcolor="blue"]
+subgraph cluster_29 {
+label=""
+color=white
+fontcolor=white
+node29 [label="/subscriptions\n Read-Only Collection\nbut\nMissing POST Method", shape="ellipse", color="red", fontcolor="red"]
+node29 -> node30 [color="green", fontcolor="green"]
+subgraph cluster_30 {
+label=""
+color=white
+fontcolor=white
+node30 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node29 -> node31 [color="blue", fontcolor="blue"]
+subgraph cluster_31 {
+label=""
+color=white
+fontcolor=white
+node31 [label="/{subscriptionsId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node31 -> node32 [color="green", fontcolor="green"]
+subgraph cluster_32 {
+label=""
+color=white
+fontcolor=white
+node32 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node31 -> node33 [color="green", fontcolor="green"]
+subgraph cluster_33 {
+label=""
+color=white
+fontcolor=white
+node33 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node31 -> node34 [color="green", fontcolor="green"]
+subgraph cluster_34 {
+label=""
+color=white
+fontcolor=white
+node34 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node31 -> node35 [color="orange", fontcolor="orange"]
+subgraph cluster_35 {
+label=""
+color=white
+fontcolor=white
+node35 [label=":pull\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node35 -> node36 [color="green", fontcolor="green"]
+subgraph cluster_36 {
+label=""
+color=white
+fontcolor=white
+node36 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node31 -> node37 [color="orange", fontcolor="orange"]
+subgraph cluster_37 {
+label=""
+color=white
+fontcolor=white
+node37 [label=":acknowledge\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node37 -> node38 [color="green", fontcolor="green"]
+subgraph cluster_38 {
+label=""
+color=white
+fontcolor=white
+node38 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node31 -> node39 [color="orange", fontcolor="orange"]
+subgraph cluster_39 {
+label=""
+color=white
+fontcolor=white
+node39 [label=":modifyAckDeadline\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node39 -> node40 [color="green", fontcolor="green"]
+subgraph cluster_40 {
+label=""
+color=white
+fontcolor=white
+node40 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node31 -> node41 [color="orange", fontcolor="orange"]
+subgraph cluster_41 {
+label=""
+color=white
+fontcolor=white
+node41 [label=":modifyPushConfig\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node41 -> node42 [color="green", fontcolor="green"]
+subgraph cluster_42 {
+label=""
+color=white
+fontcolor=white
+node42 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node31 -> node43 [color="orange", fontcolor="orange"]
+subgraph cluster_43 {
+label=""
+color=white
+fontcolor=white
+node43 [label=":getIamPolicy\nbut\nNot POST Method Controller", shape="octagon", color="red", fontcolor="red"]
+node43 -> node44 [color="green", fontcolor="green"]
+subgraph cluster_44 {
+label=""
+color=white
+fontcolor=white
+node44 [label="GET\nbut\nNot POST Controller Method", shape="box", color="red", fontcolor="red"]
+}
+}
+node31 -> node45 [color="orange", fontcolor="orange"]
+subgraph cluster_45 {
+label=""
+color=white
+fontcolor=white
+node45 [label=":testIamPermissions\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node45 -> node46 [color="green", fontcolor="green"]
+subgraph cluster_46 {
+label=""
+color=white
+fontcolor=white
+node46 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node31 -> node47 [color="orange", fontcolor="orange"]
+subgraph cluster_47 {
+label=""
+color=white
+fontcolor=white
+node47 [label=":setIamPolicy\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node47 -> node48 [color="green", fontcolor="green"]
+subgraph cluster_48 {
+label=""
+color=white
+fontcolor=white
+node48 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}

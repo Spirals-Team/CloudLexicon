@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Cloud Resource Manager API v2beta1", fontsize=24]
+splines=true
+"folders" [color=blue, fontcolor=blue, shape=doublecircle]
+"search" [color=orange, fontcolor=orange, shape=box]
+"search" -> "folders" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"undelete" [color=orange, fontcolor=orange, shape=box]
+"undelete" -> "folders" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"move" [color=orange, fontcolor=orange, shape=box]
+"move" -> "folders" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"getIamPolicy" [color=orange, fontcolor=orange, shape=box]
+"getIamPolicy" -> "folders" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"testIamPermissions" [color=orange, fontcolor=orange, shape=box]
+"testIamPermissions" -> "folders" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"setIamPolicy" [color=orange, fontcolor=orange, shape=box]
+"setIamPolicy" -> "folders" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

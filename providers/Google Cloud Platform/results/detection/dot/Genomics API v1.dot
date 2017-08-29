@@ -1,0 +1,700 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Google Cloud Platform - Genomics API v1"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="https://genomics.googleapis.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="black", fontcolor="black"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/v1", shape="ellipse", color="black", fontcolor="black"]
+node2 -> node3 [color="blue", fontcolor="blue"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="/operations\n Read-Only Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node3 -> node4 [color="green", fontcolor="green"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node3 -> node5 [color="blue", fontcolor="blue"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="/{operationsId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node5 -> node6 [color="green", fontcolor="green"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node5 -> node7 [color="orange", fontcolor="orange"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label=":cancel\n Controller\nbut\nDelete Verb Controller", shape="octagon", color="red", fontcolor="red"]
+node7 -> node8 [color="green", fontcolor="green"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node2 -> node9 [color="blue", fontcolor="blue"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="/datasets\n Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node9 -> node10 [color="green", fontcolor="green"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node9 -> node11 [color="green", fontcolor="green"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node9 -> node12 [color="blue", fontcolor="blue"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="/{datasetId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node12 -> node13 [color="green", fontcolor="green"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node12 -> node14 [color="green", fontcolor="green"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node12 -> node15 [color="green", fontcolor="green"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node12 -> node16 [color="orange", fontcolor="orange"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label=":undelete\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node16 -> node17 [color="green", fontcolor="green"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node12 -> node18 [color="orange", fontcolor="orange"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label=":getIamPolicy\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node18 -> node19 [color="green", fontcolor="green"]
+subgraph cluster_19 {
+label=""
+color=white
+fontcolor=white
+node19 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node12 -> node20 [color="orange", fontcolor="orange"]
+subgraph cluster_20 {
+label=""
+color=white
+fontcolor=white
+node20 [label=":testIamPermissions\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node20 -> node21 [color="green", fontcolor="green"]
+subgraph cluster_21 {
+label=""
+color=white
+fontcolor=white
+node21 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node12 -> node22 [color="orange", fontcolor="orange"]
+subgraph cluster_22 {
+label=""
+color=white
+fontcolor=white
+node22 [label=":setIamPolicy\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node22 -> node23 [color="green", fontcolor="green"]
+subgraph cluster_23 {
+label=""
+color=white
+fontcolor=white
+node23 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node2 -> node24 [color="blue", fontcolor="blue"]
+subgraph cluster_24 {
+label=""
+color=white
+fontcolor=white
+node24 [label="/referencesets\n Collection\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node24 -> node25 [color="orange", fontcolor="orange"]
+subgraph cluster_25 {
+label=""
+color=white
+fontcolor=white
+node25 [label="/search\n Controller\nbut\nRetrieve Verb Controller", shape="octagon", color="red", fontcolor="red"]
+node25 -> node26 [color="green", fontcolor="green"]
+subgraph cluster_26 {
+label=""
+color=white
+fontcolor=white
+node26 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node24 -> node27 [color="blue", fontcolor="blue"]
+subgraph cluster_27 {
+label=""
+color=white
+fontcolor=white
+node27 [label="/{referenceSetId}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node27 -> node28 [color="green", fontcolor="green"]
+subgraph cluster_28 {
+label=""
+color=white
+fontcolor=white
+node28 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node29 [color="blue", fontcolor="blue"]
+subgraph cluster_29 {
+label=""
+color=white
+fontcolor=white
+node29 [label="/callsets\n Collection\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node29 -> node30 [color="green", fontcolor="green"]
+subgraph cluster_30 {
+label=""
+color=white
+fontcolor=white
+node30 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node29 -> node31 [color="blue", fontcolor="blue"]
+subgraph cluster_31 {
+label=""
+color=white
+fontcolor=white
+node31 [label="/{callSetId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node31 -> node32 [color="green", fontcolor="green"]
+subgraph cluster_32 {
+label=""
+color=white
+fontcolor=white
+node32 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node31 -> node33 [color="green", fontcolor="green"]
+subgraph cluster_33 {
+label=""
+color=white
+fontcolor=white
+node33 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node31 -> node34 [color="green", fontcolor="green"]
+subgraph cluster_34 {
+label=""
+color=white
+fontcolor=white
+node34 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+node29 -> node35 [color="orange", fontcolor="orange"]
+subgraph cluster_35 {
+label=""
+color=white
+fontcolor=white
+node35 [label="/search\n Controller\nbut\nRetrieve Verb Controller", shape="octagon", color="red", fontcolor="red"]
+node35 -> node36 [color="green", fontcolor="green"]
+subgraph cluster_36 {
+label=""
+color=white
+fontcolor=white
+node36 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node37 [color="blue", fontcolor="blue"]
+subgraph cluster_37 {
+label=""
+color=white
+fontcolor=white
+node37 [label="/reads\n Singleton Resource\nbut\nMissing GET Method\nOnly Controllers", shape="ellipse", color="red", fontcolor="red"]
+node37 -> node38 [color="orange", fontcolor="orange"]
+subgraph cluster_38 {
+label=""
+color=white
+fontcolor=white
+node38 [label="/search\n Controller\nbut\nRetrieve Verb Controller", shape="octagon", color="red", fontcolor="red"]
+node38 -> node39 [color="green", fontcolor="green"]
+subgraph cluster_39 {
+label=""
+color=white
+fontcolor=white
+node39 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node40 [color="blue", fontcolor="blue"]
+subgraph cluster_40 {
+label=""
+color=white
+fontcolor=white
+node40 [label="/readgroupsets\n Collection\nbut\nMissing POST Method\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node40 -> node41 [color="orange", fontcolor="orange"]
+subgraph cluster_41 {
+label=""
+color=white
+fontcolor=white
+node41 [label="/search\n Controller\nbut\nRetrieve Verb Controller", shape="octagon", color="red", fontcolor="red"]
+node41 -> node42 [color="green", fontcolor="green"]
+subgraph cluster_42 {
+label=""
+color=white
+fontcolor=white
+node42 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node40 -> node43 [color="blue", fontcolor="blue"]
+subgraph cluster_43 {
+label=""
+color=white
+fontcolor=white
+node43 [label="/{readGroupSetId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node43 -> node44 [color="green", fontcolor="green"]
+subgraph cluster_44 {
+label=""
+color=white
+fontcolor=white
+node44 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node43 -> node45 [color="green", fontcolor="green"]
+subgraph cluster_45 {
+label=""
+color=white
+fontcolor=white
+node45 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node43 -> node46 [color="green", fontcolor="green"]
+subgraph cluster_46 {
+label=""
+color=white
+fontcolor=white
+node46 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node43 -> node47 [color="orange", fontcolor="orange"]
+subgraph cluster_47 {
+label=""
+color=white
+fontcolor=white
+node47 [label=":export\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node47 -> node48 [color="green", fontcolor="green"]
+subgraph cluster_48 {
+label=""
+color=white
+fontcolor=white
+node48 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node43 -> node49 [color="blue", fontcolor="blue"]
+subgraph cluster_49 {
+label=""
+color=white
+fontcolor=white
+node49 [label="/coveragebuckets\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node49 -> node50 [color="green", fontcolor="green"]
+subgraph cluster_50 {
+label=""
+color=white
+fontcolor=white
+node50 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node40 -> node51 [color="orange", fontcolor="orange"]
+subgraph cluster_51 {
+label=""
+color=white
+fontcolor=white
+node51 [label=":import\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node51 -> node52 [color="green", fontcolor="green"]
+subgraph cluster_52 {
+label=""
+color=white
+fontcolor=white
+node52 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node53 [color="blue", fontcolor="blue"]
+subgraph cluster_53 {
+label=""
+color=white
+fontcolor=white
+node53 [label="/references\n Collection\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node53 -> node54 [color="orange", fontcolor="orange"]
+subgraph cluster_54 {
+label=""
+color=white
+fontcolor=white
+node54 [label="/search\n Controller\nbut\nRetrieve Verb Controller", shape="octagon", color="red", fontcolor="red"]
+node54 -> node55 [color="green", fontcolor="green"]
+subgraph cluster_55 {
+label=""
+color=white
+fontcolor=white
+node55 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node53 -> node56 [color="blue", fontcolor="blue"]
+subgraph cluster_56 {
+label=""
+color=white
+fontcolor=white
+node56 [label="/{referenceId}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node56 -> node57 [color="green", fontcolor="green"]
+subgraph cluster_57 {
+label=""
+color=white
+fontcolor=white
+node57 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node56 -> node58 [color="blue", fontcolor="blue"]
+subgraph cluster_58 {
+label=""
+color=white
+fontcolor=white
+node58 [label="/bases\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node58 -> node59 [color="green", fontcolor="green"]
+subgraph cluster_59 {
+label=""
+color=white
+fontcolor=white
+node59 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node2 -> node60 [color="blue", fontcolor="blue"]
+subgraph cluster_60 {
+label=""
+color=white
+fontcolor=white
+node60 [label="/variants\n Collection\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node60 -> node61 [color="green", fontcolor="green"]
+subgraph cluster_61 {
+label=""
+color=white
+fontcolor=white
+node61 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node60 -> node62 [color="orange", fontcolor="orange"]
+subgraph cluster_62 {
+label=""
+color=white
+fontcolor=white
+node62 [label="/search\n Controller\nbut\nRetrieve Verb Controller", shape="octagon", color="red", fontcolor="red"]
+node62 -> node63 [color="green", fontcolor="green"]
+subgraph cluster_63 {
+label=""
+color=white
+fontcolor=white
+node63 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node60 -> node64 [color="blue", fontcolor="blue"]
+subgraph cluster_64 {
+label=""
+color=white
+fontcolor=white
+node64 [label="/{variantId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node64 -> node65 [color="green", fontcolor="green"]
+subgraph cluster_65 {
+label=""
+color=white
+fontcolor=white
+node65 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node64 -> node66 [color="green", fontcolor="green"]
+subgraph cluster_66 {
+label=""
+color=white
+fontcolor=white
+node66 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node64 -> node67 [color="green", fontcolor="green"]
+subgraph cluster_67 {
+label=""
+color=white
+fontcolor=white
+node67 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+node60 -> node68 [color="orange", fontcolor="orange"]
+subgraph cluster_68 {
+label=""
+color=white
+fontcolor=white
+node68 [label=":merge\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node68 -> node69 [color="green", fontcolor="green"]
+subgraph cluster_69 {
+label=""
+color=white
+fontcolor=white
+node69 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node60 -> node70 [color="orange", fontcolor="orange"]
+subgraph cluster_70 {
+label=""
+color=white
+fontcolor=white
+node70 [label=":import\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node70 -> node71 [color="green", fontcolor="green"]
+subgraph cluster_71 {
+label=""
+color=white
+fontcolor=white
+node71 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node72 [color="blue", fontcolor="blue"]
+subgraph cluster_72 {
+label=""
+color=white
+fontcolor=white
+node72 [label="/annotations\n Collection\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node72 -> node73 [color="green", fontcolor="green"]
+subgraph cluster_73 {
+label=""
+color=white
+fontcolor=white
+node73 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node72 -> node74 [color="orange", fontcolor="orange"]
+subgraph cluster_74 {
+label=""
+color=white
+fontcolor=white
+node74 [label="/search\n Controller\nbut\nRetrieve Verb Controller", shape="octagon", color="red", fontcolor="red"]
+node74 -> node75 [color="green", fontcolor="green"]
+subgraph cluster_75 {
+label=""
+color=white
+fontcolor=white
+node75 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node72 -> node76 [color="blue", fontcolor="blue"]
+subgraph cluster_76 {
+label=""
+color=white
+fontcolor=white
+node76 [label="/{annotationId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node76 -> node77 [color="green", fontcolor="green"]
+subgraph cluster_77 {
+label=""
+color=white
+fontcolor=white
+node77 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node76 -> node78 [color="green", fontcolor="green"]
+subgraph cluster_78 {
+label=""
+color=white
+fontcolor=white
+node78 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node76 -> node79 [color="green", fontcolor="green"]
+subgraph cluster_79 {
+label=""
+color=white
+fontcolor=white
+node79 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+node72 -> node80 [color="orange", fontcolor="orange"]
+subgraph cluster_80 {
+label=""
+color=white
+fontcolor=white
+node80 [label=":batchCreate\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node80 -> node81 [color="green", fontcolor="green"]
+subgraph cluster_81 {
+label=""
+color=white
+fontcolor=white
+node81 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node82 [color="blue", fontcolor="blue"]
+subgraph cluster_82 {
+label=""
+color=white
+fontcolor=white
+node82 [label="/annotationsets\n Collection\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node82 -> node83 [color="green", fontcolor="green"]
+subgraph cluster_83 {
+label=""
+color=white
+fontcolor=white
+node83 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node82 -> node84 [color="orange", fontcolor="orange"]
+subgraph cluster_84 {
+label=""
+color=white
+fontcolor=white
+node84 [label="/search\n Controller\nbut\nRetrieve Verb Controller", shape="octagon", color="red", fontcolor="red"]
+node84 -> node85 [color="green", fontcolor="green"]
+subgraph cluster_85 {
+label=""
+color=white
+fontcolor=white
+node85 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node82 -> node86 [color="blue", fontcolor="blue"]
+subgraph cluster_86 {
+label=""
+color=white
+fontcolor=white
+node86 [label="/{annotationSetId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node86 -> node87 [color="green", fontcolor="green"]
+subgraph cluster_87 {
+label=""
+color=white
+fontcolor=white
+node87 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node86 -> node88 [color="green", fontcolor="green"]
+subgraph cluster_88 {
+label=""
+color=white
+fontcolor=white
+node88 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node86 -> node89 [color="green", fontcolor="green"]
+subgraph cluster_89 {
+label=""
+color=white
+fontcolor=white
+node89 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node90 [color="blue", fontcolor="blue"]
+subgraph cluster_90 {
+label=""
+color=white
+fontcolor=white
+node90 [label="/variantsets\n Collection\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node90 -> node91 [color="green", fontcolor="green"]
+subgraph cluster_91 {
+label=""
+color=white
+fontcolor=white
+node91 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node90 -> node92 [color="orange", fontcolor="orange"]
+subgraph cluster_92 {
+label=""
+color=white
+fontcolor=white
+node92 [label="/search\n Controller\nbut\nRetrieve Verb Controller", shape="octagon", color="red", fontcolor="red"]
+node92 -> node93 [color="green", fontcolor="green"]
+subgraph cluster_93 {
+label=""
+color=white
+fontcolor=white
+node93 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node90 -> node94 [color="blue", fontcolor="blue"]
+subgraph cluster_94 {
+label=""
+color=white
+fontcolor=white
+node94 [label="/{variantSetId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node94 -> node95 [color="green", fontcolor="green"]
+subgraph cluster_95 {
+label=""
+color=white
+fontcolor=white
+node95 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node94 -> node96 [color="green", fontcolor="green"]
+subgraph cluster_96 {
+label=""
+color=white
+fontcolor=white
+node96 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node94 -> node97 [color="green", fontcolor="green"]
+subgraph cluster_97 {
+label=""
+color=white
+fontcolor=white
+node97 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node94 -> node98 [color="orange", fontcolor="orange"]
+subgraph cluster_98 {
+label=""
+color=white
+fontcolor=white
+node98 [label=":export\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node98 -> node99 [color="green", fontcolor="green"]
+subgraph cluster_99 {
+label=""
+color=white
+fontcolor=white
+node99 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}

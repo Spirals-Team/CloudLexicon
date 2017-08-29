@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Stackdriver Debugger API v2", fontsize=24]
+splines=true
+"debuggees" [color=blue, fontcolor=blue, shape=doublecircle]
+"register" [color=orange, fontcolor=orange, shape=box]
+"register" -> "debuggees" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"breakpoints" -> "debuggees" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"breakpoints" [color=blue, fontcolor=blue, shape=ellipse]
+"set" [color=orange, fontcolor=orange, shape=box]
+"set" -> "breakpoints" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

@@ -1,0 +1,19 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - BigQuery API v2", fontsize=24]
+splines=true
+"projects" [color=blue, fontcolor=blue, shape=doublecircle]
+"datasets" -> "projects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"datasets" [color=blue, fontcolor=blue, shape=ellipse]
+"tables" -> "datasets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"tables" [color=blue, fontcolor=blue, shape=ellipse]
+"data" -> "tables" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"data" [color=blue, fontcolor=blue, shape=ellipse]
+"insertAll" [color=orange, fontcolor=orange, shape=box]
+"insertAll" -> "tables" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"jobs" -> "projects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"jobs" [color=blue, fontcolor=blue, shape=ellipse]
+"cancel" [color=orange, fontcolor=orange, shape=box]
+"cancel" -> "jobs" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"queries" -> "projects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"queries" [color=blue, fontcolor=blue, shape=ellipse]
+}

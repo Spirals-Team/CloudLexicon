@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Google Cloud Platform - Google Cloud Vision API v1", fontsize=24]
+splines=true
+"images" [color=blue, fontcolor=blue, shape=doublecircle]
+"annotate" [color=orange, fontcolor=orange, shape=box]
+"annotate" -> "images" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}
