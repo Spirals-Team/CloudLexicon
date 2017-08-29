@@ -1,0 +1,1697 @@
+<CloudComputing>
+    <Provider name="Apache CloudStack">
+        <Service name="API 4.9">
+            <Resource uri="https://cloudstack.provider.com:[port]/client/api">
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=activateProject&amp;[parameters of this command]" verb="activateProject">
+                    <Method name="POST" description="Activates a project"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addAccountToProject&amp;[parameters of this command]" verb="addAccountToProject">
+                    <Method name="POST" description="Adds account to a project"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addBaremetalDhcp&amp;[parameters of this command]" verb="addBaremetalDhcp">
+                    <Method name="POST" description="adds a baremetal dhcp server"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addBaremetalHost&amp;[parameters of this command]" verb="addBaremetalHost">
+                    <Method name="POST" description="add a baremetal host"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addBaremetalPxeKickStartServer&amp;[parameters of this command]" verb="addBaremetalPxeKickStartServer">
+                    <Method name="POST" description="add a baremetal pxe server"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addBaremetalPxePingServer&amp;[parameters of this command]" verb="addBaremetalPxePingServer">
+                    <Method name="POST" description="add a baremetal ping pxe server"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addBaremetalRct&amp;[parameters of this command]" verb="addBaremetalRct">
+                    <Method name="POST" description="adds baremetal rack configuration text"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addBigSwitchBcfDevice&amp;[parameters of this command]" verb="addBigSwitchBcfDevice">
+                    <Method name="POST" description="Adds a BigSwitch BCF Controller device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addBrocadeVcsDevice&amp;[parameters of this command]" verb="addBrocadeVcsDevice">
+                    <Method name="POST" description="Adds a Brocade VCS Switch"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addCiscoAsa1000vResource&amp;[parameters of this command]" verb="addCiscoAsa1000vResource">
+                    <Method name="POST" description="Adds a Cisco Asa 1000v appliance"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addCiscoVnmcResource&amp;[parameters of this command]" verb="addCiscoVnmcResource">
+                    <Method name="POST" description="Adds a Cisco Vnmc Controller"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addCluster&amp;[parameters of this command]" verb="addCluster">
+                    <Method name="POST" description="Adds a new cluster"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addExternalFirewall&amp;[parameters of this command]" verb="addExternalFirewall">
+                    <Method name="POST" description="Adds an external firewall appliance"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addExternalLoadBalancer&amp;[parameters of this command]" verb="addExternalLoadBalancer">
+                    <Method name="POST" description="Adds F5 external load balancer appliance."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addF5LoadBalancer&amp;[parameters of this command]" verb="addF5LoadBalancer">
+                    <Method name="POST" description="Adds a F5 BigIP load balancer device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addGloboDnsHost&amp;[parameters of this command]" verb="addGloboDnsHost">
+                    <Method name="POST" description="Adds the GloboDNS external host"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addGuestOs&amp;[parameters of this command]" verb="addGuestOs">
+                    <Method name="POST" description="Add a new guest OS type"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addGuestOsMapping&amp;[parameters of this command]" verb="addGuestOsMapping">
+                    <Method name="POST" description="Adds a guest OS name to hypervisor OS name mapping"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addHost&amp;[parameters of this command]" verb="addHost">
+                    <Method name="POST" description="Adds a new host."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addImageStore&amp;[parameters of this command]" verb="addImageStore">
+                    <Method name="POST" description="Adds backup image store."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addImageStoreS3&amp;[parameters of this command]" verb="addImageStoreS3">
+                    <Method name="POST" description="Adds S3 Image Store"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addIpToNic&amp;[parameters of this command]" verb="addIpToNic">
+                    <Method name="POST" description="Assigns secondary IP to NIC"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addLdapConfiguration&amp;[parameters of this command]" verb="addLdapConfiguration">
+                    <Method name="POST" description="Add a new Ldap Configuration"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addNetscalerLoadBalancer&amp;[parameters of this command]" verb="addNetscalerLoadBalancer">
+                    <Method name="POST" description="Adds a netscaler load balancer device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addNetworkDevice&amp;[parameters of this command]" verb="addNetworkDevice">
+                    <Method name="POST" description="Adds a network device of one of the following types: ExternalDhcp, ExternalFirewall, ExternalLoadBalancer, PxeServer"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addNetworkServiceProvider&amp;[parameters of this command]" verb="addNetworkServiceProvider">
+                    <Method name="POST" description="Adds a network serviceProvider to a physical network"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addNicToVirtualMachine&amp;[parameters of this command]" verb="addNicToVirtualMachine">
+                    <Method name="POST" description="Adds VM to specified network by creating a NIC"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addNiciraNvpDevice&amp;[parameters of this command]" verb="addNiciraNvpDevice">
+                    <Method name="POST" description="Adds a Nicira NVP device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addNuageVspDevice&amp;[parameters of this command]" verb="addNuageVspDevice">
+                    <Method name="POST" description="Adds a Nuage VSP device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addOpenDaylightController&amp;[parameters of this command]" verb="addOpenDaylightController">
+                    <Method name="POST" description="Adds an OpenDyalight controler"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addPaloAltoFirewall&amp;[parameters of this command]" verb="addPaloAltoFirewall">
+                    <Method name="POST" description="Adds a Palo Alto firewall device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addRegion&amp;[parameters of this command]" verb="addRegion">
+                    <Method name="POST" description="Adds a Region"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addResourceDetail&amp;[parameters of this command]" verb="addResourceDetail">
+                    <Method name="POST" description="Adds detail for the Resource."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addSecondaryStorage&amp;[parameters of this command]" verb="addSecondaryStorage">
+                    <Method name="POST" description="Adds secondary storage."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addSrxFirewall&amp;[parameters of this command]" verb="addSrxFirewall">
+                    <Method name="POST" description="Adds a SRX firewall device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addStratosphereSsp&amp;[parameters of this command]" verb="addStratosphereSsp">
+                    <Method name="POST" description="Adds stratosphere ssp server"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addSwift&amp;[parameters of this command]" verb="addSwift">
+                    <Method name="POST" description="Adds Swift."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addTrafficMonitor&amp;[parameters of this command]" verb="addTrafficMonitor">
+                    <Method name="POST" description="Adds Traffic Monitor Host for Direct Network Usage"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addTrafficType&amp;[parameters of this command]" verb="addTrafficType">
+                    <Method name="POST" description="Adds traffic type to a physical network"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addUcsManager&amp;[parameters of this command]" verb="addUcsManager">
+                    <Method name="POST" description="Adds a Ucs manager"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addVmwareDc&amp;[parameters of this command]" verb="addVmwareDc">
+                    <Method name="POST" description="Adds a VMware datacenter to specified zone"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=addVpnUser&amp;[parameters of this command]" verb="addVpnUser">
+                    <Method name="POST" description="Adds vpn users"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=archiveAlerts&amp;[parameters of this command]" verb="archiveAlerts">
+                    <Method name="POST" description="Archive one or more alerts."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=archiveEvents&amp;[parameters of this command]" verb="archiveEvents">
+                    <Method name="POST" description="Archive one or more events."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=assignCertToLoadBalancer&amp;[parameters of this command]" verb="assignCertToLoadBalancer">
+                    <Method name="POST" description="Assigns a certificate to a load balancer rule"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=assignToGlobalLoadBalancerRule&amp;[parameters of this command]" verb="assignToGlobalLoadBalancerRule">
+                    <Method name="POST" description="Assign load balancer rule or list of load balancer rules to a global load balancer rules."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=assignToLoadBalancerRule&amp;[parameters of this command]" verb="assignToLoadBalancerRule">
+                    <Method name="POST" description="Assigns virtual machine or a list of virtual machines to a load balancer rule."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=assignVirtualMachine&amp;[parameters of this command]" verb="assignVirtualMachine">
+                    <Method name="POST" description="Change ownership of a VM from one account to another. This API is available for Basic zones with security groups and Advanced zones with guest networks. A root administrator can reassign a VM from any account to any other account in any domain. A domain administrator can reassign a VM to any account in the same domain."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=associateIpAddress&amp;[parameters of this command]" verb="associateIpAddress">
+                    <Method name="POST" description="Acquires and associates a public IP to an account."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=associateLun&amp;[parameters of this command]" verb="associateLun">
+                    <Method name="POST" description="Associate a LUN with a guest IQN"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=associateUcsProfileToBlade&amp;[parameters of this command]" verb="associateUcsProfileToBlade">
+                    <Method name="POST" description="associate a profile to a blade"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=attachIso&amp;[parameters of this command]" verb="attachIso">
+                    <Method name="POST" description="Attaches an ISO to a virtual machine."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=attachVolume&amp;[parameters of this command]" verb="attachVolume">
+                    <Method name="POST" description="Attaches a disk volume to a virtual machine."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=authorizeSamlSso&amp;[parameters of this command]" verb="authorizeSamlSso">
+                    <Method name="POST" description="Allow or disallow a user to use SAML SSO"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=authorizeSecurityGroupEgress&amp;[parameters of this command]" verb="authorizeSecurityGroupEgress">
+                    <Method name="POST" description="Authorizes a particular egress rule for this security group"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=authorizeSecurityGroupIngress&amp;[parameters of this command]" verb="authorizeSecurityGroupIngress">
+                    <Method name="POST" description="Authorizes a particular ingress rule for this security group"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=cancelHostMaintenance&amp;[parameters of this command]" verb="cancelHostMaintenance">
+                    <Method name="POST" description="Cancels host maintenance."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=cancelStorageMaintenance&amp;[parameters of this command]" verb="cancelStorageMaintenance">
+                    <Method name="POST" description="Cancels maintenance for primary storage"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=changeOutOfBandManagementPassword&amp;[parameters of this command]" verb="changeOutOfBandManagementPassword">
+                    <Method name="POST" description="Changes out-of-band management interface password on the host and updates the interface configuration in CloudStack if the operation succeeds, else reverts the old password"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=changeServiceForRouter&amp;[parameters of this command]" verb="changeServiceForRouter">
+                    <Method name="POST" description="Upgrades domain router to a new service offering"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=changeServiceForSystemVm&amp;[parameters of this command]" verb="changeServiceForSystemVm">
+                    <Method name="POST" description="Changes the service offering for a system vm (console proxy or secondary storage). The system vm must be in a Stopped&amp;quot; state for this command to take effect.&amp;quot;"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=changeServiceForVirtualMachine&amp;[parameters of this command]" verb="changeServiceForVirtualMachine">
+                    <Method name="POST" description="Changes the service offering for a virtual machine. The virtual machine must be in a Stopped&amp;quot; state for this command to take effect.&amp;quot;"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=cleanVMReservations&amp;[parameters of this command]" verb="cleanVMReservations">
+                    <Method name="POST" description="Cleanups VM reservations in the database."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=configureF5LoadBalancer&amp;[parameters of this command]" verb="configureF5LoadBalancer">
+                    <Method name="POST" description="configures a F5 load balancer device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=configureInternalLoadBalancerElement&amp;[parameters of this command]" verb="configureInternalLoadBalancerElement">
+                    <Method name="POST" description="Configures an Internal Load Balancer element."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=configureNetscalerLoadBalancer&amp;[parameters of this command]" verb="configureNetscalerLoadBalancer">
+                    <Method name="POST" description="configures a netscaler load balancer device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=configureOutOfBandManagement&amp;[parameters of this command]" verb="configureOutOfBandManagement">
+                    <Method name="POST" description="Configures a host&apos;s out-of-band management interface"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=configureOvsElement&amp;[parameters of this command]" verb="configureOvsElement">
+                    <Method name="POST" description="Configures an ovs element."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=configurePaloAltoFirewall&amp;[parameters of this command]" verb="configurePaloAltoFirewall">
+                    <Method name="POST" description="Configures a Palo Alto firewall device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=configureSrxFirewall&amp;[parameters of this command]" verb="configureSrxFirewall">
+                    <Method name="POST" description="Configures a SRX firewall device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=configureVirtualRouterElement&amp;[parameters of this command]" verb="configureVirtualRouterElement">
+                    <Method name="POST" description="Configures a virtual router element."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=copyIso&amp;[parameters of this command]" verb="copyIso">
+                    <Method name="POST" description="Copies an iso from one zone to another."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=copyTemplate&amp;[parameters of this command]" verb="copyTemplate">
+                    <Method name="POST" description="Copies a template from one zone to another."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createAccount&amp;[parameters of this command]" verb="createAccount">
+                    <Method name="POST" description="Creates an account"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createAffinityGroup&amp;[parameters of this command]" verb="createAffinityGroup">
+                    <Method name="POST" description="Creates an affinity/anti-affinity group"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createAutoScalePolicy&amp;[parameters of this command]" verb="createAutoScalePolicy">
+                    <Method name="POST" description="Creates an autoscale policy for a provision or deprovision action, the action is taken when the all the conditions evaluates to true for the specified duration. The policy is in effect once it is attached to a autscale vm group."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createAutoScaleVmGroup&amp;[parameters of this command]" verb="createAutoScaleVmGroup">
+                    <Method name="POST" description="Creates and automatically starts a virtual machine based on a service offering, disk offering, and template."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createAutoScaleVmProfile&amp;[parameters of this command]" verb="createAutoScaleVmProfile">
+                    <Method name="POST" description="Creates a profile that contains information about the virtual machine which will be provisioned automatically by autoscale feature."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createCondition&amp;[parameters of this command]" verb="createCondition">
+                    <Method name="POST" description="Creates a condition"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createCounter&amp;[parameters of this command]" verb="createCounter">
+                    <Method name="POST" description="Adds metric counter"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createDiskOffering&amp;[parameters of this command]" verb="createDiskOffering">
+                    <Method name="POST" description="Creates a disk offering."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createDomain&amp;[parameters of this command]" verb="createDomain">
+                    <Method name="POST" description="Creates a domain"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createEgressFirewallRule&amp;[parameters of this command]" verb="createEgressFirewallRule">
+                    <Method name="POST" description="Creates a egress firewall rule for a given network "/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createFirewallRule&amp;[parameters of this command]" verb="createFirewallRule">
+                    <Method name="POST" description="Creates a firewall rule for a given IP address"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createGlobalLoadBalancerRule&amp;[parameters of this command]" verb="createGlobalLoadBalancerRule">
+                    <Method name="POST" description="Creates a global load balancer rule"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createInstanceGroup&amp;[parameters of this command]" verb="createInstanceGroup">
+                    <Method name="POST" description="Creates a vm group"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createInternalLoadBalancerElement&amp;[parameters of this command]" verb="createInternalLoadBalancerElement">
+                    <Method name="POST" description="Create an Internal Load Balancer element."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createIpForwardingRule&amp;[parameters of this command]" verb="createIpForwardingRule">
+                    <Method name="POST" description="Creates an IP forwarding rule"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createLBHealthCheckPolicy&amp;[parameters of this command]" verb="createLBHealthCheckPolicy">
+                    <Method name="POST" description="Creates a load balancer health check policy"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createLBStickinessPolicy&amp;[parameters of this command]" verb="createLBStickinessPolicy">
+                    <Method name="POST" description="Creates a load balancer stickiness policy "/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createLoadBalancer&amp;[parameters of this command]" verb="createLoadBalancer">
+                    <Method name="POST" description="Creates a load balancer"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createLoadBalancerRule&amp;[parameters of this command]" verb="createLoadBalancerRule">
+                    <Method name="POST" description="Creates a load balancer rule"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createLunOnFiler&amp;[parameters of this command]" verb="createLunOnFiler">
+                    <Method name="POST" description="Create a LUN from a pool"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createNetwork&amp;[parameters of this command]" verb="createNetwork">
+                    <Method name="POST" description="Creates a network"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createNetworkACL&amp;[parameters of this command]" verb="createNetworkACL">
+                    <Method name="POST" description="Creates a ACL rule in the given network (the network has to belong to VPC)"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createNetworkACLList&amp;[parameters of this command]" verb="createNetworkACLList">
+                    <Method name="POST" description="Creates a network ACL for the given VPC"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createNetworkOffering&amp;[parameters of this command]" verb="createNetworkOffering">
+                    <Method name="POST" description="Creates a network offering."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createPhysicalNetwork&amp;[parameters of this command]" verb="createPhysicalNetwork">
+                    <Method name="POST" description="Creates a physical network"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createPod&amp;[parameters of this command]" verb="createPod">
+                    <Method name="POST" description="Creates a new Pod."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createPool&amp;[parameters of this command]" verb="createPool">
+                    <Method name="POST" description="Create a pool"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createPortForwardingRule&amp;[parameters of this command]" verb="createPortForwardingRule">
+                    <Method name="POST" description="Creates a port forwarding rule"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createPortableIpRange&amp;[parameters of this command]" verb="createPortableIpRange">
+                    <Method name="POST" description="adds a range of portable public IP&apos;s to a region"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createPrivateGateway&amp;[parameters of this command]" verb="createPrivateGateway">
+                    <Method name="POST" description="Creates a private gateway"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createProject&amp;[parameters of this command]" verb="createProject">
+                    <Method name="POST" description="Creates a project"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createRemoteAccessVpn&amp;[parameters of this command]" verb="createRemoteAccessVpn">
+                    <Method name="POST" description="Creates a l2tp/ipsec remote access vpn"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createRole&amp;[parameters of this command]" verb="createRole">
+                    <Method name="POST" description="Creates a role"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createRolePermission&amp;[parameters of this command]" verb="createRolePermission">
+                    <Method name="POST" description="Adds a API permission to a role"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createSSHKeyPair&amp;[parameters of this command]" verb="createSSHKeyPair">
+                    <Method name="POST" description="Create a new keypair and returns the private key"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createSecondaryStagingStore&amp;[parameters of this command]" verb="createSecondaryStagingStore">
+                    <Method name="POST" description="create secondary staging store."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createSecurityGroup&amp;[parameters of this command]" verb="createSecurityGroup">
+                    <Method name="POST" description="Creates a security group"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createServiceInstance&amp;[parameters of this command]" verb="createServiceInstance">
+                    <Method name="POST" description="Creates a system virtual-machine that implements network services"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createServiceOffering&amp;[parameters of this command]" verb="createServiceOffering">
+                    <Method name="POST" description="Creates a service offering."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createSnapshot&amp;[parameters of this command]" verb="createSnapshot">
+                    <Method name="POST" description="Creates an instant snapshot of a volume."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createSnapshotPolicy&amp;[parameters of this command]" verb="createSnapshotPolicy">
+                    <Method name="POST" description="Creates a snapshot policy for the account."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createStaticRoute&amp;[parameters of this command]" verb="createStaticRoute">
+                    <Method name="POST" description="Creates a static route"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createStorageNetworkIpRange&amp;[parameters of this command]" verb="createStorageNetworkIpRange">
+                    <Method name="POST" description="Creates a Storage network IP range."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createStoragePool&amp;[parameters of this command]" verb="createStoragePool">
+                    <Method name="POST" description="Creates a storage pool."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createTags&amp;[parameters of this command]" verb="createTags">
+                    <Method name="POST" description="Creates resource tag(s)"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createTemplate&amp;[parameters of this command]" verb="createTemplate">
+                    <Method name="POST" description="Creates a template of a virtual machine. The virtual machine must be in a STOPPED state. A template created from this command is automatically designated as a private template visible to the account that created it."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createUser&amp;[parameters of this command]" verb="createUser">
+                    <Method name="POST" description="Creates a user for an account that already exists"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createVMSnapshot&amp;[parameters of this command]" verb="createVMSnapshot">
+                    <Method name="POST" description="Creates snapshot for a vm."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createVPC&amp;[parameters of this command]" verb="createVPC">
+                    <Method name="POST" description="Creates a VPC"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createVPCOffering&amp;[parameters of this command]" verb="createVPCOffering">
+                    <Method name="POST" description="Creates VPC offering"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createVirtualRouterElement&amp;[parameters of this command]" verb="createVirtualRouterElement">
+                    <Method name="POST" description="Create a virtual router element."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createVlanIpRange&amp;[parameters of this command]" verb="createVlanIpRange">
+                    <Method name="POST" description="Creates a VLAN IP range."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createVolume&amp;[parameters of this command]" verb="createVolume">
+                    <Method name="POST" description="Creates a disk volume from a disk offering. This disk volume must still be attached to a virtual machine to make use of it."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createVolumeOnFiler&amp;[parameters of this command]" verb="createVolumeOnFiler">
+                    <Method name="POST" description="Create a volume"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createVpnConnection&amp;[parameters of this command]" verb="createVpnConnection">
+                    <Method name="POST" description="Create site to site vpn connection"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createVpnCustomerGateway&amp;[parameters of this command]" verb="createVpnCustomerGateway">
+                    <Method name="POST" description="Creates site to site vpn customer gateway"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createVpnGateway&amp;[parameters of this command]" verb="createVpnGateway">
+                    <Method name="POST" description="Creates site to site vpn local gateway"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=createZone&amp;[parameters of this command]" verb="createZone">
+                    <Method name="POST" description="Creates a Zone."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=dedicateCluster&amp;[parameters of this command]" verb="dedicateCluster">
+                    <Method name="POST" description="Dedicate an existing cluster"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=dedicateGuestVlanRange&amp;[parameters of this command]" verb="dedicateGuestVlanRange">
+                    <Method name="POST" description="Dedicates a guest vlan range to an account"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=dedicateHost&amp;[parameters of this command]" verb="dedicateHost">
+                    <Method name="POST" description="Dedicates a host."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=dedicatePod&amp;[parameters of this command]" verb="dedicatePod">
+                    <Method name="POST" description="Dedicates a Pod."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=dedicatePublicIpRange&amp;[parameters of this command]" verb="dedicatePublicIpRange">
+                    <Method name="POST" description="Dedicates a Public IP range to an account"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=dedicateZone&amp;[parameters of this command]" verb="dedicateZone">
+                    <Method name="POST" description="Dedicates a zones."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteAccount&amp;[parameters of this command]" verb="deleteAccount">
+                    <Method name="POST" description="Deletes a account, and all users associated with this account"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteAccountFromProject&amp;[parameters of this command]" verb="deleteAccountFromProject">
+                    <Method name="POST" description="Deletes account from the project"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteAffinityGroup&amp;[parameters of this command]" verb="deleteAffinityGroup">
+                    <Method name="POST" description="Deletes affinity group"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteAlerts&amp;[parameters of this command]" verb="deleteAlerts">
+                    <Method name="POST" description="Delete one or more alerts."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteAutoScalePolicy&amp;[parameters of this command]" verb="deleteAutoScalePolicy">
+                    <Method name="POST" description="Deletes a autoscale policy."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteAutoScaleVmGroup&amp;[parameters of this command]" verb="deleteAutoScaleVmGroup">
+                    <Method name="POST" description="Deletes a autoscale vm group."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteAutoScaleVmProfile&amp;[parameters of this command]" verb="deleteAutoScaleVmProfile">
+                    <Method name="POST" description="Deletes a autoscale vm profile."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteBaremetalRct&amp;[parameters of this command]" verb="deleteBaremetalRct">
+                    <Method name="POST" description="deletes baremetal rack configuration text"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteBigSwitchBcfDevice&amp;[parameters of this command]" verb="deleteBigSwitchBcfDevice">
+                    <Method name="POST" description=" delete a BigSwitch BCF Controller device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteBrocadeVcsDevice&amp;[parameters of this command]" verb="deleteBrocadeVcsDevice">
+                    <Method name="POST" description=" delete a Brocade VCS Switch"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteCiscoAsa1000vResource&amp;[parameters of this command]" verb="deleteCiscoAsa1000vResource">
+                    <Method name="POST" description="Deletes a Cisco ASA 1000v appliance"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteCiscoNexusVSM&amp;[parameters of this command]" verb="deleteCiscoNexusVSM">
+                    <Method name="POST" description=" delete a Cisco Nexus VSM device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteCiscoVnmcResource&amp;[parameters of this command]" verb="deleteCiscoVnmcResource">
+                    <Method name="POST" description="Deletes a Cisco Vnmc controller"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteCluster&amp;[parameters of this command]" verb="deleteCluster">
+                    <Method name="POST" description="Deletes a cluster."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteCondition&amp;[parameters of this command]" verb="deleteCondition">
+                    <Method name="POST" description="Removes a condition"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteCounter&amp;[parameters of this command]" verb="deleteCounter">
+                    <Method name="POST" description="Deletes a counter"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteDiskOffering&amp;[parameters of this command]" verb="deleteDiskOffering">
+                    <Method name="POST" description="Updates a disk offering."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteDomain&amp;[parameters of this command]" verb="deleteDomain">
+                    <Method name="POST" description="Deletes a specified domain"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteEgressFirewallRule&amp;[parameters of this command]" verb="deleteEgressFirewallRule">
+                    <Method name="POST" description="Deletes an egress firewall rule"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteEvents&amp;[parameters of this command]" verb="deleteEvents">
+                    <Method name="POST" description="Delete one or more events."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteExternalFirewall&amp;[parameters of this command]" verb="deleteExternalFirewall">
+                    <Method name="POST" description="Deletes an external firewall appliance."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteExternalLoadBalancer&amp;[parameters of this command]" verb="deleteExternalLoadBalancer">
+                    <Method name="POST" description="Deletes a F5 external load balancer appliance added in a zone."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteF5LoadBalancer&amp;[parameters of this command]" verb="deleteF5LoadBalancer">
+                    <Method name="POST" description=" delete a F5 load balancer device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteFirewallRule&amp;[parameters of this command]" verb="deleteFirewallRule">
+                    <Method name="POST" description="Deletes a firewall rule"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteGlobalLoadBalancerRule&amp;[parameters of this command]" verb="deleteGlobalLoadBalancerRule">
+                    <Method name="POST" description="Deletes a global load balancer rule."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteHost&amp;[parameters of this command]" verb="deleteHost">
+                    <Method name="POST" description="Deletes a host."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteImageStore&amp;[parameters of this command]" verb="deleteImageStore">
+                    <Method name="POST" description="Deletes an image store or Secondary Storage."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteInstanceGroup&amp;[parameters of this command]" verb="deleteInstanceGroup">
+                    <Method name="POST" description="Deletes a vm group"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteIpForwardingRule&amp;[parameters of this command]" verb="deleteIpForwardingRule">
+                    <Method name="POST" description="Deletes an IP forwarding rule"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteIso&amp;[parameters of this command]" verb="deleteIso">
+                    <Method name="POST" description="Deletes an ISO file."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteLBHealthCheckPolicy&amp;[parameters of this command]" verb="deleteLBHealthCheckPolicy">
+                    <Method name="POST" description="Deletes a load balancer health check policy."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteLBStickinessPolicy&amp;[parameters of this command]" verb="deleteLBStickinessPolicy">
+                    <Method name="POST" description="Deletes a load balancer stickiness policy."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteLdapConfiguration&amp;[parameters of this command]" verb="deleteLdapConfiguration">
+                    <Method name="POST" description="Remove an Ldap Configuration"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteLoadBalancer&amp;[parameters of this command]" verb="deleteLoadBalancer">
+                    <Method name="POST" description="Deletes a load balancer"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteLoadBalancerRule&amp;[parameters of this command]" verb="deleteLoadBalancerRule">
+                    <Method name="POST" description="Deletes a load balancer rule."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteNetscalerLoadBalancer&amp;[parameters of this command]" verb="deleteNetscalerLoadBalancer">
+                    <Method name="POST" description=" delete a netscaler load balancer device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteNetwork&amp;[parameters of this command]" verb="deleteNetwork">
+                    <Method name="POST" description="Deletes a network"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteNetworkACL&amp;[parameters of this command]" verb="deleteNetworkACL">
+                    <Method name="POST" description="Deletes a network ACL"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteNetworkACLList&amp;[parameters of this command]" verb="deleteNetworkACLList">
+                    <Method name="POST" description="Deletes a network ACL"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteNetworkDevice&amp;[parameters of this command]" verb="deleteNetworkDevice">
+                    <Method name="POST" description="Deletes network device."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteNetworkOffering&amp;[parameters of this command]" verb="deleteNetworkOffering">
+                    <Method name="POST" description="Deletes a network offering."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteNetworkServiceProvider&amp;[parameters of this command]" verb="deleteNetworkServiceProvider">
+                    <Method name="POST" description="Deletes a Network Service Provider."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteNiciraNvpDevice&amp;[parameters of this command]" verb="deleteNiciraNvpDevice">
+                    <Method name="POST" description=" delete a nicira nvp device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteNuageVspDevice&amp;[parameters of this command]" verb="deleteNuageVspDevice">
+                    <Method name="POST" description="delete a nuage vsp device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteOpenDaylightController&amp;[parameters of this command]" verb="deleteOpenDaylightController">
+                    <Method name="POST" description="Removes an OpenDyalight controler"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deletePaloAltoFirewall&amp;[parameters of this command]" verb="deletePaloAltoFirewall">
+                    <Method name="POST" description=" delete a Palo Alto firewall device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deletePhysicalNetwork&amp;[parameters of this command]" verb="deletePhysicalNetwork">
+                    <Method name="POST" description="Deletes a Physical Network."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deletePod&amp;[parameters of this command]" verb="deletePod">
+                    <Method name="POST" description="Deletes a Pod."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deletePool&amp;[parameters of this command]" verb="deletePool">
+                    <Method name="POST" description="Delete a pool"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deletePortForwardingRule&amp;[parameters of this command]" verb="deletePortForwardingRule">
+                    <Method name="POST" description="Deletes a port forwarding rule"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deletePortableIpRange&amp;[parameters of this command]" verb="deletePortableIpRange">
+                    <Method name="POST" description="deletes a range of portable public IP&apos;s associated with a region"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deletePrivateGateway&amp;[parameters of this command]" verb="deletePrivateGateway">
+                    <Method name="POST" description="Deletes a Private gateway"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteProject&amp;[parameters of this command]" verb="deleteProject">
+                    <Method name="POST" description="Deletes a project"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteProjectInvitation&amp;[parameters of this command]" verb="deleteProjectInvitation">
+                    <Method name="POST" description="Deletes project invitation"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteRemoteAccessVpn&amp;[parameters of this command]" verb="deleteRemoteAccessVpn">
+                    <Method name="POST" description="Destroys a l2tp/ipsec remote access vpn"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteRole&amp;[parameters of this command]" verb="deleteRole">
+                    <Method name="POST" description="Deletes a role"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteRolePermission&amp;[parameters of this command]" verb="deleteRolePermission">
+                    <Method name="POST" description="Deletes a role permission"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteSSHKeyPair&amp;[parameters of this command]" verb="deleteSSHKeyPair">
+                    <Method name="POST" description="Deletes a keypair by name"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteSecondaryStagingStore&amp;[parameters of this command]" verb="deleteSecondaryStagingStore">
+                    <Method name="POST" description="Deletes a secondary staging store ."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteSecurityGroup&amp;[parameters of this command]" verb="deleteSecurityGroup">
+                    <Method name="POST" description="Deletes security group"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteServiceOffering&amp;[parameters of this command]" verb="deleteServiceOffering">
+                    <Method name="POST" description="Deletes a service offering."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteSnapshot&amp;[parameters of this command]" verb="deleteSnapshot">
+                    <Method name="POST" description="Deletes a snapshot of a disk volume."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteSnapshotPolicies&amp;[parameters of this command]" verb="deleteSnapshotPolicies">
+                    <Method name="POST" description="Deletes snapshot policies for the account."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteSrxFirewall&amp;[parameters of this command]" verb="deleteSrxFirewall">
+                    <Method name="POST" description=" delete a SRX firewall device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteSslCert&amp;[parameters of this command]" verb="deleteSslCert">
+                    <Method name="POST" description="Delete a certificate to CloudStack"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteStaticRoute&amp;[parameters of this command]" verb="deleteStaticRoute">
+                    <Method name="POST" description="Deletes a static route"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteStorageNetworkIpRange&amp;[parameters of this command]" verb="deleteStorageNetworkIpRange">
+                    <Method name="POST" description="Deletes a storage network IP Range."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteStoragePool&amp;[parameters of this command]" verb="deleteStoragePool">
+                    <Method name="POST" description="Deletes a storage pool."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteStratosphereSsp&amp;[parameters of this command]" verb="deleteStratosphereSsp">
+                    <Method name="POST" description="Removes stratosphere ssp server"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteTags&amp;[parameters of this command]" verb="deleteTags">
+                    <Method name="POST" description="Deleting resource tag(s)"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteTemplate&amp;[parameters of this command]" verb="deleteTemplate">
+                    <Method name="POST" description="Deletes a template from the system. All virtual machines using the deleted template will not be affected."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteTrafficMonitor&amp;[parameters of this command]" verb="deleteTrafficMonitor">
+                    <Method name="POST" description="Deletes an traffic monitor host."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteTrafficType&amp;[parameters of this command]" verb="deleteTrafficType">
+                    <Method name="POST" description="Deletes traffic type of a physical network"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteUcsManager&amp;[parameters of this command]" verb="deleteUcsManager">
+                    <Method name="POST" description="Delete a Ucs manager"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteUser&amp;[parameters of this command]" verb="deleteUser">
+                    <Method name="POST" description="Deletes a user for an account"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteVMSnapshot&amp;[parameters of this command]" verb="deleteVMSnapshot">
+                    <Method name="POST" description="Deletes a vmsnapshot."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteVPC&amp;[parameters of this command]" verb="deleteVPC">
+                    <Method name="POST" description="Deletes a VPC"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteVPCOffering&amp;[parameters of this command]" verb="deleteVPCOffering">
+                    <Method name="POST" description="Deletes VPC offering"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteVlanIpRange&amp;[parameters of this command]" verb="deleteVlanIpRange">
+                    <Method name="POST" description="Creates a VLAN IP range."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteVolume&amp;[parameters of this command]" verb="deleteVolume">
+                    <Method name="POST" description="Deletes a detached disk volume."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteVpnConnection&amp;[parameters of this command]" verb="deleteVpnConnection">
+                    <Method name="POST" description="Delete site to site vpn connection"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteVpnCustomerGateway&amp;[parameters of this command]" verb="deleteVpnCustomerGateway">
+                    <Method name="POST" description="Delete site to site vpn customer gateway"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteVpnGateway&amp;[parameters of this command]" verb="deleteVpnGateway">
+                    <Method name="POST" description="Delete site to site vpn gateway"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deleteZone&amp;[parameters of this command]" verb="deleteZone">
+                    <Method name="POST" description="Deletes a Zone."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=deployVirtualMachine&amp;[parameters of this command]" verb="deployVirtualMachine">
+                    <Method name="POST" description="Creates and automatically starts a virtual machine based on a service offering, disk offering, and template."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=destroyLunOnFiler&amp;[parameters of this command]" verb="destroyLunOnFiler">
+                    <Method name="POST" description="Destroy a LUN"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=destroyRouter&amp;[parameters of this command]" verb="destroyRouter">
+                    <Method name="POST" description="Destroys a router."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=destroySystemVm&amp;[parameters of this command]" verb="destroySystemVm">
+                    <Method name="POST" description="Destroyes a system virtual machine."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=destroyVirtualMachine&amp;[parameters of this command]" verb="destroyVirtualMachine">
+                    <Method name="POST" description="Destroys a virtual machine. Once destroyed, only the administrator can recover it."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=destroyVolumeOnFiler&amp;[parameters of this command]" verb="destroyVolumeOnFiler">
+                    <Method name="POST" description="Destroy a Volume"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=detachIso&amp;[parameters of this command]" verb="detachIso">
+                    <Method name="POST" description="Detaches any ISO file (if any) currently attached to a virtual machine."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=detachVolume&amp;[parameters of this command]" verb="detachVolume">
+                    <Method name="POST" description="Detaches a disk volume from a virtual machine."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=disableAccount&amp;[parameters of this command]" verb="disableAccount">
+                    <Method name="POST" description="Disables an account"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=disableAutoScaleVmGroup&amp;[parameters of this command]" verb="disableAutoScaleVmGroup">
+                    <Method name="POST" description="Disables an AutoScale Vm Group"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=disableCiscoNexusVSM&amp;[parameters of this command]" verb="disableCiscoNexusVSM">
+                    <Method name="POST" description="disable a Cisco Nexus VSM device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=disableOutOfBandManagementForCluster&amp;[parameters of this command]" verb="disableOutOfBandManagementForCluster">
+                    <Method name="POST" description="Disables out-of-band management for a cluster"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=disableOutOfBandManagementForHost&amp;[parameters of this command]" verb="disableOutOfBandManagementForHost">
+                    <Method name="POST" description="Disables out-of-band management for a host"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=disableOutOfBandManagementForZone&amp;[parameters of this command]" verb="disableOutOfBandManagementForZone">
+                    <Method name="POST" description="Disables out-of-band management for a zone"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=disableStaticNat&amp;[parameters of this command]" verb="disableStaticNat">
+                    <Method name="POST" description="Disables static rule for given IP address"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=disableUser&amp;[parameters of this command]" verb="disableUser">
+                    <Method name="POST" description="Disables a user account"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=disassociateIpAddress&amp;[parameters of this command]" verb="disassociateIpAddress">
+                    <Method name="POST" description="Disassociates an IP address from the account."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=dissociateLun&amp;[parameters of this command]" verb="dissociateLun">
+                    <Method name="POST" description="Dissociate a LUN"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=enableAccount&amp;[parameters of this command]" verb="enableAccount">
+                    <Method name="POST" description="Enables an account"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=enableAutoScaleVmGroup&amp;[parameters of this command]" verb="enableAutoScaleVmGroup">
+                    <Method name="POST" description="Enables an AutoScale Vm Group"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=enableCiscoNexusVSM&amp;[parameters of this command]" verb="enableCiscoNexusVSM">
+                    <Method name="POST" description="Enable a Cisco Nexus VSM device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=enableOutOfBandManagementForCluster&amp;[parameters of this command]" verb="enableOutOfBandManagementForCluster">
+                    <Method name="POST" description="Enables out-of-band management for a cluster"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=enableOutOfBandManagementForHost&amp;[parameters of this command]" verb="enableOutOfBandManagementForHost">
+                    <Method name="POST" description="Enables out-of-band management for a host"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=enableOutOfBandManagementForZone&amp;[parameters of this command]" verb="enableOutOfBandManagementForZone">
+                    <Method name="POST" description="Enables out-of-band management for a zone"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=enableStaticNat&amp;[parameters of this command]" verb="enableStaticNat">
+                    <Method name="POST" description="Enables static NAT for given IP address"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=enableStorageMaintenance&amp;[parameters of this command]" verb="enableStorageMaintenance">
+                    <Method name="POST" description="Puts storage pool into maintenance state"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=enableUser&amp;[parameters of this command]" verb="enableUser">
+                    <Method name="POST" description="Enables a user account"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=expungeVirtualMachine&amp;[parameters of this command]" verb="expungeVirtualMachine">
+                    <Method name="POST" description="Expunge a virtual machine. Once expunged, it cannot be recoverd."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=extractIso&amp;[parameters of this command]" verb="extractIso">
+                    <Method name="POST" description="Extracts an ISO"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=extractTemplate&amp;[parameters of this command]" verb="extractTemplate">
+                    <Method name="POST" description="Extracts a template"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=extractVolume&amp;[parameters of this command]" verb="extractVolume">
+                    <Method name="POST" description="Extracts volume"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=findHostsForMigration&amp;[parameters of this command]" verb="findHostsForMigration">
+                    <Method name="POST" description="Find hosts suitable for migrating a virtual machine."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=findStoragePoolsForMigration&amp;[parameters of this command]" verb="findStoragePoolsForMigration">
+                    <Method name="POST" description="Lists storage pools available for migration of a volume."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=generateAlert&amp;[parameters of this command]" verb="generateAlert">
+                    <Method name="POST" description="Generates an alert"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=generateUsageRecords&amp;[parameters of this command]" verb="generateUsageRecords">
+                    <Method name="POST" description="Generates usage records. This will generate records only if there any records to be generated, i.e if the scheduled usage job was not run or failed"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getApiLimit&amp;[parameters of this command]" verb="getApiLimit">
+                    <Method name="POST" description="Get API limit count for the caller"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getCloudIdentifier&amp;[parameters of this command]" verb="getCloudIdentifier">
+                    <Method name="POST" description="Retrieves a cloud identifier."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getPathForVolume&amp;[parameters of this command]" verb="getPathForVolume">
+                    <Method name="POST" description="Get the path associated with the provided volume UUID"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getSPMetadata&amp;[parameters of this command]" verb="getSPMetadata">
+                    <Method name="POST" description="Returns SAML2 CloudStack Service Provider MetaData"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getSolidFireAccountId&amp;[parameters of this command]" verb="getSolidFireAccountId">
+                    <Method name="POST" description="Get SolidFire Account ID"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getSolidFireVolumeAccessGroupId&amp;[parameters of this command]" verb="getSolidFireVolumeAccessGroupId">
+                    <Method name="POST" description="Get the SF Volume Access Group ID"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getSolidFireVolumeSize&amp;[parameters of this command]" verb="getSolidFireVolumeSize">
+                    <Method name="POST" description="Get the SF volume size including Hypervisor Snapshot Reserve"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getUploadParamsForTemplate&amp;[parameters of this command]" verb="getUploadParamsForTemplate">
+                    <Method name="POST" description="upload an existing template into the CloudStack cloud. "/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getUploadParamsForVolume&amp;[parameters of this command]" verb="getUploadParamsForVolume">
+                    <Method name="POST" description="Upload a data disk to the cloudstack cloud."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getUser&amp;[parameters of this command]" verb="getUser">
+                    <Method name="POST" description="Find user account by API key"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getVMPassword&amp;[parameters of this command]" verb="getVMPassword">
+                    <Method name="POST" description="Returns an encrypted password for the VM"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getVirtualMachineUserData&amp;[parameters of this command]" verb="getVirtualMachineUserData">
+                    <Method name="POST" description="Returns user data associated with the VM"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getVolumeSnapshotDetails&amp;[parameters of this command]" verb="getVolumeSnapshotDetails">
+                    <Method name="POST" description="Get Volume Snapshot Details"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=getVolumeiScsiName&amp;[parameters of this command]" verb="getVolumeiScsiName">
+                    <Method name="POST" description="Get Volume&apos;s iSCSI Name"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=importLdapUsers&amp;[parameters of this command]" verb="importLdapUsers">
+                    <Method name="POST" description="Import LDAP users"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=issueOutOfBandManagementPowerAction&amp;[parameters of this command]" verb="issueOutOfBandManagementPowerAction">
+                    <Method name="POST" description="Initiates the specified power action to the host&apos;s out-of-band management interface"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=ldapConfig&amp;[parameters of this command]" verb="ldapConfig">
+                    <Method name="POST" description="Configure the LDAP context for this site."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=ldapCreateAccount&amp;[parameters of this command]" verb="ldapCreateAccount">
+                    <Method name="POST" description="Creates an account from an LDAP user"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=ldapRemove&amp;[parameters of this command]" verb="ldapRemove">
+                    <Method name="POST" description="Remove the LDAP context for this site."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=linkDomainToLdap&amp;[parameters of this command]" verb="linkDomainToLdap">
+                    <Method name="POST" description="link an existing cloudstack domain to group or OU in ldap"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listAccounts&amp;[parameters of this command]" verb="listAccounts">
+                    <Method name="POST" description="Lists accounts and provides detailed account information for listed accounts"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listAffinityGroupTypes&amp;[parameters of this command]" verb="listAffinityGroupTypes">
+                    <Method name="POST" description="Lists affinity group types available"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listAffinityGroups&amp;[parameters of this command]" verb="listAffinityGroups">
+                    <Method name="POST" description="Lists affinity groups"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listAlerts&amp;[parameters of this command]" verb="listAlerts">
+                    <Method name="POST" description="Lists all alerts."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listAndSwitchSamlAccount&amp;[parameters of this command]" verb="listAndSwitchSamlAccount">
+                    <Method name="POST" description="Lists and switches to other SAML accounts owned by the SAML user"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listApis&amp;[parameters of this command]" verb="listApis">
+                    <Method name="POST" description="lists all available apis on the server, provided by the Api Discovery plugin"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listAsyncJobs&amp;[parameters of this command]" verb="listAsyncJobs">
+                    <Method name="POST" description="Lists all pending asynchronous jobs for the account."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listAutoScalePolicies&amp;[parameters of this command]" verb="listAutoScalePolicies">
+                    <Method name="POST" description="Lists autoscale policies."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listAutoScaleVmGroups&amp;[parameters of this command]" verb="listAutoScaleVmGroups">
+                    <Method name="POST" description="Lists autoscale vm groups."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listAutoScaleVmProfiles&amp;[parameters of this command]" verb="listAutoScaleVmProfiles">
+                    <Method name="POST" description="Lists autoscale vm profiles."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listBaremetalDhcp&amp;[parameters of this command]" verb="listBaremetalDhcp">
+                    <Method name="POST" description="list baremetal dhcp servers"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listBaremetalPxeServers&amp;[parameters of this command]" verb="listBaremetalPxeServers">
+                    <Method name="POST" description="list baremetal pxe server"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listBaremetalRct&amp;[parameters of this command]" verb="listBaremetalRct">
+                    <Method name="POST" description="list baremetal rack configuration"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listBigSwitchBcfDevices&amp;[parameters of this command]" verb="listBigSwitchBcfDevices">
+                    <Method name="POST" description="Lists BigSwitch BCF Controller devices"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listBrocadeVcsDeviceNetworks&amp;[parameters of this command]" verb="listBrocadeVcsDeviceNetworks">
+                    <Method name="POST" description="lists network that are using a brocade vcs switch"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listBrocadeVcsDevices&amp;[parameters of this command]" verb="listBrocadeVcsDevices">
+                    <Method name="POST" description="Lists Brocade VCS Switches"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listCapabilities&amp;[parameters of this command]" verb="listCapabilities">
+                    <Method name="POST" description="Lists capabilities"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listCapacity&amp;[parameters of this command]" verb="listCapacity">
+                    <Method name="POST" description="Lists all the system wide capacities."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listCiscoAsa1000vResources&amp;[parameters of this command]" verb="listCiscoAsa1000vResources">
+                    <Method name="POST" description="Lists Cisco ASA 1000v appliances"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listCiscoNexusVSMs&amp;[parameters of this command]" verb="listCiscoNexusVSMs">
+                    <Method name="POST" description="Retrieves a Cisco Nexus 1000v Virtual Switch Manager device associated with a Cluster"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listCiscoVnmcResources&amp;[parameters of this command]" verb="listCiscoVnmcResources">
+                    <Method name="POST" description="Lists Cisco VNMC controllers"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listClusters&amp;[parameters of this command]" verb="listClusters">
+                    <Method name="POST" description="Lists clusters."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listConditions&amp;[parameters of this command]" verb="listConditions">
+                    <Method name="POST" description="List Conditions for the specific user"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listConfigurations&amp;[parameters of this command]" verb="listConfigurations">
+                    <Method name="POST" description="Lists all configurations."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listCounters&amp;[parameters of this command]" verb="listCounters">
+                    <Method name="POST" description="List the counters"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listDedicatedClusters&amp;[parameters of this command]" verb="listDedicatedClusters">
+                    <Method name="POST" description="Lists dedicated clusters."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listDedicatedGuestVlanRanges&amp;[parameters of this command]" verb="listDedicatedGuestVlanRanges">
+                    <Method name="POST" description="Lists dedicated guest vlan ranges"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listDedicatedHosts&amp;[parameters of this command]" verb="listDedicatedHosts">
+                    <Method name="POST" description="Lists dedicated hosts."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listDedicatedPods&amp;[parameters of this command]" verb="listDedicatedPods">
+                    <Method name="POST" description="Lists dedicated pods."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listDedicatedZones&amp;[parameters of this command]" verb="listDedicatedZones">
+                    <Method name="POST" description="List dedicated zones."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listDeploymentPlanners&amp;[parameters of this command]" verb="listDeploymentPlanners">
+                    <Method name="POST" description="Lists all DeploymentPlanners available."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listDiskOfferings&amp;[parameters of this command]" verb="listDiskOfferings">
+                    <Method name="POST" description="Lists all available disk offerings."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listDomainChildren&amp;[parameters of this command]" verb="listDomainChildren">
+                    <Method name="POST" description="Lists all children domains belonging to a specified domain"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listDomains&amp;[parameters of this command]" verb="listDomains">
+                    <Method name="POST" description="Lists domains and provides detailed information for listed domains"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listEgressFirewallRules&amp;[parameters of this command]" verb="listEgressFirewallRules">
+                    <Method name="POST" description="Lists all egress firewall rules for network ID."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listEventTypes&amp;[parameters of this command]" verb="listEventTypes">
+                    <Method name="POST" description="List Event Types"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listEvents&amp;[parameters of this command]" verb="listEvents">
+                    <Method name="POST" description="A command to list events."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listExternalFirewalls&amp;[parameters of this command]" verb="listExternalFirewalls">
+                    <Method name="POST" description="List external firewall appliances."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listExternalLoadBalancers&amp;[parameters of this command]" verb="listExternalLoadBalancers">
+                    <Method name="POST" description="Lists F5 external load balancer appliances added in a zone."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listF5LoadBalancerNetworks&amp;[parameters of this command]" verb="listF5LoadBalancerNetworks">
+                    <Method name="POST" description="lists network that are using a F5 load balancer device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listF5LoadBalancers&amp;[parameters of this command]" verb="listF5LoadBalancers">
+                    <Method name="POST" description="lists F5 load balancer devices"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listFirewallRules&amp;[parameters of this command]" verb="listFirewallRules">
+                    <Method name="POST" description="Lists all firewall rules for an IP address."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listGlobalLoadBalancerRules&amp;[parameters of this command]" verb="listGlobalLoadBalancerRules">
+                    <Method name="POST" description="Lists load balancer rules."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listGuestOsMapping&amp;[parameters of this command]" verb="listGuestOsMapping">
+                    <Method name="POST" description="Lists all available OS mappings for given hypervisor"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listHostTags&amp;[parameters of this command]" verb="listHostTags">
+                    <Method name="POST" description="Lists host tags"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listHosts&amp;[parameters of this command]" verb="listHosts">
+                    <Method name="POST" description="Lists hosts."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listHypervisorCapabilities&amp;[parameters of this command]" verb="listHypervisorCapabilities">
+                    <Method name="POST" description="Lists all hypervisor capabilities."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listHypervisors&amp;[parameters of this command]" verb="listHypervisors">
+                    <Method name="POST" description="List hypervisors"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listIdps&amp;[parameters of this command]" verb="listIdps">
+                    <Method name="POST" description="Returns list of discovered SAML Identity Providers"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listImageStores&amp;[parameters of this command]" verb="listImageStores">
+                    <Method name="POST" description="Lists image stores."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listInstanceGroups&amp;[parameters of this command]" verb="listInstanceGroups">
+                    <Method name="POST" description="Lists vm groups"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listInternalLoadBalancerElements&amp;[parameters of this command]" verb="listInternalLoadBalancerElements">
+                    <Method name="POST" description="Lists all available Internal Load Balancer elements."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listInternalLoadBalancerVMs&amp;[parameters of this command]" verb="listInternalLoadBalancerVMs">
+                    <Method name="POST" description="List internal LB VMs."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listIpForwardingRules&amp;[parameters of this command]" verb="listIpForwardingRules">
+                    <Method name="POST" description="List the IP forwarding rules"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listIsoPermissions&amp;[parameters of this command]" verb="listIsoPermissions">
+                    <Method name="POST" description="List iso visibility and all accounts that have permissions to view this iso."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listIsos&amp;[parameters of this command]" verb="listIsos">
+                    <Method name="POST" description="Lists all available ISO files."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listLBHealthCheckPolicies&amp;[parameters of this command]" verb="listLBHealthCheckPolicies">
+                    <Method name="POST" description="Lists load balancer health check policies."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listLBStickinessPolicies&amp;[parameters of this command]" verb="listLBStickinessPolicies">
+                    <Method name="POST" description="Lists load balancer stickiness policies."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listLdapConfigurations&amp;[parameters of this command]" verb="listLdapConfigurations">
+                    <Method name="POST" description="Lists all LDAP configurations"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listLdapUsers&amp;[parameters of this command]" verb="listLdapUsers">
+                    <Method name="POST" description="Lists all LDAP Users"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listLoadBalancerRuleInstances&amp;[parameters of this command]" verb="listLoadBalancerRuleInstances">
+                    <Method name="POST" description="List all virtual machine instances that are assigned to a load balancer rule."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listLoadBalancerRules&amp;[parameters of this command]" verb="listLoadBalancerRules">
+                    <Method name="POST" description="Lists load balancer rules."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listLoadBalancers&amp;[parameters of this command]" verb="listLoadBalancers">
+                    <Method name="POST" description="Lists load balancers"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listLunsOnFiler&amp;[parameters of this command]" verb="listLunsOnFiler">
+                    <Method name="POST" description="List LUN"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listNetscalerLoadBalancerNetworks&amp;[parameters of this command]" verb="listNetscalerLoadBalancerNetworks">
+                    <Method name="POST" description="lists network that are using a netscaler load balancer device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listNetscalerLoadBalancers&amp;[parameters of this command]" verb="listNetscalerLoadBalancers">
+                    <Method name="POST" description="lists netscaler load balancer devices"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listNetworkACLLists&amp;[parameters of this command]" verb="listNetworkACLLists">
+                    <Method name="POST" description="Lists all network ACLs"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listNetworkACLs&amp;[parameters of this command]" verb="listNetworkACLs">
+                    <Method name="POST" description="Lists all network ACL items"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listNetworkDevice&amp;[parameters of this command]" verb="listNetworkDevice">
+                    <Method name="POST" description="List network devices"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listNetworkIsolationMethods&amp;[parameters of this command]" verb="listNetworkIsolationMethods">
+                    <Method name="POST" description="Lists supported methods of network isolation"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listNetworkOfferings&amp;[parameters of this command]" verb="listNetworkOfferings">
+                    <Method name="POST" description="Lists all available network offerings."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listNetworkServiceProviders&amp;[parameters of this command]" verb="listNetworkServiceProviders">
+                    <Method name="POST" description="Lists network serviceproviders for a given physical network."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listNetworks&amp;[parameters of this command]" verb="listNetworks">
+                    <Method name="POST" description="Lists all available networks."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listNiciraNvpDeviceNetworks&amp;[parameters of this command]" verb="listNiciraNvpDeviceNetworks">
+                    <Method name="POST" description="lists network that are using a nicira nvp device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listNiciraNvpDevices&amp;[parameters of this command]" verb="listNiciraNvpDevices">
+                    <Method name="POST" description="Lists Nicira NVP devices"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listNics&amp;[parameters of this command]" verb="listNics">
+                    <Method name="POST" description="list the vm nics  IP to NIC"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listNuageVspDevices&amp;[parameters of this command]" verb="listNuageVspDevices">
+                    <Method name="POST" description="Lists Nuage VSP devices"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listOpenDaylightControllers&amp;[parameters of this command]" verb="listOpenDaylightControllers">
+                    <Method name="POST" description="Lists OpenDyalight controllers"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listOsCategories&amp;[parameters of this command]" verb="listOsCategories">
+                    <Method name="POST" description="Lists all supported OS categories for this cloud."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listOsTypes&amp;[parameters of this command]" verb="listOsTypes">
+                    <Method name="POST" description="Lists all supported OS types for this cloud."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listOvsElements&amp;[parameters of this command]" verb="listOvsElements">
+                    <Method name="POST" description="Lists all available ovs elements."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listPaloAltoFirewallNetworks&amp;[parameters of this command]" verb="listPaloAltoFirewallNetworks">
+                    <Method name="POST" description="lists network that are using Palo Alto firewall device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listPaloAltoFirewalls&amp;[parameters of this command]" verb="listPaloAltoFirewalls">
+                    <Method name="POST" description="lists Palo Alto firewall devices in a physical network"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listPhysicalNetworks&amp;[parameters of this command]" verb="listPhysicalNetworks">
+                    <Method name="POST" description="Lists physical networks"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listPods&amp;[parameters of this command]" verb="listPods">
+                    <Method name="POST" description="Lists all Pods."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listPools&amp;[parameters of this command]" verb="listPools">
+                    <Method name="POST" description="List Pool"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listPortForwardingRules&amp;[parameters of this command]" verb="listPortForwardingRules">
+                    <Method name="POST" description="Lists all port forwarding rules for an IP address."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listPortableIpRanges&amp;[parameters of this command]" verb="listPortableIpRanges">
+                    <Method name="POST" description="list portable IP ranges"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listPrivateGateways&amp;[parameters of this command]" verb="listPrivateGateways">
+                    <Method name="POST" description="List private gateways"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listProjectAccounts&amp;[parameters of this command]" verb="listProjectAccounts">
+                    <Method name="POST" description="Lists project&apos;s accounts"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listProjectInvitations&amp;[parameters of this command]" verb="listProjectInvitations">
+                    <Method name="POST" description="Lists project invitations and provides detailed information for listed invitations"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listProjects&amp;[parameters of this command]" verb="listProjects">
+                    <Method name="POST" description="Lists projects and provides detailed information for listed projects"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listPublicIpAddresses&amp;[parameters of this command]" verb="listPublicIpAddresses">
+                    <Method name="POST" description="Lists all public ip addresses"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listRegions&amp;[parameters of this command]" verb="listRegions">
+                    <Method name="POST" description="Lists Regions"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listRemoteAccessVpns&amp;[parameters of this command]" verb="listRemoteAccessVpns">
+                    <Method name="POST" description="Lists remote access vpns"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listResourceDetails&amp;[parameters of this command]" verb="listResourceDetails">
+                    <Method name="POST" description="List resource detail(s)"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listResourceLimits&amp;[parameters of this command]" verb="listResourceLimits">
+                    <Method name="POST" description="Lists resource limits."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listRolePermissions&amp;[parameters of this command]" verb="listRolePermissions">
+                    <Method name="POST" description="Lists role permissions"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listRoles&amp;[parameters of this command]" verb="listRoles">
+                    <Method name="POST" description="Lists dynamic roles in CloudStack"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listRouters&amp;[parameters of this command]" verb="listRouters">
+                    <Method name="POST" description="List routers."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listSSHKeyPairs&amp;[parameters of this command]" verb="listSSHKeyPairs">
+                    <Method name="POST" description="List registered keypairs"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listSamlAuthorization&amp;[parameters of this command]" verb="listSamlAuthorization">
+                    <Method name="POST" description="Lists authorized users who can used SAML SSO"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listSecondaryStagingStores&amp;[parameters of this command]" verb="listSecondaryStagingStores">
+                    <Method name="POST" description="Lists secondary staging stores."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listSecurityGroups&amp;[parameters of this command]" verb="listSecurityGroups">
+                    <Method name="POST" description="Lists security groups"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listServiceOfferings&amp;[parameters of this command]" verb="listServiceOfferings">
+                    <Method name="POST" description="Lists all available service offerings."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listSnapshotPolicies&amp;[parameters of this command]" verb="listSnapshotPolicies">
+                    <Method name="POST" description="Lists snapshot policies."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listSnapshots&amp;[parameters of this command]" verb="listSnapshots">
+                    <Method name="POST" description="Lists all available snapshots for the account."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listSrxFirewallNetworks&amp;[parameters of this command]" verb="listSrxFirewallNetworks">
+                    <Method name="POST" description="lists network that are using SRX firewall device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listSrxFirewalls&amp;[parameters of this command]" verb="listSrxFirewalls">
+                    <Method name="POST" description="lists SRX firewall devices in a physical network"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listSslCerts&amp;[parameters of this command]" verb="listSslCerts">
+                    <Method name="POST" description="Lists SSL certificates"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listStaticRoutes&amp;[parameters of this command]" verb="listStaticRoutes">
+                    <Method name="POST" description="Lists all static routes"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listStorageNetworkIpRange&amp;[parameters of this command]" verb="listStorageNetworkIpRange">
+                    <Method name="POST" description="List a storage network IP range."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listStoragePools&amp;[parameters of this command]" verb="listStoragePools">
+                    <Method name="POST" description="Lists storage pools."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listStorageProviders&amp;[parameters of this command]" verb="listStorageProviders">
+                    <Method name="POST" description="Lists storage providers."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listStorageTags&amp;[parameters of this command]" verb="listStorageTags">
+                    <Method name="POST" description="Lists storage tags"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listSupportedNetworkServices&amp;[parameters of this command]" verb="listSupportedNetworkServices">
+                    <Method name="POST" description="Lists all network services provided by CloudStack or for the given Provider."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listSwifts&amp;[parameters of this command]" verb="listSwifts">
+                    <Method name="POST" description="List Swift."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listSystemVms&amp;[parameters of this command]" verb="listSystemVms">
+                    <Method name="POST" description="List system virtual machines."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listTags&amp;[parameters of this command]" verb="listTags">
+                    <Method name="POST" description="List resource tag(s)"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listTemplatePermissions&amp;[parameters of this command]" verb="listTemplatePermissions">
+                    <Method name="POST" description="List template visibility and all accounts that have permissions to view this template."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listTemplates&amp;[parameters of this command]" verb="listTemplates">
+                    <Method name="POST" description="List all public, private, and privileged templates."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listTrafficMonitors&amp;[parameters of this command]" verb="listTrafficMonitors">
+                    <Method name="POST" description="List traffic monitor Hosts."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listTrafficTypeImplementors&amp;[parameters of this command]" verb="listTrafficTypeImplementors">
+                    <Method name="POST" description="Lists implementors of implementor of a network traffic type or implementors of all network traffic types"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listTrafficTypes&amp;[parameters of this command]" verb="listTrafficTypes">
+                    <Method name="POST" description="Lists traffic types of a given physical network."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listUcsBlades&amp;[parameters of this command]" verb="listUcsBlades">
+                    <Method name="POST" description="List ucs blades"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listUcsManagers&amp;[parameters of this command]" verb="listUcsManagers">
+                    <Method name="POST" description="List ucs manager"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listUcsProfiles&amp;[parameters of this command]" verb="listUcsProfiles">
+                    <Method name="POST" description="List profile in ucs manager"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listUsageRecords&amp;[parameters of this command]" verb="listUsageRecords">
+                    <Method name="POST" description="Lists usage records for accounts"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listUsageTypes&amp;[parameters of this command]" verb="listUsageTypes">
+                    <Method name="POST" description="List Usage Types"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listUsers&amp;[parameters of this command]" verb="listUsers">
+                    <Method name="POST" description="Lists user accounts"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listVMSnapshot&amp;[parameters of this command]" verb="listVMSnapshot">
+                    <Method name="POST" description="List virtual machine snapshot by conditions"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listVPCOfferings&amp;[parameters of this command]" verb="listVPCOfferings">
+                    <Method name="POST" description="Lists VPC offerings"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listVPCs&amp;[parameters of this command]" verb="listVPCs">
+                    <Method name="POST" description="Lists VPCs"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listVirtualMachines&amp;[parameters of this command]" verb="listVirtualMachines">
+                    <Method name="POST" description="List the virtual machines owned by the account."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listVirtualRouterElements&amp;[parameters of this command]" verb="listVirtualRouterElements">
+                    <Method name="POST" description="Lists all available virtual router elements."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listVlanIpRanges&amp;[parameters of this command]" verb="listVlanIpRanges">
+                    <Method name="POST" description="Lists all VLAN IP ranges."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listVmwareDcs&amp;[parameters of this command]" verb="listVmwareDcs">
+                    <Method name="POST" description="Retrieves VMware DC(s) associated with a zone."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listVolumes&amp;[parameters of this command]" verb="listVolumes">
+                    <Method name="POST" description="Lists all volumes."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listVolumesOnFiler&amp;[parameters of this command]" verb="listVolumesOnFiler">
+                    <Method name="POST" description="List Volumes"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listVpnConnections&amp;[parameters of this command]" verb="listVpnConnections">
+                    <Method name="POST" description="Lists site to site vpn connection gateways"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listVpnCustomerGateways&amp;[parameters of this command]" verb="listVpnCustomerGateways">
+                    <Method name="POST" description="Lists site to site vpn customer gateways"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listVpnGateways&amp;[parameters of this command]" verb="listVpnGateways">
+                    <Method name="POST" description="Lists site 2 site vpn gateways"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listVpnUsers&amp;[parameters of this command]" verb="listVpnUsers">
+                    <Method name="POST" description="Lists vpn users"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=listZones&amp;[parameters of this command]" verb="listZones">
+                    <Method name="POST" description="Lists zones"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=lockAccount&amp;[parameters of this command]" verb="lockAccount">
+                    <Method name="POST" description="This deprecated function used to locks an account. Look for the API DisableAccount instead"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=lockUser&amp;[parameters of this command]" verb="lockUser">
+                    <Method name="POST" description="Locks a user account"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=login&amp;[parameters of this command]" verb="login">
+                    <Method name="POST" description="Logs a user into the CloudStack. A successful login attempt will generate a JSESSIONID cookie value that can be passed in subsequent Query command calls until the logout&amp;quot; command has been issued or the session has expired.&amp;quot;"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=logout&amp;[parameters of this command]" verb="logout">
+                    <Method name="POST" description="Logs out the user"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=markDefaultZoneForAccount&amp;[parameters of this command]" verb="markDefaultZoneForAccount">
+                    <Method name="POST" description="Marks a default zone for this account"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=migrateSystemVm&amp;[parameters of this command]" verb="migrateSystemVm">
+                    <Method name="POST" description="Attempts Migration of a system virtual machine to the host specified."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=migrateVirtualMachine&amp;[parameters of this command]" verb="migrateVirtualMachine">
+                    <Method name="POST" description="Attempts Migration of a VM to a different host or Root volume of the vm to a different storage pool"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=migrateVirtualMachineWithVolume&amp;[parameters of this command]" verb="migrateVirtualMachineWithVolume">
+                    <Method name="POST" description="Attempts Migration of a VM with its volumes to a different host"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=migrateVolume&amp;[parameters of this command]" verb="migrateVolume">
+                    <Method name="POST" description="Migrate volume"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=modifyPool&amp;[parameters of this command]" verb="modifyPool">
+                    <Method name="POST" description="Modify pool"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=notifyBaremetalProvisionDone&amp;[parameters of this command]" verb="notifyBaremetalProvisionDone">
+                    <Method name="POST" description="Notify provision has been done on a host. This api is for baremetal virtual router service, not for end user"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=prepareHostForMaintenance&amp;[parameters of this command]" verb="prepareHostForMaintenance">
+                    <Method name="POST" description="Prepares a host for maintenance."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=prepareTemplate&amp;[parameters of this command]" verb="prepareTemplate">
+                    <Method name="POST" description="load template into primary storage"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=queryAsyncJobResult&amp;[parameters of this command]" verb="queryAsyncJobResult">
+                    <Method name="POST" description="Retrieves the current status of asynchronous job."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=quotaBalance&amp;[parameters of this command]" verb="quotaBalance">
+                    <Method name="POST" description="Create a quota balance statement"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=quotaCredits&amp;[parameters of this command]" verb="quotaCredits">
+                    <Method name="POST" description="Add +-credits to an account"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=quotaEmailTemplateList&amp;[parameters of this command]" verb="quotaEmailTemplateList">
+                    <Method name="POST" description="Lists all quota email templates"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=quotaEmailTemplateUpdate&amp;[parameters of this command]" verb="quotaEmailTemplateUpdate">
+                    <Method name="POST" description="Updates existing email templates for quota alerts"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=quotaIsEnabled&amp;[parameters of this command]" verb="quotaIsEnabled">
+                    <Method name="POST" description="Return true if the plugin is enabled"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=quotaStatement&amp;[parameters of this command]" verb="quotaStatement">
+                    <Method name="POST" description="Create a quota statement"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=quotaTariffList&amp;[parameters of this command]" verb="quotaTariffList">
+                    <Method name="POST" description="Lists all quota tariff plans"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=quotaTariffUpdate&amp;[parameters of this command]" verb="quotaTariffUpdate">
+                    <Method name="POST" description="Update the tariff plan for a resource"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=quotaUpdate&amp;[parameters of this command]" verb="quotaUpdate">
+                    <Method name="POST" description="Update quota calculations, alerts and statements"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=rebootRouter&amp;[parameters of this command]" verb="rebootRouter">
+                    <Method name="POST" description="Starts a router."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=rebootSystemVm&amp;[parameters of this command]" verb="rebootSystemVm">
+                    <Method name="POST" description="Reboots a system VM."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=rebootVirtualMachine&amp;[parameters of this command]" verb="rebootVirtualMachine">
+                    <Method name="POST" description="Reboots a virtual machine."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=reconnectHost&amp;[parameters of this command]" verb="reconnectHost">
+                    <Method name="POST" description="Reconnects a host."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=recoverVirtualMachine&amp;[parameters of this command]" verb="recoverVirtualMachine">
+                    <Method name="POST" description="Recovers a virtual machine."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=registerIso&amp;[parameters of this command]" verb="registerIso">
+                    <Method name="POST" description="Registers an existing ISO into the CloudStack Cloud."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=registerSSHKeyPair&amp;[parameters of this command]" verb="registerSSHKeyPair">
+                    <Method name="POST" description="Register a public key in a keypair under a certain name"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=registerTemplate&amp;[parameters of this command]" verb="registerTemplate">
+                    <Method name="POST" description="Registers an existing template into the CloudStack cloud."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=registerUserKeys&amp;[parameters of this command]" verb="registerUserKeys">
+                    <Method name="POST" description="This command allows a user to register for the developer API, returning a secret key and an API key. This request is made through the integration API port, so it is a privileged command and must be made on behalf of a user. It is up to the implementer just how the username and password are entered, and then how that translates to an integration API request. Both secret key and API key should be returned to the user"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=releaseDedicatedCluster&amp;[parameters of this command]" verb="releaseDedicatedCluster">
+                    <Method name="POST" description="Release the dedication for cluster"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=releaseDedicatedGuestVlanRange&amp;[parameters of this command]" verb="releaseDedicatedGuestVlanRange">
+                    <Method name="POST" description="Releases a dedicated guest vlan range to the system"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=releaseDedicatedHost&amp;[parameters of this command]" verb="releaseDedicatedHost">
+                    <Method name="POST" description="Release the dedication for host"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=releaseDedicatedPod&amp;[parameters of this command]" verb="releaseDedicatedPod">
+                    <Method name="POST" description="Release the dedication for the pod"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=releaseDedicatedZone&amp;[parameters of this command]" verb="releaseDedicatedZone">
+                    <Method name="POST" description="Release dedication of zone"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=releaseHostReservation&amp;[parameters of this command]" verb="releaseHostReservation">
+                    <Method name="POST" description="Releases host reservation."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=releasePublicIpRange&amp;[parameters of this command]" verb="releasePublicIpRange">
+                    <Method name="POST" description="Releases a Public IP range back to the system pool"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=removeCertFromLoadBalancer&amp;[parameters of this command]" verb="removeCertFromLoadBalancer">
+                    <Method name="POST" description="Removes a certificate from a load balancer rule"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=removeFromGlobalLoadBalancerRule&amp;[parameters of this command]" verb="removeFromGlobalLoadBalancerRule">
+                    <Method name="POST" description="Removes a load balancer rule association with global load balancer rule"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=removeFromLoadBalancerRule&amp;[parameters of this command]" verb="removeFromLoadBalancerRule">
+                    <Method name="POST" description="Removes a virtual machine or a list of virtual machines from a load balancer rule."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=removeGuestOs&amp;[parameters of this command]" verb="removeGuestOs">
+                    <Method name="POST" description="Removes a Guest OS from listing."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=removeGuestOsMapping&amp;[parameters of this command]" verb="removeGuestOsMapping">
+                    <Method name="POST" description="Removes a Guest OS Mapping."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=removeIpFromNic&amp;[parameters of this command]" verb="removeIpFromNic">
+                    <Method name="POST" description="Removes secondary IP from the NIC."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=removeNicFromVirtualMachine&amp;[parameters of this command]" verb="removeNicFromVirtualMachine">
+                    <Method name="POST" description="Removes VM from specified network by deleting a NIC"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=removeRawUsageRecords&amp;[parameters of this command]" verb="removeRawUsageRecords">
+                    <Method name="POST" description="Safely removes raw records from cloud_usage table"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=removeRegion&amp;[parameters of this command]" verb="removeRegion">
+                    <Method name="POST" description="Removes specified region"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=removeResourceDetail&amp;[parameters of this command]" verb="removeResourceDetail">
+                    <Method name="POST" description="Removes detail for the Resource."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=removeVmwareDc&amp;[parameters of this command]" verb="removeVmwareDc">
+                    <Method name="POST" description="Remove a VMware datacenter from a zone."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=removeVpnUser&amp;[parameters of this command]" verb="removeVpnUser">
+                    <Method name="POST" description="Removes vpn user"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=replaceNetworkACLList&amp;[parameters of this command]" verb="replaceNetworkACLList">
+                    <Method name="POST" description="Replaces ACL associated with a network or private gateway"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=resetApiLimit&amp;[parameters of this command]" verb="resetApiLimit">
+                    <Method name="POST" description="Reset api count"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=resetPasswordForVirtualMachine&amp;[parameters of this command]" verb="resetPasswordForVirtualMachine">
+                    <Method name="POST" description="Resets the password for virtual machine. The virtual machine must be in a Stopped&amp;quot; state and the template must already support this feature for this command to take effect. [async]&amp;quot;"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=resetSSHKeyForVirtualMachine&amp;[parameters of this command]" verb="resetSSHKeyForVirtualMachine">
+                    <Method name="POST" description="Resets the SSH Key for virtual machine. The virtual machine must be in a Stopped&amp;quot; state. [async]&amp;quot;"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=resetVpnConnection&amp;[parameters of this command]" verb="resetVpnConnection">
+                    <Method name="POST" description="Reset site to site vpn connection"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=resizeVolume&amp;[parameters of this command]" verb="resizeVolume">
+                    <Method name="POST" description="Resizes a volume"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=restartNetwork&amp;[parameters of this command]" verb="restartNetwork">
+                    <Method name="POST" description="Restarts the network; includes 1) restarting network elements - virtual routers, DHCP servers 2) reapplying all public IPs 3) reapplying loadBalancing/portForwarding rules"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=restartVPC&amp;[parameters of this command]" verb="restartVPC">
+                    <Method name="POST" description="Restarts a VPC"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=restoreVirtualMachine&amp;[parameters of this command]" verb="restoreVirtualMachine">
+                    <Method name="POST" description="Restore a VM to original template/ISO or new template/ISO"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=revertSnapshot&amp;[parameters of this command]" verb="revertSnapshot">
+                    <Method name="POST" description="This is supposed to revert a volume snapshot. This command is only supported with KVM so far"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=revertToVMSnapshot&amp;[parameters of this command]" verb="revertToVMSnapshot">
+                    <Method name="POST" description="Revert VM from a vmsnapshot."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=revokeSecurityGroupEgress&amp;[parameters of this command]" verb="revokeSecurityGroupEgress">
+                    <Method name="POST" description="Deletes a particular egress rule from this security group"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=revokeSecurityGroupIngress&amp;[parameters of this command]" verb="revokeSecurityGroupIngress">
+                    <Method name="POST" description="Deletes a particular ingress rule from this security group"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=samlSlo&amp;[parameters of this command]" verb="samlSlo">
+                    <Method name="POST" description="SAML Global Log Out API"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=samlSso&amp;[parameters of this command]" verb="samlSso">
+                    <Method name="POST" description="SP initiated SAML Single Sign On"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=scaleSystemVm&amp;[parameters of this command]" verb="scaleSystemVm">
+                    <Method name="POST" description="Scale the service offering for a system vm (console proxy or secondary storage). The system vm must be in a Stopped&amp;quot; state for this command to take effect.&amp;quot;"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=scaleVirtualMachine&amp;[parameters of this command]" verb="scaleVirtualMachine">
+                    <Method name="POST" description="Scales the virtual machine to a new service offering."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=searchLdap&amp;[parameters of this command]" verb="searchLdap">
+                    <Method name="POST" description="Searches LDAP based on the username attribute"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=startInternalLoadBalancerVM&amp;[parameters of this command]" verb="startInternalLoadBalancerVM">
+                    <Method name="POST" description="Starts an existing internal lb vm."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=startRouter&amp;[parameters of this command]" verb="startRouter">
+                    <Method name="POST" description="Starts a router."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=startSystemVm&amp;[parameters of this command]" verb="startSystemVm">
+                    <Method name="POST" description="Starts a system virtual machine."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=startVirtualMachine&amp;[parameters of this command]" verb="startVirtualMachine">
+                    <Method name="POST" description="Starts a virtual machine."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=stopInternalLoadBalancerVM&amp;[parameters of this command]" verb="stopInternalLoadBalancerVM">
+                    <Method name="POST" description="Stops an Internal LB vm."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=stopRouter&amp;[parameters of this command]" verb="stopRouter">
+                    <Method name="POST" description="Stops a router."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=stopSystemVm&amp;[parameters of this command]" verb="stopSystemVm">
+                    <Method name="POST" description="Stops a system VM."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=stopVirtualMachine&amp;[parameters of this command]" verb="stopVirtualMachine">
+                    <Method name="POST" description="Stops a virtual machine."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=suspendProject&amp;[parameters of this command]" verb="suspendProject">
+                    <Method name="POST" description="Suspends a project"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateAccount&amp;[parameters of this command]" verb="updateAccount">
+                    <Method name="POST" description="Updates account information for the authenticated user"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateAutoScalePolicy&amp;[parameters of this command]" verb="updateAutoScalePolicy">
+                    <Method name="POST" description="Updates an existing autoscale policy."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateAutoScaleVmGroup&amp;[parameters of this command]" verb="updateAutoScaleVmGroup">
+                    <Method name="POST" description="Updates an existing autoscale vm group."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateAutoScaleVmProfile&amp;[parameters of this command]" verb="updateAutoScaleVmProfile">
+                    <Method name="POST" description="Updates an existing autoscale vm profile."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateCloudToUseObjectStore&amp;[parameters of this command]" verb="updateCloudToUseObjectStore">
+                    <Method name="POST" description="Migrate current NFS secondary storages to use object store."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateCluster&amp;[parameters of this command]" verb="updateCluster">
+                    <Method name="POST" description="Updates an existing cluster"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateConfiguration&amp;[parameters of this command]" verb="updateConfiguration">
+                    <Method name="POST" description="Updates a configuration."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateDefaultNicForVirtualMachine&amp;[parameters of this command]" verb="updateDefaultNicForVirtualMachine">
+                    <Method name="POST" description="Changes the default NIC on a VM"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateDiskOffering&amp;[parameters of this command]" verb="updateDiskOffering">
+                    <Method name="POST" description="Updates a disk offering."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateDomain&amp;[parameters of this command]" verb="updateDomain">
+                    <Method name="POST" description="Updates a domain with a new name"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateEgressFirewallRule&amp;[parameters of this command]" verb="updateEgressFirewallRule">
+                    <Method name="POST" description="Updates egress firewall rule "/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateFirewallRule&amp;[parameters of this command]" verb="updateFirewallRule">
+                    <Method name="POST" description="Updates firewall rule "/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateGlobalLoadBalancerRule&amp;[parameters of this command]" verb="updateGlobalLoadBalancerRule">
+                    <Method name="POST" description="update global load balancer rules."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateGuestOs&amp;[parameters of this command]" verb="updateGuestOs">
+                    <Method name="POST" description="Updates the information about Guest OS"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateGuestOsMapping&amp;[parameters of this command]" verb="updateGuestOsMapping">
+                    <Method name="POST" description="Updates the information about Guest OS to Hypervisor specific name mapping"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateHost&amp;[parameters of this command]" verb="updateHost">
+                    <Method name="POST" description="Updates a host."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateHostPassword&amp;[parameters of this command]" verb="updateHostPassword">
+                    <Method name="POST" description="Update password of a host/pool on management server."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateHypervisorCapabilities&amp;[parameters of this command]" verb="updateHypervisorCapabilities">
+                    <Method name="POST" description="Updates a hypervisor capabilities."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateInstanceGroup&amp;[parameters of this command]" verb="updateInstanceGroup">
+                    <Method name="POST" description="Updates a vm group"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateIpAddress&amp;[parameters of this command]" verb="updateIpAddress">
+                    <Method name="POST" description="Updates an IP address"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateIso&amp;[parameters of this command]" verb="updateIso">
+                    <Method name="POST" description="Updates an ISO file."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateIsoPermissions&amp;[parameters of this command]" verb="updateIsoPermissions">
+                    <Method name="POST" description="Updates ISO permissions"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateLBHealthCheckPolicy&amp;[parameters of this command]" verb="updateLBHealthCheckPolicy">
+                    <Method name="POST" description="Updates load balancer health check policy"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateLBStickinessPolicy&amp;[parameters of this command]" verb="updateLBStickinessPolicy">
+                    <Method name="POST" description="Updates load balancer stickiness policy"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateLoadBalancer&amp;[parameters of this command]" verb="updateLoadBalancer">
+                    <Method name="POST" description="Updates a load balancer"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateLoadBalancerRule&amp;[parameters of this command]" verb="updateLoadBalancerRule">
+                    <Method name="POST" description="Updates load balancer"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateNetwork&amp;[parameters of this command]" verb="updateNetwork">
+                    <Method name="POST" description="Updates a network"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateNetworkACLItem&amp;[parameters of this command]" verb="updateNetworkACLItem">
+                    <Method name="POST" description="Updates ACL item with specified ID"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateNetworkACLList&amp;[parameters of this command]" verb="updateNetworkACLList">
+                    <Method name="POST" description="Updates network ACL list"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateNetworkOffering&amp;[parameters of this command]" verb="updateNetworkOffering">
+                    <Method name="POST" description="Updates a network offering."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateNetworkServiceProvider&amp;[parameters of this command]" verb="updateNetworkServiceProvider">
+                    <Method name="POST" description="Updates a network serviceProvider of a physical network"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateNuageVspDevice&amp;[parameters of this command]" verb="updateNuageVspDevice">
+                    <Method name="POST" description="Update a Nuage VSP device"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updatePhysicalNetwork&amp;[parameters of this command]" verb="updatePhysicalNetwork">
+                    <Method name="POST" description="Updates a physical network"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updatePod&amp;[parameters of this command]" verb="updatePod">
+                    <Method name="POST" description="Updates a Pod."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updatePortForwardingRule&amp;[parameters of this command]" verb="updatePortForwardingRule">
+                    <Method name="POST" description="Updates a port forwarding rule. Only the private port and the virtual machine can be updated."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateProject&amp;[parameters of this command]" verb="updateProject">
+                    <Method name="POST" description="Updates a project"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateProjectInvitation&amp;[parameters of this command]" verb="updateProjectInvitation">
+                    <Method name="POST" description="Accepts or declines project invitation"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateRegion&amp;[parameters of this command]" verb="updateRegion">
+                    <Method name="POST" description="Updates a region"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateRemoteAccessVpn&amp;[parameters of this command]" verb="updateRemoteAccessVpn">
+                    <Method name="POST" description="Updates remote access vpn"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateResourceCount&amp;[parameters of this command]" verb="updateResourceCount">
+                    <Method name="POST" description="Recalculate and update resource count for an account or domain."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateResourceLimit&amp;[parameters of this command]" verb="updateResourceLimit">
+                    <Method name="POST" description="Updates resource limits for an account or domain."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateRole&amp;[parameters of this command]" verb="updateRole">
+                    <Method name="POST" description="Updates a role"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateRolePermission&amp;[parameters of this command]" verb="updateRolePermission">
+                    <Method name="POST" description="Updates a role permission order"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateServiceOffering&amp;[parameters of this command]" verb="updateServiceOffering">
+                    <Method name="POST" description="Updates a service offering."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateSnapshotPolicy&amp;[parameters of this command]" verb="updateSnapshotPolicy">
+                    <Method name="POST" description="Updates the snapshot policy."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateStorageNetworkIpRange&amp;[parameters of this command]" verb="updateStorageNetworkIpRange">
+                    <Method name="POST" description="Update a Storage network IP range, only allowed when no IPs in this range have been allocated."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateStoragePool&amp;[parameters of this command]" verb="updateStoragePool">
+                    <Method name="POST" description="Updates a storage pool."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateTemplate&amp;[parameters of this command]" verb="updateTemplate">
+                    <Method name="POST" description="Updates attributes of a template."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateTemplatePermissions&amp;[parameters of this command]" verb="updateTemplatePermissions">
+                    <Method name="POST" description="Updates a template visibility permissions. A public template is visible to all accounts within the same domain. A private template is visible only to the owner of the template. A priviledged template is a private template with account permissions added. Only accounts specified under the template permissions are visible to them."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateTrafficType&amp;[parameters of this command]" verb="updateTrafficType">
+                    <Method name="POST" description="Updates traffic type of a physical network"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateUser&amp;[parameters of this command]" verb="updateUser">
+                    <Method name="POST" description="Updates a user account"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateVMAffinityGroup&amp;[parameters of this command]" verb="updateVMAffinityGroup">
+                    <Method name="POST" description="Updates the affinity/anti-affinity group associations of a virtual machine. The VM has to be stopped and restarted for the new properties to take effect."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateVPC&amp;[parameters of this command]" verb="updateVPC">
+                    <Method name="POST" description="Updates a VPC"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateVPCOffering&amp;[parameters of this command]" verb="updateVPCOffering">
+                    <Method name="POST" description="Updates VPC offering"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateVirtualMachine&amp;[parameters of this command]" verb="updateVirtualMachine">
+                    <Method name="POST" description="Updates properties of a virtual machine. The VM has to be stopped and restarted for the new properties to take effect. UpdateVirtualMachine does not first check whether the VM is stopped. Therefore, stop the VM manually before issuing this call."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateVmNicIp&amp;[parameters of this command]" verb="updateVmNicIp">
+                    <Method name="POST" description="Update the default Ip of a VM Nic"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateVolume&amp;[parameters of this command]" verb="updateVolume">
+                    <Method name="POST" description="Updates the volume."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateVpnConnection&amp;[parameters of this command]" verb="updateVpnConnection">
+                    <Method name="POST" description="Updates site to site vpn connection"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateVpnCustomerGateway&amp;[parameters of this command]" verb="updateVpnCustomerGateway">
+                    <Method name="POST" description="Update site to site vpn customer gateway"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateVpnGateway&amp;[parameters of this command]" verb="updateVpnGateway">
+                    <Method name="POST" description="Updates site to site vpn local gateway"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=updateZone&amp;[parameters of this command]" verb="updateZone">
+                    <Method name="POST" description="Updates a Zone."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=upgradeRouterTemplate&amp;[parameters of this command]" verb="upgradeRouterTemplate">
+                    <Method name="POST" description="Upgrades router to use newer template"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=uploadCustomCertificate&amp;[parameters of this command]" verb="uploadCustomCertificate">
+                    <Method name="POST" description="Uploads a custom certificate for the console proxy VMs to use for SSL. Can be used to upload a single certificate signed by a known CA. Can also be used, through multiple calls, to upload a chain of certificates from CA to the custom certificate itself."/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=uploadSslCert&amp;[parameters of this command]" verb="uploadSslCert">
+                    <Method name="POST" description="Upload a certificate to CloudStack"/>
+                </Controller>
+                <Controller uri="https://cloudstack.provider.com:[port]/client/apiapi?command=uploadVolume&amp;[parameters of this command]" verb="uploadVolume">
+                    <Method name="POST" description="Uploads a data disk."/>
+                </Controller>
+            </Resource>
+        </Service>
+    </Provider>
+</CloudComputing>
