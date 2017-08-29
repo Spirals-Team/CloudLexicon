@@ -1,0 +1,78 @@
+<CloudComputing>
+    <Provider name="Heroku">
+        <Service name="Heroku 1">
+            <Resource uri="http://api.heroku.com/apps">
+                <Method name="POST" description="List Apps"/>
+                <Method name="GET" description="Uninstall Addon from an App"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{app}/releases">
+                <Method name="POST" description="List Releases"/>
+                <Method name="GET" description="Scale Processes"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{app}/releases/{release}">
+                <Method name="GET" description="Rollback to a Release"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{app}/stack">
+                <Method name="PUT" description="List Stacks"/>
+                <Method name="GET" description="Get Release Info"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{app}/ps">
+                <Method name="POST" description="List Processes"/>
+                <Method name="GET" description="Get App Logs"/>
+                <Controller uri="http://api.heroku.com/apps/{app}/ps/stop" verb="stop">
+                    <Method name="POST" description="Restart Processes"/>
+                </Controller>
+                <Controller uri="http://api.heroku.com/apps/{app}/ps/scale" verb="scale">
+                    <Method name="POST" description="Stop Processes"/>
+                </Controller>
+                <Controller uri="http://api.heroku.com/apps/{app}/ps/restart" verb="restart">
+                    <Method name="POST" description="Run a one-off Process"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{app}/addons">
+                <Method name="GET" description="List Addons"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{app}/addons/{addon}">
+                <Method name="PUT" description="Install Addon to an App"/>
+                <Method name="POST" description="List Addons on an App"/>
+                <Method name="DELETE" description="Upgrade Addon to an App"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{app}/logs">
+                <Method name="GET" description="Remove SSH key"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{app}/domains">
+                <Method name="GET" description="Remove Config Var"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{app}/domains/{domain_name}">
+                <Method name="DELETE" description="List Domains"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{app}/config_vars">
+                <Method name="PUT" description="List Config Vars"/>
+                <Method name="GET" description="Remove Collaborator"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{app}/config_vars/{key}">
+                <Method name="DELETE" description="Add Config Vars"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{app}/collaborators">
+                <Method name="GET" description="Destroy App"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{app}/collaborators/{email}">
+                <Method name="DELETE" description="List Collaborators"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/apps/{name}">
+                <Method name="GET" description="Create App"/>
+                <Method name="DELETE" description="Get App Info"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/addons">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/user/keys">
+                <Method name="POST" description="List SSH keys"/>
+                <Method name="GET" description="Remove Domain"/>
+            </Resource>
+            <Resource uri="http://api.heroku.com/user/keys/{key}">
+                <Method name="DELETE" description="Associate an SSH key"/>
+            </Resource>
+        </Service>
+    </Provider>
+</CloudComputing>

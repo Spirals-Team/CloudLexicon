@@ -1,0 +1,100 @@
+--------------------------------------------------------------------------------
+Read-Only Pattern - 6 detected:
+ * http://api.heroku.com/apps/{app}/releases/{release}
+ * http://api.heroku.com/apps/{app}/addons
+ * http://api.heroku.com/apps/{app}/logs
+ * http://api.heroku.com/apps/{app}/domains
+ * http://api.heroku.com/apps/{app}/collaborators
+ * http://api.heroku.com/addons
+
+--------------------------------------------------------------------------------
+Resource Pattern - 7 detected:
+ * http://api.heroku.com/apps/{app}/releases/{release}
+ * http://api.heroku.com/apps/{app}/addons/{addon}
+ * http://api.heroku.com/apps/{app}/domains/{domain_name}
+ * http://api.heroku.com/apps/{app}/config_vars/{key}
+ * http://api.heroku.com/apps/{app}/collaborators/{email}
+ * http://api.heroku.com/apps/{name}
+ * http://api.heroku.com/user/keys/{key}
+
+--------------------------------------------------------------------------------
+Singleton Resource Pattern - 1 detected:
+ * http://api.heroku.com/addons
+
+--------------------------------------------------------------------------------
+SubResource Pattern - 3 detected:
+ * http://api.heroku.com/apps/{app}/stack
+ * http://api.heroku.com/apps/{app}/ps
+ * http://api.heroku.com/apps/{app}/logs
+
+--------------------------------------------------------------------------------
+Collection Pattern - 7 detected:
+ * http://api.heroku.com/apps
+ * http://api.heroku.com/apps/{app}/releases
+ * http://api.heroku.com/apps/{app}/addons
+ * http://api.heroku.com/apps/{app}/domains
+ * http://api.heroku.com/apps/{app}/config_vars
+ * http://api.heroku.com/apps/{app}/collaborators
+ * http://api.heroku.com/user/keys
+
+--------------------------------------------------------------------------------
+Controller Pattern - 3 detected:
+ * http://api.heroku.com/apps/{app}/ps/stop
+ * http://api.heroku.com/apps/{app}/ps/scale
+ * http://api.heroku.com/apps/{app}/ps/restart
+
+--------------------------------------------------------------------------------
+Singular Collection Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Missing POST Method Anti-Pattern - 4 detected:
+ * http://api.heroku.com/apps/{app}/addons
+ * http://api.heroku.com/apps/{app}/domains
+ * http://api.heroku.com/apps/{app}/config_vars
+ * http://api.heroku.com/apps/{app}/collaborators
+
+--------------------------------------------------------------------------------
+Missing GET Method Anti-Pattern - 5 detected:
+ * http://api.heroku.com/apps/{app}/addons/{addon}
+ * http://api.heroku.com/apps/{app}/domains/{domain_name}
+ * http://api.heroku.com/apps/{app}/config_vars/{key}
+ * http://api.heroku.com/apps/{app}/collaborators/{email}
+ * http://api.heroku.com/user/keys/{key}
+
+--------------------------------------------------------------------------------
+Missing DELETE Method Anti-Pattern - 1 detected:
+ * http://api.heroku.com/apps/{app}/releases/{release}
+
+--------------------------------------------------------------------------------
+Unexpected DELETE Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Only Controllers Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Create Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Retrieve Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Update Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Delete Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Method Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+More Than One Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Controller Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Untagged Resources and Controllers  - 0 detected:
+
