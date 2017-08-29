@@ -24,71 +24,74 @@
 ################################################################################
 
 #
-# This script executes all the commands of the CloudLex tool chain excepts the cloud provider specific extractor.
+# This script executes all the CloudLex tool chain commands excepts the cloud provider specific CloudLex REST API Dataset Extractor.
 #
 
-echo Computing statistics for ${PROVIDER}...
-python ${TOOLCHAIN_DIR}/cloudlex/statistics.py "${DATASETS_DIR}/DatasetURIs.csv" > "${RESULTS_DIR}/statistics.log"
+# TODO: Add the execution of the cloud provider specific CloudLex REST API Dataset Extractor, e.g.,
+# ./CloudLex_REST_API_Dataset_Extractor <arguments common to all the CloudLex REST API Dataset extractors such as ${CLOUDLEX_REST_API_DATASET}>
+
+echo Computing CloudLex statistics for ${CLOUDLEX_PROVIDER}...
+python ${CLOUDLEX_TOOLCHAIN_DIR}/cloudlex/statistics.py ${CLOUDLEX_REST_API_DATASET} > "${CLOUDLEX_RESULTS_DIR}/statistics.log"
 
 #
-# Cloud API Ontology
+# CloudLex REST API Ontology
 #
 
-echo Load the Cloud API Ontology for ${PROVIDER}...
-python ${TOOLCHAIN_DIR}/cloudlex/ontology.py "${DATASETS_DIR}/DatasetURIs.csv"
+echo Loading the CloudLex REST API Dataset for ${CLOUDLEX_PROVIDER}...
+python ${CLOUDLEX_TOOLCHAIN_DIR}/cloudlex/ontology.py ${CLOUDLEX_REST_API_DATASET}
 
-echo Generating the XML ontology for ${PROVIDER}...
-python ${TOOLCHAIN_DIR}/cloudlex/ontology_xml.py "${DATASETS_DIR}/DatasetURIs.csv" > "${RESULTS_DIR}/${PROVIDER} Ontology.xml"
+echo Generating the CloudLex REST API Ontology for ${CLOUDLEX_PROVIDER}...
+python ${CLOUDLEX_TOOLCHAIN_DIR}/cloudlex/ontology_xml.py ${CLOUDLEX_REST_API_DATASET} > "${CLOUDLEX_RESULTS_DIR}/${CLOUDLEX_PROVIDER} Ontology.xml"
 
-echo Generating .dot files for ${PROVIDER}...
-python ${TOOLCHAIN_DIR}/cloudlex/ontology_graph.py "${RESULTS_DIR}/api/dot" "${DATASETS_DIR}/DatasetURIs.csv"
+echo Generating all the CloudLex REST API .dot graphs for ${CLOUDLEX_PROVIDER}...
+python ${CLOUDLEX_TOOLCHAIN_DIR}/cloudlex/ontology_graph.py "${CLOUDLEX_RESULTS_DIR}/api/dot" ${CLOUDLEX_REST_API_DATASET}
 
-echo Generating .png files for ${PROVIDER}...
-for dotFile in "${RESULTS_DIR}/api/dot/"*.dot
+echo Generating all the CloudLex REST API .png graphs for ${CLOUDLEX_PROVIDER}...
+for dotFile in "${CLOUDLEX_RESULTS_DIR}/api/dot/"*.dot
 do
   dotFilename=`basename "$dotFile"`
-  pngFile=${RESULTS_DIR}/api/"${dotFilename%.dot}".png  
+  pngFile=${CLOUDLEX_RESULTS_DIR}/api/"${dotFilename%.dot}".png  
   echo Generating ${pngFile}...
   dot "${dotFile}" -Tpng > "${pngFile}"
 done
 
 #
-# Detection of patterns and anti-patterns in Cloud API.
+# CloudLex REST API Patterns and Anti-Patterns Detection.
 #
 
-echo Detecting patterns and anti-patterns for ${PROVIDER}...
-python ${TOOLCHAIN_DIR}/cloudlex/detection.py "${DATASETS_DIR}/DatasetURIs.csv" > "${RESULTS_DIR}/detection.log"
+echo Detecting all the CloudLex REST API Patterns and Anti-Patterns for ${CLOUDLEX_PROVIDER}...
+python ${CLOUDLEX_TOOLCHAIN_DIR}/cloudlex/detection.py ${CLOUDLEX_REST_API_DATASET} > "${CLOUDLEX_RESULTS_DIR}/detection.log"
 
-echo Generating .dot files for ${PROVIDER}...
-python ${TOOLCHAIN_DIR}/cloudlex/detection_graph.py "${RESULTS_DIR}/detection/dot" "${DATASETS_DIR}/DatasetURIs.csv"
+echo Generating all the CloudLex REST API Patterns and Anti-Patterns .dot graphs for ${CLOUDLEX_PROVIDER}...
+python ${CLOUDLEX_TOOLCHAIN_DIR}/cloudlex/detection_graph.py "${RESULTS_DIR}/detection/dot" ${CLOUDLEX_REST_API_DATASET}
 
-echo Generating .png files for ${PROVIDER}...
-for dotFile in "${RESULTS_DIR}/detection/dot/"*.dot
+echo Generating all the CloudLex REST API Patterns and Anti-Patterns .png graphs for ${CLOUDLEX_PROVIDER}...
+for dotFile in "${CLOUDLEX_RESULTS_DIR}/detection/dot/"*.dot
 do
   dotFilename=`basename "$dotFile"`
-  pngFile=${RESULTS_DIR}/detection/"${dotFilename%.dot}".png  
+  pngFile=${CLOUDLEX_RESULTS_DIR}/detection/"${dotFilename%.dot}".png  
   echo Generating ${pngFile}...
   dot "${dotFile}" -Tpng > "${pngFile}"
 done
 
 #
-# Cloud Lexicon Ontology
+# CloudLex Lexicon Ontology
 #
 
-echo Generating Lexicon CSV for ${PROVIDER}...
-python ${TOOLCHAIN_DIR}/cloudlex/lexicon_csv.py "${DATASETS_DIR}/DatasetURIs.csv" > "${RESULTS_DIR}/lexicon.csv" 
+echo Generating the CloudLex Lexicon CSV for ${CLOUDLEX_PROVIDER}...
+python ${CLOUDLEX_TOOLCHAIN_DIR}/cloudlex/lexicon_csv.py ${CLOUDLEX_REST_API_DATASET} > "${CLOUDLEX_RESULTS_DIR}/lexicon.csv" 
 
-echo Generating Lexicon Tag Cloud for ${PROVIDER}...
-python ${TOOLCHAIN_DIR}/cloudlex/lexicon_tag_cloud.py "${RESULTS_DIR}/lexicon_tag_cloud.png" "${DATASETS_DIR}/DatasetURIs.csv"
+echo Generating all the CloudLex Lexicon Tag Clouds for ${CLOUDLEX_PROVIDER}...
+python ${CLOUDLEX_TOOLCHAIN_DIR}/cloudlex/lexicon_tag_cloud.py "${CLOUDLEX_RESULTS_DIR}/lexicon_tag_cloud.png" ${CLOUDLEX_REST_API_DATASET}
 
-echo Generating Lexicon Graphs for ${PROVIDER}...
-python ${TOOLCHAIN_DIR}/cloudlex/lexicon_graph.py "${RESULTS_DIR}/lexicon/dot" "${DATASETS_DIR}/DatasetURIs.csv"
+echo Generating all the CloudLex Lexicon .dot graphs for ${CLOUDLEX_PROVIDER}...
+python ${CLOUDLEX_TOOLCHAIN_DIR}/cloudlex/lexicon_graph.py "${CLOUDLEX_RESULTS_DIR}/lexicon/dot" ${CLOUDLEX_REST_API_DATASET}
 
-echo Generating .png files for ${PROVIDER}...
-for dotFile in "${RESULTS_DIR}/lexicon/dot/"*.dot
+echo Generating all the CloudLex Lexicon ..png graphs for ${CLOUDLEX_PROVIDER}...
+for dotFile in "${CLOUDLEX_RESULTS_DIR}/lexicon/dot/"*.dot
 do
   dotFilename=`basename "$dotFile"`
-  pngFile=${RESULTS_DIR}/lexicon/"${dotFilename%.dot}".png  
+  pngFile=${CLOUDLEX_RESULTS_DIR}/lexicon/"${dotFilename%.dot}".png  
   echo Generating ${pngFile}...
   if [[ `wc -c <"${dotFile}"` -le 75000 ]]; then
     fdp "${dotFile}" -Tpng > "${pngFile}"
@@ -97,3 +100,7 @@ do
     dot "${dotFile}" -Tpng > "${pngFile}"
   fi
 done
+
+echo 
+echo Done.
+echo

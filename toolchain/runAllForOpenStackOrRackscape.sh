@@ -28,18 +28,16 @@
 #
 
 TOOLCHAIN_DIR=$(dirname "$0")
-
 PROVIDER=$1
 
 # Set CloudLex environment variables.
 . ${TOOLCHAIN_DIR}/set-cloudlex-environment-variables.sh
 
-echo Generating the list of URIs where the Swagger JSON documentation for ${PROVIDER} is...
-python ExtractSwaggerJsonURIs.py > ${DATASETS_DIR}/SwaggerJsonURIs.csv
+echo Generating the list of URIs where the Swagger JSON documentation for ${CLOUDLEX_PROVIDER} is...
+python ExtractSwaggerJsonURIs.py > ${CLOUDLEX_DATASETS_DIR}/SwaggerJsonURIs.csv
 
-echo Generating the URI dataset for ${PROVIDER}...
-python ExtractDatasetURIs.py "${DATASETS_DIR}/SwaggerJsonURIs.csv" > "${DATASETS_DIR}/DatasetURIs.csv"
+echo Generating the CloudLex REST API Dataset for ${CLOUDLEX_PROVIDER}...
+python ExtractDatasetURIs.py "${CLOUDLEX_DATASETS_DIR}/SwaggerJsonURIs.csv" > "${CLOUDLEX_REST_API_DATASET}"
 
-# Execute CloudLex tool chain.
-. ${TOOLCHAIN_DIR}/run-cloudlex-tool-chain.sh
-
+# Execute the CloudLex tool chain.
+. ${CLOUDLEX_TOOLCHAIN_DIR}/run-cloudlex-tool-chain.sh

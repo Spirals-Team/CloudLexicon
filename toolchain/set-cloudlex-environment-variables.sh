@@ -24,15 +24,20 @@
 ################################################################################
 
 #
-# This script sets all CloudLex environment variables.
+# This script sets all the CloudLex environment variables.
 #
 
-# TOOLCHAIN_DIR=$(dirname "$0")
+CLOUDLEX_TOOLCHAIN_DIR=$TOOLCHAIN_DIR # TODO: `dirname "$0"` 
+CLOUDLEX_PROVIDER=$PROVIDER # TODO: `basename `pwd``
+CLOUDLEX_TARGET_DIR=.
+CLOUDLEX_DATASETS_DIR="${CLOUDLEX_TARGET_DIR}/datasets"
+CLOUDLEX_REST_API_DATASET="${CLOUDLEX_DATASETS_DIR}/DatasetURIs.csv"
+CLOUDLEX_RESULTS_DIR="${CLOUDLEX_TARGET_DIR}/results"
 
-TARGET_DIR=.
-DATASETS_DIR="${TARGET_DIR}/datasets"
-RESULTS_DIR="${TARGET_DIR}/results"
+export PYTHONPATH=${CLOUDLEX_TOOLCHAIN_DIR}:$PYTHONPATH
 
-export PYTHONPATH=${TOOLCHAIN_DIR}:$PYTHONPATH
+echo All CloudLex environment variables are set for ${CLOUDLEX_PROVIDER}.
 
-echo CloudLex environment variables set.
+# TODO: Both following lines must be removed when all /providers/*/runAll.sh scripts will used the new CLOUDLEX_ variable names.
+DATASETS_DIR="${CLOUDLEX_DATASETS_DIR}"
+RESULTS_DIR="${CLOUDLEX_RESULTS_DIR}"
