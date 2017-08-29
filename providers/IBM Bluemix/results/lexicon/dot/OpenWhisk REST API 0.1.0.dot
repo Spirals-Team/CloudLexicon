@@ -1,0 +1,19 @@
+digraph LexiconGraph {
+graph[label="IBM Bluemix - OpenWhisk REST API 0.1.0", fontsize=24]
+splines=true
+"namespaces" [color=blue, fontcolor=blue, shape=doublecircle]
+"packages" -> "namespaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"packages" [color=blue, fontcolor=blue, shape=ellipse]
+"triggers" [color=orange, fontcolor=orange, shape=box]
+"triggers" -> "namespaces" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"activations" -> "namespaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"activations" [color=blue, fontcolor=blue, shape=ellipse]
+"result" -> "activations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"result" [color=blue, fontcolor=blue, shape=ellipse]
+"logs" -> "activations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"logs" [color=blue, fontcolor=blue, shape=ellipse]
+"actions" -> "namespaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"actions" [color=blue, fontcolor=blue, shape=ellipse]
+"rules" -> "namespaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"rules" [color=blue, fontcolor=blue, shape=ellipse]
+}

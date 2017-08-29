@@ -1,0 +1,221 @@
+--------------------------------------------------------------------------------
+Read-Only Pattern - 30 detected:
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/json
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/status
+ * https://containers-api.ng.bluemix.net/containers/usage
+ * https://containers-api.ng.bluemix.net/containers/messages
+ * https://containers-api.ng.bluemix.net/containers/version
+ * https://containers-api.ng.bluemix.net/containers/json
+ * https://containers-api.ng.bluemix.net/volumes/json
+ * https://containers-api.ng.bluemix.net/volumes/{name}/json
+ * https://containers-api.ng.bluemix.net/volumes/fs/{name}/json
+ * https://containers-api.ng.bluemix.net/volumes/fs/flavors/json
+ * https://containers-api.ng.bluemix.net/volumes/fs/json
+ * https://containers-api.ng.bluemix.net/registry/namespaces
+ * https://containers-api.ng.bluemix.net/images/json
+ * https://containers-api.ng.bluemix.net/images/{name_or_id}/json
+ * http://localhost:6969/clusters/{idOrName}/services/{namespace}
+ * http://localhost:6969/clusters/{idOrName}/config
+ * http://localhost:6969/datacenters
+ * http://localhost:6969/datacenters/{datacenter}/vlans
+ * http://localhost:6969/datacenters/{datacenter}/machine-types
+ * http://localhost:6969/messages
+ * http://localhost:6969/config
+ * http://localhost:6969/subnets
+ * https://containers-api.ng.bluemix.net/v3/namespaces
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/packages
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/activations
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/activations/{activationid}
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/activations/{activationid}/result
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/activations/{activationid}/logs
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/actions
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/rules
+
+--------------------------------------------------------------------------------
+Resource Pattern - 21 detected:
+ * https://containers-api.ng.bluemix.net/containers/floating-ips/{ip}
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/floating-ips/{ip}
+ * https://containers-api.ng.bluemix.net/containers/groups/{name_or_id}
+ * https://containers-api.ng.bluemix.net/volumes/{name}
+ * https://containers-api.ng.bluemix.net/volumes/fs/{name}
+ * https://containers-api.ng.bluemix.net/registry/namespaces/{namespace}
+ * https://containers-api.ng.bluemix.net/images/{name_or_id}
+ * http://localhost:6969/clusters/{idOrName}
+ * http://localhost:6969/clusters/{idOrName}/workers/{workerId}
+ * http://localhost:6969/clusters/{idOrName}/services/{namespace}
+ * http://localhost:6969/clusters/{idOrName}/services/{namespace}/{serviceInstanceId}
+ * http://localhost:6969/clusters/{idOrName}/subnets/{subnetId}
+ * http://localhost:6969/dedicated/clusters/{idOrName}/services/{namespace}/{serviceInstanceId}
+ * http://localhost:6969/workers/{workerId}
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/packages/{packageName}
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/triggers/{triggerName}
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/activations/{activationid}
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/actions/{actionName}
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/rules/{ruleName}
+
+--------------------------------------------------------------------------------
+Singleton Resource Pattern - 19 detected:
+ * https://containers-api.ng.bluemix.net
+ * https://containers-api.ng.bluemix.net/containers/usage
+ * https://containers-api.ng.bluemix.net/containers/messages
+ * https://containers-api.ng.bluemix.net/containers/version
+ * https://containers-api.ng.bluemix.net/containers/quota
+ * https://containers-api.ng.bluemix.net/containers/json
+ * https://containers-api.ng.bluemix.net/volumes/json
+ * https://containers-api.ng.bluemix.net/volumes/fs/flavors/json
+ * https://containers-api.ng.bluemix.net/volumes/fs/json
+ * https://containers-api.ng.bluemix.net/tlskey
+ * https://containers-api.ng.bluemix.net/images/json
+ * http://localhost:6969
+ * http://localhost:6969/keys
+ * http://localhost:6969/dedicated/config
+ * http://localhost:6969/dedicated/datacenter
+ * http://localhost:6969/messages
+ * http://localhost:6969/config
+ * http://localhost:6969/credentials
+ * http://localhost:6969/subnets
+
+--------------------------------------------------------------------------------
+SubResource Pattern - 13 detected:
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/json
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/status
+ * https://containers-api.ng.bluemix.net/volumes/{name}/json
+ * https://containers-api.ng.bluemix.net/volumes/fs/{name}/json
+ * https://containers-api.ng.bluemix.net/images/{name_or_id}/json
+ * http://localhost:6969/clusters/{idOrName}/usersubnets
+ * http://localhost:6969/clusters/{idOrName}/webhooks
+ * http://localhost:6969/clusters/{idOrName}/config
+ * http://localhost:6969/dedicated/datacenters/{datacenter}/vlans
+ * http://localhost:6969/datacenters/{datacenter}/vlans
+ * http://localhost:6969/datacenters/{datacenter}/machine-types
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/activations/{activationid}/result
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/activations/{activationid}/logs
+
+--------------------------------------------------------------------------------
+Collection Pattern - 16 detected:
+ * https://containers-api.ng.bluemix.net/containers
+ * https://containers-api.ng.bluemix.net/containers/floating-ips
+ * https://containers-api.ng.bluemix.net/containers/groups
+ * https://containers-api.ng.bluemix.net/volumes
+ * https://containers-api.ng.bluemix.net/volumes/fs
+ * https://containers-api.ng.bluemix.net/registry/namespaces
+ * http://localhost:6969/clusters
+ * http://localhost:6969/clusters/{idOrName}/workers
+ * http://localhost:6969/clusters/{idOrName}/services
+ * http://localhost:6969/dedicated/clusters/{idOrName}/services
+ * http://localhost:6969/datacenters
+ * https://containers-api.ng.bluemix.net/v3/namespaces
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/packages
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/activations
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/actions
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/rules
+
+--------------------------------------------------------------------------------
+Controller Pattern - 16 detected:
+ * https://containers-api.ng.bluemix.net/containers/create
+ * https://containers-api.ng.bluemix.net/containers/floating-ips/request
+ * https://containers-api.ng.bluemix.net/containers/floating-ips/{ip}/release
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/stop
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/restart
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/rename
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/unpause
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/floating-ips/{ip}/unbind
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/floating-ips/{ip}/bind
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/pause
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/start
+ * https://containers-api.ng.bluemix.net/containers/groups/{name_or_id}/unmaproute
+ * https://containers-api.ng.bluemix.net/containers/groups/{name_or_id}/maproute
+ * https://containers-api.ng.bluemix.net/volumes/fs/create
+ * https://containers-api.ng.bluemix.net/volumes/create
+ * https://containers-api.ng.bluemix.net/build
+
+--------------------------------------------------------------------------------
+Singular Collection Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Missing POST Method Anti-Pattern - 6 detected:
+ * https://containers-api.ng.bluemix.net/containers
+ * https://containers-api.ng.bluemix.net/volumes
+ * https://containers-api.ng.bluemix.net/volumes/fs
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/packages
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/actions
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/rules
+
+--------------------------------------------------------------------------------
+Missing GET Method Anti-Pattern - 20 detected:
+ * https://containers-api.ng.bluemix.net
+ * https://containers-api.ng.bluemix.net/containers
+ * https://containers-api.ng.bluemix.net/containers/floating-ips/{ip}
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/floating-ips/{ip}
+ * https://containers-api.ng.bluemix.net/volumes
+ * https://containers-api.ng.bluemix.net/volumes/{name}
+ * https://containers-api.ng.bluemix.net/volumes/fs
+ * https://containers-api.ng.bluemix.net/volumes/fs/{name}
+ * https://containers-api.ng.bluemix.net/images/{name_or_id}
+ * http://localhost:6969
+ * http://localhost:6969/clusters/{idOrName}/workers/{workerId}
+ * http://localhost:6969/clusters/{idOrName}/services/{namespace}/{serviceInstanceId}
+ * http://localhost:6969/clusters/{idOrName}/usersubnets
+ * http://localhost:6969/clusters/{idOrName}/subnets/{subnetId}
+ * http://localhost:6969/keys
+ * http://localhost:6969/dedicated/datacenters/{datacenter}/vlans
+ * http://localhost:6969/dedicated/clusters/{idOrName}/services
+ * http://localhost:6969/dedicated/clusters/{idOrName}/services/{namespace}/{serviceInstanceId}
+ * http://localhost:6969/credentials
+
+--------------------------------------------------------------------------------
+Missing DELETE Method Anti-Pattern - 1 detected:
+ * http://localhost:6969/clusters/{idOrName}/services/{namespace}
+
+--------------------------------------------------------------------------------
+Unexpected DELETE Method Anti-Pattern - 4 detected:
+ * http://localhost:6969/dedicated/config
+ * http://localhost:6969/dedicated/datacenters/{datacenter}/vlans
+ * http://localhost:6969/dedicated/datacenter
+ * http://localhost:6969/credentials
+
+--------------------------------------------------------------------------------
+Only Controllers Anti-Pattern - 2 detected:
+ * https://containers-api.ng.bluemix.net/containers/floating-ips/{ip}
+ * https://containers-api.ng.bluemix.net/containers/{name_or_id}/floating-ips/{ip}
+
+--------------------------------------------------------------------------------
+Not Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Create Verb Controller Anti-Pattern - 3 detected:
+ * https://containers-api.ng.bluemix.net/containers/create
+ * https://containers-api.ng.bluemix.net/volumes/fs/create
+ * https://containers-api.ng.bluemix.net/volumes/create
+
+--------------------------------------------------------------------------------
+Retrieve Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Update Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Delete Verb Controller Anti-Pattern - 1 detected:
+ * https://containers-api.ng.bluemix.net/containers/floating-ips/{ip}/release
+
+--------------------------------------------------------------------------------
+Not POST Method Controller Anti-Pattern - 3 detected:
+ * https://containers-api.ng.bluemix.net/tlskey/refresh
+ * http://localhost:6969/build
+ * https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/triggers
+
+--------------------------------------------------------------------------------
+More Than One Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Controller Method Anti-Pattern - 3 detected:
+ * PUT https://containers-api.ng.bluemix.net/tlskey/refresh
+ * GET http://localhost:6969/build
+ * GET https://containers-api.ng.bluemix.net/v3/namespaces/{namespace}/triggers
+
+--------------------------------------------------------------------------------
+Untagged Resources and Controllers  - 0 detected:
+
