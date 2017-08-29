@@ -1,0 +1,182 @@
+--------------------------------------------------------------------------------
+Read-Only Pattern - 21 detected:
+ * https://api.digitalocean.com/v2/account
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}/kernels
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}/snapshots
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}/backups
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}/actions
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}/actions/{action_id}
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}/neighbors
+ * https://api.digitalocean.com/v2/actions
+ * https://api.digitalocean.com/v2/actions/{action_id}
+ * https://api.digitalocean.com/v2/volumes/{volume_id}/actions
+ * https://api.digitalocean.com/v2/volumes/{volume_id}/actions/{action_id}
+ * https://api.digitalocean.com/v2/reports/droplet_neighbors
+ * https://api.digitalocean.com/v2/floating_ips/{floating_ip_addr}/actions
+ * https://api.digitalocean.com/v2/floating_ips/{floating_ip_addr}/actions/{action_id}
+ * https://api.digitalocean.com/v2/images
+ * https://api.digitalocean.com/v2/images/{image_id}/actions
+ * https://api.digitalocean.com/v2/images/{image_id}/actions/{image_action_id}
+ * https://api.digitalocean.com/v2/images/{image_slug}
+ * https://api.digitalocean.com/v2/regions
+ * https://api.digitalocean.com/v2/sizes
+ * https://api.digitalocean.com/v2/snapshots
+
+--------------------------------------------------------------------------------
+Resource Pattern - 18 detected:
+ * https://api.digitalocean.com/v2/account/keys/{key_id}
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}/actions/{action_id}
+ * https://api.digitalocean.com/v2/actions/{action_id}
+ * https://api.digitalocean.com/v2/volumes/{volume_id}
+ * https://api.digitalocean.com/v2/volumes/{volume_id}/actions/{action_id}
+ * https://api.digitalocean.com/v2/certificates/{certificate_id}
+ * https://api.digitalocean.com/v2/domains/{domain_name}
+ * https://api.digitalocean.com/v2/domains/{domain_name}/records/{record_id}
+ * https://api.digitalocean.com/v2/floating_ips/{floating_ip_addr}
+ * https://api.digitalocean.com/v2/floating_ips/{floating_ip_addr}/actions/{action_id}
+ * https://api.digitalocean.com/v2/firewalls/{firewall_id}
+ * https://api.digitalocean.com/v2/images/{image_id}
+ * https://api.digitalocean.com/v2/images/{image_id}/actions/{image_action_id}
+ * https://api.digitalocean.com/v2/images/{image_slug}
+ * https://api.digitalocean.com/v2/load_balancers/{load_balancer_id}
+ * https://api.digitalocean.com/v2/snapshots/{snapshot_id}
+ * https://api.digitalocean.com/v2/tags/{tag_name}
+
+--------------------------------------------------------------------------------
+Singleton Resource Pattern - 4 detected:
+ * https://api.digitalocean.com/v2/account
+ * https://api.digitalocean.com/v2/reports/droplet_neighbors
+ * https://api.digitalocean.com/v2/regions
+ * https://api.digitalocean.com/v2/sizes
+
+--------------------------------------------------------------------------------
+SubResource Pattern - 11 detected:
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}/kernels
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}/snapshots
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}/backups
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}/neighbors
+ * https://api.digitalocean.com/v2/volumes/{volume_id}/snapshots
+ * https://api.digitalocean.com/v2/firewalls/{firewall_id}/droplets
+ * https://api.digitalocean.com/v2/firewalls/{firewall_id}/tags
+ * https://api.digitalocean.com/v2/firewalls/{firewall_id}/rules
+ * https://api.digitalocean.com/v2/load_balancers/{load_balancer_id}/droplets
+ * https://api.digitalocean.com/v2/load_balancers/{load_balancer_id}/forwarding_rules
+ * https://api.digitalocean.com/v2/tags/{tag_name}/resources
+
+--------------------------------------------------------------------------------
+Collection Pattern - 17 detected:
+ * https://api.digitalocean.com/v2/account/keys
+ * https://api.digitalocean.com/v2/droplets
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}/actions
+ * https://api.digitalocean.com/v2/actions
+ * https://api.digitalocean.com/v2/volumes
+ * https://api.digitalocean.com/v2/volumes/{volume_id}/actions
+ * https://api.digitalocean.com/v2/certificates
+ * https://api.digitalocean.com/v2/domains
+ * https://api.digitalocean.com/v2/domains/{domain_name}/records
+ * https://api.digitalocean.com/v2/floating_ips
+ * https://api.digitalocean.com/v2/floating_ips/{floating_ip_addr}/actions
+ * https://api.digitalocean.com/v2/firewalls
+ * https://api.digitalocean.com/v2/images
+ * https://api.digitalocean.com/v2/images/{image_id}/actions
+ * https://api.digitalocean.com/v2/load_balancers
+ * https://api.digitalocean.com/v2/snapshots
+ * https://api.digitalocean.com/v2/tags
+
+--------------------------------------------------------------------------------
+Controller Pattern - 34 detected:
+ * https://api.digitalocean.com/v2/droplets?actions|type=power_cycle
+ * https://api.digitalocean.com/v2/droplets?actions|type=power_on
+ * https://api.digitalocean.com/v2/droplets?actions|type=power_off
+ * https://api.digitalocean.com/v2/droplets?actions|type=shutdown
+ * https://api.digitalocean.com/v2/droplets?actions|type=enable_private_networking
+ * https://api.digitalocean.com/v2/droplets?actions|type=enable_ipv6
+ * https://api.digitalocean.com/v2/droplets?actions|type=enable_backups
+ * https://api.digitalocean.com/v2/droplets?actions|type=disable_backups
+ * https://api.digitalocean.com/v2/droplets?actions|type=snapshot
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=enable_backups
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=disable_backups
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=reboot
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=power_cycle
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=shutdown
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=power_off
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=power_on
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=restore
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=password_reset
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=resize
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=rebuild
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=rename
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=change_kernel
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=enable_ipv6
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=enable_private_networking
+ * https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=snapshot
+ * https://api.digitalocean.com/v2/volumes/{volume_id}?actions|type=attach
+ * https://api.digitalocean.com/v2/volumes/{volume_id}?actions|type=detach
+ * https://api.digitalocean.com/v2/volumes/{volume_id}?actions|type=resize
+ * https://api.digitalocean.com/v2/volumes?actions|type=attach
+ * https://api.digitalocean.com/v2/volumes?actions|type=detach
+ * https://api.digitalocean.com/v2/floating_ips/{floating_ip_addr}?actions|type=assign
+ * https://api.digitalocean.com/v2/floating_ips/{floating_ip_addr}?actions|type=unassign
+ * https://api.digitalocean.com/v2/images/{image_id}?actions|type=transfer
+ * https://api.digitalocean.com/v2/images/{image_id}?actions|type=convert
+
+--------------------------------------------------------------------------------
+Singular Collection Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Missing POST Method Anti-Pattern - 2 detected:
+ * https://api.digitalocean.com/v2/images
+ * https://api.digitalocean.com/v2/snapshots
+
+--------------------------------------------------------------------------------
+Missing GET Method Anti-Pattern - 6 detected:
+ * https://api.digitalocean.com/v2/firewalls/{firewall_id}/droplets
+ * https://api.digitalocean.com/v2/firewalls/{firewall_id}/tags
+ * https://api.digitalocean.com/v2/firewalls/{firewall_id}/rules
+ * https://api.digitalocean.com/v2/load_balancers/{load_balancer_id}/droplets
+ * https://api.digitalocean.com/v2/load_balancers/{load_balancer_id}/forwarding_rules
+ * https://api.digitalocean.com/v2/tags/{tag_name}/resources
+
+--------------------------------------------------------------------------------
+Missing DELETE Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Unexpected DELETE Method Anti-Pattern - 6 detected:
+ * https://api.digitalocean.com/v2/firewalls/{firewall_id}/droplets
+ * https://api.digitalocean.com/v2/firewalls/{firewall_id}/tags
+ * https://api.digitalocean.com/v2/firewalls/{firewall_id}/rules
+ * https://api.digitalocean.com/v2/load_balancers/{load_balancer_id}/droplets
+ * https://api.digitalocean.com/v2/load_balancers/{load_balancer_id}/forwarding_rules
+ * https://api.digitalocean.com/v2/tags/{tag_name}/resources
+
+--------------------------------------------------------------------------------
+Only Controllers Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Create Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Retrieve Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Update Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Delete Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Method Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+More Than One Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Controller Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Untagged Resources and Controllers  - 0 detected:
+

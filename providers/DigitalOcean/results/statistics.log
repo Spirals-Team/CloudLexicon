@@ -1,0 +1,46 @@
+['./datasets/DatasetURIs.csv']
+
+-------------------- API --------------------
+
+Number of providers = 1
+Number of services = 1
+Number of resources = 50
+Number of controllers = 34
+Number of queries = 7
+Number of methods = 127
+ - 5 PUT (3.94%)
+ - 51 POST (40.16%)
+ - 20 DELETE (15.75%)
+ - 51 GET (40.16%)
+
+-------------------- LEXICON --------------------
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+******************************     0 terms are common to 0 of 1 providers      ******************************
+******************************     46 terms are common to 1 of 1 providers      ******************************
+
+Number of terms = 46
+Number of nouns = 24 (52.17%)
+Number of verbs = 22 (47.83%)
+Number of singular terms = 1 (2.17%)
+Number of plural terms = 45 (97.83%)
+Number of lower case terms = 46 (100.00%)
+Number of upper case terms = 0 (0.00%)
+Number of camel case terms = 0 (0.00%)
+Number of hyphen terms = 13 (28.26%)
+Number of underscore terms = 0 (0.00%)
+Number of business terms = 46 (100.00%)
+Number of engineering terms = 0 (0.00%)
+
+
+-------------------- QUALITY --------------------
+
+DigitalOcean is REST ;-)
+scoreRest = 0.732283464567
+DigitalOcean: GOOD API naming or API Naming Uniformity Pattern
+scoreNaming = 1.0
+DigitalOcean: GOOD business API design or Business-Oriented API Naming Pattern 46 (100.00%)
+scoreBusiness = 1.0
+Total score = 0.910761154856

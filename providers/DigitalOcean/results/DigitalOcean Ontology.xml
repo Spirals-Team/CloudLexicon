@@ -1,0 +1,299 @@
+<CloudComputing>
+    <Provider name="DigitalOcean">
+        <Service name="API v2">
+            <Resource uri="https://api.digitalocean.com/v2/account">
+                <Method name="GET" description="Get User Information"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/account/keys">
+                <Method name="GET" description="List all Keys"/>
+                <Method name="POST" description="Create a new Key"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/account/keys/{key_id}">
+                <Method name="GET" description="Retrieve an existing Key"/>
+                <Method name="PUT" description="Update a Key"/>
+                <Method name="DELETE" description="Destroy a Key"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/droplets">
+                <Method name="POST" description="Create a new Droplet"/>
+                <Method name="GET" description="List All Droplets"/>
+                <Controller uri="https://api.digitalocean.com/v2/droplets?actions|type=power_cycle" verb="power_cycle">
+                    <Method name="POST" description="Acting power_cycle on Tagged Droplets"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets?actions|type=power_on" verb="power_on">
+                    <Method name="POST" description="Acting power_on on Tagged Droplets"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets?actions|type=power_off" verb="power_off">
+                    <Method name="POST" description="Acting power_off on Tagged Droplets"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets?actions|type=shutdown" verb="shutdown">
+                    <Method name="POST" description="Acting shutdown on Tagged Droplets"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets?actions|type=enable_private_networking" verb="enable_private_networking">
+                    <Method name="POST" description="Acting enable_private_networking on Tagged Droplets"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets?actions|type=enable_ipv6" verb="enable_ipv6">
+                    <Method name="POST" description="Acting enable_ipv6 on Tagged Droplets"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets?actions|type=enable_backups" verb="enable_backups">
+                    <Method name="POST" description="Acting enable_backups on Tagged Droplets"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets?actions|type=disable_backups" verb="disable_backups">
+                    <Method name="POST" description="Acting disable_backups on Tagged Droplets"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets?actions|type=snapshot" verb="snapshot">
+                    <Method name="POST" description="Acting snapshot on Tagged Droplets"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/droplets/{droplet_id}">
+                <Method name="GET" description="Responses"/>
+                <Method name="DELETE" description="Delete a Droplet"/>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=enable_backups" verb="enable_backups">
+                    <Method name="POST" description="Enable Backups"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=disable_backups" verb="disable_backups">
+                    <Method name="POST" description="Disable Backups"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=reboot" verb="reboot">
+                    <Method name="POST" description="Reboot a Droplet"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=power_cycle" verb="power_cycle">
+                    <Method name="POST" description="Power Cycle a Droplet"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=shutdown" verb="shutdown">
+                    <Method name="POST" description="Shutdown A Droplet"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=power_off" verb="power_off">
+                    <Method name="POST" description="Power Off a Droplet"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=power_on" verb="power_on">
+                    <Method name="POST" description="Power On a Droplet"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=restore" verb="restore">
+                    <Method name="POST" description="Restore a Droplet"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=password_reset" verb="password_reset">
+                    <Method name="POST" description="Password Reset a Droplet"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=resize" verb="resize">
+                    <Method name="POST" description="Resize a Droplet"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=rebuild" verb="rebuild">
+                    <Method name="POST" description="Rebuild a Droplet"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=rename" verb="rename">
+                    <Method name="POST" description="Rename a Droplet"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=change_kernel" verb="change_kernel">
+                    <Method name="POST" description="Change the Kernel"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=enable_ipv6" verb="enable_ipv6">
+                    <Method name="POST" description="Enable IPv6"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=enable_private_networking" verb="enable_private_networking">
+                    <Method name="POST" description="Enable Private Networking"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/droplets/{droplet_id}?actions|type=snapshot" verb="snapshot">
+                    <Method name="POST" description="Snapshot a Droplet"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/droplets/{droplet_id}/kernels">
+                <Method name="GET" description="List all available Kernels for a Droplet"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/droplets/{droplet_id}/snapshots">
+                <Method name="GET" description="List snapshots for a Droplet"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/droplets/{droplet_id}/backups">
+                <Method name="GET" description="List backups for a Droplet"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/droplets/{droplet_id}/actions">
+                <Method name="GET" description="List actions for a Droplet"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/droplets/{droplet_id}/actions/{action_id}">
+                <Method name="GET" description="Retrieve a Droplet Action"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/droplets/{droplet_id}/neighbors">
+                <Method name="GET" description="List Neighbors for a Droplet"/>
+            </Resource>
+            <Query uri="https://api.digitalocean.com/v2/droplets?tag_name=$TAG_NAME"/>
+            <Resource uri="https://api.digitalocean.com/v2/actions">
+                <Method name="GET" description="List all Actions"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/actions/{action_id}">
+                <Method name="GET" description="Retrieve an existing Action"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/volumes">
+                <Method name="GET" description="List all Block Storage volumes"/>
+                <Method name="POST" description="Create a new Block Storage volume"/>
+                <Controller uri="https://api.digitalocean.com/v2/volumes?actions|type=attach" verb="attach">
+                    <Method name="POST" description="Attach a Block Storage volume to a Droplet by name"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/volumes?actions|type=detach" verb="detach">
+                    <Method name="POST" description="Remove a Block Storage volume from a Droplet by name"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/volumes/{volume_id}">
+                <Method name="GET" description="Retrieve an existing Block Storage volume"/>
+                <Method name="DELETE" description="Delete a Block Storage volume"/>
+                <Controller uri="https://api.digitalocean.com/v2/volumes/{volume_id}?actions|type=attach" verb="attach">
+                    <Method name="POST" description="Attach a Block Storage volume to a Droplet"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/volumes/{volume_id}?actions|type=detach" verb="detach">
+                    <Method name="POST" description="Remove a Block Storage volume from a Droplet"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/volumes/{volume_id}?actions|type=resize" verb="resize">
+                    <Method name="POST" description="Resize a volume"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/volumes/{volume_id}/snapshots">
+                <Method name="GET" description="List snapshots for a volume"/>
+                <Method name="POST" description="Create snapshot from a volume"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/volumes/{volume_id}/actions">
+                <Method name="GET" description="List all actions for a volume"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/volumes/{volume_id}/actions/{action_id}">
+                <Method name="GET" description="Retrieve an existing volume action"/>
+            </Resource>
+            <Query uri="https://api.digitalocean.com/v2/volumes?name=$DRIVE_NAME&amp;region=nyc1"/>
+            <Resource uri="https://api.digitalocean.com/v2/certificates">
+                <Method name="POST" description="Create a new certificate"/>
+                <Method name="GET" description="List all certificates"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/certificates/{certificate_id}">
+                <Method name="GET" description="Retrieve an existing certificate"/>
+                <Method name="DELETE" description="Delete a certificate"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/domains">
+                <Method name="GET" description="List all Domains"/>
+                <Method name="POST" description="Create a new Domain"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/domains/{domain_name}">
+                <Method name="GET" description="Retrieve an existing Domain"/>
+                <Method name="DELETE" description="Delete a Domain"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/domains/{domain_name}/records">
+                <Method name="GET" description="List all Domain Records"/>
+                <Method name="POST" description="Create a new Domain Record"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/domains/{domain_name}/records/{record_id}">
+                <Method name="GET" description="Retrieve an existing Domain Record"/>
+                <Method name="PUT" description="Update a Domain Record"/>
+                <Method name="DELETE" description="Delete a Domain Record"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/reports/droplet_neighbors">
+                <Method name="GET" description="List all Droplet Neighbors"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/floating_ips">
+                <Method name="GET" description="List all Floating IPs"/>
+                <Method name="POST" description="Create a new Floating IP assigned to a Droplet"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/floating_ips/{floating_ip_addr}">
+                <Method name="GET" description="Retrieve an existing Floating IP"/>
+                <Method name="DELETE" description="Delete a Floating IPs"/>
+                <Controller uri="https://api.digitalocean.com/v2/floating_ips/{floating_ip_addr}?actions|type=assign" verb="assign">
+                    <Method name="POST" description="Assign a Floating IP to a Droplet"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/floating_ips/{floating_ip_addr}?actions|type=unassign" verb="unassign">
+                    <Method name="POST" description="Unassign a Floating IP"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/floating_ips/{floating_ip_addr}/actions">
+                <Method name="GET" description="List all actions for a Floating IP"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/floating_ips/{floating_ip_addr}/actions/{action_id}">
+                <Method name="GET" description="Retrieve an existing Floating IP Action"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/firewalls">
+                <Method name="POST" description="Create a new Firewall"/>
+                <Method name="GET" description="List all Firewalls"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/firewalls/{firewall_id}">
+                <Method name="GET" description="Retrieve an existing Firewall"/>
+                <Method name="PUT" description="Update a Firewall"/>
+                <Method name="DELETE" description="Delete a Firewall"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/firewalls/{firewall_id}/droplets">
+                <Method name="POST" description="Add Droplets to a Firewall"/>
+                <Method name="DELETE" description="Remove Droplets from a Firewall"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/firewalls/{firewall_id}/tags">
+                <Method name="POST" description="Add Tags to a Firewall"/>
+                <Method name="DELETE" description="Remove Tags from a Firewall"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/firewalls/{firewall_id}/rules">
+                <Method name="POST" description="Add rules to a Firewall"/>
+                <Method name="DELETE" description="Remove rules from a Firewall"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/images">
+                <Method name="GET" description="List all Images"/>
+            </Resource>
+            <Query uri="https://api.digitalocean.com/v2/images?type=distribution"/>
+            <Query uri="https://api.digitalocean.com/v2/images?type=application"/>
+            <Query uri="https://api.digitalocean.com/v2/images?private=true"/>
+            <Resource uri="https://api.digitalocean.com/v2/images/{image_id}">
+                <Method name="GET" description="Retrieve an existing Image by id"/>
+                <Method name="PUT" description="Update an Image"/>
+                <Method name="DELETE" description="Delete an Image"/>
+                <Controller uri="https://api.digitalocean.com/v2/images/{image_id}?actions|type=transfer" verb="transfer">
+                    <Method name="POST" description="Transfer an Image"/>
+                </Controller>
+                <Controller uri="https://api.digitalocean.com/v2/images/{image_id}?actions|type=convert" verb="convert">
+                    <Method name="POST" description="Convert an Image to a snapshot"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/images/{image_id}/actions">
+                <Method name="GET" description="List all actions for an image"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/images/{image_id}/actions/{image_action_id}">
+                <Method name="GET" description="Retrieve an existing Image Action"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/images/{image_slug}">
+                <Method name="GET" description="Retrieve an existing Image by slug"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/load_balancers">
+                <Method name="POST" description="Create a new Load Balancer"/>
+                <Method name="GET" description="List all Load Balancers"/>
+                <Method name="PUT" description="Update a Load Balancer"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/load_balancers/{load_balancer_id}">
+                <Method name="GET" description="Retrieve an existing Load Balancer"/>
+                <Method name="DELETE" description="Delete a Load Balancer"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/load_balancers/{load_balancer_id}/droplets">
+                <Method name="POST" description="Add Droplets to a Load Balancer"/>
+                <Method name="DELETE" description="Remove Droplets from a Load Balancer"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/load_balancers/{load_balancer_id}/forwarding_rules">
+                <Method name="POST" description="Add forwarding rules to a Load Balancer"/>
+                <Method name="DELETE" description="Remove forwarding rules from a Load Balancer"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/regions">
+                <Method name="GET" description="List all Regions"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/sizes">
+                <Method name="GET" description="List all Sizes"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/snapshots">
+                <Method name="GET" description="List all snapshots"/>
+            </Resource>
+            <Query uri="https://api.digitalocean.com/v2/snapshots?resource_type=droplet"/>
+            <Query uri="https://api.digitalocean.com/v2/snapshots?resource_type=volume"/>
+            <Resource uri="https://api.digitalocean.com/v2/snapshots/{snapshot_id}">
+                <Method name="GET" description="Retrieve an existing snapshot by id"/>
+                <Method name="DELETE" description="Delete a snapshot"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/tags">
+                <Method name="POST" description="Create a new Tag"/>
+                <Method name="GET" description="List all Tags"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/tags/{tag_name}">
+                <Method name="GET" description="Retrieve a Tag"/>
+                <Method name="DELETE" description="Delete a Tag"/>
+            </Resource>
+            <Resource uri="https://api.digitalocean.com/v2/tags/{tag_name}/resources">
+                <Method name="POST" description="Tag a Resource"/>
+                <Method name="DELETE" description="Untag a Resource"/>
+            </Resource>
+        </Service>
+    </Provider>
+</CloudComputing>
