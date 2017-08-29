@@ -1,0 +1,4 @@
+https://raw.githubusercontent.com/cloudfoundry-incubator/cf-swagger/master/descriptions/cloudfoundry/cloud_controller/v2/cc-swagger.yml
+https://raw.githubusercontent.com/cloudfoundry-incubator/cf-swagger/master/descriptions/cloudfoundry/abacus/abacus.json
+https://raw.githubusercontent.com/cloudfoundry-incubator/cf-swagger/master/descriptions/cloudfoundry/service_broker/service_broker.json
+https://raw.githubusercontent.com/cloudfoundry-incubator/cf-swagger/master/descriptions/cloudfoundry/services/cf_services.json

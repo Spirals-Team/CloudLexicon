@@ -1,0 +1,18 @@
+# First source: https://code.vmware.com/explorer-apis#product=&programming-language=REST
+# vCenter (Management) API 6.5
+https://vdc-repo.vmware.com/vmwb-repository/dcr-public/f5bbb318-321d-4fcc-980d-9c00cf8e59ca/166da263-82fe-4fc9-99d2-27bd55060895/vcenter.json
+# vCenter Server Appliance (Management) API 6.5
+https://vdc-repo.vmware.com/vmwb-repository/dcr-public/e9dc8167-b409-47b7-a8ce-5fc035972318/28c28ae4-48d1-4f93-920e-7f0916a88117/appliance.json
+# Photon Controller API 1.1.1 (see https://vmware.github.io/photon-controller/)
+https://vdc-repo.vmware.com/vmwb-repository/dcr-public/a47f1f43-56f8-4a09-9847-100b294892bc/48974eef-c3c8-48d1-abf4-50a8579892e9/api-photon.json
+# Content Library API 6.5
+https://vdc-repo.vmware.com/vmwb-repository/dcr-public/61adf3dc-c4b4-488e-9970-e7871b9674fb/df513ed7-fa1d-43cc-889c-978e314d4bd5/content.json
+
+# Second source: https://github.com/vmware/platypus
+https://raw.githubusercontent.com/vmware/platypus/master/api-nsx-6.2.json
+# Next one is already available from the first source.
+# https://raw.githubusercontent.com/vmware/platypus/master/api-photon.json 
+https://raw.githubusercontent.com/vmware/platypus/master/api-vra-7.json
+https://raw.githubusercontent.com/vmware/platypus/master/api-vrli-3.3.json
+https://raw.githubusercontent.com/vmware/platypus/master/api-vro-7.json
+https://raw.githubusercontent.com/vmware/platypus/master/api-vrops-6.2.json
