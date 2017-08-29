@@ -32,7 +32,7 @@ PROVIDER="VMware"
 TOOLCHAIN_DIR=../../toolchain
 
 # Set CloudLex environment variables.
-. .${TOOLCHAIN_DIR}/set-cloudlex-environment-variables.sh
+. ${TOOLCHAIN_DIR}/set-cloudlex-environment-variables.sh
 
 echo Generating the URI dataset for ${PROVIDER}...
 python ExtractDatasetURIs.py "${DATASETS_DIR}/VMware-APIs.csv" > "${DATASETS_DIR}/DatasetURIs.csv"
