@@ -86,8 +86,8 @@ def extractDatasetURIsFromOneSwaggerJson(jsonURI, providerName, defaultProviderB
 	if 'version' in swaggerJson['info']:
 		version = swaggerJson['info']['version']
 		if version:
-			# Some OpenStack Swagger JSON files have Unknown as version
-			if providerName == 'OpenStack' and version == 'Unknown':
+			# Some OpenStack/Rackspace Swagger JSON files have Unknown as version
+			if ( providerName == "OpenStack" or providerName == "Rackspace" ) and version == 'Unknown':
 				pass # Do nothing
 			else:
 				serviceName += ' ' + version.encode('utf8')
@@ -113,8 +113,8 @@ def extractDatasetURIsFromOneSwaggerJson(jsonURI, providerName, defaultProviderB
 				else:
 					description = ''
 
-				# WARNING OpenStack !!!!
-				if providerName == "OpenStack" and uri.endswith('/action'):
+				# WARNING OpenStack and Rackspace !!!!
+				if ( providerName == "OpenStack" or providerName == "Rackspace" ) and uri.endswith('/action'):
 					theURI += '|' + paths[uri][httpMethod]['operationId']
 
 				# WARNING Oracle Cloud API documents GET actions which are not supported !!!!
