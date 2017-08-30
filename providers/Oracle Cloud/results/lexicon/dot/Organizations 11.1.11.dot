@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Organizations 11.1.11", fontsize=24]
+splines=true
+"organizations" [color=blue, fontcolor=blue, shape=doublecircle]
+"OrganizationDFF" -> "organizations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"OrganizationDFF" [color=blue, fontcolor=blue, shape=ellipse]
+}

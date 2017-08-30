@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Cycle Count Definitions 11.13.0.0", fontsize=24]
+splines=true
+"cycleCountDefinitions" [color=blue, fontcolor=blue, shape=doublecircle]
+"countSubinventories" -> "cycleCountDefinitions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"countSubinventories" [color=blue, fontcolor=blue, shape=ellipse]
+"countClasses" -> "cycleCountDefinitions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"countClasses" [color=blue, fontcolor=blue, shape=ellipse]
+"countItems" -> "cycleCountDefinitions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"countItems" [color=blue, fontcolor=blue, shape=ellipse]
+}

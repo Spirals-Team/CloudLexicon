@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Agent/Exchange Order 20160704082404", fontsize=24]
+splines=true
+"exchanges" [color=blue, fontcolor=blue, shape=doublecircle]
+}

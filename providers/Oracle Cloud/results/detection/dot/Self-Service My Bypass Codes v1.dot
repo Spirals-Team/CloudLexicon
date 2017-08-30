@@ -1,0 +1,77 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - Self-Service/My Bypass Codes v1"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="blue", fontcolor="blue"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/MyBypassCodes\n Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node2 -> node3 [color="green", fontcolor="green"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node2 -> node4 [color="green", fontcolor="green"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="OPTIONS", shape="box", color="green", fontcolor="green"]
+}
+node2 -> node5 [color="green", fontcolor="green"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node2 -> node6 [color="blue", fontcolor="blue"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="/.search\n Singleton Resource\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node6 -> node7 [color="green", fontcolor="green"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node2 -> node8 [color="blue", fontcolor="blue"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="/{id}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node8 -> node9 [color="green", fontcolor="green"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node8 -> node10 [color="green", fontcolor="green"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - environment v2", fontsize=24]
+splines=true
+"environment" [color=blue, fontcolor=blue, shape=doublecircle]
+"trackingdb" -> "environment" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"trackingdb" [color=blue, fontcolor=blue, shape=ellipse]
+"purge" [color=orange, fontcolor=orange, shape=box]
+"purge" -> "trackingdb" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

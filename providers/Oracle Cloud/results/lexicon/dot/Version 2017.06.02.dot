@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Version 2017.06.02", fontsize=24]
+splines=true
+"capabilities" [color=blue, fontcolor=blue, shape=doublecircle]
+"version" [color=blue, fontcolor=blue, shape=doublecircle]
+}

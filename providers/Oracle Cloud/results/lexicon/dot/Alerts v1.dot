@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Alerts v1", fontsize=24]
+splines=true
+"metricThresholds" [color=blue, fontcolor=blue, shape=doublecircle]
+"notificationPollingInfo" [color=blue, fontcolor=blue, shape=doublecircle]
+}

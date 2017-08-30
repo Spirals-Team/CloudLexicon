@@ -1,0 +1,19 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Partners 11.1.10", fontsize=24]
+splines=true
+"partners" [color=blue, fontcolor=blue, shape=doublecircle]
+"certifications" -> "partners" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"certifications" [color=blue, fontcolor=blue, shape=ellipse]
+"types" -> "partners" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"types" [color=blue, fontcolor=blue, shape=ellipse]
+"productSpecialities" -> "partners" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"productSpecialities" [color=blue, fontcolor=blue, shape=ellipse]
+"geographies" -> "partners" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"geographies" [color=blue, fontcolor=blue, shape=ellipse]
+"accountTeamMembers" -> "partners" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"accountTeamMembers" [color=blue, fontcolor=blue, shape=ellipse]
+"expertises" -> "partners" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"expertises" [color=blue, fontcolor=blue, shape=ellipse]
+"industries" -> "partners" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"industries" [color=blue, fontcolor=blue, shape=ellipse]
+}

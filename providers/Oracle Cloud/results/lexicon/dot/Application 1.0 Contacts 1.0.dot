@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/1.0/Contacts 1.0", fontsize=24]
+splines=true
+"contact" [color=blue, fontcolor=blue, shape=doublecircle]
+"contacts" [color=blue, fontcolor=blue, shape=doublecircle]
+"contacts" -> "contact" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"contact" -> "contacts" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

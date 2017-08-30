@@ -1,0 +1,532 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - Monitoring 2.0.0"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="black", fontcolor="black"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/monitoring", shape="ellipse", color="black", fontcolor="black"]
+node2 -> node3 [color="blue", fontcolor="blue"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="/metrics\n Collection\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node3 -> node4 [color="blue", fontcolor="blue"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/availability\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node4 -> node5 [color="green", fontcolor="green"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node3 -> node6 [color="blue", fontcolor="blue"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="/{metricName}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node6 -> node7 [color="green", fontcolor="green"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node3 -> node8 [color="blue", fontcolor="blue"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="/authenticationFailureCount\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node8 -> node9 [color="green", fontcolor="green"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node8 -> node10 [color="blue", fontcolor="blue"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="/deviceCount\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node10 -> node11 [color="green", fontcolor="green"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node8 -> node12 [color="blue", fontcolor="blue"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="/badTokenCount\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node12 -> node13 [color="green", fontcolor="green"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node8 -> node14 [color="blue", fontcolor="blue"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="/expiredSessionCount\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node14 -> node15 [color="green", fontcolor="green"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node3 -> node16 [color="blue", fontcolor="blue"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label="/messageDispatchingLatency\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node16 -> node17 [color="green", fontcolor="green"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node3 -> node18 [color="blue", fontcolor="blue"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label="/dispatchedMessageCount\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node18 -> node19 [color="green", fontcolor="green"]
+subgraph cluster_19 {
+label=""
+color=white
+fontcolor=white
+node19 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node3 -> node20 [color="blue", fontcolor="blue"]
+subgraph cluster_20 {
+label=""
+color=white
+fontcolor=white
+node20 [label="/messageVolume\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node20 -> node21 [color="green", fontcolor="green"]
+subgraph cluster_21 {
+label=""
+color=white
+fontcolor=white
+node21 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node20 -> node22 [color="blue", fontcolor="blue"]
+subgraph cluster_22 {
+label=""
+color=white
+fontcolor=white
+node22 [label="/outbound\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node22 -> node23 [color="green", fontcolor="green"]
+subgraph cluster_23 {
+label=""
+color=white
+fontcolor=white
+node23 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node20 -> node24 [color="blue", fontcolor="blue"]
+subgraph cluster_24 {
+label=""
+color=white
+fontcolor=white
+node24 [label="/inbound\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node24 -> node25 [color="green", fontcolor="green"]
+subgraph cluster_25 {
+label=""
+color=white
+fontcolor=white
+node25 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node3 -> node26 [color="black", fontcolor="black"]
+subgraph cluster_26 {
+label=""
+color=white
+fontcolor=white
+node26 [label="/dataVolume", shape="ellipse", color="black", fontcolor="black"]
+node26 -> node27 [color="blue", fontcolor="blue"]
+subgraph cluster_27 {
+label=""
+color=white
+fontcolor=white
+node27 [label="/messages\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node27 -> node28 [color="green", fontcolor="green"]
+subgraph cluster_28 {
+label=""
+color=white
+fontcolor=white
+node28 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node27 -> node29 [color="blue", fontcolor="blue"]
+subgraph cluster_29 {
+label=""
+color=white
+fontcolor=white
+node29 [label="/inbound\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node29 -> node30 [color="green", fontcolor="green"]
+subgraph cluster_30 {
+label=""
+color=white
+fontcolor=white
+node30 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node27 -> node31 [color="blue", fontcolor="blue"]
+subgraph cluster_31 {
+label=""
+color=white
+fontcolor=white
+node31 [label="/outbound\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node31 -> node32 [color="green", fontcolor="green"]
+subgraph cluster_32 {
+label=""
+color=white
+fontcolor=white
+node32 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node3 -> node33 [color="blue", fontcolor="blue"]
+subgraph cluster_33 {
+label=""
+color=white
+fontcolor=white
+node33 [label="/onlineDeviceCount\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node33 -> node34 [color="green", fontcolor="green"]
+subgraph cluster_34 {
+label=""
+color=white
+fontcolor=white
+node34 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node3 -> node35 [color="orange", fontcolor="orange"]
+subgraph cluster_35 {
+label=""
+color=white
+fontcolor=white
+node35 [label="/registeredDeviceCount\nbut\nNot POST Method Controller", shape="octagon", color="red", fontcolor="red"]
+node35 -> node36 [color="green", fontcolor="green"]
+subgraph cluster_36 {
+label=""
+color=white
+fontcolor=white
+node36 [label="GET\nbut\nNot POST Controller Method", shape="box", color="red", fontcolor="red"]
+}
+}
+node3 -> node37 [color="blue", fontcolor="blue"]
+subgraph cluster_37 {
+label=""
+color=white
+fontcolor=white
+node37 [label="/alertCount\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node37 -> node38 [color="green", fontcolor="green"]
+subgraph cluster_38 {
+label=""
+color=white
+fontcolor=white
+node38 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node3 -> node39 [color="blue", fontcolor="blue"]
+subgraph cluster_39 {
+label=""
+color=white
+fontcolor=white
+node39 [label="/messageProcessingLatency\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node39 -> node40 [color="green", fontcolor="green"]
+subgraph cluster_40 {
+label=""
+color=white
+fontcolor=white
+node40 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node3 -> node41 [color="blue", fontcolor="blue"]
+subgraph cluster_41 {
+label=""
+color=white
+fontcolor=white
+node41 [label="/processedMessageCount\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node41 -> node42 [color="green", fontcolor="green"]
+subgraph cluster_42 {
+label=""
+color=white
+fontcolor=white
+node42 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node43 [color="blue", fontcolor="blue"]
+subgraph cluster_43 {
+label=""
+color=white
+fontcolor=white
+node43 [label="/availability\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node43 -> node44 [color="green", fontcolor="green"]
+subgraph cluster_44 {
+label=""
+color=white
+fontcolor=white
+node44 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node1 -> node45 [color="black", fontcolor="black"]
+subgraph cluster_45 {
+label=""
+color=white
+fontcolor=white
+node45 [label="/apps", shape="ellipse", color="black", fontcolor="black"]
+node45 -> node46 [color="black", fontcolor="black"]
+subgraph cluster_46 {
+label=""
+color=white
+fontcolor=white
+node46 [label="/{app_id}", shape="ellipse", color="black", fontcolor="black"]
+node46 -> node47 [color="black", fontcolor="black"]
+subgraph cluster_47 {
+label=""
+color=white
+fontcolor=white
+node47 [label="/monitoring", shape="ellipse", color="black", fontcolor="black"]
+node47 -> node48 [color="black", fontcolor="black"]
+subgraph cluster_48 {
+label=""
+color=white
+fontcolor=white
+node48 [label="/metrics", shape="ellipse", color="black", fontcolor="black"]
+node48 -> node49 [color="blue", fontcolor="blue"]
+subgraph cluster_49 {
+label=""
+color=white
+fontcolor=white
+node49 [label="/messageVolume\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node49 -> node50 [color="green", fontcolor="green"]
+subgraph cluster_50 {
+label=""
+color=white
+fontcolor=white
+node50 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node49 -> node51 [color="blue", fontcolor="blue"]
+subgraph cluster_51 {
+label=""
+color=white
+fontcolor=white
+node51 [label="/inbound\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node51 -> node52 [color="green", fontcolor="green"]
+subgraph cluster_52 {
+label=""
+color=white
+fontcolor=white
+node52 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node49 -> node53 [color="blue", fontcolor="blue"]
+subgraph cluster_53 {
+label=""
+color=white
+fontcolor=white
+node53 [label="/outbound\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node53 -> node54 [color="green", fontcolor="green"]
+subgraph cluster_54 {
+label=""
+color=white
+fontcolor=white
+node54 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node48 -> node55 [color="blue", fontcolor="blue"]
+subgraph cluster_55 {
+label=""
+color=white
+fontcolor=white
+node55 [label="/messageDispatchingLatency\n Read-Only Collection\nbut\nSingular Collection", shape="ellipse", color="red", fontcolor="red"]
+node55 -> node56 [color="green", fontcolor="green"]
+subgraph cluster_56 {
+label=""
+color=white
+fontcolor=white
+node56 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node55 -> node57 [color="blue", fontcolor="blue"]
+subgraph cluster_57 {
+label=""
+color=white
+fontcolor=white
+node57 [label="/{integrationID}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node57 -> node58 [color="green", fontcolor="green"]
+subgraph cluster_58 {
+label=""
+color=white
+fontcolor=white
+node58 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node48 -> node59 [color="blue", fontcolor="blue"]
+subgraph cluster_59 {
+label=""
+color=white
+fontcolor=white
+node59 [label="/dispatchedMessageCount\n Read-Only Collection\nbut\nSingular Collection", shape="ellipse", color="red", fontcolor="red"]
+node59 -> node60 [color="green", fontcolor="green"]
+subgraph cluster_60 {
+label=""
+color=white
+fontcolor=white
+node60 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node59 -> node61 [color="blue", fontcolor="blue"]
+subgraph cluster_61 {
+label=""
+color=white
+fontcolor=white
+node61 [label="/{integrationID}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node61 -> node62 [color="green", fontcolor="green"]
+subgraph cluster_62 {
+label=""
+color=white
+fontcolor=white
+node62 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node48 -> node63 [color="blue", fontcolor="blue"]
+subgraph cluster_63 {
+label=""
+color=white
+fontcolor=white
+node63 [label="/alertCount\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node63 -> node64 [color="green", fontcolor="green"]
+subgraph cluster_64 {
+label=""
+color=white
+fontcolor=white
+node64 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node48 -> node65 [color="blue", fontcolor="blue"]
+subgraph cluster_65 {
+label=""
+color=white
+fontcolor=white
+node65 [label="/messageProcessingLatency\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node65 -> node66 [color="green", fontcolor="green"]
+subgraph cluster_66 {
+label=""
+color=white
+fontcolor=white
+node66 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node48 -> node67 [color="black", fontcolor="black"]
+subgraph cluster_67 {
+label=""
+color=white
+fontcolor=white
+node67 [label="/dataVolume", shape="ellipse", color="black", fontcolor="black"]
+node67 -> node68 [color="blue", fontcolor="blue"]
+subgraph cluster_68 {
+label=""
+color=white
+fontcolor=white
+node68 [label="/messages\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node68 -> node69 [color="green", fontcolor="green"]
+subgraph cluster_69 {
+label=""
+color=white
+fontcolor=white
+node69 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node68 -> node70 [color="blue", fontcolor="blue"]
+subgraph cluster_70 {
+label=""
+color=white
+fontcolor=white
+node70 [label="/inbound\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node70 -> node71 [color="green", fontcolor="green"]
+subgraph cluster_71 {
+label=""
+color=white
+fontcolor=white
+node71 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node68 -> node72 [color="blue", fontcolor="blue"]
+subgraph cluster_72 {
+label=""
+color=white
+fontcolor=white
+node72 [label="/outbound\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node72 -> node73 [color="green", fontcolor="green"]
+subgraph cluster_73 {
+label=""
+color=white
+fontcolor=white
+node73 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node48 -> node74 [color="blue", fontcolor="blue"]
+subgraph cluster_74 {
+label=""
+color=white
+fontcolor=white
+node74 [label="/processedMessageCount\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node74 -> node75 [color="green", fontcolor="green"]
+subgraph cluster_75 {
+label=""
+color=white
+fontcolor=white
+node75 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}
+}

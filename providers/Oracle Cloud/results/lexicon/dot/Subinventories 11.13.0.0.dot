@@ -1,0 +1,22 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Subinventories 11.13.0.0", fontsize=24]
+splines=true
+"subinventories" [color=blue, fontcolor=blue, shape=doublecircle]
+"itemSubinventories" -> "subinventories" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"itemSubinventories" [color=blue, fontcolor=blue, shape=ellipse]
+"itemSubinventoriesDFF" -> "itemSubinventories" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"itemSubinventoriesDFF" [color=blue, fontcolor=blue, shape=ellipse]
+"locators" -> "subinventories" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"locators" [color=blue, fontcolor=blue, shape=ellipse]
+"locatorsDFF" -> "locators" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"locatorsDFF" [color=blue, fontcolor=blue, shape=ellipse]
+"locators" -> "locatorsDFF" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"locatorsKeyFlex" -> "locators" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"locatorsKeyFlex" [color=blue, fontcolor=blue, shape=ellipse]
+"locators" -> "locatorsKeyFlex" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"itemLocators" -> "locators" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"itemLocators" [color=blue, fontcolor=blue, shape=ellipse]
+"subinventoriesDFF" -> "subinventories" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"subinventoriesDFF" [color=blue, fontcolor=blue, shape=ellipse]
+"subinventories" -> "subinventoriesDFF" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

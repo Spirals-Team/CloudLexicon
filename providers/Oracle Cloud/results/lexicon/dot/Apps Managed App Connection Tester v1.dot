@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Apps/Managed App Connection Tester v1", fontsize=24]
+splines=true
+"ManagedAppConnectionTester" [color=blue, fontcolor=blue, shape=doublecircle]
+}

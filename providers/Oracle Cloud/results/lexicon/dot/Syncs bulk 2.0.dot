@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Syncs bulk/2.0", fontsize=24]
+splines=true
+"syncs" [color=blue, fontcolor=blue, shape=doublecircle]
+"data" -> "syncs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"data" [color=blue, fontcolor=blue, shape=ellipse]
+"logs" -> "syncs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"logs" [color=blue, fontcolor=blue, shape=ellipse]
+"rejects" -> "syncs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"rejects" [color=blue, fontcolor=blue, shape=ellipse]
+}

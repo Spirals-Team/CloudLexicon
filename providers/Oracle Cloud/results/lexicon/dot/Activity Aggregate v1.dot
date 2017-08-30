@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Activity Aggregate v1", fontsize=24]
+splines=true
+"portfolio" [color=blue, fontcolor=blue, shape=doublecircle]
+"project" [color=blue, fontcolor=blue, shape=doublecircle]
+"projects" [color=blue, fontcolor=blue, shape=doublecircle]
+"projects" -> "project" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"project" -> "projects" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

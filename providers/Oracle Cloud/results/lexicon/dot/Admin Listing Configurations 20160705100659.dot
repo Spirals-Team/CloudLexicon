@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Listing Configurations 20160705100659", fontsize=24]
+splines=true
+"listingConfigurations" [color=blue, fontcolor=blue, shape=doublecircle]
+}

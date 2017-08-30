@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Promotion Templates 20160704082655", fontsize=24]
+splines=true
+"promotions" [color=blue, fontcolor=blue, shape=doublecircle]
+}

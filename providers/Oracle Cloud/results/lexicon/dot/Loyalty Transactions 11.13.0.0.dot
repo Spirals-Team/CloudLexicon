@@ -1,0 +1,16 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Loyalty Transactions 11.13.0.0", fontsize=24]
+splines=true
+"loyaltyTransactions" [color=blue, fontcolor=blue, shape=doublecircle]
+"Promotions" -> "loyaltyTransactions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Promotions" [color=blue, fontcolor=blue, shape=ellipse]
+"PromotionAttributes" -> "Promotions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"PromotionAttributes" [color=blue, fontcolor=blue, shape=ellipse]
+"Promotions" -> "PromotionAttributes" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"TransactionVouchers" -> "loyaltyTransactions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"TransactionVouchers" [color=blue, fontcolor=blue, shape=ellipse]
+"AccrualItems" -> "loyaltyTransactions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"AccrualItems" [color=blue, fontcolor=blue, shape=ellipse]
+"RedemptionItems" -> "loyaltyTransactions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"RedemptionItems" [color=blue, fontcolor=blue, shape=ellipse]
+}

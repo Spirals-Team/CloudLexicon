@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Authenticate 2017.06.02", fontsize=24]
+splines=true
+"Oracle Cloud" [color=blue, fontcolor=blue, shape=doublecircle]
+"auth" [color=orange, fontcolor=orange, shape=box]
+"auth" -> "Oracle Cloud" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"token" -> "Oracle Cloud" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"token" [color=blue, fontcolor=blue, shape=ellipse]
+"new" -> "token" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"new" [color=blue, fontcolor=blue, shape=ellipse]
+}

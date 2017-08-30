@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Inventory Transaction Reasons 11.13.0.0", fontsize=24]
+splines=true
+"inventoryTransactionReasons" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - default 20160205052445", fontsize=24]
+splines=true
+"workZones" [color=blue, fontcolor=blue, shape=doublecircle]
+"populateShapes" -> "workZones" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"populateShapes" [color=blue, fontcolor=blue, shape=ellipse]
+}

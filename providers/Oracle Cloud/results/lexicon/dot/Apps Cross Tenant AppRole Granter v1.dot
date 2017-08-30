@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Apps/Cross Tenant AppRole Granter v1", fontsize=24]
+splines=true
+"CrossTenantAppRoleGranter" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Multi-Factor Authentication (MFA)/Bypass Code Notifications v1", fontsize=24]
+splines=true
+"BypassCodeNotifications" [color=blue, fontcolor=blue, shape=doublecircle]
+}

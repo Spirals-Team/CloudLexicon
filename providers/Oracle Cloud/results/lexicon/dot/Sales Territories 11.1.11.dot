@@ -1,0 +1,15 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Sales Territories 11.1.11", fontsize=24]
+splines=true
+"territories" [color=blue, fontcolor=blue, shape=doublecircle]
+"TerritoryRule" -> "territories" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"TerritoryRule" [color=blue, fontcolor=blue, shape=ellipse]
+"TerritoryRuleBoundary1" -> "TerritoryRule" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"TerritoryRuleBoundary1" [color=blue, fontcolor=blue, shape=ellipse]
+"TerritoryRuleBndryValue1" -> "TerritoryRuleBoundary1" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"TerritoryRuleBndryValue1" [color=blue, fontcolor=blue, shape=ellipse]
+"TerritoryLineOfBusiness" -> "territories" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"TerritoryLineOfBusiness" [color=blue, fontcolor=blue, shape=ellipse]
+"TerritoryResource" -> "territories" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"TerritoryResource" [color=blue, fontcolor=blue, shape=ellipse]
+}

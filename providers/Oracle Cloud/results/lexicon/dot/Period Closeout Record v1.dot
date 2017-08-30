@@ -1,0 +1,4 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Period Closeout Record v1", fontsize=24]
+splines=true
+}

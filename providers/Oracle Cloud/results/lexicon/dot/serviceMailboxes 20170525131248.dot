@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - serviceMailboxes 20170525131248", fontsize=24]
+splines=true
+"serviceMailboxes" [color=blue, fontcolor=blue, shape=doublecircle]
+"services" -> "serviceMailboxes" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

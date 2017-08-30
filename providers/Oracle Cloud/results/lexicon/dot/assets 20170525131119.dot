@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - assets 20170525131119", fontsize=24]
+splines=true
+"assets" [color=blue, fontcolor=blue, shape=doublecircle]
+}

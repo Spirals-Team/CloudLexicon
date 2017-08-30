@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Inventory 20160704082117", fontsize=24]
+splines=true
+"inventories" [color=blue, fontcolor=blue, shape=doublecircle]
+}

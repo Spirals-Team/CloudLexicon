@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Accounts bulk/2.0", fontsize=24]
+splines=true
+"imports" [color=blue, fontcolor=blue, shape=doublecircle]
+"lists" [color=blue, fontcolor=blue, shape=doublecircle]
+"exports" [color=blue, fontcolor=blue, shape=doublecircle]
+"fields" [color=blue, fontcolor=blue, shape=doublecircle]
+"syncActions" [color=blue, fontcolor=blue, shape=doublecircle]
+"data" -> "imports" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"data" [color=blue, fontcolor=blue, shape=ellipse]
+"data" -> "exports" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"data" -> "syncActions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+}

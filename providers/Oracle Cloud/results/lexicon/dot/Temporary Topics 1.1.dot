@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Temporary Topics 1.1", fontsize=24]
+splines=true
+"temporaryTopics" [color=blue, fontcolor=blue, shape=doublecircle]
+}

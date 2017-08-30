@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Email Notifications 20160704081839", fontsize=24]
+splines=true
+"emailNotifications" [color=blue, fontcolor=blue, shape=doublecircle]
+}

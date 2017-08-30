@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Store/Profiles 20160704082654", fontsize=24]
+splines=true
+"profiles" [color=blue, fontcolor=blue, shape=doublecircle]
+"updateExpiredPassword" [color=orange, fontcolor=orange, shape=box]
+"updateExpiredPassword" -> "profiles" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"resetPassword" [color=orange, fontcolor=orange, shape=box]
+"resetPassword" -> "profiles" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"current" -> "profiles" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"current" [color=blue, fontcolor=blue, shape=ellipse]
+}

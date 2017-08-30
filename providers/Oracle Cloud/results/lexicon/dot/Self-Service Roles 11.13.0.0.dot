@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Self-Service Roles 11.13.0.0", fontsize=24]
+splines=true
+"mySelfServiceRoles" [color=blue, fontcolor=blue, shape=doublecircle]
+"selfServiceRoles" [color=blue, fontcolor=blue, shape=doublecircle]
+}

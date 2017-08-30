@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Configuration 1.2", fontsize=24]
+splines=true
+"collaboration" [color=blue, fontcolor=blue, shape=doublecircle]
+"deliverycdn" [color=blue, fontcolor=blue, shape=doublecircle]
+}

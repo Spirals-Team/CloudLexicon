@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Identity/Self Service (Me) v1", fontsize=24]
+splines=true
+"Me" [color=blue, fontcolor=blue, shape=doublecircle]
+}

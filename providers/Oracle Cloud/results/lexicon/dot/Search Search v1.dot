@@ -1,0 +1,10 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Search/Search v1", fontsize=24]
+splines=true
+"answer" [color=blue, fontcolor=blue, shape=doublecircle]
+"pagination" [color=blue, fontcolor=blue, shape=doublecircle]
+"initialScreen" [color=blue, fontcolor=blue, shape=doublecircle]
+"navigation" [color=blue, fontcolor=blue, shape=doublecircle]
+"feedback" [color=blue, fontcolor=blue, shape=doublecircle]
+"question" [color=blue, fontcolor=blue, shape=doublecircle]
+}

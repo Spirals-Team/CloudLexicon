@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Connections v2", fontsize=24]
+splines=true
+"connections" [color=blue, fontcolor=blue, shape=doublecircle]
+"test" [color=orange, fontcolor=orange, shape=box]
+"test" -> "connections" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

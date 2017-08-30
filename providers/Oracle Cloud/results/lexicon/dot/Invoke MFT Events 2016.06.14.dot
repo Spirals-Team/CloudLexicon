@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Invoke MFT Events 2016.06.14", fontsize=24]
+splines=true
+"events" [color=blue, fontcolor=blue, shape=doublecircle]
+"instances" -> "events" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"instances" [color=blue, fontcolor=blue, shape=ellipse]
+}

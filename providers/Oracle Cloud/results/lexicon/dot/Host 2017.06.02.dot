@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Host 2017.06.02", fontsize=24]
+splines=true
+"hosts" [color=blue, fontcolor=blue, shape=doublecircle]
+"host" -> "hosts" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"pool" -> "hosts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"pool" [color=blue, fontcolor=blue, shape=ellipse]
+"pools" -> "pool" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"containers" -> "hosts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"containers" [color=blue, fontcolor=blue, shape=ellipse]
+}

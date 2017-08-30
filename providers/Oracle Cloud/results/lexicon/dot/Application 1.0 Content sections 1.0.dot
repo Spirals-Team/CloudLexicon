@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/1.0/Content sections 1.0", fontsize=24]
+splines=true
+"contentSection" [color=blue, fontcolor=blue, shape=doublecircle]
+"contentSections" [color=blue, fontcolor=blue, shape=doublecircle]
+}

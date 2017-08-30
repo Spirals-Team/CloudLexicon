@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/2.0/Campaigns 2.0", fontsize=24]
+splines=true
+"campaign" [color=blue, fontcolor=blue, shape=doublecircle]
+"campaigns" [color=blue, fontcolor=blue, shape=doublecircle]
+"campaigns" -> "campaign" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"campaign" -> "campaigns" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

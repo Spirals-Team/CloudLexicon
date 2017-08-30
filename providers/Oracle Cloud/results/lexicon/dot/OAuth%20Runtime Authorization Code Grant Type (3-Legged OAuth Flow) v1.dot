@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - OAuth%20Runtime/Authorization Code Grant Type (3-Legged OAuth Flow) v1", fontsize=24]
+splines=true
+"Oracle Cloud" [color=blue, fontcolor=blue, shape=doublecircle]
+"authorize" [color=orange, fontcolor=orange, shape=box]
+"authorize" -> "Oracle Cloud" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

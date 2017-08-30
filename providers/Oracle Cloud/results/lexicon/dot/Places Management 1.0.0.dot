@@ -1,0 +1,12 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Places Management 1.0.0", fontsize=24]
+splines=true
+"places" [color=blue, fontcolor=blue, shape=doublecircle]
+"places" -> "places" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"floorplan" -> "places" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"floorplan" [color=blue, fontcolor=blue, shape=ellipse]
+"assets" -> "places" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"assets" [color=blue, fontcolor=blue, shape=ellipse]
+"count" -> "places" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"count" [color=blue, fontcolor=blue, shape=ellipse]
+}

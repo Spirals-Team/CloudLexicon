@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - OAuth%20Runtime/UserInfo v1", fontsize=24]
+splines=true
+"userinfo" [color=blue, fontcolor=blue, shape=doublecircle]
+}

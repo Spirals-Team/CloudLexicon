@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - OrchestrationObjects 17.2.6-2017-07-11T23:00:50.020519", fontsize=24]
+splines=true
+"object" [color=blue, fontcolor=blue, shape=doublecircle]
+}

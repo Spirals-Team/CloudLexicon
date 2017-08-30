@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - User 2017.06.02", fontsize=24]
+splines=true
+"users" [color=blue, fontcolor=blue, shape=doublecircle]
+"admin" -> "users" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"admin" [color=blue, fontcolor=blue, shape=ellipse]
+}

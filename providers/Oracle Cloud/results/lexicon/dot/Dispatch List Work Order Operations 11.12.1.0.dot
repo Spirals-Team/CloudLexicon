@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Dispatch List Work Order Operations 11.12.1.0", fontsize=24]
+splines=true
+"dispatchListWorkOrderOperations" [color=blue, fontcolor=blue, shape=doublecircle]
+"WorkOrderOperationProductSerial" -> "dispatchListWorkOrderOperations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"WorkOrderOperationProductSerial" [color=blue, fontcolor=blue, shape=ellipse]
+}

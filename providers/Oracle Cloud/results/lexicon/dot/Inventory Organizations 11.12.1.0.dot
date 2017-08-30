@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Inventory Organizations 11.12.1.0", fontsize=24]
+splines=true
+"inventoryOrganizations" [color=blue, fontcolor=blue, shape=doublecircle]
+"invOrgParameters" -> "inventoryOrganizations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"invOrgParameters" [color=blue, fontcolor=blue, shape=ellipse]
+"plantParameters" -> "inventoryOrganizations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"plantParameters" [color=blue, fontcolor=blue, shape=ellipse]
+}

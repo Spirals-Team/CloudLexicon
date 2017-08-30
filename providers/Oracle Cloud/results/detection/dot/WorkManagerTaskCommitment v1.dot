@@ -1,0 +1,147 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - WorkManagerTaskCommitment v1"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="blue", fontcolor="blue"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/workManagerTaskCommitment\n Collection\nbut\nSingular Collection\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node2 -> node3 [color="green", fontcolor="green"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node2 -> node4 [color="green", fontcolor="green"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node2 -> node5 [color="black", fontcolor="black"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="/lastCommitment", shape="ellipse", color="black", fontcolor="black"]
+node5 -> node6 [color="black", fontcolor="black"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="/task", shape="ellipse", color="black", fontcolor="black"]
+node6 -> node7 [color="blue", fontcolor="blue"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="/{id}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node7 -> node8 [color="green", fontcolor="green"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node2 -> node9 [color="black", fontcolor="black"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="/reason", shape="ellipse", color="black", fontcolor="black"]
+node9 -> node10 [color="blue", fontcolor="blue"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="/{id}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node10 -> node11 [color="green", fontcolor="green"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node12 [color="black", fontcolor="black"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="/user", shape="ellipse", color="black", fontcolor="black"]
+node12 -> node13 [color="blue", fontcolor="blue"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="/{id}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node13 -> node14 [color="green", fontcolor="green"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node15 [color="black", fontcolor="black"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="/allCommitment", shape="ellipse", color="black", fontcolor="black"]
+node15 -> node16 [color="black", fontcolor="black"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label="/task", shape="ellipse", color="black", fontcolor="black"]
+node16 -> node17 [color="blue", fontcolor="blue"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="/{id}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node17 -> node18 [color="green", fontcolor="green"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node2 -> node19 [color="blue", fontcolor="blue"]
+subgraph cluster_19 {
+label=""
+color=white
+fontcolor=white
+node19 [label="/{id}\n Read-Only Resource\nbut\nMissing DELETE Method", shape="ellipse", color="red", fontcolor="red"]
+node19 -> node20 [color="green", fontcolor="green"]
+subgraph cluster_20 {
+label=""
+color=white
+fontcolor=white
+node20 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}

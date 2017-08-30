@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Cache Life Cycle 2017.04.02", fontsize=24]
+splines=true
+"instances" [color=blue, fontcolor=blue, shape=doublecircle]
+"hosts" -> "instances" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"hosts" [color=blue, fontcolor=blue, shape=ellipse]
+"restart" [color=orange, fontcolor=orange, shape=box]
+"restart" -> "hosts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"stop" -> "restart" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"start" [color=orange, fontcolor=orange, shape=box]
+"start" -> "hosts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"stop" -> "start" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"stop" [color=orange, fontcolor=orange, shape=box]
+"stop" -> "hosts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"scale" [color=orange, fontcolor=orange, shape=box]
+"scale" -> "instances" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

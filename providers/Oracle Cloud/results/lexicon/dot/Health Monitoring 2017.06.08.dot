@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Health Monitoring 2017.06.08", fontsize=24]
+splines=true
+"healthcheck" [color=blue, fontcolor=blue, shape=doublecircle]
+}

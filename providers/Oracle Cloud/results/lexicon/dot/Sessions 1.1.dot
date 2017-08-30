@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Sessions 1.1", fontsize=24]
+splines=true
+"state" [color=blue, fontcolor=blue, shape=doublecircle]
+}

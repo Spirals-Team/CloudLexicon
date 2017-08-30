@@ -1,0 +1,18 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Widget Descriptors 20160705092815", fontsize=24]
+splines=true
+"widgetDescriptors" [color=blue, fontcolor=blue, shape=doublecircle]
+"widgetInstances" [color=blue, fontcolor=blue, shape=doublecircle]
+"javascript" -> "widgetDescriptors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"javascript" [color=blue, fontcolor=blue, shape=ellipse]
+"restore" [color=orange, fontcolor=orange, shape=box]
+"restore" -> "javascript" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"schema" -> "widgetDescriptors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"schema" [color=blue, fontcolor=blue, shape=ellipse]
+"config" -> "widgetDescriptors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"config" [color=blue, fontcolor=blue, shape=ellipse]
+"instances" -> "widgetDescriptors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"instances" [color=blue, fontcolor=blue, shape=ellipse]
+"hidden" -> "widgetDescriptors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"hidden" [color=blue, fontcolor=blue, shape=ellipse]
+}

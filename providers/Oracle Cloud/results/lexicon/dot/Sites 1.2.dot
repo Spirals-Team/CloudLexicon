@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Sites 1.2", fontsize=24]
+splines=true
+"site" [color=blue, fontcolor=blue, shape=doublecircle]
+"sites" -> "site" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

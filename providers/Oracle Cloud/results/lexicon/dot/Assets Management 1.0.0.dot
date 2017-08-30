@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Assets Management 1.0.0", fontsize=24]
+splines=true
+"assets" [color=blue, fontcolor=blue, shape=doublecircle]
+"count" -> "assets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"count" [color=blue, fontcolor=blue, shape=ellipse]
+"groups" -> "assets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"groups" [color=blue, fontcolor=blue, shape=ellipse]
+"force" [color=orange, fontcolor=orange, shape=box]
+"force" -> "assets" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"history" -> "assets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"history" [color=blue, fontcolor=blue, shape=ellipse]
+"statistics" -> "history" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"statistics" [color=blue, fontcolor=blue, shape=ellipse]
+"actions" -> "assets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"actions" [color=blue, fontcolor=blue, shape=ellipse]
+}

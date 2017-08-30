@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Stack 2017.06.02", fontsize=24]
+splines=true
+"stacks" [color=blue, fontcolor=blue, shape=doublecircle]
+}

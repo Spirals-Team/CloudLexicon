@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Failed Web Hook Messages 20160704092009", fontsize=24]
+splines=true
+"webhookFailedMessages" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Reports/Group Import Detailed Job Reports v1", fontsize=24]
+splines=true
+"GroupImportDetailedJobReports" [color=blue, fontcolor=blue, shape=doublecircle]
+".search" -> "GroupImportDetailedJobReports" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+".search" [color=blue, fontcolor=blue, shape=ellipse]
+}

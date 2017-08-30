@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Activation 1.0.0", fontsize=24]
+splines=true
+"deviceApp" [color=blue, fontcolor=blue, shape=doublecircle]
+"device" [color=blue, fontcolor=blue, shape=doublecircle]
+"policy" [color=blue, fontcolor=blue, shape=doublecircle]
+"direct" [color=blue, fontcolor=blue, shape=doublecircle]
+"device" -> "deviceApp" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Sentiment Reports 20160712154808", fontsize=24]
+splines=true
+"sentimentReports" [color=blue, fontcolor=blue, shape=doublecircle]
+"status" -> "sentimentReports" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"status" [color=blue, fontcolor=blue, shape=ellipse]
+}

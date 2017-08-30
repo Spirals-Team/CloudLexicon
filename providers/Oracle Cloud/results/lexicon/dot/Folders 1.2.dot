@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Folders 1.2", fontsize=24]
+splines=true
+"tags" [color=blue, fontcolor=blue, shape=doublecircle]
+"metadata" [color=blue, fontcolor=blue, shape=doublecircle]
+"items" [color=blue, fontcolor=blue, shape=doublecircle]
+"metadataFields" [color=blue, fontcolor=blue, shape=doublecircle]
+"conversation" [color=blue, fontcolor=blue, shape=doublecircle]
+"lists" [color=blue, fontcolor=blue, shape=doublecircle]
+"move" [color=orange, fontcolor=orange, shape=box]
+"metadata" -> "metadataFields" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"copy" [color=orange, fontcolor=orange, shape=box]
+}

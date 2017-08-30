@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Inventory Owning Party Sites 11.13.0.0", fontsize=24]
+splines=true
+"inventoryOwningPartySites" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Site Settings v1", fontsize=24]
+splines=true
+"sites" [color=blue, fontcolor=blue, shape=doublecircle]
+"actions" -> "sites" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"actions" [color=blue, fontcolor=blue, shape=ellipse]
+"scripts" -> "sites" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"scripts" [color=blue, fontcolor=blue, shape=ellipse]
+}

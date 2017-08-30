@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Cycle Count Transactions 11.13.0.0", fontsize=24]
+splines=true
+"cycleCountTransactions" [color=blue, fontcolor=blue, shape=doublecircle]
+"countLines" -> "cycleCountTransactions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"countLines" [color=blue, fontcolor=blue, shape=ellipse]
+"countLinesDFF" -> "countLines" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"countLinesDFF" [color=blue, fontcolor=blue, shape=ellipse]
+}

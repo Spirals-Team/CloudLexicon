@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - OPA Batch Assess REST API 12.2.7", fontsize=24]
+splines=true
+"policy-models" [color=blue, fontcolor=blue, shape=doublecircle]
+"assessor" -> "policy-models" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"assessor" [color=blue, fontcolor=blue, shape=ellipse]
+"example" -> "assessor" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"example" [color=blue, fontcolor=blue, shape=ellipse]
+"data-model" -> "policy-models" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"data-model" [color=blue, fontcolor=blue, shape=ellipse]
+}

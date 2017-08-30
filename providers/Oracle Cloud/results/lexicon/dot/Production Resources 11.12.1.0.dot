@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Production Resources 11.12.1.0", fontsize=24]
+splines=true
+"productionResources" [color=blue, fontcolor=blue, shape=doublecircle]
+"ResourceDFF" -> "productionResources" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ResourceDFF" [color=blue, fontcolor=blue, shape=ellipse]
+}

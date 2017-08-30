@@ -1,0 +1,15 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - People 1.0", fontsize=24]
+splines=true
+"people" [color=blue, fontcolor=blue, shape=doublecircle]
+"profile" [color=orange, fontcolor=orange, shape=box]
+"scaled" [color=orange, fontcolor=orange, shape=box]
+"properties" -> "people" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"properties" [color=blue, fontcolor=blue, shape=ellipse]
+"statistics" -> "people" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"statistics" [color=blue, fontcolor=blue, shape=ellipse]
+"followers" -> "people" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"followers" [color=blue, fontcolor=blue, shape=ellipse]
+"following" -> "people" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"following" [color=blue, fontcolor=blue, shape=ellipse]
+}

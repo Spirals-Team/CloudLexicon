@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Project Risk v1", fontsize=24]
+splines=true
+"projectRisk" [color=blue, fontcolor=blue, shape=doublecircle]
+"project" -> "projectRisk" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"configuredFields" -> "projectRisk" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"configuredFields" [color=blue, fontcolor=blue, shape=ellipse]
+"batch" -> "projectRisk" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"batch" [color=blue, fontcolor=blue, shape=ellipse]
+"batchCreateOrUpdate" [color=orange, fontcolor=orange, shape=box]
+"batchCreateOrUpdate" -> "projectRisk" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"batch" -> "batchCreateOrUpdate" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

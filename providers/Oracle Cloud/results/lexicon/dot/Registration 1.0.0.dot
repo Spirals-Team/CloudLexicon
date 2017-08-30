@@ -1,0 +1,14 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Registration 1.0.0", fontsize=24]
+splines=true
+"registrations" [color=blue, fontcolor=blue, shape=doublecircle]
+"successEntries" -> "registrations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"successEntries" [color=blue, fontcolor=blue, shape=ellipse]
+"failedEntries" -> "registrations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"failedEntries" [color=blue, fontcolor=blue, shape=ellipse]
+"ignoredEntries" -> "registrations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ignoredEntries" [color=blue, fontcolor=blue, shape=ellipse]
+"registrationFile" -> "registrations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"registrationFile" [color=blue, fontcolor=blue, shape=ellipse]
+"registrations" -> "registrationFile" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

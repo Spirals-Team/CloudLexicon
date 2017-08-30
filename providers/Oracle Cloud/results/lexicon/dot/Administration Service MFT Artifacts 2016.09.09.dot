@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Administration Service/MFT Artifacts 2016.09.09", fontsize=24]
+splines=true
+"artifacts" [color=blue, fontcolor=blue, shape=doublecircle]
+"appProperties" -> "artifacts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"appProperties" [color=blue, fontcolor=blue, shape=ellipse]
+"repository" -> "artifacts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"repository" [color=blue, fontcolor=blue, shape=ellipse]
+"sftpProperties" -> "artifacts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"sftpProperties" [color=blue, fontcolor=blue, shape=ellipse]
+}

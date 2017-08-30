@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Metrics v1", fontsize=24]
+splines=true
+"metricTypes" [color=blue, fontcolor=blue, shape=doublecircle]
+"metricSeries" [color=blue, fontcolor=blue, shape=doublecircle]
+"metricSubjects" [color=blue, fontcolor=blue, shape=doublecircle]
+"metricUnits" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Agent/Agent Comments 20160704081814", fontsize=24]
+splines=true
+"comments" [color=blue, fontcolor=blue, shape=doublecircle]
+}

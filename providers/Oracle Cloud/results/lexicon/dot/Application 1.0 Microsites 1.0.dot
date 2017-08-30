@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/1.0/Microsites 1.0", fontsize=24]
+splines=true
+"microsite" [color=blue, fontcolor=blue, shape=doublecircle]
+"microsites" [color=blue, fontcolor=blue, shape=doublecircle]
+"microsites" -> "microsite" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"microsite" -> "microsites" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

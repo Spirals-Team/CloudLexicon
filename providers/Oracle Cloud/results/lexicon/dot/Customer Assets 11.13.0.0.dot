@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Customer Assets 11.13.0.0", fontsize=24]
+splines=true
+"customerAssets" [color=blue, fontcolor=blue, shape=doublecircle]
+"AssetCharge" -> "customerAssets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"AssetCharge" [color=blue, fontcolor=blue, shape=ellipse]
+}

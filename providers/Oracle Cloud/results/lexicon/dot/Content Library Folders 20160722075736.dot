@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Content Library Folders 20160722075736", fontsize=24]
+splines=true
+"clFolders" [color=blue, fontcolor=blue, shape=doublecircle]
+}

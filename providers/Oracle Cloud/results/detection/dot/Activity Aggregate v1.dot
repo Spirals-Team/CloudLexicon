@@ -1,0 +1,133 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - Activity Aggregate v1"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="black", fontcolor="black"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/activityAggregate", shape="ellipse", color="black", fontcolor="black"]
+node2 -> node3 [color="black", fontcolor="black"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="/workPackage", shape="ellipse", color="black", fontcolor="black"]
+node3 -> node4 [color="blue", fontcolor="blue"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/portfolio\n Singleton Resource\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node4 -> node5 [color="blue", fontcolor="blue"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="?id={id}", shape="ellipse", color="blue", fontcolor="blue"]
+node5 -> node6 [color="green", fontcolor="green"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node3 -> node7 [color="blue", fontcolor="blue"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="/project\n Singleton Resource\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node7 -> node8 [color="blue", fontcolor="blue"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="?id={id}", shape="ellipse", color="blue", fontcolor="blue"]
+node8 -> node9 [color="green", fontcolor="green"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node2 -> node10 [color="blue", fontcolor="blue"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="/projects\n Singleton Resource\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node10 -> node11 [color="blue", fontcolor="blue"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="?id={id}", shape="ellipse", color="blue", fontcolor="blue"]
+node11 -> node12 [color="green", fontcolor="green"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node13 [color="black", fontcolor="black"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="/wbs", shape="ellipse", color="black", fontcolor="black"]
+node13 -> node14 [color="blue", fontcolor="blue"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="/projects\n Singleton Resource\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node14 -> node15 [color="blue", fontcolor="blue"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="?id={id}", shape="ellipse", color="blue", fontcolor="blue"]
+node15 -> node16 [color="green", fontcolor="green"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node2 -> node17 [color="blue", fontcolor="blue"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="/{id}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node17 -> node18 [color="green", fontcolor="green"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}

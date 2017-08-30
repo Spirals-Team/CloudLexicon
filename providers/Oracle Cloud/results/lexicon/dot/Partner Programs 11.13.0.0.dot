@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Partner Programs 11.13.0.0", fontsize=24]
+splines=true
+"partnerPrograms" [color=blue, fontcolor=blue, shape=doublecircle]
+"ProgramBenefitDetails" -> "partnerPrograms" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ProgramBenefitDetails" [color=blue, fontcolor=blue, shape=ellipse]
+"PartnerProgramCountries" -> "partnerPrograms" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"PartnerProgramCountries" [color=blue, fontcolor=blue, shape=ellipse]
+"ProgramTiers" -> "partnerPrograms" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ProgramTiers" [color=blue, fontcolor=blue, shape=ellipse]
+}

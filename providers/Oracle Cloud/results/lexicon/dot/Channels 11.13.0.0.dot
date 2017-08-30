@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Channels 11.13.0.0", fontsize=24]
+splines=true
+"channels" [color=blue, fontcolor=blue, shape=doublecircle]
+"resourceMembers" -> "channels" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"resourceMembers" [color=blue, fontcolor=blue, shape=ellipse]
+}

@@ -1,0 +1,196 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - Patches 2017.06.08"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="black", fontcolor="black"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/instancemgmt", shape="ellipse", color="black", fontcolor="black"]
+node2 -> node3 [color="black", fontcolor="black"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="/{identityDomainId}", shape="ellipse", color="black", fontcolor="black"]
+node3 -> node4 [color="black", fontcolor="black"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/services", shape="ellipse", color="black", fontcolor="black"]
+node4 -> node5 [color="black", fontcolor="black"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="/BDCSCE", shape="ellipse", color="black", fontcolor="black"]
+node5 -> node6 [color="black", fontcolor="black"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="/instances", shape="ellipse", color="black", fontcolor="black"]
+node6 -> node7 [color="black", fontcolor="black"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="/{instanceName}", shape="ellipse", color="black", fontcolor="black"]
+node7 -> node8 [color="black", fontcolor="black"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="/patches", shape="ellipse", color="black", fontcolor="black"]
+node8 -> node9 [color="blue", fontcolor="blue"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="/applied", shape="ellipse", color="blue", fontcolor="blue"]
+node9 -> node10 [color="green", fontcolor="green"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node9 -> node11 [color="black", fontcolor="black"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="/job", shape="ellipse", color="black", fontcolor="black"]
+node11 -> node12 [color="blue", fontcolor="blue"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="/{jobId}", shape="ellipse", color="blue", fontcolor="blue"]
+node12 -> node13 [color="green", fontcolor="green"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node8 -> node14 [color="blue", fontcolor="blue"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="/checks", shape="ellipse", color="blue", fontcolor="blue"]
+node14 -> node15 [color="green", fontcolor="green"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node14 -> node16 [color="blue", fontcolor="blue"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label="/{patchId}", shape="ellipse", color="blue", fontcolor="blue"]
+node16 -> node17 [color="green", fontcolor="green"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+node14 -> node18 [color="black", fontcolor="black"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label="/job", shape="ellipse", color="black", fontcolor="black"]
+node18 -> node19 [color="blue", fontcolor="blue"]
+subgraph cluster_19 {
+label=""
+color=white
+fontcolor=white
+node19 [label="/{jobId}", shape="ellipse", color="blue", fontcolor="blue"]
+node19 -> node20 [color="green", fontcolor="green"]
+subgraph cluster_20 {
+label=""
+color=white
+fontcolor=white
+node20 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node8 -> node21 [color="blue", fontcolor="blue"]
+subgraph cluster_21 {
+label=""
+color=white
+fontcolor=white
+node21 [label="/{patchId}", shape="ellipse", color="blue", fontcolor="blue"]
+node21 -> node22 [color="green", fontcolor="green"]
+subgraph cluster_22 {
+label=""
+color=white
+fontcolor=white
+node22 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+node8 -> node23 [color="blue", fontcolor="blue"]
+subgraph cluster_23 {
+label=""
+color=white
+fontcolor=white
+node23 [label="/{rollbackId}", shape="ellipse", color="blue", fontcolor="blue"]
+node23 -> node24 [color="orange", fontcolor="orange"]
+subgraph cluster_24 {
+label=""
+color=white
+fontcolor=white
+node24 [label="/rollback", shape="octagon", color="orange", fontcolor="orange"]
+node24 -> node25 [color="green", fontcolor="green"]
+subgraph cluster_25 {
+label=""
+color=white
+fontcolor=white
+node25 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node8 -> node26 [color="blue", fontcolor="blue"]
+subgraph cluster_26 {
+label=""
+color=white
+fontcolor=white
+node26 [label="/available", shape="ellipse", color="blue", fontcolor="blue"]
+node26 -> node27 [color="green", fontcolor="green"]
+subgraph cluster_27 {
+label=""
+color=white
+fontcolor=white
+node27 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}

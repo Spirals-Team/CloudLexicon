@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - MonteCarlo Settings v1", fontsize=24]
+splines=true
+"monteCarloSettings" [color=blue, fontcolor=blue, shape=doublecircle]
+"batch" -> "monteCarloSettings" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"batch" [color=blue, fontcolor=blue, shape=ellipse]
+}

@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/2.0/External asset types 2.0", fontsize=24]
+splines=true
+"type" [color=blue, fontcolor=blue, shape=doublecircle]
+"types" [color=blue, fontcolor=blue, shape=doublecircle]
+"types" -> "type" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"type" -> "types" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

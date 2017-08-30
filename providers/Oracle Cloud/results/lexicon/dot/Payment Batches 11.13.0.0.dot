@@ -1,0 +1,10 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Payment Batches 11.13.0.0", fontsize=24]
+splines=true
+"paymentBatches" [color=blue, fontcolor=blue, shape=doublecircle]
+"paysheets" -> "paymentBatches" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"paysheets" [color=blue, fontcolor=blue, shape=ellipse]
+"paymentTransactions" -> "paysheets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"paymentTransactions" [color=blue, fontcolor=blue, shape=ellipse]
+"paymentTransactions" -> "paymentBatches" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+}

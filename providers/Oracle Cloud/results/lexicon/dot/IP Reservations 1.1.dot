@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - IP Reservations 1.1", fontsize=24]
+splines=true
+"ipreservations" [color=blue, fontcolor=blue, shape=doublecircle]
+}

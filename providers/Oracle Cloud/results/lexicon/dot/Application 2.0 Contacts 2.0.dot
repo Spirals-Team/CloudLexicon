@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/2.0/Contacts 2.0", fontsize=24]
+splines=true
+"contacts" [color=blue, fontcolor=blue, shape=doublecircle]
+"membership" [color=blue, fontcolor=blue, shape=doublecircle]
+"contact" -> "contacts" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Packages v2", fontsize=24]
+splines=true
+"packages" [color=blue, fontcolor=blue, shape=doublecircle]
+"archive" [color=orange, fontcolor=orange, shape=box]
+"archive" -> "packages" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

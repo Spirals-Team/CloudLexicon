@@ -1,0 +1,12 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Match and Export 0.0.0", fontsize=24]
+splines=true
+"match" [color=blue, fontcolor=blue, shape=doublecircle]
+"enrich" [color=blue, fontcolor=blue, shape=doublecircle]
+"enrich" -> "match" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"logfile" -> "match" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"logfile" [color=blue, fontcolor=blue, shape=ellipse]
+"file" -> "enrich" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"file" [color=blue, fontcolor=blue, shape=ellipse]
+"logfile" -> "enrich" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+}

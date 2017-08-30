@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Provisioner 1.0.0", fontsize=24]
+splines=true
+"integration" [color=blue, fontcolor=blue, shape=doublecircle]
+"device" [color=blue, fontcolor=blue, shape=doublecircle]
+"registration" [color=blue, fontcolor=blue, shape=doublecircle]
+"storage" [color=blue, fontcolor=blue, shape=doublecircle]
+}

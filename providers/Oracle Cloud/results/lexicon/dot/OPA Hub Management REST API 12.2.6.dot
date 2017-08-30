@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - OPA Hub Management REST API 12.2.6", fontsize=24]
+splines=true
+"users" [color=blue, fontcolor=blue, shape=doublecircle]
+}

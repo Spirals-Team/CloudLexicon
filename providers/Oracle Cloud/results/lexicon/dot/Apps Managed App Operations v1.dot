@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Apps/Managed App Operations v1", fontsize=24]
+splines=true
+"ManagedAppOperations" [color=blue, fontcolor=blue, shape=doublecircle]
+".search" -> "ManagedAppOperations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+".search" [color=blue, fontcolor=blue, shape=ellipse]
+}

@@ -1,0 +1,21 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - ApiVersions 0.0.0"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node1 -> node2 [color="green", fontcolor="green"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}

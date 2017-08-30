@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Activity Timeline Reports 20160901162757", fontsize=24]
+splines=true
+"activityTimelineReports" [color=blue, fontcolor=blue, shape=doublecircle]
+"status" -> "activityTimelineReports" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"status" [color=blue, fontcolor=blue, shape=ellipse]
+}

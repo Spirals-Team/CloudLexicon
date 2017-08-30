@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Logs and Recordings 2016.07.28", fontsize=24]
+splines=true
+"logs" [color=blue, fontcolor=blue, shape=doublecircle]
+"recordings" [color=blue, fontcolor=blue, shape=doublecircle]
+}

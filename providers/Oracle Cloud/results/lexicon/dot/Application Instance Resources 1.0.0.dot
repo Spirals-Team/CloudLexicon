@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application Instance Resources 1.0.0", fontsize=24]
+splines=true
+"v1" [color=blue, fontcolor=blue, shape=doublecircle]
+"installrequests" [color=orange, fontcolor=orange, shape=box]
+"installrequests" -> "v1" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

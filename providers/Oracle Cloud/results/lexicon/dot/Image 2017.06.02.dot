@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Image 2017.06.02", fontsize=24]
+splines=true
+"images" [color=blue, fontcolor=blue, shape=doublecircle]
+"containers" -> "images" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"containers" [color=blue, fontcolor=blue, shape=ellipse]
+"tag" [color=orange, fontcolor=orange, shape=box]
+"pull" [color=orange, fontcolor=orange, shape=box]
+"push" [color=orange, fontcolor=orange, shape=box]
+"run" [color=orange, fontcolor=orange, shape=box]
+}

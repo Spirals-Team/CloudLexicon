@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Service Instances 2017-06-05T23:17:47Z", fontsize=24]
+splines=true
+"servers" [color=blue, fontcolor=blue, shape=doublecircle]
+"standby" [color=blue, fontcolor=blue, shape=doublecircle]
+"ibkup" [color=blue, fontcolor=blue, shape=doublecircle]
+}

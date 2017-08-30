@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Validate Return Quantities 11.12.1.0", fontsize=24]
+splines=true
+"Oracle Cloud" [color=blue, fontcolor=blue, shape=doublecircle]
+"validateReturnQuantities" [color=orange, fontcolor=orange, shape=box]
+"validateReturnQuantities" -> "Oracle Cloud" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

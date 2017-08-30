@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - libraries v2", fontsize=24]
+splines=true
+"libraries" [color=blue, fontcolor=blue, shape=doublecircle]
+"metadata" -> "libraries" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"metadata" [color=blue, fontcolor=blue, shape=ellipse]
+"archive" [color=orange, fontcolor=orange, shape=box]
+"archive" -> "libraries" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

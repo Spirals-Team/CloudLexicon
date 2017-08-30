@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Reports 20160704082719", fontsize=24]
+splines=true
+"reports" [color=blue, fontcolor=blue, shape=doublecircle]
+"export" [color=orange, fontcolor=orange, shape=box]
+"export" -> "reports" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

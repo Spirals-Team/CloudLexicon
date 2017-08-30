@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Spaces 4.0", fontsize=24]
+splines=true
+"spaces" [color=blue, fontcolor=blue, shape=doublecircle]
+"permissions" -> "spaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"permissions" [color=blue, fontcolor=blue, shape=ellipse]
+}

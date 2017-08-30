@@ -1,0 +1,91 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - User Requests"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="blue", fontcolor="blue"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/UserRequests", shape="ellipse", color="blue", fontcolor="blue"]
+node2 -> node3 [color="green", fontcolor="green"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node2 -> node4 [color="blue", fontcolor="blue"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node4 -> node5 [color="green", fontcolor="green"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node4 -> node6 [color="green", fontcolor="green"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node4 -> node7 [color="green", fontcolor="green"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node4 -> node8 [color="green", fontcolor="green"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node1 -> node9 [color="blue", fontcolor="blue"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="/userRequests", shape="ellipse", color="blue", fontcolor="blue"]
+node9 -> node10 [color="green", fontcolor="green"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node9 -> node11 [color="blue", fontcolor="blue"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node11 -> node12 [color="green", fontcolor="green"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}

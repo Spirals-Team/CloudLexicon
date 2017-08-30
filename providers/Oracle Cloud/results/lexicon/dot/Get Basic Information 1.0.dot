@@ -1,0 +1,10 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Get Basic Information 1.0", fontsize=24]
+splines=true
+"schema" [color=blue, fontcolor=blue, shape=doublecircle]
+"timestamp" [color=blue, fontcolor=blue, shape=doublecircle]
+"about" [color=blue, fontcolor=blue, shape=doublecircle]
+"size" -> "schema" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"size" [color=blue, fontcolor=blue, shape=ellipse]
+"timestamp" -> "schema" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+}

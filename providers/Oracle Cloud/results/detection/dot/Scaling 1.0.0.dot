@@ -1,0 +1,49 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - Scaling 1.0.0"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="black", fontcolor="black"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/instances", shape="ellipse", color="black", fontcolor="black"]
+node2 -> node3 [color="black", fontcolor="black"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="/{identityId}", shape="ellipse", color="black", fontcolor="black"]
+node3 -> node4 [color="black", fontcolor="black"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/{serviceId}", shape="ellipse", color="black", fontcolor="black"]
+node4 -> node5 [color="blue", fontcolor="blue"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="/{serverName}\n Resource\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node5 -> node6 [color="green", fontcolor="green"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}

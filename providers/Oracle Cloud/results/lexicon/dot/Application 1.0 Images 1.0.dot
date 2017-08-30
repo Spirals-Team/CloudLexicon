@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/1.0/Images 1.0", fontsize=24]
+splines=true
+"content" [color=blue, fontcolor=blue, shape=doublecircle]
+"images" [color=blue, fontcolor=blue, shape=doublecircle]
+"image" -> "images" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

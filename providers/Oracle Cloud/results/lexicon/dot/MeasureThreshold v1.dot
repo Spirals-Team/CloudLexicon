@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - MeasureThreshold v1", fontsize=24]
+splines=true
+"measureThreshold" [color=blue, fontcolor=blue, shape=doublecircle]
+"measure" -> "measureThreshold" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"batch" -> "measureThreshold" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"batch" [color=blue, fontcolor=blue, shape=ellipse]
+"batchCreateOrUpdate" [color=orange, fontcolor=orange, shape=box]
+"batchCreateOrUpdate" -> "measureThreshold" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"batch" -> "batchCreateOrUpdate" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

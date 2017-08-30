@@ -1,0 +1,133 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - Oracle Cloud Stack Template 1.1"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="black", fontcolor="black"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/paas", shape="ellipse", color="black", fontcolor="black"]
+node2 -> node3 [color="black", fontcolor="black"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="/api", shape="ellipse", color="black", fontcolor="black"]
+node3 -> node4 [color="black", fontcolor="black"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/v1.1", shape="ellipse", color="black", fontcolor="black"]
+node4 -> node5 [color="black", fontcolor="black"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="/instancemgmt", shape="ellipse", color="black", fontcolor="black"]
+node5 -> node6 [color="black", fontcolor="black"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="/{identityDomainId}", shape="ellipse", color="black", fontcolor="black"]
+node6 -> node7 [color="black", fontcolor="black"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="/templates", shape="ellipse", color="black", fontcolor="black"]
+node7 -> node8 [color="black", fontcolor="black"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="/cst", shape="ellipse", color="black", fontcolor="black"]
+node8 -> node9 [color="blue", fontcolor="blue"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="/instances", shape="ellipse", color="blue", fontcolor="blue"]
+node9 -> node10 [color="green", fontcolor="green"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node9 -> node11 [color="green", fontcolor="green"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node9 -> node12 [color="blue", fontcolor="blue"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="/{templateName}", shape="ellipse", color="blue", fontcolor="blue"]
+node12 -> node13 [color="green", fontcolor="green"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node12 -> node14 [color="green", fontcolor="green"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node12 -> node15 [color="orange", fontcolor="orange"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="/export", shape="octagon", color="orange", fontcolor="orange"]
+node15 -> node16 [color="green", fontcolor="green"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node9 -> node17 [color="orange", fontcolor="orange"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="/validate", shape="octagon", color="orange", fontcolor="orange"]
+node17 -> node18 [color="green", fontcolor="green"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}

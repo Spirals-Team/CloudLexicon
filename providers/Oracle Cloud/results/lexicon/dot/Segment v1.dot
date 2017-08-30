@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Segment v1", fontsize=24]
+splines=true
+"project" [color=blue, fontcolor=blue, shape=doublecircle]
+"workspace" [color=blue, fontcolor=blue, shape=doublecircle]
+}

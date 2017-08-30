@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Work Package v1", fontsize=24]
+splines=true
+"workPackage" [color=blue, fontcolor=blue, shape=doublecircle]
+"configuredFields" -> "workPackage" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"configuredFields" [color=blue, fontcolor=blue, shape=ellipse]
+}

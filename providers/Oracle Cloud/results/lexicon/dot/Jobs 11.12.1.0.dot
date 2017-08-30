@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Jobs 11.12.1.0", fontsize=24]
+splines=true
+"jobs" [color=blue, fontcolor=blue, shape=doublecircle]
+"JobCustomerFlex" -> "jobs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"JobCustomerFlex" [color=blue, fontcolor=blue, shape=ellipse]
+}

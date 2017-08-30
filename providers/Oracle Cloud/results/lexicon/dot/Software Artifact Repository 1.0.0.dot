@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Software Artifact Repository 1.0.0", fontsize=24]
+splines=true
+"repository" [color=blue, fontcolor=blue, shape=doublecircle]
+"artifacts" -> "repository" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"artifacts" [color=blue, fontcolor=blue, shape=ellipse]
+"headers" -> "artifacts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"headers" [color=blue, fontcolor=blue, shape=ellipse]
+"files" -> "artifacts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"files" [color=blue, fontcolor=blue, shape=ellipse]
+"binary" -> "files" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"binary" [color=blue, fontcolor=blue, shape=ellipse]
+"dependencies" -> "artifacts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"dependencies" [color=blue, fontcolor=blue, shape=ellipse]
+"uploads" -> "repository" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"uploads" [color=blue, fontcolor=blue, shape=ellipse]
+}

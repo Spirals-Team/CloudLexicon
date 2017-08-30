@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Inventories 20160209114544", fontsize=24]
+splines=true
+"custom-actions" [color=blue, fontcolor=blue, shape=doublecircle]
+"undoDeinstall" [color=orange, fontcolor=orange, shape=box]
+"undoDeinstall" -> "custom-actions" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"undoInstall" [color=orange, fontcolor=orange, shape=box]
+"undoInstall" -> "custom-actions" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"deinstall" -> "custom-actions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"deinstall" [color=blue, fontcolor=blue, shape=ellipse]
+"install" [color=orange, fontcolor=orange, shape=box]
+"install" -> "custom-actions" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

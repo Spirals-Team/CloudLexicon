@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Audit Report", fontsize=24]
+splines=true
+"Oracle Cloud" [color=blue, fontcolor=blue, shape=doublecircle]
+"getaudithistory" [color=orange, fontcolor=orange, shape=box]
+"getaudithistory" -> "Oracle Cloud" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

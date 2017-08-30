@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Cycle Count Sequence Details 11.13.0.0", fontsize=24]
+splines=true
+"cycleCountSequenceDetails" [color=blue, fontcolor=blue, shape=doublecircle]
+}

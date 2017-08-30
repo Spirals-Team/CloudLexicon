@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Grades 11.13.0.0", fontsize=24]
+splines=true
+"grades" [color=blue, fontcolor=blue, shape=doublecircle]
+"GradeCustomerFlex" -> "grades" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"GradeCustomerFlex" [color=blue, fontcolor=blue, shape=ellipse]
+}

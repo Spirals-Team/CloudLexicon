@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Restore Operations 1.0.0", fontsize=24]
+splines=true
+"restoredbackups" [color=blue, fontcolor=blue, shape=doublecircle]
+}

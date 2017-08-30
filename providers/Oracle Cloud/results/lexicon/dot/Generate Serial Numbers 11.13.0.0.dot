@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Generate Serial Numbers 11.13.0.0", fontsize=24]
+splines=true
+"Oracle Cloud" [color=blue, fontcolor=blue, shape=doublecircle]
+"generateSerialNumbers" [color=orange, fontcolor=orange, shape=box]
+"generateSerialNumbers" -> "Oracle Cloud" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

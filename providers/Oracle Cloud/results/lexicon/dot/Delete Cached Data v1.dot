@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Delete Cached Data v1", fontsize=24]
+splines=true
+"dbcache" [color=blue, fontcolor=blue, shape=doublecircle]
+}

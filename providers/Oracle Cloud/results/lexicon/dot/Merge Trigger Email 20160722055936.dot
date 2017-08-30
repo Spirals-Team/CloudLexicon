@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Merge Trigger Email 20160722055936", fontsize=24]
+splines=true
+"email" [color=blue, fontcolor=blue, shape=doublecircle]
+}

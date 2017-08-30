@@ -1,0 +1,16 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Campaign Settings v1", fontsize=24]
+splines=true
+"elements" [color=blue, fontcolor=blue, shape=doublecircle]
+"scripts" [color=blue, fontcolor=blue, shape=doublecircle]
+"campaigns" [color=blue, fontcolor=blue, shape=doublecircle]
+"variants" -> "elements" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"variants" [color=blue, fontcolor=blue, shape=ellipse]
+"variants" -> "campaigns" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"content-targeting-rules" -> "campaigns" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"content-targeting-rules" [color=blue, fontcolor=blue, shape=ellipse]
+"targeting-rules" -> "campaigns" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"targeting-rules" [color=blue, fontcolor=blue, shape=ellipse]
+"actions" -> "campaigns" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"actions" [color=blue, fontcolor=blue, shape=ellipse]
+}

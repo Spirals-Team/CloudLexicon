@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Agent/Merchant Settings 20160704082313", fontsize=24]
+splines=true
+"orderCancelReasons" [color=blue, fontcolor=blue, shape=doublecircle]
+"dispositionReasons" [color=blue, fontcolor=blue, shape=doublecircle]
+"priceOverrideReasons" [color=blue, fontcolor=blue, shape=doublecircle]
+"orderStates" [color=blue, fontcolor=blue, shape=doublecircle]
+"billingCountries" [color=blue, fontcolor=blue, shape=doublecircle]
+"orderReturnReasons" [color=blue, fontcolor=blue, shape=doublecircle]
+"returnStates" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Metadata Collection 1.1", fontsize=24]
+splines=true
+"metadata" [color=blue, fontcolor=blue, shape=doublecircle]
+"field" -> "metadata" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"field" [color=blue, fontcolor=blue, shape=ellipse]
+"searchFields" [color=orange, fontcolor=orange, shape=box]
+"searchFields" -> "metadata" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Multi-Factor Authentication (MFA)/Authentication Factor Enrollment Request v1", fontsize=24]
+splines=true
+"AuthenticationFactorEnrollmentRequest" [color=blue, fontcolor=blue, shape=doublecircle]
+}

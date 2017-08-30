@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Patches 2017-06-05T23:17:49Z", fontsize=24]
+splines=true
+"applied" [color=blue, fontcolor=blue, shape=doublecircle]
+"checks" [color=blue, fontcolor=blue, shape=doublecircle]
+"available" [color=blue, fontcolor=blue, shape=doublecircle]
+"rollback" [color=orange, fontcolor=orange, shape=box]
+}

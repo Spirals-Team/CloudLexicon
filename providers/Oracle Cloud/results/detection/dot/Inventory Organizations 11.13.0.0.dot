@@ -1,0 +1,105 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - Inventory Organizations 11.13.0.0"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="blue", fontcolor="blue"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/inventoryOrganizations\n Read-Only Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node2 -> node3 [color="green", fontcolor="green"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node2 -> node4 [color="blue", fontcolor="blue"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/{OrganizationId}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node4 -> node5 [color="green", fontcolor="green"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node4 -> node6 [color="black", fontcolor="black"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="/child", shape="ellipse", color="black", fontcolor="black"]
+node6 -> node7 [color="blue", fontcolor="blue"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="/invOrgParameters\n Read-Only Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node7 -> node8 [color="green", fontcolor="green"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node7 -> node9 [color="blue", fontcolor="blue"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="/{OrganizationId2}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node9 -> node10 [color="green", fontcolor="green"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node6 -> node11 [color="blue", fontcolor="blue"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="/plantParameters\n Read-Only Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node11 -> node12 [color="green", fontcolor="green"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node11 -> node13 [color="blue", fontcolor="blue"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="/{OrganizationId2}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node13 -> node14 [color="green", fontcolor="green"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}
+}

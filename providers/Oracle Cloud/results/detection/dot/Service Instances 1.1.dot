@@ -1,0 +1,315 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - Service Instances 1.1"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="black", fontcolor="black"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/paas", shape="ellipse", color="black", fontcolor="black"]
+node2 -> node3 [color="black", fontcolor="black"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="/api", shape="ellipse", color="black", fontcolor="black"]
+node3 -> node4 [color="black", fontcolor="black"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/v1.1", shape="ellipse", color="black", fontcolor="black"]
+node4 -> node5 [color="black", fontcolor="black"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="/instancemgmt", shape="ellipse", color="black", fontcolor="black"]
+node5 -> node6 [color="black", fontcolor="black"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="/{identityDomainId}", shape="ellipse", color="black", fontcolor="black"]
+node6 -> node7 [color="black", fontcolor="black"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="/services", shape="ellipse", color="black", fontcolor="black"]
+node7 -> node8 [color="black", fontcolor="black"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="/MySQLCS", shape="ellipse", color="black", fontcolor="black"]
+node8 -> node9 [color="blue", fontcolor="blue"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="/instances\n Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node9 -> node10 [color="green", fontcolor="green"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node9 -> node11 [color="green", fontcolor="green"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node9 -> node12 [color="blue", fontcolor="blue"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="/{serviceId}\n Resource\nbut\nMissing DELETE Method", shape="ellipse", color="red", fontcolor="red"]
+node12 -> node13 [color="green", fontcolor="green"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node12 -> node14 [color="green", fontcolor="green"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node12 -> node15 [color="blue", fontcolor="blue"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="/hosts\n Collection\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node15 -> node16 [color="orange", fontcolor="orange"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label="/scale\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node16 -> node17 [color="green", fontcolor="green"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node15 -> node18 [color="blue", fontcolor="blue"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label="/{function}\n Resource\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node18 -> node19 [color="green", fontcolor="green"]
+subgraph cluster_19 {
+label=""
+color=white
+fontcolor=white
+node19 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node12 -> node20 [color="blue", fontcolor="blue"]
+subgraph cluster_20 {
+label=""
+color=white
+fontcolor=white
+node20 [label="/storage\n SubResource\nbut\nMissing GET Method\nOnly Controllers", shape="ellipse", color="red", fontcolor="red"]
+node20 -> node21 [color="orange", fontcolor="orange"]
+subgraph cluster_21 {
+label=""
+color=white
+fontcolor=white
+node21 [label="/add\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node21 -> node22 [color="green", fontcolor="green"]
+subgraph cluster_22 {
+label=""
+color=white
+fontcolor=white
+node22 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}
+}
+node4 -> node23 [color="black", fontcolor="black"]
+subgraph cluster_23 {
+label=""
+color=white
+fontcolor=white
+node23 [label="/activitylog", shape="ellipse", color="black", fontcolor="black"]
+node23 -> node24 [color="black", fontcolor="black"]
+subgraph cluster_24 {
+label=""
+color=white
+fontcolor=white
+node24 [label="/{identityDomainId}", shape="ellipse", color="black", fontcolor="black"]
+node24 -> node25 [color="black", fontcolor="black"]
+subgraph cluster_25 {
+label=""
+color=white
+fontcolor=white
+node25 [label="/job", shape="ellipse", color="black", fontcolor="black"]
+node25 -> node26 [color="blue", fontcolor="blue"]
+subgraph cluster_26 {
+label=""
+color=white
+fontcolor=white
+node26 [label="/{jobId}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node26 -> node27 [color="green", fontcolor="green"]
+subgraph cluster_27 {
+label=""
+color=white
+fontcolor=white
+node27 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+node2 -> node28 [color="black", fontcolor="black"]
+subgraph cluster_28 {
+label=""
+color=white
+fontcolor=white
+node28 [label="/service", shape="ellipse", color="black", fontcolor="black"]
+node28 -> node29 [color="black", fontcolor="black"]
+subgraph cluster_29 {
+label=""
+color=white
+fontcolor=white
+node29 [label="/jcs", shape="ellipse", color="black", fontcolor="black"]
+node29 -> node30 [color="black", fontcolor="black"]
+subgraph cluster_30 {
+label=""
+color=white
+fontcolor=white
+node30 [label="/api", shape="ellipse", color="black", fontcolor="black"]
+node30 -> node31 [color="black", fontcolor="black"]
+subgraph cluster_31 {
+label=""
+color=white
+fontcolor=white
+node31 [label="/v1.1", shape="ellipse", color="black", fontcolor="black"]
+node31 -> node32 [color="black", fontcolor="black"]
+subgraph cluster_32 {
+label=""
+color=white
+fontcolor=white
+node32 [label="/instances", shape="ellipse", color="black", fontcolor="black"]
+node32 -> node33 [color="blue", fontcolor="blue"]
+subgraph cluster_33 {
+label=""
+color=white
+fontcolor=white
+node33 [label="/{identityDomainId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node33 -> node34 [color="green", fontcolor="green"]
+subgraph cluster_34 {
+label=""
+color=white
+fontcolor=white
+node34 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node33 -> node35 [color="green", fontcolor="green"]
+subgraph cluster_35 {
+label=""
+color=white
+fontcolor=white
+node35 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node33 -> node36 [color="black", fontcolor="black"]
+subgraph cluster_36 {
+label=""
+color=white
+fontcolor=white
+node36 [label="/status", shape="ellipse", color="black", fontcolor="black"]
+node36 -> node37 [color="black", fontcolor="black"]
+subgraph cluster_37 {
+label=""
+color=white
+fontcolor=white
+node37 [label="/{requestName}", shape="ellipse", color="black", fontcolor="black"]
+node37 -> node38 [color="black", fontcolor="black"]
+subgraph cluster_38 {
+label=""
+color=white
+fontcolor=white
+node38 [label="/job", shape="ellipse", color="black", fontcolor="black"]
+node38 -> node39 [color="blue", fontcolor="blue"]
+subgraph cluster_39 {
+label=""
+color=white
+fontcolor=white
+node39 [label="/{jobId}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node39 -> node40 [color="green", fontcolor="green"]
+subgraph cluster_40 {
+label=""
+color=white
+fontcolor=white
+node40 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+node33 -> node41 [color="blue", fontcolor="blue"]
+subgraph cluster_41 {
+label=""
+color=white
+fontcolor=white
+node41 [label="/{serviceId}\n Resource\nbut\nMissing DELETE Method", shape="ellipse", color="red", fontcolor="red"]
+node41 -> node42 [color="green", fontcolor="green"]
+subgraph cluster_42 {
+label=""
+color=white
+fontcolor=white
+node42 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node41 -> node43 [color="green", fontcolor="green"]
+subgraph cluster_43 {
+label=""
+color=white
+fontcolor=white
+node43 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node41 -> node44 [color="green", fontcolor="green"]
+subgraph cluster_44 {
+label=""
+color=white
+fontcolor=white
+node44 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - System Configuration 1.0.0", fontsize=24]
+splines=true
+"settings" [color=blue, fontcolor=blue, shape=doublecircle]
+}

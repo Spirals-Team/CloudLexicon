@@ -1,0 +1,126 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - Forecasts 11.1.10"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="blue", fontcolor="blue"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/territoryForecasts\n Read-Only Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node2 -> node3 [color="green", fontcolor="green"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node2 -> node4 [color="blue", fontcolor="blue"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/{ForecastParticipantId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node4 -> node5 [color="green", fontcolor="green"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node4 -> node6 [color="green", fontcolor="green"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node4 -> node7 [color="black", fontcolor="black"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="/child", shape="ellipse", color="black", fontcolor="black"]
+node7 -> node8 [color="blue", fontcolor="blue"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="/ForecastItemDetail\n Read-Only Collection\nbut\nSingular Collection", shape="ellipse", color="red", fontcolor="red"]
+node8 -> node9 [color="green", fontcolor="green"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node8 -> node10 [color="blue", fontcolor="blue"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="/{ForecastItemId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node10 -> node11 [color="green", fontcolor="green"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node10 -> node12 [color="green", fontcolor="green"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node7 -> node13 [color="blue", fontcolor="blue"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="/forecastProducts\n Read-Only Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node13 -> node14 [color="green", fontcolor="green"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node13 -> node15 [color="blue", fontcolor="blue"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="/{FcstProductId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node15 -> node16 [color="green", fontcolor="green"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node15 -> node17 [color="green", fontcolor="green"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}
+}

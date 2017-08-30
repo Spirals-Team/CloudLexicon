@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Split Pick Transactions 11.13.0.0", fontsize=24]
+splines=true
+"splitPickTransactions" [color=blue, fontcolor=blue, shape=doublecircle]
+}

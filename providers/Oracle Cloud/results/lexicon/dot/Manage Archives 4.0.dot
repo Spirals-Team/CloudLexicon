@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Archives 4.0", fontsize=24]
+splines=true
+"archiverequests" [color=blue, fontcolor=blue, shape=doublecircle]
+"archives" [color=blue, fontcolor=blue, shape=doublecircle]
+}

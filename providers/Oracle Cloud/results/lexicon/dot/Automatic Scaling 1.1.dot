@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Automatic Scaling 1.1", fontsize=24]
+splines=true
+"policies" [color=blue, fontcolor=blue, shape=doublecircle]
+"activities" [color=blue, fontcolor=blue, shape=doublecircle]
+}

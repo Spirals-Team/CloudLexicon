@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Profile Lists 20160722065452", fontsize=24]
+splines=true
+"lists" [color=blue, fontcolor=blue, shape=doublecircle]
+}

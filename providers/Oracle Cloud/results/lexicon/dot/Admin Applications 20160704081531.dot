@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Applications 20160704081531", fontsize=24]
+splines=true
+"applicationIds" [color=blue, fontcolor=blue, shape=doublecircle]
+}

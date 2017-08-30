@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/2.0/Events 2.0", fontsize=24]
+splines=true
+"eventRegistration" [color=blue, fontcolor=blue, shape=doublecircle]
+"eventRegistrations" [color=blue, fontcolor=blue, shape=doublecircle]
+}

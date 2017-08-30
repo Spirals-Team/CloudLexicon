@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/1.0/Forms 1.0", fontsize=24]
+splines=true
+"form" [color=blue, fontcolor=blue, shape=doublecircle]
+"forms" [color=blue, fontcolor=blue, shape=doublecircle]
+"forms" -> "form" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"form" -> "forms" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

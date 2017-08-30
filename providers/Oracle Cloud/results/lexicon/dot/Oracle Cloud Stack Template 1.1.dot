@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Oracle Cloud Stack Template 1.1", fontsize=24]
+splines=true
+"instances" [color=blue, fontcolor=blue, shape=doublecircle]
+"export" [color=orange, fontcolor=orange, shape=box]
+"export" -> "instances" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"validate" [color=orange, fontcolor=orange, shape=box]
+"validate" -> "instances" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

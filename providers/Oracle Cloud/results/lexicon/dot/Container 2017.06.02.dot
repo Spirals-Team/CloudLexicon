@@ -1,0 +1,15 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Container 2017.06.02", fontsize=24]
+splines=true
+"logs" [color=blue, fontcolor=blue, shape=doublecircle]
+"containers" [color=blue, fontcolor=blue, shape=doublecircle]
+"kill" [color=orange, fontcolor=orange, shape=box]
+"start" [color=orange, fontcolor=orange, shape=box]
+"stop" -> "start" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"unpause" [color=orange, fontcolor=orange, shape=box]
+"restart" [color=orange, fontcolor=orange, shape=box]
+"stop" -> "restart" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"stop" [color=orange, fontcolor=orange, shape=box]
+"pause" [color=orange, fontcolor=orange, shape=box]
+"unpause" -> "pause" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+}

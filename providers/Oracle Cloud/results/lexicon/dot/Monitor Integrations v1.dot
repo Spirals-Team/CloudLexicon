@@ -1,0 +1,14 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Monitor Integrations v1", fontsize=24]
+splines=true
+"instances" [color=blue, fontcolor=blue, shape=doublecircle]
+"errors" [color=blue, fontcolor=blue, shape=doublecircle]
+"logs" [color=blue, fontcolor=blue, shape=doublecircle]
+"integrations" [color=blue, fontcolor=blue, shape=doublecircle]
+"discard" -> "errors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"discard" [color=blue, fontcolor=blue, shape=ellipse]
+"resubmit" [color=orange, fontcolor=orange, shape=box]
+"resubmit" -> "errors" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"export" [color=orange, fontcolor=orange, shape=box]
+"export" -> "logs" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

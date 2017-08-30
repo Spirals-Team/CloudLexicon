@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - In Transit Receipt Serials 11.13.0.0", fontsize=24]
+splines=true
+"inTransitReceiptSerials" [color=blue, fontcolor=blue, shape=doublecircle]
+}

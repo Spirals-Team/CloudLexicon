@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Project Actuals v1", fontsize=24]
+splines=true
+"projectActuals" [color=blue, fontcolor=blue, shape=doublecircle]
+"project" -> "projectActuals" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"batchCreateOrUpdate" [color=orange, fontcolor=orange, shape=box]
+"batchCreateOrUpdate" -> "projectActuals" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"batch" -> "batchCreateOrUpdate" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"batch" -> "projectActuals" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"batch" [color=blue, fontcolor=blue, shape=ellipse]
+"configuredFields" -> "projectActuals" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"configuredFields" [color=blue, fontcolor=blue, shape=ellipse]
+}

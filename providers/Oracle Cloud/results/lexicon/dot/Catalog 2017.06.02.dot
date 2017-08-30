@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Catalog 2017.06.02", fontsize=24]
+splines=true
+"catalog" [color=blue, fontcolor=blue, shape=doublecircle]
+"register" [color=orange, fontcolor=orange, shape=box]
+"register" -> "catalog" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"deregister" -> "register" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"deregister" -> "catalog" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"deregister" [color=blue, fontcolor=blue, shape=ellipse]
+"services" -> "catalog" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"services" [color=blue, fontcolor=blue, shape=ellipse]
+"service" -> "services" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

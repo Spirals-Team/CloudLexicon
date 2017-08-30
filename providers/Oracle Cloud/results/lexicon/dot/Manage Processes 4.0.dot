@@ -1,0 +1,15 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Processes 4.0", fontsize=24]
+splines=true
+"processes" [color=blue, fontcolor=blue, shape=doublecircle]
+"conversations" -> "processes" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"conversations" [color=blue, fontcolor=blue, shape=ellipse]
+"folders" -> "processes" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"folders" [color=blue, fontcolor=blue, shape=ellipse]
+"comments" -> "processes" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"comments" [color=blue, fontcolor=blue, shape=ellipse]
+"attachments" -> "processes" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"attachments" [color=blue, fontcolor=blue, shape=ellipse]
+"audit" -> "processes" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"audit" [color=blue, fontcolor=blue, shape=ellipse]
+}

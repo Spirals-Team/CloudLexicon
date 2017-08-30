@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Content Library Media Items 20160722075501", fontsize=24]
+splines=true
+"clItems" [color=blue, fontcolor=blue, shape=doublecircle]
+}

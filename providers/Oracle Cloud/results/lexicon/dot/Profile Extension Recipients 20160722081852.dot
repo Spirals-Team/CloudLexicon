@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Profile Extension Recipients 20160722081852", fontsize=24]
+splines=true
+"members" [color=blue, fontcolor=blue, shape=doublecircle]
+}

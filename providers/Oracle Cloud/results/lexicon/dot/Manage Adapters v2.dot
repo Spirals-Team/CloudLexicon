@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Adapters v2", fontsize=24]
+splines=true
+"adapters" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,168 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - Receipts 11.12.1.0"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="blue", fontcolor="blue"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/receipts\n Collection\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node2 -> node3 [color="green", fontcolor="green"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node2 -> node4 [color="black", fontcolor="black"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/{GroupId}", shape="ellipse", color="black", fontcolor="black"]
+node4 -> node5 [color="black", fontcolor="black"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="/child", shape="ellipse", color="black", fontcolor="black"]
+node5 -> node6 [color="blue", fontcolor="blue"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="/receiptHeaders\n Collection\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node6 -> node7 [color="green", fontcolor="green"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node6 -> node8 [color="black", fontcolor="black"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="/{UniqueHeaderId}", shape="ellipse", color="black", fontcolor="black"]
+node8 -> node9 [color="black", fontcolor="black"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="/child", shape="ellipse", color="black", fontcolor="black"]
+node9 -> node10 [color="blue", fontcolor="blue"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="/receiptLines\n Collection\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node10 -> node11 [color="green", fontcolor="green"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node10 -> node12 [color="black", fontcolor="black"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="/{UniqueTransactionId}", shape="ellipse", color="black", fontcolor="black"]
+node12 -> node13 [color="black", fontcolor="black"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="/child", shape="ellipse", color="black", fontcolor="black"]
+node13 -> node14 [color="blue", fontcolor="blue"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="/lotSerialItemLots\n Collection\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node14 -> node15 [color="green", fontcolor="green"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node14 -> node16 [color="black", fontcolor="black"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label="/{LotNumber}", shape="ellipse", color="black", fontcolor="black"]
+node16 -> node17 [color="black", fontcolor="black"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="/child", shape="ellipse", color="black", fontcolor="black"]
+node17 -> node18 [color="blue", fontcolor="blue"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label="/lotSerialItemSerials\n SubResource\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node18 -> node19 [color="green", fontcolor="green"]
+subgraph cluster_19 {
+label=""
+color=white
+fontcolor=white
+node19 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+node13 -> node20 [color="blue", fontcolor="blue"]
+subgraph cluster_20 {
+label=""
+color=white
+fontcolor=white
+node20 [label="/serialItemSerials\n SubResource\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node20 -> node21 [color="green", fontcolor="green"]
+subgraph cluster_21 {
+label=""
+color=white
+fontcolor=white
+node21 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node13 -> node22 [color="blue", fontcolor="blue"]
+subgraph cluster_22 {
+label=""
+color=white
+fontcolor=white
+node22 [label="/lotItemLots\n SubResource\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node22 -> node23 [color="green", fontcolor="green"]
+subgraph cluster_23 {
+label=""
+color=white
+fontcolor=white
+node23 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}

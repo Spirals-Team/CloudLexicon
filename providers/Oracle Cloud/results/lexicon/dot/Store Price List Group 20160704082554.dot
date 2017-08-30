@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Store/Price List Group 20160704082554", fontsize=24]
+splines=true
+"priceListGroups" [color=blue, fontcolor=blue, shape=doublecircle]
+}

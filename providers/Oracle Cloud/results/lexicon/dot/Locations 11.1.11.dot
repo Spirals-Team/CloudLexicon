@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Locations 11.1.11", fontsize=24]
+splines=true
+"locations" [color=blue, fontcolor=blue, shape=doublecircle]
+"LocationDFF" -> "locations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"LocationDFF" [color=blue, fontcolor=blue, shape=ellipse]
+}

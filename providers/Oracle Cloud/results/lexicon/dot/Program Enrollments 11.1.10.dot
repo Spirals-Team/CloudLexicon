@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Program Enrollments 11.1.10", fontsize=24]
+splines=true
+"programEnrollments" [color=blue, fontcolor=blue, shape=doublecircle]
+"PartnerProgram" -> "programEnrollments" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"PartnerProgram" [color=blue, fontcolor=blue, shape=ellipse]
+"Notes" -> "programEnrollments" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Notes" [color=blue, fontcolor=blue, shape=ellipse]
+}

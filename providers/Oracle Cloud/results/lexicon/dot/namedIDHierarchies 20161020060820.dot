@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - namedIDHierarchies 20161020060820", fontsize=24]
+splines=true
+"namedIDHierarchies" [color=blue, fontcolor=blue, shape=doublecircle]
+}

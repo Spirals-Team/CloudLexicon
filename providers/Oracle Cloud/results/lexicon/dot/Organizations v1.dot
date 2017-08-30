@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Organizations v1", fontsize=24]
+splines=true
+"orgs" [color=blue, fontcolor=blue, shape=doublecircle]
+}

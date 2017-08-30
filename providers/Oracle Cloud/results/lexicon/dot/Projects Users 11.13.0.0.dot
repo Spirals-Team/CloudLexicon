@@ -1,0 +1,19 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Projects Users 11.13.0.0", fontsize=24]
+splines=true
+"projectsUsers" [color=blue, fontcolor=blue, shape=doublecircle]
+"FollowedProjectTasks" -> "projectsUsers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"FollowedProjectTasks" [color=blue, fontcolor=blue, shape=ellipse]
+"ProjectTasks" -> "projectsUsers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ProjectTasks" [color=blue, fontcolor=blue, shape=ellipse]
+"TaskFollowers" -> "ProjectTasks" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"TaskFollowers" [color=blue, fontcolor=blue, shape=ellipse]
+"LaborResourceAssignments" -> "ProjectTasks" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"LaborResourceAssignments" [color=blue, fontcolor=blue, shape=ellipse]
+"FollowedToDoTasks" -> "projectsUsers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"FollowedToDoTasks" [color=blue, fontcolor=blue, shape=ellipse]
+"ToDoTasks" -> "projectsUsers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ToDoTasks" [color=blue, fontcolor=blue, shape=ellipse]
+"ToDoTaskFollowers" -> "ToDoTasks" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ToDoTaskFollowers" [color=blue, fontcolor=blue, shape=ellipse]
+}

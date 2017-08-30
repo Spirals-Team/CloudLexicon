@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Screen Pop Tokens 11.13.0.0", fontsize=24]
+splines=true
+"screenPopTokens" [color=blue, fontcolor=blue, shape=doublecircle]
+}

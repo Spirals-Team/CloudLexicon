@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - contacts 20170525131136", fontsize=24]
+splines=true
+"contacts" [color=blue, fontcolor=blue, shape=doublecircle]
+"executeMarketingFlow" [color=orange, fontcolor=orange, shape=box]
+"executeMarketingFlow" -> "contacts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"resetPassword" [color=orange, fontcolor=orange, shape=box]
+"resetPassword" -> "contacts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"sendMailing" [color=orange, fontcolor=orange, shape=box]
+"sendMailing" -> "contacts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

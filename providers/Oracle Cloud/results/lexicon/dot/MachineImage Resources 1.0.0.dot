@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - MachineImage Resources 1.0.0", fontsize=24]
+splines=true
+"machineimages" [color=blue, fontcolor=blue, shape=doublecircle]
+"chunk" -> "machineimages" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"chunk" [color=blue, fontcolor=blue, shape=ellipse]
+}

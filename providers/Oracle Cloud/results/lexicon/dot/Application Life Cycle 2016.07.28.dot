@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application Life Cycle 2016.07.28", fontsize=24]
+splines=true
+"start" [color=orange, fontcolor=orange, shape=box]
+"stop" -> "start" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"stop" [color=orange, fontcolor=orange, shape=box]
+"restart" [color=orange, fontcolor=orange, shape=box]
+"stop" -> "restart" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+}

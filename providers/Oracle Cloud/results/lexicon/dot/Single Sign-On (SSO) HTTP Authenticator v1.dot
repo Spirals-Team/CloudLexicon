@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Single Sign-On (SSO)/HTTP Authenticator v1", fontsize=24]
+splines=true
+"HTTPAuthenticator" [color=blue, fontcolor=blue, shape=doublecircle]
+}

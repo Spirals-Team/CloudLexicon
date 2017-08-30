@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Coupon Batches 20160704081825", fontsize=24]
+splines=true
+"couponBatches" [color=blue, fontcolor=blue, shape=doublecircle]
+}

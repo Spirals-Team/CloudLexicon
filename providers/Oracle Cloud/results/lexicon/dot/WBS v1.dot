@@ -1,0 +1,10 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - WBS v1", fontsize=24]
+splines=true
+"wbs" [color=blue, fontcolor=blue, shape=doublecircle]
+"configuredFields" -> "wbs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"configuredFields" [color=blue, fontcolor=blue, shape=ellipse]
+"childrenHierarchy" -> "wbs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"childrenHierarchy" [color=blue, fontcolor=blue, shape=ellipse]
+"children" -> "childrenHierarchy" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

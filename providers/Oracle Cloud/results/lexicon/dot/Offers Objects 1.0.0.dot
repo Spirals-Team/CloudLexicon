@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Offers Objects 1.0.0", fontsize=24]
+splines=true
+"orders" [color=blue, fontcolor=blue, shape=doublecircle]
+"brands" [color=blue, fontcolor=blue, shape=doublecircle]
+"categories" [color=blue, fontcolor=blue, shape=doublecircle]
+"brandPolicies" [color=blue, fontcolor=blue, shape=doublecircle]
+"promotions" [color=blue, fontcolor=blue, shape=doublecircle]
+"consumers" [color=blue, fontcolor=blue, shape=doublecircle]
+"products" [color=blue, fontcolor=blue, shape=doublecircle]
+"sites" [color=blue, fontcolor=blue, shape=doublecircle]
+"brands" -> "brandPolicies" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

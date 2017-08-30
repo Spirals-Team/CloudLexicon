@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Content (IM)/User Groups v1", fontsize=24]
+splines=true
+"userGroups" [color=blue, fontcolor=blue, shape=doublecircle]
+}

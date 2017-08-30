@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Claimables 20160704081813", fontsize=24]
+splines=true
+"claimables" [color=blue, fontcolor=blue, shape=doublecircle]
+}

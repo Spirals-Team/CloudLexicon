@@ -1,0 +1,16 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Analytics 4.0", fontsize=24]
+splines=true
+"analyticsqueries-datasources" [color=blue, fontcolor=blue, shape=doublecircle]
+"analyticsqueries-aggregateoperations" [color=blue, fontcolor=blue, shape=doublecircle]
+"analyticsdataobjects" [color=blue, fontcolor=blue, shape=doublecircle]
+"analyticsqueries-comparisonoperators" [color=blue, fontcolor=blue, shape=doublecircle]
+"analyticsqueries" [color=blue, fontcolor=blue, shape=doublecircle]
+"analyticsqueries" -> "analyticsqueries-datasources" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"columns" -> "analyticsqueries-datasources" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"columns" [color=blue, fontcolor=blue, shape=ellipse]
+"analyticsqueries" -> "analyticsqueries-aggregateoperations" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"data" -> "analyticsdataobjects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"data" [color=blue, fontcolor=blue, shape=ellipse]
+"analyticsqueries" -> "analyticsqueries-comparisonoperators" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

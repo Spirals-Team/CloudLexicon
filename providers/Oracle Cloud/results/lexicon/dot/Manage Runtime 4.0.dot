@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Runtime 4.0", fontsize=24]
+splines=true
+"runtime" [color=blue, fontcolor=blue, shape=doublecircle]
+}

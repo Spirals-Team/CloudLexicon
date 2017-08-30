@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Projects/Tasks/Expense Resource Assignments 11.1.11", fontsize=24]
+splines=true
+"ExpenseResourceAssignments" [color=blue, fontcolor=blue, shape=doublecircle]
+}

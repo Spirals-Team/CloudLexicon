@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Backup and Restore 1.1", fontsize=24]
+splines=true
+"backups" [color=blue, fontcolor=blue, shape=doublecircle]
+"restoredbackups" [color=blue, fontcolor=blue, shape=doublecircle]
+"deletedbackups" [color=blue, fontcolor=blue, shape=doublecircle]
+"backupconfig" [color=blue, fontcolor=blue, shape=doublecircle]
+}

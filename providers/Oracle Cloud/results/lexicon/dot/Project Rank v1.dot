@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Project Rank v1", fontsize=24]
+splines=true
+"projectRank" [color=blue, fontcolor=blue, shape=doublecircle]
+"project" -> "projectRank" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"batchCreateOrUpdate" [color=orange, fontcolor=orange, shape=box]
+"batchCreateOrUpdate" -> "projectRank" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"batch" -> "batchCreateOrUpdate" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"batch" -> "projectRank" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"batch" [color=blue, fontcolor=blue, shape=ellipse]
+}

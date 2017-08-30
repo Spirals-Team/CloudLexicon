@@ -1,0 +1,23 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Households 11.12.1.0", fontsize=24]
+splines=true
+"households" [color=blue, fontcolor=blue, shape=doublecircle]
+"Address" -> "households" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Address" [color=blue, fontcolor=blue, shape=ellipse]
+"AddressPurpose" -> "Address" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"AddressPurpose" [color=blue, fontcolor=blue, shape=ellipse]
+"Address" -> "AddressPurpose" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"Attachment" -> "households" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Attachment" [color=blue, fontcolor=blue, shape=ellipse]
+"Note" -> "households" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Note" [color=blue, fontcolor=blue, shape=ellipse]
+"Relationship" -> "households" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Relationship" [color=blue, fontcolor=blue, shape=ellipse]
+"CustomerClassification" -> "households" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"CustomerClassification" [color=blue, fontcolor=blue, shape=ellipse]
+"SalesTeamMember" -> "households" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"SalesTeamMember" [color=blue, fontcolor=blue, shape=ellipse]
+"PrimaryAddress" -> "households" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"PrimaryAddress" [color=blue, fontcolor=blue, shape=ellipse]
+"Address" -> "PrimaryAddress" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

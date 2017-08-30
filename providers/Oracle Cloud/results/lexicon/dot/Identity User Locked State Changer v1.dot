@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Identity/User Locked State Changer v1", fontsize=24]
+splines=true
+"UserLockedStateChanger" [color=blue, fontcolor=blue, shape=doublecircle]
+}

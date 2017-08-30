@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Store/Stock Status 20160704082800", fontsize=24]
+splines=true
+"stockStatus" [color=blue, fontcolor=blue, shape=doublecircle]
+}

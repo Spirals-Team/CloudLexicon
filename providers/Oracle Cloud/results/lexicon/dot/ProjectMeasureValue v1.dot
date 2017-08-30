@@ -1,0 +1,4 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - ProjectMeasureValue v1", fontsize=24]
+splines=true
+}

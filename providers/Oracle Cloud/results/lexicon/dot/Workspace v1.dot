@@ -1,0 +1,15 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Workspace v1", fontsize=24]
+splines=true
+"workspace" [color=blue, fontcolor=blue, shape=doublecircle]
+"batchCreateOrUpdate" [color=orange, fontcolor=orange, shape=box]
+"batchCreateOrUpdate" -> "workspace" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"batch" -> "batchCreateOrUpdate" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"childrenHierarchy" -> "workspace" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"childrenHierarchy" [color=blue, fontcolor=blue, shape=ellipse]
+"children" -> "childrenHierarchy" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"batch" -> "workspace" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"batch" [color=blue, fontcolor=blue, shape=ellipse]
+"root" -> "workspace" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"root" [color=blue, fontcolor=blue, shape=ellipse]
+}

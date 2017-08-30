@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Media Tag 20160704082301", fontsize=24]
+splines=true
+"mediaTags" [color=blue, fontcolor=blue, shape=doublecircle]
+}

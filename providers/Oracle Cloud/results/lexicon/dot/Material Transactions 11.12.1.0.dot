@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Material Transactions 11.12.1.0", fontsize=24]
+splines=true
+"materialTransactions" [color=blue, fontcolor=blue, shape=doublecircle]
+"MaterialTransactionDetail" -> "materialTransactions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"MaterialTransactionDetail" [color=blue, fontcolor=blue, shape=ellipse]
+"TransactionSerial" -> "MaterialTransactionDetail" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"TransactionSerial" [color=blue, fontcolor=blue, shape=ellipse]
+"TransactionLot" -> "MaterialTransactionDetail" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"TransactionLot" [color=blue, fontcolor=blue, shape=ellipse]
+}

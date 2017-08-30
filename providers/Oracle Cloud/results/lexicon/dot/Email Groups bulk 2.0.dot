@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Email Groups bulk/2.0", fontsize=24]
+splines=true
+"emailGroups" [color=blue, fontcolor=blue, shape=doublecircle]
+}

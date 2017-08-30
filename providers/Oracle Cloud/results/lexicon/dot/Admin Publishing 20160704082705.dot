@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Publishing 20160704082705", fontsize=24]
+splines=true
+"publish" [color=blue, fontcolor=blue, shape=doublecircle]
+"schedules" -> "publish" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"schedules" [color=blue, fontcolor=blue, shape=ellipse]
+"changes" -> "publish" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"changes" [color=blue, fontcolor=blue, shape=ellipse]
+}

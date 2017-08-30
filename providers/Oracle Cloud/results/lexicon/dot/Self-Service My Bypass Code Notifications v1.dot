@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Self-Service/My Bypass Code Notifications v1", fontsize=24]
+splines=true
+"MyBypassCodeNotifications" [color=blue, fontcolor=blue, shape=doublecircle]
+}

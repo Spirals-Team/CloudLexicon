@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Activity Risk v1", fontsize=24]
+splines=true
+"activityRisk" [color=blue, fontcolor=blue, shape=doublecircle]
+"activity" -> "activityRisk" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"batchCreateOrUpdate" [color=orange, fontcolor=orange, shape=box]
+"batchCreateOrUpdate" -> "activityRisk" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"batch" -> "batchCreateOrUpdate" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"batch" -> "activityRisk" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"batch" [color=blue, fontcolor=blue, shape=ellipse]
+}

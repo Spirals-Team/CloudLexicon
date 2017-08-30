@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/1.0/Custom objects 1.0", fontsize=24]
+splines=true
+"customObjects" [color=blue, fontcolor=blue, shape=doublecircle]
+"customObject" [color=blue, fontcolor=blue, shape=doublecircle]
+}

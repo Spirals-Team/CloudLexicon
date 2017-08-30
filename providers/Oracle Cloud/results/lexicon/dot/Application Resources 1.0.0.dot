@@ -1,0 +1,21 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application Resources 1.0.0", fontsize=24]
+splines=true
+"applications" [color=blue, fontcolor=blue, shape=doublecircle]
+"availableservices" -> "applications" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"availableservices" [color=blue, fontcolor=blue, shape=ellipse]
+"screenshots" -> "applications" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"screenshots" [color=blue, fontcolor=blue, shape=ellipse]
+"version" -> "applications" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"version" [color=blue, fontcolor=blue, shape=ellipse]
+"banner" -> "applications" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"banner" [color=blue, fontcolor=blue, shape=ellipse]
+"relateddocs" -> "applications" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"relateddocs" [color=blue, fontcolor=blue, shape=ellipse]
+"recommendedservices" -> "applications" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"recommendedservices" [color=blue, fontcolor=blue, shape=ellipse]
+"packages" -> "applications" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"packages" [color=blue, fontcolor=blue, shape=ellipse]
+"icon" -> "applications" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"icon" [color=blue, fontcolor=blue, shape=ellipse]
+}

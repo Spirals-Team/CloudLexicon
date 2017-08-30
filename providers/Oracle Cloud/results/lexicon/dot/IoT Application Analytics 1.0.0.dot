@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - IoT Application Analytics 1.0.0", fontsize=24]
+splines=true
+"explorations" [color=blue, fontcolor=blue, shape=doublecircle]
+"analytics" [color=blue, fontcolor=blue, shape=doublecircle]
+}

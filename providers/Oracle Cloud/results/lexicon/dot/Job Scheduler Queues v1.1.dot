@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Job Scheduler Queues v1.1", fontsize=24]
+splines=true
+"queues" [color=blue, fontcolor=blue, shape=doublecircle]
+}

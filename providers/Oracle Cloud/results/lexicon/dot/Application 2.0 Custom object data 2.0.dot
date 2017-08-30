@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/2.0/Custom object data 2.0", fontsize=24]
+splines=true
+"instances" [color=blue, fontcolor=blue, shape=doublecircle]
+"instance" [color=blue, fontcolor=blue, shape=doublecircle]
+"instance" -> "instances" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"instances" -> "instance" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

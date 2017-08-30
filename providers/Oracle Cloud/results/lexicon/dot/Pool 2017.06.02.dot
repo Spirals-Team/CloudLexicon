@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Pool 2017.06.02", fontsize=24]
+splines=true
+"pools" [color=blue, fontcolor=blue, shape=doublecircle]
+"hosts" -> "pools" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"hosts" [color=blue, fontcolor=blue, shape=ellipse]
+}

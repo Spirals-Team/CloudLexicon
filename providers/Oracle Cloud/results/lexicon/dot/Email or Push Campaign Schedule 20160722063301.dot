@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Email or Push Campaign Schedule 20160722063301", fontsize=24]
+splines=true
+"schedule" [color=orange, fontcolor=orange, shape=box]
+}

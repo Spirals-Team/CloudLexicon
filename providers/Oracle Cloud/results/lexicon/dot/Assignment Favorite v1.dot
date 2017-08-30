@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Assignment Favorite v1", fontsize=24]
+splines=true
+"assignmentFavorite" [color=blue, fontcolor=blue, shape=doublecircle]
+"batch" -> "assignmentFavorite" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"batch" [color=blue, fontcolor=blue, shape=ellipse]
+}

@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Multi-Factor Authentication (MFA)/Push Notification Requesters v1", fontsize=24]
+splines=true
+"PushNotificationRequesters" [color=blue, fontcolor=blue, shape=doublecircle]
+}

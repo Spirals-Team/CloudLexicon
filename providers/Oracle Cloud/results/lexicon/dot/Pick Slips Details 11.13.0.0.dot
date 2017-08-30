@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Pick Slips Details 11.13.0.0", fontsize=24]
+splines=true
+"pickSlipDetails" [color=blue, fontcolor=blue, shape=doublecircle]
+"pickLines" -> "pickSlipDetails" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"pickLines" [color=blue, fontcolor=blue, shape=ellipse]
+"itemLots" -> "pickLines" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"itemLots" [color=blue, fontcolor=blue, shape=ellipse]
+"itemLotSerials" -> "itemLots" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"itemLotSerials" [color=blue, fontcolor=blue, shape=ellipse]
+"itemSerials" -> "pickLines" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"itemSerials" [color=blue, fontcolor=blue, shape=ellipse]
+}

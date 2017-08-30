@@ -1,0 +1,4 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Queue Browsers 1.1", fontsize=24]
+splines=true
+}

@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Product Groups 11.1.11", fontsize=24]
+splines=true
+"setupSalesCatalogs" [color=blue, fontcolor=blue, shape=doublecircle]
+"ProductGroupProductSetup" -> "setupSalesCatalogs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ProductGroupProductSetup" [color=blue, fontcolor=blue, shape=ellipse]
+"ProductGroupAttachments" -> "setupSalesCatalogs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ProductGroupAttachments" [color=blue, fontcolor=blue, shape=ellipse]
+"ProductGroupRelationSetup" -> "setupSalesCatalogs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ProductGroupRelationSetup" [color=blue, fontcolor=blue, shape=ellipse]
+"ProductGroupAttributeSetup" -> "setupSalesCatalogs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ProductGroupAttributeSetup" [color=blue, fontcolor=blue, shape=ellipse]
+"ProductGroupAttributeValueSetup" -> "ProductGroupAttributeSetup" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ProductGroupAttributeValueSetup" [color=blue, fontcolor=blue, shape=ellipse]
+"ProductGroupSubgroupAdministration" -> "setupSalesCatalogs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ProductGroupSubgroupAdministration" [color=blue, fontcolor=blue, shape=ellipse]
+}

@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage SSH Access 1.1", fontsize=24]
+splines=true
+"credentials" [color=blue, fontcolor=blue, shape=doublecircle]
+"crednames" -> "credentials" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"crednames" [color=blue, fontcolor=blue, shape=ellipse]
+}

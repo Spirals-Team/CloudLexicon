@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Apps/Web Tier Policy JSON Validator v1", fontsize=24]
+splines=true
+"WebTierPolicyJsonValidator" [color=blue, fontcolor=blue, shape=doublecircle]
+}

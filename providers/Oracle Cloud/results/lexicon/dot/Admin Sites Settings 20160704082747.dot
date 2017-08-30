@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Sites Settings 20160704082747", fontsize=24]
+splines=true
+"sitesettings" [color=blue, fontcolor=blue, shape=doublecircle]
+}

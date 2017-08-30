@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Paysheets 11.12.1.0", fontsize=24]
+splines=true
+"paysheets" [color=blue, fontcolor=blue, shape=doublecircle]
+"paymentTransactions" -> "paysheets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"paymentTransactions" [color=blue, fontcolor=blue, shape=ellipse]
+}

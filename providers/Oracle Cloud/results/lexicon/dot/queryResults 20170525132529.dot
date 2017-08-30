@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - queryResults 20170525132529", fontsize=24]
+splines=true
+"v1.3" [color=blue, fontcolor=blue, shape=doublecircle]
+"queryResults" [color=orange, fontcolor=orange, shape=box]
+"queryResults" -> "v1.3" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

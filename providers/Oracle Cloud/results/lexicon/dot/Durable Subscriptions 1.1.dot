@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Durable Subscriptions 1.1", fontsize=24]
+splines=true
+"subscriptions" [color=blue, fontcolor=blue, shape=doublecircle]
+}

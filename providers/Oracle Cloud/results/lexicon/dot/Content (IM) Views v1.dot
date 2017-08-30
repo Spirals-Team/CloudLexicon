@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Content (IM)/Views v1", fontsize=24]
+splines=true
+"views" [color=blue, fontcolor=blue, shape=doublecircle]
+"categories" -> "views" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"categories" [color=blue, fontcolor=blue, shape=ellipse]
+"userGroups" -> "views" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"userGroups" [color=blue, fontcolor=blue, shape=ellipse]
+}

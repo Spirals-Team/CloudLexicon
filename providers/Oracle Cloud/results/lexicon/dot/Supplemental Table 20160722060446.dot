@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Supplemental Table 20160722060446", fontsize=24]
+splines=true
+"suppData" [color=blue, fontcolor=blue, shape=doublecircle]
+}

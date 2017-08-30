@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/1.0/Email folders 1.0", fontsize=24]
+splines=true
+"folder" [color=blue, fontcolor=blue, shape=doublecircle]
+"folders" [color=blue, fontcolor=blue, shape=doublecircle]
+"folders" -> "folder" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"folder" -> "folders" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

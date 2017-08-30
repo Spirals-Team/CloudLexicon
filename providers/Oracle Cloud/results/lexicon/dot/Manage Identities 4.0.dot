@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Identities 4.0", fontsize=24]
+splines=true
+"identities" [color=blue, fontcolor=blue, shape=doublecircle]
+"users" -> "identities" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"users" [color=blue, fontcolor=blue, shape=ellipse]
+"loggedInUser" -> "identities" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"loggedInUser" [color=blue, fontcolor=blue, shape=ellipse]
+}

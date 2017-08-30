@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Publishing v1", fontsize=24]
+splines=true
+"sandbox" [color=blue, fontcolor=blue, shape=doublecircle]
+"publish" [color=orange, fontcolor=orange, shape=box]
+"publish" -> "sandbox" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

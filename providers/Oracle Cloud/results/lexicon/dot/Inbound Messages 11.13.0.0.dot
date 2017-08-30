@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Inbound Messages 11.13.0.0", fontsize=24]
+splines=true
+"inboundMessages" [color=blue, fontcolor=blue, shape=doublecircle]
+"InboundMsgParts" -> "inboundMessages" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"InboundMsgParts" [color=blue, fontcolor=blue, shape=ellipse]
+"Attachments" -> "inboundMessages" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Attachments" [color=blue, fontcolor=blue, shape=ellipse]
+}

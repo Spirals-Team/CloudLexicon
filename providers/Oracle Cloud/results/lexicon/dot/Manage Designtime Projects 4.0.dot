@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Designtime Projects 4.0", fontsize=24]
+splines=true
+"projects" [color=blue, fontcolor=blue, shape=doublecircle]
+"snapshots" -> "projects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"snapshots" [color=blue, fontcolor=blue, shape=ellipse]
+"deploy" [color=orange, fontcolor=orange, shape=box]
+"deploy" -> "snapshots" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"exp" -> "snapshots" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"exp" [color=blue, fontcolor=blue, shape=ellipse]
+"clone" [color=orange, fontcolor=orange, shape=box]
+"clone" -> "projects" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"processes" -> "projects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"processes" [color=blue, fontcolor=blue, shape=ellipse]
+"exp" -> "projects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"deploy" -> "projects" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

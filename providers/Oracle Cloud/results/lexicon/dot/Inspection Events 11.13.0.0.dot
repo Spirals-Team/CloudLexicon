@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Inspection Events 11.13.0.0", fontsize=24]
+splines=true
+"inspectionEvents" [color=blue, fontcolor=blue, shape=doublecircle]
+"Sample" -> "inspectionEvents" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Sample" [color=blue, fontcolor=blue, shape=ellipse]
+"SampleDisposition" -> "Sample" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"SampleDisposition" [color=blue, fontcolor=blue, shape=ellipse]
+"Sample" -> "SampleDisposition" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"SampleResult" -> "SampleDisposition" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"SampleResult" [color=blue, fontcolor=blue, shape=ellipse]
+"Sample" -> "SampleResult" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"ResultEvaluation" -> "SampleResult" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ResultEvaluation" [color=blue, fontcolor=blue, shape=ellipse]
+"EventDisposition" -> "inspectionEvents" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"EventDisposition" [color=blue, fontcolor=blue, shape=ellipse]
+}

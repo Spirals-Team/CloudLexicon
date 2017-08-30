@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Asset Import - Export 20160704092341", fontsize=24]
+splines=true
+"asset" [color=blue, fontcolor=blue, shape=doublecircle]
+"upload" [color=orange, fontcolor=orange, shape=box]
+"upload" -> "asset" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"export" [color=orange, fontcolor=orange, shape=box]
+"export" -> "asset" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"importStatus" [color=orange, fontcolor=orange, shape=box]
+"importStatus" -> "asset" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"import" -> "importStatus" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"import" [color=orange, fontcolor=orange, shape=box]
+"import" -> "asset" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"export" -> "import" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"validate" [color=orange, fontcolor=orange, shape=box]
+"validate" -> "asset" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

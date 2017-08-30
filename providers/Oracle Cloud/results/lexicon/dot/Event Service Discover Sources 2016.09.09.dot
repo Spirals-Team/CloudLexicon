@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Event Service/Discover Sources 2016.09.09", fontsize=24]
+splines=true
+"sources" [color=blue, fontcolor=blue, shape=doublecircle]
+}

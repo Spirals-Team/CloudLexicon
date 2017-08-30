@@ -1,0 +1,4 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Publiclinks 1.2", fontsize=24]
+splines=true
+}

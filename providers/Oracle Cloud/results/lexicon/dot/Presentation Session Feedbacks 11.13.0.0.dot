@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Presentation Session Feedbacks 11.13.0.0", fontsize=24]
+splines=true
+"presentationSessionFeedback" [color=blue, fontcolor=blue, shape=doublecircle]
+}

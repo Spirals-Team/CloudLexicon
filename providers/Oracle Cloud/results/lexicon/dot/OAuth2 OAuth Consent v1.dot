@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - OAuth2/OAuth Consent v1", fontsize=24]
+splines=true
+"OAuthConsents" [color=blue, fontcolor=blue, shape=doublecircle]
+}

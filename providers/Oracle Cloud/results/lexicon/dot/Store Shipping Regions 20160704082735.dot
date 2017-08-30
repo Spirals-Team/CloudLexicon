@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Store/Shipping Regions 20160704082735", fontsize=24]
+splines=true
+"shippingRegions" [color=blue, fontcolor=blue, shape=doublecircle]
+}

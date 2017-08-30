@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Service Key Store - Key v1.1", fontsize=24]
+splines=true
+"keys" [color=blue, fontcolor=blue, shape=doublecircle]
+}

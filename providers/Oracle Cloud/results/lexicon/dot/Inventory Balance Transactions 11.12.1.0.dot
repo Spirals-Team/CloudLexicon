@@ -1,0 +1,21 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Inventory Balance Transactions 11.12.1.0", fontsize=24]
+splines=true
+"inventoryBalanceTransactions" [color=blue, fontcolor=blue, shape=doublecircle]
+"transactionLines" -> "inventoryBalanceTransactions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"transactionLines" [color=blue, fontcolor=blue, shape=ellipse]
+"itemSerials" -> "transactionLines" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"itemSerials" [color=blue, fontcolor=blue, shape=ellipse]
+"dffForItemSerials" -> "itemSerials" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"dffForItemSerials" [color=blue, fontcolor=blue, shape=ellipse]
+"itemLots" -> "transactionLines" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"itemLots" [color=blue, fontcolor=blue, shape=ellipse]
+"itemSerialsForLot" -> "itemLots" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"itemSerialsForLot" [color=blue, fontcolor=blue, shape=ellipse]
+"dffForItemSerialsForLot" -> "itemSerialsForLot" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"dffForItemSerialsForLot" [color=blue, fontcolor=blue, shape=ellipse]
+"dffForItemLots" -> "itemLots" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"dffForItemLots" [color=blue, fontcolor=blue, shape=ellipse]
+"dffForTransactionLines" -> "transactionLines" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"dffForTransactionLines" [color=blue, fontcolor=blue, shape=ellipse]
+}

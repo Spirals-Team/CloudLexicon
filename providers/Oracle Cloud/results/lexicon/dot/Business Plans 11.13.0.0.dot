@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Business Plans 11.13.0.0", fontsize=24]
+splines=true
+"businessPlans" [color=blue, fontcolor=blue, shape=doublecircle]
+"BusinessPlanResource" -> "businessPlans" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"BusinessPlanResource" [color=blue, fontcolor=blue, shape=ellipse]
+"Swot" -> "businessPlans" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Swot" [color=blue, fontcolor=blue, shape=ellipse]
+"Note" -> "businessPlans" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Note" [color=blue, fontcolor=blue, shape=ellipse]
+}

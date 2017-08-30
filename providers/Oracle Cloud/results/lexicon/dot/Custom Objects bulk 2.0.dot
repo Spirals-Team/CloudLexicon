@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Custom Objects bulk/2.0", fontsize=24]
+splines=true
+"customObjects" [color=blue, fontcolor=blue, shape=doublecircle]
+"exports" -> "customObjects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"exports" [color=blue, fontcolor=blue, shape=ellipse]
+"data" -> "exports" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"data" [color=blue, fontcolor=blue, shape=ellipse]
+"syncActions" -> "customObjects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"syncActions" [color=blue, fontcolor=blue, shape=ellipse]
+"data" -> "syncActions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"imports" -> "customObjects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"imports" [color=blue, fontcolor=blue, shape=ellipse]
+"data" -> "imports" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"fields" -> "customObjects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"fields" [color=blue, fontcolor=blue, shape=ellipse]
+}

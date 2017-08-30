@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Report Filter Configuration 20160704082707", fontsize=24]
+splines=true
+"v1" [color=blue, fontcolor=blue, shape=doublecircle]
+"reportFilterConfigurations" [color=orange, fontcolor=orange, shape=box]
+"reportFilterConfigurations" -> "v1" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

@@ -1,0 +1,19 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Service Request 11.12.1.0", fontsize=24]
+splines=true
+"serviceRequests" [color=blue, fontcolor=blue, shape=doublecircle]
+"messages" -> "serviceRequests" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"messages" [color=blue, fontcolor=blue, shape=ellipse]
+"channelCommunication" -> "messages" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"channelCommunication" [color=blue, fontcolor=blue, shape=ellipse]
+"Attachment" -> "messages" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Attachment" [color=blue, fontcolor=blue, shape=ellipse]
+"srReferences" -> "serviceRequests" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"srReferences" [color=blue, fontcolor=blue, shape=ellipse]
+"contacts" -> "serviceRequests" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"contacts" [color=blue, fontcolor=blue, shape=ellipse]
+"resourceMembers" -> "serviceRequests" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"resourceMembers" [color=blue, fontcolor=blue, shape=ellipse]
+"channelCommunication" -> "serviceRequests" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Attachment" -> "serviceRequests" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+}

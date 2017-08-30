@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Shares 1.2", fontsize=24]
+splines=true
+"myuser" [color=blue, fontcolor=blue, shape=doublecircle]
+"user" [color=blue, fontcolor=blue, shape=doublecircle]
+"items" [color=blue, fontcolor=blue, shape=doublecircle]
+"role" [color=blue, fontcolor=blue, shape=doublecircle]
+}

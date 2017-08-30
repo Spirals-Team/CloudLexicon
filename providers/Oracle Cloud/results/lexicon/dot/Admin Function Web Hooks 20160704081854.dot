@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Function Web Hooks 20160704081854", fontsize=24]
+splines=true
+"functionWebhooks" [color=blue, fontcolor=blue, shape=doublecircle]
+}

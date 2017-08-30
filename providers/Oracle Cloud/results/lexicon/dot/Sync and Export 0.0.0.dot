@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Sync and Export 0.0.0", fontsize=24]
+splines=true
+"sync" [color=blue, fontcolor=blue, shape=doublecircle]
+"logfile" -> "sync" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"logfile" [color=blue, fontcolor=blue, shape=ellipse]
+"delete" [color=orange, fontcolor=orange, shape=box]
+"delete" -> "sync" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

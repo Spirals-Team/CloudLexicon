@@ -1,0 +1,12 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Change Request v1", fontsize=24]
+splines=true
+"Oracle Cloud" [color=blue, fontcolor=blue, shape=doublecircle]
+"changeRequest" -> "Oracle Cloud" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"changeRequest" [color=blue, fontcolor=blue, shape=ellipse]
+"batchCreateorUpdate" [color=orange, fontcolor=orange, shape=box]
+"batchCreateorUpdate" -> "changeRequest" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"batch" -> "batchCreateorUpdate" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"batch" -> "changeRequest" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"batch" [color=blue, fontcolor=blue, shape=ellipse]
+}

@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Projects 11.13.0.0", fontsize=24]
+splines=true
+"projects" [color=blue, fontcolor=blue, shape=doublecircle]
+"ProjectCustomers" -> "projects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ProjectCustomers" [color=blue, fontcolor=blue, shape=ellipse]
+"Tasks" -> "projects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Tasks" [color=blue, fontcolor=blue, shape=ellipse]
+"LaborResourceAssignments" -> "Tasks" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"LaborResourceAssignments" [color=blue, fontcolor=blue, shape=ellipse]
+"ExpenseResourceAssignments" -> "Tasks" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ExpenseResourceAssignments" [color=blue, fontcolor=blue, shape=ellipse]
+"ProjectTeamMembers" -> "projects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ProjectTeamMembers" [color=blue, fontcolor=blue, shape=ellipse]
+"ProjectOpportunities" -> "projects" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ProjectOpportunities" [color=blue, fontcolor=blue, shape=ellipse]
+}

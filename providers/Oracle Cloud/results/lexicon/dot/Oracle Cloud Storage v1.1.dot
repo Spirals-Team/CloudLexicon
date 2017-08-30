@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Oracle Cloud Storage v1.1", fontsize=24]
+splines=true
+"default" [color=blue, fontcolor=blue, shape=doublecircle]
+"files" -> "default" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"files" [color=blue, fontcolor=blue, shape=ellipse]
+":*" -> "files" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+":*" [color=blue, fontcolor=blue, shape=ellipse]
+}

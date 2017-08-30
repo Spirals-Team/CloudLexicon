@@ -1,0 +1,10 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Packages v1", fontsize=24]
+splines=true
+"packages" [color=blue, fontcolor=blue, shape=doublecircle]
+"export" [color=orange, fontcolor=orange, shape=box]
+"export" -> "packages" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"import" [color=orange, fontcolor=orange, shape=box]
+"import" -> "packages" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"export" -> "import" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+}

@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Messages 20170321102252", fontsize=24]
+splines=true
+"messages" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Topology v1", fontsize=24]
+splines=true
+"messagingcontexts" [color=blue, fontcolor=blue, shape=doublecircle]
+}

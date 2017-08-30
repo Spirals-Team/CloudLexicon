@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Configurations 11.13.0.0", fontsize=24]
+splines=true
+"configurations" [color=blue, fontcolor=blue, shape=doublecircle]
+"ConfigurationLines" -> "configurations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ConfigurationLines" [color=blue, fontcolor=blue, shape=ellipse]
+"ConfigurationMessages" -> "configurations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ConfigurationMessages" [color=blue, fontcolor=blue, shape=ellipse]
+"ConfigurationLineAttributes" -> "configurations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ConfigurationLineAttributes" [color=blue, fontcolor=blue, shape=ellipse]
+}

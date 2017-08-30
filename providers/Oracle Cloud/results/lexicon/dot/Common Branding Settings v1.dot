@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Common/Branding Settings v1", fontsize=24]
+splines=true
+"BrandingSettings" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Version2 0.0.0", fontsize=24]
+splines=true
+"v2" [color=blue, fontcolor=blue, shape=doublecircle]
+"addressclean" [color=orange, fontcolor=orange, shape=box]
+"addressclean" -> "v2" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

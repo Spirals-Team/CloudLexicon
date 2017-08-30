@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/1.0/Contact segments 1.0", fontsize=24]
+splines=true
+"segment" [color=blue, fontcolor=blue, shape=doublecircle]
+"segments" [color=blue, fontcolor=blue, shape=doublecircle]
+"segments" -> "segment" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"segment" -> "segments" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

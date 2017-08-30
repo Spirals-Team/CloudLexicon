@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Stack Descriptor 20160704082759", fontsize=24]
+splines=true
+"hidden" [color=blue, fontcolor=blue, shape=doublecircle]
+}

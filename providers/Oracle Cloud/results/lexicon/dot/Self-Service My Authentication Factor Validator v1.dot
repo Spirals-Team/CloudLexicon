@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Self-Service/My Authentication Factor Validator v1", fontsize=24]
+splines=true
+"MyAuthenticationFactorValidator" [color=blue, fontcolor=blue, shape=doublecircle]
+}

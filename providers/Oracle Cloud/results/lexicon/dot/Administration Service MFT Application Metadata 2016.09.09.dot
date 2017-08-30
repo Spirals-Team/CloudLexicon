@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Administration Service/MFT Application Metadata 2016.09.09", fontsize=24]
+splines=true
+"applicationMetadata" [color=blue, fontcolor=blue, shape=doublecircle]
+}

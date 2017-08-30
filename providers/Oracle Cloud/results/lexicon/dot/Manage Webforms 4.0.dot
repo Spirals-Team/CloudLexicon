@@ -1,0 +1,4 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Webforms 4.0", fontsize=24]
+splines=true
+}

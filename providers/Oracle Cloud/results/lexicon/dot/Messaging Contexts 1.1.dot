@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Messaging Contexts 1.1", fontsize=24]
+splines=true
+"maxInactiveInterval" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Widgets 1.0.0", fontsize=24]
+splines=true
+"product" [color=blue, fontcolor=blue, shape=doublecircle]
+"promotion" [color=blue, fontcolor=blue, shape=doublecircle]
+"cs" [color=blue, fontcolor=blue, shape=doublecircle]
+}

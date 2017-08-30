@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Supplemental Table Members 20160726095858", fontsize=24]
+splines=true
+"members" [color=blue, fontcolor=blue, shape=doublecircle]
+"members " [color=blue, fontcolor=blue, shape=doublecircle]
+"members" -> "members " [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

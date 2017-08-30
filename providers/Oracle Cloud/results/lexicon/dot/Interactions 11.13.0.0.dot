@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Interactions 11.13.0.0", fontsize=24]
+splines=true
+"interactions" [color=blue, fontcolor=blue, shape=doublecircle]
+"childInteractions" -> "interactions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"childInteractions" [color=blue, fontcolor=blue, shape=ellipse]
+"child" -> "childInteractions" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"interactionReferences" -> "interactions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"interactionReferences" [color=blue, fontcolor=blue, shape=ellipse]
+"interactions" -> "interactionReferences" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

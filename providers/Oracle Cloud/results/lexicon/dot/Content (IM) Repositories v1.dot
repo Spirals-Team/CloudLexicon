@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Content (IM)/Repositories v1", fontsize=24]
+splines=true
+"categoriesAssignedToView" [color=blue, fontcolor=blue, shape=doublecircle]
+"availableLocales" [color=blue, fontcolor=blue, shape=doublecircle]
+}

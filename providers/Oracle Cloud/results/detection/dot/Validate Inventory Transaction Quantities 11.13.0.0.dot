@@ -1,0 +1,28 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - Validate Inventory Transaction Quantities 11.13.0.0"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com\n Singleton Resource\nbut\nMissing GET Method\nOnly Controllers", shape="ellipse", color="red", fontcolor="red"]
+node1 -> node2 [color="orange", fontcolor="orange"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/validateInventoryTransactionQuantities\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node2 -> node3 [color="green", fontcolor="green"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}

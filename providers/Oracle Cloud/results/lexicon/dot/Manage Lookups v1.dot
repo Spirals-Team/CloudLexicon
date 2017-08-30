@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Lookups v1", fontsize=24]
+splines=true
+"lookups" [color=blue, fontcolor=blue, shape=doublecircle]
+}

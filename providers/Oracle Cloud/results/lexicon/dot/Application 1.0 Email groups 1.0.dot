@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/1.0/Email groups 1.0", fontsize=24]
+splines=true
+"group" [color=blue, fontcolor=blue, shape=doublecircle]
+"groups" [color=blue, fontcolor=blue, shape=doublecircle]
+"groups" -> "group" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"group" -> "groups" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

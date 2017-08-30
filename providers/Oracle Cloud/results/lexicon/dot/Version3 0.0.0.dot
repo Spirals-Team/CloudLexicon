@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Version3 0.0.0", fontsize=24]
+splines=true
+"v3" [color=blue, fontcolor=blue, shape=doublecircle]
+"address" -> "v3" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"address" [color=blue, fontcolor=blue, shape=ellipse]
+"capture" [color=orange, fontcolor=orange, shape=box]
+"capture" -> "address" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"verify" [color=orange, fontcolor=orange, shape=box]
+"verify" -> "address" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"complete" [color=orange, fontcolor=orange, shape=box]
+"complete" -> "address" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

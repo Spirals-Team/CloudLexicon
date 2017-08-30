@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Scope Item v1", fontsize=24]
+splines=true
+"scopeItem" [color=blue, fontcolor=blue, shape=doublecircle]
+"configuredFields" -> "scopeItem" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"configuredFields" [color=blue, fontcolor=blue, shape=ellipse]
+}

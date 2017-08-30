@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Exadata Cloud Service 1.1", fontsize=24]
+splines=true
+"iorm" [color=blue, fontcolor=blue, shape=doublecircle]
+"servers" [color=blue, fontcolor=blue, shape=doublecircle]
+"ibkup" [color=blue, fontcolor=blue, shape=doublecircle]
+}

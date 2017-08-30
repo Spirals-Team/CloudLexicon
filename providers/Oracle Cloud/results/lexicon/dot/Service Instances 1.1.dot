@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Service Instances 1.1", fontsize=24]
+splines=true
+"instances" [color=blue, fontcolor=blue, shape=doublecircle]
+"hosts" -> "instances" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"hosts" [color=blue, fontcolor=blue, shape=ellipse]
+"scale" [color=orange, fontcolor=orange, shape=box]
+"scale" -> "hosts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"storage" -> "instances" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"storage" [color=blue, fontcolor=blue, shape=ellipse]
+"add" [color=orange, fontcolor=orange, shape=box]
+"add" -> "storage" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

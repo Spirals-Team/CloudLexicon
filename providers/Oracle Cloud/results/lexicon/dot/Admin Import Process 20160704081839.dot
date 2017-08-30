@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Import Process 20160704081839", fontsize=24]
+splines=true
+"importProcess" [color=blue, fontcolor=blue, shape=doublecircle]
+"abort" [color=orange, fontcolor=orange, shape=box]
+"abort" -> "importProcess" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

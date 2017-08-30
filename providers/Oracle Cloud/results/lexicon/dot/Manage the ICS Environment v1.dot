@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage the ICS Environment v1", fontsize=24]
+splines=true
+"environment" [color=blue, fontcolor=blue, shape=doublecircle]
+"compresswsdls" -> "environment" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"compresswsdls" [color=blue, fontcolor=blue, shape=ellipse]
+}

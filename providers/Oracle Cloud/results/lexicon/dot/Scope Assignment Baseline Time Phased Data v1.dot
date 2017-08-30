@@ -1,0 +1,4 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Scope Assignment Baseline Time Phased Data v1", fontsize=24]
+splines=true
+}

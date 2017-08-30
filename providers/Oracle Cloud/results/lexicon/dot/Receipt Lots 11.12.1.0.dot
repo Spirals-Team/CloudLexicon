@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Receipt Lots 11.12.1.0", fontsize=24]
+splines=true
+"receiptLots" [color=blue, fontcolor=blue, shape=doublecircle]
+}

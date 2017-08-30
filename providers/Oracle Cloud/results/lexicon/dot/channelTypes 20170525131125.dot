@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - channelTypes 20170525131125", fontsize=24]
+splines=true
+"channelTypes" [color=blue, fontcolor=blue, shape=doublecircle]
+}

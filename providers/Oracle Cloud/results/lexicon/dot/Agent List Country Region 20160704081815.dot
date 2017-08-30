@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Agent/List Country Region 20160704081815", fontsize=24]
+splines=true
+"validShippingCountries" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - On-hand Quantity Details 11.13.0.0", fontsize=24]
+splines=true
+"onhandQuantityDetails" [color=blue, fontcolor=blue, shape=doublecircle]
+"InboundQuantityDetails" -> "onhandQuantityDetails" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"InboundQuantityDetails" [color=blue, fontcolor=blue, shape=ellipse]
+"ConsignedQuantityDetails" -> "onhandQuantityDetails" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ConsignedQuantityDetails" [color=blue, fontcolor=blue, shape=ellipse]
+}

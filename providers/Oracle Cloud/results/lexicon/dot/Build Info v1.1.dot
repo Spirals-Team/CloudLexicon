@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Build Info v1.1", fontsize=24]
+splines=true
+"v1.1" [color=blue, fontcolor=blue, shape=doublecircle]
+"build" [color=orange, fontcolor=orange, shape=box]
+"build" -> "v1.1" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

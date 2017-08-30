@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/2.0/Visitor profile fields 2.0", fontsize=24]
+splines=true
+"fields" [color=blue, fontcolor=blue, shape=doublecircle]
+}

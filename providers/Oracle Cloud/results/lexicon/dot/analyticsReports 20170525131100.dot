@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - analyticsReports 20170525131100", fontsize=24]
+splines=true
+"analyticsReports" [color=blue, fontcolor=blue, shape=doublecircle]
+}

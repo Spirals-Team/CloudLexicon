@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Compute Job v1.1", fontsize=24]
+splines=true
+"jobs" [color=blue, fontcolor=blue, shape=doublecircle]
+"status" -> "jobs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"status" [color=blue, fontcolor=blue, shape=ellipse]
+"spark" -> "jobs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"spark" [color=blue, fontcolor=blue, shape=ellipse]
+"summary" -> "jobs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"summary" [color=blue, fontcolor=blue, shape=ellipse]
+"mapred" -> "jobs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"mapred" [color=blue, fontcolor=blue, shape=ellipse]
+}

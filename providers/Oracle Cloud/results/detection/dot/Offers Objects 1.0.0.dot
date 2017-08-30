@@ -1,0 +1,364 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Oracle Cloud - Offers Objects 1.0.0"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="http://cloud.oracle.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="black", fontcolor="black"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/v1", shape="ellipse", color="black", fontcolor="black"]
+node2 -> node3 [color="blue", fontcolor="blue"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="/orders\n Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node3 -> node4 [color="green", fontcolor="green"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node3 -> node5 [color="green", fontcolor="green"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node3 -> node6 [color="blue", fontcolor="blue"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="/{orderId}\n Resource\nbut\nMissing DELETE Method", shape="ellipse", color="red", fontcolor="red"]
+node6 -> node7 [color="green", fontcolor="green"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node6 -> node8 [color="green", fontcolor="green"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node6 -> node9 [color="black", fontcolor="black"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="/orderlines", shape="ellipse", color="black", fontcolor="black"]
+node9 -> node10 [color="blue", fontcolor="blue"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="/{orderLineId}\n Read-Only Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node10 -> node11 [color="green", fontcolor="green"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+node2 -> node12 [color="blue", fontcolor="blue"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="/brands\n Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node12 -> node13 [color="green", fontcolor="green"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node12 -> node14 [color="green", fontcolor="green"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node12 -> node15 [color="green", fontcolor="green"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node12 -> node16 [color="blue", fontcolor="blue"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label="/{brandId}\n Read-Only Resource\nbut\nMissing DELETE Method", shape="ellipse", color="red", fontcolor="red"]
+node16 -> node17 [color="green", fontcolor="green"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node18 [color="blue", fontcolor="blue"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label="/categories\n Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node18 -> node19 [color="green", fontcolor="green"]
+subgraph cluster_19 {
+label=""
+color=white
+fontcolor=white
+node19 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node18 -> node20 [color="green", fontcolor="green"]
+subgraph cluster_20 {
+label=""
+color=white
+fontcolor=white
+node20 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node18 -> node21 [color="green", fontcolor="green"]
+subgraph cluster_21 {
+label=""
+color=white
+fontcolor=white
+node21 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node18 -> node22 [color="blue", fontcolor="blue"]
+subgraph cluster_22 {
+label=""
+color=white
+fontcolor=white
+node22 [label="/{categoryId}\n Read-Only Resource\nbut\nMissing DELETE Method", shape="ellipse", color="red", fontcolor="red"]
+node22 -> node23 [color="green", fontcolor="green"]
+subgraph cluster_23 {
+label=""
+color=white
+fontcolor=white
+node23 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node24 [color="blue", fontcolor="blue"]
+subgraph cluster_24 {
+label=""
+color=white
+fontcolor=white
+node24 [label="/brandPolicies\n Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node24 -> node25 [color="green", fontcolor="green"]
+subgraph cluster_25 {
+label=""
+color=white
+fontcolor=white
+node25 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node24 -> node26 [color="green", fontcolor="green"]
+subgraph cluster_26 {
+label=""
+color=white
+fontcolor=white
+node26 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node24 -> node27 [color="blue", fontcolor="blue"]
+subgraph cluster_27 {
+label=""
+color=white
+fontcolor=white
+node27 [label="/{brandPolicyId}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node27 -> node28 [color="green", fontcolor="green"]
+subgraph cluster_28 {
+label=""
+color=white
+fontcolor=white
+node28 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node27 -> node29 [color="green", fontcolor="green"]
+subgraph cluster_29 {
+label=""
+color=white
+fontcolor=white
+node29 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node27 -> node30 [color="green", fontcolor="green"]
+subgraph cluster_30 {
+label=""
+color=white
+fontcolor=white
+node30 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node31 [color="blue", fontcolor="blue"]
+subgraph cluster_31 {
+label=""
+color=white
+fontcolor=white
+node31 [label="/promotions\n Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node31 -> node32 [color="green", fontcolor="green"]
+subgraph cluster_32 {
+label=""
+color=white
+fontcolor=white
+node32 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node31 -> node33 [color="green", fontcolor="green"]
+subgraph cluster_33 {
+label=""
+color=white
+fontcolor=white
+node33 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node31 -> node34 [color="green", fontcolor="green"]
+subgraph cluster_34 {
+label=""
+color=white
+fontcolor=white
+node34 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node31 -> node35 [color="blue", fontcolor="blue"]
+subgraph cluster_35 {
+label=""
+color=white
+fontcolor=white
+node35 [label="/{promotionId}\n Read-Only Resource\nbut\nMissing DELETE Method", shape="ellipse", color="red", fontcolor="red"]
+node35 -> node36 [color="green", fontcolor="green"]
+subgraph cluster_36 {
+label=""
+color=white
+fontcolor=white
+node36 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node37 [color="blue", fontcolor="blue"]
+subgraph cluster_37 {
+label=""
+color=white
+fontcolor=white
+node37 [label="/consumers\n Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node37 -> node38 [color="green", fontcolor="green"]
+subgraph cluster_38 {
+label=""
+color=white
+fontcolor=white
+node38 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node37 -> node39 [color="green", fontcolor="green"]
+subgraph cluster_39 {
+label=""
+color=white
+fontcolor=white
+node39 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node37 -> node40 [color="green", fontcolor="green"]
+subgraph cluster_40 {
+label=""
+color=white
+fontcolor=white
+node40 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node37 -> node41 [color="blue", fontcolor="blue"]
+subgraph cluster_41 {
+label=""
+color=white
+fontcolor=white
+node41 [label="/{consumerId}\n Read-Only Resource\nbut\nMissing DELETE Method", shape="ellipse", color="red", fontcolor="red"]
+node41 -> node42 [color="green", fontcolor="green"]
+subgraph cluster_42 {
+label=""
+color=white
+fontcolor=white
+node42 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node43 [color="blue", fontcolor="blue"]
+subgraph cluster_43 {
+label=""
+color=white
+fontcolor=white
+node43 [label="/products\n Collection", shape="ellipse", color="blue", fontcolor="blue"]
+node43 -> node44 [color="green", fontcolor="green"]
+subgraph cluster_44 {
+label=""
+color=white
+fontcolor=white
+node44 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node43 -> node45 [color="green", fontcolor="green"]
+subgraph cluster_45 {
+label=""
+color=white
+fontcolor=white
+node45 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node43 -> node46 [color="green", fontcolor="green"]
+subgraph cluster_46 {
+label=""
+color=white
+fontcolor=white
+node46 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node43 -> node47 [color="blue", fontcolor="blue"]
+subgraph cluster_47 {
+label=""
+color=white
+fontcolor=white
+node47 [label="/{productId}\n Read-Only Resource\nbut\nMissing DELETE Method", shape="ellipse", color="red", fontcolor="red"]
+node47 -> node48 [color="green", fontcolor="green"]
+subgraph cluster_48 {
+label=""
+color=white
+fontcolor=white
+node48 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node2 -> node49 [color="blue", fontcolor="blue"]
+subgraph cluster_49 {
+label=""
+color=white
+fontcolor=white
+node49 [label="/sites\n Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node49 -> node50 [color="green", fontcolor="green"]
+subgraph cluster_50 {
+label=""
+color=white
+fontcolor=white
+node50 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node49 -> node51 [color="green", fontcolor="green"]
+subgraph cluster_51 {
+label=""
+color=white
+fontcolor=white
+node51 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}

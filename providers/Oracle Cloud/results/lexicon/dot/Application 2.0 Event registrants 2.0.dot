@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/2.0/Event registrants 2.0", fontsize=24]
+splines=true
+"instance" [color=blue, fontcolor=blue, shape=doublecircle]
+"instances" [color=blue, fontcolor=blue, shape=doublecircle]
+"instances" -> "instance" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"instance" -> "instances" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

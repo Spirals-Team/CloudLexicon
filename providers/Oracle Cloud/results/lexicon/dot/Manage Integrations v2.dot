@@ -1,0 +1,22 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage Integrations v2", fontsize=24]
+splines=true
+"integrations" [color=blue, fontcolor=blue, shape=doublecircle]
+"schedule" -> "integrations" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"schedule" [color=blue, fontcolor=blue, shape=ellipse]
+"resume" [color=orange, fontcolor=orange, shape=box]
+"resume" -> "schedule" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"stop" [color=orange, fontcolor=orange, shape=box]
+"stop" -> "schedule" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"pause" [color=orange, fontcolor=orange, shape=box]
+"pause" -> "schedule" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"jobs" -> "schedule" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"jobs" [color=blue, fontcolor=blue, shape=ellipse]
+"start" [color=orange, fontcolor=orange, shape=box]
+"start" -> "schedule" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"stop" -> "start" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"archive" [color=orange, fontcolor=orange, shape=box]
+"archive" -> "integrations" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"clone" [color=orange, fontcolor=orange, shape=box]
+"clone" -> "integrations" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

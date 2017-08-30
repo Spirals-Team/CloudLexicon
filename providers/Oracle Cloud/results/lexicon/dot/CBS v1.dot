@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - CBS v1", fontsize=24]
+splines=true
+"project" [color=blue, fontcolor=blue, shape=doublecircle]
+"workspace" [color=blue, fontcolor=blue, shape=doublecircle]
+"projectCBSSheet" [color=blue, fontcolor=blue, shape=doublecircle]
+"workspaceCBSTemplate" [color=blue, fontcolor=blue, shape=doublecircle]
+"projectCostingSource" -> "project" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"projectCostingSource" [color=blue, fontcolor=blue, shape=ellipse]
+"project" -> "projectCostingSource" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"project" -> "projectCBSSheet" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"workspace" -> "workspaceCBSTemplate" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

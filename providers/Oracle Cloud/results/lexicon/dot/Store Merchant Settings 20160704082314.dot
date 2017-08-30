@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Store/Merchant Settings 20160704082314", fontsize=24]
+splines=true
+"merchant" [color=blue, fontcolor=blue, shape=doublecircle]
+"cloudConfiguration" -> "merchant" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"cloudConfiguration" [color=blue, fontcolor=blue, shape=ellipse]
+"defaultPriceListGroup" -> "merchant" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"defaultPriceListGroup" [color=blue, fontcolor=blue, shape=ellipse]
+"priceListCurrency" -> "merchant" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"priceListCurrency" [color=blue, fontcolor=blue, shape=ellipse]
+"timezone" -> "merchant" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"timezone" [color=blue, fontcolor=blue, shape=ellipse]
+}

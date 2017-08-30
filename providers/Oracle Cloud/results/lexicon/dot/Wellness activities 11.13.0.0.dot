@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Wellness activities 11.13.0.0", fontsize=24]
+splines=true
+"wellnessActivities" [color=blue, fontcolor=blue, shape=doublecircle]
+"activitymeasures" -> "wellnessActivities" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"activitymeasures" [color=blue, fontcolor=blue, shape=ellipse]
+}

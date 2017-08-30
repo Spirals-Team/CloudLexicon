@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Store/Timezone 20160704082814", fontsize=24]
+splines=true
+"timezones" [color=blue, fontcolor=blue, shape=doublecircle]
+}

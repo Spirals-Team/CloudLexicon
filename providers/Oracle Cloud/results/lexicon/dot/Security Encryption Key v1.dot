@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Security/Encryption Key v1", fontsize=24]
+splines=true
+"EncryptionKeys" [color=blue, fontcolor=blue, shape=doublecircle]
+}

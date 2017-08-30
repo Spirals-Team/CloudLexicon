@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Application/1.0/Landing pages 1.0", fontsize=24]
+splines=true
+"landingPages" [color=blue, fontcolor=blue, shape=doublecircle]
+"landingPage" [color=blue, fontcolor=blue, shape=doublecircle]
+}

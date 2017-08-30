@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Content (IM)/Users v1", fontsize=24]
+splines=true
+"contentLocales" [color=blue, fontcolor=blue, shape=doublecircle]
+"customKeyValues" [color=blue, fontcolor=blue, shape=doublecircle]
+}

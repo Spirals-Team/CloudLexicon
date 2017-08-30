@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - PBS v1", fontsize=24]
+splines=true
+"pbs" [color=blue, fontcolor=blue, shape=doublecircle]
+"childrenHierarchy" -> "pbs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"childrenHierarchy" [color=blue, fontcolor=blue, shape=ellipse]
+"children" -> "childrenHierarchy" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

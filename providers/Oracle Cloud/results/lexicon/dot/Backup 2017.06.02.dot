@@ -1,0 +1,10 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Backup 2017.06.02", fontsize=24]
+splines=true
+"v2" [color=blue, fontcolor=blue, shape=doublecircle]
+"export" [color=orange, fontcolor=orange, shape=box]
+"export" -> "v2" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"import" [color=orange, fontcolor=orange, shape=box]
+"import" -> "v2" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"export" -> "import" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+}

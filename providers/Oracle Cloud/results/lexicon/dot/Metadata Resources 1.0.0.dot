@@ -1,0 +1,21 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Metadata Resources 1.0.0", fontsize=24]
+splines=true
+"v1" [color=blue, fontcolor=blue, shape=doublecircle]
+"regions" -> "v1" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"regions" [color=blue, fontcolor=blue, shape=ellipse]
+"relateddoctypes" -> "v1" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"relateddoctypes" [color=blue, fontcolor=blue, shape=ellipse]
+"countries" -> "v1" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"countries" [color=blue, fontcolor=blue, shape=ellipse]
+"languages" -> "v1" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"languages" [color=blue, fontcolor=blue, shape=ellipse]
+"pricingtypes" -> "v1" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"pricingtypes" [color=blue, fontcolor=blue, shape=ellipse]
+"installstatuses" [color=orange, fontcolor=orange, shape=box]
+"installstatuses" -> "v1" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"industries" -> "v1" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"industries" [color=blue, fontcolor=blue, shape=ellipse]
+"devicetypes" -> "v1" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"devicetypes" [color=blue, fontcolor=blue, shape=ellipse]
+}

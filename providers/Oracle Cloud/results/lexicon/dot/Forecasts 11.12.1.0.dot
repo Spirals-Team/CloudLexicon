@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Forecasts 11.12.1.0", fontsize=24]
+splines=true
+"territoryForecasts" [color=blue, fontcolor=blue, shape=doublecircle]
+"forecastAdjustmentPeriods" -> "territoryForecasts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"forecastAdjustmentPeriods" [color=blue, fontcolor=blue, shape=ellipse]
+"ForecastItemDetail" -> "territoryForecasts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"ForecastItemDetail" [color=blue, fontcolor=blue, shape=ellipse]
+"forecastProducts" -> "territoryForecasts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"forecastProducts" [color=blue, fontcolor=blue, shape=ellipse]
+"forecastProductAdjustmentPeriods" -> "forecastProducts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"forecastProductAdjustmentPeriods" [color=blue, fontcolor=blue, shape=ellipse]
+}

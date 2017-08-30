@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - OPA Hub Management REST API 12.2.8", fontsize=24]
+splines=true
+"deployments" [color=blue, fontcolor=blue, shape=doublecircle]
+"users" [color=blue, fontcolor=blue, shape=doublecircle]
+"about" [color=blue, fontcolor=blue, shape=doublecircle]
+"logs" -> "deployments" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"logs" [color=blue, fontcolor=blue, shape=ellipse]
+"versions" -> "deployments" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"versions" [color=blue, fontcolor=blue, shape=ellipse]
+"snapshot" [color=orange, fontcolor=orange, shape=box]
+"snapshot" -> "versions" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

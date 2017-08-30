@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Transfer Orders for Receiving 11.13.0.0", fontsize=24]
+splines=true
+"transferOrdersForReceiving" [color=blue, fontcolor=blue, shape=doublecircle]
+}

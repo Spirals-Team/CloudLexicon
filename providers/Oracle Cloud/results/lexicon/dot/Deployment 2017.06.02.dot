@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Deployment 2017.06.02", fontsize=24]
+splines=true
+"deployments" [color=blue, fontcolor=blue, shape=doublecircle]
+"webhook" -> "deployments" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"webhook" [color=blue, fontcolor=blue, shape=ellipse]
+"restart" [color=orange, fontcolor=orange, shape=box]
+"restart" -> "webhook" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"stop" -> "restart" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"start" [color=orange, fontcolor=orange, shape=box]
+"start" -> "deployments" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"stop" -> "start" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"stop" [color=orange, fontcolor=orange, shape=box]
+"stop" -> "deployments" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"containers" -> "deployments" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"containers" [color=blue, fontcolor=blue, shape=ellipse]
+}

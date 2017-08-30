@@ -1,0 +1,12 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Asset Incidents 1.0.0", fontsize=24]
+splines=true
+"incidents" [color=blue, fontcolor=blue, shape=doublecircle]
+"externalActivities" -> "incidents" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"externalActivities" [color=blue, fontcolor=blue, shape=ellipse]
+"comments" -> "incidents" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"comments" [color=blue, fontcolor=blue, shape=ellipse]
+"incidentDetails" -> "incidents" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"incidentDetails" [color=blue, fontcolor=blue, shape=ellipse]
+"incidents" -> "incidentDetails" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

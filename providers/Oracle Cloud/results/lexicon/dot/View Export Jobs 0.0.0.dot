@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - View Export Jobs 0.0.0", fontsize=24]
+splines=true
+"jobinstances" [color=blue, fontcolor=blue, shape=doublecircle]
+"jobinstance" -> "jobinstances" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

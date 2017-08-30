@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - metadata 1.0", fontsize=24]
+splines=true
+"properties" [color=blue, fontcolor=blue, shape=doublecircle]
+"workSkillConditions" [color=blue, fontcolor=blue, shape=doublecircle]
+"workZones" [color=blue, fontcolor=blue, shape=doublecircle]
+"workSkills" [color=blue, fontcolor=blue, shape=doublecircle]
+"workSkillGroups" [color=blue, fontcolor=blue, shape=doublecircle]
+"mapLayers" [color=blue, fontcolor=blue, shape=doublecircle]
+"languages" [color=blue, fontcolor=blue, shape=doublecircle]
+"enumerationList" -> "properties" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"enumerationList" [color=blue, fontcolor=blue, shape=ellipse]
+"populateShapes" -> "workZones" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"populateShapes" [color=blue, fontcolor=blue, shape=ellipse]
+"populateLayers" -> "mapLayers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"populateLayers" [color=blue, fontcolor=blue, shape=ellipse]
+}

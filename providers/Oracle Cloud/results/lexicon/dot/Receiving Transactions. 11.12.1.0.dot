@@ -1,0 +1,15 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Receiving Transactions. 11.12.1.0", fontsize=24]
+splines=true
+"receivingTransactions" [color=blue, fontcolor=blue, shape=doublecircle]
+"transactionLines" -> "receivingTransactions" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"transactionLines" [color=blue, fontcolor=blue, shape=ellipse]
+"lotSerialItemLots" -> "transactionLines" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"lotSerialItemLots" [color=blue, fontcolor=blue, shape=ellipse]
+"lotSerialItemSerials" -> "lotSerialItemLots" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"lotSerialItemSerials" [color=blue, fontcolor=blue, shape=ellipse]
+"lotItemLots" -> "transactionLines" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"lotItemLots" [color=blue, fontcolor=blue, shape=ellipse]
+"serialItemSerials" -> "transactionLines" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serialItemSerials" [color=blue, fontcolor=blue, shape=ellipse]
+}

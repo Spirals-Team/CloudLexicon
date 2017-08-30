@@ -1,0 +1,12 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Resource v1", fontsize=24]
+splines=true
+"resource" [color=blue, fontcolor=blue, shape=doublecircle]
+"batch" -> "resource" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"batch" [color=blue, fontcolor=blue, shape=ellipse]
+"childrenHierarchy" -> "resource" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"childrenHierarchy" [color=blue, fontcolor=blue, shape=ellipse]
+"batchCreateOrUpdate" [color=orange, fontcolor=orange, shape=box]
+"batchCreateOrUpdate" -> "resource" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"batch" -> "batchCreateOrUpdate" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

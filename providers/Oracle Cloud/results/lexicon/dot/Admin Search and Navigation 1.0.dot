@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Search and Navigation 1.0", fontsize=24]
+splines=true
+"attributes" [color=blue, fontcolor=blue, shape=doublecircle]
+"searchInterfaces" [color=blue, fontcolor=blue, shape=doublecircle]
+"thesaurus" [color=blue, fontcolor=blue, shape=doublecircle]
+"redirects" [color=blue, fontcolor=blue, shape=doublecircle]
+"pages" [color=blue, fontcolor=blue, shape=doublecircle]
+"content" [color=blue, fontcolor=blue, shape=doublecircle]
+"searchIndexConfig" [color=orange, fontcolor=orange, shape=box]
+}

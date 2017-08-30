@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Self-Service/My Devices v1", fontsize=24]
+splines=true
+"MyDevices" [color=blue, fontcolor=blue, shape=doublecircle]
+}

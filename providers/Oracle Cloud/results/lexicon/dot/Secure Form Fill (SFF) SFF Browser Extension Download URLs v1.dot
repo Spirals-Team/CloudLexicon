@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Secure Form Fill (SFF)/SFF Browser Extension Download URLs v1", fontsize=24]
+splines=true
+"SffXtnUrl" [color=blue, fontcolor=blue, shape=doublecircle]
+}

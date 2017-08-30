@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - View ICS Status v1", fontsize=24]
+splines=true
+"status" [color=blue, fontcolor=blue, shape=doublecircle]
+}

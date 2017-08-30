@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Loyalty Members 11.13.0.0", fontsize=24]
+splines=true
+"loyaltyMembers" [color=blue, fontcolor=blue, shape=doublecircle]
+"PointBalances" -> "loyaltyMembers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"PointBalances" [color=blue, fontcolor=blue, shape=ellipse]
+"MemberContacts" -> "loyaltyMembers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"MemberContacts" [color=blue, fontcolor=blue, shape=ellipse]
+"MemberReferrals" -> "loyaltyMembers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"MemberReferrals" [color=blue, fontcolor=blue, shape=ellipse]
+"MemberVouchers" -> "loyaltyMembers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"MemberVouchers" [color=blue, fontcolor=blue, shape=ellipse]
+"MemberTransactions" -> "loyaltyMembers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"MemberTransactions" [color=blue, fontcolor=blue, shape=ellipse]
+"MemberTiers" -> "loyaltyMembers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"MemberTiers" [color=blue, fontcolor=blue, shape=ellipse]
+}

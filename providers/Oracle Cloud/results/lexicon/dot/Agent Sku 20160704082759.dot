@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Agent/Sku 20160704082759", fontsize=24]
+splines=true
+"skus" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,12 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Admin/Extension Server 1.0", fontsize=24]
+splines=true
+"lintJobs" [color=blue, fontcolor=blue, shape=doublecircle]
+"testJobs" [color=blue, fontcolor=blue, shape=doublecircle]
+"servers" [color=blue, fontcolor=blue, shape=doublecircle]
+"logs" [color=blue, fontcolor=blue, shape=doublecircle]
+"restart" [color=orange, fontcolor=orange, shape=box]
+"restart" -> "servers" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"push" [color=orange, fontcolor=orange, shape=box]
+"push" -> "servers" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

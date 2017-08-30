@@ -1,0 +1,16 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Manage ESS Runtime Requests v2", fontsize=24]
+splines=true
+"v2" [color=blue, fontcolor=blue, shape=doublecircle]
+"runrequests" -> "v2" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"runrequests" [color=blue, fontcolor=blue, shape=ellipse]
+"pause" [color=orange, fontcolor=orange, shape=box]
+"pause" -> "runrequests" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"stop" [color=orange, fontcolor=orange, shape=box]
+"stop" -> "runrequests" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"start" [color=orange, fontcolor=orange, shape=box]
+"start" -> "runrequests" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"stop" -> "start" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"resume" [color=orange, fontcolor=orange, shape=box]
+"resume" -> "runrequests" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

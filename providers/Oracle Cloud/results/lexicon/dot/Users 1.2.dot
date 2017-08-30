@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Users 1.2", fontsize=24]
+splines=true
+"items" [color=blue, fontcolor=blue, shape=doublecircle]
+"transferContent" [color=orange, fontcolor=orange, shape=box]
+}

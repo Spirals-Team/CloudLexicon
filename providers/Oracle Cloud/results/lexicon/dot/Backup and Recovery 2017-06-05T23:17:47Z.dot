@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Oracle Cloud - Backup and Recovery 2017-06-05T23:17:47Z", fontsize=24]
+splines=true
+"backups" [color=blue, fontcolor=blue, shape=doublecircle]
+"recovery" [color=orange, fontcolor=orange, shape=box]
+"recovery" -> "backups" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"history" -> "backups" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"history" [color=blue, fontcolor=blue, shape=ellipse]
+}
