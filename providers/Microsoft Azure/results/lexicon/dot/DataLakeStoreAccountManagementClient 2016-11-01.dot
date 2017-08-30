@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - DataLakeStoreAccountManagementClient 2016-11-01", fontsize=24]
+splines=true
+"accounts" [color=blue, fontcolor=blue, shape=doublecircle]
+"enableKeyVault" [color=orange, fontcolor=orange, shape=box]
+"enableKeyVault" -> "accounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"trustedIdProviders" -> "accounts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"trustedIdProviders" [color=blue, fontcolor=blue, shape=ellipse]
+"firewallRules" -> "accounts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"firewallRules" [color=blue, fontcolor=blue, shape=ellipse]
+}

@@ -1,0 +1,14 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - MediaServicesManagementClient 2015-10-01", fontsize=24]
+splines=true
+"Microsoft.Media" [color=blue, fontcolor=blue, shape=doublecircle]
+"mediaservices" [color=blue, fontcolor=blue, shape=doublecircle]
+"CheckNameAvailability" [color=orange, fontcolor=orange, shape=box]
+"CheckNameAvailability" -> "Microsoft.Media" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"listKeys" [color=orange, fontcolor=orange, shape=box]
+"listKeys" -> "mediaservices" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"syncStorageKeys" [color=orange, fontcolor=orange, shape=box]
+"syncStorageKeys" -> "mediaservices" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"regenerateKey" [color=orange, fontcolor=orange, shape=box]
+"regenerateKey" -> "mediaservices" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

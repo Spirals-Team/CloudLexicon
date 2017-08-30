@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - KeyVaultManagementClient 2016-10-01", fontsize=24]
+splines=true
+"deletedVaults" [color=blue, fontcolor=blue, shape=doublecircle]
+"vaults" [color=blue, fontcolor=blue, shape=doublecircle]
+"resources" [color=blue, fontcolor=blue, shape=doublecircle]
+"purge" [color=orange, fontcolor=orange, shape=box]
+}

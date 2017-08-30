@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - AdvisorManagementClient 2017-04-19", fontsize=24]
+splines=true
+"recommendations" [color=blue, fontcolor=blue, shape=doublecircle]
+"generateRecommendations" [color=blue, fontcolor=blue, shape=doublecircle]
+"suppressions" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+}

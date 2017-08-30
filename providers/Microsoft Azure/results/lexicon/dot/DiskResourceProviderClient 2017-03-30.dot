@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - DiskResourceProviderClient 2017-03-30", fontsize=24]
+splines=true
+"snapshots" [color=blue, fontcolor=blue, shape=doublecircle]
+"disks" [color=blue, fontcolor=blue, shape=doublecircle]
+"beginGetAccess" [color=orange, fontcolor=orange, shape=box]
+"beginGetAccess" -> "snapshots" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"endGetAccess" -> "beginGetAccess" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"endGetAccess" [color=orange, fontcolor=orange, shape=box]
+"endGetAccess" -> "snapshots" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"endGetAccess" -> "disks" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"beginGetAccess" -> "disks" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

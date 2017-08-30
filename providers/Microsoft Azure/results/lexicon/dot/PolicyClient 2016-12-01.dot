@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - PolicyClient 2016-12-01", fontsize=24]
+splines=true
+"policydefinitions" [color=blue, fontcolor=blue, shape=doublecircle]
+"policyassignments" [color=blue, fontcolor=blue, shape=doublecircle]
+"policyAssignments" [color=blue, fontcolor=blue, shape=doublecircle]
+}

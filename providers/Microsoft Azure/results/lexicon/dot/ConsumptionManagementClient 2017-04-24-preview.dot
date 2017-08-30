@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - ConsumptionManagementClient 2017-04-24-preview", fontsize=24]
+splines=true
+"usageDetails" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+}

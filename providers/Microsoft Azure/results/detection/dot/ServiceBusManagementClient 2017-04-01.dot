@@ -1,0 +1,609 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="Microsoft Azure - ServiceBusManagementClient 2017-04-01"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="https://management.azure.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="black", fontcolor="black"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/subscriptions", shape="ellipse", color="black", fontcolor="black"]
+node2 -> node3 [color="black", fontcolor="black"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="/{subscriptionId}", shape="ellipse", color="black", fontcolor="black"]
+node3 -> node4 [color="black", fontcolor="black"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/resourceGroups", shape="ellipse", color="black", fontcolor="black"]
+node4 -> node5 [color="black", fontcolor="black"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="/{resourceGroupName}", shape="ellipse", color="black", fontcolor="black"]
+node5 -> node6 [color="black", fontcolor="black"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="/providers", shape="ellipse", color="black", fontcolor="black"]
+node6 -> node7 [color="black", fontcolor="black"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="/Microsoft.ServiceBus", shape="ellipse", color="black", fontcolor="black"]
+node7 -> node8 [color="blue", fontcolor="blue"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="/namespaces\n Read-Only Collection\nbut\nMissing POST Method", shape="ellipse", color="red", fontcolor="red"]
+node8 -> node9 [color="green", fontcolor="green"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node8 -> node10 [color="blue", fontcolor="blue"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="/{namespaceName}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node10 -> node11 [color="green", fontcolor="green"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node10 -> node12 [color="green", fontcolor="green"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node10 -> node13 [color="green", fontcolor="green"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node10 -> node14 [color="green", fontcolor="green"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node10 -> node15 [color="blue", fontcolor="blue"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="/topics\n Read-Only Collection\nbut\nMissing POST Method", shape="ellipse", color="red", fontcolor="red"]
+node15 -> node16 [color="green", fontcolor="green"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node15 -> node17 [color="blue", fontcolor="blue"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="/{topicName}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node17 -> node18 [color="green", fontcolor="green"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node17 -> node19 [color="green", fontcolor="green"]
+subgraph cluster_19 {
+label=""
+color=white
+fontcolor=white
+node19 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node17 -> node20 [color="green", fontcolor="green"]
+subgraph cluster_20 {
+label=""
+color=white
+fontcolor=white
+node20 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node17 -> node21 [color="blue", fontcolor="blue"]
+subgraph cluster_21 {
+label=""
+color=white
+fontcolor=white
+node21 [label="/authorizationRules\n Read-Only Collection\nbut\nMissing POST Method", shape="ellipse", color="red", fontcolor="red"]
+node21 -> node22 [color="green", fontcolor="green"]
+subgraph cluster_22 {
+label=""
+color=white
+fontcolor=white
+node22 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node21 -> node23 [color="blue", fontcolor="blue"]
+subgraph cluster_23 {
+label=""
+color=white
+fontcolor=white
+node23 [label="/{authorizationRuleName}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node23 -> node24 [color="green", fontcolor="green"]
+subgraph cluster_24 {
+label=""
+color=white
+fontcolor=white
+node24 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node23 -> node25 [color="green", fontcolor="green"]
+subgraph cluster_25 {
+label=""
+color=white
+fontcolor=white
+node25 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node23 -> node26 [color="green", fontcolor="green"]
+subgraph cluster_26 {
+label=""
+color=white
+fontcolor=white
+node26 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node23 -> node27 [color="orange", fontcolor="orange"]
+subgraph cluster_27 {
+label=""
+color=white
+fontcolor=white
+node27 [label="/ListKeys\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node27 -> node28 [color="green", fontcolor="green"]
+subgraph cluster_28 {
+label=""
+color=white
+fontcolor=white
+node28 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node23 -> node29 [color="orange", fontcolor="orange"]
+subgraph cluster_29 {
+label=""
+color=white
+fontcolor=white
+node29 [label="/regenerateKeys\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node29 -> node30 [color="green", fontcolor="green"]
+subgraph cluster_30 {
+label=""
+color=white
+fontcolor=white
+node30 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node17 -> node31 [color="blue", fontcolor="blue"]
+subgraph cluster_31 {
+label=""
+color=white
+fontcolor=white
+node31 [label="/subscriptions\n Read-Only Collection\nbut\nMissing POST Method", shape="ellipse", color="red", fontcolor="red"]
+node31 -> node32 [color="green", fontcolor="green"]
+subgraph cluster_32 {
+label=""
+color=white
+fontcolor=white
+node32 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node31 -> node33 [color="blue", fontcolor="blue"]
+subgraph cluster_33 {
+label=""
+color=white
+fontcolor=white
+node33 [label="/{subscriptionName}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node33 -> node34 [color="green", fontcolor="green"]
+subgraph cluster_34 {
+label=""
+color=white
+fontcolor=white
+node34 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node33 -> node35 [color="green", fontcolor="green"]
+subgraph cluster_35 {
+label=""
+color=white
+fontcolor=white
+node35 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node33 -> node36 [color="green", fontcolor="green"]
+subgraph cluster_36 {
+label=""
+color=white
+fontcolor=white
+node36 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node33 -> node37 [color="blue", fontcolor="blue"]
+subgraph cluster_37 {
+label=""
+color=white
+fontcolor=white
+node37 [label="/rules\n Read-Only Collection\nbut\nMissing POST Method", shape="ellipse", color="red", fontcolor="red"]
+node37 -> node38 [color="green", fontcolor="green"]
+subgraph cluster_38 {
+label=""
+color=white
+fontcolor=white
+node38 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node37 -> node39 [color="blue", fontcolor="blue"]
+subgraph cluster_39 {
+label=""
+color=white
+fontcolor=white
+node39 [label="/{ruleName}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node39 -> node40 [color="green", fontcolor="green"]
+subgraph cluster_40 {
+label=""
+color=white
+fontcolor=white
+node40 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node39 -> node41 [color="green", fontcolor="green"]
+subgraph cluster_41 {
+label=""
+color=white
+fontcolor=white
+node41 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node39 -> node42 [color="green", fontcolor="green"]
+subgraph cluster_42 {
+label=""
+color=white
+fontcolor=white
+node42 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+node10 -> node43 [color="blue", fontcolor="blue"]
+subgraph cluster_43 {
+label=""
+color=white
+fontcolor=white
+node43 [label="/AuthorizationRules\n Read-Only Collection\nbut\nMissing POST Method", shape="ellipse", color="red", fontcolor="red"]
+node43 -> node44 [color="green", fontcolor="green"]
+subgraph cluster_44 {
+label=""
+color=white
+fontcolor=white
+node44 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node43 -> node45 [color="blue", fontcolor="blue"]
+subgraph cluster_45 {
+label=""
+color=white
+fontcolor=white
+node45 [label="/{authorizationRuleName}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node45 -> node46 [color="green", fontcolor="green"]
+subgraph cluster_46 {
+label=""
+color=white
+fontcolor=white
+node46 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node45 -> node47 [color="green", fontcolor="green"]
+subgraph cluster_47 {
+label=""
+color=white
+fontcolor=white
+node47 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node45 -> node48 [color="green", fontcolor="green"]
+subgraph cluster_48 {
+label=""
+color=white
+fontcolor=white
+node48 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node45 -> node49 [color="orange", fontcolor="orange"]
+subgraph cluster_49 {
+label=""
+color=white
+fontcolor=white
+node49 [label="/listKeys\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node49 -> node50 [color="green", fontcolor="green"]
+subgraph cluster_50 {
+label=""
+color=white
+fontcolor=white
+node50 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node45 -> node51 [color="orange", fontcolor="orange"]
+subgraph cluster_51 {
+label=""
+color=white
+fontcolor=white
+node51 [label="/regenerateKeys\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node51 -> node52 [color="green", fontcolor="green"]
+subgraph cluster_52 {
+label=""
+color=white
+fontcolor=white
+node52 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node10 -> node53 [color="blue", fontcolor="blue"]
+subgraph cluster_53 {
+label=""
+color=white
+fontcolor=white
+node53 [label="/eventhubs\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node53 -> node54 [color="green", fontcolor="green"]
+subgraph cluster_54 {
+label=""
+color=white
+fontcolor=white
+node54 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node10 -> node55 [color="blue", fontcolor="blue"]
+subgraph cluster_55 {
+label=""
+color=white
+fontcolor=white
+node55 [label="/queues\n Read-Only Collection\nbut\nMissing POST Method", shape="ellipse", color="red", fontcolor="red"]
+node55 -> node56 [color="green", fontcolor="green"]
+subgraph cluster_56 {
+label=""
+color=white
+fontcolor=white
+node56 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node55 -> node57 [color="blue", fontcolor="blue"]
+subgraph cluster_57 {
+label=""
+color=white
+fontcolor=white
+node57 [label="/{queueName}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node57 -> node58 [color="green", fontcolor="green"]
+subgraph cluster_58 {
+label=""
+color=white
+fontcolor=white
+node58 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node57 -> node59 [color="green", fontcolor="green"]
+subgraph cluster_59 {
+label=""
+color=white
+fontcolor=white
+node59 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node57 -> node60 [color="green", fontcolor="green"]
+subgraph cluster_60 {
+label=""
+color=white
+fontcolor=white
+node60 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node57 -> node61 [color="blue", fontcolor="blue"]
+subgraph cluster_61 {
+label=""
+color=white
+fontcolor=white
+node61 [label="/authorizationRules\n Read-Only Collection\nbut\nMissing POST Method", shape="ellipse", color="red", fontcolor="red"]
+node61 -> node62 [color="green", fontcolor="green"]
+subgraph cluster_62 {
+label=""
+color=white
+fontcolor=white
+node62 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node61 -> node63 [color="blue", fontcolor="blue"]
+subgraph cluster_63 {
+label=""
+color=white
+fontcolor=white
+node63 [label="/{authorizationRuleName}\n Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node63 -> node64 [color="green", fontcolor="green"]
+subgraph cluster_64 {
+label=""
+color=white
+fontcolor=white
+node64 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node63 -> node65 [color="green", fontcolor="green"]
+subgraph cluster_65 {
+label=""
+color=white
+fontcolor=white
+node65 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node63 -> node66 [color="green", fontcolor="green"]
+subgraph cluster_66 {
+label=""
+color=white
+fontcolor=white
+node66 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node63 -> node67 [color="orange", fontcolor="orange"]
+subgraph cluster_67 {
+label=""
+color=white
+fontcolor=white
+node67 [label="/ListKeys\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node67 -> node68 [color="green", fontcolor="green"]
+subgraph cluster_68 {
+label=""
+color=white
+fontcolor=white
+node68 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node63 -> node69 [color="orange", fontcolor="orange"]
+subgraph cluster_69 {
+label=""
+color=white
+fontcolor=white
+node69 [label="/regenerateKeys\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node69 -> node70 [color="green", fontcolor="green"]
+subgraph cluster_70 {
+label=""
+color=white
+fontcolor=white
+node70 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+node3 -> node71 [color="black", fontcolor="black"]
+subgraph cluster_71 {
+label=""
+color=white
+fontcolor=white
+node71 [label="/providers", shape="ellipse", color="black", fontcolor="black"]
+node71 -> node72 [color="blue", fontcolor="blue"]
+subgraph cluster_72 {
+label=""
+color=white
+fontcolor=white
+node72 [label="/Microsoft.ServiceBus\n SubResource\nbut\nMissing GET Method", shape="ellipse", color="red", fontcolor="red"]
+node72 -> node73 [color="blue", fontcolor="blue"]
+subgraph cluster_73 {
+label=""
+color=white
+fontcolor=white
+node73 [label="/namespaces\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node73 -> node74 [color="green", fontcolor="green"]
+subgraph cluster_74 {
+label=""
+color=white
+fontcolor=white
+node74 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node72 -> node75 [color="blue", fontcolor="blue"]
+subgraph cluster_75 {
+label=""
+color=white
+fontcolor=white
+node75 [label="/premiumMessagingRegions\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node75 -> node76 [color="green", fontcolor="green"]
+subgraph cluster_76 {
+label=""
+color=white
+fontcolor=white
+node76 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node72 -> node77 [color="orange", fontcolor="orange"]
+subgraph cluster_77 {
+label=""
+color=white
+fontcolor=white
+node77 [label="/CheckNameAvailability\n Controller", shape="octagon", color="orange", fontcolor="orange"]
+node77 -> node78 [color="green", fontcolor="green"]
+subgraph cluster_78 {
+label=""
+color=white
+fontcolor=white
+node78 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node72 -> node79 [color="black", fontcolor="black"]
+subgraph cluster_79 {
+label=""
+color=white
+fontcolor=white
+node79 [label="/sku", shape="ellipse", color="black", fontcolor="black"]
+node79 -> node80 [color="black", fontcolor="black"]
+subgraph cluster_80 {
+label=""
+color=white
+fontcolor=white
+node80 [label="/{sku}", shape="ellipse", color="black", fontcolor="black"]
+node80 -> node81 [color="blue", fontcolor="blue"]
+subgraph cluster_81 {
+label=""
+color=white
+fontcolor=white
+node81 [label="/regions\n Read-Only SubResource", shape="ellipse", color="blue", fontcolor="blue"]
+node81 -> node82 [color="green", fontcolor="green"]
+subgraph cluster_82 {
+label=""
+color=white
+fontcolor=white
+node82 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}
+node1 -> node83 [color="black", fontcolor="black"]
+subgraph cluster_83 {
+label=""
+color=white
+fontcolor=white
+node83 [label="/providers", shape="ellipse", color="black", fontcolor="black"]
+node83 -> node84 [color="black", fontcolor="black"]
+subgraph cluster_84 {
+label=""
+color=white
+fontcolor=white
+node84 [label="/Microsoft.ServiceBus", shape="ellipse", color="black", fontcolor="black"]
+node84 -> node85 [color="blue", fontcolor="blue"]
+subgraph cluster_85 {
+label=""
+color=white
+fontcolor=white
+node85 [label="/operations\n Read-Only Singleton Resource", shape="ellipse", color="blue", fontcolor="blue"]
+node85 -> node86 [color="green", fontcolor="green"]
+subgraph cluster_86 {
+label=""
+color=white
+fontcolor=white
+node86 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}

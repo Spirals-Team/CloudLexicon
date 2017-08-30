@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - BillingManagementClient 2017-04-24-preview", fontsize=24]
+splines=true
+"billingPeriods" [color=blue, fontcolor=blue, shape=doublecircle]
+"invoices" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"latest" -> "invoices" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"latest" [color=blue, fontcolor=blue, shape=ellipse]
+}

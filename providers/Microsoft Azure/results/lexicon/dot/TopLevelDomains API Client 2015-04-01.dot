@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - TopLevelDomains API Client 2015-04-01", fontsize=24]
+splines=true
+"topLevelDomains" [color=blue, fontcolor=blue, shape=doublecircle]
+"listAgreements" [color=orange, fontcolor=orange, shape=box]
+"listAgreements" -> "topLevelDomains" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - CognitiveServicesManagementClient 2017-04-18", fontsize=24]
+splines=true
+"accounts" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"listKeys" [color=orange, fontcolor=orange, shape=box]
+"listKeys" -> "accounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"regenerateKey" [color=orange, fontcolor=orange, shape=box]
+"regenerateKey" -> "accounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"skus" -> "accounts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"skus" [color=blue, fontcolor=blue, shape=ellipse]
+"checkSkuAvailability" [color=orange, fontcolor=orange, shape=box]
+}

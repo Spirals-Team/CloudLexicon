@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - AzureAnalysisServices 2017-07-14", fontsize=24]
+splines=true
+"skus" [color=blue, fontcolor=blue, shape=doublecircle]
+"servers" [color=blue, fontcolor=blue, shape=doublecircle]
+"listGatewayStatus" [color=orange, fontcolor=orange, shape=box]
+"listGatewayStatus" -> "servers" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"suspend" [color=orange, fontcolor=orange, shape=box]
+"suspend" -> "servers" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"skus" -> "servers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"resume" [color=orange, fontcolor=orange, shape=box]
+"resume" -> "servers" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

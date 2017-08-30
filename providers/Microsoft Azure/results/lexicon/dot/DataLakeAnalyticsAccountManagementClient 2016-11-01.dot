@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - DataLakeAnalyticsAccountManagementClient 2016-11-01", fontsize=24]
+splines=true
+"accounts" [color=blue, fontcolor=blue, shape=doublecircle]
+"StorageAccounts" -> "accounts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"StorageAccounts" [color=blue, fontcolor=blue, shape=ellipse]
+"Containers" -> "StorageAccounts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"Containers" [color=blue, fontcolor=blue, shape=ellipse]
+"listSasTokens" [color=orange, fontcolor=orange, shape=box]
+"listSasTokens" -> "Containers" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"DataLakeStoreAccounts" -> "accounts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"DataLakeStoreAccounts" [color=blue, fontcolor=blue, shape=ellipse]
+"firewallRules" -> "accounts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"firewallRules" [color=blue, fontcolor=blue, shape=ellipse]
+"computePolicies" -> "accounts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"computePolicies" [color=blue, fontcolor=blue, shape=ellipse]
+}

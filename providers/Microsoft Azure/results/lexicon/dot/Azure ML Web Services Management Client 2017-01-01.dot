@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - Azure ML Web Services Management Client 2017-01-01", fontsize=24]
+splines=true
+"webServices" [color=blue, fontcolor=blue, shape=doublecircle]
+"listKeys" [color=orange, fontcolor=orange, shape=box]
+"listKeys" -> "webServices" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"CreateRegionalBlob" [color=orange, fontcolor=orange, shape=box]
+"CreateRegionalBlob" -> "webServices" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

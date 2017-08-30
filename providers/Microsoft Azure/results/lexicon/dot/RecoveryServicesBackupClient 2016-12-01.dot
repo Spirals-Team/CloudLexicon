@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - RecoveryServicesBackupClient 2016-12-01", fontsize=24]
+splines=true
+"vaultstorageconfig" [color=blue, fontcolor=blue, shape=doublecircle]
+"vaultconfig" [color=blue, fontcolor=blue, shape=doublecircle]
+}

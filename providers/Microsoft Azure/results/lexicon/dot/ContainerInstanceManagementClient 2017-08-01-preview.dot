@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - ContainerInstanceManagementClient 2017-08-01-preview", fontsize=24]
+splines=true
+"containerGroups" [color=blue, fontcolor=blue, shape=doublecircle]
+"containers" -> "containerGroups" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"logs" -> "containerGroups" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"logs" [color=blue, fontcolor=blue, shape=ellipse]
+}

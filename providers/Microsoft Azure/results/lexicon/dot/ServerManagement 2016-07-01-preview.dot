@@ -1,0 +1,20 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - ServerManagement 2016-07-01-preview", fontsize=24]
+splines=true
+"nodes" [color=blue, fontcolor=blue, shape=doublecircle]
+"gateways" [color=blue, fontcolor=blue, shape=doublecircle]
+"pssessions" -> "nodes" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"pssessions" [color=blue, fontcolor=blue, shape=ellipse]
+"invokeCommand" [color=orange, fontcolor=orange, shape=box]
+"invokeCommand" -> "pssessions" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"cancel" [color=orange, fontcolor=orange, shape=box]
+"cancel" -> "pssessions" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"tab" [color=orange, fontcolor=orange, shape=box]
+"tab" -> "pssessions" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"upgradetolatest" [color=orange, fontcolor=orange, shape=box]
+"upgradetolatest" -> "gateways" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"profile" [color=orange, fontcolor=orange, shape=box]
+"profile" -> "gateways" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"regenerateprofile" [color=orange, fontcolor=orange, shape=box]
+"regenerateprofile" -> "gateways" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

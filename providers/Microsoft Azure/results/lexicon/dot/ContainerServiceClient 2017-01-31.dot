@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - ContainerServiceClient 2017-01-31", fontsize=24]
+splines=true
+"containerServices" [color=blue, fontcolor=blue, shape=doublecircle]
+}

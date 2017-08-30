@@ -1,0 +1,10 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - AuthorizationManagementClient 2015-07-01", fontsize=24]
+splines=true
+"roleDefinitions" [color=blue, fontcolor=blue, shape=doublecircle]
+"roleAssignments" [color=blue, fontcolor=blue, shape=doublecircle]
+"permissions" [color=blue, fontcolor=blue, shape=doublecircle]
+"classicAdministrators" [color=blue, fontcolor=blue, shape=doublecircle]
+"providerOperations" [color=blue, fontcolor=blue, shape=doublecircle]
+"providers" -> "providerOperations" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

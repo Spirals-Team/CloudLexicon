@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - ServiceFabricManagementClient 2016-09-01", fontsize=24]
+splines=true
+"clusterVersions" [color=blue, fontcolor=blue, shape=doublecircle]
+"clusters" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"clusters" -> "clusterVersions" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

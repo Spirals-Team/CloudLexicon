@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - NetworkManagementClient 2017-03-30", fontsize=24]
+splines=true
+"networkInterfaces" [color=blue, fontcolor=blue, shape=doublecircle]
+"publicipaddresses" [color=blue, fontcolor=blue, shape=doublecircle]
+}

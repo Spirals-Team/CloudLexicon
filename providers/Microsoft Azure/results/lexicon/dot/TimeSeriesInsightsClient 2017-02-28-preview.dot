@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - TimeSeriesInsightsClient 2017-02-28-preview", fontsize=24]
+splines=true
+"environments" [color=blue, fontcolor=blue, shape=doublecircle]
+"accessPolicies" -> "environments" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"accessPolicies" [color=blue, fontcolor=blue, shape=ellipse]
+"eventSources" -> "environments" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"eventSources" [color=blue, fontcolor=blue, shape=ellipse]
+"referenceDataSets" -> "environments" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"referenceDataSets" [color=blue, fontcolor=blue, shape=ellipse]
+}

@@ -1,0 +1,14 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - PostgreSQLManagementClient 2017-04-30-preview", fontsize=24]
+splines=true
+"servers" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"databases" -> "servers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"databases" [color=blue, fontcolor=blue, shape=ellipse]
+"firewallRules" -> "servers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"firewallRules" [color=blue, fontcolor=blue, shape=ellipse]
+"logFiles" -> "servers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"logFiles" [color=blue, fontcolor=blue, shape=ellipse]
+"configurations" -> "servers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"configurations" [color=blue, fontcolor=blue, shape=ellipse]
+}

@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - FeatureClient 2015-12-01", fontsize=24]
+splines=true
+"features" [color=blue, fontcolor=blue, shape=doublecircle]
+"register" [color=orange, fontcolor=orange, shape=box]
+"register" -> "features" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

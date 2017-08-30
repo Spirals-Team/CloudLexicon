@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - StorageImportExport 2016-11-01", fontsize=24]
+splines=true
+"locations" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"Microsoft.ImportExport" [color=blue, fontcolor=blue, shape=doublecircle]
+"jobs" [color=blue, fontcolor=blue, shape=doublecircle]
+"jobs" -> "Microsoft.ImportExport" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"listBitLockerKeys" [color=orange, fontcolor=orange, shape=box]
+"listBitLockerKeys" -> "jobs" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"moveResources" [color=orange, fontcolor=orange, shape=box]
+"moveResources" -> "Microsoft.ImportExport" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

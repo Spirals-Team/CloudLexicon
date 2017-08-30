@@ -1,0 +1,16 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - Domains API Client 2015-04-01", fontsize=24]
+splines=true
+"domains" [color=blue, fontcolor=blue, shape=doublecircle]
+"Microsoft.DomainRegistration" [color=blue, fontcolor=blue, shape=doublecircle]
+"domainOwnershipIdentifiers" -> "domains" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"domainOwnershipIdentifiers" [color=blue, fontcolor=blue, shape=ellipse]
+"domains" -> "domainOwnershipIdentifiers" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"domains" -> "Microsoft.DomainRegistration" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"checkDomainAvailability" [color=orange, fontcolor=orange, shape=box]
+"checkDomainAvailability" -> "Microsoft.DomainRegistration" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"generateSsoRequest" [color=orange, fontcolor=orange, shape=box]
+"generateSsoRequest" -> "Microsoft.DomainRegistration" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"listDomainRecommendations" [color=orange, fontcolor=orange, shape=box]
+"listDomainRecommendations" -> "Microsoft.DomainRegistration" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

@@ -1,0 +1,48 @@
+['./datasets/DatasetURIs.csv']
+
+-------------------- API --------------------
+
+Number of providers = 1
+Number of services = 70
+Number of resources = 956
+Number of controllers = 295
+Number of queries = 0
+Number of methods = 1820
+ - 5 HEAD (0.27%)
+ - 883 GET (48.52%)
+ - 116 PATCH (6.37%)
+ - 255 PUT (14.01%)
+ - 317 POST (17.42%)
+ - 244 DELETE (13.41%)
+
+-------------------- LEXICON --------------------
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+******************************     0 terms are common to 0 of 1 providers      ******************************
+******************************     622 terms are common to 1 of 1 providers      ******************************
+
+Number of terms = 622
+Number of nouns = 416 (66.88%)
+Number of verbs = 206 (33.12%)
+Number of singular terms = 88 (14.15%)
+Number of plural terms = 534 (85.85%)
+Number of lower case terms = 261 (41.96%)
+Number of upper case terms = 0 (0.00%)
+Number of camel case terms = 361 (58.04%)
+Number of hyphen terms = 0 (0.00%)
+Number of underscore terms = 0 (0.00%)
+Number of business terms = 622 (100.00%)
+Number of engineering terms = 0 (0.00%)
+
+
+-------------------- QUALITY --------------------
+
+Microsoft Azure is REST ;-)
+scoreRest = 0.837912087912
+Microsoft Azure: GOOD API naming or API Naming Uniformity Pattern
+scoreNaming = 0.58038585209
+Microsoft Azure: GOOD business API design or Business-Oriented API Naming Pattern 622 (100.00%)
+scoreBusiness = 1.0
+Total score = 0.806099313334

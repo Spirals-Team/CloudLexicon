@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - RecoveryServicesBackupClient 2017-07-01", fontsize=24]
+splines=true
+"backupJobs" [color=blue, fontcolor=blue, shape=doublecircle]
+}

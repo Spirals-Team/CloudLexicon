@@ -1,0 +1,20 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - RedisManagementClient 2017-02-01", fontsize=24]
+splines=true
+"Redis" [color=blue, fontcolor=blue, shape=doublecircle]
+"linkedServers" -> "Redis" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"linkedServers" [color=blue, fontcolor=blue, shape=ellipse]
+"import" [color=orange, fontcolor=orange, shape=box]
+"import" -> "Redis" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"export" -> "import" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"export" [color=orange, fontcolor=orange, shape=box]
+"export" -> "Redis" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"forceReboot" [color=orange, fontcolor=orange, shape=box]
+"forceReboot" -> "Redis" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"default" -> "Redis" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"default" [color=blue, fontcolor=blue, shape=ellipse]
+"regenerateKey" [color=orange, fontcolor=orange, shape=box]
+"regenerateKey" -> "Redis" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"listKeys" [color=orange, fontcolor=orange, shape=box]
+"listKeys" -> "Redis" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

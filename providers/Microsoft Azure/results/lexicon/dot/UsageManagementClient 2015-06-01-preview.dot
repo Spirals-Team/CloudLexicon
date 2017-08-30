@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - UsageManagementClient 2015-06-01-preview", fontsize=24]
+splines=true
+"UsageAggregates" [color=blue, fontcolor=blue, shape=doublecircle]
+"RateCard" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,14 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - ContainerRegistryManagementClient 2017-03-01", fontsize=24]
+splines=true
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"registries" [color=blue, fontcolor=blue, shape=doublecircle]
+"Microsoft.ContainerRegistry" [color=blue, fontcolor=blue, shape=doublecircle]
+"regenerateCredential" [color=orange, fontcolor=orange, shape=box]
+"regenerateCredential" -> "registries" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"listCredentials" [color=orange, fontcolor=orange, shape=box]
+"listCredentials" -> "registries" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"registries" -> "Microsoft.ContainerRegistry" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"checkNameAvailability" [color=orange, fontcolor=orange, shape=box]
+"checkNameAvailability" -> "Microsoft.ContainerRegistry" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

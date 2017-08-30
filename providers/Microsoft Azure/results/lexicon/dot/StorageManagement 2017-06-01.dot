@@ -1,0 +1,20 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - StorageManagement 2017-06-01", fontsize=24]
+splines=true
+"Microsoft.Storage" [color=blue, fontcolor=blue, shape=doublecircle]
+"storageAccounts" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"usages" -> "Microsoft.Storage" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"usages" [color=blue, fontcolor=blue, shape=ellipse]
+"checkNameAvailability" [color=orange, fontcolor=orange, shape=box]
+"checkNameAvailability" -> "Microsoft.Storage" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"storageAccounts" -> "Microsoft.Storage" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"listKeys" [color=orange, fontcolor=orange, shape=box]
+"listKeys" -> "storageAccounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"regenerateKey" [color=orange, fontcolor=orange, shape=box]
+"regenerateKey" -> "storageAccounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"ListAccountSas" [color=orange, fontcolor=orange, shape=box]
+"ListAccountSas" -> "storageAccounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"ListServiceSas" [color=orange, fontcolor=orange, shape=box]
+"ListServiceSas" -> "storageAccounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - Azure Action Groups API 2017-04-01", fontsize=24]
+splines=true
+"actionGroups" [color=blue, fontcolor=blue, shape=doublecircle]
+"subscribe" [color=orange, fontcolor=orange, shape=box]
+"subscribe" -> "actionGroups" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

@@ -1,0 +1,14 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - Power BI Embedded Management Client 2016-01-29", fontsize=24]
+splines=true
+"workspaceCollections" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"moveResources" [color=orange, fontcolor=orange, shape=box]
+"workspaces" -> "workspaceCollections" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"regenerateKey" [color=orange, fontcolor=orange, shape=box]
+"regenerateKey" -> "workspaceCollections" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"workspaces" [color=blue, fontcolor=blue, shape=ellipse]
+"listKeys" [color=orange, fontcolor=orange, shape=box]
+"listKeys" -> "workspaceCollections" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"checkNameAvailability" [color=orange, fontcolor=orange, shape=box]
+}

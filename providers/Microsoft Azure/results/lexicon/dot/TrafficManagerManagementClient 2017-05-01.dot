@@ -1,0 +1,10 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - TrafficManagerManagementClient 2017-05-01", fontsize=24]
+splines=true
+"trafficmanagerprofiles" [color=blue, fontcolor=blue, shape=doublecircle]
+"Microsoft.Network" [color=blue, fontcolor=blue, shape=doublecircle]
+"checkTrafficManagerNameAvailability" [color=orange, fontcolor=orange, shape=box]
+"checkTrafficManagerNameAvailability" -> "Microsoft.Network" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"default" -> "Microsoft.Network" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"default" [color=blue, fontcolor=blue, shape=ellipse]
+}

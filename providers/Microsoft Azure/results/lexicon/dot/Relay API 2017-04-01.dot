@@ -1,0 +1,22 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - Relay API 2017-04-01", fontsize=24]
+splines=true
+"namespaces" [color=blue, fontcolor=blue, shape=doublecircle]
+"Microsoft.Relay" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"authorizationRules" -> "namespaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"authorizationRules" [color=blue, fontcolor=blue, shape=ellipse]
+"regenerateKeys" [color=orange, fontcolor=orange, shape=box]
+"regenerateKeys" -> "authorizationRules" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"listKeys" [color=orange, fontcolor=orange, shape=box]
+"listKeys" -> "authorizationRules" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"wcfRelays" -> "namespaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"wcfRelays" [color=blue, fontcolor=blue, shape=ellipse]
+"authorizationRules" -> "wcfRelays" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"hybridConnections" -> "namespaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"hybridConnections" [color=blue, fontcolor=blue, shape=ellipse]
+"authorizationRules" -> "hybridConnections" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"checkNameAvailability" [color=orange, fontcolor=orange, shape=box]
+"checkNameAvailability" -> "Microsoft.Relay" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"namespaces" -> "Microsoft.Relay" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+}

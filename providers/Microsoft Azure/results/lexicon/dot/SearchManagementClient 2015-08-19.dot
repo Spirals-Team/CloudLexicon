@@ -1,0 +1,12 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - SearchManagementClient 2015-08-19", fontsize=24]
+splines=true
+"searchServices" [color=blue, fontcolor=blue, shape=doublecircle]
+"Microsoft.Search" [color=blue, fontcolor=blue, shape=doublecircle]
+"listAdminKeys" [color=orange, fontcolor=orange, shape=box]
+"listAdminKeys" -> "searchServices" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"listQueryKeys" [color=orange, fontcolor=orange, shape=box]
+"listQueryKeys" -> "searchServices" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"checkNameAvailability" [color=orange, fontcolor=orange, shape=box]
+"checkNameAvailability" -> "Microsoft.Search" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

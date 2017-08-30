@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - Azure Activity Log Alerts API 2017-04-01", fontsize=24]
+splines=true
+"activityLogAlerts" [color=blue, fontcolor=blue, shape=doublecircle]
+}

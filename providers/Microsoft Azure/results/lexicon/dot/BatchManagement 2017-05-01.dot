@@ -1,0 +1,18 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - BatchManagement 2017-05-01", fontsize=24]
+splines=true
+"batchAccounts" [color=blue, fontcolor=blue, shape=doublecircle]
+"quotas" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"applications" -> "batchAccounts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"applications" [color=blue, fontcolor=blue, shape=ellipse]
+"activate" [color=orange, fontcolor=orange, shape=box]
+"activate" -> "applications" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"listKeys" [color=orange, fontcolor=orange, shape=box]
+"listKeys" -> "batchAccounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"regenerateKeys" [color=orange, fontcolor=orange, shape=box]
+"regenerateKeys" -> "batchAccounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"syncAutoStorageKeys" [color=orange, fontcolor=orange, shape=box]
+"syncAutoStorageKeys" -> "batchAccounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"checkNameAvailability" [color=orange, fontcolor=orange, shape=box]
+}

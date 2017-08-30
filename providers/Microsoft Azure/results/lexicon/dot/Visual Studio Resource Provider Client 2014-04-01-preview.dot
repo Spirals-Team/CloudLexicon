@@ -1,0 +1,14 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - Visual Studio Resource Provider Client 2014-04-01-preview", fontsize=24]
+splines=true
+"project" [color=blue, fontcolor=blue, shape=doublecircle]
+"microsoft.visualstudio" [color=blue, fontcolor=blue, shape=doublecircle]
+"account" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"status" -> "project" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"status" [color=blue, fontcolor=blue, shape=ellipse]
+"checkNameAvailability" [color=orange, fontcolor=orange, shape=box]
+"checkNameAvailability" -> "microsoft.visualstudio" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"extension" -> "account" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"extension" [color=blue, fontcolor=blue, shape=ellipse]
+}

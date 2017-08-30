@@ -1,0 +1,21 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - HDInsightManagementClient 2015-03-01-preview", fontsize=24]
+splines=true
+"clusters" [color=blue, fontcolor=blue, shape=doublecircle]
+"capabilities" [color=blue, fontcolor=blue, shape=doublecircle]
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"applications" -> "clusters" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"applications" [color=blue, fontcolor=blue, shape=ellipse]
+"resize" [color=orange, fontcolor=orange, shape=box]
+"resize" -> "clusters" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"changerdpsetting" [color=orange, fontcolor=orange, shape=box]
+"changerdpsetting" -> "clusters" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"executeScriptActions" [color=orange, fontcolor=orange, shape=box]
+"executeScriptActions" -> "clusters" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"scriptActions" -> "clusters" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"scriptActions" [color=blue, fontcolor=blue, shape=ellipse]
+"scriptExecutionHistory" -> "clusters" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"scriptExecutionHistory" [color=blue, fontcolor=blue, shape=ellipse]
+"promote" [color=orange, fontcolor=orange, shape=box]
+"promote" -> "scriptExecutionHistory" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

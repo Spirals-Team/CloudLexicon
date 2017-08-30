@@ -1,0 +1,16 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - Cosmos DB 2015-04-08", fontsize=24]
+splines=true
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"databaseAccounts" [color=blue, fontcolor=blue, shape=doublecircle]
+"regenerateKey" [color=orange, fontcolor=orange, shape=box]
+"regenerateKey" -> "databaseAccounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"listConnectionStrings" [color=orange, fontcolor=orange, shape=box]
+"listConnectionStrings" -> "databaseAccounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"readonlykeys" -> "databaseAccounts" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"readonlykeys" [color=blue, fontcolor=blue, shape=ellipse]
+"failoverPriorityChange" [color=orange, fontcolor=orange, shape=box]
+"failoverPriorityChange" -> "databaseAccounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"listKeys" [color=orange, fontcolor=orange, shape=box]
+"listKeys" -> "databaseAccounts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

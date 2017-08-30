@@ -1,0 +1,21 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - Azure Log Analytics 2015-11-01-preview", fontsize=24]
+splines=true
+"workspaces" [color=blue, fontcolor=blue, shape=doublecircle]
+"intelligencePacks" -> "workspaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"intelligencePacks" [color=blue, fontcolor=blue, shape=ellipse]
+"Disable" [color=orange, fontcolor=orange, shape=box]
+"Disable" -> "intelligencePacks" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"Enable" [color=orange, fontcolor=orange, shape=box]
+"Enable" -> "intelligencePacks" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"linkedServices" -> "workspaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"linkedServices" [color=blue, fontcolor=blue, shape=ellipse]
+"sharedKeys" -> "workspaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"sharedKeys" [color=blue, fontcolor=blue, shape=ellipse]
+"usages" -> "workspaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"usages" [color=blue, fontcolor=blue, shape=ellipse]
+"dataSources" -> "workspaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"dataSources" [color=blue, fontcolor=blue, shape=ellipse]
+"managementGroups" -> "workspaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"managementGroups" [color=blue, fontcolor=blue, shape=ellipse]
+}

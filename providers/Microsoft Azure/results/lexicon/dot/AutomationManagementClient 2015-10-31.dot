@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - AutomationManagementClient 2015-10-31", fontsize=24]
+splines=true
+"webhooks" [color=blue, fontcolor=blue, shape=doublecircle]
+"generateUri" [color=orange, fontcolor=orange, shape=box]
+"generateUri" -> "webhooks" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

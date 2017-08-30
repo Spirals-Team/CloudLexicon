@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - AppInsightsManagementClient 2015-05-01", fontsize=24]
+splines=true
+"operations" [color=blue, fontcolor=blue, shape=doublecircle]
+"components" [color=blue, fontcolor=blue, shape=doublecircle]
+"webtests" [color=blue, fontcolor=blue, shape=doublecircle]
+}

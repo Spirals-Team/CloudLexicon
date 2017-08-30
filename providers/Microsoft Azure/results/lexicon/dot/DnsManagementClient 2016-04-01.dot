@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - DnsManagementClient 2016-04-01", fontsize=24]
+splines=true
+"dnsZones" [color=blue, fontcolor=blue, shape=doublecircle]
+"dnszones" [color=blue, fontcolor=blue, shape=doublecircle]
+"recordsets" -> "dnsZones" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"recordsets" [color=blue, fontcolor=blue, shape=ellipse]
+}

@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Microsoft Azure - ManagedApplicationClient 2016-09-01-preview", fontsize=24]
+splines=true
+"applianceDefinitions" [color=blue, fontcolor=blue, shape=doublecircle]
+"appliances" [color=blue, fontcolor=blue, shape=doublecircle]
+"appliances" -> "applianceDefinitions" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}
