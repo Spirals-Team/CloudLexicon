@@ -87,7 +87,7 @@ def generateNode(context, node, parentResource):
 				if nodeTerm != targetTerm and context.lexicon.get(targetTerm):
 					context.drawArrow(node, targetTerm, 'grey', 'none', ', style=dashed')
 			for antonym in lexicon.antonyms(term):
-				for a in [antonym, antonym.title()]:
+				for a in [antonym, antonym.title(), antonym.upper()]:
 					antonymNodeTerm = nodeTerm.replace(term, a)
 					if context.lexicon.get(antonymNodeTerm):
 						context.drawArrow(node, antonymNodeTerm, 'red', 'none')
