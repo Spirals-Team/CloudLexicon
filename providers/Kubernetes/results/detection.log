@@ -1,0 +1,172 @@
+--------------------------------------------------------------------------------
+Read-Only Pattern - 39 detected:
+ * http:///api/v1beta3/api/v1beta3/limitranges
+ * http:///api/v1beta3/api/v1beta3/resourcequotas
+ * http:///api/v1beta3/api/v1beta3/watch/pods
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/events
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/events/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/limitranges
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/limitranges/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/resourcequotas
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/resourcequotas/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/replicationcontrollers
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/replicationcontrollers/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/pods
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/pods/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/services
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/services/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/endpoints
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/endpoints/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/secrets
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/secrets/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/limitranges
+ * http:///api/v1beta3/api/v1beta3/watch/events
+ * http:///api/v1beta3/api/v1beta3/watch/nodes
+ * http:///api/v1beta3/api/v1beta3/watch/nodes/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/replicationcontrollers
+ * http:///api/v1beta3/api/v1beta3/watch/secrets
+ * http:///api/v1beta3/api/v1beta3/watch/services
+ * http:///api/v1beta3/api/v1beta3/watch/resourcequotas
+ * http:///api/v1beta3/api/v1beta3/watch/endpoints
+ * http:///api/v1beta3/api/v1beta3/redirect/namespaces/{namespaces}/services/{name}
+ * http:///api/v1beta3/api/v1beta3/redirect/namespaces/{namespaces}/pods/{name}
+ * http:///api/v1beta3/api/v1beta3/redirect/nodes/{name}
+ * http:///api/v1beta3/api/v1beta3/replicationcontrollers
+ * http:///api/v1beta3/api/v1beta3/pods
+ * http:///api/v1beta3/api/v1beta3/secrets
+ * http:///api/v1beta3/api/v1beta3/endpoints
+ * http:///api/v1beta3/api/v1beta3/services
+ * http:///api/v1beta3/api/v1beta3/events
+
+--------------------------------------------------------------------------------
+Resource Pattern - 29 detected:
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/events/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/limitranges/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/resourcequotas/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/replicationcontrollers/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/pods/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/services/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/endpoints/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/secrets/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{name}
+ * http:///api/v1beta3/api/v1beta3/watch/nodes/{name}
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/services/{name}
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/resourcequotas/{name}
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/limitranges/{name}
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/replicationcontrollers/{name}
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/events/{name}
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/pods/{name}
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/endpoints/{name}
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/secrets/{name}
+ * http:///api/v1beta3/api/v1beta3/namespaces/{name}
+ * http:///api/v1beta3/api/v1beta3/redirect/namespaces/{namespaces}/services/{name}
+ * http:///api/v1beta3/api/v1beta3/redirect/namespaces/{namespaces}/pods/{name}
+ * http:///api/v1beta3/api/v1beta3/redirect/nodes/{name}
+ * http:///api/v1beta3/api/v1beta3/nodes/{name}
+ * http:///api/v1beta3/api/v1beta3/proxy/nodes/{name}
+ * http:///api/v1beta3/api/v1beta3/proxy/nodes/{name}/{path:*}
+ * http:///api/v1beta3/api/v1beta3/proxy/namespaces/{namespaces}/pods/{name}
+ * http:///api/v1beta3/api/v1beta3/proxy/namespaces/{namespaces}/pods/{name}/{path:*}
+ * http:///api/v1beta3/api/v1beta3/proxy/namespaces/{namespaces}/services/{name}
+ * http:///api/v1beta3/api/v1beta3/proxy/namespaces/{namespaces}/services/{name}/{path:*}
+
+--------------------------------------------------------------------------------
+Singleton Resource Pattern - 16 detected:
+ * http:///api/v1beta3/api/v1beta3/limitranges
+ * http:///api/v1beta3/api/v1beta3/resourcequotas
+ * http:///api/v1beta3/api/v1beta3/watch/pods
+ * http:///api/v1beta3/api/v1beta3/watch/limitranges
+ * http:///api/v1beta3/api/v1beta3/watch/events
+ * http:///api/v1beta3/api/v1beta3/watch/replicationcontrollers
+ * http:///api/v1beta3/api/v1beta3/watch/secrets
+ * http:///api/v1beta3/api/v1beta3/watch/services
+ * http:///api/v1beta3/api/v1beta3/watch/resourcequotas
+ * http:///api/v1beta3/api/v1beta3/watch/endpoints
+ * http:///api/v1beta3/api/v1beta3/replicationcontrollers
+ * http:///api/v1beta3/api/v1beta3/pods
+ * http:///api/v1beta3/api/v1beta3/secrets
+ * http:///api/v1beta3/api/v1beta3/endpoints
+ * http:///api/v1beta3/api/v1beta3/services
+ * http:///api/v1beta3/api/v1beta3/events
+
+--------------------------------------------------------------------------------
+SubResource Pattern - 2 detected:
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/bindings
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/resourcequotausages
+
+--------------------------------------------------------------------------------
+Collection Pattern - 20 detected:
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/events
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/limitranges
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/resourcequotas
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/replicationcontrollers
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/pods
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/services
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/endpoints
+ * http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/secrets
+ * http:///api/v1beta3/api/v1beta3/watch/nodes
+ * http:///api/v1beta3/api/v1beta3/namespaces
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/services
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/resourcequotas
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/limitranges
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/replicationcontrollers
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/events
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/pods
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/endpoints
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/secrets
+ * http:///api/v1beta3/api/v1beta3/nodes
+
+--------------------------------------------------------------------------------
+Controller Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Singular Collection Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Missing POST Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Missing GET Method Anti-Pattern - 2 detected:
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/bindings
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/resourcequotausages
+
+--------------------------------------------------------------------------------
+Missing DELETE Method Anti-Pattern - 1 detected:
+ * http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/endpoints/{name}
+
+--------------------------------------------------------------------------------
+Unexpected DELETE Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Only Controllers Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Create Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Retrieve Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Update Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Delete Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Method Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+More Than One Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Controller Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Untagged Resources and Controllers  - 0 detected:
+

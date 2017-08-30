@@ -1,0 +1,254 @@
+<CloudComputing>
+    <Provider name="Kubernetes">
+        <Service name="Kubernetes">
+            <Resource uri="http:///api/v1beta3/api/v1beta3/limitranges">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/resourcequotas">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/pods">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/events">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/events/{name}">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/limitranges">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/limitranges/{name}">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/resourcequotas">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/resourcequotas/{name}">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/replicationcontrollers">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/replicationcontrollers/{name}">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/pods">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/pods/{name}">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/services">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/services/{name}">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/endpoints">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/endpoints/{name}">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/secrets">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{namespaces}/secrets/{name}">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/namespaces/{name}">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/limitranges">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/events">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/nodes">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/nodes/{name}">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/replicationcontrollers">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/secrets">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/services">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/resourcequotas">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/watch/endpoints">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces">
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/services">
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/services/{name}">
+                <Method name="PUT" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/resourcequotas">
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/resourcequotas/{name}">
+                <Method name="PUT" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/limitranges">
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/limitranges/{name}">
+                <Method name="PUT" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/replicationcontrollers">
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/replicationcontrollers/{name}">
+                <Method name="PUT" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/events">
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/events/{name}">
+                <Method name="PUT" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/bindings">
+                <Method name="POST" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/resourcequotausages">
+                <Method name="POST" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/pods">
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/pods/{name}">
+                <Method name="PUT" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/endpoints">
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/endpoints/{name}">
+                <Method name="PUT" description=""/>
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/secrets">
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{namespaces}/secrets/{name}">
+                <Method name="PUT" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/namespaces/{name}">
+                <Method name="PUT" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/redirect/namespaces/{namespaces}/services/{name}">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/redirect/namespaces/{namespaces}/pods/{name}">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/redirect/nodes/{name}">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/nodes">
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/nodes/{name}">
+                <Method name="PUT" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/proxy/nodes/{name}">
+                <Method name="PUT" description=""/>
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/proxy/nodes/{name}/{path:*}">
+                <Method name="PUT" description=""/>
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/proxy/namespaces/{namespaces}/pods/{name}">
+                <Method name="PUT" description=""/>
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/proxy/namespaces/{namespaces}/pods/{name}/{path:*}">
+                <Method name="PUT" description=""/>
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/proxy/namespaces/{namespaces}/services/{name}">
+                <Method name="PUT" description=""/>
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/proxy/namespaces/{namespaces}/services/{name}/{path:*}">
+                <Method name="PUT" description=""/>
+                <Method name="POST" description=""/>
+                <Method name="GET" description=""/>
+                <Method name="DELETE" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/replicationcontrollers">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/pods">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/secrets">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/endpoints">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/services">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http:///api/v1beta3/api/v1beta3/events">
+                <Method name="GET" description=""/>
+            </Resource>
+        </Service>
+    </Provider>
+</CloudComputing>
