@@ -292,7 +292,7 @@ VERBS_STARTING_BY = [
 
 # TODO: Following list of verbs is hard-coded!!!
 VERBS_ENDING_BY = [
-	"access",
+#	"access", # Removed for 1and1. TODO: 'access' is both a verb and a noun so what to do?
 	"check",
 	"create",
 	"failover", 		# Used by Microsoft Azure
@@ -343,6 +343,7 @@ NOT_VERBS = [
 	"endpointTemplates".lower(), # Used by OpenStack
 	"exportTasks".lower(), # Used by Microsoft Azure
 	"exports",			# Used by Oracle Cloud
+# TODO: Should be removed as 'access' was removed from VERBS_ENDING_WITH
 	"flavor-access",	# Used by OpenStack
 	"linkedDatabases".lower(), # Used by Microsoft Azure
 	"links", # Used by Microsoft Azure
@@ -364,6 +365,7 @@ NOT_VERBS = [
 	"publisher",			# Used by Oracle Cloud
 	"publishingChangeAuthors".lower(),			# Used by Oracle Cloud
 	"publishingChanges".lower(),			# Used by Oracle Cloud
+# TODO: Should be removed as 'access' was removed from VERBS_ENDING_WITH
 	"os-flavor-access",	# Used by OpenStack
 	"readonlykeys",		# Used by Microsoft Azure
 	"releases",			# Used by Heroku
@@ -475,10 +477,7 @@ UN('maproute')
 UN('pause')
 
 def antonyms(term):
-	antonyms = ANTONYMS.get(term)
-	if antonyms != None:
-		return antonyms
-	return []
+	return ANTONYMS.get(term.lower(), [])
 
 #
 # Source: https://stackoverflow.com/questions/29916065/how-to-do-camelcase-split-in-python
