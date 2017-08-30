@@ -1,0 +1,337 @@
+<CloudComputing>
+    <Provider name="1&1 Cloud Server">
+        <Service name="API v1">
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers">
+                <Method name="GET" description="Returns a list of your servers."/>
+                <Method name="POST" description="Adds a new server."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/fixed_instance_sizes">
+                <Method name="GET" description="Returns available flavours for fixed servers."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/fixed_instance_sizes/{fixed_instance_size_id}">
+                <Method name="GET" description="Returns information about one flavour"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}">
+                <Method name="GET" description="Returns server&apos;s information."/>
+                <Method name="DELETE" description="Removes a server."/>
+                <Method name="PUT" description="Modifies a server."/>
+                <Controller uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/clone" verb="clone">
+                    <Method name="POST" description="Clones a server."/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/hardware">
+                <Method name="GET" description="Returns information about the server&apos;s hardware."/>
+                <Method name="PUT" description="Modifies the server&apos;s hardware."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/hardware/hdds">
+                <Method name="GET" description="Returns a list of the server&apos;s hard disks."/>
+                <Method name="POST" description="Adds new hard disk(s) to the server."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/hardware/hdds/{hdd_id}">
+                <Method name="GET" description="Returns information about a server&apos;s hard disk."/>
+                <Method name="DELETE" description="Removes a server&apos;s hard disk."/>
+                <Method name="PUT" description="Modifies the size of a server&apos;s hard disk."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/image">
+                <Method name="GET" description="Returns information about a server&apos;s image."/>
+                <Method name="PUT" description="Reinstalls a new image into a server."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/ips">
+                <Method name="GET" description="Returns a list of the server&apos;s IPs."/>
+                <Method name="POST" description="Adds a new IP to the server."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/ips/{ip_id}">
+                <Method name="GET" description="Returns information about a server&apos;s IP."/>
+                <Method name="DELETE" description="Releases an IP and optionally removes it"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/ips/{ip_id}/firewall_policy">
+                <Method name="GET" description="Lists firewall policies assigned to the IP"/>
+                <Method name="DELETE" description="Removes firewall policy from the IP"/>
+                <Method name="PUT" description="Adds a new firewall policy to the IP"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/ips/{ip_id}/load_balancers">
+                <Method name="GET" description="Lists all load balancers assigned to the IP"/>
+                <Method name="POST" description="Adds a new load balancer to the IP"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/ips/{ip_id}/load_balancers/{load_balancer_id}">
+                <Method name="DELETE" description="Removes load balancer from the IP"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/status">
+                <Method name="GET" description="Returns information about a server&apos;s status."/>
+                <Controller uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/status?action|POWER_ON" verb="POWER_ON">
+                    <Method name="PUT" description="Changes server status"/>
+                </Controller>
+                <Controller uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/status?action|POWER_OFF" verb="POWER_OFF">
+                    <Method name="PUT" description="Changes server status"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/dvd">
+                <Method name="GET" description="Returns information about the DVD loaded into the virtual DVD unit of a server."/>
+                <Method name="DELETE" description="Unloads a DVD from the virtual DVD unit of a server."/>
+                <Method name="PUT" description="Loads a DVD into the virtual DVD unit of a server."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/private_networks">
+                <Method name="GET" description="Returns a list of the server&apos;s private networks."/>
+                <Method name="POST" description="Assigns a private network to the server."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/private_networks/{private_network_id}">
+                <Method name="GET" description="Returns information about a server&apos;s private network."/>
+                <Method name="DELETE" description="Unassigns a private network from the server."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/snapshots">
+                <Method name="GET" description="Returns a list of the server&apos;s snapshots."/>
+                <Method name="POST" description="Creates a new snapshot of the server."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/servers/{server_id}/snapshots/{snapshot_id}">
+                <Method name="DELETE" description="Removes a snapshot"/>
+                <Method name="PUT" description="Restores a snapshot into the server."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/images">
+                <Method name="GET" description="Returns a list of your images."/>
+                <Method name="POST" description="Adds a new image."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/images/{image_id}">
+                <Method name="GET" description="Returns information about an image."/>
+                <Method name="DELETE" description="Removes an image."/>
+                <Method name="PUT" description="Modifies an image."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/shared_storages">
+                <Method name="GET" description="Returns a list of your shared storages."/>
+                <Method name="POST" description="Creates a new shared storage."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/shared_storages/{shared_storage_id}">
+                <Method name="GET" description="Returns information about a shared storage."/>
+                <Method name="DELETE" description="Removes a shared storage."/>
+                <Method name="PUT" description="Modifies a shared storage."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/shared_storages/{shared_storage_id}/servers">
+                <Method name="GET" description="Returns a list of the servers attached to a shared storage."/>
+                <Method name="POST" description="Attaches servers to a shared storage."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/shared_storages/{shared_storage_id}/servers/{server_id}">
+                <Method name="GET" description="Returns information about a server attached to a shared storage."/>
+                <Method name="DELETE" description="Unattaches a server from a shared storage."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/shared_storages/access">
+                <Method name="GET" description="Returns the credentials for accessing the shared storages."/>
+                <Method name="PUT" description="Changes the password for accessing the shared storages."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/firewall_policies">
+                <Method name="GET" description="Returns a list of your firewall policies."/>
+                <Method name="POST" description="Creates a new firewall policy."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/firewall_policies/{firewall_id}">
+                <Method name="GET" description="Returns information about a firewall policy."/>
+                <Method name="DELETE" description="Removes a firewall policy."/>
+                <Method name="PUT" description="Modifies a firewall policy."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/firewall_policies/{firewall_id}/server_ips">
+                <Method name="GET" description="Returns a list of the servers/IPs attached to a firewall policy."/>
+                <Method name="POST" description="Assigns servers/IPs to a firewall policy."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/firewall_policies/{firewall_id}/server_ips/{server_ip}">
+                <Method name="GET" description="Returns information about a server/IP assigned to a firewall policy."/>
+                <Method name="DELETE" description="Unassigns a server/IP from a firewall policy."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/firewall_policies/{firewall_id}/rules">
+                <Method name="GET" description="Returns a list of the rules of a firewall policy."/>
+                <Method name="POST" description="Adds new rules to a firewall policy."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/firewall_policies/{firewall_id}/rules/{rule_id}">
+                <Method name="GET" description="Returns information about a rule of a firewall policy."/>
+                <Method name="DELETE" description="Removes a rule from a firewall policy."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/load_balancers">
+                <Method name="GET" description="Returns a list of your load balancers."/>
+                <Method name="POST" description="Creates a new load balancer."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/load_balancers/{load_balancer_id}">
+                <Method name="GET" description="Returns information about a load balancer."/>
+                <Method name="DELETE" description="Removes a load balancer."/>
+                <Method name="PUT" description="Modifies a load balancer."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/load_balancers/{load_balancer_id}/server_ips">
+                <Method name="GET" description="Returns a list of the servers/IPs attached to a load balancer."/>
+                <Method name="POST" description="Assigns servers/IPs to a load balancer."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/load_balancers/{load_balancer_id}/server_ips/{server_ip}">
+                <Method name="GET" description="Returns information about a server/IP assigned to a load balancer."/>
+                <Method name="DELETE" description="Unassigns a server/IP from a load balancer."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/load_balancers/{load_balancer_id}/rules">
+                <Method name="GET" description="Returns a list of the rules of a load balancer."/>
+                <Method name="POST" description="Adds new rules to a load balancer."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/load_balancers/{load_balancer_id}/rules/{rule_id}">
+                <Method name="GET" description="Returns information about a rule of a load balancer."/>
+                <Method name="DELETE" description="Removes a rule from a load balancer."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/public_ips">
+                <Method name="GET" description="Returns a list of your public IPs."/>
+                <Method name="POST" description="Creates a new public IP."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/public_ips/{ip_id}">
+                <Method name="GET" description="Returns information about a public IP."/>
+                <Method name="DELETE" description="Removes a public IP."/>
+                <Method name="PUT" description="Modifies the reverse DNS of a public IP."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/private_networks">
+                <Method name="GET" description="Returns a list of your private networks."/>
+                <Method name="POST" description="Creates a new private network."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/private_networks/{private_network_id}">
+                <Method name="GET" description="Returns information about a private network."/>
+                <Method name="DELETE" description="Removes a private network."/>
+                <Method name="PUT" description="Modifies a private network."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/private_networks/{private_network_id}/servers">
+                <Method name="GET" description="Returns a list of the servers attached to a private network."/>
+                <Method name="POST" description="Attaches servers to a private network."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/private_networks/{private_network_id}/servers/{server_id}">
+                <Method name="GET" description="Returns information about a server attached to a private network."/>
+                <Method name="DELETE" description="Unattaches a server from a private network."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/vpns">
+                <Method name="GET" description="Returns a list of your VPN"/>
+                <Method name="POST" description="Adds a new VPN"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/vpns/{vpn_id}">
+                <Method name="GET" description="Returns information about a VPN"/>
+                <Method name="DELETE" description="Removes a VPN"/>
+                <Method name="PUT" description="Modify VPN configuration file"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/vpns/{vpn_id}/configuration_file">
+                <Method name="GET" description="Download your VPN configuration file"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/monitoring_center">
+                <Method name="GET" description="Lists usages and alerts of monitoring servers."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/monitoring_center/{server_id}">
+                <Method name="GET" description="Returns the usage of the resources for the specified time range."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/monitoring_policies">
+                <Method name="GET" description="Returns a list of your monitoring policies."/>
+                <Method name="POST" description="Creates a new monitoring policy."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}">
+                <Method name="GET" description="Returns information about a monitoring policy."/>
+                <Method name="DELETE" description="Removes a monitoring policy."/>
+                <Method name="PUT" description="Modifies a monitoring policy."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}/ports">
+                <Method name="GET" description="Returns a list of the ports of a monitoring policy."/>
+                <Method name="POST" description="Adds new ports to a monitoring policy"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}/ports/{port_id}">
+                <Method name="GET" description="Returns information about a port of a monitoring policy."/>
+                <Method name="DELETE" description="Removes a port from a monitoring policy."/>
+                <Method name="PUT" description="Modifies a port from a monitoring policy."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}/processes">
+                <Method name="GET" description="Returns a list of the processes of a monitoring policy."/>
+                <Method name="POST" description="Adds new processes to a monitoring policy"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}/processes/{process_id}">
+                <Method name="GET" description="Returns information about a process of a monitoring policy."/>
+                <Method name="DELETE" description="Removes a process from a monitoring policy."/>
+                <Method name="PUT" description="Modifies a process from a monitoring policy."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}/servers">
+                <Method name="GET" description="Returns a list of the servers attached to a monitoring policy."/>
+                <Method name="POST" description="Attaches servers to a monitoring policy."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}/servers/{server_id}">
+                <Method name="GET" description="Returns information about a server attached to a monitoring policy."/>
+                <Method name="DELETE" description="Unattaches a server from a monitoring policy."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/logs">
+                <Method name="GET" description="Returns a list with logs."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/logs/{log_id}">
+                <Method name="GET" description="Returns information about a log"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/users">
+                <Method name="GET" description="Returns a list with all users."/>
+                <Method name="POST" description="Creates a new user."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/users/{user_id}">
+                <Method name="GET" description="Returns information about a user."/>
+                <Method name="DELETE" description="Removes a user."/>
+                <Method name="PUT" description="Modifies user information."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/users/{user_id}/api">
+                <Method name="GET" description="Information about API."/>
+                <Method name="PUT" description="Allows to enable or disable the API."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/users/{user_id}/api/key">
+                <Method name="GET" description="Shows the API key"/>
+                <Method name="PUT" description="Changes the API key"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/users/{user_id}/api/ips">
+                <Method name="GET" description="IP&apos;s from which access to API is allowed."/>
+                <Method name="POST" description="Allows a new IP"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/users/{user_id}/api/ips/{ip}">
+                <Method name="DELETE" description="Deletes an IP and forbides API access for it."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/users/current_user_permissions">
+                <Method name="GET" description="Returns a list with current user permissions"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/roles">
+                <Method name="GET" description="Returns a list with all roles"/>
+                <Method name="POST" description="Creates a new role"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/roles/{role_id}">
+                <Method name="GET" description="Returns information about a role."/>
+                <Method name="DELETE" description="Removes role"/>
+                <Method name="PUT" description="Modifies role information"/>
+                <Controller uri="https://cloudpanel-api.1and1.com/v1/roles/{role_id}/clone" verb="clone">
+                    <Method name="POST" description="Clones a role"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/roles/{role_id}/permissions">
+                <Method name="GET" description="Lists role&apos;s permissions"/>
+                <Method name="PUT" description="Adds permissions to the role"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/roles/{role_id}/users">
+                <Method name="GET" description="Returns users assigned to role"/>
+                <Method name="POST" description="Add users to role"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/roles/{role_id}/users/{user_id}">
+                <Method name="GET" description="Returns information about a user"/>
+                <Method name="DELETE" description="Removes user from role"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/usages">
+                <Method name="GET" description="Returns a list of your usages."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/server_appliances">
+                <Method name="GET" description="Returns a list of all the appliances that you can use for creating a server."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/server_appliances/{id}">
+                <Method name="GET" description="Information about specific appliance"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/dvd_isos">
+                <Method name="GET" description="Returns a list of all the operative systems and tools that you can load into your virtual DVD unit."/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/dvd_isos/{id}">
+                <Method name="GET" description="Information about specific ISO image"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/ping">
+                <Method name="GET" description="Returns PONG&amp;quot; if API is running&amp;quot;"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/ping_auth">
+                <Method name="GET" description="Returns PONG&amp;quot; if the API is running and the token is valid&amp;quot;"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/pricing">
+                <Method name="GET" description="Returns prices for all available resources in Cloud Panel"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/datacenters">
+                <Method name="GET" description="Returns information about available datacenters to create your resources"/>
+            </Resource>
+            <Resource uri="https://cloudpanel-api.1and1.com/v1/datacenters/{datacenter_id}">
+                <Method name="GET" description="Returns information about a datacenter"/>
+            </Resource>
+        </Service>
+    </Provider>
+</CloudComputing>

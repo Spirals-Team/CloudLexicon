@@ -24,7 +24,7 @@
 ################################################################################
 
 # Iterate over all the cloud providers.
-for provider in 'Apache CloudStack' 'Cloud Foundry' 'DigitalOcean' 'Docker Engine' 'Google Cloud Platform' 'Heroku' 'IBM Bluemix' 'Kubernetes' 'Microsoft Azure' 'OCCI' 'OpenStack' 'Oracle Cloud' 'OVH' 'Rackspace' 'VMware'
+for provider in '1and1 Cloud Server' 'Apache CloudStack' 'Cloud Foundry' 'DigitalOcean' 'Docker Engine' 'Google Cloud Platform' 'Heroku' 'IBM Bluemix' 'Kubernetes' 'Microsoft Azure' 'OCCI' 'OpenStack' 'Oracle Cloud' 'OVH' 'Rackspace' 'VMware'
 # TODO: Add other cloud providers to the previous list.
 do
   echo "############################################################"

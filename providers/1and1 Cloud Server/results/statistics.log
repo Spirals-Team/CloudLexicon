@@ -1,0 +1,46 @@
+['./datasets/DatasetURIs.csv']
+
+-------------------- API --------------------
+
+Number of providers = 1
+Number of services = 1
+Number of resources = 81
+Number of controllers = 4
+Number of queries = 0
+Number of methods = 161
+ - 25 PUT (15.53%)
+ - 29 POST (18.01%)
+ - 29 DELETE (18.01%)
+ - 78 GET (48.45%)
+
+-------------------- LEXICON --------------------
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+******************************     0 terms are common to 0 of 1 providers      ******************************
+******************************     42 terms are common to 1 of 1 providers      ******************************
+
+Number of terms = 42
+Number of nouns = 39 (92.86%)
+Number of verbs = 3 (7.14%)
+Number of singular terms = 11 (26.19%)
+Number of plural terms = 31 (73.81%)
+Number of lower case terms = 40 (95.24%)
+Number of upper case terms = 2 (4.76%)
+Number of camel case terms = 0 (0.00%)
+Number of hyphen terms = 17 (40.48%)
+Number of underscore terms = 0 (0.00%)
+Number of business terms = 41 (97.62%)
+Number of engineering terms = 1 (2.38%)
+
+
+-------------------- QUALITY --------------------
+
+1&1 Cloud Server is CRUD :-) because few controllers (4)
+scoreRest = 0.975155279503
+1&1 Cloud Server: BAD API naming or API Naming Inconsistency Anti-Pattern
+scoreNaming = 0.952380952381
+1&1 Cloud Server: BAD business API design or Engineering-Oriented API Naming Anti-Pattern 1 (2.38%)
+scoreBusiness = 0.97619047619
+Total score = 0.967908902692

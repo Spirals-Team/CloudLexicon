@@ -1,0 +1,174 @@
+--------------------------------------------------------------------------------
+Read-Only Pattern - 18 detected:
+ * https://cloudpanel-api.1and1.com/v1/servers/fixed_instance_sizes
+ * https://cloudpanel-api.1and1.com/v1/servers/fixed_instance_sizes/{fixed_instance_size_id}
+ * https://cloudpanel-api.1and1.com/v1/vpns/{vpn_id}/configuration_file
+ * https://cloudpanel-api.1and1.com/v1/monitoring_center
+ * https://cloudpanel-api.1and1.com/v1/monitoring_center/{server_id}
+ * https://cloudpanel-api.1and1.com/v1/logs
+ * https://cloudpanel-api.1and1.com/v1/logs/{log_id}
+ * https://cloudpanel-api.1and1.com/v1/users/current_user_permissions
+ * https://cloudpanel-api.1and1.com/v1/usages
+ * https://cloudpanel-api.1and1.com/v1/server_appliances
+ * https://cloudpanel-api.1and1.com/v1/server_appliances/{id}
+ * https://cloudpanel-api.1and1.com/v1/dvd_isos
+ * https://cloudpanel-api.1and1.com/v1/dvd_isos/{id}
+ * https://cloudpanel-api.1and1.com/v1/ping
+ * https://cloudpanel-api.1and1.com/v1/ping_auth
+ * https://cloudpanel-api.1and1.com/v1/pricing
+ * https://cloudpanel-api.1and1.com/v1/datacenters
+ * https://cloudpanel-api.1and1.com/v1/datacenters/{datacenter_id}
+
+--------------------------------------------------------------------------------
+Resource Pattern - 33 detected:
+ * https://cloudpanel-api.1and1.com/v1/servers/fixed_instance_sizes/{fixed_instance_size_id}
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/hardware/hdds/{hdd_id}
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/ips/{ip_id}
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/ips/{ip_id}/load_balancers/{load_balancer_id}
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/private_networks/{private_network_id}
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/snapshots/{snapshot_id}
+ * https://cloudpanel-api.1and1.com/v1/images/{image_id}
+ * https://cloudpanel-api.1and1.com/v1/shared_storages/{shared_storage_id}
+ * https://cloudpanel-api.1and1.com/v1/shared_storages/{shared_storage_id}/servers/{server_id}
+ * https://cloudpanel-api.1and1.com/v1/firewall_policies/{firewall_id}
+ * https://cloudpanel-api.1and1.com/v1/firewall_policies/{firewall_id}/server_ips/{server_ip}
+ * https://cloudpanel-api.1and1.com/v1/firewall_policies/{firewall_id}/rules/{rule_id}
+ * https://cloudpanel-api.1and1.com/v1/load_balancers/{load_balancer_id}
+ * https://cloudpanel-api.1and1.com/v1/load_balancers/{load_balancer_id}/server_ips/{server_ip}
+ * https://cloudpanel-api.1and1.com/v1/load_balancers/{load_balancer_id}/rules/{rule_id}
+ * https://cloudpanel-api.1and1.com/v1/public_ips/{ip_id}
+ * https://cloudpanel-api.1and1.com/v1/private_networks/{private_network_id}
+ * https://cloudpanel-api.1and1.com/v1/private_networks/{private_network_id}/servers/{server_id}
+ * https://cloudpanel-api.1and1.com/v1/vpns/{vpn_id}
+ * https://cloudpanel-api.1and1.com/v1/monitoring_center/{server_id}
+ * https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}
+ * https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}/ports/{port_id}
+ * https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}/processes/{process_id}
+ * https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}/servers/{server_id}
+ * https://cloudpanel-api.1and1.com/v1/logs/{log_id}
+ * https://cloudpanel-api.1and1.com/v1/users/{user_id}
+ * https://cloudpanel-api.1and1.com/v1/users/{user_id}/api/ips/{ip}
+ * https://cloudpanel-api.1and1.com/v1/roles/{role_id}
+ * https://cloudpanel-api.1and1.com/v1/roles/{role_id}/users/{user_id}
+ * https://cloudpanel-api.1and1.com/v1/server_appliances/{id}
+ * https://cloudpanel-api.1and1.com/v1/dvd_isos/{id}
+ * https://cloudpanel-api.1and1.com/v1/datacenters/{datacenter_id}
+
+--------------------------------------------------------------------------------
+Singleton Resource Pattern - 6 detected:
+ * https://cloudpanel-api.1and1.com/v1/shared_storages/access
+ * https://cloudpanel-api.1and1.com/v1/users/current_user_permissions
+ * https://cloudpanel-api.1and1.com/v1/usages
+ * https://cloudpanel-api.1and1.com/v1/ping
+ * https://cloudpanel-api.1and1.com/v1/ping_auth
+ * https://cloudpanel-api.1and1.com/v1/pricing
+
+--------------------------------------------------------------------------------
+SubResource Pattern - 9 detected:
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/hardware
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/image
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/ips/{ip_id}/firewall_policy
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/status
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/dvd
+ * https://cloudpanel-api.1and1.com/v1/vpns/{vpn_id}/configuration_file
+ * https://cloudpanel-api.1and1.com/v1/users/{user_id}/api
+ * https://cloudpanel-api.1and1.com/v1/users/{user_id}/api/key
+ * https://cloudpanel-api.1and1.com/v1/roles/{role_id}/permissions
+
+--------------------------------------------------------------------------------
+Collection Pattern - 33 detected:
+ * https://cloudpanel-api.1and1.com/v1/servers
+ * https://cloudpanel-api.1and1.com/v1/servers/fixed_instance_sizes
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/hardware/hdds
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/ips
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/ips/{ip_id}/load_balancers
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/private_networks
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/snapshots
+ * https://cloudpanel-api.1and1.com/v1/images
+ * https://cloudpanel-api.1and1.com/v1/shared_storages
+ * https://cloudpanel-api.1and1.com/v1/shared_storages/{shared_storage_id}/servers
+ * https://cloudpanel-api.1and1.com/v1/firewall_policies
+ * https://cloudpanel-api.1and1.com/v1/firewall_policies/{firewall_id}/server_ips
+ * https://cloudpanel-api.1and1.com/v1/firewall_policies/{firewall_id}/rules
+ * https://cloudpanel-api.1and1.com/v1/load_balancers
+ * https://cloudpanel-api.1and1.com/v1/load_balancers/{load_balancer_id}/server_ips
+ * https://cloudpanel-api.1and1.com/v1/load_balancers/{load_balancer_id}/rules
+ * https://cloudpanel-api.1and1.com/v1/public_ips
+ * https://cloudpanel-api.1and1.com/v1/private_networks
+ * https://cloudpanel-api.1and1.com/v1/private_networks/{private_network_id}/servers
+ * https://cloudpanel-api.1and1.com/v1/vpns
+ * https://cloudpanel-api.1and1.com/v1/monitoring_center
+ * https://cloudpanel-api.1and1.com/v1/monitoring_policies
+ * https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}/ports
+ * https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}/processes
+ * https://cloudpanel-api.1and1.com/v1/monitoring_policies/{monitoring_policy_id}/servers
+ * https://cloudpanel-api.1and1.com/v1/logs
+ * https://cloudpanel-api.1and1.com/v1/users
+ * https://cloudpanel-api.1and1.com/v1/users/{user_id}/api/ips
+ * https://cloudpanel-api.1and1.com/v1/roles
+ * https://cloudpanel-api.1and1.com/v1/roles/{role_id}/users
+ * https://cloudpanel-api.1and1.com/v1/server_appliances
+ * https://cloudpanel-api.1and1.com/v1/dvd_isos
+ * https://cloudpanel-api.1and1.com/v1/datacenters
+
+--------------------------------------------------------------------------------
+Controller Pattern - 2 detected:
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/clone
+ * https://cloudpanel-api.1and1.com/v1/roles/{role_id}/clone
+
+--------------------------------------------------------------------------------
+Singular Collection Anti-Pattern - 1 detected:
+ * https://cloudpanel-api.1and1.com/v1/monitoring_center
+
+--------------------------------------------------------------------------------
+Missing POST Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Missing GET Method Anti-Pattern - 3 detected:
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/ips/{ip_id}/load_balancers/{load_balancer_id}
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/snapshots/{snapshot_id}
+ * https://cloudpanel-api.1and1.com/v1/users/{user_id}/api/ips/{ip}
+
+--------------------------------------------------------------------------------
+Missing DELETE Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Unexpected DELETE Method Anti-Pattern - 2 detected:
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/ips/{ip_id}/firewall_policy
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/dvd
+
+--------------------------------------------------------------------------------
+Only Controllers Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Create Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Retrieve Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Update Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Delete Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Method Controller Anti-Pattern - 2 detected:
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/status?action|POWER_ON
+ * https://cloudpanel-api.1and1.com/v1/servers/{server_id}/status?action|POWER_OFF
+
+--------------------------------------------------------------------------------
+More Than One Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Controller Method Anti-Pattern - 2 detected:
+ * PUT https://cloudpanel-api.1and1.com/v1/servers/{server_id}/status?action|POWER_ON
+ * PUT https://cloudpanel-api.1and1.com/v1/servers/{server_id}/status?action|POWER_OFF
+
+--------------------------------------------------------------------------------
+Untagged Resources and Controllers  - 0 detected:
+

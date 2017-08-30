@@ -231,7 +231,7 @@ def loadDatasets(fileNames, serviceStrategy = DISTINCT_SERVICES, lexiconStrategy
 						node = node.addPath(':' + tmp[1], newTerm(tmp[1]), Controller)
 						node.verb = tmp[1]
 					else:
-						if currentProviderName == "DigitalOcean":
+						if currentProviderName == "DigitalOcean": # TODO: Could be merged with the last general case?
 							if token.startswith('actions|type='):
 								verb = token[len('actions|type='):]
 								node = node.addPath('?' + token, newTerm(verb), Controller)
@@ -253,7 +253,7 @@ def loadDatasets(fileNames, serviceStrategy = DISTINCT_SERVICES, lexiconStrategy
 									node.verb = verb
 							else:
 
-								if currentProviderName == "OpenStack":
+								if currentProviderName == "OpenStack": # TODO: Could be merged with the next general case?
 									if '|' in token:
 										verb = token[token.find('|')+1:]
 										node = node.addPath('?' + token, newTerm(verb), Controller)
@@ -268,17 +268,22 @@ def loadDatasets(fileNames, serviceStrategy = DISTINCT_SERVICES, lexiconStrategy
 												node = node.addPath('/' + token, newTerm(token), Resource)
 								else:
 									if token != "":
-										if lexicon.isVerb(token):
-											verb = token.split('?')[0]
-											node = node.addPath('/' + token, newTerm(verb), Controller)
-											node.verb = token
+										if '|' in token:
+											verb = token[token.find('|')+1:]
+											node = node.addPath('?' + token, newTerm(verb), Controller)
+											node.verb = verb
 										else:
-											if '?' in token:
-												tmp = token.split('?')
-												node = node.addPath('/' + tmp[0], newTerm(tmp[0]), Resource)
-												node = node.addPath('?' + tmp[1], model.trashLexicon.newTerm(tmp[1]), Query)
+											if lexicon.isVerb(token):
+												verb = token.split('?')[0]
+												node = node.addPath('/' + token, newTerm(verb), Controller)
+												node.verb = token
 											else:
-												node = node.addPath('/' + token, newTerm(token), Resource)
+												if '?' in token:
+													tmp = token.split('?')
+													node = node.addPath('/' + tmp[0], newTerm(tmp[0]), Resource)
+													node = node.addPath('?' + tmp[1], model.trashLexicon.newTerm(tmp[1]), Query)
+												else:
+													node = node.addPath('/' + token, newTerm(token), Resource)
 
 				httpMethod = row[3]
 				if node.hasMethod(httpMethod):
