@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-floating-ips", fontsize=24]
+splines=true
+"os-floating-ips" [color=blue, fontcolor=blue, shape=doublecircle]
+"RemoveFloatingIP" [color=orange, fontcolor=orange, shape=box]
+}

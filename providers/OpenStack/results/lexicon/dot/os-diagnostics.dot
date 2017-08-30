@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-diagnostics", fontsize=24]
+splines=true
+"diagnostics" [color=blue, fontcolor=blue, shape=doublecircle]
+}

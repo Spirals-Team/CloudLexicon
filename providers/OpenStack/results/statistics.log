@@ -1,0 +1,48 @@
+['./datasets/DatasetURIs.csv']
+
+-------------------- API --------------------
+
+Number of providers = 1
+Number of services = 115
+Number of resources = 369
+Number of controllers = 46
+Number of queries = 0
+Number of methods = 583
+ - 2 HEAD (0.34%)
+ - 327 GET (56.09%)
+ - 2 PATCH (0.34%)
+ - 56 PUT (9.61%)
+ - 121 POST (20.75%)
+ - 75 DELETE (12.86%)
+
+-------------------- LEXICON --------------------
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+******************************     0 terms are common to 0 of 1 providers      ******************************
+******************************     162 terms are common to 1 of 1 providers      ******************************
+
+Number of terms = 162
+Number of nouns = 124 (76.54%)
+Number of verbs = 38 (23.46%)
+Number of singular terms = 36 (22.22%)
+Number of plural terms = 126 (77.78%)
+Number of lower case terms = 142 (87.65%)
+Number of upper case terms = 5 (3.09%)
+Number of camel case terms = 15 (9.26%)
+Number of hyphen terms = 13 (8.02%)
+Number of underscore terms = 51 (31.48%)
+Number of business terms = 119 (73.46%)
+Number of engineering terms = 43 (26.54%)
+
+
+-------------------- QUALITY --------------------
+
+OpenStack is REST ;-)
+scoreRest = 0.921097770154
+OpenStack: BAD API naming or API Naming Inconsistency Anti-Pattern
+scoreNaming = 0.796296296296
+OpenStack: BAD business API design or Engineering-Oriented API Naming Anti-Pattern 43 (26.54%)
+scoreBusiness = 0.734567901235
+Total score = 0.817320655895

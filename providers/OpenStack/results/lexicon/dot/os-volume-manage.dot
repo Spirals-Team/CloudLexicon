@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-volume-manage", fontsize=24]
+splines=true
+"os-volume-manage" [color=blue, fontcolor=blue, shape=doublecircle]
+}

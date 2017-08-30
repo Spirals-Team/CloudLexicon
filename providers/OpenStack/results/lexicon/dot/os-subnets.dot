@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-subnets", fontsize=24]
+splines=true
+"subnets" [color=blue, fontcolor=blue, shape=doublecircle]
+}

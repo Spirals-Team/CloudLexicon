@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-ext-img-size", fontsize=24]
+splines=true
+"detail" [color=blue, fontcolor=blue, shape=doublecircle]
+}

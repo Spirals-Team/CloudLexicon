@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-floating-ip-pools", fontsize=24]
+splines=true
+"os-floating-ip-pools" [color=blue, fontcolor=blue, shape=doublecircle]
+}

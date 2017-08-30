@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-aggregates-v2.1", fontsize=24]
+splines=true
+"os-aggregates" [color=blue, fontcolor=blue, shape=doublecircle]
+"removeaggregate" [color=orange, fontcolor=orange, shape=box]
+"removeaggregate" -> "os-aggregates" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

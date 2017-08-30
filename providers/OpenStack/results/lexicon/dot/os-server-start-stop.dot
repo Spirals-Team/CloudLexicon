@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-server-start-stop", fontsize=24]
+splines=true
+"stop" [color=orange, fontcolor=orange, shape=box]
+}

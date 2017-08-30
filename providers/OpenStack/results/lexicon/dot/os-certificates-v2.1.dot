@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-certificates-v2.1", fontsize=24]
+splines=true
+"os-certificates" [color=blue, fontcolor=blue, shape=doublecircle]
+"root" -> "os-certificates" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"root" [color=blue, fontcolor=blue, shape=ellipse]
+}

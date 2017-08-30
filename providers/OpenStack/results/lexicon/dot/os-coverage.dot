@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-coverage", fontsize=24]
+splines=true
+"os-coverage" [color=blue, fontcolor=blue, shape=doublecircle]
+"stopReport" [color=orange, fontcolor=orange, shape=box]
+"stopReport" -> "os-coverage" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

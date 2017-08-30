@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-simple-tenant-usage-v2.1", fontsize=24]
+splines=true
+"os-simple-tenant-usage" [color=blue, fontcolor=blue, shape=doublecircle]
+}

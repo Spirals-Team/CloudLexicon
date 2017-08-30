@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-quotas", fontsize=24]
+splines=true
+"quotas" [color=blue, fontcolor=blue, shape=doublecircle]
+}

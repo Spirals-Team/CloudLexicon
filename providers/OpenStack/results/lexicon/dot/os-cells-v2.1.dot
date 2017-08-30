@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-cells-v2.1", fontsize=24]
+splines=true
+"os-cells" [color=blue, fontcolor=blue, shape=doublecircle]
+"cell3" -> "os-cells" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"cell3" [color=blue, fontcolor=blue, shape=ellipse]
+"capacities" -> "os-cells" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"capacities" [color=blue, fontcolor=blue, shape=ellipse]
+}

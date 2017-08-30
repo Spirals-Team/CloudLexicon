@@ -1,0 +1,4 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-used-limits-for-admins", fontsize=24]
+splines=true
+}

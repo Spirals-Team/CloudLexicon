@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-security-group-default-rules", fontsize=24]
+splines=true
+"os-security-group-default-rules" [color=blue, fontcolor=blue, shape=doublecircle]
+}

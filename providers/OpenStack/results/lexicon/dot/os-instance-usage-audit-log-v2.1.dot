@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-instance-usage-audit-log-v2.1", fontsize=24]
+splines=true
+"os-instance-usage-audit-log" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-extended-server-attributes-v2.1", fontsize=24]
+splines=true
+"servers" [color=blue, fontcolor=blue, shape=doublecircle]
+"details" -> "servers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"details" [color=blue, fontcolor=blue, shape=ellipse]
+}

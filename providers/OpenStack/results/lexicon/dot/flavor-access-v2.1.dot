@@ -1,0 +1,16 @@
+digraph LexiconGraph {
+graph[label="OpenStack - flavor-access-v2.1", fontsize=24]
+splines=true
+"flavors" [color=blue, fontcolor=blue, shape=doublecircle]
+"1" -> "flavors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"1" [color=blue, fontcolor=blue, shape=ellipse]
+"10" -> "flavors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"10" [color=blue, fontcolor=blue, shape=ellipse]
+"removeflavoraccess" [color=orange, fontcolor=orange, shape=box]
+"removeflavoraccess" -> "10" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"flavor-access" -> "10" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"flavor-access" [color=blue, fontcolor=blue, shape=ellipse]
+"flavors" -> "flavor-access" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"detail" -> "flavors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"detail" [color=blue, fontcolor=blue, shape=ellipse]
+}

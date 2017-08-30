@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-aggregates", fontsize=24]
+splines=true
+"os-aggregates" [color=blue, fontcolor=blue, shape=doublecircle]
+"remove_host" [color=orange, fontcolor=orange, shape=box]
+"remove_host" -> "os-aggregates" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

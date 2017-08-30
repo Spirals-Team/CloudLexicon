@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-volume_attachments", fontsize=24]
+splines=true
+"os-volume_attachments" [color=blue, fontcolor=blue, shape=doublecircle]
+}

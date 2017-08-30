@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-block-device-mapping-v2-boot", fontsize=24]
+splines=true
+"servers" [color=blue, fontcolor=blue, shape=doublecircle]
+}

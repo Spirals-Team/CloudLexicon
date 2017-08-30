@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-admin-actions", fontsize=24]
+splines=true
+"addFloatingIP" [color=orange, fontcolor=orange, shape=box]
+}

@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-hosts-v2.1", fontsize=24]
+splines=true
+"os-hosts" [color=blue, fontcolor=blue, shape=doublecircle]
+"startup" [color=orange, fontcolor=orange, shape=box]
+"startup" -> "os-hosts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"shutdown" [color=orange, fontcolor=orange, shape=box]
+"shutdown" -> "os-hosts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"reboot" [color=orange, fontcolor=orange, shape=box]
+"reboot" -> "os-hosts" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

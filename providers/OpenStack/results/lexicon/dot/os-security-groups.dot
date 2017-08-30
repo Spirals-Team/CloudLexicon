@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-security-groups", fontsize=24]
+splines=true
+"os-security-groups" [color=blue, fontcolor=blue, shape=doublecircle]
+"os-security-groups" -> "os-security-groups" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+}

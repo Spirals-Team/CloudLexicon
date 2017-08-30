@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-extended-availability-zone-v2.1", fontsize=24]
+splines=true
+"detail" [color=blue, fontcolor=blue, shape=doublecircle]
+}

@@ -1,0 +1,4 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-quota-class-sets", fontsize=24]
+splines=true
+}

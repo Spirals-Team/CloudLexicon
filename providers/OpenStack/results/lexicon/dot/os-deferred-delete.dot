@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-deferred-delete", fontsize=24]
+splines=true
+"restore" [color=orange, fontcolor=orange, shape=box]
+}

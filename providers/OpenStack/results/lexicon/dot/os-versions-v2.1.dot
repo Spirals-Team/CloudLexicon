@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-versions-v2.1", fontsize=24]
+splines=true
+"OpenStack" [color=blue, fontcolor=blue, shape=doublecircle]
+"v2.1" -> "OpenStack" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"v2.1" [color=blue, fontcolor=blue, shape=ellipse]
+}

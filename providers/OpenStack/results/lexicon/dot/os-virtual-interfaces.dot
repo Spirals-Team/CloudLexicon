@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-virtual-interfaces", fontsize=24]
+splines=true
+"os-virtual-interfaces" [color=blue, fontcolor=blue, shape=doublecircle]
+}

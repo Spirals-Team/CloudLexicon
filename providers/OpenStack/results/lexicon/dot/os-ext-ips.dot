@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-ext-ips", fontsize=24]
+splines=true
+"detail" [color=blue, fontcolor=blue, shape=doublecircle]
+"serverIPDetails" [color=orange, fontcolor=orange, shape=box]
+"servers" -> "serverIPDetails" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

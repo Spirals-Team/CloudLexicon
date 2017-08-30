@@ -1,0 +1,778 @@
+--------------------------------------------------------------------------------
+Read-Only Pattern - 171 detected:
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v1.0
+ * http://openstack.provider.com/v1.0/{accountId}/flavors
+ * http://openstack.provider.com/v1.0/{accountId}/flavors/{flavorId}
+ * http://openstack.provider.com/v2.1/flavors/1
+ * http://openstack.provider.com/v2.1/flavors/10/flavor-access
+ * http://openstack.provider.com/v2.1/flavors/detail
+ * http://openstack.provider.com/v2.0
+ * http://openstack.provider.com/v2.0/users/{userId}/roles
+ * http://openstack.provider.com/v2.0/tenants
+ * http://openstack.provider.com/v2.0/tenants/{tenantId}
+ * http://openstack.provider.com/v2.0/tenants/{tenantId}/users/{userId}/roles
+ * http://openstack.provider.com/v2.0/extensions
+ * http://openstack.provider.com/v2.0/extensions/{alias}
+ * http://openstack.provider.com/v2.0/tokens/{tokenId}/endpoints
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v2.0
+ * http://openstack.provider.com/v2.0/extensions
+ * http://openstack.provider.com/v2.0/extensions/{alias}
+ * http://openstack.provider.com/v2.0/tenants
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v1/{tenant_id}/resource_types
+ * http://openstack.provider.com/v1/{tenant_id}/resource_types/{type_name}
+ * http://openstack.provider.com/v1/{tenant_id}/resource_types/{type_name}/template
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events/{event_id}
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/metadata
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/template
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/events
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/events
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/resources
+ * http://openstack.provider.com/v1/{tenant_id}/software_deployments/metadata/{server_id}
+ * http://openstack.provider.com/v2.1/os-cells
+ * http://openstack.provider.com/v2.1/os-cells/cell3
+ * http://openstack.provider.com/v2.1/os-cells/nova/capacities
+ * http://openstack.provider.com/v2.1/os-certificates/root
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v2
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/ips
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/ips/{network_label}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/detail
+ * http://openstack.provider.com/v2/{tenant_id}/flavors
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/detail
+ * http://openstack.provider.com/v2/{tenant_id}/images
+ * http://openstack.provider.com/v2/{tenant_id}/images/detail
+ * http://openstack.provider.com/v2/{tenant_id}/extensions
+ * http://openstack.provider.com/v2/{tenant_id}/extensions/{alias}
+ * http://openstack.provider.com/v2/{tenant_id}/limits
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2.1/servers/detail
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/detail
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/diagnostics
+ * http://openstack.provider.com/v2/{tenant_id}/servers/detail
+ * http://openstack.provider.com/v2/{tenant_id}/images/{image_id}
+ * http://openstack.provider.com/v2/{tenant_id}/images/detail
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/detail
+ * http://openstack.provider.com/v2/{tenant_id}/images/{image_id}
+ * http://openstack.provider.com/v2/{tenant_id}/images/detail
+ * http://openstack.provider.com/v2/{tenant_id}/servers/detail
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2.1/servers/detail
+ * http://openstack.provider.com/v2.1/servers
+ * http://openstack.provider.com/v2.1/servers/details
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2.1/servers/detail
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/detail
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}/os-flavor-access
+ * http://openstack.provider.com/v2.1/flavors/{flavor_id}
+ * http://openstack.provider.com/v2.1/flavors/detail
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/detail
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}/os-flavor-swap
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/detail
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2.1/flavors
+ * http://openstack.provider.com/v2.1/flavors/{flavor_id}
+ * http://openstack.provider.com/v2.1/flavors/detail
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-dns
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-dns/{domain}/entries/{ip}
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-pools
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ips-bulk/{host_name}
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/detail
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2.1/os-hosts
+ * http://openstack.provider.com/v2/{tenant_id}/os-hosts
+ * http://openstack.provider.com/v2.1/os-hypervisors/{hypervisor_id}
+ * http://openstack.provider.com/v2.1/os-hypervisors/{hypervisor_id}/uptime
+ * http://openstack.provider.com/v2.1/os-hypervisors/{hypervisor_id}/servers
+ * http://openstack.provider.com/v2.1/os-hypervisors/statistics
+ * http://openstack.provider.com/v2/{tenant_id}/os-hypervisors
+ * http://openstack.provider.com/v2/{tenant_id}/os-hypervisors/statistics
+ * http://openstack.provider.com/v2/{tenant_id}/os-hypervisors/{hypervisor_hostname}
+ * http://openstack.provider.com/v2/{tenant_id}/os-hypervisors/{hypervisor_hostname}/servers
+ * http://openstack.provider.com/v2/{tenant_id}/os-hypervisors/detail
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v1/shared-images/{owner}
+ * http://openstack.provider.com/v1/images/detail
+ * http://openstack.provider.com/v2/schemas/members
+ * http://openstack.provider.com/v2/schemas/images
+ * http://openstack.provider.com/v2/schemas/member
+ * http://openstack.provider.com/v2/schemas/image
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v2.1/servers/{server_id}/os-instance-actions
+ * http://openstack.provider.com/v2.1/servers/{server_id}/os-instance-actions/{request_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-instance-actions
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-instance-actions/{action_id}
+ * http://openstack.provider.com/v2.1/os-instance-usage-audit-log
+ * http://openstack.provider.com/v2.1/os-instance-usage-audit-log/{datetime}
+ * http://openstack.provider.com/v2.0/tenants/{tenantId}/users
+ * http://openstack.provider.com/v2.0/users/{userId}/roles
+ * http://openstack.provider.com/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials/{type}
+ * http://openstack.provider.com/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials/{type}
+ * http://openstack.provider.com/v2.0/OS-KSVALIDATE/token/endpoints
+ * http://openstack.provider.com/v2.1/limits
+ * http://openstack.provider.com/v2/{tenant_id}/limits
+ * http://openstack.provider.com/v2.1/os-migrations
+ * http://openstack.provider.com/v2/{tenant_id}/os-migrations
+ * http://openstack.provider.com/v2.0/networks/{network_id}
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v2.0
+ * http://openstack.provider.com/v2.0/extensions
+ * http://openstack.provider.com/v2.0/extensions/{alias}
+ * http://openstack.provider.com/v3/OS-OAUTH1/users/{userId}/access_tokens
+ * http://openstack.provider.com/v3/OS-OAUTH1/users/{userId}/access_tokens/{access_token_id}/roles
+ * http://openstack.provider.com/v3/OS-OAUTH1/users/{userId}/access_tokens/{access_token_id}/roles/{role_id}
+ * http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}/associations
+ * http://openstack.provider.com/v2.1/os-quota-sets/{tenant_id}/defaults
+ * http://openstack.provider.com/v2/{tenant_id}/os-quota-sets/{tenant_id}/detail/{user_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-quota-sets/defaults
+ * http://openstack.provider.com/v2/{tenant_id}/os-security-groups/servers/{server_id}/os-security-groups
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/detail
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2.1/servers/detail
+ * http://openstack.provider.com/v2/{tenant_id}/os-services/detail
+ * http://openstack.provider.com/v2.1/os-simple-tenant-usage
+ * http://openstack.provider.com/v2.1/os-simple-tenant-usage/{tenant_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-simple-tenant-usage
+ * http://openstack.provider.com/v2/{tenant_id}/os-simple-tenant-usage/{tenant_id}
+ * http://openstack.provider.com/v2/alarms/{alarm_id}/history
+ * http://openstack.provider.com/v2/meters
+ * http://openstack.provider.com/v2/meters/{meter_name}/statistics
+ * http://openstack.provider.com/v2/resources
+ * http://openstack.provider.com/v2/resources/{resource_id}
+ * http://openstack.provider.com/v2/{tenant_id}/limits/{tenant_id}
+ * http://openstack.provider.com/v2/{tenant_id}/limits
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v2.1
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-virtual-interfaces
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-snapshots/detail
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-volumes
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-volumes/detail
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-volume-types
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-volume-types/{volume_type_id}
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v1
+ * http://openstack.provider.com/v1/{tenant_id}/snapshots/detail
+ * http://openstack.provider.com/v1/{tenant_id}/volumes/detail
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v2
+ * http://openstack.provider.com/v2/{tenant_id}/snapshots/detail
+ * http://openstack.provider.com/v2/{tenant_id}/volumes/detail
+ * http://openstack.provider.com/v2/{tenant_id}/extensions
+
+--------------------------------------------------------------------------------
+Resource Pattern - 142 detected:
+ * http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}
+ * http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}/databases/{databaseName}
+ * http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}/users/{userId}
+ * http://openstack.provider.com/v1.0/{accountId}/flavors/{flavorId}
+ * http://openstack.provider.com/v2.0/users/{userId}
+ * http://openstack.provider.com/v2.0/tenants/{tenantId}
+ * http://openstack.provider.com/v2.0/extensions/{alias}
+ * http://openstack.provider.com/v2.0/tokens/{tokenId}
+ * http://openstack.provider.com/v2.0/extensions/{alias}
+ * http://openstack.provider.com/v2.0/metering/metering-labels/{metering_label_id}
+ * http://openstack.provider.com/v2.0/metering/metering-label-rules/{metering-label-rule-id}
+ * http://openstack.provider.com/v1/{tenant_id}
+ * http://openstack.provider.com/v1/{tenant_id}/resource_types/{type_name}
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots/{snapshot_id}
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events/{event_id}
+ * http://openstack.provider.com/v1/{tenant_id}/software_deployments/metadata/{server_id}
+ * http://openstack.provider.com/v1/{tenant_id}/software_deployments/{deployment_id}
+ * http://openstack.provider.com/v1/{tenant_id}/software_configs/{config_id}
+ * http://openstack.provider.com/v2.1/servers/{server_id}/action/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2.1/os-agents/{id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-agents/{id}
+ * http://openstack.provider.com/v2.1/os-aggregates/{aggregate_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-aggregates/{aggregate_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/ips/{network_label}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/metadata/{key}
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2/{tenant_id}/images/{image_id}
+ * http://openstack.provider.com/v2/{tenant_id}/images/{image_id}/metadata/{key}
+ * http://openstack.provider.com/v2/{tenant_id}/extensions/{alias}
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/images/{image_id}
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/images/{image_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-fixed-ips/{fixed_ip}
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs/{key_id}
+ * http://openstack.provider.com/v2.1/flavors/{flavor_id}
+ * http://openstack.provider.com/v2.1/flavors/{flavor_id}
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2.1/flavors/{flavor_id}
+ * http://openstack.provider.com/v2.1/flavors/{flavor_id}/flavor-extra-specs/{flavor_extra_spec_key}
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-dns/{domain}
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-dns/{domain}/entries/{name}
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-dns/{domain}/entries/{ip}
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ips-bulk/{host_name}
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ips/{id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2.1/os-hosts/{host_name}
+ * http://openstack.provider.com/v2/{tenant_id}/os-hosts/{host_name}
+ * http://openstack.provider.com/v2.1/os-hypervisors/{hypervisor_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-hypervisors/{hypervisor_hostname}
+ * http://openstack.provider.com/v1/shared-images/{owner}
+ * http://openstack.provider.com/v1/images/{image_id}
+ * http://openstack.provider.com/v1/images/{image_id}/members/{owner_id}
+ * http://openstack.provider.com/v2/images/{image_id}
+ * http://openstack.provider.com/v2/images/{image_id}/members/{member_id}
+ * http://openstack.provider.com/v2/images/{image_id}/tags/{tag}
+ * http://openstack.provider.com/v2.1/servers/{server_id}/os-instance-actions/{request_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-instance-actions/{action_id}
+ * http://openstack.provider.com/v2.1/os-instance-usage-audit-log/{datetime}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-interface/{attachment_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-keypairs/{keypair_name}
+ * http://openstack.provider.com/v2.0/tenants/{tenantId}
+ * http://openstack.provider.com/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId}
+ * http://openstack.provider.com/v2.0/users/{userId}
+ * http://openstack.provider.com/v2.0/users/{userId}/roles/OS-KSADM/{roleId}
+ * http://openstack.provider.com/v2.0/OS-KSADM/roles/{roleId}
+ * http://openstack.provider.com/v2.0/OS-KSADM/services/{serviceId}
+ * http://openstack.provider.com/v2.0/OS-KSCATALOG/endpointTemplates/{endpointTemplateId}
+ * http://openstack.provider.com/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints/{endpointId}
+ * http://openstack.provider.com/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials/{type}
+ * http://openstack.provider.com/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials/{type}
+ * http://openstack.provider.com/v2.0/routers/{router_id}
+ * http://openstack.provider.com/v2.0/floatingips/{floatingip_id}
+ * http://openstack.provider.com/v1.0/lb/pools/{pool_id}
+ * http://openstack.provider.com/v1.0/lb/pools/{pool_id}/health_monitors/{health_monitor_id}
+ * http://openstack.provider.com/v1.0/lb/vips/{vip_id}
+ * http://openstack.provider.com/v1.0/lb/members/{member_id}
+ * http://openstack.provider.com/v1.0/lb/healthmonitors/{health_monitor_id}
+ * http://openstack.provider.com/v2.0/networks/{network_id}
+ * http://openstack.provider.com/v2.0/networks/{network_id}
+ * http://openstack.provider.com/v2.0/networks/{network_id}
+ * http://openstack.provider.com/v2.0/extensions/{alias}
+ * http://openstack.provider.com/v3/OS-OAUTH1/users/{userId}/access_tokens/{access_token_id}
+ * http://openstack.provider.com/v3/OS-OAUTH1/users/{userId}/access_tokens/{access_token_id}/roles/{role_id}
+ * http://openstack.provider.com/v3/OS-OAUTH1/consumers/{consumer_id}
+ * http://openstack.provider.com/v2.0/ports/{port_id}
+ * http://openstack.provider.com/v2.0/ports/{port_id}
+ * http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}
+ * http://openstack.provider.com/v2.1/os-quota-class-sets/{class_id}
+ * http://openstack.provider.com/v2/os-quota-class-sets/{class_id}
+ * http://openstack.provider.com/v2.1/os-quota-sets/{tenant_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-quota-sets/{tenant_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-quota-sets/{tenant_id}/detail/{user_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-quota-sets/{tenant_id}/{user_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-security-group-default-rules/{security_group_default_rule_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-security-groups/{security_group_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-server-groups/{ServerGroup_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2.1/os-simple-tenant-usage/{tenant_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-simple-tenant-usage/{tenant_id}
+ * http://openstack.provider.com/v2.0/subnets/{subnet_id}
+ * http://openstack.provider.com/v2/alarms/{alarm_id}
+ * http://openstack.provider.com/v2/meters/{meter_name}
+ * http://openstack.provider.com/v2/resources/{resource_id}
+ * http://openstack.provider.com/v2/{tenant_id}/limits/{tenant_id}
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-snapshots/{snapshot_id}
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-volumes/{volume_id}
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-volume-types/{volume_type_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-volume_attachments/{attachment_id}
+ * http://openstack.provider.com/v2.0/security-group-rules/{rules-security-groups-id}
+ * http://openstack.provider.com/v2.0/security-groups/{security_group_id}
+ * http://openstack.provider.com/v1/{tenant_id}/snapshots/{snapshot_id}
+ * http://openstack.provider.com/v1/{tenant_id}/volumes/{volume_id}
+ * http://openstack.provider.com/v1/{tenant_id}/types/{volume_type_id}
+ * http://openstack.provider.com/v2/{tenant_id}/snapshots/{snapshot_id}
+ * http://openstack.provider.com/v2/{tenant_id}/types/{volume_type_id}
+ * http://openstack.provider.com/v2/{tenant_id}/volumes/{volume_id}
+
+--------------------------------------------------------------------------------
+Singleton Resource Pattern - 48 detected:
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v2.1/flavors
+ * http://openstack.provider.com/v2.1/flavors/1
+ * http://openstack.provider.com/v2.1/flavors/10
+ * http://openstack.provider.com/v2.1/flavors/10/flavor-access
+ * http://openstack.provider.com/v2.1/flavors/detail
+ * http://openstack.provider.com/v2.0
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v2.0
+ * http://openstack.provider.com/v2.0/tenants
+ * http://openstack.provider.com/v2.0/tokens
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v2.1/os-cells
+ * http://openstack.provider.com/v2.1/os-cells/cell3
+ * http://openstack.provider.com/v2.1/os-cells/nova/capacities
+ * http://openstack.provider.com/v2.1/os-certificates
+ * http://openstack.provider.com/v2.1/os-certificates/root
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v2.1/servers/detail
+ * http://openstack.provider.com/v2.1/servers/detail
+ * http://openstack.provider.com/v2.1/servers
+ * http://openstack.provider.com/v2.1/servers/details
+ * http://openstack.provider.com/v2.1/servers/detail
+ * http://openstack.provider.com/v2.1/flavors/detail
+ * http://openstack.provider.com/v2.1/flavors/detail
+ * http://openstack.provider.com/v2.1/os-hypervisors/statistics
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v1/images/detail
+ * http://openstack.provider.com/v2/schemas/members
+ * http://openstack.provider.com/v2/schemas/images
+ * http://openstack.provider.com/v2/schemas/member
+ * http://openstack.provider.com/v2/schemas/image
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v2.0/OS-KSVALIDATE/token
+ * http://openstack.provider.com/v2.0/OS-KSVALIDATE/token/endpoints
+ * http://openstack.provider.com/v2.1/limits
+ * http://openstack.provider.com/v2.1/os-migrations
+ * http://openstack.provider.com/v2.1/servers
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v2.0
+ * http://openstack.provider.com/v3/OS-OAUTH1/access_token
+ * http://openstack.provider.com/v3/auth/tokens
+ * http://openstack.provider.com/v2.0/quotas
+ * http://openstack.provider.com/v2.1/servers/detail
+ * http://openstack.provider.com
+ * http://openstack.provider.com/v2.1
+ * http://openstack.provider.com
+ * http://openstack.provider.com
+
+--------------------------------------------------------------------------------
+SubResource Pattern - 70 detected:
+ * http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}/root
+ * http://openstack.provider.com/v2.0/users/{userId}/roles
+ * http://openstack.provider.com/v2.0/tenants/{tenantId}/users/{userId}/roles
+ * http://openstack.provider.com/v2.0/tokens/{tokenId}/endpoints
+ * http://openstack.provider.com/v1/{tenant_id}/resource_types/{type_name}/template
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/metadata
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/template
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/events
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/actions
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/events
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/resources
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2/{tenant_id}/os-certificates
+ * http://openstack.provider.com/v2/{tenant_id}/os-cloudpipe
+ * http://openstack.provider.com/v2/{tenant_id}/servers/detail
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/detail
+ * http://openstack.provider.com/v2/{tenant_id}/images/detail
+ * http://openstack.provider.com/v2/{tenant_id}/limits
+ * http://openstack.provider.com/v2/{tenant_id}/os-coverage
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/detail
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/diagnostics
+ * http://openstack.provider.com/v2/{tenant_id}/servers/detail
+ * http://openstack.provider.com/v2/{tenant_id}/images/detail
+ * http://openstack.provider.com/v2/{tenant_id}/servers/detail
+ * http://openstack.provider.com/v2/{tenant_id}/images/detail
+ * http://openstack.provider.com/v2/{tenant_id}/servers/detail
+ * http://openstack.provider.com/v2/{tenant_id}/servers/detail
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}/os-flavor-access
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/detail
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}/os-flavor-swap
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/detail
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-pools
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/detail
+ * http://openstack.provider.com/v2.1/os-hypervisors/{hypervisor_id}/uptime
+ * http://openstack.provider.com/v2.1/os-hypervisors/{hypervisor_id}/servers
+ * http://openstack.provider.com/v2/{tenant_id}/os-hypervisors/statistics
+ * http://openstack.provider.com/v2/{tenant_id}/os-hypervisors/{hypervisor_hostname}/servers
+ * http://openstack.provider.com/v2/{tenant_id}/os-hypervisors/detail
+ * http://openstack.provider.com/v2/images/{image_id}/file
+ * http://openstack.provider.com/v2.0/users/{userId}/roles
+ * http://openstack.provider.com/v2.0/users/{userId}/OS-KSADM/credentials
+ * http://openstack.provider.com/v2.0/users/{userId}/OS-OS-KSS3/credentials
+ * http://openstack.provider.com/v2/{tenant_id}/limits
+ * http://openstack.provider.com/v2/{tenant_id}/os-migrations
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}/associations
+ * http://openstack.provider.com/v2.1/os-quota-sets/{tenant_id}/defaults
+ * http://openstack.provider.com/v2/{tenant_id}/os-quota-sets/defaults
+ * http://openstack.provider.com/v2.1/servers/{server_id}/actions
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2/{tenant_id}/os-security-groups/servers/{server_id}/os-security-groups
+ * http://openstack.provider.com/v2/{tenant_id}/servers/detail
+ * http://openstack.provider.com/v2/servers/{server_id}/os-server-password
+ * http://openstack.provider.com/v2/{tenant_id}/os-services
+ * http://openstack.provider.com/v2/{tenant_id}/os-services/detail
+ * http://openstack.provider.com/v2/alarms/{alarm_id}/history
+ * http://openstack.provider.com/v2/alarms/{alarm_id}/state
+ * http://openstack.provider.com/v2/meters/{meter_name}/statistics
+ * http://openstack.provider.com/v2/{tenant_id}/limits
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-virtual-interfaces
+ * http://openstack.provider.com/v2/{tenant_id}/os-volume-manage
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-snapshots/detail
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-volumes/detail
+ * http://openstack.provider.com/v1/{tenant_id}/snapshots/{snapshot_id}/metadata
+ * http://openstack.provider.com/v1/{tenant_id}/snapshots/detail
+ * http://openstack.provider.com/v1/{tenant_id}/volumes/detail
+ * http://openstack.provider.com/v2/{tenant_id}/snapshots/{snapshot_id}/metadata
+ * http://openstack.provider.com/v2/{tenant_id}/snapshots/detail
+ * http://openstack.provider.com/v2/{tenant_id}/volumes/detail
+ * http://openstack.provider.com/v2/{tenant_id}/extensions
+
+--------------------------------------------------------------------------------
+Collection Pattern - 109 detected:
+ * http://openstack.provider.com/v1.0
+ * http://openstack.provider.com/v1.0/{accountId}/instances
+ * http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}/databases
+ * http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}/users
+ * http://openstack.provider.com/v1.0/{accountId}/flavors
+ * http://openstack.provider.com/v2.0/users
+ * http://openstack.provider.com/v2.0/tenants
+ * http://openstack.provider.com/v2.0/extensions
+ * http://openstack.provider.com/v2.0/tokens
+ * http://openstack.provider.com/v2.0/extensions
+ * http://openstack.provider.com/v2.0/metering/metering-labels
+ * http://openstack.provider.com/v2.0/metering/metering-label-rules
+ * http://openstack.provider.com/v1/{tenant_id}/resource_types
+ * http://openstack.provider.com/v1/{tenant_id}/stacks
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events
+ * http://openstack.provider.com/v1/{tenant_id}/software_deployments
+ * http://openstack.provider.com/v1/{tenant_id}/software_configs
+ * http://openstack.provider.com/v2.1/os-agents
+ * http://openstack.provider.com/v2/{tenant_id}/os-agents
+ * http://openstack.provider.com/v2.1/os-aggregates
+ * http://openstack.provider.com/v2/{tenant_id}/os-aggregates
+ * http://openstack.provider.com/v2
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/ips
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/metadata
+ * http://openstack.provider.com/v2/{tenant_id}/flavors
+ * http://openstack.provider.com/v2/{tenant_id}/images
+ * http://openstack.provider.com/v2/{tenant_id}/images/{image_id}/metadata
+ * http://openstack.provider.com/v2/{tenant_id}/extensions
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2/{tenant_id}/flavors
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs
+ * http://openstack.provider.com/v2.1/flavors
+ * http://openstack.provider.com/v2.1/flavors
+ * http://openstack.provider.com/v2/{tenant_id}/flavors
+ * http://openstack.provider.com/v2/{tenant_id}/flavors
+ * http://openstack.provider.com/v2/{tenant_id}/flavors
+ * http://openstack.provider.com/v2.1/flavors
+ * http://openstack.provider.com/v2.1/flavors/{flavor_id}/flavor-extra-specs
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-dns
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ips-bulk
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ips
+ * http://openstack.provider.com/v2.1/os-hosts
+ * http://openstack.provider.com/v2/{tenant_id}/os-hosts
+ * http://openstack.provider.com/v2.1/os-hypervisors
+ * http://openstack.provider.com/v2/{tenant_id}/os-hypervisors
+ * http://openstack.provider.com/v1/images
+ * http://openstack.provider.com/v1/images/{image_id}/members
+ * http://openstack.provider.com/v2/images
+ * http://openstack.provider.com/v2/images/{image_id}/members
+ * http://openstack.provider.com/v2.1/servers/{server_id}/os-instance-actions
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-instance-actions
+ * http://openstack.provider.com/v2.1/os-instance-usage-audit-log
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-interface
+ * http://openstack.provider.com/v2/{tenant_id}/os-keypairs
+ * http://openstack.provider.com/v2.0/tenants
+ * http://openstack.provider.com/v2.0/tenants/{tenantId}/users
+ * http://openstack.provider.com/v2.0/users
+ * http://openstack.provider.com/v2.0/OS-KSADM/roles
+ * http://openstack.provider.com/v2.0/OS-KSADM/services
+ * http://openstack.provider.com/v2.0/OS-KSCATALOG/endpointTemplates
+ * http://openstack.provider.com/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints
+ * http://openstack.provider.com/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials
+ * http://openstack.provider.com/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials
+ * http://openstack.provider.com/v2.0/routers
+ * http://openstack.provider.com/v2.0/floatingips
+ * http://openstack.provider.com/v1.0/lb/pools
+ * http://openstack.provider.com/v1.0/lb/pools/{pool_id}/health_monitors
+ * http://openstack.provider.com/v1.0/lb/vips
+ * http://openstack.provider.com/v1.0/lb/members
+ * http://openstack.provider.com/v1.0/lb/healthmonitors
+ * http://openstack.provider.com/v2.0/networks
+ * http://openstack.provider.com/v2.0/networks
+ * http://openstack.provider.com/v2.0/networks
+ * http://openstack.provider.com/v2.0/extensions
+ * http://openstack.provider.com/v3/OS-OAUTH1/users/{userId}/access_tokens
+ * http://openstack.provider.com/v3/OS-OAUTH1/users/{userId}/access_tokens/{access_token_id}/roles
+ * http://openstack.provider.com/v3/OS-OAUTH1/consumers
+ * http://openstack.provider.com/v2.0/ports
+ * http://openstack.provider.com/v2.0/ports
+ * http://openstack.provider.com/v2/{tenant_id}/qos-specs
+ * http://openstack.provider.com/v2/{tenant_id}/os-security-group-default-rules
+ * http://openstack.provider.com/v2/{tenant_id}/os-security-groups
+ * http://openstack.provider.com/v2/{tenant_id}/os-server-groups
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2.1/os-simple-tenant-usage
+ * http://openstack.provider.com/v2/{tenant_id}/os-simple-tenant-usage
+ * http://openstack.provider.com/v2.0/subnets
+ * http://openstack.provider.com/v2/alarms
+ * http://openstack.provider.com/v2/meters
+ * http://openstack.provider.com/v2/resources
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-snapshots
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-volumes
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-volume-types
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-volume_attachments
+ * http://openstack.provider.com/v2.0/security-group-rules
+ * http://openstack.provider.com/v2.0/security-groups
+ * http://openstack.provider.com/v1
+ * http://openstack.provider.com/v1/{tenant_id}/snapshots
+ * http://openstack.provider.com/v1/{tenant_id}/volumes
+ * http://openstack.provider.com/v1/{tenant_id}/types
+ * http://openstack.provider.com/v2
+ * http://openstack.provider.com/v2/{tenant_id}/snapshots
+ * http://openstack.provider.com/v2/{tenant_id}/types
+ * http://openstack.provider.com/v2/{tenant_id}/volumes
+
+--------------------------------------------------------------------------------
+Controller Pattern - 22 detected:
+ * http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}?action|restartInstance
+ * http://openstack.provider.com/v2.1/flavors/10?action|removeflavoraccess
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/signal
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/preview
+ * http://openstack.provider.com/v1/{tenant_id}/validate
+ * http://openstack.provider.com/v2.1/servers/{server_id}/action/{server_id}?action|unpauseserver
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|addFloatingIP
+ * http://openstack.provider.com/v2.1/os-aggregates/{aggregate_id}?action|removeaggregate
+ * http://openstack.provider.com/v2/{tenant_id}/os-aggregates/{aggregate_id}?action|remove_host
+ * http://openstack.provider.com/v2/{tenant_id}/os-cloudpipe/configure-project
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|createImage
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|getConsoleOutput
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|getConsole
+ * http://openstack.provider.com/v2/{tenant_id}/os-coverage?action|stopReport
+ * http://openstack.provider.com/v2.1/servers/{server_id}?action|restoredelete
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|restore
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|rebuild
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}?action|addTenantAccess
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ips-bulk/delete
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|RemoveFloatingIP
+ * http://openstack.provider.com/v2.1/servers?action|addiptoinstance
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|stop
+
+--------------------------------------------------------------------------------
+Singular Collection Anti-Pattern - 9 detected:
+ * http://openstack.provider.com/v1.0
+ * http://openstack.provider.com/v2
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ips-bulk
+ * http://openstack.provider.com/v2.1/os-instance-usage-audit-log
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-interface
+ * http://openstack.provider.com/v2.1/os-simple-tenant-usage
+ * http://openstack.provider.com/v2/{tenant_id}/os-simple-tenant-usage
+ * http://openstack.provider.com/v1
+ * http://openstack.provider.com/v2
+
+--------------------------------------------------------------------------------
+Missing POST Method Anti-Pattern - 5 detected:
+ * http://openstack.provider.com/v2/{tenant_id}/images
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-dns
+ * http://openstack.provider.com/v1/images/{image_id}/members
+ * http://openstack.provider.com/v3/OS-OAUTH1/users/{userId}/access_tokens
+ * http://openstack.provider.com/v1.1/{tenant_id}/os-volumes
+
+--------------------------------------------------------------------------------
+Missing GET Method Anti-Pattern - 55 detected:
+ * http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}/databases/{databaseName}
+ * http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}/users/{userId}
+ * http://openstack.provider.com/v2.1/flavors
+ * http://openstack.provider.com/v2.1/flavors/10
+ * http://openstack.provider.com/v2.0/users
+ * http://openstack.provider.com/v2.0/tokens
+ * http://openstack.provider.com/v2.0/tokens
+ * http://openstack.provider.com/v1/{tenant_id}
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/actions
+ * http://openstack.provider.com/v1/{tenant_id}/software_configs
+ * http://openstack.provider.com/v2.1/servers/{server_id}/action/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2.1/os-agents/{id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-agents/{id}
+ * http://openstack.provider.com/v2.1/os-certificates
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-coverage
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2.1/flavors
+ * http://openstack.provider.com/v2.1/flavors/{flavor_id}
+ * http://openstack.provider.com/v2.1/flavors
+ * http://openstack.provider.com/v2/{tenant_id}/flavors
+ * http://openstack.provider.com/v2/{tenant_id}/flavors
+ * http://openstack.provider.com/v2/{tenant_id}/flavors
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-dns/{domain}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v1/images/{image_id}/members
+ * http://openstack.provider.com/v1/images/{image_id}/members/{owner_id}
+ * http://openstack.provider.com/v2/images/{image_id}/tags/{tag}
+ * http://openstack.provider.com/v2.0/tenants
+ * http://openstack.provider.com/v2.0/tenants/{tenantId}
+ * http://openstack.provider.com/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId}
+ * http://openstack.provider.com/v2.0/users/{userId}
+ * http://openstack.provider.com/v2.0/users/{userId}/roles/OS-KSADM/{roleId}
+ * http://openstack.provider.com/v2.0/OS-KSVALIDATE/token
+ * http://openstack.provider.com/v1.0/lb/pools/{pool_id}/health_monitors
+ * http://openstack.provider.com/v1.0/lb/pools/{pool_id}/health_monitors/{health_monitor_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2.1/servers
+ * http://openstack.provider.com/v3/OS-OAUTH1/access_token
+ * http://openstack.provider.com/v3/auth/tokens
+ * http://openstack.provider.com/v2.1/servers/{server_id}/actions
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2/{tenant_id}/servers
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-volume-manage
+
+--------------------------------------------------------------------------------
+Missing DELETE Method Anti-Pattern - 18 detected:
+ * http://openstack.provider.com/v2.0/tokens/{tokenId}
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}
+ * http://openstack.provider.com/v2.1/os-agents/{id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-agents/{id}
+ * http://openstack.provider.com/v2.1/os-aggregates/{aggregate_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2.1/flavors/{flavor_id}
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}
+ * http://openstack.provider.com/v2.1/flavors/{flavor_id}/flavor-extra-specs/{flavor_extra_spec_key}
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ips-bulk/{host_name}
+ * http://openstack.provider.com/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials/{type}
+ * http://openstack.provider.com/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials/{type}
+ * http://openstack.provider.com/v2.0/networks/{network_id}
+ * http://openstack.provider.com/v2.0/ports/{port_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+
+--------------------------------------------------------------------------------
+Unexpected DELETE Method Anti-Pattern - 5 detected:
+ * http://openstack.provider.com/v2/{tenant_id}/os-agents
+ * http://openstack.provider.com/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials
+ * http://openstack.provider.com/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials
+ * http://openstack.provider.com/v2.0/quotas
+ * http://openstack.provider.com/v2/servers/{server_id}/os-server-password
+
+--------------------------------------------------------------------------------
+Only Controllers Anti-Pattern - 13 detected:
+ * http://openstack.provider.com/v2.1/servers/{server_id}/action/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/os-coverage
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2.1/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}
+
+--------------------------------------------------------------------------------
+Not Verb Controller Anti-Pattern - 5 detected:
+ * http://openstack.provider.com/v2.1/servers/{server_id}?action|evacuateserver
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|serverIPDetails
+ * http://openstack.provider.com/v2/{tenant_id}/os-fixed-ips/{fixed_ip}?action|reserveIP
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|unrescue
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|unshelve
+
+--------------------------------------------------------------------------------
+Create Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Retrieve Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Update Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Delete Verb Controller Anti-Pattern - 1 detected:
+ * http://openstack.provider.com/v2/{tenant_id}/os-floating-ips-bulk/delete
+
+--------------------------------------------------------------------------------
+Not POST Method Controller Anti-Pattern - 20 detected:
+ * http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/abandon
+ * http://openstack.provider.com/v1/{tenant_id}/build_info
+ * http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|serverIPDetails
+ * http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}?action|removeTenantAccess
+ * http://openstack.provider.com/v2.1/os-hosts/{host_name}/startup
+ * http://openstack.provider.com/v2.1/os-hosts/{host_name}/shutdown
+ * http://openstack.provider.com/v2.1/os-hosts/{host_name}/reboot
+ * http://openstack.provider.com/v2/{tenant_id}/os-hosts/{host_name}/shutdown
+ * http://openstack.provider.com/v2/{tenant_id}/os-hosts/{host_name}/reboot
+ * http://openstack.provider.com/v2/{tenant_id}/os-hosts/{host_name}/startup
+ * http://openstack.provider.com/v2.1/os-hypervisors/search
+ * http://openstack.provider.com/v2.0/OS-KSVALIDATE/token/validate
+ * http://openstack.provider.com/v2.0/routers/{router_id}/add_router_interface
+ * http://openstack.provider.com/v2.0/routers/{router_id}/remove_router_interface
+ * http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}/disassociate_all
+ * http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}/associate
+ * http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}/disassociate
+ * http://openstack.provider.com/v2/{tenant_id}/os-services/disable
+ * http://openstack.provider.com/v2/{tenant_id}/os-services/disable-log-reason
+ * http://openstack.provider.com/v2/{tenant_id}/os-services/enable
+
+--------------------------------------------------------------------------------
+More Than One Method Anti-Pattern - 1 detected:
+ * http://openstack.provider.com/v2.0/OS-KSVALIDATE/token/validate
+
+--------------------------------------------------------------------------------
+Not POST Controller Method Anti-Pattern - 21 detected:
+ * DELETE http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/abandon
+ * GET http://openstack.provider.com/v1/{tenant_id}/build_info
+ * GET http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|serverIPDetails
+ * DELETE http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}?action|removeTenantAccess
+ * GET http://openstack.provider.com/v2.1/os-hosts/{host_name}/startup
+ * GET http://openstack.provider.com/v2.1/os-hosts/{host_name}/shutdown
+ * GET http://openstack.provider.com/v2.1/os-hosts/{host_name}/reboot
+ * GET http://openstack.provider.com/v2/{tenant_id}/os-hosts/{host_name}/shutdown
+ * GET http://openstack.provider.com/v2/{tenant_id}/os-hosts/{host_name}/reboot
+ * GET http://openstack.provider.com/v2/{tenant_id}/os-hosts/{host_name}/startup
+ * GET http://openstack.provider.com/v2.1/os-hypervisors/search
+ * HEAD http://openstack.provider.com/v2.0/OS-KSVALIDATE/token/validate
+ * GET http://openstack.provider.com/v2.0/OS-KSVALIDATE/token/validate
+ * PUT http://openstack.provider.com/v2.0/routers/{router_id}/add_router_interface
+ * PUT http://openstack.provider.com/v2.0/routers/{router_id}/remove_router_interface
+ * GET http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}/disassociate_all
+ * GET http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}/associate
+ * GET http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}/disassociate
+ * PUT http://openstack.provider.com/v2/{tenant_id}/os-services/disable
+ * PUT http://openstack.provider.com/v2/{tenant_id}/os-services/disable-log-reason
+ * PUT http://openstack.provider.com/v2/{tenant_id}/os-services/enable
+
+--------------------------------------------------------------------------------
+Untagged Resources and Controllers  - 0 detected:
+

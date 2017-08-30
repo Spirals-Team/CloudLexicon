@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-console-output", fontsize=24]
+splines=true
+"getConsoleOutput" [color=orange, fontcolor=orange, shape=box]
+}

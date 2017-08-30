@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-flavor-rxtx", fontsize=24]
+splines=true
+"flavors" [color=blue, fontcolor=blue, shape=doublecircle]
+"detail" -> "flavors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"detail" [color=blue, fontcolor=blue, shape=ellipse]
+}

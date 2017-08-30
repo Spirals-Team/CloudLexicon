@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="OpenStack - metering-labels", fontsize=24]
+splines=true
+"metering-labels" [color=blue, fontcolor=blue, shape=doublecircle]
+"metering-label-rules" [color=blue, fontcolor=blue, shape=doublecircle]
+"metering" -> "metering-labels" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"metering" -> "metering-label-rules" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

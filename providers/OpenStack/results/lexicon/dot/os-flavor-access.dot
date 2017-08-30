@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-flavor-access", fontsize=24]
+splines=true
+"flavors" [color=blue, fontcolor=blue, shape=doublecircle]
+"addTenantAccess" [color=orange, fontcolor=orange, shape=box]
+"addTenantAccess" -> "flavors" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"removeTenantAccess" -> "addTenantAccess" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"removeTenantAccess" [color=orange, fontcolor=orange, shape=box]
+"removeTenantAccess" -> "flavors" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"os-flavor-access" -> "flavors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"os-flavor-access" [color=blue, fontcolor=blue, shape=ellipse]
+"flavors" -> "os-flavor-access" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

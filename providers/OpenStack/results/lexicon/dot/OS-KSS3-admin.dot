@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="OpenStack - OS-KSS3-admin", fontsize=24]
+splines=true
+"credentials" [color=blue, fontcolor=blue, shape=doublecircle]
+"s3credentials" -> "credentials" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"s3credentials" [color=blue, fontcolor=blue, shape=ellipse]
+"credentials" -> "s3credentials" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

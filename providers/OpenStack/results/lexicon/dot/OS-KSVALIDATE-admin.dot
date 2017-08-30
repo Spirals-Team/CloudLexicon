@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="OpenStack - OS-KSVALIDATE-admin", fontsize=24]
+splines=true
+"token" [color=blue, fontcolor=blue, shape=doublecircle]
+"validate" [color=orange, fontcolor=orange, shape=box]
+"validate" -> "token" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"endpoints" -> "token" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"endpoints" [color=blue, fontcolor=blue, shape=ellipse]
+}

@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="OpenStack - OS-KSCATALOG-admin", fontsize=24]
+splines=true
+"endpointTemplates" [color=blue, fontcolor=blue, shape=doublecircle]
+"endpoints" [color=blue, fontcolor=blue, shape=doublecircle]
+}

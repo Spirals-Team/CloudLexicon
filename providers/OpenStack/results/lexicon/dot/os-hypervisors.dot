@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-hypervisors", fontsize=24]
+splines=true
+"os-hypervisors" [color=blue, fontcolor=blue, shape=doublecircle]
+"statistics" -> "os-hypervisors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"statistics" [color=blue, fontcolor=blue, shape=ellipse]
+"servers" -> "os-hypervisors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"servers" [color=blue, fontcolor=blue, shape=ellipse]
+"detail" -> "os-hypervisors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"detail" [color=blue, fontcolor=blue, shape=ellipse]
+}

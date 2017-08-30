@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-networks-multi-provider-ext", fontsize=24]
+splines=true
+"networks" [color=blue, fontcolor=blue, shape=doublecircle]
+}

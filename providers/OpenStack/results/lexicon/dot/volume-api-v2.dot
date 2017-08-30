@@ -1,0 +1,20 @@
+digraph LexiconGraph {
+graph[label="OpenStack - volume-api-v2", fontsize=24]
+splines=true
+"OpenStack" [color=blue, fontcolor=blue, shape=doublecircle]
+"v2" -> "OpenStack" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"v2" [color=blue, fontcolor=blue, shape=ellipse]
+"snapshots" -> "v2" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"snapshots" [color=blue, fontcolor=blue, shape=ellipse]
+"metadata" -> "snapshots" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"metadata" [color=blue, fontcolor=blue, shape=ellipse]
+"detail" -> "snapshots" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"detail" [color=blue, fontcolor=blue, shape=ellipse]
+"types" -> "v2" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"types" [color=blue, fontcolor=blue, shape=ellipse]
+"volumes" -> "v2" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"volumes" [color=blue, fontcolor=blue, shape=ellipse]
+"detail" -> "volumes" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"extensions" -> "v2" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"extensions" [color=blue, fontcolor=blue, shape=ellipse]
+}

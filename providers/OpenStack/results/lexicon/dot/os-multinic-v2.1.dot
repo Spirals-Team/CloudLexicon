@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-multinic-v2.1", fontsize=24]
+splines=true
+"servers" [color=blue, fontcolor=blue, shape=doublecircle]
+"addiptoinstance" [color=orange, fontcolor=orange, shape=box]
+"addiptoinstance" -> "servers" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

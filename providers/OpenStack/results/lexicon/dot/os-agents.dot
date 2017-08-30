@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-agents", fontsize=24]
+splines=true
+"os-agents" [color=blue, fontcolor=blue, shape=doublecircle]
+}

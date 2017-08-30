@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-ports-binding-ext", fontsize=24]
+splines=true
+"ports" [color=blue, fontcolor=blue, shape=doublecircle]
+}

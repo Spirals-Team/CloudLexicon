@@ -1,0 +1,15 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-qos-v2", fontsize=24]
+splines=true
+"qos-specs" [color=blue, fontcolor=blue, shape=doublecircle]
+"disassociate_all" [color=orange, fontcolor=orange, shape=box]
+"disassociate_all" -> "qos-specs" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"disassociate" -> "disassociate_all" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"associate" [color=orange, fontcolor=orange, shape=box]
+"associate" -> "qos-specs" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"disassociate" -> "associate" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"associations" -> "qos-specs" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"associations" [color=blue, fontcolor=blue, shape=ellipse]
+"disassociate" [color=orange, fontcolor=orange, shape=box]
+"disassociate" -> "qos-specs" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

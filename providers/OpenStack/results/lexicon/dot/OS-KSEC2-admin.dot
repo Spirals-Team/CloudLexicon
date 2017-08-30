@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="OpenStack - OS-KSEC2-admin", fontsize=24]
+splines=true
+"credentials" [color=blue, fontcolor=blue, shape=doublecircle]
+"OS-KSEC2:ec2Credentials" -> "credentials" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"OS-KSEC2:ec2Credentials" [color=blue, fontcolor=blue, shape=ellipse]
+}

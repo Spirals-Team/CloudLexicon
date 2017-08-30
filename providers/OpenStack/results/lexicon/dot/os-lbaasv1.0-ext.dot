@@ -1,0 +1,10 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-lbaasv1.0-ext", fontsize=24]
+splines=true
+"pools" [color=blue, fontcolor=blue, shape=doublecircle]
+"vips" [color=blue, fontcolor=blue, shape=doublecircle]
+"members" [color=blue, fontcolor=blue, shape=doublecircle]
+"healthmonitors" [color=blue, fontcolor=blue, shape=doublecircle]
+"health_monitors" -> "pools" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"health_monitors" [color=blue, fontcolor=blue, shape=ellipse]
+}

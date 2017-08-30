@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-rescue", fontsize=24]
+splines=true
+"unrescue" [color=orange, fontcolor=orange, shape=box]
+}

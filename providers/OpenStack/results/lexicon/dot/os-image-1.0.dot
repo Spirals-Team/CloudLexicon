@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-image-1.0", fontsize=24]
+splines=true
+"OpenStack" [color=blue, fontcolor=blue, shape=doublecircle]
+"images" -> "OpenStack" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"images" [color=blue, fontcolor=blue, shape=ellipse]
+"members" -> "images" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"members" [color=blue, fontcolor=blue, shape=ellipse]
+"detail" -> "images" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"detail" [color=blue, fontcolor=blue, shape=ellipse]
+}

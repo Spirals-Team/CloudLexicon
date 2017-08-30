@@ -1,0 +1,1647 @@
+<CloudComputing>
+    <Provider name="OpenStack">
+        <Service name="dbaas">
+            <Resource uri="http://openstack.provider.com">
+                <Method name="GET" description="Lists information about all Database Service API versions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0">
+                <Method name="GET" description="Shows details for the Database Service API v1.0.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/{accountId}/instances">
+                <Method name="POST" description="Creates a database instance.\n"/>
+                <Method name="GET" description="Lists information, including status, for all database instances.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}">
+                <Method name="DELETE" description="Deletes a specified database instance, including any associated data.\n"/>
+                <Method name="GET" description="Shows database instance details.\n"/>
+                <Controller uri="http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}?action|restartInstance" verb="restartInstance">
+                    <Method name="POST" description="Restarts the database service on an instance.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}/databases">
+                <Method name="POST" description="Creates a database within a specified instance.\n"/>
+                <Method name="GET" description="Lists databases for a specified instance.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}/databases/{databaseName}">
+                <Method name="DELETE" description="Deletes a specified database.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}/users">
+                <Method name="POST" description="Creates a user for a specified database instance.\n"/>
+                <Method name="GET" description="Lists the users in a specified database instance.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}/users/{userId}">
+                <Method name="DELETE" description="Deletes a specified user for a specified database instance.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/{accountId}/instances/{instanceId}/root">
+                <Method name="POST" description="Enables the root user for a specified database instance and returns the root password.\n"/>
+                <Method name="GET" description="Shows root-enabled status for a database instance.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/{accountId}/flavors">
+                <Method name="GET" description="Lists information for all available flavors.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/{accountId}/flavors/{flavorId}">
+                <Method name="GET" description="Shows flavor details.\n"/>
+            </Resource>
+        </Service>
+        <Service name="flavor-access-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/flavors">
+                <Method name="POST" description="Adds access attribute to the flavor create response.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/flavors/1">
+                <Method name="GET" description="Extends flavor show to add access attribute to the flavor show response.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/flavors/10">
+                <Controller uri="http://openstack.provider.com/v2.1/flavors/10?action|removeflavoraccess" verb="removeflavoraccess">
+                    <Method name="POST" description="Removes flavor access for tenant.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/flavors/10/flavor-access">
+                <Method name="GET" description="Returns access list by flavor id.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/flavors/detail">
+                <Method name="GET" description="Extends flavor detail to add access attribute to the response of flavor detail.\n"/>
+            </Resource>
+        </Service>
+        <Service name="identity-admin">
+            <Resource uri="http://openstack.provider.com/v2.0">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/users">
+                <Method name="POST" description="Adds a user.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/users/{userId}">
+                <Method name="GET" description="Gets detailed information about a specified user by user ID.\n"/>
+                <Method name="PUT" description="Updates a user.\n"/>
+                <Method name="DELETE" description="Deletes a user.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/users/{userId}/roles">
+                <Method name="GET" description="Lists global roles for a specified user. Excludes tenant roles.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/tenants">
+                <Method name="GET" description="Gets detailed information about a specified tenant by name.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/tenants/{tenantId}">
+                <Method name="GET" description="Gets detailed information about a specified tenant by ID.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/tenants/{tenantId}/users/{userId}/roles">
+                <Method name="GET" description="Lists roles for a specified user on a specified tenant. Excludes global roles.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/extensions">
+                <Method name="GET" description="Lists available extensions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/extensions/{alias}">
+                <Method name="GET" description="Gets detailed information for a specified extension.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/tokens">
+                <Method name="POST" description="Authenticates and generates a token.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/tokens/{tokenId}">
+                <Method name="HEAD" description="Validates a token and confirms that it belongs to a specified tenant, for performance.\n"/>
+                <Method name="GET" description="Validates a token and confirms that it belongs to a specified tenant.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/tokens/{tokenId}/endpoints">
+                <Method name="GET" description="Lists the endpoints associated with a specified token.\n"/>
+            </Resource>
+        </Service>
+        <Service name="identity">
+            <Resource uri="http://openstack.provider.com">
+                <Method name="GET" description="Lists information about all Identity API versions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0">
+                <Method name="GET" description="Shows details for the Identity API v2.0.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/extensions">
+                <Method name="GET" description="Lists available extensions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/extensions/{alias}">
+                <Method name="GET" description="Gets detailed information for a specified extension.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/tenants">
+                <Method name="GET" description="Lists tenants to which the specified token has access.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/tokens">
+                <Method name="POST" description="Authenticates and generates a token.\n"/>
+            </Resource>
+        </Service>
+        <Service name="metering-labels">
+            <Resource uri="http://openstack.provider.com/v2.0/metering/metering-labels">
+                <Method name="POST" description="Creates a l3 metering label.\n"/>
+                <Method name="GET" description="Lists all l3 metering labels that belong to the specified tenant.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/metering/metering-labels/{metering_label_id}">
+                <Method name="DELETE" description="Deletes a l3 metering label.\n"/>
+                <Method name="GET" description="Shows informations for a specified metering label.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/metering/metering-label-rules">
+                <Method name="POST" description="Creates a l3 metering label rule.\n"/>
+                <Method name="GET" description="Lists a summary of all l3 metering label rules belonging to the specified tenant.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/metering/metering-label-rules/{metering-label-rule-id}">
+                <Method name="DELETE" description="Deletes a specified l3 metering label rule.\n"/>
+                <Method name="GET" description="Shows detailed informations for a specified metering label rule.\n"/>
+            </Resource>
+        </Service>
+        <Service name="orchestration-api">
+            <Resource uri="http://openstack.provider.com">
+                <Method name="GET" description="Lists information about all Orchestration API versions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}">
+                <Controller uri="http://openstack.provider.com/v1/{tenant_id}/validate" verb="validate">
+                    <Method name="POST" description="Validates a specified template.\n"/>
+                </Controller>
+                <Controller uri="http://openstack.provider.com/v1/{tenant_id}/build_info" verb="build_info">
+                    <Method name="GET" description="Shows build information for a heat deployment.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/resource_types">
+                <Method name="GET" description="Lists the supported template resource types.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/resource_types/{type_name}">
+                <Method name="GET" description="Shows the interface schema for a specified resource type.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/resource_types/{type_name}/template">
+                <Method name="GET" description="Shows the template representation for a specified resource type.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks">
+                <Method name="POST" description="Creates a stack from existing resources.\n"/>
+                <Method name="GET" description="Lists active stacks.\n"/>
+                <Controller uri="http://openstack.provider.com/v1/{tenant_id}/stacks/preview" verb="preview">
+                    <Method name="POST" description="Previews a stack.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}">
+                <Method name="GET" description="Finds the canonical URL for a specified stack.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}">
+                <Method name="PUT" description="Updates a specified stack.\n"/>
+                <Method name="DELETE" description="Deletes a specified stack.\n"/>
+                <Method name="GET" description="Shows details for a specified stack.\n"/>
+                <Controller uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/abandon" verb="abandon">
+                    <Method name="DELETE" description="Deletes a specified stack but leaves its resources intact, and returns data describing the stack and its resources.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots">
+                <Method name="POST" description="Takes a snapshot of all the resources in the stack.\n"/>
+                <Method name="GET" description="List the snapshots of a stack.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/snapshots/{snapshot_id}">
+                <Method name="POST" description="Restore a stack snapshot.\n"/>
+                <Method name="DELETE" description="Delete a stack snapshot.\n"/>
+                <Method name="GET" description="Show the details of a snapshot.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources">
+                <Method name="GET" description="Lists resources in a stack.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}">
+                <Method name="GET" description="Shows data for a specified resource.\n"/>
+                <Controller uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/signal" verb="signal">
+                    <Method name="POST" description="Sends a signal to a specified resource.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events">
+                <Method name="GET" description="Lists events for a specified stack resource.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events/{event_id}">
+                <Method name="GET" description="Shows details for a specified event.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/metadata">
+                <Method name="GET" description="Shows metadata for a specified resource.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/template">
+                <Method name="GET" description="Gets a template for a specified stack.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/events">
+                <Method name="GET" description="Lists events for a specified stack.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/actions">
+                <Method name="POST" description="Resumes a suspended stack.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/events">
+                <Method name="GET" description="Finds the canonical URL for the event list of a specified stack.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/stacks/{stack_name}/resources">
+                <Method name="GET" description="Finds the canonical URL for the resource list of a specified stack.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/software_deployments">
+                <Method name="POST" description="Creates a software deployment.\n"/>
+                <Method name="GET" description="Lists all available software deployments.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/software_deployments/metadata/{server_id}">
+                <Method name="GET" description="Shows the deployment configuration metadata for a specified server.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/software_deployments/{deployment_id}">
+                <Method name="PUT" description="Updates a specified software deployment.\n"/>
+                <Method name="DELETE" description="Deletes a specified software deployment.\n"/>
+                <Method name="GET" description="Shows details for a specified software deployment.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/software_configs">
+                <Method name="POST" description="Creates a software configuration.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/software_configs/{config_id}">
+                <Method name="DELETE" description="Deletes a software configuration.\n"/>
+                <Method name="GET" description="Shows details for a software configuration.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-admin-actions-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/servers/{server_id}/action/{server_id}">
+                <Controller uri="http://openstack.provider.com/v2.1/servers/{server_id}/action/{server_id}?action|unpauseserver" verb="unpauseserver">
+                    <Method name="POST" description="Unpauses a PAUSED server and changes its status to ACTIVE.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-admin-actions">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|addFloatingIP" verb="addFloatingIP">
+                    <Method name="POST" description="Adds a floating IP address to an instance.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-agents-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/os-agents">
+                <Method name="POST" description="Creates an agent build.\n"/>
+                <Method name="GET" description="Lists agent builds.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/os-agents/{id}">
+                <Method name="PUT" description="Updates an agent build.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-agents">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-agents">
+                <Method name="POST" description="Creates an agent build.\n"/>
+                <Method name="DELETE" description="Deletes an existing agent build.\n"/>
+                <Method name="GET" description="Lists all agent builds.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-agents/{id}">
+                <Method name="PUT" description="Updates an agent build.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-aggregates-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/os-aggregates">
+                <Method name="POST" description="Creates an aggregate, given its name and availability zone.\n"/>
+                <Method name="GET" description="Lists aggregates id, name, and availability\_zone for an aggregate.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/os-aggregates/{aggregate_id}">
+                <Method name="GET" description="Updates either or both the name and availability zone for a specified aggregate.\n"/>
+                <Controller uri="http://openstack.provider.com/v2.1/os-aggregates/{aggregate_id}?action|removeaggregate" verb="removeaggregate">
+                    <Method name="POST" description="Removes a host from the specified aggregate.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-aggregates">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-aggregates">
+                <Method name="POST" description="Creates an aggregate.\n"/>
+                <Method name="GET" description="Lists all aggregates.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-aggregates/{aggregate_id}">
+                <Method name="PUT" description="Updates the name, and optionally the availability zone, for a specified aggregate.\n"/>
+                <Method name="GET" description="Gets details about a specified aggregate.\n"/>
+                <Method name="DELETE" description="Deletes an aggregate.\n"/>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/os-aggregates/{aggregate_id}?action|remove_host" verb="remove_host">
+                    <Method name="POST" description="Removes a host from an aggregate.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-block-device-mapping-v2-boot">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers">
+                <Method name="POST" description="Creates a server with a block device mapping.\n"/>
+                <Method name="GET" description="Lists IDs, names, and links for all servers.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-cells-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/os-cells">
+                <Method name="GET" description="Lists cells with details.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/os-cells/cell3">
+                <Method name="GET" description="Shows data for a specified cell.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/os-cells/nova/capacities">
+                <Method name="GET" description="Shows capacities for a specified cell.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-certificates-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/os-certificates">
+                <Method name="POST" description="Creates a certificate.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/os-certificates/root">
+                <Method name="GET" description="Shows details for a specified certificate.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-certificates">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-certificates">
+                <Method name="POST" description="Creates a root certificate.\n"/>
+                <Method name="GET" description="Shows details for a root certificate owned by a specified tenant ID.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-cloudpipe">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-cloudpipe">
+                <Method name="POST" description="Creates a cloudpipe.\n"/>
+                <Method name="GET" description="Lists cloudpipes.\n"/>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/os-cloudpipe/configure-project" verb="configure-project">
+                    <Method name="POST" description="Updates the virtual private network (VPN) IP address and port for a specified cloudpipe instance.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-compute-2">
+            <Resource uri="http://openstack.provider.com">
+                <Method name="GET" description="Lists information about all Compute API versions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2">
+                <Method name="GET" description="Shows details for Compute API v2.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers">
+                <Method name="POST" description="Creates a server.\n"/>
+                <Method name="GET" description="Lists IDs, names, and links for all servers.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Method name="PUT" description="Updates the editable attributes of the specified server.\n"/>
+                <Method name="DELETE" description="Deletes a specified server.\n"/>
+                <Method name="GET" description="Gets details for a specified server.\n"/>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|createImage" verb="createImage">
+                    <Method name="POST" description="Creates a new image. Specify the `createImage` action in the request body.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/ips">
+                <Method name="GET" description="Lists networks and addresses for a specified tenant and server.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/ips/{network_label}">
+                <Method name="GET" description="Lists addresses for a specified tenant, server, and network.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/metadata">
+                <Method name="PUT" description="Creates or replaces metadata items for a specified server.\n"/>
+                <Method name="POST" description="Updates metadata items by key for a specified server.\n"/>
+                <Method name="GET" description="Shows metadata for a specified server.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/metadata/{key}">
+                <Method name="PUT" description="Sets a metadata item by key for a specified server.\n"/>
+                <Method name="DELETE" description="Deletes a metadata item by key for a specified server.\n"/>
+                <Method name="GET" description="Shows details for a metadata item by key for a specified server.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/detail">
+                <Method name="GET" description="Lists details for all servers.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors">
+                <Method name="GET" description="Lists IDs, names, and links for available flavors.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}">
+                <Method name="GET" description="Gets details for a specified flavor.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/detail">
+                <Method name="GET" description="Lists all details for available flavors.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/images">
+                <Method name="GET" description="Lists IDs, names, and links for available images.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/images/{image_id}">
+                <Method name="DELETE" description="Deletes a specified image.\n"/>
+                <Method name="GET" description="Gets details for a specified image.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/images/{image_id}/metadata">
+                <Method name="PUT" description="Creates or replaces metadata for a specified image.\n"/>
+                <Method name="POST" description="Updates metadata items by key for a specified image.\n"/>
+                <Method name="GET" description="Shows metadata for a specified image.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/images/{image_id}/metadata/{key}">
+                <Method name="PUT" description="Creates or updates a metadata item by key for a specified image.\n"/>
+                <Method name="DELETE" description="Deletes a metadata item by key for a specified image.\n"/>
+                <Method name="GET" description="Shows details for a metadata item by key for a specified image.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/images/detail">
+                <Method name="GET" description="Lists all details for available images.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/extensions">
+                <Method name="GET" description="Lists available extensions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/extensions/{alias}">
+                <Method name="GET" description="Gets details about the specified extension.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/limits">
+                <Method name="GET" description="Lists the current limits for the account.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-config-drive-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/servers/{server_id}">
+                <Method name="GET" description="Shows details for a specified server.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/servers/detail">
+                <Method name="GET" description="Lists server details for a specified user.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-console-output">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|getConsoleOutput" verb="getConsoleOutput">
+                    <Method name="POST" description="Gets console output for a server instance.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-consoles">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|getConsole" verb="getConsole">
+                    <Method name="POST" description="Gets a console for a server instance.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-coverage">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-coverage">
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/os-coverage?action|stopReport" verb="stopReport">
+                    <Method name="POST" description="Stops coverage reporting.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-createserverext">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers">
+                <Method name="POST" description="Creates a server with the configuration drive extended attribute.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Method name="GET" description="Shows information for a specified server including the configuration drive extended attribute.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/detail">
+                <Method name="GET" description="Lists details for all servers including the configuration drive extended attribute.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-deferred-delete-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/servers/{server_id}">
+                <Controller uri="http://openstack.provider.com/v2.1/servers/{server_id}?action|restoredelete" verb="restoredelete">
+                    <Method name="POST" description="Restores a previously deleted instance.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-deferred-delete">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|restore" verb="restore">
+                    <Method name="POST" description="Restores a deleted server.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-diagnostics">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/diagnostics">
+                <Method name="GET" description="Gets basic usage data for a specified server.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-disk-config">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers">
+                <Method name="POST" description="Creates a server.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/detail">
+                <Method name="GET" description="Lists servers with detailed config drive information.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Method name="PUT" description="Updates a specified server.\n"/>
+                <Method name="GET" description="Shows information for a specified server.\n"/>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|rebuild" verb="rebuild">
+                    <Method name="POST" description="Rebuilds a specified server.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/images/{image_id}">
+                <Method name="GET" description="Gets information for a specified image.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/images/detail">
+                <Method name="GET" description="Lists images.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-evacuate-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/servers/{server_id}">
+                <Controller uri="http://openstack.provider.com/v2.1/servers/{server_id}?action|evacuateserver" verb="evacuateserver">
+                    <Method name="POST" description="Evacuates a server from a failed host to a new one.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-ext-az">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Method name="GET" description="Shows information for a specified server, including its availability zone.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/detail">
+                <Method name="GET" description="Lists details for servers, including their current availability zone.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-ext-img-size">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/images/{image_id}">
+                <Method name="GET" description="Gets details for a specified image. Includes the image size.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/images/detail">
+                <Method name="GET" description="Lists details for available images. Includes the image size.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-ext-ips">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|serverIPDetails" verb="serverIPDetails">
+                    <Method name="GET" description="Shows the type of IP assigned to a specified server, either fixed or floating.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/detail">
+                <Method name="GET" description="Lists servers and shows their IPs by type. Type is either fixed or floating.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-extended-availability-zone-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/servers/{server_id}">
+                <Method name="GET" description="Shows details for a specified server.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/servers/detail">
+                <Method name="GET" description="Lists server details for a specified user.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-extended-server-attributes-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/servers">
+                <Method name="GET" description="Shows details for a specified server.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/servers/details">
+                <Method name="GET" description="Lists server details for a specified user.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-extended-server-attributes">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers">
+                <Method name="GET" description="Lists detailed extended server attribute information for all servers.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Method name="GET" description="Shows extended server attributes for a specified server.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-extended-status-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/servers/{server_id}">
+                <Method name="GET" description="Shows details for a specified server.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/servers/detail">
+                <Method name="GET" description="Lists servers with details for a specified user.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-extended-status">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Method name="GET" description="Shows the extended status attributes in the response for a specified server.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/detail">
+                <Method name="GET" description="Lists the extended status attributes in the detailed response for all servers.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-fixed-ips">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-fixed-ips/{fixed_ip}">
+                <Method name="GET" description="Shows information for a specified fixed IP address.\n"/>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/os-fixed-ips/{fixed_ip}?action|reserveIP" verb="reserveIP">
+                    <Method name="POST" description="Reserves or releases a fixed IP.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-flavor-access">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors">
+                <Method name="POST" description="Creates a private flavor.\n"/>
+                <Method name="GET" description="Lists flavors and includes the access type, which is public or private.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}">
+                <Method name="GET" description="Gets the flavor access type, which is public or private.\n"/>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}?action|addTenantAccess" verb="addTenantAccess">
+                    <Method name="POST" description="Gives a specified tenant access to the specified private flavor.\n"/>
+                </Controller>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}?action|removeTenantAccess" verb="removeTenantAccess">
+                    <Method name="DELETE" description="Revokes access from the specified tenant for the specified private flavor.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}/os-flavor-access">
+                <Method name="GET" description="Lists tenants with access to the specified private flavor.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-flavor-extra-specs">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs">
+                <Method name="POST" description="Creates extra-specs or keys for the specified flavor.\n"/>
+                <Method name="GET" description="Lists the extra-specs or keys for the specified flavor.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs/{key_id}">
+                <Method name="DELETE" description="Deletes a specified extra-spec by key.\n"/>
+                <Method name="GET" description="Gets the value of the specified key.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-flavor-manage-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/flavors">
+                <Method name="POST" description="Creates a flavor.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/flavors/{flavor_id}">
+                <Method name="DELETE" description="Deletes a flavor.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-flavor-rxtx-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/flavors">
+                <Method name="POST" description="Creates a flavor.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/flavors/{flavor_id}">
+                <Method name="GET" description="Shows details for a specified flavor.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/flavors/detail">
+                <Method name="GET" description="Lists flavors with details.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-flavor-rxtx">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors">
+                <Method name="POST" description="Creates a flavor. Includes the rxtx\_factor extended attribute.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/detail">
+                <Method name="GET" description="Lists details for available flavors and includes the rxtx\_factor extended attribute.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}">
+                <Method name="GET" description="Gets details for a specified flavor. Includes the rxtx\_factor extended attribute.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-flavor-swap">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}/os-flavor-swap">
+                <Method name="GET" description="Lists the flavor specs including swap value for the specified flavor. The swap value is the amount of swap disk space, in GBs, to allocate to a server.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-flavorextradata">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors">
+                <Method name="POST" description="Creates a flavor. Includes the rxtx\_factor, OS-FLV-EXT-DATA:ephemeral, and swap extended attributes.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/detail">
+                <Method name="GET" description="Lists available flavors. Includes the rxtx\_factor, OS-FLV-EXT-DATA:ephemeral, and swap extended attributes.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}">
+                <Method name="GET" description="Gets details for a specified flavor. Includes the rxtx\_factor, OS-FLV-EXT-DATA:ephemeral, and swap extended attributes.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-flavormanage">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors">
+                <Method name="POST" description="Creates a flavor.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}">
+                <Method name="DELETE" description="Deletes a flavor.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-flavors-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/flavors">
+                <Method name="GET" description="Lists flavors.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/flavors/{flavor_id}">
+                <Method name="GET" description="Shows information for a specified flavor.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/flavors/detail">
+                <Method name="GET" description="Lists flavors with details.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-flavorspecs-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/flavors/{flavor_id}/flavor-extra-specs">
+                <Method name="POST" description="Creates and updates flavor extra specs.\n"/>
+                <Method name="GET" description="Lists extra specs for specified flavor.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/flavors/{flavor_id}/flavor-extra-specs/{flavor_extra_spec_key}">
+                <Method name="PUT" description="Updates specified extra spec value by the key.\n"/>
+                <Method name="GET" description="Shows an extra spec for specified flavor by the key.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-floating-ip-dns">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-dns">
+                <Method name="GET" description="Lists registered DNS domains published by the DNS drivers.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-dns/{domain}">
+                <Method name="PUT" description="Creates or updates a DNS domain.\n"/>
+                <Method name="DELETE" description="Deletes a DNS domain and all associated host entries.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-dns/{domain}/entries/{name}">
+                <Method name="PUT" description="Creates or updates a DNS entry.\n"/>
+                <Method name="DELETE" description="Deletes a specified DNS entry.\n"/>
+                <Method name="GET" description="Finds a unique DNS entry for a specified domain and name.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-dns/{domain}/entries/{ip}">
+                <Method name="GET" description="Lists DNS entries for a specified domain and IP.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-floating-ip-pools">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-floating-ip-pools">
+                <Method name="GET" description="Lists floating IP pools.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-floating-ips-bulk">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-floating-ips-bulk">
+                <Method name="POST" description="Bulk-creates floating IPs.\n"/>
+                <Method name="GET" description="Lists all floating IPs.\n"/>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/os-floating-ips-bulk/delete" verb="delete">
+                    <Method name="POST" description="Bulk-deletes floating IPs.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-floating-ips-bulk/{host_name}">
+                <Method name="GET" description="Lists all floating IPs for a specified host.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-floating-ips">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-floating-ips">
+                <Method name="POST" description="Allocates a new floating IP address to a tenant or account.\n"/>
+                <Method name="GET" description="Lists floating IP addresses associated with the tenant or account.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-floating-ips/{id}">
+                <Method name="DELETE" description="Deallocates the floating IP address associated with floating\_IP\_address\_ID.\n"/>
+                <Method name="GET" description="Shows information for a specified floating IP address.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|RemoveFloatingIP" verb="RemoveFloatingIP">
+                    <Method name="POST" description="Removes a floating IP from an instance.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-flv-disabled">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/detail">
+                <Method name="GET" description="Lists available flavors. Includes the `OS-FLV-DISABLED:disabled` attribute.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/flavors/{flavor_id}">
+                <Method name="GET" description="Gets details for a specified flavor. Includes the `OS-FLV-DISABLED:disabled` attribute.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-hosts-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/os-hosts">
+                <Method name="GET" description="Lists hosts.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/os-hosts/{host_name}">
+                <Method name="PUT" description="Enables or puts a host in maintenance mode.\n"/>
+                <Method name="GET" description="Shows details for a specified host.\n"/>
+                <Controller uri="http://openstack.provider.com/v2.1/os-hosts/{host_name}/startup" verb="startup">
+                    <Method name="GET" description="Starts a host.\n"/>
+                </Controller>
+                <Controller uri="http://openstack.provider.com/v2.1/os-hosts/{host_name}/shutdown" verb="shutdown">
+                    <Method name="GET" description="Shuts down a host.\n"/>
+                </Controller>
+                <Controller uri="http://openstack.provider.com/v2.1/os-hosts/{host_name}/reboot" verb="reboot">
+                    <Method name="GET" description="Reboots a host.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-hosts">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-hosts">
+                <Method name="GET" description="Lists hosts.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-hosts/{host_name}">
+                <Method name="PUT" description="Enables a host or puts it in maintenance mode.\n"/>
+                <Method name="GET" description="Shows information for a specified host.\n"/>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/os-hosts/{host_name}/shutdown" verb="shutdown">
+                    <Method name="GET" description="Shuts down a host.\n"/>
+                </Controller>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/os-hosts/{host_name}/reboot" verb="reboot">
+                    <Method name="GET" description="Reboots a host.\n"/>
+                </Controller>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/os-hosts/{host_name}/startup" verb="startup">
+                    <Method name="GET" description="Starts a host.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-hypervisors-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/os-hypervisors">
+                <Method name="GET" description="Lists hypervisors.\n"/>
+                <Controller uri="http://openstack.provider.com/v2.1/os-hypervisors/search" verb="search">
+                    <Method name="GET" description="Searches hypervisors by specified host name.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/os-hypervisors/{hypervisor_id}">
+                <Method name="GET" description="Shows details for a specified hypervisor.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/os-hypervisors/{hypervisor_id}/uptime">
+                <Method name="GET" description="Shows the uptime for a specified hypervisor.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/os-hypervisors/{hypervisor_id}/servers">
+                <Method name="GET" description="Lists servers that run on a specified hypervisor.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/os-hypervisors/statistics">
+                <Method name="GET" description="Shows statistics for all hypervisors.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-hypervisors">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-hypervisors">
+                <Method name="GET" description="Lists hypervisors information for each server obtained through the hypervisor-specific API, such as libvirt or XenAPI.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-hypervisors/statistics">
+                <Method name="GET" description="Shows hypervisor statistics over all compute nodes.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-hypervisors/{hypervisor_hostname}">
+                <Method name="GET" description="Shows the up time for a specified hypervisor.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-hypervisors/{hypervisor_hostname}/servers">
+                <Method name="GET" description="Lists instances that belong to specific hypervisors.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-hypervisors/detail">
+                <Method name="GET" description="Shows information for a specified hypervisor. Typically configured as an admin-only extension by using `policy.json` settings.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-image-1.0">
+            <Resource uri="http://openstack.provider.com">
+                <Method name="GET" description="Lists information about all Image Service API versions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/shared-images/{owner}">
+                <Method name="GET" description="Lists the VM images shared with a specified owner. The owner ID is the tenant ID.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/images">
+                <Method name="POST" description="Registers a virtual machine (VM) image.\n"/>
+                <Method name="GET" description="Lists public VM images.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/images/{image_id}">
+                <Method name="PUT" description="Updates an image, uploads an image file, or updates metadata for an image.\n"/>
+                <Method name="DELETE" description="Deletes the specified image.\n"/>
+                <Method name="GET" description="Shows the image details as headers and the image binary in the body of the response.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/images/{image_id}/members">
+                <Method name="PUT" description="Replaces a membership list for an image.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/images/{image_id}/members/{owner_id}">
+                <Method name="PUT" description="Adds a member to an image.\n"/>
+                <Method name="DELETE" description="Removes a member from an image.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/images/detail">
+                <Method name="GET" description="Lists details for available images.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-image-schemas-v2">
+            <Resource uri="http://openstack.provider.com/v2/schemas/members">
+                <Method name="GET" description="Gets a json-schema document that represents an image members entity. (Since Images v2.1.)\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/schemas/images">
+                <Method name="GET" description="Gets a json-schema document that represents an images entity. (Since Images v2.0.)\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/schemas/member">
+                <Method name="GET" description="Gets a json-schema document that represents an image member entity. (Since Images v2.1.)\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/schemas/image">
+                <Method name="GET" description="Gets a json-schema document that represents an image entity. (Since Images v2.0.)\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-image-v2">
+            <Resource uri="http://openstack.provider.com">
+                <Method name="GET" description="Lists information about all Image Service API versions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/images">
+                <Method name="POST" description="Creates a virtual machine (VM) image. (Since Image API v2.0.)\n"/>
+                <Method name="GET" description="Lists public virtual machine (VM) images. (Since Image API v2.0.)\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/images/{image_id}">
+                <Method name="DELETE" description="Deletes a specified image. (Since Image API v2.0.)\n"/>
+                <Method name="PATCH" description="Updates a specified image. (Since Image API v2.0.)\n"/>
+                <Method name="GET" description="Gets details for a specified image. (Since Image API v2.0.)\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/images/{image_id}/file">
+                <Method name="PUT" description="Uploads binary image data. (Since Image API v2.0.)\n"/>
+                <Method name="GET" description="Downloads binary image data. (Since Image API v2.0.)\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/images/{image_id}/members">
+                <Method name="POST" description="Adds a specified tenant ID as an image member. (Since Image API v2.1.)\n"/>
+                <Method name="GET" description="Lists the tenants with whom this image has been shared. (Since Image API v2.1.)\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/images/{image_id}/members/{member_id}">
+                <Method name="PUT" description="Sets the specified status for the specified member of the specified image. (Since Image API v2.1.)\n"/>
+                <Method name="DELETE" description="Deletes a specified tenant ID from the member list of the specified image. (Since Image API v2.1.)\n"/>
+                <Method name="GET" description="Shows image member details.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/images/{image_id}/tags/{tag}">
+                <Method name="PUT" description="Adds a specified tag to a specified image. (Since Image API v2.0.)\n"/>
+                <Method name="DELETE" description="Deletes a specified tag from a specified image. (Since Image API v2.0.)\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-instance-actions-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/servers/{server_id}/os-instance-actions">
+                <Method name="GET" description="Lists actions for a specified instance.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/servers/{server_id}/os-instance-actions/{request_id}">
+                <Method name="GET" description="Shows information about a specified instance action.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-instance-actions">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-instance-actions">
+                <Method name="GET" description="Lists history of successful actions for a specified server. Deployers set permissions for this request in the `policy.json` file. By default, all users can list actions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-instance-actions/{action_id}">
+                <Method name="GET" description="Gets details for a specified action for a specified server instance. Deployers set permissions for this request in the `policy.json` file. By default, only administrators can get details for an action.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-instance-usage-audit-log-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/os-instance-usage-audit-log">
+                <Method name="GET" description="Lists usage audits for a specified instance.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/os-instance-usage-audit-log/{datetime}">
+                <Method name="GET" description="Lists instance usage audits that occurred before a specified time.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-interface">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-interface">
+                <Method name="POST" description="Creates and uses a port interface to attach the port to a server instance.\n"/>
+                <Method name="GET" description="Lists port interfaces.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-interface/{attachment_id}">
+                <Method name="DELETE" description="Detaches a specified port interface.\n"/>
+                <Method name="GET" description="Shows information about a specified port interface.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-keypairs">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-keypairs">
+                <Method name="POST" description="Generates or imports a keypair.\n"/>
+                <Method name="GET" description="Lists keypairs that are associated with the account.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-keypairs/{keypair_name}">
+                <Method name="GET" description="Shows a keypair associated with the account.\n"/>
+                <Method name="DELETE" description="Deletes a keypair.\n"/>
+            </Resource>
+        </Service>
+        <Service name="OS-KSADM-admin">
+            <Resource uri="http://openstack.provider.com/v2.0/tenants">
+                <Method name="POST" description="Creates a tenant.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/tenants/{tenantId}">
+                <Method name="POST" description="Updates a tenant.\n"/>
+                <Method name="DELETE" description="Deletes a tenant.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/tenants/{tenantId}/users">
+                <Method name="GET" description="Lists all users for a tenant.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId}">
+                <Method name="PUT" description="Adds a specified role to a user for a tenant.\n"/>
+                <Method name="DELETE" description="Deletes a specified role from a user on a tenant.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/users">
+                <Method name="POST" description="Adds a user.\n"/>
+                <Method name="GET" description="Lists users.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/users/{userId}">
+                <Method name="PUT" description="Updates a user.\n"/>
+                <Method name="DELETE" description="Deletes a user.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/users/{userId}/roles">
+                <Method name="GET" description="Lists global roles for a specified user.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/users/{userId}/roles/OS-KSADM/{roleId}">
+                <Method name="PUT" description="Adds a specific global role to a user.\n"/>
+                <Method name="DELETE" description="Deletes a specific global role from a user.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/OS-KSADM/roles">
+                <Method name="POST" description="Adds a role.\n"/>
+                <Method name="GET" description="Gets a role by name.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/OS-KSADM/roles/{roleId}">
+                <Method name="DELETE" description="Deletes a role.\n"/>
+                <Method name="GET" description="Gets information for a specified role.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/OS-KSADM/services">
+                <Method name="POST" description="Adds a service.\n"/>
+                <Method name="GET" description="Lists services.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/OS-KSADM/services/{serviceId}">
+                <Method name="DELETE" description="Deletes a service.\n"/>
+                <Method name="GET" description="Gets a service.\n"/>
+            </Resource>
+        </Service>
+        <Service name="OS-KSCATALOG-admin">
+            <Resource uri="http://openstack.provider.com/v2.0/OS-KSCATALOG/endpointTemplates">
+                <Method name="POST" description="Adds endpoint template.\n"/>
+                <Method name="GET" description="Lists endpoint templates.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/OS-KSCATALOG/endpointTemplates/{endpointTemplateId}">
+                <Method name="PUT" description="Updates endpoint template.\n"/>
+                <Method name="DELETE" description="Deletes an endpoint template.\n"/>
+                <Method name="GET" description="Gets endpoint templates.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints">
+                <Method name="POST" description="Adds endpoint to a tenant.\n"/>
+                <Method name="GET" description="Lists endpoints for a tenant.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/tenants/{tenantId}/OS-KSCATALOG/endpoints/{endpointId}">
+                <Method name="DELETE" description="Deletes an endpoint from a tenant.\n"/>
+                <Method name="GET" description="Gets endpoint for a tenant.\n"/>
+            </Resource>
+        </Service>
+        <Service name="OS-KSEC2-admin">
+            <Resource uri="http://openstack.provider.com/v2.0/users/{userId}/OS-KSADM/credentials">
+                <Method name="POST" description="Adds a credential to a user.\n"/>
+                <Method name="GET" description="Lists credentials.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials">
+                <Method name="POST" description="Updates credentials for a specified user.\n"/>
+                <Method name="DELETE" description="Deletes user credentials.\n"/>
+                <Method name="GET" description="Gets user credentials.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/users/{userId}/OS-KSADM/credentials/OS-KSEC2:ec2Credentials/{type}">
+                <Method name="GET" description="Lists credentials by type.\n"/>
+            </Resource>
+        </Service>
+        <Service name="OS-KSS3-admin">
+            <Resource uri="http://openstack.provider.com/v2.0/users/{userId}/OS-OS-KSS3/credentials">
+                <Method name="POST" description="Adds a credential to a user.\n"/>
+                <Method name="GET" description="Lists credentials.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials">
+                <Method name="POST" description="Updates credentials.\n"/>
+                <Method name="DELETE" description="Deletes user credentials.\n"/>
+                <Method name="GET" description="Gets user credentials.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/users/{userId}/OS-OS-KSS3/credentials/s3credentials/{type}">
+                <Method name="GET" description="Lists credentials by type.\n"/>
+            </Resource>
+        </Service>
+        <Service name="OS-KSVALIDATE-admin">
+            <Resource uri="http://openstack.provider.com/v2.0/OS-KSVALIDATE/token">
+                <Controller uri="http://openstack.provider.com/v2.0/OS-KSVALIDATE/token/validate" verb="validate">
+                    <Method name="HEAD" description="Checks that a token is valid and that it belongs to a specified tenant and service IDs, for performance.\n"/>
+                    <Method name="GET" description="Checks that a token is valid and that it belongs to a specified tenant and service IDs. Returns the permissions for a particular client.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/OS-KSVALIDATE/token/endpoints">
+                <Method name="GET" description="Lists endpoints associated with a specific token.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-layer3-ext">
+            <Resource uri="http://openstack.provider.com/v2.0/routers">
+                <Method name="POST" description="Creates a logical router.\n"/>
+                <Method name="GET" description="Lists logical routers that are accessible to the tenant who submits the request.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/routers/{router_id}">
+                <Method name="PUT" description="Updates a logical router.\n"/>
+                <Method name="DELETE" description="Deletes a logical router and, if present, its external gateway interface.\n"/>
+                <Method name="GET" description="Shows details for a specified router.\n"/>
+                <Controller uri="http://openstack.provider.com/v2.0/routers/{router_id}/add_router_interface" verb="add_router_interface">
+                    <Method name="PUT" description="Adds an internal interface to a logical router.\n"/>
+                </Controller>
+                <Controller uri="http://openstack.provider.com/v2.0/routers/{router_id}/remove_router_interface" verb="remove_router_interface">
+                    <Method name="PUT" description="Removes an internal interface from a logical router.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/floatingips">
+                <Method name="POST" description="Creates a floating IP, and, if you specify port information, associates the floating IP with an internal port.\n"/>
+                <Method name="GET" description="Lists floating IPs that are accessible to the tenant who submits the request.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/floatingips/{floatingip_id}">
+                <Method name="PUT" description="Updates a floating IP and its association with an internal port.\n"/>
+                <Method name="DELETE" description="Deletes a floating IP and, if present, its associated port.\n"/>
+                <Method name="GET" description="Shows details for a specified floating IP.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-lbaasv1.0-ext">
+            <Resource uri="http://openstack.provider.com/v1.0/lb/pools">
+                <Method name="POST" description="Creates a load balancer pool.\n"/>
+                <Method name="GET" description="Lists pools.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/lb/pools/{pool_id}">
+                <Method name="PUT" description="Updates a specified load balancer pool.\n"/>
+                <Method name="DELETE" description="Deletes a specified load balancer pool.\n"/>
+                <Method name="GET" description="Shows details for a specified pool.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/lb/pools/{pool_id}/health_monitors">
+                <Method name="POST" description="Associates a health monitor with a specified pool.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/lb/pools/{pool_id}/health_monitors/{health_monitor_id}">
+                <Method name="DELETE" description="Disassociates a specified health monitor from a pool.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/lb/vips">
+                <Method name="POST" description="Creates a load balancer VIP.\n"/>
+                <Method name="GET" description="Lists VIPs.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/lb/vips/{vip_id}">
+                <Method name="PUT" description="Updates a specified load balancer VIP.\n"/>
+                <Method name="DELETE" description="Deletes a specified load balancer VIP.\n"/>
+                <Method name="GET" description="Shows details for a specified VIP.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/lb/members">
+                <Method name="POST" description="Creates a load balancer member.\n"/>
+                <Method name="GET" description="Lists members.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/lb/members/{member_id}">
+                <Method name="PUT" description="Updates a specified load balancer member.\n"/>
+                <Method name="DELETE" description="Deletes a specified load balancer member.\n"/>
+                <Method name="GET" description="Shows details for a specified member.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/lb/healthmonitors">
+                <Method name="POST" description="Creates a load balancer health monitor.\n"/>
+                <Method name="GET" description="Lists health monitors.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.0/lb/healthmonitors/{health_monitor_id}">
+                <Method name="PUT" description="Updates a specified load balancer health monitor.\n"/>
+                <Method name="DELETE" description="Deletes a specified load balancer health monitor.\n"/>
+                <Method name="GET" description="Shows details for a specified health monitor.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-limits-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/limits">
+                <Method name="GET" description="Show global and rate limit information.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-limits">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/limits">
+                <Method name="GET" description="Shows absolute limits for a tenant.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-migrations-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/os-migrations">
+                <Method name="GET" description="Lists in-progress migrations.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-migrations">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-migrations">
+                <Method name="GET" description="Enables an administrative user to fetch in-progress migrations for a region or specified cell in a region.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-multi-server-create">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers">
+                <Method name="POST" description="Creates one or more servers with an optional reservation ID.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-multinic-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/servers">
+                <Method name="POST" description="Removes an IP from a specified instance.\n"/>
+                <Controller uri="http://openstack.provider.com/v2.1/servers?action|addiptoinstance" verb="addiptoinstance">
+                    <Method name="POST" description="Adds an IP to a specified network on an instance.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-networks-multi-provider-ext">
+            <Resource uri="http://openstack.provider.com/v2.0/networks">
+                <Method name="POST" description="Creates a network with multiple segment mappings.\n"/>
+                <Method name="GET" description="Lists networks that are accessible to the tenant who submits the request. Networks with multiple segments include the `segments` list in the response.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/networks/{network_id}">
+                <Method name="GET" description="Shows details for a specified network with multiple segments.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-networks-provider-ext">
+            <Resource uri="http://openstack.provider.com/v2.0/networks">
+                <Method name="POST" description="Creates a network.\n"/>
+                <Method name="GET" description="Lists networks that are accessible to the tenant who submits the request.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/networks/{network_id}">
+                <Method name="PUT" description="Updates a specified network.\n"/>
+                <Method name="DELETE" description="Deletes a specified network.\n"/>
+                <Method name="GET" description="Shows details for a specified network.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-networks">
+            <Resource uri="http://openstack.provider.com">
+                <Method name="GET" description="Lists information about all Networking API versions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0">
+                <Method name="GET" description="Shows details for Networking API v2.0.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/networks">
+                <Method name="POST" description="Creates multiple networks in a single request.\n"/>
+                <Method name="GET" description="Lists networks to which the specified tenant has access.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/networks/{network_id}">
+                <Method name="PUT" description="Updates a specified network.\n"/>
+                <Method name="DELETE" description="Deletes a specified network and its associated resources.\n"/>
+                <Method name="GET" description="Shows information for a specified network.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/extensions">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/extensions/{alias}">
+                <Method name="GET" description=""/>
+            </Resource>
+        </Service>
+        <Service name="OS-OAUTH1-v3">
+            <Resource uri="http://openstack.provider.com/v3/OS-OAUTH1/users/{userId}/access_tokens">
+                <Method name="GET" description="Lists authorized access tokens.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v3/OS-OAUTH1/users/{userId}/access_tokens/{access_token_id}">
+                <Method name="DELETE" description="Enables a user to revoke an access token, which prevents the consumer from requesting new Identity Service API tokens. Also, revokes any Identity Service API tokens that were issued to the consumer through that access token.\n"/>
+                <Method name="GET" description="Gets an authorized access token.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v3/OS-OAUTH1/users/{userId}/access_tokens/{access_token_id}/roles">
+                <Method name="GET" description="Lists associated roles for a specified access token.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v3/OS-OAUTH1/users/{userId}/access_tokens/{access_token_id}/roles/{role_id}">
+                <Method name="GET" description="Gets information about a specified role for a specified access token.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v3/OS-OAUTH1/consumers">
+                <Method name="POST" description="Enables a user to create a consumer.\n"/>
+                <Method name="GET" description="Lists consumers.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v3/OS-OAUTH1/consumers/{consumer_id}">
+                <Method name="DELETE" description="Deletes a specified consumer.\n"/>
+                <Method name="PATCH" description="Updates the description for a specified consumer.\n"/>
+                <Method name="GET" description="Shows information for a specified consumer.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v3/OS-OAUTH1/access_token">
+                <Method name="POST" description="Enables a consumer to create an access token by exchanging a request token for an access token.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v3/auth/tokens">
+                <Method name="POST" description="Enables a consumer to get an Identity Service authentication token.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-ports-binding-ext">
+            <Resource uri="http://openstack.provider.com/v2.0/ports">
+                <Method name="POST" description="Creates a port on the specified network.\n"/>
+                <Method name="GET" description="Lists ports to which the tenant has access.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/ports/{port_id}">
+                <Method name="PUT" description="Updates the specified port.\n"/>
+                <Method name="GET" description="Shows information for the specified port.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-ports">
+            <Resource uri="http://openstack.provider.com/v2.0/ports">
+                <Method name="POST" description="Creates multiple ports in a single request. Specify a list of ports in the request body.\n"/>
+                <Method name="GET" description="Lists ports to which the tenant has access.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/ports/{port_id}">
+                <Method name="PUT" description="Updates a specified port.\n"/>
+                <Method name="DELETE" description="Deletes a specified port.\n"/>
+                <Method name="GET" description="Shows information for a specified port.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-qos-v2">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/qos-specs">
+                <Method name="POST" description="Creates a QoS specification.\n"/>
+                <Method name="GET" description="Lists quality of service (QoS) specifications.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}">
+                <Method name="DELETE" description="Deletes a specified QoS specification.\n"/>
+                <Method name="GET" description="Shows details for a specified QoS specification.\n"/>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}/disassociate_all" verb="disassociate_all">
+                    <Method name="GET" description="Disassociates a specified QoS specification from all associations.\n"/>
+                </Controller>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}/associate" verb="associate">
+                    <Method name="GET" description="Associates a QoS specification with a specified volume type.\n"/>
+                </Controller>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}/disassociate" verb="disassociate">
+                    <Method name="GET" description="Disassociates a QoS specification from a specified volume type.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/qos-specs/{qos_id}/associations">
+                <Method name="GET" description="Gets all associations for a specified QoS specification.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-quota-class-sets-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/os-quota-class-sets/{class_id}">
+                <Method name="PUT" description="Updates quota for a specified class.\n"/>
+                <Method name="GET" description="Shows the quota for a specified class.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-quota-class-sets">
+            <Resource uri="http://openstack.provider.com/v2/os-quota-class-sets/{class_id}">
+                <Method name="PUT" description="Updates quota for a specified class.\n"/>
+                <Method name="GET" description="Shows the quota for a specified class.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-quota-sets-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/os-quota-sets/{tenant_id}">
+                <Method name="PUT" description="Updates quota for tenant.\n"/>
+                <Method name="GET" description="Shows quotas for tenant.\n"/>
+                <Method name="DELETE" description="Deletes a quota for tenant.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/os-quota-sets/{tenant_id}/defaults">
+                <Method name="GET" description="Shows default quotas for tenant.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-quota-sets">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-quota-sets/{tenant_id}">
+                <Method name="PUT" description="Updates quotas for a tenant.\n"/>
+                <Method name="DELETE" description="Deletes quotas for a tenant so the quotas revert to default values.\n"/>
+                <Method name="GET" description="Shows quotas for a tenant.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-quota-sets/{tenant_id}/detail/{user_id}">
+                <Method name="GET" description="Shows details for quotas for a specified tenant and user.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-quota-sets/{tenant_id}/{user_id}">
+                <Method name="POST" description="Updates quotas for a specified tenant/project and user.\n"/>
+                <Method name="DELETE" description="Deletes quotas for a user so that the quotas revert to default values.\n"/>
+                <Method name="GET" description="Enables an admin user to show quotas for a specified tenant and user.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-quota-sets/defaults">
+                <Method name="GET" description="Gets default quotas for a tenant.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-quotas">
+            <Resource uri="http://openstack.provider.com/v2.0/quotas">
+                <Method name="PUT" description="Updates quotas for a specified tenant. Use when non-default quotas are desired.\n"/>
+                <Method name="DELETE" description="Resets quotas to default values for a specified tenant.\n"/>
+                <Method name="GET" description="Shows quotas for a specified tenant.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-remote-consoles-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/servers/{server_id}/actions">
+                <Method name="POST" description="Gets text console output for VNC.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-rescue">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|unrescue" verb="unrescue">
+                    <Method name="POST" description="Unrescues a server.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-scheduler-hints">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers">
+                <Method name="POST" description="Creates a server with scheduler hints that are passed directly to the scheduler.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-security-group-default-rules">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-security-group-default-rules">
+                <Method name="POST" description="Creates a default security group rule.\n"/>
+                <Method name="GET" description="Lists default security group rules.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-security-group-default-rules/{security_group_default_rule_id}">
+                <Method name="DELETE" description="Deletes a specified security group rule.\n"/>
+                <Method name="GET" description="Shows information for a specified security group rule.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-security-groups">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-security-groups">
+                <Method name="POST" description="Creates a security group.\n"/>
+                <Method name="GET" description="Lists security groups.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-security-groups/servers/{server_id}/os-security-groups">
+                <Method name="GET" description="Lists security groups for a specified server.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-security-groups/{security_group_id}">
+                <Method name="DELETE" description="Deletes a specified security group.\n"/>
+                <Method name="GET" description="Shows information for a specified security group.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-server-groups">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-server-groups">
+                <Method name="POST" description="Creates a server group.\n"/>
+                <Method name="GET" description="Lists server groups.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-server-groups/{ServerGroup_id}">
+                <Method name="DELETE" description="Deletes a specified server group.\n"/>
+                <Method name="GET" description="Shows details for a specified server group.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-server-OS-EXT-IPS-MAC">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers">
+                <Method name="POST" description="Creates a server with the OS-EXT-IPS-MAC:mac\_addr extended attribute.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Method name="GET" description="Shows information for a specified server. Includes the OS-EXT-IPS-MAC:mac\_addr extended attribute.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/detail">
+                <Method name="GET" description="Lists details for all servers. Includes the OS-EXT-IPS-MAC:mac\_addr extended attribute.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-server-password">
+            <Resource uri="http://openstack.provider.com/v2/servers/{server_id}/os-server-password">
+                <Method name="DELETE" description="Clears the encrypted copy of the password in the metadata server. This is done after the client has retrieved the password and knows it doesn&apos;t need it in the metadata server anymore. The password for the server remains the same.\n"/>
+                <Method name="GET" description="Gets the administrative password for a specified server.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-server-shelve">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|unshelve" verb="unshelve">
+                    <Method name="POST" description="Restores a shelved server.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-server-start-stop">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}">
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}?action|stop" verb="stop">
+                    <Method name="POST" description="Stops a running server and changes its status to STOPPED.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="os-server-usage-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/servers/{server_id}">
+                <Method name="GET" description="Shows details for a specified server.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/servers/detail">
+                <Method name="GET" description="Lists server details for a specified user.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-services">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-services">
+                <Method name="GET" description="Lists running services.\n"/>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/os-services/disable" verb="disable">
+                    <Method name="PUT" description="Disables scheduling for a service.\n"/>
+                </Controller>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/os-services/disable-log-reason" verb="disable-log-reason">
+                    <Method name="PUT" description="Logs information to the service table about why a service was disabled.\n"/>
+                </Controller>
+                <Controller uri="http://openstack.provider.com/v2/{tenant_id}/os-services/enable" verb="enable">
+                    <Method name="PUT" description="Enables scheduling for a service.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-services/detail">
+                <Method name="GET" description="Lists disabled services. If information exists, includes reasons why services were disabled.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-simple-tenant-usage-v2.1">
+            <Resource uri="http://openstack.provider.com/v2.1/os-simple-tenant-usage">
+                <Method name="GET" description="Lists usage information for all tenants.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1/os-simple-tenant-usage/{tenant_id}">
+                <Method name="GET" description="Shows usage details for a specified tenant.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-simple-tenant-usage">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-simple-tenant-usage">
+                <Method name="GET" description="Lists usage information for all tenants.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-simple-tenant-usage/{tenant_id}">
+                <Method name="GET" description="Gets usage information for a tenant.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-subnets">
+            <Resource uri="http://openstack.provider.com/v2.0/subnets">
+                <Method name="POST" description="Creates multiple subnets in a single request. Specify a list of subnets in the request body.\n"/>
+                <Method name="GET" description="Lists subnets to which the specified tenant has access.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/subnets/{subnet_id}">
+                <Method name="PUT" description="Updates a specified subnet.\n"/>
+                <Method name="DELETE" description="Deletes a specified subnet.\n"/>
+                <Method name="GET" description="Shows information for a specified subnet.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-telemetry-api-2.0">
+            <Resource uri="http://openstack.provider.com/v2/alarms">
+                <Method name="POST" description="Creates an alarm.\n"/>
+                <Method name="GET" description="Lists alarms, based on the specified query.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/alarms/{alarm_id}">
+                <Method name="PUT" description="Updates a specified alarm.\n"/>
+                <Method name="DELETE" description="Deletes a specified alarm.\n"/>
+                <Method name="GET" description="Shows information for a specified alarm.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/alarms/{alarm_id}/history">
+                <Method name="GET" description="Assembles the history for a specified alarm.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/alarms/{alarm_id}/state">
+                <Method name="PUT" description="Sets the state of a specified alarm.\n"/>
+                <Method name="GET" description="Gets the state of a specified alarm.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/meters">
+                <Method name="GET" description="Lists meters, based on the data recorded so far.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/meters/{meter_name}">
+                <Method name="POST" description="Posts list of samples to Telemetry.\n"/>
+                <Method name="GET" description="Gets samples for a specified meter.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/meters/{meter_name}/statistics">
+                <Method name="GET" description="Computes the statistics of the samples in a specified time range.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/resources">
+                <Method name="GET" description="Lists definitions for all resources.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/resources/{resource_id}">
+                <Method name="GET" description="Gets details for a specified resource.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-used-limits-for-admins">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/limits/{tenant_id}">
+                <Method name="GET" description="Enables administrators to get absolute and rate limit information, including information about currently used absolute limits, for a specified customer tenant ID.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-used-limits">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/limits">
+                <Method name="GET" description="Gets absolute and rate limit information, including information on currently used absolute limits.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-versions-v2.1">
+            <Resource uri="http://openstack.provider.com">
+                <Method name="GET" description="Lists information about all Compute API versions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.1">
+                <Method name="GET" description="Shows details for Compute API v2.1.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-virtual-interfaces">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-virtual-interfaces">
+                <Method name="GET" description="Shows the virtual interface for a specified instance. Includes the `OS-EXT-VIF-NET:net_id` attribute that shows to which network the interface is attached.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-volume-manage">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/os-volume-manage">
+                <Method name="POST" description="Creates a Block Storage volume using existing storage instead of creating new storage.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-volume">
+            <Resource uri="http://openstack.provider.com/v1.1/{tenant_id}/os-snapshots">
+                <Method name="POST" description="Creates a snapshot.\n"/>
+                <Method name="GET" description="Lists snapshots.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.1/{tenant_id}/os-snapshots/detail">
+                <Method name="GET" description="Lists details for a specified snapshot.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.1/{tenant_id}/os-snapshots/{snapshot_id}">
+                <Method name="DELETE" description="Deletes a specified snapshot from the account.\n"/>
+                <Method name="GET" description="Shows information for a specified snapshot.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.1/{tenant_id}/os-volumes">
+                <Method name="GET" description="Lists the volumes associated with the account.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.1/{tenant_id}/os-volumes/{volume_id}">
+                <Method name="POST" description="Creates a volume.\n"/>
+                <Method name="DELETE" description="Deletes a specified volume.\n"/>
+                <Method name="GET" description="Shows information for a specified volume.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.1/{tenant_id}/os-volumes/detail">
+                <Method name="GET" description="Lists details for a specified volume.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.1/{tenant_id}/os-volume-types">
+                <Method name="GET" description="Lists volume types.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1.1/{tenant_id}/os-volume-types/{volume_type_id}">
+                <Method name="GET" description="Shows information for a specified volume type.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-volume_attachments">
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-volume_attachments">
+                <Method name="POST" description="Attaches a volume to the specified server.\n"/>
+                <Method name="GET" description="Lists the volume attachments for a specified server.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/servers/{server_id}/os-volume_attachments/{attachment_id}">
+                <Method name="DELETE" description="Deletes the specified volume attachment from a specified server.\n"/>
+                <Method name="GET" description="Shows details for the specified volume attachment.\n"/>
+            </Resource>
+        </Service>
+        <Service name="security-groups">
+            <Resource uri="http://openstack.provider.com/v2.0/security-group-rules">
+                <Method name="POST" description="Creates an OpenStack Networking security group rule.\n"/>
+                <Method name="GET" description="Lists a summary of all OpenStack Networking security group rules that the specified tenant can access.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/security-group-rules/{rules-security-groups-id}">
+                <Method name="DELETE" description="Deletes a specified rule from a OpenStack Networking security group.\n"/>
+                <Method name="GET" description="Shows detailed information for a specified security group rule.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/security-groups">
+                <Method name="POST" description="Creates an OpenStack Networking security group.\n"/>
+                <Method name="GET" description="Lists all OpenStack Networking security groups to which the specified tenant has access.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2.0/security-groups/{security_group_id}">
+                <Method name="DELETE" description="Deletes an OpenStack Networking security group.\n"/>
+                <Method name="GET" description="Shows information for a specified security group.\n"/>
+            </Resource>
+        </Service>
+        <Service name="volume-api-v1">
+            <Resource uri="http://openstack.provider.com">
+                <Method name="GET" description="Lists information about all Block Storage API versions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1">
+                <Method name="GET" description="Shows details for Block Storage API v1.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/snapshots">
+                <Method name="POST" description="Creates a snapshot.\n"/>
+                <Method name="GET" description="Lists simple snapshot entities.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/snapshots/{snapshot_id}">
+                <Method name="DELETE" description="Deletes a specified snapshot.\n"/>
+                <Method name="GET" description="Shows information about a specified snapshot.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/snapshots/{snapshot_id}/metadata">
+                <Method name="PUT" description="Updates the metadata for a specified snapshot.\n"/>
+                <Method name="GET" description="Shows the metadata for a specified snapshot.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/snapshots/detail">
+                <Method name="GET" description="Lists details for snapshot entities.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/volumes">
+                <Method name="POST" description="Creates a volume.\n"/>
+                <Method name="GET" description="Lists simple volume entities.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/volumes/detail">
+                <Method name="GET" description="Lists details for volume entities.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/volumes/{volume_id}">
+                <Method name="DELETE" description="Deletes a specified volume.\n"/>
+                <Method name="GET" description="Shows information about a specified volume.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/types">
+                <Method name="POST" description="Creates a volume type.\n"/>
+                <Method name="GET" description="Request a list of volume types.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v1/{tenant_id}/types/{volume_type_id}">
+                <Method name="PUT" description="Updates the extra specifications assigned to a volume type.\n"/>
+                <Method name="DELETE" description="Deletes a specified volume type.\n"/>
+                <Method name="GET" description="Shows information about a specified volume type.\n"/>
+            </Resource>
+        </Service>
+        <Service name="volume-api-v2">
+            <Resource uri="http://openstack.provider.com">
+                <Method name="GET" description="Lists information about all Block Storage API versions.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2">
+                <Method name="GET" description="Shows details for Block Storage API v2.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/snapshots">
+                <Method name="POST" description="Creates a snapshot, which is a point-in-time complete copy of a volume. You can create a volume from the snapshot.\n"/>
+                <Method name="GET" description="Lists summary information for all Block Storage snapshots that the tenant who submits the request can access.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/snapshots/{snapshot_id}">
+                <Method name="PUT" description="Updates a specified snapshot.\n"/>
+                <Method name="DELETE" description="Deletes a specified snapshot.\n"/>
+                <Method name="GET" description="Shows information for a specified snapshot.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/snapshots/{snapshot_id}/metadata">
+                <Method name="PUT" description="Updates the metadata for a specified snapshot.\n"/>
+                <Method name="GET" description="Shows the metadata for a specified snapshot.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/snapshots/detail">
+                <Method name="GET" description="Lists detailed information for all Block Storage snapshots that the tenant who submits the request can access.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/types">
+                <Method name="POST" description="Creates a volume type.\n"/>
+                <Method name="GET" description="Lists volume types.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/types/{volume_type_id}">
+                <Method name="PUT" description="Updates the extra specifications assigned to a volume type.\n"/>
+                <Method name="DELETE" description="Deletes a specified volume type.\n"/>
+                <Method name="GET" description="Shows information about a specified volume type.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/volumes">
+                <Method name="POST" description="Creates a volume.\n"/>
+                <Method name="GET" description="Lists summary information for all Block Storage volumes that the tenant who submits the request can access.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/volumes/detail">
+                <Method name="GET" description="Lists detailed information for all Block Storage volumes that the tenant who submits the request can access.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/volumes/{volume_id}">
+                <Method name="PUT" description="Updates a volume.\n"/>
+                <Method name="DELETE" description="Deletes a specified volume.\n"/>
+                <Method name="GET" description="Shows information about a specified volume.\n"/>
+            </Resource>
+            <Resource uri="http://openstack.provider.com/v2/{tenant_id}/extensions">
+                <Method name="GET" description="Lists Block Storage API extensions.\n"/>
+            </Resource>
+        </Service>
+    </Provider>
+</CloudComputing>

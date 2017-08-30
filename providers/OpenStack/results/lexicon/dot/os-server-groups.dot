@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-server-groups", fontsize=24]
+splines=true
+"os-server-groups" [color=blue, fontcolor=blue, shape=doublecircle]
+}

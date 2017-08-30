@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-cloudpipe", fontsize=24]
+splines=true
+"os-cloudpipe" [color=blue, fontcolor=blue, shape=doublecircle]
+"configure-project" [color=orange, fontcolor=orange, shape=box]
+"configure-project" -> "os-cloudpipe" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

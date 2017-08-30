@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-floating-ips-bulk", fontsize=24]
+splines=true
+"os-floating-ips-bulk" [color=blue, fontcolor=blue, shape=doublecircle]
+"delete" [color=orange, fontcolor=orange, shape=box]
+"delete" -> "os-floating-ips-bulk" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

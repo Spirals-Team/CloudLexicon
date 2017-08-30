@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-remote-consoles-v2.1", fontsize=24]
+splines=true
+"actions" [color=blue, fontcolor=blue, shape=doublecircle]
+}

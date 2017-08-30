@@ -1,0 +1,12 @@
+digraph LexiconGraph {
+graph[label="OpenStack - OS-OAUTH1-v3", fontsize=24]
+splines=true
+"access_tokens" [color=blue, fontcolor=blue, shape=doublecircle]
+"consumers" [color=blue, fontcolor=blue, shape=doublecircle]
+"access_token" [color=blue, fontcolor=blue, shape=doublecircle]
+"tokens" [color=blue, fontcolor=blue, shape=doublecircle]
+"tokens" -> "access_tokens" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"roles" -> "access_tokens" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"roles" [color=blue, fontcolor=blue, shape=ellipse]
+"tokens" -> "access_token" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="OpenStack - os-flavor-swap", fontsize=24]
+splines=true
+"os-flavor-swap" [color=blue, fontcolor=blue, shape=doublecircle]
+"flavors" -> "os-flavor-swap" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}
