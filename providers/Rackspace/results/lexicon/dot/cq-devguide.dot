@@ -1,0 +1,15 @@
+digraph LexiconGraph {
+graph[label="Rackspace - cq-devguide", fontsize=24]
+splines=true
+"v1" [color=blue, fontcolor=blue, shape=doublecircle]
+"queues" -> "v1" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"queues" [color=blue, fontcolor=blue, shape=ellipse]
+"stats" -> "queues" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"stats" [color=blue, fontcolor=blue, shape=ellipse]
+"messages" -> "queues" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"messages" [color=blue, fontcolor=blue, shape=ellipse]
+"claims" -> "queues" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"claims" [color=blue, fontcolor=blue, shape=ellipse]
+"metadata" -> "queues" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"metadata" [color=blue, fontcolor=blue, shape=ellipse]
+}

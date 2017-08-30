@@ -1,0 +1,16 @@
+digraph LexiconGraph {
+graph[label="Rackspace - image-schemas-2.0", fontsize=24]
+splines=true
+"member" [color=blue, fontcolor=blue, shape=doublecircle]
+"task" [color=blue, fontcolor=blue, shape=doublecircle]
+"members" [color=blue, fontcolor=blue, shape=doublecircle]
+"tasks" [color=blue, fontcolor=blue, shape=doublecircle]
+"image" [color=blue, fontcolor=blue, shape=doublecircle]
+"images" [color=blue, fontcolor=blue, shape=doublecircle]
+"members" -> "member" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"tasks" -> "task" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"member" -> "members" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"task" -> "tasks" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"images" -> "image" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"image" -> "images" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

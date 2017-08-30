@@ -1,0 +1,6 @@
+digraph LexiconGraph {
+graph[label="Rackspace - security-groups", fontsize=24]
+splines=true
+"security-group-rules" [color=blue, fontcolor=blue, shape=doublecircle]
+"security-groups" [color=blue, fontcolor=blue, shape=doublecircle]
+}

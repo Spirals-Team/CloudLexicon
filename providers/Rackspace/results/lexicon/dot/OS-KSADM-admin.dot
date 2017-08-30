@@ -1,0 +1,10 @@
+digraph LexiconGraph {
+graph[label="Rackspace - OS-KSADM-admin", fontsize=24]
+splines=true
+"tenants" [color=blue, fontcolor=blue, shape=doublecircle]
+"users" [color=blue, fontcolor=blue, shape=doublecircle]
+"roles" [color=blue, fontcolor=blue, shape=doublecircle]
+"services" [color=blue, fontcolor=blue, shape=doublecircle]
+"users" -> "tenants" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"roles" -> "users" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+}

@@ -1,0 +1,48 @@
+['./datasets/DatasetURIs.csv']
+
+-------------------- API --------------------
+
+Number of providers = 1
+Number of services = 34
+Number of resources = 283
+Number of controllers = 23
+Number of queries = 0
+Number of methods = 476
+ - 5 HEAD (1.05%)
+ - 246 GET (51.68%)
+ - 4 PATCH (0.84%)
+ - 59 PUT (12.39%)
+ - 89 POST (18.70%)
+ - 73 DELETE (15.34%)
+
+-------------------- LEXICON --------------------
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+******************************     0 terms are common to 0 of 1 providers      ******************************
+******************************     146 terms are common to 1 of 1 providers      ******************************
+
+Number of terms = 146
+Number of nouns = 118 (80.82%)
+Number of verbs = 28 (19.18%)
+Number of singular terms = 46 (31.51%)
+Number of plural terms = 100 (68.49%)
+Number of lower case terms = 137 (93.84%)
+Number of upper case terms = 2 (1.37%)
+Number of camel case terms = 7 (4.79%)
+Number of hyphen terms = 7 (4.79%)
+Number of underscore terms = 11 (7.53%)
+Number of business terms = 141 (96.58%)
+Number of engineering terms = 5 (3.42%)
+
+
+-------------------- QUALITY --------------------
+
+Rackspace is REST ;-)
+scoreRest = 0.951680672269
+Rackspace: BAD API naming or API Naming Inconsistency Anti-Pattern
+scoreNaming = 0.890410958904
+Rackspace: BAD business API design or Engineering-Oriented API Naming Anti-Pattern 5 (3.42%)
+scoreBusiness = 0.965753424658
+Total score = 0.935948351944

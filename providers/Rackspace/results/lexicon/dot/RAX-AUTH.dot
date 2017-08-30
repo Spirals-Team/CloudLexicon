@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="Rackspace - RAX-AUTH", fontsize=24]
+splines=true
+"RAX-AUTH" [color=blue, fontcolor=blue, shape=doublecircle]
+"reset" [color=orange, fontcolor=orange, shape=box]
+"reset" -> "RAX-AUTH" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

@@ -1,0 +1,1160 @@
+<CloudComputing>
+    <Provider name="Rackspace">
+        <Service name="autoscale">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/execute/{capability_version}/{capability_hash}">
+                <Method name="POST" description="Runs an anonymous webhook.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups">
+                <Method name="POST" description="Creates a scaling group.\n"/>
+                <Method name="GET" description="Lists the scaling groups that are available for a specified tenant.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}">
+                <Method name="DELETE" description="Deletes a specified scaling group.\n"/>
+                <Method name="GET" description="Shows configuration details for a specified scaling group and its associated webhooks.\n"/>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/launch" verb="launch">
+                    <Method name="PUT" description="Updates an existing launch configuration for the specified scaling group.\n"/>
+                    <Method name="GET" description="Shows launch configuration details for a specified scaling group.\n"/>
+                </Controller>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/pause" verb="pause">
+                    <Method name="POST" description="Pauses the execution of all scaling policies for a specified scaling group.\n"/>
+                </Controller>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/resume" verb="resume">
+                    <Method name="POST" description="Resumes the execution of all scaling policies for a specified scaling group.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/servers/{serverId}">
+                <Method name="DELETE" description="Deletes and replaces a specified server in a scaling group.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/policies">
+                <Method name="POST" description="Creates one or more scaling policies for a specified scaling group.\n"/>
+                <Method name="GET" description="Lists scaling policies that are available to a specified scaling group.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/policies/{policyId}">
+                <Method name="PUT" description="Updates an existing scaling policy for the specified tenant.\n"/>
+                <Method name="GET" description="Shows scaling policy details.\n"/>
+                <Method name="DELETE" description="Deletes a specified scaling policy from the specified tenant.\n"/>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/policies/{policyId}/execute" verb="execute">
+                    <Method name="POST" description="Runs a specified scaling policy.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/policies/{policyId}/webhooks">
+                <Method name="POST" description="Creates one or more webhooks for the specified scaling policy.\n"/>
+                <Method name="GET" description="Lists web hooks and their IDs for a specified scaling policy.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/policies/{policyId}/webhooks/{webhookId}">
+                <Method name="PUT" description="Updates a webhook for a specified tenant and scaling policy.\n"/>
+                <Method name="DELETE" description="Deletes a webhook for a specified scaling policy.\n"/>
+                <Method name="GET" description="Shows webhook details for a specified scaling policy.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/config">
+                <Method name="PUT" description="Updates the configuration for the scaling group.\n"/>
+                <Method name="GET" description="Shows the configuration for a scaling group.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/state">
+                <Method name="GET" description="Gets the current state of a scaling group.\n"/>
+            </Resource>
+        </Service>
+        <Service name="cbd-devguide">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}">
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/profile" verb="profile">
+                    <Method name="POST" description="Creates a profile or updates the information in an existing profile.\n"/>
+                    <Method name="GET" description="Returns profile details for the current user.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/types">
+                <Method name="GET" description="Lists cluster types.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/types/{typeId}">
+                <Method name="GET" description="Shows details for a specified cluster type.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/types/{typeId}/flavors">
+                <Method name="GET" description="Lists the supported flavors for a specified cluster type.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/clusters">
+                <Method name="POST" description="Creates a cluster.\n"/>
+                <Method name="GET" description="Lists all clusters for your account.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/clusters/{clusterId}">
+                <Method name="DELETE" description="Deletes a specified cluster.\n"/>
+                <Method name="GET" description="Shows details for a specified cluster.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/clusters/{clusterId}/nodes">
+                <Method name="GET" description="Lists all nodes for a specified cluster.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/clusters/{clusterId}/nodes/{nodeId}">
+                <Method name="GET" description="Shows details for a specified node in a specified cluster.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/clusters/{clusterId}/action|postClusterAction">
+                <Method name="POST" description="Resizes a specified cluster.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/flavors">
+                <Method name="GET" description="Lists all available flavors, including the drive size and amount of RAM.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/flavors/{flavorId}">
+                <Method name="GET" description="Shows details for a specified flavor.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/flavors/{flavorId}/types">
+                <Method name="GET" description="Lists the supported cluster types for a specified flavor.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/limits">
+                <Method name="GET" description="Shows the absolute resource limits, such as remaining node count, available RAM, and remaining disk space, for the user.\n"/>
+            </Resource>
+        </Service>
+        <Service name="cq-devguide">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1">
+                <Method name="GET" description="Gets the home document.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/queues">
+                <Method name="GET" description="Lists queues.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}">
+                <Method name="PUT" description="Creates a queue.\n"/>
+                <Method name="GET" description="Verifies whether the specified queue exists.\n"/>
+                <Method name="DELETE" description="Deletes the specified queue.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/stats">
+                <Method name="GET" description="Show statistics for the specified queue.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/messages">
+                <Method name="POST" description="Posts the message or messages for a specified queue.\n"/>
+                <Method name="DELETE" description="Bulk-deletes for messages.\n"/>
+                <Method name="GET" description="Gets the specified set of messages from the specified queue.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/messages/{messageId}">
+                <Method name="DELETE" description="Deletes the specified message from the specified queue.\n"/>
+                <Method name="GET" description="Shows details for the specified message from the specified queue.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/claims">
+                <Method name="POST" description="Claims a set of messages from a specified queue.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/claims/{claimId}">
+                <Method name="DELETE" description="Releases the specified claim for the specified queue.\n"/>
+                <Method name="PATCH" description="Updates the specified claim for a specified queue.\n"/>
+                <Method name="GET" description="Queries the specified claim for a specified queue.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/metadata">
+                <Method name="PUT" description="Sets metadata for the specified queue.\n"/>
+                <Method name="GET" description="Shows metadata for the specified queue.\n"/>
+            </Resource>
+        </Service>
+        <Service name="dbaas">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com">
+                <Method name="GET" description="Lists information about all versions of the API.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}">
+                <Method name="GET" description="Returns detailed information about the specified version of the API.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores">
+                <Method name="GET" description="Lists all datastore types.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}">
+                <Method name="GET" description="Lists datastore type.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}/versions">
+                <Method name="GET" description="Lists all datastore versions for the specified datastore.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}/versions/{versionId}">
+                <Method name="GET" description="Lists datastore version.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}/versions/{versionId}/parameters">
+                <Method name="GET" description="Lists configuration parameters that may be configured on the system.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}/versions/{versionId}/parameters/{parameterId}">
+                <Method name="GET" description="Lists the details of a specified configuration parameter that may be configured on the system.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/versions/{versionId}/parameters">
+                <Method name="GET" description="Lists the configuration parameters that may be configured on the system without specifying a datastore.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/versions/{versionId}/parameters/{parameterId}">
+                <Method name="GET" description="Lists the details of a specified configuration parameter that may be configured on the system without specifying a datastore.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances">
+                <Method name="POST" description="Creates a replica of the source instance, as specified by the value of the `replica_of` attribute.\n"/>
+                <Method name="GET" description="Lists the status and information for all replicas and replica sources.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}">
+                <Method name="PUT" description="Associates a specified database instance with a configuration group.\n"/>
+                <Method name="PATCH" description="Detaches the specified replica instance from its replication source instance.\n"/>
+                <Method name="DELETE" description="Deletes the specified database instance.\n"/>
+                <Method name="GET" description="Lists status and details for a specified replica.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/users">
+                <Method name="PUT" description="Changes the database password of one or more users.\n"/>
+                <Method name="POST" description="Creates a user for the specified database instance.\n"/>
+                <Method name="GET" description="Lists the users in the specified database instance.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/users/{userId}">
+                <Method name="PUT" description="Modifies one or more of the following for the specified user: name, password, and host from which the user is allowed to connect to the database.\n"/>
+                <Method name="GET" description="Lists the specified user&apos;s name and a list of databases that the user can access.\n"/>
+                <Method name="DELETE" description="Deletes the user identified by {name} for the specified database instance.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/users/{userId}/databases">
+                <Method name="PUT" description="Grants access for the specified user to one or more databases for the specified instance.\n"/>
+                <Method name="GET" description="Shows a list of all databases a user has access to.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/users/{userId}/databases/{databaseName}">
+                <Method name="DELETE" description="Removes access to the specified database for the specified user.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/databases">
+                <Method name="POST" description="Creates a new database within the specified instance.\n"/>
+                <Method name="GET" description="Lists databases for the specified instance.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/databases/{databaseName}">
+                <Method name="DELETE" description="Deletes the specified database.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/action|restartInstance">
+                <Method name="POST" description="Restarts the database service on the instance.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/root">
+                <Method name="POST" description="Enables the root user for the specified database instance and returns the root password.\n"/>
+                <Method name="GET" description="Returns true if root user is enabled for the specified database instance or false otherwise.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/configuration">
+                <Method name="GET" description="Lists the default configuration settings from the template that were applied to the specified instance.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/backups">
+                <Method name="GET" description="Lists all backups for a specified instance.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/configurations">
+                <Method name="POST" description="Creates a new configuration group based on the parameters supplied in the request body.\n"/>
+                <Method name="GET" description="Lists all defined configuration groups for the tenant.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/configurations/{configId}">
+                <Method name="PUT" description="Replaces all of the configuration parameters associated with the specified configuration group.\n"/>
+                <Method name="DELETE" description="Deletes the specified configuration group. No message body is expected in the request.\n"/>
+                <Method name="PATCH" description="Updates some of the configuration parameters associated with the specified configuration group.\n"/>
+                <Method name="GET" description="Lists details for the specified configuration group.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/configurations/{configId}/instances">
+                <Method name="GET" description="Lists instances that are associated with the specified configuration group.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/flavors">
+                <Method name="GET" description="Lists information for all available flavors.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/flavors/{flavorId}">
+                <Method name="GET" description="Lists all flavor information about the specified flavor ID.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/backups">
+                <Method name="POST" description="Creates a new backup for a database instance.\n"/>
+                <Method name="GET" description="Lists all backups for all database instances.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/backups/{backupId}">
+                <Method name="DELETE" description="Deletes the specified backup.\n"/>
+                <Method name="GET" description="Lists details about a specified backup.\n"/>
+            </Resource>
+        </Service>
+        <Service name="dns">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/limits">
+                <Method name="GET" description="Lists all applicable limits.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/limits/{type}">
+                <Method name="GET" description="Shows assigned limits for a specified type.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/limits/types">
+                <Method name="GET" description="Lists the types of limits.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains">
+                <Method name="PUT" description="Updates the configurations of multiple domains.\n"/>
+                <Method name="POST" description="Creates a domain with the configuration defined by the request.\n"/>
+                <Method name="DELETE" description="Deletes multiple domains and their subdomains from an account.\n"/>
+                <Method name="GET" description="Filters domains by domain name: list all domains manageable by the account specified that *exactly match* the value of the `name` parameter.\n"/>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/search" verb="search">
+                    <Method name="GET" description="Searches domains by domain name: lists all names manageable by the specified account that have the value of the `name` parameter as part of their name.\n"/>
+                </Controller>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/import" verb="import">
+                    <Method name="POST" description="Imports a new domain with the configuration specified by the request.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}">
+                <Method name="PUT" description="Updates the configuration of a domain.\n"/>
+                <Method name="DELETE" description="Deletes a domain and its subdomains from an account.\n"/>
+                <Method name="GET" description="Shows details for a specified domain. Displays details, as specified by the `showRecords` and `showSubdomains` parameters.\n"/>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/clone" verb="clone">
+                    <Method name="POST" description="Clones a domain.\n"/>
+                </Controller>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/export" verb="export">
+                    <Method name="GET" description="Exports details for a specified domain.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/records">
+                <Method name="PUT" description="Updates the configuration of records in the domain.\n"/>
+                <Method name="POST" description="Adds one or more records to a specified domain.\n"/>
+                <Method name="DELETE" description="Deletes multiple records from the domain.\n"/>
+                <Method name="GET" description="Searches all records for a specified domain for a specified type that match a specified `name` and/or `data`.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/records/{recordId}">
+                <Method name="PUT" description="Updates the configuration of a record in the domain.\n"/>
+                <Method name="DELETE" description="Deletes a record from the domain.\n"/>
+                <Method name="GET" description="Shows details for a specified record in a specified domain.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/subdomains">
+                <Method name="GET" description="Lists domains that are subdomains of the specified domain.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/changes">
+                <Method name="GET" description="Shows all changes to a specified domain `because` a specified `date/time`.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/rdns">
+                <Method name="PUT" description="Updates one or more PTR records associated with a Rackspace Cloud device.\n"/>
+                <Method name="POST" description="Adds one or more PTR record records for a specified Cloud device.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/rdns/{service-name}">
+                <Method name="DELETE" description="Deletes one or all PTR records associated with a Rackspace Cloud device. Use the optional `ip` query parameter to specify a specified record to delete. Omitting this parameter Deletes all PTR records associated with a specified device.\n"/>
+                <Method name="GET" description="Lists all PTR records configured for a specified Cloud device.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/rdns/{service-name}/{recordId}">
+                <Method name="GET" description="Shows details for a specified PTR record associated with a specified Cloud device.\n"/>
+            </Resource>
+        </Service>
+        <Service name="identity-admin">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0">
+                <Method name="GET" description=""/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/users">
+                <Method name="POST" description="Adds a user.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}">
+                <Method name="GET" description="Gets detailed information about a specified user by user ID.\n"/>
+                <Method name="PUT" description="Updates a user.\n"/>
+                <Method name="DELETE" description="Deletes a user.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/roles">
+                <Method name="GET" description="Lists global roles for a specified user. Excludes tenant roles.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants">
+                <Method name="GET" description="Gets detailed information about a specified tenant by name.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}">
+                <Method name="GET" description="Gets detailed information about a specified tenant by ID.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}/users/{userId}/roles">
+                <Method name="GET" description="Lists roles for a specified user on a specified tenant. Excludes global roles.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/extensions">
+                <Method name="GET" description="Lists available extensions.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/extensions/{alias}">
+                <Method name="GET" description="Gets detailed information for a specified extension.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/tokens">
+                <Method name="POST" description="Authenticates and generates a token.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/tokens/{tokenId}">
+                <Method name="HEAD" description="Validates a token and confirms that it belongs to a specified tenant, for performance.\n"/>
+                <Method name="GET" description="Validates a token and confirms that it belongs to a specified tenant.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/tokens/{tokenId}/endpoints">
+                <Method name="GET" description="Lists the endpoints associated with a specified token.\n"/>
+            </Resource>
+        </Service>
+        <Service name="image-2.0">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/images">
+                <Method name="GET" description="Lists public virtual machine (VM) images.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/images/{image_id}">
+                <Method name="DELETE" description="Deletes the specified image.\n"/>
+                <Method name="PATCH" description="Updates the specified image.\n"/>
+                <Method name="GET" description="Gets the details for the specified image.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/images/{image_id}/members">
+                <Method name="POST" description="Adds the specified `account ID/tenant ID` specified in the request body as an image member.\n"/>
+                <Method name="GET" description="Returns collection of members (users) with whom the image has been shared.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/images/{image_id}/members/{member_id}">
+                <Method name="PUT" description="Sets the specified status for the specified member of the specified image.\n"/>
+                <Method name="DELETE" description="Deletes the specified `account ID/tenant ID` from the member list of the specified image.\n"/>
+                <Method name="GET" description="Gets the details for the specified image member.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/images/{image_id}/tags/{tag}">
+                <Method name="PUT" description="Adds the specified tag to the specified image.\n"/>
+                <Method name="DELETE" description="Deletes the specified tag from the image.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/tasks">
+                <Method name="POST" description="Exports an image using an asynchronous task request. See the request body for specific details.\n"/>
+                <Method name="GET" description="Lists tasks.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/tasks/{taskID}">
+                <Method name="GET" description="Gets the details for the specified task.\n"/>
+            </Resource>
+        </Service>
+        <Service name="image-schemas-2.0">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/schemas/member">
+                <Method name="GET" description="Gets a json-schema document that represents an image member entity.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/schemas/task">
+                <Method name="GET" description="Gets a json-schema document that represents an task entity.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/schemas/members">
+                <Method name="GET" description="Gets a json-schema document that represents an image members entity (a container of member entities).\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/schemas/tasks">
+                <Method name="GET" description="Gets a json-schema document that represents a container of tasks entities.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/schemas/image">
+                <Method name="GET" description="Gets a json-schema document that represents a single image entity.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/schemas/images">
+                <Method name="GET" description="Gets a json-schema document that represents an image members entity, which is a container of image member entities.\n"/>
+            </Resource>
+        </Service>
+        <Service name="layer3">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/routers">
+                <Method name="POST" description="Creates a logical router.\n"/>
+                <Method name="GET" description="Lists logical routers that are accessible to the tenant who submits the request.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/routers/{router_id}">
+                <Method name="PUT" description="Updates the specified router.\n"/>
+                <Method name="DELETE" description="Deletes the logical router and its external gateway interface.\n"/>
+                <Method name="GET" description="Shows details for the specified router.\n"/>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/routers/{router_id}/add_router_interface" verb="add_router_interface">
+                    <Method name="PUT" description="Adds an internal interface to the specified logical router.\n"/>
+                </Controller>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/routers/{router_id}/remove_router_interface" verb="remove_router_interface">
+                    <Method name="PUT" description="Removes an internal interface from the specified logical router.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="management">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/usage">
+                <Method name="GET" description="Lists all of the usage records.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/usage/instance/{instanceId}">
+                <Method name="GET" description="Lists the usage records for the specified instance.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/usage/tenant/{tenantId}">
+                <Method name="GET" description="Lists the usage records for the specified account.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/hosts">
+                <Method name="GET" description="Lists all of the compute hosts.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/hosts/{hostId}">
+                <Method name="GET" description="Lists all of the instances for the specified host.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/hosts/{hostId}/instances/action|updateHostInstances">
+                <Method name="POST" description="Updates all instances on a specified host.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/instances">
+                <Method name="GET" description="Lists all of the database instances, optionally filtered by deleted status.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}">
+                <Method name="GET" description="Returns detailed information for the specified Database Instance.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/diagnostics">
+                <Method name="GET" description="Gets the instance agent and other instance diagnostics info.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/monitoring">
+                <Method name="GET" description="Retrieves the status of the Monitoring Agent on the specified instance.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/monitoring/action|agentStop">
+                <Method name="POST" description="Stops the Monitoring Agent on the specified instance.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/action|migrateInstance">
+                <Method name="POST" description="Migrates the instance to a different host.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/root">
+                <Method name="GET" description="Gets the root flag details for the specified instance.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/hwinfo">
+                <Method name="GET" description="Gets the instance hardware info from the guest agent.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/accounts">
+                <Method name="GET" description="Lists all of the accounts owning at least one instance that is not deleted.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/accounts/{accountId}">
+                <Method name="GET" description="Returns detailed information for the specified account.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/mgmt/storage">
+                <Method name="GET" description="Returns detailed information for the storage device.\n"/>
+            </Resource>
+        </Service>
+        <Service name="networks">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/networks">
+                <Method name="POST" description="Creates multiple networks in a single request.\n"/>
+                <Method name="GET" description="Retrieves list of networks to which the specified tenant has access.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/networks/{network_id}">
+                <Method name="PUT" description="Updates a specified network.\n"/>
+                <Method name="DELETE" description="Deletes a specified network and its associated resources.\n"/>
+                <Method name="GET" description="Retrieves information for a specified network.\n"/>
+            </Resource>
+        </Service>
+        <Service name="networksnova">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/os-networksv2">
+                <Method name="POST" description="Creates a network for the specified tenant ID.\n"/>
+                <Method name="GET" description="Lists the networks configured for the specified tenant ID.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/os-networksv2/{id}">
+                <Method name="DELETE" description="Deletes the specified network.\n"/>
+                <Method name="GET" description="Shows information for the specified network.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/servers">
+                <Method name="POST" description="Provisions a new server with specified networks.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/servers/{instance_id}/os-virtual-interfacesv2">
+                <Method name="POST" description="Creates a virtual interface for a network and attaches the network to a server instance.\n"/>
+                <Method name="GET" description="Lists the virtual interfaces configured for a server instance.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/servers/{instance_id}/os-virtual-interfacesv2/{interface_id}">
+                <Method name="DELETE" description="Deletes a virtual interface from a server instance.\n"/>
+            </Resource>
+        </Service>
+        <Service name="orchestration-api">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com">
+                <Method name="GET" description="Lists information about all Orchestration API versions.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}">
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/validate" verb="validate">
+                    <Method name="POST" description="Validates a specified template.\n"/>
+                </Controller>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/build_info" verb="build_info">
+                    <Method name="GET" description="Shows build information for a heat deployment.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/resource_types">
+                <Method name="GET" description="Lists the supported template resource types.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/resource_types/{type_name}">
+                <Method name="GET" description="Shows the interface schema for a specified resource type. This schema describes the properties that can be set on the resource, their types, constraints, descriptions, and default values. Additionally, the resource attributes and their descriptions are provided.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/resource_types/{type_name}/template">
+                <Method name="GET" description="Shows the template representation for a specified resource type. The returned template contains a single resource of the specified type. Each resource property is mapped to a template parameter and each resource attribute is mapped to a template output. These templates can be used as a starting place for created customized template-based resources or as examples of using the particular resource in another template.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks">
+                <Method name="POST" description="Creates a stack from existing resources.\n"/>
+                <Method name="GET" description="Lists active stacks.\n"/>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/preview" verb="preview">
+                    <Method name="POST" description="Previews a stack.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}">
+                <Method name="GET" description="Finds the canonical URL for a specified stack.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}">
+                <Method name="PUT" description="Updates a specified stack.\n"/>
+                <Method name="DELETE" description="Deletes a specified stack.\n"/>
+                <Method name="GET" description="Shows details for a specified stack.\n"/>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/abandon" verb="abandon">
+                    <Method name="DELETE" description="Deletes a specified stack but leaves its resources intact, and returns data describing the stack and its resources.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources">
+                <Method name="GET" description="Lists resources in a stack.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}">
+                <Method name="GET" description="Shows data for a specified resource.\n"/>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/signal" verb="signal">
+                    <Method name="POST" description="Sends a signal to a specified resource.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events">
+                <Method name="GET" description="Lists events for a specified stack resource.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events/{event_id}">
+                <Method name="GET" description="Shows details for a specified event.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/metadata">
+                <Method name="GET" description="Shows metadata for a specified resource.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/template">
+                <Method name="GET" description="Gets a template for a specified stack.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/events">
+                <Method name="GET" description="Lists events for a specified stack.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/actions">
+                <Method name="POST" description="Resumes a suspended stack.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/events">
+                <Method name="GET" description="Finds the canonical URL for the event list of a specified stack.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/resources">
+                <Method name="GET" description="Finds the canonical URL for the resource list of a specified stack.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/software_deployments">
+                <Method name="POST" description="Creates a software deployment.\n"/>
+                <Method name="GET" description="Lists all available software deployments.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/software_deployments/metadata/{server_id}">
+                <Method name="GET" description="Shows the deployment configuration metadata for a specified server.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/software_deployments/{deployment_id}">
+                <Method name="PUT" description="Updates a specified software deployment.\n"/>
+                <Method name="DELETE" description="Deletes a specified software deployment.\n"/>
+                <Method name="GET" description="Shows details for a specified software deployment.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/software_configs">
+                <Method name="POST" description="Creates a software configuration.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/software_configs/{config_id}">
+                <Method name="DELETE" description="Deletes a software configuration.\n"/>
+                <Method name="GET" description="Shows details for a software configuration.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-compute-2">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com">
+                <Method name="GET" description="Lists information about all Compute API versions.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2">
+                <Method name="GET" description="Shows details for Compute API v2.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers">
+                <Method name="POST" description="Creates a server.\n"/>
+                <Method name="GET" description="Lists IDs, names, and links for all servers.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}">
+                <Method name="PUT" description="Updates the editable attributes of the specified server.\n"/>
+                <Method name="DELETE" description="Deletes a specified server.\n"/>
+                <Method name="GET" description="Gets details for a specified server.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/action|createImage">
+                <Method name="POST" description="Creates a new image. Specify the `createImage` action in the request body.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/ips">
+                <Method name="GET" description="Lists networks and addresses for a specified tenant and server.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/ips/{network_label}">
+                <Method name="GET" description="Lists addresses for a specified tenant, server, and network.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/metadata">
+                <Method name="PUT" description="Creates or replaces metadata items for a specified server.\n"/>
+                <Method name="POST" description="Updates metadata items by key for a specified server.\n"/>
+                <Method name="GET" description="Shows metadata for a specified server.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/metadata/{key}">
+                <Method name="PUT" description="Sets a metadata item by key for a specified server.\n"/>
+                <Method name="DELETE" description="Deletes a metadata item by key for a specified server.\n"/>
+                <Method name="GET" description="Shows details for a metadata item by key for a specified server.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/detail">
+                <Method name="GET" description="Lists details for all servers.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/flavors">
+                <Method name="GET" description="Lists IDs, names, and links for available flavors.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/flavors/{flavor_id}">
+                <Method name="GET" description="Gets details for a specified flavor.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/flavors/detail">
+                <Method name="GET" description="Lists all details for available flavors.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images">
+                <Method name="GET" description="Lists IDs, names, and links for available images.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/{image_id}">
+                <Method name="DELETE" description="Deletes a specified image.\n"/>
+                <Method name="GET" description="Gets details for a specified image.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/{image_id}/metadata">
+                <Method name="PUT" description="Creates or replaces metadata for a specified image.\n"/>
+                <Method name="POST" description="Updates metadata items by key for a specified image.\n"/>
+                <Method name="GET" description="Shows metadata for a specified image.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/{image_id}/metadata/{key}">
+                <Method name="PUT" description="Creates or updates a metadata item by key for a specified image.\n"/>
+                <Method name="DELETE" description="Deletes a metadata item by key for a specified image.\n"/>
+                <Method name="GET" description="Shows details for a metadata item by key for a specified image.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/detail">
+                <Method name="GET" description="Lists all details for available images.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/extensions">
+                <Method name="GET" description="Lists available extensions.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/extensions/{alias}">
+                <Method name="GET" description="Gets details about the specified extension.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/limits">
+                <Method name="GET" description="Lists the current limits for the account.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-createserverext">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers">
+                <Method name="POST" description="Creates a server with the configuration drive extended attribute.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}">
+                <Method name="GET" description="Shows information for a specified server including the configuration drive extended attribute.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/detail">
+                <Method name="GET" description="Lists details for all servers including the configuration drive extended attribute.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-disk-config">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers">
+                <Method name="POST" description="Creates a server.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/detail">
+                <Method name="GET" description="Lists servers with detailed config drive information.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}">
+                <Method name="PUT" description="Updates a specified server.\n"/>
+                <Method name="GET" description="Shows information for a specified server.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/action|rebuild">
+                <Method name="POST" description="Rebuilds a specified server.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/{image_id}">
+                <Method name="GET" description="Gets information for a specified image.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/detail">
+                <Method name="GET" description="Lists images.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-extended-status">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}">
+                <Method name="GET" description="Shows the extended status attributes in the response for a specified server.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/detail">
+                <Method name="GET" description="Lists the extended status attributes in the detailed response for all servers.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-flavor-extra-specs">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs">
+                <Method name="POST" description="Creates extra-specs or keys for the specified flavor.\n"/>
+                <Method name="GET" description="Lists the extra-specs or keys for the specified flavor.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs/{key_id}">
+                <Method name="DELETE" description="Deletes a specified extra-spec by key.\n"/>
+                <Method name="GET" description="Gets the value of the specified key.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-instance-actions">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/os-instance-actions">
+                <Method name="GET" description="Lists history of successful actions for a specified server. Deployers set permissions for this request in the `policy.json` file. By default, all users can list actions.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/os-instance-actions/{action_id}">
+                <Method name="GET" description="Gets details for a specified action for a specified server instance. Deployers set permissions for this request in the `policy.json` file. By default, only administrators can get details for an action.\n"/>
+            </Resource>
+        </Service>
+        <Service name="OS-KSADM-admin">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants">
+                <Method name="POST" description="Creates a tenant.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}">
+                <Method name="POST" description="Updates a tenant.\n"/>
+                <Method name="DELETE" description="Deletes a tenant.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}/users">
+                <Method name="GET" description="Lists all users for a tenant.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId}">
+                <Method name="PUT" description="Adds a specified role to a user for a tenant.\n"/>
+                <Method name="DELETE" description="Deletes a specified role from a user on a tenant.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/users">
+                <Method name="POST" description="Adds a user.\n"/>
+                <Method name="GET" description="Lists users.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}">
+                <Method name="PUT" description="Updates a user.\n"/>
+                <Method name="DELETE" description="Deletes a user.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/roles">
+                <Method name="GET" description="Lists global roles for a specified user.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/roles/OS-KSADM/{roleId}">
+                <Method name="PUT" description="Adds a specific global role to a user.\n"/>
+                <Method name="DELETE" description="Deletes a specific global role from a user.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/OS-KSADM/roles">
+                <Method name="POST" description="Adds a role.\n"/>
+                <Method name="GET" description="Gets a role by name.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/OS-KSADM/roles/{roleId}">
+                <Method name="DELETE" description="Deletes a role.\n"/>
+                <Method name="GET" description="Gets information for a specified role.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/OS-KSADM/services">
+                <Method name="POST" description="Adds a service.\n"/>
+                <Method name="GET" description="Lists services.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/OS-KSADM/services/{serviceId}">
+                <Method name="DELETE" description="Deletes a service.\n"/>
+                <Method name="GET" description="Gets a service.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-rescue">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/action|unrescue">
+                <Method name="POST" description="Unrescues a server.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-telemetry-api-2.0">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/alarms">
+                <Method name="POST" description="Creates an alarm.\n"/>
+                <Method name="GET" description="Lists alarms, based on the specified query.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/alarms/{alarm_id}">
+                <Method name="PUT" description="Updates a specified alarm.\n"/>
+                <Method name="DELETE" description="Deletes a specified alarm.\n"/>
+                <Method name="GET" description="Shows information for a specified alarm.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/alarms/{alarm_id}/history">
+                <Method name="GET" description="Assembles the history for a specified alarm.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/alarms/{alarm_id}/state">
+                <Method name="PUT" description="Sets the state of a specified alarm.\n"/>
+                <Method name="GET" description="Gets the state of a specified alarm.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/meters">
+                <Method name="GET" description="Lists meters, based on the data recorded so far.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/meters/{meter_name}">
+                <Method name="POST" description="Posts list of samples to Telemetry.\n"/>
+                <Method name="GET" description="Gets samples for a specified meter.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/meters/{meter_name}/statistics">
+                <Method name="GET" description="Computes the statistics of the samples in a specified time range.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/resources">
+                <Method name="GET" description="Lists definitions for all resources.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/resources/{resource_id}">
+                <Method name="GET" description="Gets details for a specified resource.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-used-limits-for-admins">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/limits/{tenant_id}">
+                <Method name="GET" description="Enables administrators to get absolute and rate limit information, including information about currently used absolute limits, for a specified customer tenant ID.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-used-limits">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/limits">
+                <Method name="GET" description="Gets absolute and rate limit information, including information on currently used absolute limits.\n"/>
+            </Resource>
+        </Service>
+        <Service name="os-volume-1">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/snapshots">
+                <Method name="POST" description="Creates a snapshot.\n"/>
+                <Method name="GET" description="Lists summary information for all Block Storage snapshots that the tenant who submits the request can access.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/snapshots/{snapshot_id}">
+                <Method name="PUT" description="Updates a specified snapshot.\n"/>
+                <Method name="DELETE" description="Deletes a snapshot.\n"/>
+                <Method name="GET" description="Shows snapshot details.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/snapshots/detail">
+                <Method name="GET" description="Lists detailed information for all Block Storage snapshots that the tenant who submits the request can access.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/volumes">
+                <Method name="POST" description="Creates a volume.\n"/>
+                <Method name="GET" description="Lists summary information for all Block Storage volumes that the tenant who submits the request can access.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/volumes/detail">
+                <Method name="GET" description="Lists detailed information for all Block Storage volumes that the tenant who submits the request can access.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/volumes/{volume_id}">
+                <Method name="PUT" description="Updates the name and description for a volume.\n"/>
+                <Method name="DELETE" description="Deletes a volume.\n"/>
+                <Method name="GET" description="Shows volume details.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/types">
+                <Method name="GET" description="Lists volume types.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/types/{volume_type_id}">
+                <Method name="GET" description="Shows volume type details.\n"/>
+            </Resource>
+        </Service>
+        <Service name="ports">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/ports">
+                <Method name="POST" description="Creates multiple ports in a single request. Specify a list of ports in the request body.\n"/>
+                <Method name="GET" description="Retrieves list of ports to which the tenant has access.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/ports/{port_id}">
+                <Method name="PUT" description="Updates a specified port.\n"/>
+                <Method name="DELETE" description="Deletes a specified port.\n"/>
+                <Method name="GET" description="Retrieves information for a specified port.\n"/>
+            </Resource>
+        </Service>
+        <Service name="RAX-AUTH">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/OS-KSADM/credentials/RAX-KSKEY:apiKeyCredentials/RAX-AUTH">
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/OS-KSADM/credentials/RAX-KSKEY:apiKeyCredentials/RAX-AUTH/reset" verb="reset">
+                    <Method name="POST" description="Resets the API key for a specified user.\n"/>
+                </Controller>
+            </Resource>
+        </Service>
+        <Service name="rax-cloudFiles-api-v1">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{account}">
+                <Method name="POST" description="Deletes account metadata.\n"/>
+                <Method name="HEAD" description="Gets account metadata.\n"/>
+                <Method name="GET" description="Shows details for a specified account and lists containers, sorted by name, in the account.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{account}/{container}">
+                <Method name="HEAD" description="Shows container metadata, including the number of objects in the container and the total bytes for all objects stored in the container.\n"/>
+                <Method name="GET" description="Shows details for a specified container and lists objects, sorted by name, in the container.\n"/>
+                <Method name="PUT" description="Creates a container.\n"/>
+                <Method name="POST" description="Deletes container metadata.\n"/>
+                <Method name="DELETE" description="Deletes an empty container.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{account}/{container}/{object}">
+                <Method name="HEAD" description="Shows object metadata.\n"/>
+                <Method name="GET" description="Gets the content and metadata for the object.\n"/>
+                <Method name="PUT" description="Using the `Destination` header, copies an existing object to another object with a new name in the Cloud Files storage system.\n"/>
+                <Method name="POST" description="Sets or updates your object metadata. Metadata must be in the format `X-Object-Meta-name` where `name` is the name of your metadata. You can also assign `X-Delete-At` or `X-Delete-After` to expiring objects. You cannot use this operation to change other headers, such as `Content-Type`.\n"/>
+                <Method name="DELETE" description="Permanently deletes an object from the Cloud Files storage system. (You can use `COPY` and then `DELETE` to effectively move an object.)\n"/>
+            </Resource>
+        </Service>
+        <Service name="rax-cloudFilesCDN-api-v1">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{account}">
+                <Method name="GET" description="Lists CDN-enabled containers sorted by name.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{account}/{object}">
+                <Method name="DELETE" description="Deletes CDN-enabled objects.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1/{account}/{container}">
+                <Method name="PUT" description="Enables or disables a container for use with the CDN.\n"/>
+                <Method name="HEAD" description="Gets a CDN-enabled container&apos;s metadata.\n"/>
+                <Method name="POST" description="Updates the CDN-enabled container&apos;s metadata.\n"/>
+            </Resource>
+        </Service>
+        <Service name="rax-cloudLoadBalancers-api-v1">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers">
+                <Method name="POST" description="Creates a load balancer with the configuration defined by the request.\n"/>
+                <Method name="DELETE" description="Bulk-deletes load balancers.\n"/>
+                <Method name="GET" description="Lists load balancers that are configured for the account.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}">
+                <Method name="PUT" description="Updates the properties for a specified load balancer.\n"/>
+                <Method name="DELETE" description="Deletes a load balancer from the account.\n"/>
+                <Method name="GET" description="Shows details for a specified load balancer.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips">
+                <Method name="POST" description="Adds virtual IP version 6.\n"/>
+                <Method name="DELETE" description="Bulk-deletes specified virtual IPs.\n"/>
+                <Method name="GET" description="Lists virtual IPs that are associated with a specified load balancer.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips/{virtualIpId}">
+                <Method name="DELETE" description="Deletes a specified virtual IP.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/metadata">
+                <Method name="POST" description="Adds a metadata item to the load balancer.\n"/>
+                <Method name="DELETE" description="Bulk-deletes the metadata items given specified id list.\n"/>
+                <Method name="GET" description="Shows all metadata associated with the specified load balancer.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/metadata/{metaId}">
+                <Method name="PUT" description="Updates the configuration of a metadata item on the load balancer.\n"/>
+                <Method name="DELETE" description="Deletes a metadata item from the load balancer.\n"/>
+                <Method name="GET" description="Shows details for a specified metadata item for a specified load balancer.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/errorpage">
+                <Method name="PUT" description="Sets a custom error page for a specified load balancer.\n"/>
+                <Method name="DELETE" description="Deletes the custom error page for a specified load balancer.\n"/>
+                <Method name="GET" description="Shows the custom error page that is configured for a specified load balancer.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/usage">
+                <Method name="GET" description="Shows historical usage.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/usage/current">
+                <Method name="GET" description="Shows current usage.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/stats">
+                <Method name="GET" description="Shows statistics for a specified load balancer.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination">
+                <Method name="PUT" description="Updates the SSL termination configuration.\n"/>
+                <Method name="DELETE" description="Deletes SSL termination.\n"/>
+                <Method name="GET" description="Shows the load balancer&apos;s SSL termination configuration.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings">
+                <Method name="POST" description="Adds a certificate mapping to a specified load balancer.\n"/>
+                <Method name="GET" description="Lists certificate mappings that are configured for a specified load balancer.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}">
+                <Method name="PUT" description="Updates the configuration for a specified certificate mapping on a specified load balancer.\n"/>
+                <Method name="DELETE" description="Deletes a certificate mapping from a specified load balancer.\n"/>
+                <Method name="GET" description="Shows details for a specified certificate mapping.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/contentcaching">
+                <Method name="PUT" description="Enables or disables content caching.\n"/>
+                <Method name="GET" description="Shows the current configuration of content caching.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/connectionlogging">
+                <Method name="PUT" description="Enables or disables connection logging.\n"/>
+                <Method name="GET" description="Shows the connection logging configuration.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist">
+                <Method name="POST" description="Creates or appends to an access list.\n"/>
+                <Method name="DELETE" description="Bulk-deletes the specified networks from an access list.\n"/>
+                <Method name="GET" description="Shows the access list.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist/{networkItemId}">
+                <Method name="DELETE" description="Deletes a network item from a specified access list.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/connectionthrottle">
+                <Method name="PUT" description="Creates or updates the throttling configuration.\n"/>
+                <Method name="DELETE" description="Deletes the connection throttling configuration.\n"/>
+                <Method name="GET" description="Show the connection throttling configuration.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/healthmonitor">
+                <Method name="PUT" description="Updates the settings for a health monitor.\n"/>
+                <Method name="DELETE" description="Deletes a health monitor.\n"/>
+                <Method name="GET" description="Shows the health monitor configuration, if one exists.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/nodes">
+                <Method name="POST" description="Adds a node to a specified load balancer.\n"/>
+                <Method name="DELETE" description="Bulk-deletes the specified nodes from a specified load balancer.\n"/>
+                <Method name="GET" description="Lists nodes that are configured for a specified load balancer.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}">
+                <Method name="PUT" description="Updates the configuration for a specified node on a specified load balancer.\n"/>
+                <Method name="DELETE" description="Deletes a node from a specified load balancer.\n"/>
+                <Method name="GET" description="Show details for a specified node.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata">
+                <Method name="POST" description="Adds a metadata item to a specified node and load balancer.\n"/>
+                <Method name="DELETE" description="Bulk-deletes the metadata items given specified id list.\n"/>
+                <Method name="GET" description="Shows all metadata associated with a specified node and load balancer.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}">
+                <Method name="PUT" description="Updates the configuration of a metadata item on the node.\n"/>
+                <Method name="DELETE" description="Deletes a metadata item from the node.\n"/>
+                <Method name="GET" description="Shows details for a specified metadata item for a specified node and load balancer.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/events">
+                <Method name="GET" description="Lists node service events.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/sessionpersistence">
+                <Method name="PUT" description="Enables session persistence.\n"/>
+                <Method name="DELETE" description="Disables session persistence.\n"/>
+                <Method name="GET" description="Shows the session persistence configuration.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/protocols">
+                <Method name="GET" description="Lists supported load balancing protocols.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/billable">
+                <Method name="GET" description="Lists billable load balancers for a specified date range.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/alloweddomains">
+                <Method name="GET" description="Lists allowed domains.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/algorithms">
+                <Method name="GET" description="Lists all supported load balancing algorithms.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/usage">
+                <Method name="GET" description="Shows account-level usage.\n"/>
+            </Resource>
+        </Service>
+        <Service name="RAX-KSKEY-admin">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/OS-KSADM/credentials">
+                <Method name="POST" description="Adds a credential to a user.\n"/>
+                <Method name="GET" description="List credentials.\n"/>
+            </Resource>
+        </Service>
+        <Service name="rcbu">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent">
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/enable" verb="enable">
+                    <Method name="POST" description="Enables or disables an agent. Disabling an agent does not delete it or its data. You can re-enable disabled agents later.\n"/>
+                </Controller>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/delete" verb="delete">
+                    <Method name="POST" description="Immediately permanently deletes an agent and its backup data.\n"/>
+                </Controller>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/migratevault" verb="migratevault">
+                    <Method name="PUT" description="Migrates a backup vault from one machine agent to another.\n"/>
+                </Controller>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/changeencryption" verb="changeencryption">
+                    <Method name="POST" description="Changes the encryption password.\n"/>
+                </Controller>
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/encrypt" verb="encrypt">
+                    <Method name="POST" description="Enables volume encryption.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/{machineAgentId}">
+                <Method name="POST" description="Updates the backup data center, or enables or disables ServiceNet for the Cloud Backup agent, or both.\n"/>
+                <Method name="GET" description="Lists details about the machine and its agent.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/server/{hostServerId}">
+                <Method name="GET" description="Lists details about the machine and its agent using the host server ID.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/user">
+                <Controller uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/user/wakeupagents" verb="wakeupagents">
+                    <Method name="POST" description="Wakes up the agent before you perform tasks.\n"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/user/agents">
+                <Method name="GET" description="Retrieves information for all agents for the current user.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/activity">
+                <Method name="GET" description="Lists all activity completed or in-progress for the user.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/action-requested">
+                <Method name="POST" description="Manually starts or stops a backup. Returns the identifier of the instance of the backup.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/{backupId}">
+                <Method name="GET" description="Lists details about the specified backup.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/availableforrestore">
+                <Method name="GET" description="Lists the backups that are eligible for restore (a backup that has completed at least once and has not been deleted and is not expired).\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/completed/{backupConfigurationId}">
+                <Method name="GET" description="Lists the details for backups that can still be restored.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/report/{backupId}">
+                <Method name="GET" description="Gets details about a completed backup.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/system/activity/{agentId}">
+                <Method name="GET" description="Lists all in-progress and completed activity for an agent. Activity types are Backup, Cleanup, and Restore.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup-configuration">
+                <Method name="POST" description="Creates a backup configuration for the authenticated user. Returns details of a backup configuration.\n"/>
+                <Method name="GET" description="Lists all backup configurations for the current user.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup-configuration/enable/{backupConfigurationId}">
+                <Method name="POST" description="Enables or disables a backup configuration.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup-configuration/system/{machineAgentId}">
+                <Method name="GET" description="Lists the backup configurations for the specified agent.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup-configuration/{backupConfigurationId}">
+                <Method name="PUT" description="Updates an existing backup configuration.\n"/>
+                <Method name="DELETE" description="Deletes the specified backup configuration.\n"/>
+                <Method name="GET" description="Lists detailed information for the specified backup configuration.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore">
+                <Method name="PUT" description="Creates a new restore configuration and returns detailed information about the restore.\n"/>
+                <Method name="POST" description="Updates an existing restore configuration.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/action-requested">
+                <Method name="POST" description="Manually starts or stops a restore.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/files">
+                <Method name="PUT" description="Creates a restore file associated with a restore.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/files/{restoreId}">
+                <Method name="DELETE" description="Deletes a restore configuration file.\n"/>
+                <Method name="GET" description="Lists files that are included or excluded in a restore.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/{restoreId}">
+                <Method name="GET" description="Lists details about the specified restore.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/report/{restoreId}">
+                <Method name="GET" description="Gets a report for the specified, completed restore.\n"/>
+            </Resource>
+        </Service>
+        <Service name="security-groups">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/security-group-rules">
+                <Method name="POST" description="Creates a Cloud Networks security group rule.\n"/>
+                <Method name="GET" description="Lists a summary of all Cloud Networks security group rules that the specified tenant can access.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/security-group-rules/{rules-security-groups-id}">
+                <Method name="DELETE" description="Deletes the specified rule from a Cloud Networks security group.\n"/>
+                <Method name="GET" description="Shows detailed information for the specified security group rule.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/security-groups">
+                <Method name="POST" description="Creates a Cloud Networks security group.\n"/>
+                <Method name="GET" description="Lists all Cloud Networks security groups to which the specified tenant has access.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/security-groups/{security_group_id}">
+                <Method name="DELETE" description="Deletes a Cloud Networks security group.\n"/>
+                <Method name="GET" description="Shows information for a specified security group.\n"/>
+            </Resource>
+        </Service>
+        <Service name="subnets">
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/subnets">
+                <Method name="POST" description="Creates multiple subnets in a single request. Specify a list of subnets in the request body.\n"/>
+                <Method name="GET" description="Retrieves list of subnets to which the specified tenant has access.\n"/>
+            </Resource>
+            <Resource uri="https://{region}.{service}.api.rackspacecloud.com/v2.0/subnets/{subnet_id}">
+                <Method name="PUT" description="Updates a specified subnet.\n"/>
+                <Method name="DELETE" description="Deletes a specified subnet.\n"/>
+                <Method name="GET" description="Retrieves information for a specified subnet.\n"/>
+            </Resource>
+        </Service>
+    </Provider>
+</CloudComputing>

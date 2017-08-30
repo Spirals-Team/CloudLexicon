@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="Rackspace - os-telemetry-api-2.0", fontsize=24]
+splines=true
+"alarms" [color=blue, fontcolor=blue, shape=doublecircle]
+"meters" [color=blue, fontcolor=blue, shape=doublecircle]
+"resources" [color=blue, fontcolor=blue, shape=doublecircle]
+"history" -> "alarms" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"history" [color=blue, fontcolor=blue, shape=ellipse]
+"state" -> "alarms" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"state" [color=blue, fontcolor=blue, shape=ellipse]
+"statistics" -> "meters" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"statistics" [color=blue, fontcolor=blue, shape=ellipse]
+}

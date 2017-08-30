@@ -1,0 +1,15 @@
+digraph LexiconGraph {
+graph[label="Rackspace - cbd-devguide", fontsize=24]
+splines=true
+"types" [color=blue, fontcolor=blue, shape=doublecircle]
+"clusters" [color=blue, fontcolor=blue, shape=doublecircle]
+"flavors" [color=blue, fontcolor=blue, shape=doublecircle]
+"limits" [color=blue, fontcolor=blue, shape=doublecircle]
+"flavors" -> "types" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"nodes" -> "clusters" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"nodes" [color=blue, fontcolor=blue, shape=ellipse]
+"action|postClusterAction" -> "clusters" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"action|postClusterAction" [color=blue, fontcolor=blue, shape=ellipse]
+"types" -> "flavors" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"profile" [color=orange, fontcolor=orange, shape=box]
+}

@@ -1,0 +1,591 @@
+--------------------------------------------------------------------------------
+Read-Only Pattern - 134 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/state
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/types
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/types/{typeId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/types/{typeId}/flavors
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/clusters/{clusterId}/nodes
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/clusters/{clusterId}/nodes/{nodeId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/flavors
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/flavors/{flavorId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/flavors/{flavorId}/types
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/limits
+ * https://{region}.{service}.api.rackspacecloud.com/v1
+ * https://{region}.{service}.api.rackspacecloud.com/v1/queues
+ * https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/stats
+ * https://{region}.{service}.api.rackspacecloud.com
+ * https://{region}.{service}.api.rackspacecloud.com/{version}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}/versions
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}/versions/{versionId}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}/versions/{versionId}/parameters
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}/versions/{versionId}/parameters/{parameterId}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/versions/{versionId}/parameters
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/versions/{versionId}/parameters/{parameterId}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/configuration
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/backups
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/configurations/{configId}/instances
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/flavors
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/flavors/{flavorId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/limits
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/limits/{type}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/limits/types
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/subdomains
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/changes
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/rdns/{service-name}/{recordId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/roles
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}/users/{userId}/roles
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/extensions
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/extensions/{alias}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tokens/{tokenId}/endpoints
+ * https://{region}.{service}.api.rackspacecloud.com/images
+ * https://{region}.{service}.api.rackspacecloud.com/tasks/{taskID}
+ * https://{region}.{service}.api.rackspacecloud.com/schemas/member
+ * https://{region}.{service}.api.rackspacecloud.com/schemas/task
+ * https://{region}.{service}.api.rackspacecloud.com/schemas/members
+ * https://{region}.{service}.api.rackspacecloud.com/schemas/tasks
+ * https://{region}.{service}.api.rackspacecloud.com/schemas/image
+ * https://{region}.{service}.api.rackspacecloud.com/schemas/images
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/usage
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/usage/instance/{instanceId}
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/usage/tenant/{tenantId}
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/hosts
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/hosts/{hostId}
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/diagnostics
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/monitoring
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/root
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/hwinfo
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/accounts
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/accounts/{accountId}
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/storage
+ * https://{region}.{service}.api.rackspacecloud.com
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/resource_types
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/resource_types/{type_name}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/resource_types/{type_name}/template
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events/{event_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/metadata
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/template
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/events
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/events
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/resources
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/software_deployments/metadata/{server_id}
+ * https://{region}.{service}.api.rackspacecloud.com
+ * https://{region}.{service}.api.rackspacecloud.com/v2
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/ips
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/ips/{network_label}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/flavors
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/flavors/{flavor_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/flavors/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/extensions
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/extensions/{alias}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/limits
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/{image_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/os-instance-actions
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/os-instance-actions/{action_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}/users
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/roles
+ * https://{region}.{service}.api.rackspacecloud.com/v2/alarms/{alarm_id}/history
+ * https://{region}.{service}.api.rackspacecloud.com/v2/meters
+ * https://{region}.{service}.api.rackspacecloud.com/v2/meters/{meter_name}/statistics
+ * https://{region}.{service}.api.rackspacecloud.com/v2/resources
+ * https://{region}.{service}.api.rackspacecloud.com/v2/resources/{resource_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/limits/{tenant_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/limits
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/snapshots/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/volumes/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/types
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/types/{volume_type_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{account}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/usage
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/usage/current
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/stats
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/events
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/protocols
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/billable
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/alloweddomains
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/algorithms
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/usage
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/server/{hostServerId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/user/agents
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/activity
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/{backupId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/availableforrestore
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/completed/{backupConfigurationId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/report/{backupId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/system/activity/{agentId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup-configuration/system/{machineAgentId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/{restoreId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/report/{restoreId}
+
+--------------------------------------------------------------------------------
+Resource Pattern - 111 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/execute/{capability_version}/{capability_hash}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/servers/{serverId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/policies/{policyId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/policies/{policyId}/webhooks/{webhookId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/types/{typeId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/clusters/{clusterId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/clusters/{clusterId}/nodes/{nodeId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/flavors/{flavorId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/messages/{messageId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/claims/{claimId}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}/versions/{versionId}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}/versions/{versionId}/parameters/{parameterId}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/versions/{versionId}/parameters/{parameterId}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/users/{userId}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/users/{userId}/databases/{databaseName}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/databases/{databaseName}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/configurations/{configId}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/flavors/{flavorId}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/backups/{backupId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/limits/{type}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/records/{recordId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/rdns/{service-name}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/rdns/{service-name}/{recordId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/extensions/{alias}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tokens/{tokenId}
+ * https://{region}.{service}.api.rackspacecloud.com/images/{image_id}
+ * https://{region}.{service}.api.rackspacecloud.com/images/{image_id}/members/{member_id}
+ * https://{region}.{service}.api.rackspacecloud.com/images/{image_id}/tags/{tag}
+ * https://{region}.{service}.api.rackspacecloud.com/tasks/{taskID}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/routers/{router_id}
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/usage/instance/{instanceId}
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/usage/tenant/{tenantId}
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/hosts/{hostId}
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/accounts/{accountId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/networks/{network_id}
+ * https://{region}.{service}.api.rackspacecloud.com/os-networksv2/{id}
+ * https://{region}.{service}.api.rackspacecloud.com/servers/{instance_id}/os-virtual-interfacesv2/{interface_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/resource_types/{type_name}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events/{event_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/software_deployments/metadata/{server_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/software_deployments/{deployment_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/software_configs/{config_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/ips/{network_label}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/metadata/{key}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/flavors/{flavor_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/{image_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/{image_id}/metadata/{key}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/extensions/{alias}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/{image_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs/{key_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/os-instance-actions/{action_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/roles/OS-KSADM/{roleId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/OS-KSADM/roles/{roleId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/OS-KSADM/services/{serviceId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/alarms/{alarm_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/meters/{meter_name}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/resources/{resource_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/limits/{tenant_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/snapshots/{snapshot_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/volumes/{volume_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/types/{volume_type_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/ports/{port_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{account}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{account}/{container}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{account}/{container}/{object}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{account}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{account}/{object}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{account}/{container}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips/{virtualIpId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/metadata/{metaId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist/{networkItemId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/{machineAgentId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/server/{hostServerId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/{backupId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/completed/{backupConfigurationId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/report/{backupId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/system/activity/{agentId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup-configuration/enable/{backupConfigurationId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup-configuration/system/{machineAgentId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup-configuration/{backupConfigurationId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/files/{restoreId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/{restoreId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/report/{restoreId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/security-group-rules/{rules-security-groups-id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/security-groups/{security_group_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/subnets/{subnet_id}
+
+--------------------------------------------------------------------------------
+Singleton Resource Pattern - 12 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v1
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0
+ * https://{region}.{service}.api.rackspacecloud.com/schemas/member
+ * https://{region}.{service}.api.rackspacecloud.com/schemas/task
+ * https://{region}.{service}.api.rackspacecloud.com/schemas/members
+ * https://{region}.{service}.api.rackspacecloud.com/schemas/tasks
+ * https://{region}.{service}.api.rackspacecloud.com/schemas/image
+ * https://{region}.{service}.api.rackspacecloud.com/schemas/images
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/usage
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/storage
+ * https://{region}.{service}.api.rackspacecloud.com
+ * https://{region}.{service}.api.rackspacecloud.com
+
+--------------------------------------------------------------------------------
+SubResource Pattern - 75 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/config
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/state
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/types/{typeId}/flavors
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/clusters/{clusterId}/action|postClusterAction
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/flavors/{flavorId}/types
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/limits
+ * https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/stats
+ * https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/metadata
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/action|restartInstance
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/root
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/configuration
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/backups
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/configurations/{configId}/instances
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/limits/types
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/subdomains
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/changes
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/roles
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}/users/{userId}/roles
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tokens/{tokenId}/endpoints
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/hosts/{hostId}/instances/action|updateHostInstances
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/diagnostics
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/monitoring
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/monitoring/action|agentStop
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/action|migrateInstance
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/root
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/hwinfo
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/resource_types/{type_name}/template
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/metadata
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/template
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/events
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/actions
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/events
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/resources
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/action|createImage
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/flavors/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/limits
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/action|rebuild
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/roles
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/action|unrescue
+ * https://{region}.{service}.api.rackspacecloud.com/v2/alarms/{alarm_id}/history
+ * https://{region}.{service}.api.rackspacecloud.com/v2/alarms/{alarm_id}/state
+ * https://{region}.{service}.api.rackspacecloud.com/v2/meters/{meter_name}/statistics
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/limits
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/snapshots/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/volumes/detail
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/OS-KSADM/credentials/RAX-KSKEY:apiKeyCredentials/RAX-AUTH
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/errorpage
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/usage
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/usage/current
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/stats
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/contentcaching
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/connectionlogging
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/connectionthrottle
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/healthmonitor
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/events
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/sessionpersistence
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/protocols
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/billable
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/alloweddomains
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/algorithms
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/usage
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/OS-KSADM/credentials
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/user
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/user/agents
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/activity
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/action-requested
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/availableforrestore
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/action-requested
+
+--------------------------------------------------------------------------------
+Collection Pattern - 85 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/policies
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/policies/{policyId}/webhooks
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/types
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/clusters
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/clusters/{clusterId}/nodes
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/flavors
+ * https://{region}.{service}.api.rackspacecloud.com/v1/queues
+ * https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/messages
+ * https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/claims
+ * https://{region}.{service}.api.rackspacecloud.com
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}/versions
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/{datastoreId}/versions/{versionId}/parameters
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/datastores/versions/{versionId}/parameters
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/users
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/users/{userId}/databases
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/databases
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/configurations
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/flavors
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/backups
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/limits
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/records
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/rdns
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/extensions
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tokens
+ * https://{region}.{service}.api.rackspacecloud.com/images
+ * https://{region}.{service}.api.rackspacecloud.com/images/{image_id}/members
+ * https://{region}.{service}.api.rackspacecloud.com/tasks
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/routers
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/hosts
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/accounts
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/networks
+ * https://{region}.{service}.api.rackspacecloud.com/os-networksv2
+ * https://{region}.{service}.api.rackspacecloud.com/servers
+ * https://{region}.{service}.api.rackspacecloud.com/servers/{instance_id}/os-virtual-interfacesv2
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/resource_types
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/events
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/software_deployments
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/software_configs
+ * https://{region}.{service}.api.rackspacecloud.com/v2
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/ips
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/metadata
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/flavors
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images/{image_id}/metadata
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/extensions
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/flavors/{flavor_id}/os-extra_specs
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/os-instance-actions
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}/users
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/OS-KSADM/roles
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/OS-KSADM/services
+ * https://{region}.{service}.api.rackspacecloud.com/v2/alarms
+ * https://{region}.{service}.api.rackspacecloud.com/v2/meters
+ * https://{region}.{service}.api.rackspacecloud.com/v2/resources
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/snapshots
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/volumes
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/types
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/ports
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/metadata
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/nodes
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup-configuration
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/files
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/security-group-rules
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/security-groups
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/subnets
+
+--------------------------------------------------------------------------------
+Controller Pattern - 14 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/pause
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/resume
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/policies/{policyId}/execute
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/clone
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/import
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources/{resource_name}/signal
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/preview
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/validate
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/OS-KSADM/credentials/RAX-KSKEY:apiKeyCredentials/RAX-AUTH/reset
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/enable
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/delete
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/changeencryption
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/encrypt
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/user/wakeupagents
+
+--------------------------------------------------------------------------------
+Singular Collection Anti-Pattern - 7 detected:
+ * https://{region}.{service}.api.rackspacecloud.com
+ * https://{region}.{service}.api.rackspacecloud.com/os-networksv2
+ * https://{region}.{service}.api.rackspacecloud.com/servers/{instance_id}/os-virtual-interfacesv2
+ * https://{region}.{service}.api.rackspacecloud.com/v2
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup-configuration
+
+--------------------------------------------------------------------------------
+Missing POST Method Anti-Pattern - 5 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v1/queues
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/users/{userId}/databases
+ * https://{region}.{service}.api.rackspacecloud.com/images
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/images
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/files
+
+--------------------------------------------------------------------------------
+Missing GET Method Anti-Pattern - 42 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/execute/{capability_version}/{capability_hash}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/servers/{serverId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/clusters/{clusterId}/action|postClusterAction
+ * https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/claims
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/users/{userId}/databases/{databaseName}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/databases/{databaseName}
+ * https://{region}.{service}.api.rackspacecloud.com/{version}/{accountId}/instances/{instanceId}/action|restartInstance
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/rdns
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tokens
+ * https://{region}.{service}.api.rackspacecloud.com/images/{image_id}/tags/{tag}
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/hosts/{hostId}/instances/action|updateHostInstances
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/monitoring/action|agentStop
+ * https://{region}.{service}.api.rackspacecloud.com/mgmt/instances/{instanceId}/action|migrateInstance
+ * https://{region}.{service}.api.rackspacecloud.com/servers
+ * https://{region}.{service}.api.rackspacecloud.com/servers/{instance_id}/os-virtual-interfacesv2/{interface_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/actions
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/software_configs
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/action|createImage
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/action|rebuild
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tenants/{tenantId}/users/{userId}/roles/OS-KSADM/{roleId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/roles/OS-KSADM/{roleId}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}/action|unrescue
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/OS-KSADM/credentials/RAX-KSKEY:apiKeyCredentials/RAX-AUTH
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{account}/{object}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{account}/{container}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips/{virtualIpId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist/{networkItemId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/user
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup/action-requested
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/backup-configuration/enable/{backupConfigurationId}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/action-requested
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/files
+
+--------------------------------------------------------------------------------
+Missing DELETE Method Anti-Pattern - 6 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/tokens/{tokenId}
+ * https://{region}.{service}.api.rackspacecloud.com/tasks/{taskID}
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v2/{tenant_id}/servers/{server_id}
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/restore/{restoreId}
+
+--------------------------------------------------------------------------------
+Unexpected DELETE Method Anti-Pattern - 14 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v1/queues/{queue_name}/messages
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/records
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/metadata
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/errorpage
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/connectionthrottle
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/healthmonitor
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/nodes
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/loadbalancers/{loadBalancerId}/sessionpersistence
+
+--------------------------------------------------------------------------------
+Only Controllers Anti-Pattern - 1 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/users/{userId}/OS-KSADM/credentials/RAX-KSKEY:apiKeyCredentials/RAX-AUTH
+
+--------------------------------------------------------------------------------
+Not Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Create Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Retrieve Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Update Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Delete Verb Controller Anti-Pattern - 1 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/delete
+
+--------------------------------------------------------------------------------
+Not POST Method Controller Anti-Pattern - 9 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/launch
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/profile
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/export
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/search
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/routers/{router_id}/add_router_interface
+ * https://{region}.{service}.api.rackspacecloud.com/v2.0/routers/{router_id}/remove_router_interface
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/abandon
+ * https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/build_info
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/migratevault
+
+--------------------------------------------------------------------------------
+More Than One Method Anti-Pattern - 2 detected:
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/launch
+ * https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/profile
+
+--------------------------------------------------------------------------------
+Not POST Controller Method Anti-Pattern - 10 detected:
+ * PUT https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/launch
+ * GET https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenantId}/groups/{groupId}/launch
+ * GET https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/profile
+ * GET https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/{domainId}/export
+ * GET https://{region}.{service}.api.rackspacecloud.com/v1.0/{account}/domains/search
+ * PUT https://{region}.{service}.api.rackspacecloud.com/v2.0/routers/{router_id}/add_router_interface
+ * PUT https://{region}.{service}.api.rackspacecloud.com/v2.0/routers/{router_id}/remove_router_interface
+ * DELETE https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/abandon
+ * GET https://{region}.{service}.api.rackspacecloud.com/v1/{tenant_id}/build_info
+ * PUT https://{region}.{service}.api.rackspacecloud.com/v1.0/{tenant_id}/agent/migratevault
+
+--------------------------------------------------------------------------------
+Untagged Resources and Controllers  - 0 detected:
+

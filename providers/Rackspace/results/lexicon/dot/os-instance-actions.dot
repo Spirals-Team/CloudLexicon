@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Rackspace - os-instance-actions", fontsize=24]
+splines=true
+"os-instance-actions" [color=blue, fontcolor=blue, shape=doublecircle]
+}

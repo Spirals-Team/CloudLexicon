@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Rackspace - RAX-KSKEY-admin", fontsize=24]
+splines=true
+"credentials" [color=blue, fontcolor=blue, shape=doublecircle]
+}

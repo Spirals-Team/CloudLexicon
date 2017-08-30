@@ -1,0 +1,12 @@
+digraph LexiconGraph {
+graph[label="Rackspace - layer3", fontsize=24]
+splines=true
+"routers" [color=blue, fontcolor=blue, shape=doublecircle]
+"add_router_interface" [color=orange, fontcolor=orange, shape=box]
+"add_router_interface" -> "routers" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"remove_router_interface" -> "add_router_interface" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"routers" -> "add_router_interface" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"remove_router_interface" [color=orange, fontcolor=orange, shape=box]
+"remove_router_interface" -> "routers" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"routers" -> "remove_router_interface" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

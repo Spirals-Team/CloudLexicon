@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Rackspace - image-2.0", fontsize=24]
+splines=true
+"images" [color=blue, fontcolor=blue, shape=doublecircle]
+"tasks" [color=blue, fontcolor=blue, shape=doublecircle]
+"members" -> "images" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"members" [color=blue, fontcolor=blue, shape=ellipse]
+}

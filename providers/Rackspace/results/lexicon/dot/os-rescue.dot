@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Rackspace - os-rescue", fontsize=24]
+splines=true
+"action|unrescue" [color=blue, fontcolor=blue, shape=doublecircle]
+}

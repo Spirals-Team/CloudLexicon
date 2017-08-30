@@ -1,0 +1,8 @@
+digraph LexiconGraph {
+graph[label="Rackspace - networksnova", fontsize=24]
+splines=true
+"os-networksv2" [color=blue, fontcolor=blue, shape=doublecircle]
+"servers" [color=blue, fontcolor=blue, shape=doublecircle]
+"os-virtual-interfacesv2" -> "servers" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"os-virtual-interfacesv2" [color=blue, fontcolor=blue, shape=ellipse]
+}

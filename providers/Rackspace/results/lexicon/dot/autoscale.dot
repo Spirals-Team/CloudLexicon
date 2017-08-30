@@ -1,0 +1,21 @@
+digraph LexiconGraph {
+graph[label="Rackspace - autoscale", fontsize=24]
+splines=true
+"groups" [color=blue, fontcolor=blue, shape=doublecircle]
+"launch" [color=orange, fontcolor=orange, shape=box]
+"launch" -> "groups" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"pause" [color=orange, fontcolor=orange, shape=box]
+"pause" -> "groups" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"resume" [color=orange, fontcolor=orange, shape=box]
+"resume" -> "groups" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"policies" -> "groups" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"policies" [color=blue, fontcolor=blue, shape=ellipse]
+"webhooks" -> "policies" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"webhooks" [color=blue, fontcolor=blue, shape=ellipse]
+"execute" [color=orange, fontcolor=orange, shape=box]
+"execute" -> "policies" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"config" -> "groups" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"config" [color=blue, fontcolor=blue, shape=ellipse]
+"state" -> "groups" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"state" [color=blue, fontcolor=blue, shape=ellipse]
+}
