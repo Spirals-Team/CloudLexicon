@@ -1,0 +1,3157 @@
+digraph Cloud_Computing_REST_API {
+rankdir="LR";
+subgraph cluster_0 {
+label="VMware - VMware vRealize Operations 6.2 1.2"
+color=violet
+fontcolor=violet
+subgraph cluster_1 {
+label=""
+color=white
+fontcolor=white
+node1 [label="https://vmware.provider.com", shape="ellipse", color="black", fontcolor="black"]
+node1 -> node2 [color="black", fontcolor="black"]
+subgraph cluster_2 {
+label=""
+color=white
+fontcolor=white
+node2 [label="/suite-api", shape="ellipse", color="black", fontcolor="black"]
+node2 -> node3 [color="black", fontcolor="black"]
+subgraph cluster_3 {
+label=""
+color=white
+fontcolor=white
+node3 [label="/api", shape="ellipse", color="black", fontcolor="black"]
+node3 -> node4 [color="blue", fontcolor="blue"]
+subgraph cluster_4 {
+label=""
+color=white
+fontcolor=white
+node4 [label="/api", shape="ellipse", color="blue", fontcolor="blue"]
+node4 -> node5 [color="black", fontcolor="black"]
+subgraph cluster_5 {
+label=""
+color=white
+fontcolor=white
+node5 [label="/deployment", shape="ellipse", color="black", fontcolor="black"]
+node5 -> node6 [color="black", fontcolor="black"]
+subgraph cluster_6 {
+label=""
+color=white
+fontcolor=white
+node6 [label="/config", shape="ellipse", color="black", fontcolor="black"]
+node6 -> node7 [color="black", fontcolor="black"]
+subgraph cluster_7 {
+label=""
+color=white
+fontcolor=white
+node7 [label="/properties", shape="ellipse", color="black", fontcolor="black"]
+node7 -> node8 [color="blue", fontcolor="blue"]
+subgraph cluster_8 {
+label=""
+color=white
+fontcolor=white
+node8 [label="/{namespace}", shape="ellipse", color="blue", fontcolor="blue"]
+node8 -> node9 [color="green", fontcolor="green"]
+subgraph cluster_9 {
+label=""
+color=white
+fontcolor=white
+node9 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node8 -> node10 [color="green", fontcolor="green"]
+subgraph cluster_10 {
+label=""
+color=white
+fontcolor=white
+node10 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node8 -> node11 [color="blue", fontcolor="blue"]
+subgraph cluster_11 {
+label=""
+color=white
+fontcolor=white
+node11 [label="/{key}", shape="ellipse", color="blue", fontcolor="blue"]
+node11 -> node12 [color="green", fontcolor="green"]
+subgraph cluster_12 {
+label=""
+color=white
+fontcolor=white
+node12 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node11 -> node13 [color="green", fontcolor="green"]
+subgraph cluster_13 {
+label=""
+color=white
+fontcolor=white
+node13 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node11 -> node14 [color="blue", fontcolor="blue"]
+subgraph cluster_14 {
+label=""
+color=white
+fontcolor=white
+node14 [label="/{value}", shape="ellipse", color="blue", fontcolor="blue"]
+node14 -> node15 [color="green", fontcolor="green"]
+subgraph cluster_15 {
+label=""
+color=white
+fontcolor=white
+node15 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+node6 -> node16 [color="blue", fontcolor="blue"]
+subgraph cluster_16 {
+label=""
+color=white
+fontcolor=white
+node16 [label="/globalsettings", shape="ellipse", color="blue", fontcolor="blue"]
+node16 -> node17 [color="green", fontcolor="green"]
+subgraph cluster_17 {
+label=""
+color=white
+fontcolor=white
+node17 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node16 -> node18 [color="blue", fontcolor="blue"]
+subgraph cluster_18 {
+label=""
+color=white
+fontcolor=white
+node18 [label="/{key}", shape="ellipse", color="blue", fontcolor="blue"]
+node18 -> node19 [color="green", fontcolor="green"]
+subgraph cluster_19 {
+label=""
+color=white
+fontcolor=white
+node19 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node18 -> node20 [color="blue", fontcolor="blue"]
+subgraph cluster_20 {
+label=""
+color=white
+fontcolor=white
+node20 [label="/{value}", shape="ellipse", color="blue", fontcolor="blue"]
+node20 -> node21 [color="green", fontcolor="green"]
+subgraph cluster_21 {
+label=""
+color=white
+fontcolor=white
+node21 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node16 -> node22 [color="blue", fontcolor="blue"]
+subgraph cluster_22 {
+label=""
+color=white
+fontcolor=white
+node22 [label="/metadata", shape="ellipse", color="blue", fontcolor="blue"]
+node22 -> node23 [color="green", fontcolor="green"]
+subgraph cluster_23 {
+label=""
+color=white
+fontcolor=white
+node23 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node5 -> node24 [color="black", fontcolor="black"]
+subgraph cluster_24 {
+label=""
+color=white
+fontcolor=white
+node24 [label="/node", shape="ellipse", color="black", fontcolor="black"]
+node24 -> node25 [color="blue", fontcolor="blue"]
+subgraph cluster_25 {
+label=""
+color=white
+fontcolor=white
+node25 [label="/status", shape="ellipse", color="blue", fontcolor="blue"]
+node25 -> node26 [color="green", fontcolor="green"]
+subgraph cluster_26 {
+label=""
+color=white
+fontcolor=white
+node26 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node24 -> node27 [color="black", fontcolor="black"]
+subgraph cluster_27 {
+label=""
+color=white
+fontcolor=white
+node27 [label="/services", shape="ellipse", color="black", fontcolor="black"]
+node27 -> node28 [color="black", fontcolor="black"]
+subgraph cluster_28 {
+label=""
+color=white
+fontcolor=white
+node28 [label="/api", shape="ellipse", color="black", fontcolor="black"]
+node28 -> node29 [color="blue", fontcolor="blue"]
+subgraph cluster_29 {
+label=""
+color=white
+fontcolor=white
+node29 [label="/ping", shape="ellipse", color="blue", fontcolor="blue"]
+node29 -> node30 [color="green", fontcolor="green"]
+subgraph cluster_30 {
+label=""
+color=white
+fontcolor=white
+node30 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+node5 -> node31 [color="blue", fontcolor="blue"]
+subgraph cluster_31 {
+label=""
+color=white
+fontcolor=white
+node31 [label="/licenses", shape="ellipse", color="blue", fontcolor="blue"]
+node31 -> node32 [color="green", fontcolor="green"]
+subgraph cluster_32 {
+label=""
+color=white
+fontcolor=white
+node32 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node31 -> node33 [color="green", fontcolor="green"]
+subgraph cluster_33 {
+label=""
+color=white
+fontcolor=white
+node33 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node31 -> node34 [color="blue", fontcolor="blue"]
+subgraph cluster_34 {
+label=""
+color=white
+fontcolor=white
+node34 [label="/{licenseId}", shape="ellipse", color="blue", fontcolor="blue"]
+node34 -> node35 [color="green", fontcolor="green"]
+subgraph cluster_35 {
+label=""
+color=white
+fontcolor=white
+node35 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node4 -> node36 [color="blue", fontcolor="blue"]
+subgraph cluster_36 {
+label=""
+color=white
+fontcolor=white
+node36 [label="/resources", shape="ellipse", color="blue", fontcolor="blue"]
+node36 -> node37 [color="green", fontcolor="green"]
+subgraph cluster_37 {
+label=""
+color=white
+fontcolor=white
+node37 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node36 -> node38 [color="green", fontcolor="green"]
+subgraph cluster_38 {
+label=""
+color=white
+fontcolor=white
+node38 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node36 -> node39 [color="black", fontcolor="black"]
+subgraph cluster_39 {
+label=""
+color=white
+fontcolor=white
+node39 [label="/{id}", shape="ellipse", color="black", fontcolor="black"]
+node39 -> node40 [color="blue", fontcolor="blue"]
+subgraph cluster_40 {
+label=""
+color=white
+fontcolor=white
+node40 [label="/relationships", shape="ellipse", color="blue", fontcolor="blue"]
+node40 -> node41 [color="green", fontcolor="green"]
+subgraph cluster_41 {
+label=""
+color=white
+fontcolor=white
+node41 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node39 -> node42 [color="blue", fontcolor="blue"]
+subgraph cluster_42 {
+label=""
+color=white
+fontcolor=white
+node42 [label="/stats", shape="ellipse", color="blue", fontcolor="blue"]
+node42 -> node43 [color="green", fontcolor="green"]
+subgraph cluster_43 {
+label=""
+color=white
+fontcolor=white
+node43 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node42 -> node44 [color="green", fontcolor="green"]
+subgraph cluster_44 {
+label=""
+color=white
+fontcolor=white
+node44 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node42 -> node45 [color="blue", fontcolor="blue"]
+subgraph cluster_45 {
+label=""
+color=white
+fontcolor=white
+node45 [label="/latest", shape="ellipse", color="blue", fontcolor="blue"]
+node45 -> node46 [color="green", fontcolor="green"]
+subgraph cluster_46 {
+label=""
+color=white
+fontcolor=white
+node46 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node42 -> node47 [color="blue", fontcolor="blue"]
+subgraph cluster_47 {
+label=""
+color=white
+fontcolor=white
+node47 [label="/topn", shape="ellipse", color="blue", fontcolor="blue"]
+node47 -> node48 [color="green", fontcolor="green"]
+subgraph cluster_48 {
+label=""
+color=white
+fontcolor=white
+node48 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node42 -> node49 [color="orange", fontcolor="orange"]
+subgraph cluster_49 {
+label=""
+color=white
+fontcolor=white
+node49 [label="/query", shape="octagon", color="orange", fontcolor="orange"]
+node49 -> node50 [color="green", fontcolor="green"]
+subgraph cluster_50 {
+label=""
+color=white
+fontcolor=white
+node50 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node42 -> node51 [color="black", fontcolor="black"]
+subgraph cluster_51 {
+label=""
+color=white
+fontcolor=white
+node51 [label="/adapterkinds", shape="ellipse", color="black", fontcolor="black"]
+node51 -> node52 [color="blue", fontcolor="blue"]
+subgraph cluster_52 {
+label=""
+color=white
+fontcolor=white
+node52 [label="/{adapterKind}", shape="ellipse", color="blue", fontcolor="blue"]
+node52 -> node53 [color="green", fontcolor="green"]
+subgraph cluster_53 {
+label=""
+color=white
+fontcolor=white
+node53 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node42 -> node54 [color="blue", fontcolor="blue"]
+subgraph cluster_54 {
+label=""
+color=white
+fontcolor=white
+node54 [label="/dt", shape="ellipse", color="blue", fontcolor="blue"]
+node54 -> node55 [color="green", fontcolor="green"]
+subgraph cluster_55 {
+label=""
+color=white
+fontcolor=white
+node55 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node39 -> node56 [color="blue", fontcolor="blue"]
+subgraph cluster_56 {
+label=""
+color=white
+fontcolor=white
+node56 [label="/properties", shape="ellipse", color="blue", fontcolor="blue"]
+node56 -> node57 [color="green", fontcolor="green"]
+subgraph cluster_57 {
+label=""
+color=white
+fontcolor=white
+node57 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node56 -> node58 [color="black", fontcolor="black"]
+subgraph cluster_58 {
+label=""
+color=white
+fontcolor=white
+node58 [label="/adapterkinds", shape="ellipse", color="black", fontcolor="black"]
+node58 -> node59 [color="blue", fontcolor="blue"]
+subgraph cluster_59 {
+label=""
+color=white
+fontcolor=white
+node59 [label="/{adapterKind}", shape="ellipse", color="blue", fontcolor="blue"]
+node59 -> node60 [color="green", fontcolor="green"]
+subgraph cluster_60 {
+label=""
+color=white
+fontcolor=white
+node60 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node39 -> node61 [color="blue", fontcolor="blue"]
+subgraph cluster_61 {
+label=""
+color=white
+fontcolor=white
+node61 [label="/geolocation", shape="ellipse", color="blue", fontcolor="blue"]
+node61 -> node62 [color="green", fontcolor="green"]
+subgraph cluster_62 {
+label=""
+color=white
+fontcolor=white
+node62 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+node39 -> node63 [color="blue", fontcolor="blue"]
+subgraph cluster_63 {
+label=""
+color=white
+fontcolor=white
+node63 [label="/maintained", shape="ellipse", color="blue", fontcolor="blue"]
+node63 -> node64 [color="green", fontcolor="green"]
+subgraph cluster_64 {
+label=""
+color=white
+fontcolor=white
+node64 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node63 -> node65 [color="green", fontcolor="green"]
+subgraph cluster_65 {
+label=""
+color=white
+fontcolor=white
+node65 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+node39 -> node66 [color="blue", fontcolor="blue"]
+subgraph cluster_66 {
+label=""
+color=white
+fontcolor=white
+node66 [label="/monitoringstate", shape="ellipse", color="blue", fontcolor="blue"]
+node66 -> node67 [color="orange", fontcolor="orange"]
+subgraph cluster_67 {
+label=""
+color=white
+fontcolor=white
+node67 [label="/start", shape="octagon", color="orange", fontcolor="orange"]
+node67 -> node68 [color="green", fontcolor="green"]
+subgraph cluster_68 {
+label=""
+color=white
+fontcolor=white
+node68 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+node66 -> node69 [color="orange", fontcolor="orange"]
+subgraph cluster_69 {
+label=""
+color=white
+fontcolor=white
+node69 [label="/stop", shape="octagon", color="orange", fontcolor="orange"]
+node69 -> node70 [color="green", fontcolor="green"]
+subgraph cluster_70 {
+label=""
+color=white
+fontcolor=white
+node70 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node36 -> node71 [color="black", fontcolor="black"]
+subgraph cluster_71 {
+label=""
+color=white
+fontcolor=white
+node71 [label="/adapters", shape="ellipse", color="black", fontcolor="black"]
+node71 -> node72 [color="blue", fontcolor="blue"]
+subgraph cluster_72 {
+label=""
+color=white
+fontcolor=white
+node72 [label="/{adapterInstanceId}", shape="ellipse", color="blue", fontcolor="blue"]
+node72 -> node73 [color="green", fontcolor="green"]
+subgraph cluster_73 {
+label=""
+color=white
+fontcolor=white
+node73 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node36 -> node74 [color="blue", fontcolor="blue"]
+subgraph cluster_74 {
+label=""
+color=white
+fontcolor=white
+node74 [label="/{resourceId}", shape="ellipse", color="blue", fontcolor="blue"]
+node74 -> node75 [color="green", fontcolor="green"]
+subgraph cluster_75 {
+label=""
+color=white
+fontcolor=white
+node75 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node74 -> node76 [color="green", fontcolor="green"]
+subgraph cluster_76 {
+label=""
+color=white
+fontcolor=white
+node76 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node74 -> node77 [color="blue", fontcolor="blue"]
+subgraph cluster_77 {
+label=""
+color=white
+fontcolor=white
+node77 [label="/properties", shape="ellipse", color="blue", fontcolor="blue"]
+node77 -> node78 [color="green", fontcolor="green"]
+subgraph cluster_78 {
+label=""
+color=white
+fontcolor=white
+node78 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node74 -> node79 [color="black", fontcolor="black"]
+subgraph cluster_79 {
+label=""
+color=white
+fontcolor=white
+node79 [label="/relationships", shape="ellipse", color="black", fontcolor="black"]
+node79 -> node80 [color="blue", fontcolor="blue"]
+subgraph cluster_80 {
+label=""
+color=white
+fontcolor=white
+node80 [label="/{relationshipType}", shape="ellipse", color="blue", fontcolor="blue"]
+node80 -> node81 [color="green", fontcolor="green"]
+subgraph cluster_81 {
+label=""
+color=white
+fontcolor=white
+node81 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node80 -> node82 [color="green", fontcolor="green"]
+subgraph cluster_82 {
+label=""
+color=white
+fontcolor=white
+node82 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node80 -> node83 [color="green", fontcolor="green"]
+subgraph cluster_83 {
+label=""
+color=white
+fontcolor=white
+node83 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node80 -> node84 [color="blue", fontcolor="blue"]
+subgraph cluster_84 {
+label=""
+color=white
+fontcolor=white
+node84 [label="/{relatedId}", shape="ellipse", color="blue", fontcolor="blue"]
+node84 -> node85 [color="green", fontcolor="green"]
+subgraph cluster_85 {
+label=""
+color=white
+fontcolor=white
+node85 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node74 -> node86 [color="blue", fontcolor="blue"]
+subgraph cluster_86 {
+label=""
+color=white
+fontcolor=white
+node86 [label="/statkeys", shape="ellipse", color="blue", fontcolor="blue"]
+node86 -> node87 [color="green", fontcolor="green"]
+subgraph cluster_87 {
+label=""
+color=white
+fontcolor=white
+node87 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node36 -> node88 [color="blue", fontcolor="blue"]
+subgraph cluster_88 {
+label=""
+color=white
+fontcolor=white
+node88 [label="/maintained", shape="ellipse", color="blue", fontcolor="blue"]
+node88 -> node89 [color="green", fontcolor="green"]
+subgraph cluster_89 {
+label=""
+color=white
+fontcolor=white
+node89 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node88 -> node90 [color="green", fontcolor="green"]
+subgraph cluster_90 {
+label=""
+color=white
+fontcolor=white
+node90 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+node36 -> node91 [color="blue", fontcolor="blue"]
+subgraph cluster_91 {
+label=""
+color=white
+fontcolor=white
+node91 [label="/stats", shape="ellipse", color="blue", fontcolor="blue"]
+node91 -> node92 [color="green", fontcolor="green"]
+subgraph cluster_92 {
+label=""
+color=white
+fontcolor=white
+node92 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node91 -> node93 [color="blue", fontcolor="blue"]
+subgraph cluster_93 {
+label=""
+color=white
+fontcolor=white
+node93 [label="/latest", shape="ellipse", color="blue", fontcolor="blue"]
+node93 -> node94 [color="green", fontcolor="green"]
+subgraph cluster_94 {
+label=""
+color=white
+fontcolor=white
+node94 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node91 -> node95 [color="blue", fontcolor="blue"]
+subgraph cluster_95 {
+label=""
+color=white
+fontcolor=white
+node95 [label="/topn", shape="ellipse", color="blue", fontcolor="blue"]
+node95 -> node96 [color="green", fontcolor="green"]
+subgraph cluster_96 {
+label=""
+color=white
+fontcolor=white
+node96 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node91 -> node97 [color="orange", fontcolor="orange"]
+subgraph cluster_97 {
+label=""
+color=white
+fontcolor=white
+node97 [label="/query", shape="octagon", color="orange", fontcolor="orange"]
+node97 -> node98 [color="green", fontcolor="green"]
+subgraph cluster_98 {
+label=""
+color=white
+fontcolor=white
+node98 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node91 -> node99 [color="blue", fontcolor="blue"]
+subgraph cluster_99 {
+label=""
+color=white
+fontcolor=white
+node99 [label="/dt", shape="ellipse", color="blue", fontcolor="blue"]
+node99 -> node100 [color="orange", fontcolor="orange"]
+subgraph cluster_100 {
+label=""
+color=white
+fontcolor=white
+node100 [label="/query", shape="octagon", color="orange", fontcolor="orange"]
+node100 -> node101 [color="green", fontcolor="green"]
+subgraph cluster_101 {
+label=""
+color=white
+fontcolor=white
+node101 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node36 -> node102 [color="blue", fontcolor="blue"]
+subgraph cluster_102 {
+label=""
+color=white
+fontcolor=white
+node102 [label="/statkeys", shape="ellipse", color="blue", fontcolor="blue"]
+node102 -> node103 [color="green", fontcolor="green"]
+subgraph cluster_103 {
+label=""
+color=white
+fontcolor=white
+node103 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node36 -> node104 [color="orange", fontcolor="orange"]
+subgraph cluster_104 {
+label=""
+color=white
+fontcolor=white
+node104 [label="/query", shape="octagon", color="orange", fontcolor="orange"]
+node104 -> node105 [color="green", fontcolor="green"]
+subgraph cluster_105 {
+label=""
+color=white
+fontcolor=white
+node105 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node36 -> node106 [color="blue", fontcolor="blue"]
+subgraph cluster_106 {
+label=""
+color=white
+fontcolor=white
+node106 [label="/monitoringstate", shape="ellipse", color="blue", fontcolor="blue"]
+node106 -> node107 [color="orange", fontcolor="orange"]
+subgraph cluster_107 {
+label=""
+color=white
+fontcolor=white
+node107 [label="/start", shape="octagon", color="orange", fontcolor="orange"]
+node107 -> node108 [color="green", fontcolor="green"]
+subgraph cluster_108 {
+label=""
+color=white
+fontcolor=white
+node108 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+node106 -> node109 [color="orange", fontcolor="orange"]
+subgraph cluster_109 {
+label=""
+color=white
+fontcolor=white
+node109 [label="/stop", shape="octagon", color="orange", fontcolor="orange"]
+node109 -> node110 [color="green", fontcolor="green"]
+subgraph cluster_110 {
+label=""
+color=white
+fontcolor=white
+node110 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node36 -> node111 [color="black", fontcolor="black"]
+subgraph cluster_111 {
+label=""
+color=white
+fontcolor=white
+node111 [label="/adapterkinds", shape="ellipse", color="black", fontcolor="black"]
+node111 -> node112 [color="blue", fontcolor="blue"]
+subgraph cluster_112 {
+label=""
+color=white
+fontcolor=white
+node112 [label="/{adapterKindKey}", shape="ellipse", color="blue", fontcolor="blue"]
+node112 -> node113 [color="green", fontcolor="green"]
+subgraph cluster_113 {
+label=""
+color=white
+fontcolor=white
+node113 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node36 -> node114 [color="blue", fontcolor="blue"]
+subgraph cluster_114 {
+label=""
+color=white
+fontcolor=white
+node114 [label="/properties", shape="ellipse", color="blue", fontcolor="blue"]
+node114 -> node115 [color="green", fontcolor="green"]
+subgraph cluster_115 {
+label=""
+color=white
+fontcolor=white
+node115 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node4 -> node116 [color="black", fontcolor="black"]
+subgraph cluster_116 {
+label=""
+color=white
+fontcolor=white
+node116 [label="/auth", shape="ellipse", color="black", fontcolor="black"]
+node116 -> node117 [color="blue", fontcolor="blue"]
+subgraph cluster_117 {
+label=""
+color=white
+fontcolor=white
+node117 [label="/roles", shape="ellipse", color="blue", fontcolor="blue"]
+node117 -> node118 [color="green", fontcolor="green"]
+subgraph cluster_118 {
+label=""
+color=white
+fontcolor=white
+node118 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node117 -> node119 [color="green", fontcolor="green"]
+subgraph cluster_119 {
+label=""
+color=white
+fontcolor=white
+node119 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node117 -> node120 [color="green", fontcolor="green"]
+subgraph cluster_120 {
+label=""
+color=white
+fontcolor=white
+node120 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node117 -> node121 [color="blue", fontcolor="blue"]
+subgraph cluster_121 {
+label=""
+color=white
+fontcolor=white
+node121 [label="/{roleName}", shape="ellipse", color="blue", fontcolor="blue"]
+node121 -> node122 [color="green", fontcolor="green"]
+subgraph cluster_122 {
+label=""
+color=white
+fontcolor=white
+node122 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node121 -> node123 [color="green", fontcolor="green"]
+subgraph cluster_123 {
+label=""
+color=white
+fontcolor=white
+node123 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node121 -> node124 [color="blue", fontcolor="blue"]
+subgraph cluster_124 {
+label=""
+color=white
+fontcolor=white
+node124 [label="/privileges", shape="ellipse", color="blue", fontcolor="blue"]
+node124 -> node125 [color="green", fontcolor="green"]
+subgraph cluster_125 {
+label=""
+color=white
+fontcolor=white
+node125 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node124 -> node126 [color="green", fontcolor="green"]
+subgraph cluster_126 {
+label=""
+color=white
+fontcolor=white
+node126 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node124 -> node127 [color="green", fontcolor="green"]
+subgraph cluster_127 {
+label=""
+color=white
+fontcolor=white
+node127 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node124 -> node128 [color="green", fontcolor="green"]
+subgraph cluster_128 {
+label=""
+color=white
+fontcolor=white
+node128 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node116 -> node129 [color="blue", fontcolor="blue"]
+subgraph cluster_129 {
+label=""
+color=white
+fontcolor=white
+node129 [label="/usergroups", shape="ellipse", color="blue", fontcolor="blue"]
+node129 -> node130 [color="green", fontcolor="green"]
+subgraph cluster_130 {
+label=""
+color=white
+fontcolor=white
+node130 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node129 -> node131 [color="green", fontcolor="green"]
+subgraph cluster_131 {
+label=""
+color=white
+fontcolor=white
+node131 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node129 -> node132 [color="green", fontcolor="green"]
+subgraph cluster_132 {
+label=""
+color=white
+fontcolor=white
+node132 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node129 -> node133 [color="green", fontcolor="green"]
+subgraph cluster_133 {
+label=""
+color=white
+fontcolor=white
+node133 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node129 -> node134 [color="black", fontcolor="black"]
+subgraph cluster_134 {
+label=""
+color=white
+fontcolor=white
+node134 [label="/{groupId}", shape="ellipse", color="black", fontcolor="black"]
+node134 -> node135 [color="blue", fontcolor="blue"]
+subgraph cluster_135 {
+label=""
+color=white
+fontcolor=white
+node135 [label="/permissions", shape="ellipse", color="blue", fontcolor="blue"]
+node135 -> node136 [color="green", fontcolor="green"]
+subgraph cluster_136 {
+label=""
+color=white
+fontcolor=white
+node136 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node135 -> node137 [color="green", fontcolor="green"]
+subgraph cluster_137 {
+label=""
+color=white
+fontcolor=white
+node137 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node135 -> node138 [color="blue", fontcolor="blue"]
+subgraph cluster_138 {
+label=""
+color=white
+fontcolor=white
+node138 [label="/{roleName}", shape="ellipse", color="blue", fontcolor="blue"]
+node138 -> node139 [color="green", fontcolor="green"]
+subgraph cluster_139 {
+label=""
+color=white
+fontcolor=white
+node139 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node134 -> node140 [color="blue", fontcolor="blue"]
+subgraph cluster_140 {
+label=""
+color=white
+fontcolor=white
+node140 [label="/traversalspecs", shape="ellipse", color="blue", fontcolor="blue"]
+node140 -> node141 [color="green", fontcolor="green"]
+subgraph cluster_141 {
+label=""
+color=white
+fontcolor=white
+node141 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node129 -> node142 [color="blue", fontcolor="blue"]
+subgraph cluster_142 {
+label=""
+color=white
+fontcolor=white
+node142 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node142 -> node143 [color="green", fontcolor="green"]
+subgraph cluster_143 {
+label=""
+color=white
+fontcolor=white
+node143 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node142 -> node144 [color="green", fontcolor="green"]
+subgraph cluster_144 {
+label=""
+color=white
+fontcolor=white
+node144 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node116 -> node145 [color="blue", fontcolor="blue"]
+subgraph cluster_145 {
+label=""
+color=white
+fontcolor=white
+node145 [label="/users", shape="ellipse", color="blue", fontcolor="blue"]
+node145 -> node146 [color="green", fontcolor="green"]
+subgraph cluster_146 {
+label=""
+color=white
+fontcolor=white
+node146 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node145 -> node147 [color="green", fontcolor="green"]
+subgraph cluster_147 {
+label=""
+color=white
+fontcolor=white
+node147 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node145 -> node148 [color="green", fontcolor="green"]
+subgraph cluster_148 {
+label=""
+color=white
+fontcolor=white
+node148 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node145 -> node149 [color="green", fontcolor="green"]
+subgraph cluster_149 {
+label=""
+color=white
+fontcolor=white
+node149 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node145 -> node150 [color="black", fontcolor="black"]
+subgraph cluster_150 {
+label=""
+color=white
+fontcolor=white
+node150 [label="/{userId}", shape="ellipse", color="black", fontcolor="black"]
+node150 -> node151 [color="blue", fontcolor="blue"]
+subgraph cluster_151 {
+label=""
+color=white
+fontcolor=white
+node151 [label="/traversalspecs", shape="ellipse", color="blue", fontcolor="blue"]
+node151 -> node152 [color="green", fontcolor="green"]
+subgraph cluster_152 {
+label=""
+color=white
+fontcolor=white
+node152 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+node150 -> node153 [color="blue", fontcolor="blue"]
+subgraph cluster_153 {
+label=""
+color=white
+fontcolor=white
+node153 [label="/permissions", shape="ellipse", color="blue", fontcolor="blue"]
+node153 -> node154 [color="green", fontcolor="green"]
+subgraph cluster_154 {
+label=""
+color=white
+fontcolor=white
+node154 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node153 -> node155 [color="green", fontcolor="green"]
+subgraph cluster_155 {
+label=""
+color=white
+fontcolor=white
+node155 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node153 -> node156 [color="blue", fontcolor="blue"]
+subgraph cluster_156 {
+label=""
+color=white
+fontcolor=white
+node156 [label="/{roleName}", shape="ellipse", color="blue", fontcolor="blue"]
+node156 -> node157 [color="green", fontcolor="green"]
+subgraph cluster_157 {
+label=""
+color=white
+fontcolor=white
+node157 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node145 -> node158 [color="blue", fontcolor="blue"]
+subgraph cluster_158 {
+label=""
+color=white
+fontcolor=white
+node158 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node158 -> node159 [color="green", fontcolor="green"]
+subgraph cluster_159 {
+label=""
+color=white
+fontcolor=white
+node159 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node158 -> node160 [color="green", fontcolor="green"]
+subgraph cluster_160 {
+label=""
+color=white
+fontcolor=white
+node160 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node145 -> node161 [color="blue", fontcolor="blue"]
+subgraph cluster_161 {
+label=""
+color=white
+fontcolor=white
+node161 [label="/passwordchange", shape="ellipse", color="blue", fontcolor="blue"]
+node161 -> node162 [color="green", fontcolor="green"]
+subgraph cluster_162 {
+label=""
+color=white
+fontcolor=white
+node162 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node116 -> node163 [color="blue", fontcolor="blue"]
+subgraph cluster_163 {
+label=""
+color=white
+fontcolor=white
+node163 [label="/sources", shape="ellipse", color="blue", fontcolor="blue"]
+node163 -> node164 [color="green", fontcolor="green"]
+subgraph cluster_164 {
+label=""
+color=white
+fontcolor=white
+node164 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node163 -> node165 [color="green", fontcolor="green"]
+subgraph cluster_165 {
+label=""
+color=white
+fontcolor=white
+node165 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node163 -> node166 [color="green", fontcolor="green"]
+subgraph cluster_166 {
+label=""
+color=white
+fontcolor=white
+node166 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node163 -> node167 [color="green", fontcolor="green"]
+subgraph cluster_167 {
+label=""
+color=white
+fontcolor=white
+node167 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node163 -> node168 [color="blue", fontcolor="blue"]
+subgraph cluster_168 {
+label=""
+color=white
+fontcolor=white
+node168 [label="/{sourceId}", shape="ellipse", color="blue", fontcolor="blue"]
+node168 -> node169 [color="green", fontcolor="green"]
+subgraph cluster_169 {
+label=""
+color=white
+fontcolor=white
+node169 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node168 -> node170 [color="green", fontcolor="green"]
+subgraph cluster_170 {
+label=""
+color=white
+fontcolor=white
+node170 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node116 -> node171 [color="blue", fontcolor="blue"]
+subgraph cluster_171 {
+label=""
+color=white
+fontcolor=white
+node171 [label="/privileges", shape="ellipse", color="blue", fontcolor="blue"]
+node171 -> node172 [color="green", fontcolor="green"]
+subgraph cluster_172 {
+label=""
+color=white
+fontcolor=white
+node172 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node116 -> node173 [color="blue", fontcolor="blue"]
+subgraph cluster_173 {
+label=""
+color=white
+fontcolor=white
+node173 [label="/token", shape="ellipse", color="blue", fontcolor="blue"]
+node173 -> node174 [color="blue", fontcolor="blue"]
+subgraph cluster_174 {
+label=""
+color=white
+fontcolor=white
+node174 [label="/acquire", shape="ellipse", color="blue", fontcolor="blue"]
+node174 -> node175 [color="green", fontcolor="green"]
+subgraph cluster_175 {
+label=""
+color=white
+fontcolor=white
+node175 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node173 -> node176 [color="orange", fontcolor="orange"]
+subgraph cluster_176 {
+label=""
+color=white
+fontcolor=white
+node176 [label="/release", shape="octagon", color="orange", fontcolor="orange"]
+node176 -> node177 [color="green", fontcolor="green"]
+subgraph cluster_177 {
+label=""
+color=white
+fontcolor=white
+node177 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node116 -> node178 [color="blue", fontcolor="blue"]
+subgraph cluster_178 {
+label=""
+color=white
+fontcolor=white
+node178 [label="/privilegegroups", shape="ellipse", color="blue", fontcolor="blue"]
+node178 -> node179 [color="green", fontcolor="green"]
+subgraph cluster_179 {
+label=""
+color=white
+fontcolor=white
+node179 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node116 -> node180 [color="blue", fontcolor="blue"]
+subgraph cluster_180 {
+label=""
+color=white
+fontcolor=white
+node180 [label="/sourcetypes", shape="ellipse", color="blue", fontcolor="blue"]
+node180 -> node181 [color="green", fontcolor="green"]
+subgraph cluster_181 {
+label=""
+color=white
+fontcolor=white
+node181 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node180 -> node182 [color="blue", fontcolor="blue"]
+subgraph cluster_182 {
+label=""
+color=white
+fontcolor=white
+node182 [label="/{sourceId}", shape="ellipse", color="blue", fontcolor="blue"]
+node182 -> node183 [color="green", fontcolor="green"]
+subgraph cluster_183 {
+label=""
+color=white
+fontcolor=white
+node183 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node116 -> node184 [color="blue", fontcolor="blue"]
+subgraph cluster_184 {
+label=""
+color=white
+fontcolor=white
+node184 [label="/traversalspecs", shape="ellipse", color="blue", fontcolor="blue"]
+node184 -> node185 [color="green", fontcolor="green"]
+subgraph cluster_185 {
+label=""
+color=white
+fontcolor=white
+node185 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node4 -> node186 [color="black", fontcolor="black"]
+subgraph cluster_186 {
+label=""
+color=white
+fontcolor=white
+node186 [label="/notifications", shape="ellipse", color="black", fontcolor="black"]
+node186 -> node187 [color="black", fontcolor="black"]
+subgraph cluster_187 {
+label=""
+color=white
+fontcolor=white
+node187 [label="/email", shape="ellipse", color="black", fontcolor="black"]
+node187 -> node188 [color="blue", fontcolor="blue"]
+subgraph cluster_188 {
+label=""
+color=white
+fontcolor=white
+node188 [label="/templates", shape="ellipse", color="blue", fontcolor="blue"]
+node188 -> node189 [color="green", fontcolor="green"]
+subgraph cluster_189 {
+label=""
+color=white
+fontcolor=white
+node189 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node188 -> node190 [color="green", fontcolor="green"]
+subgraph cluster_190 {
+label=""
+color=white
+fontcolor=white
+node190 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node188 -> node191 [color="green", fontcolor="green"]
+subgraph cluster_191 {
+label=""
+color=white
+fontcolor=white
+node191 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node188 -> node192 [color="blue", fontcolor="blue"]
+subgraph cluster_192 {
+label=""
+color=white
+fontcolor=white
+node192 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node192 -> node193 [color="green", fontcolor="green"]
+subgraph cluster_193 {
+label=""
+color=white
+fontcolor=white
+node193 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node192 -> node194 [color="green", fontcolor="green"]
+subgraph cluster_194 {
+label=""
+color=white
+fontcolor=white
+node194 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node192 -> node195 [color="blue", fontcolor="blue"]
+subgraph cluster_195 {
+label=""
+color=white
+fontcolor=white
+node195 [label="/conditions", shape="ellipse", color="blue", fontcolor="blue"]
+node195 -> node196 [color="green", fontcolor="green"]
+subgraph cluster_196 {
+label=""
+color=white
+fontcolor=white
+node196 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node195 -> node197 [color="green", fontcolor="green"]
+subgraph cluster_197 {
+label=""
+color=white
+fontcolor=white
+node197 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node195 -> node198 [color="green", fontcolor="green"]
+subgraph cluster_198 {
+label=""
+color=white
+fontcolor=white
+node198 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+node186 -> node199 [color="blue", fontcolor="blue"]
+subgraph cluster_199 {
+label=""
+color=white
+fontcolor=white
+node199 [label="/rules", shape="ellipse", color="blue", fontcolor="blue"]
+node199 -> node200 [color="green", fontcolor="green"]
+subgraph cluster_200 {
+label=""
+color=white
+fontcolor=white
+node200 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node199 -> node201 [color="green", fontcolor="green"]
+subgraph cluster_201 {
+label=""
+color=white
+fontcolor=white
+node201 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node199 -> node202 [color="green", fontcolor="green"]
+subgraph cluster_202 {
+label=""
+color=white
+fontcolor=white
+node202 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node199 -> node203 [color="blue", fontcolor="blue"]
+subgraph cluster_203 {
+label=""
+color=white
+fontcolor=white
+node203 [label="/{ruleId}", shape="ellipse", color="blue", fontcolor="blue"]
+node203 -> node204 [color="green", fontcolor="green"]
+subgraph cluster_204 {
+label=""
+color=white
+fontcolor=white
+node204 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+node199 -> node205 [color="blue", fontcolor="blue"]
+subgraph cluster_205 {
+label=""
+color=white
+fontcolor=white
+node205 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node205 -> node206 [color="green", fontcolor="green"]
+subgraph cluster_206 {
+label=""
+color=white
+fontcolor=white
+node206 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node4 -> node207 [color="blue", fontcolor="blue"]
+subgraph cluster_207 {
+label=""
+color=white
+fontcolor=white
+node207 [label="/reportdefinitions", shape="ellipse", color="blue", fontcolor="blue"]
+node207 -> node208 [color="green", fontcolor="green"]
+subgraph cluster_208 {
+label=""
+color=white
+fontcolor=white
+node208 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node207 -> node209 [color="blue", fontcolor="blue"]
+subgraph cluster_209 {
+label=""
+color=white
+fontcolor=white
+node209 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node209 -> node210 [color="green", fontcolor="green"]
+subgraph cluster_210 {
+label=""
+color=white
+fontcolor=white
+node210 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node209 -> node211 [color="blue", fontcolor="blue"]
+subgraph cluster_211 {
+label=""
+color=white
+fontcolor=white
+node211 [label="/schedules", shape="ellipse", color="blue", fontcolor="blue"]
+node211 -> node212 [color="green", fontcolor="green"]
+subgraph cluster_212 {
+label=""
+color=white
+fontcolor=white
+node212 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node211 -> node213 [color="green", fontcolor="green"]
+subgraph cluster_213 {
+label=""
+color=white
+fontcolor=white
+node213 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node211 -> node214 [color="green", fontcolor="green"]
+subgraph cluster_214 {
+label=""
+color=white
+fontcolor=white
+node214 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node211 -> node215 [color="blue", fontcolor="blue"]
+subgraph cluster_215 {
+label=""
+color=white
+fontcolor=white
+node215 [label="/{scheduleId}", shape="ellipse", color="blue", fontcolor="blue"]
+node215 -> node216 [color="green", fontcolor="green"]
+subgraph cluster_216 {
+label=""
+color=white
+fontcolor=white
+node216 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node215 -> node217 [color="green", fontcolor="green"]
+subgraph cluster_217 {
+label=""
+color=white
+fontcolor=white
+node217 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+node4 -> node218 [color="blue", fontcolor="blue"]
+subgraph cluster_218 {
+label=""
+color=white
+fontcolor=white
+node218 [label="/alertdefinitions", shape="ellipse", color="blue", fontcolor="blue"]
+node218 -> node219 [color="green", fontcolor="green"]
+subgraph cluster_219 {
+label=""
+color=white
+fontcolor=white
+node219 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node218 -> node220 [color="green", fontcolor="green"]
+subgraph cluster_220 {
+label=""
+color=white
+fontcolor=white
+node220 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node218 -> node221 [color="green", fontcolor="green"]
+subgraph cluster_221 {
+label=""
+color=white
+fontcolor=white
+node221 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node218 -> node222 [color="blue", fontcolor="blue"]
+subgraph cluster_222 {
+label=""
+color=white
+fontcolor=white
+node222 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node222 -> node223 [color="green", fontcolor="green"]
+subgraph cluster_223 {
+label=""
+color=white
+fontcolor=white
+node223 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node222 -> node224 [color="green", fontcolor="green"]
+subgraph cluster_224 {
+label=""
+color=white
+fontcolor=white
+node224 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node4 -> node225 [color="blue", fontcolor="blue"]
+subgraph cluster_225 {
+label=""
+color=white
+fontcolor=white
+node225 [label="/adapterkinds", shape="ellipse", color="blue", fontcolor="blue"]
+node225 -> node226 [color="green", fontcolor="green"]
+subgraph cluster_226 {
+label=""
+color=white
+fontcolor=white
+node226 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node225 -> node227 [color="blue", fontcolor="blue"]
+subgraph cluster_227 {
+label=""
+color=white
+fontcolor=white
+node227 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node227 -> node228 [color="green", fontcolor="green"]
+subgraph cluster_228 {
+label=""
+color=white
+fontcolor=white
+node228 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node225 -> node229 [color="black", fontcolor="black"]
+subgraph cluster_229 {
+label=""
+color=white
+fontcolor=white
+node229 [label="/{adapterKindKey}", shape="ellipse", color="black", fontcolor="black"]
+node229 -> node230 [color="black", fontcolor="black"]
+subgraph cluster_230 {
+label=""
+color=white
+fontcolor=white
+node230 [label="/resourcekinds", shape="ellipse", color="black", fontcolor="black"]
+node230 -> node231 [color="blue", fontcolor="blue"]
+subgraph cluster_231 {
+label=""
+color=white
+fontcolor=white
+node231 [label="/{resourceKindKey}", shape="ellipse", color="blue", fontcolor="blue"]
+node231 -> node232 [color="green", fontcolor="green"]
+subgraph cluster_232 {
+label=""
+color=white
+fontcolor=white
+node232 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node231 -> node233 [color="blue", fontcolor="blue"]
+subgraph cluster_233 {
+label=""
+color=white
+fontcolor=white
+node233 [label="/statkeys", shape="ellipse", color="blue", fontcolor="blue"]
+node233 -> node234 [color="green", fontcolor="green"]
+subgraph cluster_234 {
+label=""
+color=white
+fontcolor=white
+node234 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node231 -> node235 [color="blue", fontcolor="blue"]
+subgraph cluster_235 {
+label=""
+color=white
+fontcolor=white
+node235 [label="/resources", shape="ellipse", color="blue", fontcolor="blue"]
+node235 -> node236 [color="green", fontcolor="green"]
+subgraph cluster_236 {
+label=""
+color=white
+fontcolor=white
+node236 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node231 -> node237 [color="blue", fontcolor="blue"]
+subgraph cluster_237 {
+label=""
+color=white
+fontcolor=white
+node237 [label="/properties", shape="ellipse", color="blue", fontcolor="blue"]
+node237 -> node238 [color="green", fontcolor="green"]
+subgraph cluster_238 {
+label=""
+color=white
+fontcolor=white
+node238 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node229 -> node239 [color="blue", fontcolor="blue"]
+subgraph cluster_239 {
+label=""
+color=white
+fontcolor=white
+node239 [label="/resources", shape="ellipse", color="blue", fontcolor="blue"]
+node239 -> node240 [color="green", fontcolor="green"]
+subgraph cluster_240 {
+label=""
+color=white
+fontcolor=white
+node240 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node225 -> node241 [color="black", fontcolor="black"]
+subgraph cluster_241 {
+label=""
+color=white
+fontcolor=white
+node241 [label="/{key}", shape="ellipse", color="black", fontcolor="black"]
+node241 -> node242 [color="blue", fontcolor="blue"]
+subgraph cluster_242 {
+label=""
+color=white
+fontcolor=white
+node242 [label="/resourcekinds", shape="ellipse", color="blue", fontcolor="blue"]
+node242 -> node243 [color="green", fontcolor="green"]
+subgraph cluster_243 {
+label=""
+color=white
+fontcolor=white
+node243 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node4 -> node244 [color="blue", fontcolor="blue"]
+subgraph cluster_244 {
+label=""
+color=white
+fontcolor=white
+node244 [label="/credentialkinds", shape="ellipse", color="blue", fontcolor="blue"]
+node244 -> node245 [color="green", fontcolor="green"]
+subgraph cluster_245 {
+label=""
+color=white
+fontcolor=white
+node245 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node4 -> node246 [color="blue", fontcolor="blue"]
+subgraph cluster_246 {
+label=""
+color=white
+fontcolor=white
+node246 [label="/credentials", shape="ellipse", color="blue", fontcolor="blue"]
+node246 -> node247 [color="green", fontcolor="green"]
+subgraph cluster_247 {
+label=""
+color=white
+fontcolor=white
+node247 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node246 -> node248 [color="green", fontcolor="green"]
+subgraph cluster_248 {
+label=""
+color=white
+fontcolor=white
+node248 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node246 -> node249 [color="green", fontcolor="green"]
+subgraph cluster_249 {
+label=""
+color=white
+fontcolor=white
+node249 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node246 -> node250 [color="blue", fontcolor="blue"]
+subgraph cluster_250 {
+label=""
+color=white
+fontcolor=white
+node250 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node250 -> node251 [color="green", fontcolor="green"]
+subgraph cluster_251 {
+label=""
+color=white
+fontcolor=white
+node251 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node250 -> node252 [color="green", fontcolor="green"]
+subgraph cluster_252 {
+label=""
+color=white
+fontcolor=white
+node252 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node250 -> node253 [color="blue", fontcolor="blue"]
+subgraph cluster_253 {
+label=""
+color=white
+fontcolor=white
+node253 [label="/adapters", shape="ellipse", color="blue", fontcolor="blue"]
+node253 -> node254 [color="green", fontcolor="green"]
+subgraph cluster_254 {
+label=""
+color=white
+fontcolor=white
+node254 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node250 -> node255 [color="blue", fontcolor="blue"]
+subgraph cluster_255 {
+label=""
+color=white
+fontcolor=white
+node255 [label="/resources", shape="ellipse", color="blue", fontcolor="blue"]
+node255 -> node256 [color="green", fontcolor="green"]
+subgraph cluster_256 {
+label=""
+color=white
+fontcolor=white
+node256 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node4 -> node257 [color="blue", fontcolor="blue"]
+subgraph cluster_257 {
+label=""
+color=white
+fontcolor=white
+node257 [label="/symptoms", shape="ellipse", color="blue", fontcolor="blue"]
+node257 -> node258 [color="green", fontcolor="green"]
+subgraph cluster_258 {
+label=""
+color=white
+fontcolor=white
+node258 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node257 -> node259 [color="orange", fontcolor="orange"]
+subgraph cluster_259 {
+label=""
+color=white
+fontcolor=white
+node259 [label="/query", shape="octagon", color="orange", fontcolor="orange"]
+node259 -> node260 [color="green", fontcolor="green"]
+subgraph cluster_260 {
+label=""
+color=white
+fontcolor=white
+node260 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node4 -> node261 [color="blue", fontcolor="blue"]
+subgraph cluster_261 {
+label=""
+color=white
+fontcolor=white
+node261 [label="/events", shape="ellipse", color="blue", fontcolor="blue"]
+node261 -> node262 [color="green", fontcolor="green"]
+subgraph cluster_262 {
+label=""
+color=white
+fontcolor=white
+node262 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node261 -> node263 [color="black", fontcolor="black"]
+subgraph cluster_263 {
+label=""
+color=white
+fontcolor=white
+node263 [label="/adapterkinds", shape="ellipse", color="black", fontcolor="black"]
+node263 -> node264 [color="blue", fontcolor="blue"]
+subgraph cluster_264 {
+label=""
+color=white
+fontcolor=white
+node264 [label="/{adapterKind}", shape="ellipse", color="blue", fontcolor="blue"]
+node264 -> node265 [color="green", fontcolor="green"]
+subgraph cluster_265 {
+label=""
+color=white
+fontcolor=white
+node265 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node261 -> node266 [color="blue", fontcolor="blue"]
+subgraph cluster_266 {
+label=""
+color=white
+fontcolor=white
+node266 [label="/bulk", shape="ellipse", color="blue", fontcolor="blue"]
+node266 -> node267 [color="green", fontcolor="green"]
+subgraph cluster_267 {
+label=""
+color=white
+fontcolor=white
+node267 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node266 -> node268 [color="black", fontcolor="black"]
+subgraph cluster_268 {
+label=""
+color=white
+fontcolor=white
+node268 [label="/adapterkinds", shape="ellipse", color="black", fontcolor="black"]
+node268 -> node269 [color="blue", fontcolor="blue"]
+subgraph cluster_269 {
+label=""
+color=white
+fontcolor=white
+node269 [label="/{adapterKind}", shape="ellipse", color="blue", fontcolor="blue"]
+node269 -> node270 [color="green", fontcolor="green"]
+subgraph cluster_270 {
+label=""
+color=white
+fontcolor=white
+node270 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+node4 -> node271 [color="blue", fontcolor="blue"]
+subgraph cluster_271 {
+label=""
+color=white
+fontcolor=white
+node271 [label="/alerts", shape="ellipse", color="blue", fontcolor="blue"]
+node271 -> node272 [color="green", fontcolor="green"]
+subgraph cluster_272 {
+label=""
+color=white
+fontcolor=white
+node272 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node271 -> node273 [color="green", fontcolor="green"]
+subgraph cluster_273 {
+label=""
+color=white
+fontcolor=white
+node273 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node271 -> node274 [color="blue", fontcolor="blue"]
+subgraph cluster_274 {
+label=""
+color=white
+fontcolor=white
+node274 [label="/types", shape="ellipse", color="blue", fontcolor="blue"]
+node274 -> node275 [color="green", fontcolor="green"]
+subgraph cluster_275 {
+label=""
+color=white
+fontcolor=white
+node275 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node271 -> node276 [color="blue", fontcolor="blue"]
+subgraph cluster_276 {
+label=""
+color=white
+fontcolor=white
+node276 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node276 -> node277 [color="green", fontcolor="green"]
+subgraph cluster_277 {
+label=""
+color=white
+fontcolor=white
+node277 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node271 -> node278 [color="blue", fontcolor="blue"]
+subgraph cluster_278 {
+label=""
+color=white
+fontcolor=white
+node278 [label="/notes", shape="ellipse", color="blue", fontcolor="blue"]
+node278 -> node279 [color="orange", fontcolor="orange"]
+subgraph cluster_279 {
+label=""
+color=white
+fontcolor=white
+node279 [label="/query", shape="octagon", color="orange", fontcolor="orange"]
+node279 -> node280 [color="green", fontcolor="green"]
+subgraph cluster_280 {
+label=""
+color=white
+fontcolor=white
+node280 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node271 -> node281 [color="black", fontcolor="black"]
+subgraph cluster_281 {
+label=""
+color=white
+fontcolor=white
+node281 [label="/{alertId}", shape="ellipse", color="black", fontcolor="black"]
+node281 -> node282 [color="blue", fontcolor="blue"]
+subgraph cluster_282 {
+label=""
+color=white
+fontcolor=white
+node282 [label="/notes", shape="ellipse", color="blue", fontcolor="blue"]
+node282 -> node283 [color="green", fontcolor="green"]
+subgraph cluster_283 {
+label=""
+color=white
+fontcolor=white
+node283 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node282 -> node284 [color="green", fontcolor="green"]
+subgraph cluster_284 {
+label=""
+color=white
+fontcolor=white
+node284 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node282 -> node285 [color="blue", fontcolor="blue"]
+subgraph cluster_285 {
+label=""
+color=white
+fontcolor=white
+node285 [label="/{noteId}", shape="ellipse", color="blue", fontcolor="blue"]
+node285 -> node286 [color="green", fontcolor="green"]
+subgraph cluster_286 {
+label=""
+color=white
+fontcolor=white
+node286 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node271 -> node287 [color="orange", fontcolor="orange"]
+subgraph cluster_287 {
+label=""
+color=white
+fontcolor=white
+node287 [label="/query", shape="octagon", color="orange", fontcolor="orange"]
+node287 -> node288 [color="green", fontcolor="green"]
+subgraph cluster_288 {
+label=""
+color=white
+fontcolor=white
+node288 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node4 -> node289 [color="blue", fontcolor="blue"]
+subgraph cluster_289 {
+label=""
+color=white
+fontcolor=white
+node289 [label="/symptomdefinitions", shape="ellipse", color="blue", fontcolor="blue"]
+node289 -> node290 [color="green", fontcolor="green"]
+subgraph cluster_290 {
+label=""
+color=white
+fontcolor=white
+node290 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node289 -> node291 [color="green", fontcolor="green"]
+subgraph cluster_291 {
+label=""
+color=white
+fontcolor=white
+node291 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node289 -> node292 [color="green", fontcolor="green"]
+subgraph cluster_292 {
+label=""
+color=white
+fontcolor=white
+node292 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node289 -> node293 [color="blue", fontcolor="blue"]
+subgraph cluster_293 {
+label=""
+color=white
+fontcolor=white
+node293 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node293 -> node294 [color="green", fontcolor="green"]
+subgraph cluster_294 {
+label=""
+color=white
+fontcolor=white
+node294 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node293 -> node295 [color="green", fontcolor="green"]
+subgraph cluster_295 {
+label=""
+color=white
+fontcolor=white
+node295 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node4 -> node296 [color="orange", fontcolor="orange"]
+subgraph cluster_296 {
+label=""
+color=white
+fontcolor=white
+node296 [label="/collectorgroups", shape="octagon", color="orange", fontcolor="orange"]
+node296 -> node297 [color="green", fontcolor="green"]
+subgraph cluster_297 {
+label=""
+color=white
+fontcolor=white
+node297 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node296 -> node298 [color="green", fontcolor="green"]
+subgraph cluster_298 {
+label=""
+color=white
+fontcolor=white
+node298 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node296 -> node299 [color="green", fontcolor="green"]
+subgraph cluster_299 {
+label=""
+color=white
+fontcolor=white
+node299 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node296 -> node300 [color="blue", fontcolor="blue"]
+subgraph cluster_300 {
+label=""
+color=white
+fontcolor=white
+node300 [label="/{collectorGroupId}", shape="ellipse", color="blue", fontcolor="blue"]
+node300 -> node301 [color="green", fontcolor="green"]
+subgraph cluster_301 {
+label=""
+color=white
+fontcolor=white
+node301 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+node296 -> node302 [color="blue", fontcolor="blue"]
+subgraph cluster_302 {
+label=""
+color=white
+fontcolor=white
+node302 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node302 -> node303 [color="green", fontcolor="green"]
+subgraph cluster_303 {
+label=""
+color=white
+fontcolor=white
+node303 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node302 -> node304 [color="black", fontcolor="black"]
+subgraph cluster_304 {
+label=""
+color=white
+fontcolor=white
+node304 [label="/collector", shape="ellipse", color="black", fontcolor="black"]
+node304 -> node305 [color="blue", fontcolor="blue"]
+subgraph cluster_305 {
+label=""
+color=white
+fontcolor=white
+node305 [label="/{collectorId}", shape="ellipse", color="blue", fontcolor="blue"]
+node305 -> node306 [color="green", fontcolor="green"]
+subgraph cluster_306 {
+label=""
+color=white
+fontcolor=white
+node306 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node305 -> node307 [color="green", fontcolor="green"]
+subgraph cluster_307 {
+label=""
+color=white
+fontcolor=white
+node307 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+node4 -> node308 [color="blue", fontcolor="blue"]
+subgraph cluster_308 {
+label=""
+color=white
+fontcolor=white
+node308 [label="/adapters", shape="ellipse", color="blue", fontcolor="blue"]
+node308 -> node309 [color="green", fontcolor="green"]
+subgraph cluster_309 {
+label=""
+color=white
+fontcolor=white
+node309 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node308 -> node310 [color="green", fontcolor="green"]
+subgraph cluster_310 {
+label=""
+color=white
+fontcolor=white
+node310 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node308 -> node311 [color="green", fontcolor="green"]
+subgraph cluster_311 {
+label=""
+color=white
+fontcolor=white
+node311 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node308 -> node312 [color="green", fontcolor="green"]
+subgraph cluster_312 {
+label=""
+color=white
+fontcolor=white
+node312 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node308 -> node313 [color="blue", fontcolor="blue"]
+subgraph cluster_313 {
+label=""
+color=white
+fontcolor=white
+node313 [label="/{adapterId}", shape="ellipse", color="blue", fontcolor="blue"]
+node313 -> node314 [color="green", fontcolor="green"]
+subgraph cluster_314 {
+label=""
+color=white
+fontcolor=white
+node314 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node313 -> node315 [color="blue", fontcolor="blue"]
+subgraph cluster_315 {
+label=""
+color=white
+fontcolor=white
+node315 [label="/monitoringstate", shape="ellipse", color="blue", fontcolor="blue"]
+node315 -> node316 [color="orange", fontcolor="orange"]
+subgraph cluster_316 {
+label=""
+color=white
+fontcolor=white
+node316 [label="/start", shape="octagon", color="orange", fontcolor="orange"]
+node316 -> node317 [color="green", fontcolor="green"]
+subgraph cluster_317 {
+label=""
+color=white
+fontcolor=white
+node317 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+node315 -> node318 [color="orange", fontcolor="orange"]
+subgraph cluster_318 {
+label=""
+color=white
+fontcolor=white
+node318 [label="/stop", shape="octagon", color="orange", fontcolor="orange"]
+node318 -> node319 [color="green", fontcolor="green"]
+subgraph cluster_319 {
+label=""
+color=white
+fontcolor=white
+node319 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node313 -> node320 [color="blue", fontcolor="blue"]
+subgraph cluster_320 {
+label=""
+color=white
+fontcolor=white
+node320 [label="/resources", shape="ellipse", color="blue", fontcolor="blue"]
+node320 -> node321 [color="green", fontcolor="green"]
+subgraph cluster_321 {
+label=""
+color=white
+fontcolor=white
+node321 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node313 -> node322 [color="blue", fontcolor="blue"]
+subgraph cluster_322 {
+label=""
+color=white
+fontcolor=white
+node322 [label="/maintained", shape="ellipse", color="blue", fontcolor="blue"]
+node322 -> node323 [color="green", fontcolor="green"]
+subgraph cluster_323 {
+label=""
+color=white
+fontcolor=white
+node323 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node322 -> node324 [color="green", fontcolor="green"]
+subgraph cluster_324 {
+label=""
+color=white
+fontcolor=white
+node324 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node308 -> node325 [color="blue", fontcolor="blue"]
+subgraph cluster_325 {
+label=""
+color=white
+fontcolor=white
+node325 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node325 -> node326 [color="green", fontcolor="green"]
+subgraph cluster_326 {
+label=""
+color=white
+fontcolor=white
+node326 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node4 -> node327 [color="blue", fontcolor="blue"]
+subgraph cluster_327 {
+label=""
+color=white
+fontcolor=white
+node327 [label="/reports", shape="ellipse", color="blue", fontcolor="blue"]
+node327 -> node328 [color="green", fontcolor="green"]
+subgraph cluster_328 {
+label=""
+color=white
+fontcolor=white
+node328 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node327 -> node329 [color="green", fontcolor="green"]
+subgraph cluster_329 {
+label=""
+color=white
+fontcolor=white
+node329 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node327 -> node330 [color="blue", fontcolor="blue"]
+subgraph cluster_330 {
+label=""
+color=white
+fontcolor=white
+node330 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node330 -> node331 [color="green", fontcolor="green"]
+subgraph cluster_331 {
+label=""
+color=white
+fontcolor=white
+node331 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node330 -> node332 [color="blue", fontcolor="blue"]
+subgraph cluster_332 {
+label=""
+color=white
+fontcolor=white
+node332 [label="/download", shape="ellipse", color="blue", fontcolor="blue"]
+node332 -> node333 [color="green", fontcolor="green"]
+subgraph cluster_333 {
+label=""
+color=white
+fontcolor=white
+node333 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node4 -> node334 [color="blue", fontcolor="blue"]
+subgraph cluster_334 {
+label=""
+color=white
+fontcolor=white
+node334 [label="/actiondefinitions", shape="ellipse", color="blue", fontcolor="blue"]
+node334 -> node335 [color="green", fontcolor="green"]
+subgraph cluster_335 {
+label=""
+color=white
+fontcolor=white
+node335 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node4 -> node336 [color="blue", fontcolor="blue"]
+subgraph cluster_336 {
+label=""
+color=white
+fontcolor=white
+node336 [label="/solutions", shape="ellipse", color="blue", fontcolor="blue"]
+node336 -> node337 [color="green", fontcolor="green"]
+subgraph cluster_337 {
+label=""
+color=white
+fontcolor=white
+node337 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node336 -> node338 [color="blue", fontcolor="blue"]
+subgraph cluster_338 {
+label=""
+color=white
+fontcolor=white
+node338 [label="/{solutionId}", shape="ellipse", color="blue", fontcolor="blue"]
+node338 -> node339 [color="green", fontcolor="green"]
+subgraph cluster_339 {
+label=""
+color=white
+fontcolor=white
+node339 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node338 -> node340 [color="blue", fontcolor="blue"]
+subgraph cluster_340 {
+label=""
+color=white
+fontcolor=white
+node340 [label="/licenses", shape="ellipse", color="blue", fontcolor="blue"]
+node340 -> node341 [color="green", fontcolor="green"]
+subgraph cluster_341 {
+label=""
+color=white
+fontcolor=white
+node341 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node340 -> node342 [color="green", fontcolor="green"]
+subgraph cluster_342 {
+label=""
+color=white
+fontcolor=white
+node342 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node340 -> node343 [color="blue", fontcolor="blue"]
+subgraph cluster_343 {
+label=""
+color=white
+fontcolor=white
+node343 [label="/{licenseId}", shape="ellipse", color="blue", fontcolor="blue"]
+node343 -> node344 [color="green", fontcolor="green"]
+subgraph cluster_344 {
+label=""
+color=white
+fontcolor=white
+node344 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node338 -> node345 [color="blue", fontcolor="blue"]
+subgraph cluster_345 {
+label=""
+color=white
+fontcolor=white
+node345 [label="/adapterkinds", shape="ellipse", color="blue", fontcolor="blue"]
+node345 -> node346 [color="green", fontcolor="green"]
+subgraph cluster_346 {
+label=""
+color=white
+fontcolor=white
+node346 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node4 -> node347 [color="blue", fontcolor="blue"]
+subgraph cluster_347 {
+label=""
+color=white
+fontcolor=white
+node347 [label="/alertplugins", shape="ellipse", color="blue", fontcolor="blue"]
+node347 -> node348 [color="green", fontcolor="green"]
+subgraph cluster_348 {
+label=""
+color=white
+fontcolor=white
+node348 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node347 -> node349 [color="green", fontcolor="green"]
+subgraph cluster_349 {
+label=""
+color=white
+fontcolor=white
+node349 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node347 -> node350 [color="green", fontcolor="green"]
+subgraph cluster_350 {
+label=""
+color=white
+fontcolor=white
+node350 [label="PATCH", shape="box", color="green", fontcolor="green"]
+}
+node347 -> node351 [color="green", fontcolor="green"]
+subgraph cluster_351 {
+label=""
+color=white
+fontcolor=white
+node351 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node347 -> node352 [color="blue", fontcolor="blue"]
+subgraph cluster_352 {
+label=""
+color=white
+fontcolor=white
+node352 [label="/types", shape="ellipse", color="blue", fontcolor="blue"]
+node352 -> node353 [color="green", fontcolor="green"]
+subgraph cluster_353 {
+label=""
+color=white
+fontcolor=white
+node353 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node352 -> node354 [color="blue", fontcolor="blue"]
+subgraph cluster_354 {
+label=""
+color=white
+fontcolor=white
+node354 [label="/{pluginTypeId}", shape="ellipse", color="blue", fontcolor="blue"]
+node354 -> node355 [color="green", fontcolor="green"]
+subgraph cluster_355 {
+label=""
+color=white
+fontcolor=white
+node355 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node347 -> node356 [color="blue", fontcolor="blue"]
+subgraph cluster_356 {
+label=""
+color=white
+fontcolor=white
+node356 [label="/{pluginId}", shape="ellipse", color="blue", fontcolor="blue"]
+node356 -> node357 [color="green", fontcolor="green"]
+subgraph cluster_357 {
+label=""
+color=white
+fontcolor=white
+node357 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node356 -> node358 [color="green", fontcolor="green"]
+subgraph cluster_358 {
+label=""
+color=white
+fontcolor=white
+node358 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node356 -> node359 [color="black", fontcolor="black"]
+subgraph cluster_359 {
+label=""
+color=white
+fontcolor=white
+node359 [label="/enable", shape="ellipse", color="black", fontcolor="black"]
+node359 -> node360 [color="blue", fontcolor="blue"]
+subgraph cluster_360 {
+label=""
+color=white
+fontcolor=white
+node360 [label="/{enabled}", shape="ellipse", color="blue", fontcolor="blue"]
+node360 -> node361 [color="green", fontcolor="green"]
+subgraph cluster_361 {
+label=""
+color=white
+fontcolor=white
+node361 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node356 -> node362 [color="blue", fontcolor="blue"]
+subgraph cluster_362 {
+label=""
+color=white
+fontcolor=white
+node362 [label="/rules", shape="ellipse", color="blue", fontcolor="blue"]
+node362 -> node363 [color="green", fontcolor="green"]
+subgraph cluster_363 {
+label=""
+color=white
+fontcolor=white
+node363 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node4 -> node364 [color="blue", fontcolor="blue"]
+subgraph cluster_364 {
+label=""
+color=white
+fontcolor=white
+node364 [label="/supermetrics", shape="ellipse", color="blue", fontcolor="blue"]
+node364 -> node365 [color="green", fontcolor="green"]
+subgraph cluster_365 {
+label=""
+color=white
+fontcolor=white
+node365 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node364 -> node366 [color="green", fontcolor="green"]
+subgraph cluster_366 {
+label=""
+color=white
+fontcolor=white
+node366 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node364 -> node367 [color="green", fontcolor="green"]
+subgraph cluster_367 {
+label=""
+color=white
+fontcolor=white
+node367 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node364 -> node368 [color="blue", fontcolor="blue"]
+subgraph cluster_368 {
+label=""
+color=white
+fontcolor=white
+node368 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node368 -> node369 [color="green", fontcolor="green"]
+subgraph cluster_369 {
+label=""
+color=white
+fontcolor=white
+node369 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node368 -> node370 [color="green", fontcolor="green"]
+subgraph cluster_370 {
+label=""
+color=white
+fontcolor=white
+node370 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node4 -> node371 [color="blue", fontcolor="blue"]
+subgraph cluster_371 {
+label=""
+color=white
+fontcolor=white
+node371 [label="/tasks", shape="ellipse", color="blue", fontcolor="blue"]
+node371 -> node372 [color="green", fontcolor="green"]
+subgraph cluster_372 {
+label=""
+color=white
+fontcolor=white
+node372 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node371 -> node373 [color="blue", fontcolor="blue"]
+subgraph cluster_373 {
+label=""
+color=white
+fontcolor=white
+node373 [label="/{taskId}", shape="ellipse", color="blue", fontcolor="blue"]
+node373 -> node374 [color="green", fontcolor="green"]
+subgraph cluster_374 {
+label=""
+color=white
+fontcolor=white
+node374 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node4 -> node375 [color="black", fontcolor="black"]
+subgraph cluster_375 {
+label=""
+color=white
+fontcolor=white
+node375 [label="/actions", shape="ellipse", color="black", fontcolor="black"]
+node375 -> node376 [color="blue", fontcolor="blue"]
+subgraph cluster_376 {
+label=""
+color=white
+fontcolor=white
+node376 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node376 -> node377 [color="green", fontcolor="green"]
+subgraph cluster_377 {
+label=""
+color=white
+fontcolor=white
+node377 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node376 -> node378 [color="orange", fontcolor="orange"]
+subgraph cluster_378 {
+label=""
+color=white
+fontcolor=white
+node378 [label="/query", shape="octagon", color="orange", fontcolor="orange"]
+node378 -> node379 [color="green", fontcolor="green"]
+subgraph cluster_379 {
+label=""
+color=white
+fontcolor=white
+node379 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node4 -> node380 [color="orange", fontcolor="orange"]
+subgraph cluster_380 {
+label=""
+color=white
+fontcolor=white
+node380 [label="/collectors", shape="octagon", color="orange", fontcolor="orange"]
+node380 -> node381 [color="green", fontcolor="green"]
+subgraph cluster_381 {
+label=""
+color=white
+fontcolor=white
+node381 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node4 -> node382 [color="blue", fontcolor="blue"]
+subgraph cluster_382 {
+label=""
+color=white
+fontcolor=white
+node382 [label="/maintenanceschedules", shape="ellipse", color="blue", fontcolor="blue"]
+node382 -> node383 [color="green", fontcolor="green"]
+subgraph cluster_383 {
+label=""
+color=white
+fontcolor=white
+node383 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node382 -> node384 [color="green", fontcolor="green"]
+subgraph cluster_384 {
+label=""
+color=white
+fontcolor=white
+node384 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node382 -> node385 [color="green", fontcolor="green"]
+subgraph cluster_385 {
+label=""
+color=white
+fontcolor=white
+node385 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node382 -> node386 [color="green", fontcolor="green"]
+subgraph cluster_386 {
+label=""
+color=white
+fontcolor=white
+node386 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+node4 -> node387 [color="blue", fontcolor="blue"]
+subgraph cluster_387 {
+label=""
+color=white
+fontcolor=white
+node387 [label="/versions", shape="ellipse", color="blue", fontcolor="blue"]
+node387 -> node388 [color="green", fontcolor="green"]
+subgraph cluster_388 {
+label=""
+color=white
+fontcolor=white
+node388 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node387 -> node389 [color="blue", fontcolor="blue"]
+subgraph cluster_389 {
+label=""
+color=white
+fontcolor=white
+node389 [label="/current", shape="ellipse", color="blue", fontcolor="blue"]
+node389 -> node390 [color="green", fontcolor="green"]
+subgraph cluster_390 {
+label=""
+color=white
+fontcolor=white
+node390 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node389 -> node391 [color="blue", fontcolor="blue"]
+subgraph cluster_391 {
+label=""
+color=white
+fontcolor=white
+node391 [label="/endpoints", shape="ellipse", color="blue", fontcolor="blue"]
+node391 -> node392 [color="green", fontcolor="green"]
+subgraph cluster_392 {
+label=""
+color=white
+fontcolor=white
+node392 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node4 -> node393 [color="blue", fontcolor="blue"]
+subgraph cluster_393 {
+label=""
+color=white
+fontcolor=white
+node393 [label="/recommendations", shape="ellipse", color="blue", fontcolor="blue"]
+node393 -> node394 [color="green", fontcolor="green"]
+subgraph cluster_394 {
+label=""
+color=white
+fontcolor=white
+node394 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node393 -> node395 [color="green", fontcolor="green"]
+subgraph cluster_395 {
+label=""
+color=white
+fontcolor=white
+node395 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node393 -> node396 [color="green", fontcolor="green"]
+subgraph cluster_396 {
+label=""
+color=white
+fontcolor=white
+node396 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node393 -> node397 [color="blue", fontcolor="blue"]
+subgraph cluster_397 {
+label=""
+color=white
+fontcolor=white
+node397 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node397 -> node398 [color="green", fontcolor="green"]
+subgraph cluster_398 {
+label=""
+color=white
+fontcolor=white
+node398 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node397 -> node399 [color="green", fontcolor="green"]
+subgraph cluster_399 {
+label=""
+color=white
+fontcolor=white
+node399 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node3 -> node400 [color="black", fontcolor="black"]
+subgraph cluster_400 {
+label=""
+color=white
+fontcolor=white
+node400 [label="/internal", shape="ellipse", color="black", fontcolor="black"]
+node400 -> node401 [color="blue", fontcolor="blue"]
+subgraph cluster_401 {
+label=""
+color=white
+fontcolor=white
+node401 [label="/adapterkinds", shape="ellipse", color="blue", fontcolor="blue"]
+node401 -> node402 [color="green", fontcolor="green"]
+subgraph cluster_402 {
+label=""
+color=white
+fontcolor=white
+node402 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node401 -> node403 [color="blue", fontcolor="blue"]
+subgraph cluster_403 {
+label=""
+color=white
+fontcolor=white
+node403 [label="/describe", shape="ellipse", color="blue", fontcolor="blue"]
+node403 -> node404 [color="green", fontcolor="green"]
+subgraph cluster_404 {
+label=""
+color=white
+fontcolor=white
+node404 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node401 -> node405 [color="black", fontcolor="black"]
+subgraph cluster_405 {
+label=""
+color=white
+fontcolor=white
+node405 [label="/{adapterKindKey}", shape="ellipse", color="black", fontcolor="black"]
+node405 -> node406 [color="blue", fontcolor="blue"]
+subgraph cluster_406 {
+label=""
+color=white
+fontcolor=white
+node406 [label="/resourcekinds", shape="ellipse", color="blue", fontcolor="blue"]
+node406 -> node407 [color="green", fontcolor="green"]
+subgraph cluster_407 {
+label=""
+color=white
+fontcolor=white
+node407 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node401 -> node408 [color="blue", fontcolor="blue"]
+subgraph cluster_408 {
+label=""
+color=white
+fontcolor=white
+node408 [label="/describeupload", shape="ellipse", color="blue", fontcolor="blue"]
+node408 -> node409 [color="green", fontcolor="green"]
+subgraph cluster_409 {
+label=""
+color=white
+fontcolor=white
+node409 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node400 -> node410 [color="blue", fontcolor="blue"]
+subgraph cluster_410 {
+label=""
+color=white
+fontcolor=white
+node410 [label="/resources", shape="ellipse", color="blue", fontcolor="blue"]
+node410 -> node411 [color="green", fontcolor="green"]
+subgraph cluster_411 {
+label=""
+color=white
+fontcolor=white
+node411 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node410 -> node412 [color="blue", fontcolor="blue"]
+subgraph cluster_412 {
+label=""
+color=white
+fontcolor=white
+node412 [label="/groups", shape="ellipse", color="blue", fontcolor="blue"]
+node412 -> node413 [color="green", fontcolor="green"]
+subgraph cluster_413 {
+label=""
+color=white
+fontcolor=white
+node413 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node412 -> node414 [color="green", fontcolor="green"]
+subgraph cluster_414 {
+label=""
+color=white
+fontcolor=white
+node414 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node412 -> node415 [color="green", fontcolor="green"]
+subgraph cluster_415 {
+label=""
+color=white
+fontcolor=white
+node415 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node412 -> node416 [color="blue", fontcolor="blue"]
+subgraph cluster_416 {
+label=""
+color=white
+fontcolor=white
+node416 [label="/{groupId}", shape="ellipse", color="blue", fontcolor="blue"]
+node416 -> node417 [color="green", fontcolor="green"]
+subgraph cluster_417 {
+label=""
+color=white
+fontcolor=white
+node417 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node416 -> node418 [color="green", fontcolor="green"]
+subgraph cluster_418 {
+label=""
+color=white
+fontcolor=white
+node418 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node416 -> node419 [color="blue", fontcolor="blue"]
+subgraph cluster_419 {
+label=""
+color=white
+fontcolor=white
+node419 [label="/excludedResources", shape="ellipse", color="blue", fontcolor="blue"]
+node419 -> node420 [color="green", fontcolor="green"]
+subgraph cluster_420 {
+label=""
+color=white
+fontcolor=white
+node420 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node419 -> node421 [color="green", fontcolor="green"]
+subgraph cluster_421 {
+label=""
+color=white
+fontcolor=white
+node421 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node416 -> node422 [color="blue", fontcolor="blue"]
+subgraph cluster_422 {
+label=""
+color=white
+fontcolor=white
+node422 [label="/includedResources", shape="ellipse", color="blue", fontcolor="blue"]
+node422 -> node423 [color="green", fontcolor="green"]
+subgraph cluster_423 {
+label=""
+color=white
+fontcolor=white
+node423 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node422 -> node424 [color="green", fontcolor="green"]
+subgraph cluster_424 {
+label=""
+color=white
+fontcolor=white
+node424 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node416 -> node425 [color="blue", fontcolor="blue"]
+subgraph cluster_425 {
+label=""
+color=white
+fontcolor=white
+node425 [label="/members", shape="ellipse", color="blue", fontcolor="blue"]
+node425 -> node426 [color="green", fontcolor="green"]
+subgraph cluster_426 {
+label=""
+color=white
+fontcolor=white
+node426 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node412 -> node427 [color="blue", fontcolor="blue"]
+subgraph cluster_427 {
+label=""
+color=white
+fontcolor=white
+node427 [label="/static", shape="ellipse", color="blue", fontcolor="blue"]
+node427 -> node428 [color="green", fontcolor="green"]
+subgraph cluster_428 {
+label=""
+color=white
+fontcolor=white
+node428 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node410 -> node429 [color="blue", fontcolor="blue"]
+subgraph cluster_429 {
+label=""
+color=white
+fontcolor=white
+node429 [label="/remotemonitoring", shape="ellipse", color="blue", fontcolor="blue"]
+node429 -> node430 [color="green", fontcolor="green"]
+subgraph cluster_430 {
+label=""
+color=white
+fontcolor=white
+node430 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+node410 -> node431 [color="orange", fontcolor="orange"]
+subgraph cluster_431 {
+label=""
+color=white
+fontcolor=white
+node431 [label="/merge", shape="octagon", color="orange", fontcolor="orange"]
+node431 -> node432 [color="green", fontcolor="green"]
+subgraph cluster_432 {
+label=""
+color=white
+fontcolor=white
+node432 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+node400 -> node433 [color="black", fontcolor="black"]
+subgraph cluster_433 {
+label=""
+color=white
+fontcolor=white
+node433 [label="/deployment", shape="ellipse", color="black", fontcolor="black"]
+node433 -> node434 [color="black", fontcolor="black"]
+subgraph cluster_434 {
+label=""
+color=white
+fontcolor=white
+node434 [label="/config", shape="ellipse", color="black", fontcolor="black"]
+node434 -> node435 [color="black", fontcolor="black"]
+subgraph cluster_435 {
+label=""
+color=white
+fontcolor=white
+node435 [label="/properties", shape="ellipse", color="black", fontcolor="black"]
+node435 -> node436 [color="blue", fontcolor="blue"]
+subgraph cluster_436 {
+label=""
+color=white
+fontcolor=white
+node436 [label="/{namespace}", shape="ellipse", color="blue", fontcolor="blue"]
+node436 -> node437 [color="green", fontcolor="green"]
+subgraph cluster_437 {
+label=""
+color=white
+fontcolor=white
+node437 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+node436 -> node438 [color="green", fontcolor="green"]
+subgraph cluster_438 {
+label=""
+color=white
+fontcolor=white
+node438 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+node436 -> node439 [color="blue", fontcolor="blue"]
+subgraph cluster_439 {
+label=""
+color=white
+fontcolor=white
+node439 [label="/{key}", shape="ellipse", color="blue", fontcolor="blue"]
+node439 -> node440 [color="green", fontcolor="green"]
+subgraph cluster_440 {
+label=""
+color=white
+fontcolor=white
+node440 [label="DELETE", shape="box", color="green", fontcolor="green"]
+}
+node439 -> node441 [color="blue", fontcolor="blue"]
+subgraph cluster_441 {
+label=""
+color=white
+fontcolor=white
+node441 [label="/{value}", shape="ellipse", color="blue", fontcolor="blue"]
+node441 -> node442 [color="green", fontcolor="green"]
+subgraph cluster_442 {
+label=""
+color=white
+fontcolor=white
+node442 [label="PUT", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+node400 -> node443 [color="black", fontcolor="black"]
+subgraph cluster_443 {
+label=""
+color=white
+fontcolor=white
+node443 [label="/auth", shape="ellipse", color="black", fontcolor="black"]
+node443 -> node444 [color="black", fontcolor="black"]
+subgraph cluster_444 {
+label=""
+color=white
+fontcolor=white
+node444 [label="/users", shape="ellipse", color="black", fontcolor="black"]
+node444 -> node445 [color="blue", fontcolor="blue"]
+subgraph cluster_445 {
+label=""
+color=white
+fontcolor=white
+node445 [label="/impersonate", shape="ellipse", color="blue", fontcolor="blue"]
+node445 -> node446 [color="green", fontcolor="green"]
+subgraph cluster_446 {
+label=""
+color=white
+fontcolor=white
+node446 [label="POST", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+node400 -> node447 [color="blue", fontcolor="blue"]
+subgraph cluster_447 {
+label=""
+color=white
+fontcolor=white
+node447 [label="/viewdefinitions", shape="ellipse", color="blue", fontcolor="blue"]
+node447 -> node448 [color="green", fontcolor="green"]
+subgraph cluster_448 {
+label=""
+color=white
+fontcolor=white
+node448 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+node447 -> node449 [color="blue", fontcolor="blue"]
+subgraph cluster_449 {
+label=""
+color=white
+fontcolor=white
+node449 [label="/{id}", shape="ellipse", color="blue", fontcolor="blue"]
+node449 -> node450 [color="green", fontcolor="green"]
+subgraph cluster_450 {
+label=""
+color=white
+fontcolor=white
+node450 [label="GET", shape="box", color="green", fontcolor="green"]
+}
+}
+}
+}
+}
+}
+}
+}
+}

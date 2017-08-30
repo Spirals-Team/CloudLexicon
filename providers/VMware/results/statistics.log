@@ -1,0 +1,47 @@
+['./datasets/DatasetURIs.csv']
+
+-------------------- API --------------------
+
+Number of providers = 1
+Number of services = 9
+Number of resources = 1553
+Number of controllers = 228
+Number of queries = 32
+Number of methods = 2588
+ - 49 PATCH (1.89%)
+ - 348 PUT (13.45%)
+ - 736 POST (28.44%)
+ - 326 DELETE (12.60%)
+ - 1129 GET (43.62%)
+
+-------------------- LEXICON --------------------
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+******************************     0 terms are common to 0 of 1 providers      ******************************
+******************************     753 terms are common to 1 of 1 providers      ******************************
+
+Number of terms = 753
+Number of nouns = 623 (82.74%)
+Number of verbs = 130 (17.26%)
+Number of singular terms = 356 (47.28%)
+Number of plural terms = 397 (52.72%)
+Number of lower case terms = 691 (91.77%)
+Number of upper case terms = 0 (0.00%)
+Number of camel case terms = 62 (8.23%)
+Number of hyphen terms = 25 (3.32%)
+Number of underscore terms = 60 (7.97%)
+Number of business terms = 745 (98.94%)
+Number of engineering terms = 8 (1.06%)
+
+
+-------------------- QUALITY --------------------
+
+VMware is REST ;-)
+scoreRest = 0.911901081917
+VMware: BAD API naming or API Naming Inconsistency Anti-Pattern
+scoreNaming = 0.884462151394
+VMware: BAD business API design or Engineering-Oriented API Naming Anti-Pattern 8 (1.06%)
+scoreBusiness = 0.989375830013
+Total score = 0.928579687775
