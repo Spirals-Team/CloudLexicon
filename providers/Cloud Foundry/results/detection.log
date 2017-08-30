@@ -1,0 +1,345 @@
+--------------------------------------------------------------------------------
+Read-Only Pattern - 72 detected:
+ * https://cloud-foundry.provider.com/organizations/{guid}/users
+ * https://cloud-foundry.provider.com/organizations/{guid}/domains
+ * https://cloud-foundry.provider.com/organizations/{guid}/services
+ * https://cloud-foundry.provider.com/organizations/{guid}/space_quota_definitions
+ * https://cloud-foundry.provider.com/organizations/{guid}/managers
+ * https://cloud-foundry.provider.com/organizations/{guid}/billing_managers
+ * https://cloud-foundry.provider.com/organizations/{guid}/auditors
+ * https://cloud-foundry.provider.com/organizations/{guid}/spaces
+ * https://cloud-foundry.provider.com/organizations/{guid}/summary
+ * https://cloud-foundry.provider.com/organizations/{guid}/private_domains
+ * https://cloud-foundry.provider.com/organizations/{guid}/memory_usage
+ * https://cloud-foundry.provider.com/routes/{guid}/apps
+ * https://cloud-foundry.provider.com/routes/reserved/domain/{domain_guid}/host/{host}
+ * https://cloud-foundry.provider.com/spaces/{guid}/developers
+ * https://cloud-foundry.provider.com/spaces/{guid}/services
+ * https://cloud-foundry.provider.com/spaces/{guid}/security_groups
+ * https://cloud-foundry.provider.com/spaces/{guid}/service_instances
+ * https://cloud-foundry.provider.com/spaces/{guid}/auditors
+ * https://cloud-foundry.provider.com/spaces/{guid}/domains
+ * https://cloud-foundry.provider.com/spaces/{guid}/managers
+ * https://cloud-foundry.provider.com/spaces/{guid}/events
+ * https://cloud-foundry.provider.com/spaces/{guid}/routes
+ * https://cloud-foundry.provider.com/spaces/{guid}/summary
+ * https://cloud-foundry.provider.com/spaces/{guid}/apps
+ * https://cloud-foundry.provider.com/users/{guid}/organizations
+ * https://cloud-foundry.provider.com/users/{guid}/summary
+ * https://cloud-foundry.provider.com/users/{guid}/managed_organizations
+ * https://cloud-foundry.provider.com/users/{guid}/spaces
+ * https://cloud-foundry.provider.com/users/{guid}/billing_managed_organizations
+ * https://cloud-foundry.provider.com/users/{guid}/managed_spaces
+ * https://cloud-foundry.provider.com/users/{guid}/audited_organizations
+ * https://cloud-foundry.provider.com/users/{guid}/audited_spaces
+ * https://cloud-foundry.provider.com/config/feature_flags
+ * https://cloud-foundry.provider.com/config/feature_flags/route_creation
+ * https://cloud-foundry.provider.com/config/feature_flags/service_instance_creation
+ * https://cloud-foundry.provider.com/config/feature_flags/app_scaling
+ * https://cloud-foundry.provider.com/config/feature_flags/user_org_creation
+ * https://cloud-foundry.provider.com/config/feature_flags/app_bits_upload
+ * https://cloud-foundry.provider.com/config/feature_flags/private_domain_creation
+ * https://cloud-foundry.provider.com/config/running_security_groups
+ * https://cloud-foundry.provider.com/config/staging_security_groups
+ * https://cloud-foundry.provider.com/apps/{guid}/service_bindings
+ * https://cloud-foundry.provider.com/apps/{guid}/stats
+ * https://cloud-foundry.provider.com/apps/{guid}/download
+ * https://cloud-foundry.provider.com/apps/{guid}/instances
+ * https://cloud-foundry.provider.com/apps/{guid}/routes
+ * https://cloud-foundry.provider.com/apps/{guid}/env
+ * https://cloud-foundry.provider.com/apps/{guid}/summary
+ * https://cloud-foundry.provider.com/apps/{app_guid}/instances/{instance_index}/files/{file_path}
+ * https://cloud-foundry.provider.com/user_provided_service_instances/{guid}/service_bindings
+ * https://cloud-foundry.provider.com/jobs/{guid}
+ * https://cloud-foundry.provider.com/info
+ * https://cloud-foundry.provider.com/domains/{guid}/spaces
+ * https://cloud-foundry.provider.com/space_quota_definitions/{guid}/spaces
+ * https://cloud-foundry.provider.com/services/{guid}/service_plans
+ * https://cloud-foundry.provider.com/app_usage_events
+ * https://cloud-foundry.provider.com/app_usage_events/{guid}
+ * https://cloud-foundry.provider.com/service_auth_tokens
+ * https://cloud-foundry.provider.com/service_instances/{guid}/service_bindings
+ * https://cloud-foundry.provider.com/service_instances/{guid}/permissions
+ * https://cloud-foundry.provider.com/service_usage_events
+ * https://cloud-foundry.provider.com/service_usage_events/{guid}
+ * https://cloud-foundry.provider.com/stacks
+ * https://cloud-foundry.provider.com/events
+ * https://cloud-foundry.provider.com/events/{guid}
+ * https://cloud-foundry.provider.com/security_groups/{guid}/spaces
+ * http://localhost/metering/organizations/{organization_id}/aggregated/usage/{time}
+ * http://localhost/metering/collected/usage/{usage_document_id}
+ * http://localhost/metering/aggregated/usage/graph/{query}
+ * http://localhost/provisioning/resources/{resource_id}/config/{time}
+ * http://localhost/pricing/resources/{resource_id}/config/{time}
+ * http://127.0.0.1:8888/catalog
+
+--------------------------------------------------------------------------------
+Resource Pattern - 59 detected:
+ * https://cloud-foundry.provider.com/organizations/{guid}
+ * https://cloud-foundry.provider.com/organizations/{guid}/users/{user_guid}
+ * https://cloud-foundry.provider.com/organizations/{guid}/managers/{manager_guid}
+ * https://cloud-foundry.provider.com/organizations/{guid}/billing_managers/{billing_manager_guid}
+ * https://cloud-foundry.provider.com/organizations/{guid}/auditors/{auditor_guid}
+ * https://cloud-foundry.provider.com/routes/{guid}
+ * https://cloud-foundry.provider.com/routes/{guid}/apps/{app_guid}
+ * https://cloud-foundry.provider.com/routes/reserved/domain/{domain_guid}/host/{host}
+ * https://cloud-foundry.provider.com/spaces/{guid}
+ * https://cloud-foundry.provider.com/spaces/{guid}/developers/{developer_guid}
+ * https://cloud-foundry.provider.com/spaces/{guid}/security_groups/{security_group_guid}
+ * https://cloud-foundry.provider.com/spaces/{guid}/auditors/{auditor_guid}
+ * https://cloud-foundry.provider.com/spaces/{guid}/managers/{manager_guid}
+ * https://cloud-foundry.provider.com/users/{guid}
+ * https://cloud-foundry.provider.com/users/{guid}/organizations/{organization_guid}
+ * https://cloud-foundry.provider.com/users/{guid}/managed_organizations/{managed_organization_guid}
+ * https://cloud-foundry.provider.com/users/{guid}/spaces/{space_guid}
+ * https://cloud-foundry.provider.com/users/{guid}/billing_managed_organizations/{billing_managed_organization_guid}
+ * https://cloud-foundry.provider.com/users/{guid}/managed_spaces/{managed_space_guid}
+ * https://cloud-foundry.provider.com/users/{guid}/audited_organizations/{audited_organization_guid}
+ * https://cloud-foundry.provider.com/users/{guid}/audited_spaces/{audited_space_guid}
+ * https://cloud-foundry.provider.com/config/feature_flags/{name}
+ * https://cloud-foundry.provider.com/config/running_security_groups/{guid}
+ * https://cloud-foundry.provider.com/config/staging_security_groups/{guid}
+ * https://cloud-foundry.provider.com/apps/{guid}
+ * https://cloud-foundry.provider.com/apps/{guid}/service_bindings/{service_binding_guid}
+ * https://cloud-foundry.provider.com/apps/{guid}/instances/{index}
+ * https://cloud-foundry.provider.com/apps/{guid}/routes/{route_guid}
+ * https://cloud-foundry.provider.com/apps/{app_guid}/instances/{instance_index}/files/{file_path}
+ * https://cloud-foundry.provider.com/user_provided_service_instances/{guid}
+ * https://cloud-foundry.provider.com/shared_domains/{guid}
+ * https://cloud-foundry.provider.com/jobs/{guid}
+ * https://cloud-foundry.provider.com/domains/{guid}
+ * https://cloud-foundry.provider.com/space_quota_definitions/{guid}
+ * https://cloud-foundry.provider.com/space_quota_definitions/{guid}/spaces/{space_guid}
+ * https://cloud-foundry.provider.com/private_domains/{guid}
+ * https://cloud-foundry.provider.com/services/{guid}
+ * https://cloud-foundry.provider.com/app_usage_events/{guid}
+ * https://cloud-foundry.provider.com/service_auth_tokens/{guid}
+ * https://cloud-foundry.provider.com/service_instances/{guid}
+ * https://cloud-foundry.provider.com/service_usage_events/{guid}
+ * https://cloud-foundry.provider.com/quota_definitions/{guid}
+ * https://cloud-foundry.provider.com/stacks/{guid}
+ * https://cloud-foundry.provider.com/events/{guid}
+ * https://cloud-foundry.provider.com/service_brokers/{guid}
+ * https://cloud-foundry.provider.com/service_plans/{guid}
+ * https://cloud-foundry.provider.com/buildpacks/{guid}
+ * https://cloud-foundry.provider.com/security_groups/{guid}
+ * https://cloud-foundry.provider.com/security_groups/{guid}/spaces/{space_guid}
+ * https://cloud-foundry.provider.com/service_plan_visibilities/{guid}
+ * https://cloud-foundry.provider.com/service_bindings/{guid}
+ * http://localhost/metering/organizations/{organization_id}/aggregated/usage/{time}
+ * http://localhost/metering/collected/usage/{usage_document_id}
+ * http://localhost/metering/aggregated/usage/graph/{query}
+ * http://localhost/provisioning/resources/{resource_id}/config/{time}
+ * http://localhost/pricing/resources/{resource_id}/config/{time}
+ * http://127.0.0.1:8888/service_instances/{instance_id}/{last_operation}
+ * http://127.0.0.1:8888/service_instances/{instance_id}/service_bindings/{binding_id}
+ * http://localhost/service_keys/{key_id}
+
+--------------------------------------------------------------------------------
+Singleton Resource Pattern - 13 detected:
+ * https://cloud-foundry.provider.com/config/feature_flags/route_creation
+ * https://cloud-foundry.provider.com/config/feature_flags/service_instance_creation
+ * https://cloud-foundry.provider.com/config/feature_flags/app_scaling
+ * https://cloud-foundry.provider.com/config/feature_flags/user_org_creation
+ * https://cloud-foundry.provider.com/config/feature_flags/app_bits_upload
+ * https://cloud-foundry.provider.com/config/feature_flags/private_domain_creation
+ * https://cloud-foundry.provider.com/config/environment_variable_groups/running
+ * https://cloud-foundry.provider.com/config/environment_variable_groups/staging
+ * https://cloud-foundry.provider.com/info
+ * https://cloud-foundry.provider.com/app_usage_events/destructively_purge_all_and_reseed_started_apps
+ * https://cloud-foundry.provider.com/service_usage_events/destructively_purge_all_and_reseed_existing_instances
+ * https://cloud-foundry.provider.com/resource_match
+ * http://127.0.0.1:8888/catalog
+
+--------------------------------------------------------------------------------
+SubResource Pattern - 27 detected:
+ * https://cloud-foundry.provider.com/organizations/{guid}/domains
+ * https://cloud-foundry.provider.com/organizations/{guid}/services
+ * https://cloud-foundry.provider.com/organizations/{guid}/space_quota_definitions
+ * https://cloud-foundry.provider.com/organizations/{guid}/spaces
+ * https://cloud-foundry.provider.com/organizations/{guid}/summary
+ * https://cloud-foundry.provider.com/organizations/{guid}/private_domains
+ * https://cloud-foundry.provider.com/organizations/{guid}/memory_usage
+ * https://cloud-foundry.provider.com/spaces/{guid}/services
+ * https://cloud-foundry.provider.com/spaces/{guid}/service_instances
+ * https://cloud-foundry.provider.com/spaces/{guid}/domains
+ * https://cloud-foundry.provider.com/spaces/{guid}/events
+ * https://cloud-foundry.provider.com/spaces/{guid}/routes
+ * https://cloud-foundry.provider.com/spaces/{guid}/summary
+ * https://cloud-foundry.provider.com/spaces/{guid}/apps
+ * https://cloud-foundry.provider.com/users/{guid}/summary
+ * https://cloud-foundry.provider.com/apps/{guid}/stats
+ * https://cloud-foundry.provider.com/apps/{guid}/restage
+ * https://cloud-foundry.provider.com/apps/{guid}/download
+ * https://cloud-foundry.provider.com/apps/{guid}/env
+ * https://cloud-foundry.provider.com/apps/{guid}/bits
+ * https://cloud-foundry.provider.com/apps/{guid}/summary
+ * https://cloud-foundry.provider.com/user_provided_service_instances/{guid}/service_bindings
+ * https://cloud-foundry.provider.com/domains/{guid}/spaces
+ * https://cloud-foundry.provider.com/services/{guid}/service_plans
+ * https://cloud-foundry.provider.com/service_instances/{guid}/service_bindings
+ * https://cloud-foundry.provider.com/service_instances/{guid}/permissions
+ * https://cloud-foundry.provider.com/service_plans/{guid}/service_instances
+
+--------------------------------------------------------------------------------
+Collection Pattern - 50 detected:
+ * https://cloud-foundry.provider.com/organizations
+ * https://cloud-foundry.provider.com/organizations/{guid}/users
+ * https://cloud-foundry.provider.com/organizations/{guid}/managers
+ * https://cloud-foundry.provider.com/organizations/{guid}/billing_managers
+ * https://cloud-foundry.provider.com/organizations/{guid}/auditors
+ * https://cloud-foundry.provider.com/routes
+ * https://cloud-foundry.provider.com/routes/{guid}/apps
+ * https://cloud-foundry.provider.com/spaces
+ * https://cloud-foundry.provider.com/spaces/{guid}/developers
+ * https://cloud-foundry.provider.com/spaces/{guid}/security_groups
+ * https://cloud-foundry.provider.com/spaces/{guid}/auditors
+ * https://cloud-foundry.provider.com/spaces/{guid}/managers
+ * https://cloud-foundry.provider.com/users
+ * https://cloud-foundry.provider.com/users/{guid}/organizations
+ * https://cloud-foundry.provider.com/users/{guid}/managed_organizations
+ * https://cloud-foundry.provider.com/users/{guid}/spaces
+ * https://cloud-foundry.provider.com/users/{guid}/billing_managed_organizations
+ * https://cloud-foundry.provider.com/users/{guid}/managed_spaces
+ * https://cloud-foundry.provider.com/users/{guid}/audited_organizations
+ * https://cloud-foundry.provider.com/users/{guid}/audited_spaces
+ * https://cloud-foundry.provider.com/config/feature_flags
+ * https://cloud-foundry.provider.com/config/running_security_groups
+ * https://cloud-foundry.provider.com/config/staging_security_groups
+ * https://cloud-foundry.provider.com/apps
+ * https://cloud-foundry.provider.com/apps/{guid}/service_bindings
+ * https://cloud-foundry.provider.com/apps/{guid}/instances
+ * https://cloud-foundry.provider.com/apps/{guid}/routes
+ * https://cloud-foundry.provider.com/user_provided_service_instances
+ * https://cloud-foundry.provider.com/shared_domains
+ * https://cloud-foundry.provider.com/domains
+ * https://cloud-foundry.provider.com/space_quota_definitions
+ * https://cloud-foundry.provider.com/space_quota_definitions/{guid}/spaces
+ * https://cloud-foundry.provider.com/private_domains
+ * https://cloud-foundry.provider.com/services
+ * https://cloud-foundry.provider.com/app_usage_events
+ * https://cloud-foundry.provider.com/service_auth_tokens
+ * https://cloud-foundry.provider.com/service_instances
+ * https://cloud-foundry.provider.com/service_usage_events
+ * https://cloud-foundry.provider.com/quota_definitions
+ * https://cloud-foundry.provider.com/stacks
+ * https://cloud-foundry.provider.com/events
+ * https://cloud-foundry.provider.com/service_brokers
+ * https://cloud-foundry.provider.com/service_plans
+ * https://cloud-foundry.provider.com/buildpacks
+ * https://cloud-foundry.provider.com/security_groups
+ * https://cloud-foundry.provider.com/security_groups/{guid}/spaces
+ * https://cloud-foundry.provider.com/service_plan_visibilities
+ * https://cloud-foundry.provider.com/service_bindings
+ * http://localhost/metering/collected/usage
+ * http://localhost/service_keys
+
+--------------------------------------------------------------------------------
+Controller Pattern - 1 detected:
+ * https://cloud-foundry.provider.com/apps/{guid}/copy_bits
+
+--------------------------------------------------------------------------------
+Singular Collection Anti-Pattern - 1 detected:
+ * http://localhost/metering/collected/usage
+
+--------------------------------------------------------------------------------
+Missing POST Method Anti-Pattern - 25 detected:
+ * https://cloud-foundry.provider.com/organizations/{guid}/users
+ * https://cloud-foundry.provider.com/organizations/{guid}/managers
+ * https://cloud-foundry.provider.com/organizations/{guid}/billing_managers
+ * https://cloud-foundry.provider.com/organizations/{guid}/auditors
+ * https://cloud-foundry.provider.com/routes/{guid}/apps
+ * https://cloud-foundry.provider.com/spaces/{guid}/developers
+ * https://cloud-foundry.provider.com/spaces/{guid}/security_groups
+ * https://cloud-foundry.provider.com/spaces/{guid}/auditors
+ * https://cloud-foundry.provider.com/spaces/{guid}/managers
+ * https://cloud-foundry.provider.com/users/{guid}/organizations
+ * https://cloud-foundry.provider.com/users/{guid}/managed_organizations
+ * https://cloud-foundry.provider.com/users/{guid}/spaces
+ * https://cloud-foundry.provider.com/users/{guid}/billing_managed_organizations
+ * https://cloud-foundry.provider.com/users/{guid}/managed_spaces
+ * https://cloud-foundry.provider.com/users/{guid}/audited_organizations
+ * https://cloud-foundry.provider.com/users/{guid}/audited_spaces
+ * https://cloud-foundry.provider.com/config/running_security_groups
+ * https://cloud-foundry.provider.com/config/staging_security_groups
+ * https://cloud-foundry.provider.com/apps/{guid}/service_bindings
+ * https://cloud-foundry.provider.com/apps/{guid}/instances
+ * https://cloud-foundry.provider.com/apps/{guid}/routes
+ * https://cloud-foundry.provider.com/space_quota_definitions/{guid}/spaces
+ * https://cloud-foundry.provider.com/service_auth_tokens
+ * https://cloud-foundry.provider.com/stacks
+ * https://cloud-foundry.provider.com/security_groups/{guid}/spaces
+
+--------------------------------------------------------------------------------
+Missing GET Method Anti-Pattern - 33 detected:
+ * https://cloud-foundry.provider.com/organizations/{guid}/users/{user_guid}
+ * https://cloud-foundry.provider.com/organizations/{guid}/managers/{manager_guid}
+ * https://cloud-foundry.provider.com/organizations/{guid}/billing_managers/{billing_manager_guid}
+ * https://cloud-foundry.provider.com/organizations/{guid}/auditors/{auditor_guid}
+ * https://cloud-foundry.provider.com/routes/{guid}/apps/{app_guid}
+ * https://cloud-foundry.provider.com/spaces/{guid}/developers/{developer_guid}
+ * https://cloud-foundry.provider.com/spaces/{guid}/security_groups/{security_group_guid}
+ * https://cloud-foundry.provider.com/spaces/{guid}/auditors/{auditor_guid}
+ * https://cloud-foundry.provider.com/spaces/{guid}/managers/{manager_guid}
+ * https://cloud-foundry.provider.com/users/{guid}/organizations/{organization_guid}
+ * https://cloud-foundry.provider.com/users/{guid}/managed_organizations/{managed_organization_guid}
+ * https://cloud-foundry.provider.com/users/{guid}/spaces/{space_guid}
+ * https://cloud-foundry.provider.com/users/{guid}/billing_managed_organizations/{billing_managed_organization_guid}
+ * https://cloud-foundry.provider.com/users/{guid}/managed_spaces/{managed_space_guid}
+ * https://cloud-foundry.provider.com/users/{guid}/audited_organizations/{audited_organization_guid}
+ * https://cloud-foundry.provider.com/users/{guid}/audited_spaces/{audited_space_guid}
+ * https://cloud-foundry.provider.com/config/feature_flags/{name}
+ * https://cloud-foundry.provider.com/config/running_security_groups/{guid}
+ * https://cloud-foundry.provider.com/config/staging_security_groups/{guid}
+ * https://cloud-foundry.provider.com/apps/{guid}/service_bindings/{service_binding_guid}
+ * https://cloud-foundry.provider.com/apps/{guid}/restage
+ * https://cloud-foundry.provider.com/apps/{guid}/instances/{index}
+ * https://cloud-foundry.provider.com/apps/{guid}/routes/{route_guid}
+ * https://cloud-foundry.provider.com/apps/{guid}/bits
+ * https://cloud-foundry.provider.com/space_quota_definitions/{guid}/spaces/{space_guid}
+ * https://cloud-foundry.provider.com/app_usage_events/destructively_purge_all_and_reseed_started_apps
+ * https://cloud-foundry.provider.com/service_usage_events/destructively_purge_all_and_reseed_existing_instances
+ * https://cloud-foundry.provider.com/service_plans/{guid}/service_instances
+ * https://cloud-foundry.provider.com/security_groups/{guid}/spaces/{space_guid}
+ * https://cloud-foundry.provider.com/resource_match
+ * http://localhost/metering/collected/usage
+ * http://127.0.0.1:8888/service_instances/{instance_id}/{last_operation}
+ * http://127.0.0.1:8888/service_instances/{instance_id}/service_bindings/{binding_id}
+
+--------------------------------------------------------------------------------
+Missing DELETE Method Anti-Pattern - 1 detected:
+ * http://localhost/metering/collected/usage/{usage_document_id}
+
+--------------------------------------------------------------------------------
+Unexpected DELETE Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Only Controllers Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Create Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Retrieve Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Update Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Delete Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Method Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+More Than One Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Controller Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Untagged Resources and Controllers  - 0 detected:
+

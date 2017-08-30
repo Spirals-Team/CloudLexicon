@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Cloud Foundry - Abacus API description 1.0", fontsize=24]
+splines=true
+"usage" [color=blue, fontcolor=blue, shape=doublecircle]
+}

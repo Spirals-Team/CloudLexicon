@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Cloud Foundry - CloudFoundry Services API 2.5", fontsize=24]
+splines=true
+"service_keys" [color=blue, fontcolor=blue, shape=doublecircle]
+}

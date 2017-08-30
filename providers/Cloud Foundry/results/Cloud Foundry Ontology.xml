@@ -1,0 +1,545 @@
+<CloudComputing>
+    <Provider name="Cloud Foundry">
+        <Service name="UNKNOWN 2.217.0">
+            <Resource uri="https://cloud-foundry.provider.com/organizations">
+                <Method name="POST" description="curl --insecure -i %s/v2/organizations -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/organizations -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/organizations/{guid} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/organizations/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+                <Method name="GET" description="curl --insecure -i %s/v2/organizations/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/users">
+                <Method name="GET" description="curl --insecure -i %s/v2/organizations/{guid}/users -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/users/{user_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/organizations/{guid}/users/{user_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/organizations/{guid}/users/{user_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/domains">
+                <Method name="GET" description="curl --insecure -i %s/v2/organizations/{guid}/domains -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/services">
+                <Method name="GET" description="curl --insecure -i %s/v2/organizations/{guid}/services -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/space_quota_definitions">
+                <Method name="GET" description="curl --insecure -i %s/v2/organizations/{guid}/space_quota_definitions -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/managers">
+                <Method name="GET" description="curl --insecure -i %s/v2/organizations/{guid}/managers -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/managers/{manager_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/organizations/{guid}/managers/{manager_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/organizations/{guid}/managers/{manager_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/billing_managers">
+                <Method name="GET" description="curl --insecure -i %s/v2/organizations/{guid}/billing_managers -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/billing_managers/{billing_manager_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/organizations/{guid}/billing_managers/{billing_manager_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/organizations/{guid}/billing_managers/{billing_manager_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/auditors">
+                <Method name="GET" description="curl --insecure -i %s/v2/organizations/{guid}/auditors -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/auditors/{auditor_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/organizations/{guid}/auditors/{auditor_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/organizations/{guid}/auditors/{auditor_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/spaces">
+                <Method name="GET" description="curl --insecure -i %s/v2/organizations/{guid}/spaces -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/summary">
+                <Method name="GET" description="curl --insecure -i %s/v2/organizations/{guid}/summary -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/private_domains">
+                <Method name="GET" description="curl --insecure -i %s/v2/organizations/{guid}/private_domains -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/organizations/{guid}/memory_usage">
+                <Method name="GET" description="curl --insecure -i %s/v2/organizations/{guid}/memory_usage -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/routes">
+                <Method name="POST" description="curl --insecure -i %s/v2/routes -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/routes -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/routes/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/routes/{guid} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/routes/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/routes/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/routes/{guid}/apps">
+                <Method name="GET" description="curl --insecure -i %s/v2/routes/{guid}/apps -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/routes/{guid}/apps/{app_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/routes/{guid}/apps/{app_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/routes/{guid}/apps/{app_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/routes/reserved/domain/{domain_guid}/host/{host}">
+                <Method name="GET" description="curl --insecure -i %s/v2/routes/reserved/domain/{domain_guid}/host/{host} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces">
+                <Method name="POST" description="curl --insecure -i %s/v2/spaces -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/spaces -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/spaces/{guid} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/spaces/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/spaces/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/developers">
+                <Method name="GET" description="curl --insecure -i %s/v2/spaces/{guid}/developers -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/developers/{developer_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/spaces/{guid}/developers/{developer_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/spaces/{guid}/developers/{developer_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/services">
+                <Method name="GET" description="curl --insecure -i %s/v2/spaces/{guid}/services -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/security_groups">
+                <Method name="GET" description="curl --insecure -i %s/v2/spaces/{guid}/security_groups -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/security_groups/{security_group_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/spaces/{guid}/security_groups/{security_group_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/spaces/{guid}/security_groups/{security_group_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/service_instances">
+                <Method name="GET" description="curl --insecure -i %s/v2/spaces/{guid}/service_instances -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/auditors">
+                <Method name="GET" description="curl --insecure -i %s/v2/spaces/{guid}/auditors -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/auditors/{auditor_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/spaces/{guid}/auditors/{auditor_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/spaces/{guid}/auditors/{auditor_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/domains">
+                <Method name="GET" description="curl --insecure -i %s/v2/spaces/{guid}/domains -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/managers">
+                <Method name="GET" description="curl --insecure -i %s/v2/spaces/{guid}/managers -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/managers/{manager_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/spaces/{guid}/managers/{manager_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/spaces/{guid}/managers/{manager_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/events">
+                <Method name="GET" description="curl --insecure -i %s/v2/spaces/{guid}/events -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/routes">
+                <Method name="GET" description="curl --insecure -i %s/v2/spaces/{guid}/routes -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/summary">
+                <Method name="GET" description="curl --insecure -i %s/v2/spaces/{guid}/summary -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/spaces/{guid}/apps">
+                <Method name="GET" description="curl --insecure -i %s/v2/spaces/{guid}/apps -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users">
+                <Method name="POST" description="curl --insecure -i %s/v2/users -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/users -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/users/{guid} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/users/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+                <Method name="GET" description="curl --insecure -i %s/v2/users/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/organizations">
+                <Method name="GET" description="curl --insecure -i %s/v2/users/{guid}/organizations -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/organizations/{organization_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/users/{guid}/organizations/{organization_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/users/{guid}/organizations/{organization_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/summary">
+                <Method name="GET" description="curl --insecure -i %s/v2/users/{guid}/summary -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/managed_organizations">
+                <Method name="GET" description="curl --insecure -i %s/v2/users/{guid}/managed_organizations -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/managed_organizations/{managed_organization_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/users/{guid}/managed_organizations/{managed_organization_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/users/{guid}/managed_organizations/{managed_organization_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/spaces">
+                <Method name="GET" description="curl --insecure -i %s/v2/users/{guid}/spaces -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/spaces/{space_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/users/{guid}/spaces/{space_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/users/{guid}/spaces/{space_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/billing_managed_organizations">
+                <Method name="GET" description="curl --insecure -i %s/v2/users/{guid}/billing_managed_organizations -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/billing_managed_organizations/{billing_managed_organization_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/users/{guid}/billing_managed_organizations/{billing_managed_organization_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/users/{guid}/billing_managed_organizations/{billing_managed_organization_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/managed_spaces">
+                <Method name="GET" description="curl --insecure -i %s/v2/users/{guid}/managed_spaces -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/managed_spaces/{managed_space_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/users/{guid}/managed_spaces/{managed_space_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/users/{guid}/managed_spaces/{managed_space_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/audited_organizations">
+                <Method name="GET" description="curl --insecure -i %s/v2/users/{guid}/audited_organizations -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/audited_organizations/{audited_organization_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/users/{guid}/audited_organizations/{audited_organization_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/users/{guid}/audited_organizations/{audited_organization_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/audited_spaces">
+                <Method name="GET" description="curl --insecure -i %s/v2/users/{guid}/audited_spaces -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/users/{guid}/audited_spaces/{audited_space_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/users/{guid}/audited_spaces/{audited_space_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/users/{guid}/audited_spaces/{audited_space_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/feature_flags">
+                <Method name="GET" description="curl --insecure -i %s/v2/config/feature_flags -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/feature_flags/route_creation">
+                <Method name="GET" description="curl --insecure -i %s/v2/config/feature_flags/route_creation -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/feature_flags/service_instance_creation">
+                <Method name="GET" description="curl --insecure -i %s/v2/config/feature_flags/service_instance_creation -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/feature_flags/app_scaling">
+                <Method name="GET" description="curl --insecure -i %s/v2/config/feature_flags/app_scaling -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/feature_flags/user_org_creation">
+                <Method name="GET" description="curl --insecure -i %s/v2/config/feature_flags/user_org_creation -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/feature_flags/app_bits_upload">
+                <Method name="GET" description="curl --insecure -i %s/v2/config/feature_flags/app_bits_upload -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/feature_flags/{name}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/config/feature_flags/{name} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/feature_flags/private_domain_creation">
+                <Method name="GET" description="curl --insecure -i %s/v2/config/feature_flags/private_domain_creation -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/running_security_groups">
+                <Method name="GET" description="curl --insecure -i %s/v2/config/running_security_groups -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/running_security_groups/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/config/running_security_groups/{guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/config/running_security_groups/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/environment_variable_groups/running">
+                <Method name="PUT" description="curl --insecure -i %s/v2/config/environment_variable_groups/running -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/config/environment_variable_groups/running -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/environment_variable_groups/staging">
+                <Method name="PUT" description="curl --insecure -i %s/v2/config/environment_variable_groups/staging -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/config/environment_variable_groups/staging -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/staging_security_groups">
+                <Method name="GET" description="curl --insecure -i %s/v2/config/staging_security_groups -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/config/staging_security_groups/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/config/staging_security_groups/{guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/config/staging_security_groups/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps">
+                <Method name="POST" description="curl --insecure -i %s/v2/apps -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/apps -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/apps/{guid} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/apps/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+                <Method name="GET" description="curl --insecure -i %s/v2/apps/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+                <Controller uri="https://cloud-foundry.provider.com/apps/{guid}/copy_bits" verb="copy_bits">
+                    <Method name="POST" description="curl --insecure -i %s/v2/apps/{guid}/copy_bits -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                </Controller>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{guid}/service_bindings">
+                <Method name="GET" description="curl --insecure -i %s/v2/apps/{guid}/service_bindings -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{guid}/service_bindings/{service_binding_guid}">
+                <Method name="DELETE" description="curl --insecure -i %s/v2/apps/{guid}/service_bindings/{service_binding_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{guid}/stats">
+                <Method name="GET" description="curl --insecure -i %s/v2/apps/{guid}/stats -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{guid}/restage">
+                <Method name="POST" description="curl --insecure -i %s/v2/apps/{guid}/restage -X POST -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{guid}/download">
+                <Method name="GET" description="curl --insecure -i %s/v2/apps/{guid}/download -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{guid}/instances">
+                <Method name="GET" description="curl --insecure -i %s/v2/apps/{guid}/instances -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{guid}/instances/{index}">
+                <Method name="DELETE" description="curl --insecure -i %s/v2/apps/{guid}/instances/{index} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{guid}/routes">
+                <Method name="GET" description="curl --insecure -i %s/v2/apps/{guid}/routes -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{guid}/routes/{route_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/apps/{guid}/routes/{route_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/apps/{guid}/routes/{route_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{guid}/env">
+                <Method name="GET" description="curl --insecure -i %s/v2/apps/{guid}/env -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{guid}/bits">
+                <Method name="PUT" description="curl --insecure -i %s/v2/apps/{guid}/bits -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{guid}/summary">
+                <Method name="GET" description="curl --insecure -i %s/v2/apps/{guid}/summary -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/apps/{app_guid}/instances/{instance_index}/files/{file_path}">
+                <Method name="GET" description="curl --insecure -i %s/v2/apps/{app_guid}/instances/{instance_index}/files/{file_path} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/user_provided_service_instances">
+                <Method name="POST" description="curl --insecure -i %s/v2/user_provided_service_instances -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/user_provided_service_instances -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/user_provided_service_instances/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/user_provided_service_instances/{guid} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/user_provided_service_instances/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/user_provided_service_instances/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/user_provided_service_instances/{guid}/service_bindings">
+                <Method name="GET" description="curl --insecure -i %s/v2/user_provided_service_instances/{guid}/service_bindings -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/shared_domains">
+                <Method name="POST" description="curl --insecure -i %s/v2/shared_domains -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/shared_domains -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/shared_domains/{guid}">
+                <Method name="GET" description="curl --insecure -i %s/v2/shared_domains/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/shared_domains/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/jobs/{guid}">
+                <Method name="GET" description="curl --insecure -i %s/v2/jobs/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/info">
+                <Method name="GET" description="curl --insecure -i %s/v2/info -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/domains">
+                <Method name="POST" description="curl --insecure -i %s/v2/domains -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/domains -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/domains/{guid}">
+                <Method name="GET" description="curl --insecure -i %s/v2/domains/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/domains/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/domains/{guid}/spaces">
+                <Method name="GET" description="curl --insecure -i %s/v2/domains/{guid}/spaces -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/space_quota_definitions">
+                <Method name="POST" description="curl --insecure -i %s/v2/space_quota_definitions -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/space_quota_definitions -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/space_quota_definitions/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/space_quota_definitions/{guid} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/space_quota_definitions/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/space_quota_definitions/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/space_quota_definitions/{guid}/spaces">
+                <Method name="GET" description="curl --insecure -i %s/v2/space_quota_definitions/{guid}/spaces -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/space_quota_definitions/{guid}/spaces/{space_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/space_quota_definitions/{guid}/spaces/{space_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/space_quota_definitions/{guid}/spaces/{space_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/private_domains">
+                <Method name="POST" description="curl --insecure -i %s/v2/private_domains -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/private_domains -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/private_domains/{guid}">
+                <Method name="GET" description="curl --insecure -i %s/v2/private_domains/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/private_domains/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/services">
+                <Method name="PUT" description="curl --insecure -i %s/v2/services -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="POST" description="curl --insecure -i %s/v2/services -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/services -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/services/{guid}">
+                <Method name="DELETE" description="curl --insecure -i %s/v2/services/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+                <Method name="GET" description="curl --insecure -i %s/v2/services/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/services/{guid}/service_plans">
+                <Method name="GET" description="curl --insecure -i %s/v2/services/{guid}/service_plans -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/app_usage_events">
+                <Method name="GET" description="curl --insecure -i %s/v2/app_usage_events -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/app_usage_events/destructively_purge_all_and_reseed_started_apps">
+                <Method name="POST" description="curl --insecure -i %s/v2/app_usage_events/destructively_purge_all_and_reseed_started_apps -X POST -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/app_usage_events/{guid}">
+                <Method name="GET" description="curl --insecure -i %s/v2/app_usage_events/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_auth_tokens">
+                <Method name="GET" description="curl --insecure -i %s/v2/service_auth_tokens -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_auth_tokens/{guid}">
+                <Method name="DELETE" description="curl --insecure -i %s/v2/service_auth_tokens/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+                <Method name="GET" description="curl --insecure -i %s/v2/service_auth_tokens/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_instances">
+                <Method name="POST" description="curl --insecure -i %s/v2/service_instances -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/service_instances -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_instances/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/service_instances/{guid} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/service_instances/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+                <Method name="GET" description="curl --insecure -i %s/v2/service_instances/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_instances/{guid}/service_bindings">
+                <Method name="GET" description="curl --insecure -i %s/v2/service_instances/{guid}/service_bindings -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_instances/{guid}/permissions">
+                <Method name="GET" description="curl --insecure -i %s/v2/service_instances/{guid}/permissions -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_usage_events">
+                <Method name="GET" description="curl --insecure -i %s/v2/service_usage_events -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_usage_events/{guid}">
+                <Method name="GET" description="curl --insecure -i %s/v2/service_usage_events/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_usage_events/destructively_purge_all_and_reseed_existing_instances">
+                <Method name="POST" description="curl --insecure -i %s/v2/service_usage_events/destructively_purge_all_and_reseed_existing_instances -X POST -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/quota_definitions">
+                <Method name="POST" description="curl --insecure -i %s/v2/quota_definitions -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/quota_definitions -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/quota_definitions/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/quota_definitions/{guid} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/quota_definitions/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+                <Method name="GET" description="curl --insecure -i %s/v2/quota_definitions/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/stacks">
+                <Method name="GET" description="curl --insecure -i %s/v2/stacks -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/stacks/{guid}">
+                <Method name="DELETE" description="curl --insecure -i %s/v2/stacks/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+                <Method name="GET" description="curl --insecure -i %s/v2/stacks/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/events">
+                <Method name="GET" description="curl --insecure -i %s/v2/events -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/events/{guid}">
+                <Method name="GET" description="curl --insecure -i %s/v2/events/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_brokers">
+                <Method name="POST" description="curl --insecure -i %s/v2/service_brokers -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/service_brokers -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_brokers/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/service_brokers/{guid} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/service_brokers/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+                <Method name="GET" description="curl --insecure -i %s/v2/service_brokers/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_plans">
+                <Method name="PUT" description="curl --insecure -i %s/v2/service_plans -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="POST" description="curl --insecure -i %s/v2/service_plans -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/service_plans -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_plans/{guid}">
+                <Method name="DELETE" description="curl --insecure -i %s/v2/service_plans/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+                <Method name="GET" description="curl --insecure -i %s/v2/service_plans/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_plans/{guid}/service_instances">
+                <Method name="PUT" description="curl --insecure -i %s/v2/service_plans/{guid}/service_instances -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/buildpacks">
+                <Method name="POST" description="curl --insecure -i %s/v2/buildpacks -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/buildpacks -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/buildpacks/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/buildpacks/{guid} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/buildpacks/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/buildpacks/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/security_groups">
+                <Method name="POST" description="curl --insecure -i %s/v2/security_groups -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/security_groups -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/security_groups/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/security_groups/{guid} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/security_groups/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+                <Method name="GET" description="curl --insecure -i %s/v2/security_groups/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/security_groups/{guid}/spaces">
+                <Method name="GET" description="curl --insecure -i %s/v2/security_groups/{guid}/spaces -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/security_groups/{guid}/spaces/{space_guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/security_groups/{guid}/spaces/{space_guid} -X PUT -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/security_groups/{guid}/spaces/{space_guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_plan_visibilities">
+                <Method name="POST" description="curl --insecure -i %s/v2/service_plan_visibilities -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/service_plan_visibilities -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_plan_visibilities/{guid}">
+                <Method name="PUT" description="curl --insecure -i %s/v2/service_plan_visibilities/{guid} -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/service_plan_visibilities/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/service_plan_visibilities/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/resource_match">
+                <Method name="PUT" description="curl --insecure -i %s/v2/resource_match -X PUT -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_bindings">
+                <Method name="POST" description="curl --insecure -i %s/v2/service_bindings -X POST -H &apos;Authorization: %s&apos; -d &apos;%s&apos;"/>
+                <Method name="GET" description="curl --insecure -i %s/v2/service_bindings -X GET -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+            <Resource uri="https://cloud-foundry.provider.com/service_bindings/{guid}">
+                <Method name="GET" description="curl --insecure -i %s/v2/service_bindings/{guid} -X GET -H &apos;Authorization: %s&apos; "/>
+                <Method name="DELETE" description="curl --insecure -i %s/v2/service_bindings/{guid} -X DELETE -H &apos;Authorization: %s&apos; "/>
+            </Resource>
+        </Service>
+        <Service name="Abacus API description 1.0">
+            <Resource uri="http://localhost/metering/organizations/{organization_id}/aggregated/usage/{time}">
+                <Method name="GET" description="The usage summary report API can be used to retrieve aggregated usage summary report documents from Abacus. This operation retrieves a usage report document containing a summary of the aggregated Cloud resource usage incurred by the specified organization at the specified time."/>
+            </Resource>
+            <Resource uri="http://localhost/metering/collected/usage">
+                <Method name="POST" description="The resource usage collection API can be used by Cloud resource providers to submit usage for instances of Cloud resources, including service instances and application runtimes or containers. Usage can be submitted by POSTing resource usage documents to Abacus."/>
+            </Resource>
+            <Resource uri="http://localhost/metering/collected/usage/{usage_document_id}">
+                <Method name="GET" description="The first endpoint that a broker must implement is the service catalog. Cloud Controller will initially fetch this endpoint from all brokers and make adjustments to the user-facing service catalog stored in the Cloud Controller database. \n"/>
+            </Resource>
+            <Resource uri="http://localhost/metering/aggregated/usage/graph/{query}">
+                <Method name="GET" description="The GraphQL usage query API can be used to query aggregated usage using the GraphQL query language. Abacus defines a GraphQL schema for aggregated usage, allowing users to navigate and query the graph of aggregated usage within organizations and the spaces and resources they contain using the GraphQL query language. [See the GraphQL documentation for more information on the GraphQL schema and query languages.](https://github.com/facebook/graphql)"/>
+            </Resource>
+            <Resource uri="http://localhost/provisioning/resources/{resource_id}/config/{time}">
+                <Method name="GET" description="The resource configuration API is used by Abacus to retrieve resource configuration documents for Cloud resources. Resource configuration documents. This API defines the contract between Abacus and the Cloud platform integrating it. The Cloud platform can manage and store resource configuration documents describing its Cloud resources in a platform specific way outside of Abacus, and is simply expected to make these documents available to Abacus at an API endpoint supporting this GET method."/>
+            </Resource>
+            <Resource uri="http://localhost/pricing/resources/{resource_id}/config/{time}">
+                <Method name="GET" description="The resource pricing API is used by Abacus to retrieve resource pricing data for Cloud resources.  Different prices can be defined for different countries. This API defines the contract between Abacus and the Cloud platform integrating it. The Cloud platform can manage and store resource pricing data for its Cloud resources in a platform specific way outside of Abacus, and is simply expected to make the pricing data available to Abacus at an API endpoint supporting this GET method."/>
+            </Resource>
+        </Service>
+        <Service name="Service Broker API 2.11">
+            <Resource uri="http://127.0.0.1:8888/catalog">
+                <Method name="GET" description="The first endpoint that a broker must implement is \nthe service catalog. Cloud Controller will initially fetch this \nendpoint from all brokers and make adjustments to the user-facing\nservice catalog stored in the Cloud Controller database.\n"/>
+            </Resource>
+            <Resource uri="http://127.0.0.1:8888/service_instances/{instance_id}/{last_operation}">
+                <Method name="PUT" description="When the broker receives a provision request from Cloud Controller, it should synchronously take whatever action is necessary to create a new service resource for the developer. The result of provisioning varies by service type, although there are a few common actions that work for many services."/>
+                <Method name="DELETE" description="When a broker receives a deprovision request from Cloud Controller, it should delete any resources it created during the provision. Usually this means that all resources are immediately reclaimed for future provisions."/>
+                <Method name="PATCH" description="Brokers that implement this endpoint can enable users to modify attributes of an existing service instance. The first attribute Cloud Foundry supports users modifying is the service plan. This effectively enables users to upgrade or downgrade their service instance to other plans. To see how users make these requests, [see Managing Services](https://docs.cloudfoundry.org/devguide/services/managing-services.html#update_service)."/>
+            </Resource>
+            <Resource uri="http://127.0.0.1:8888/service_instances/{instance_id}/service_bindings/{binding_id}">
+                <Method name="PUT" description="When the broker receives a bind request from the Cloud Controller, it should return information which helps an application to utilize the provisioned resource. This information is generically referred to as credentials. Applications should be issued unique credentials whenever possible, so one application access can be revoked without affecting other bound applications. For more information on credentials, [see Binding Credentials](https://docs.cloudfoundry.org/services/binding-credentials.html)."/>
+                <Method name="DELETE" description="When a broker receives an unbind request from Cloud Controller, it should delete any resources it created in bind. Usually this means that an application immediately cannot access the resource."/>
+            </Resource>
+        </Service>
+        <Service name="CloudFoundry Services API 2.5">
+            <Resource uri="http://localhost/service_keys">
+                <Method name="POST" description="Creating a new Service Key means calling an HTTP POST operation on the new /service_keys endpoint using an already created service instance."/>
+                <Method name="GET" description="As a developer or admin user, Service Keys can be retrieved by HTTP GET operation on the /service_keys endpoint without any parameter. But Space Manager and Auditor user can&apos;t retrieve the Service Keys which means 0 results will be returned."/>
+            </Resource>
+            <Resource uri="http://localhost/service_keys/{key_id}">
+                <Method name="DELETE" description="A Service Key can be deleted by using HTTP DELETE opeartion on /service_keys endpoint. Currently Space Manager and Auditor are not authorized to perform delete operation. Only Admin and Space Developer have this permission."/>
+                <Method name="GET" description="Retrieving a Service Key can be done through an HTTP GET operation on the /service_keys endpoint by using an service key GUID or on the /service_instances endpoint with the service instance&apos;s GUID and service key name."/>
+            </Resource>
+        </Service>
+    </Provider>
+</CloudComputing>

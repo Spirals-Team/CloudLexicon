@@ -1,0 +1,47 @@
+['./datasets/DatasetURIs.csv']
+
+-------------------- API --------------------
+
+Number of providers = 1
+Number of services = 4
+Number of resources = 149
+Number of controllers = 1
+Number of queries = 0
+Number of methods = 233
+ - 44 PUT (18.88%)
+ - 25 POST (10.73%)
+ - 47 DELETE (20.17%)
+ - 1 PATCH (0.43%)
+ - 116 GET (49.79%)
+
+-------------------- LEXICON --------------------
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+******************************     0 terms are common to 0 of 1 providers      ******************************
+******************************     75 terms are common to 1 of 1 providers      ******************************
+
+Number of terms = 75
+Number of nouns = 70 (93.33%)
+Number of verbs = 5 (6.67%)
+Number of singular terms = 25 (33.33%)
+Number of plural terms = 50 (66.67%)
+Number of lower case terms = 75 (100.00%)
+Number of upper case terms = 0 (0.00%)
+Number of camel case terms = 0 (0.00%)
+Number of hyphen terms = 36 (48.00%)
+Number of underscore terms = 0 (0.00%)
+Number of business terms = 75 (100.00%)
+Number of engineering terms = 0 (0.00%)
+
+
+-------------------- QUALITY --------------------
+
+Cloud Foundry is CRUD :-) because few controllers (1)
+scoreRest = 0.995708154506
+Cloud Foundry: GOOD API naming or API Naming Uniformity Pattern
+scoreNaming = 1.0
+Cloud Foundry: GOOD business API design or Business-Oriented API Naming Pattern 75 (100.00%)
+scoreBusiness = 1.0
+Total score = 0.998569384835

@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="Cloud Foundry - Service Broker API 2.11", fontsize=24]
+splines=true
+"catalog" [color=blue, fontcolor=blue, shape=doublecircle]
+}
