@@ -1,0 +1,188 @@
+--------------------------------------------------------------------------------
+Read-Only Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Resource Pattern - 12 detected:
+ * http://occi.provider.com/network/{network_id}
+ * http://occi.provider.com/compute/{compute_id}
+ * http://occi.provider.com/storage/{storage_id}
+ * http://occi.provider.com/storagelink/{storagelink_id}
+ * http://occi.provider.com/networkinterface/{networkinterface_id}
+ * http://occi.provider.com/application/{application_id}
+ * http://occi.provider.com/component/{component_id}
+ * http://occi.provider.com/componentlink/{componentlink_id}
+ * http://occi.provider.com/agreement/{agreement_id}
+ * http://occi.provider.com/agreement_link/{agreement_link_id}
+ * http://occi.provider.com/sensor/{sensor_id}
+ * http://occi.provider.com/collector/{collector_id}
+
+--------------------------------------------------------------------------------
+Singleton Resource Pattern - 21 detected:
+ * http://occi.provider.com/ipnetwork
+ * http://occi.provider.com/ipnetworkinterface
+ * http://occi.provider.com/os_tpl
+ * http://occi.provider.com/resource_tpl
+ * http://occi.provider.com/ssh_key
+ * http://occi.provider.com/user_data
+ * http://occi.provider.com/small
+ * http://occi.provider.com/medium
+ * http://occi.provider.com/large
+ * http://occi.provider.com/mem_small
+ * http://occi.provider.com/mem_medium
+ * http://occi.provider.com/mem_large
+ * http://occi.provider.com/app_tpl
+ * http://occi.provider.com/res_tpl
+ * http://occi.provider.com/database
+ * http://occi.provider.com/databaselink
+ * http://occi.provider.com/agreement_tpl
+ * http://occi.provider.com/agreement_term
+ * http://occi.provider.com/metric
+ * http://occi.provider.com/aggregator
+ * http://occi.provider.com/publisher
+
+--------------------------------------------------------------------------------
+SubResource Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Collection Pattern - 12 detected:
+ * http://occi.provider.com/network
+ * http://occi.provider.com/compute
+ * http://occi.provider.com/storage
+ * http://occi.provider.com/storagelink
+ * http://occi.provider.com/networkinterface
+ * http://occi.provider.com/application
+ * http://occi.provider.com/component
+ * http://occi.provider.com/componentlink
+ * http://occi.provider.com/agreement
+ * http://occi.provider.com/agreement_link
+ * http://occi.provider.com/sensor
+ * http://occi.provider.com/collector
+
+--------------------------------------------------------------------------------
+Controller Pattern - 36 detected:
+ * http://occi.provider.com/network/?action=up
+ * http://occi.provider.com/network/?action=down
+ * http://occi.provider.com/network/{network_id}?action=up
+ * http://occi.provider.com/network/{network_id}?action=down
+ * http://occi.provider.com/compute/?action=start
+ * http://occi.provider.com/compute/?action=stop
+ * http://occi.provider.com/compute/?action=restart
+ * http://occi.provider.com/compute/?action=suspend
+ * http://occi.provider.com/compute/?action=save
+ * http://occi.provider.com/compute/{compute_id}?action=start
+ * http://occi.provider.com/compute/{compute_id}?action=stop
+ * http://occi.provider.com/compute/{compute_id}?action=restart
+ * http://occi.provider.com/compute/{compute_id}?action=suspend
+ * http://occi.provider.com/compute/{compute_id}?action=save
+ * http://occi.provider.com/storage/?action=online
+ * http://occi.provider.com/storage/?action=offline
+ * http://occi.provider.com/storage/{storage_id}?action=online
+ * http://occi.provider.com/storage/{storage_id}?action=offline
+ * http://occi.provider.com/application/?action=start
+ * http://occi.provider.com/application/?action=stop
+ * http://occi.provider.com/application/{application_id}?action=start
+ * http://occi.provider.com/application/{application_id}?action=stop
+ * http://occi.provider.com/component/?action=start
+ * http://occi.provider.com/component/?action=stop
+ * http://occi.provider.com/component/{component_id}?action=start
+ * http://occi.provider.com/component/{component_id}?action=stop
+ * http://occi.provider.com/agreement/?action=accept
+ * http://occi.provider.com/agreement/?action=reject
+ * http://occi.provider.com/agreement/?action=suspend
+ * http://occi.provider.com/agreement/?action=resume
+ * http://occi.provider.com/agreement/?action=terminate
+ * http://occi.provider.com/agreement/{agreement_id}?action=accept
+ * http://occi.provider.com/agreement/{agreement_id}?action=reject
+ * http://occi.provider.com/agreement/{agreement_id}?action=suspend
+ * http://occi.provider.com/agreement/{agreement_id}?action=resume
+ * http://occi.provider.com/agreement/{agreement_id}?action=terminate
+
+--------------------------------------------------------------------------------
+Singular Collection Anti-Pattern - 11 detected:
+ * http://occi.provider.com/network
+ * http://occi.provider.com/compute
+ * http://occi.provider.com/storage
+ * http://occi.provider.com/storagelink
+ * http://occi.provider.com/networkinterface
+ * http://occi.provider.com/application
+ * http://occi.provider.com/component
+ * http://occi.provider.com/componentlink
+ * http://occi.provider.com/agreement
+ * http://occi.provider.com/agreement_link
+ * http://occi.provider.com/sensor
+
+--------------------------------------------------------------------------------
+Missing POST Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Missing GET Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Missing DELETE Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Unexpected DELETE Method Anti-Pattern - 33 detected:
+ * http://occi.provider.com/network
+ * http://occi.provider.com/compute
+ * http://occi.provider.com/storage
+ * http://occi.provider.com/storagelink
+ * http://occi.provider.com/networkinterface
+ * http://occi.provider.com/ipnetwork
+ * http://occi.provider.com/ipnetworkinterface
+ * http://occi.provider.com/os_tpl
+ * http://occi.provider.com/resource_tpl
+ * http://occi.provider.com/ssh_key
+ * http://occi.provider.com/user_data
+ * http://occi.provider.com/small
+ * http://occi.provider.com/medium
+ * http://occi.provider.com/large
+ * http://occi.provider.com/mem_small
+ * http://occi.provider.com/mem_medium
+ * http://occi.provider.com/mem_large
+ * http://occi.provider.com/application
+ * http://occi.provider.com/component
+ * http://occi.provider.com/componentlink
+ * http://occi.provider.com/app_tpl
+ * http://occi.provider.com/res_tpl
+ * http://occi.provider.com/database
+ * http://occi.provider.com/databaselink
+ * http://occi.provider.com/agreement
+ * http://occi.provider.com/agreement_link
+ * http://occi.provider.com/agreement_tpl
+ * http://occi.provider.com/agreement_term
+ * http://occi.provider.com/sensor
+ * http://occi.provider.com/collector
+ * http://occi.provider.com/metric
+ * http://occi.provider.com/aggregator
+ * http://occi.provider.com/publisher
+
+--------------------------------------------------------------------------------
+Only Controllers Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Create Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Retrieve Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Update Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Delete Verb Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Method Controller Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+More Than One Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Not POST Controller Method Anti-Pattern - 0 detected:
+
+--------------------------------------------------------------------------------
+Untagged Resources and Controllers  - 0 detected:
+

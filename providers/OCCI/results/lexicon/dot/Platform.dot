@@ -1,0 +1,18 @@
+digraph LexiconGraph {
+graph[label="OCCI - Platform", fontsize=24]
+splines=true
+"application" [color=blue, fontcolor=blue, shape=doublecircle]
+"component" [color=blue, fontcolor=blue, shape=doublecircle]
+"componentlink" [color=blue, fontcolor=blue, shape=doublecircle]
+"app_tpl" [color=blue, fontcolor=blue, shape=doublecircle]
+"res_tpl" [color=blue, fontcolor=blue, shape=doublecircle]
+"database" [color=blue, fontcolor=blue, shape=doublecircle]
+"databaselink" [color=blue, fontcolor=blue, shape=doublecircle]
+"start" [color=orange, fontcolor=orange, shape=box]
+"start" -> "application" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"stop" -> "start" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"stop" [color=orange, fontcolor=orange, shape=box]
+"stop" -> "application" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"start" -> "component" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"stop" -> "component" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

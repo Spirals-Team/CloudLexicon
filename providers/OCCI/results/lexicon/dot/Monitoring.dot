@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="OCCI - Monitoring", fontsize=24]
+splines=true
+"sensor" [color=blue, fontcolor=blue, shape=doublecircle]
+"collector" [color=blue, fontcolor=blue, shape=doublecircle]
+"metric" [color=blue, fontcolor=blue, shape=doublecircle]
+"aggregator" [color=blue, fontcolor=blue, shape=doublecircle]
+"publisher" [color=blue, fontcolor=blue, shape=doublecircle]
+}

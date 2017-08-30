@@ -1,0 +1,380 @@
+<CloudComputing>
+    <Provider name="OCCI">
+        <Service name="Infrastructure">
+            <Resource uri="http://occi.provider.com/network">
+                <Method name="GET" description="Retrieves all network instances."/>
+                <Method name="POST" description="Creates a new network instance."/>
+                <Method name="DELETE" description="Removes all network instances."/>
+                <Controller uri="http://occi.provider.com/network/?action=up" verb="up">
+                    <Method name="POST" description="Performs the up action on all instances of this network collection."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/network/?action=down" verb="down">
+                    <Method name="POST" description="Performs the down action on all instances of this network collection."/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://occi.provider.com/network/{network_id}">
+                <Method name="GET" description="Retrieves this network instance."/>
+                <Method name="POST" description="Updates partially this network instance."/>
+                <Method name="PUT" description="Creates/Updates a network instance."/>
+                <Method name="DELETE" description="Deletes this network instance."/>
+                <Controller uri="http://occi.provider.com/network/{network_id}?action=up" verb="up">
+                    <Method name="POST" description="Up a network."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/network/{network_id}?action=down" verb="down">
+                    <Method name="POST" description="Down a network."/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://occi.provider.com/compute">
+                <Method name="GET" description="Retrieves all compute instances."/>
+                <Method name="POST" description="Creates a new compute instance."/>
+                <Method name="DELETE" description="Removes all compute instances."/>
+                <Controller uri="http://occi.provider.com/compute/?action=start" verb="start">
+                    <Method name="POST" description="Performs the start action on all instances of this compute collection."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/compute/?action=stop" verb="stop">
+                    <Method name="POST" description="Performs the stop action on all instances of this compute collection."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/compute/?action=restart" verb="restart">
+                    <Method name="POST" description="Performs the restart action on all instances of this compute collection."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/compute/?action=suspend" verb="suspend">
+                    <Method name="POST" description="Performs the suspend action on all instances of this compute collection."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/compute/?action=save" verb="save">
+                    <Method name="POST" description="Performs the save action on all instances of this compute collection."/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://occi.provider.com/compute/{compute_id}">
+                <Method name="GET" description="Retrieves this compute instance."/>
+                <Method name="POST" description="Updates partially this compute instance."/>
+                <Method name="PUT" description="Creates/Updates a compute instance."/>
+                <Method name="DELETE" description="Deletes this compute instance."/>
+                <Controller uri="http://occi.provider.com/compute/{compute_id}?action=start" verb="start">
+                    <Method name="POST" description="Start the system"/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/compute/{compute_id}?action=stop" verb="stop">
+                    <Method name="POST" description="Stop the system (graceful, acpioff or poweroff)"/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/compute/{compute_id}?action=restart" verb="restart">
+                    <Method name="POST" description="Restart the system (graceful, warm or cold)"/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/compute/{compute_id}?action=suspend" verb="suspend">
+                    <Method name="POST" description="Suspend the system (hibernate or in RAM)"/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/compute/{compute_id}?action=save" verb="save">
+                    <Method name="POST" description="Save the system (hot, deferred)"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://occi.provider.com/storage">
+                <Method name="GET" description="Retrieves all storage instances."/>
+                <Method name="POST" description="Creates a new storage instance."/>
+                <Method name="DELETE" description="Removes all storage instances."/>
+                <Controller uri="http://occi.provider.com/storage/?action=online" verb="online">
+                    <Method name="POST" description="Performs the online action on all instances of this storage collection."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/storage/?action=offline" verb="offline">
+                    <Method name="POST" description="Performs the offline action on all instances of this storage collection."/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://occi.provider.com/storage/{storage_id}">
+                <Method name="GET" description="Retrieves this storage instance."/>
+                <Method name="POST" description="Updates partially this storage instance."/>
+                <Method name="PUT" description="Creates/Updates a storage instance."/>
+                <Method name="DELETE" description="Deletes this storage instance."/>
+                <Controller uri="http://occi.provider.com/storage/{storage_id}?action=online" verb="online">
+                    <Method name="POST" description="Set storage online"/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/storage/{storage_id}?action=offline" verb="offline">
+                    <Method name="POST" description="Set storage offline"/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://occi.provider.com/storagelink">
+                <Method name="GET" description="Retrieves all storagelink instances."/>
+                <Method name="POST" description="Creates a new storagelink instance."/>
+                <Method name="DELETE" description="Removes all storagelink instances."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/storagelink/{storagelink_id}">
+                <Method name="GET" description="Retrieves this storagelink instance."/>
+                <Method name="POST" description="Updates partially this storagelink instance."/>
+                <Method name="PUT" description="Creates/Updates a storagelink instance."/>
+                <Method name="DELETE" description="Deletes this storagelink instance."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/networkinterface">
+                <Method name="GET" description="Retrieves all networkinterface instances."/>
+                <Method name="POST" description="Creates a new networkinterface instance."/>
+                <Method name="DELETE" description="Removes all networkinterface instances."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/networkinterface/{networkinterface_id}">
+                <Method name="GET" description="Retrieves this networkinterface instance."/>
+                <Method name="POST" description="Updates partially this networkinterface instance."/>
+                <Method name="PUT" description="Creates/Updates a networkinterface instance."/>
+                <Method name="DELETE" description="Deletes this networkinterface instance."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/ipnetwork">
+                <Method name="GET" description="Retrieves all instances having this ipnetwork mixin."/>
+                <Method name="POST" description="Adds an instance to this ipnetwork mixin collection."/>
+                <Method name="PUT" description="Updates this ipnetwork mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this ipnetwork mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/ipnetworkinterface">
+                <Method name="GET" description="Retrieves all instances having this ipnetworkinterface mixin."/>
+                <Method name="POST" description="Adds an instance to this ipnetworkinterface mixin collection."/>
+                <Method name="PUT" description="Updates this ipnetworkinterface mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this ipnetworkinterface mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/os_tpl">
+                <Method name="GET" description="Retrieves all instances having this os_tpl mixin."/>
+                <Method name="POST" description="Adds an instance to this os_tpl mixin collection."/>
+                <Method name="PUT" description="Updates this os_tpl mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this os_tpl mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/resource_tpl">
+                <Method name="GET" description="Retrieves all instances having this resource_tpl mixin."/>
+                <Method name="POST" description="Adds an instance to this resource_tpl mixin collection."/>
+                <Method name="PUT" description="Updates this resource_tpl mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this resource_tpl mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/ssh_key">
+                <Method name="GET" description="Retrieves all instances having this ssh_key mixin."/>
+                <Method name="POST" description="Adds an instance to this ssh_key mixin collection."/>
+                <Method name="PUT" description="Updates this ssh_key mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this ssh_key mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/user_data">
+                <Method name="GET" description="Retrieves all instances having this user_data mixin."/>
+                <Method name="POST" description="Adds an instance to this user_data mixin collection."/>
+                <Method name="PUT" description="Updates this user_data mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this user_data mixin collection."/>
+            </Resource>
+        </Service>
+        <Service name="Crtp">
+            <Resource uri="http://occi.provider.com/small">
+                <Method name="GET" description="Retrieves all instances having this small mixin."/>
+                <Method name="POST" description="Adds an instance to this small mixin collection."/>
+                <Method name="PUT" description="Updates this small mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this small mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/medium">
+                <Method name="GET" description="Retrieves all instances having this medium mixin."/>
+                <Method name="POST" description="Adds an instance to this medium mixin collection."/>
+                <Method name="PUT" description="Updates this medium mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this medium mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/large">
+                <Method name="GET" description="Retrieves all instances having this large mixin."/>
+                <Method name="POST" description="Adds an instance to this large mixin collection."/>
+                <Method name="PUT" description="Updates this large mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this large mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/mem_small">
+                <Method name="GET" description="Retrieves all instances having this mem_small mixin."/>
+                <Method name="POST" description="Adds an instance to this mem_small mixin collection."/>
+                <Method name="PUT" description="Updates this mem_small mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this mem_small mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/mem_medium">
+                <Method name="GET" description="Retrieves all instances having this mem_medium mixin."/>
+                <Method name="POST" description="Adds an instance to this mem_medium mixin collection."/>
+                <Method name="PUT" description="Updates this mem_medium mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this mem_medium mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/mem_large">
+                <Method name="GET" description="Retrieves all instances having this mem_large mixin."/>
+                <Method name="POST" description="Adds an instance to this mem_large mixin collection."/>
+                <Method name="PUT" description="Updates this mem_large mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this mem_large mixin collection."/>
+            </Resource>
+        </Service>
+        <Service name="Platform">
+            <Resource uri="http://occi.provider.com/application">
+                <Method name="GET" description="Retrieves all application instances."/>
+                <Method name="POST" description="Creates a new application instance."/>
+                <Method name="DELETE" description="Removes all application instances."/>
+                <Controller uri="http://occi.provider.com/application/?action=start" verb="start">
+                    <Method name="POST" description="Performs the start action on all instances of this application collection."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/application/?action=stop" verb="stop">
+                    <Method name="POST" description="Performs the stop action on all instances of this application collection."/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://occi.provider.com/application/{application_id}">
+                <Method name="GET" description="Retrieves this application instance."/>
+                <Method name="POST" description="Updates partially this application instance."/>
+                <Method name="PUT" description="Creates/Updates a application instance."/>
+                <Method name="DELETE" description="Deletes this application instance."/>
+                <Controller uri="http://occi.provider.com/application/{application_id}?action=start" verb="start">
+                    <Method name="POST" description="Start the application."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/application/{application_id}?action=stop" verb="stop">
+                    <Method name="POST" description="Stop the application."/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://occi.provider.com/component">
+                <Method name="GET" description="Retrieves all component instances."/>
+                <Method name="POST" description="Creates a new component instance."/>
+                <Method name="DELETE" description="Removes all component instances."/>
+                <Controller uri="http://occi.provider.com/component/?action=start" verb="start">
+                    <Method name="POST" description="Performs the start action on all instances of this component collection."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/component/?action=stop" verb="stop">
+                    <Method name="POST" description="Performs the stop action on all instances of this component collection."/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://occi.provider.com/component/{component_id}">
+                <Method name="GET" description="Retrieves this component instance."/>
+                <Method name="POST" description="Updates partially this component instance."/>
+                <Method name="PUT" description="Creates/Updates a component instance."/>
+                <Method name="DELETE" description="Deletes this component instance."/>
+                <Controller uri="http://occi.provider.com/component/{component_id}?action=start" verb="start">
+                    <Method name="POST" description="Start the application."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/component/{component_id}?action=stop" verb="stop">
+                    <Method name="POST" description="Stop the application."/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://occi.provider.com/componentlink">
+                <Method name="GET" description="Retrieves all componentlink instances."/>
+                <Method name="POST" description="Creates a new componentlink instance."/>
+                <Method name="DELETE" description="Removes all componentlink instances."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/componentlink/{componentlink_id}">
+                <Method name="GET" description="Retrieves this componentlink instance."/>
+                <Method name="POST" description="Updates partially this componentlink instance."/>
+                <Method name="PUT" description="Creates/Updates a componentlink instance."/>
+                <Method name="DELETE" description="Deletes this componentlink instance."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/app_tpl">
+                <Method name="GET" description="Retrieves all instances having this app_tpl mixin."/>
+                <Method name="POST" description="Adds an instance to this app_tpl mixin collection."/>
+                <Method name="PUT" description="Updates this app_tpl mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this app_tpl mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/res_tpl">
+                <Method name="GET" description="Retrieves all instances having this res_tpl mixin."/>
+                <Method name="POST" description="Adds an instance to this res_tpl mixin collection."/>
+                <Method name="PUT" description="Updates this res_tpl mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this res_tpl mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/database">
+                <Method name="GET" description="Retrieves all instances having this database mixin."/>
+                <Method name="POST" description="Adds an instance to this database mixin collection."/>
+                <Method name="PUT" description="Updates this database mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this database mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/databaselink">
+                <Method name="GET" description="Retrieves all instances having this databaselink mixin."/>
+                <Method name="POST" description="Adds an instance to this databaselink mixin collection."/>
+                <Method name="PUT" description="Updates this databaselink mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this databaselink mixin collection."/>
+            </Resource>
+        </Service>
+        <Service name="Sla">
+            <Resource uri="http://occi.provider.com/agreement">
+                <Method name="GET" description="Retrieves all agreement instances."/>
+                <Method name="POST" description="Creates a new agreement instance."/>
+                <Method name="DELETE" description="Removes all agreement instances."/>
+                <Controller uri="http://occi.provider.com/agreement/?action=accept" verb="accept">
+                    <Method name="POST" description="Performs the accept action on all instances of this agreement collection."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/agreement/?action=reject" verb="reject">
+                    <Method name="POST" description="Performs the reject action on all instances of this agreement collection."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/agreement/?action=suspend" verb="suspend">
+                    <Method name="POST" description="Performs the suspend action on all instances of this agreement collection."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/agreement/?action=resume" verb="resume">
+                    <Method name="POST" description="Performs the resume action on all instances of this agreement collection."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/agreement/?action=terminate" verb="terminate">
+                    <Method name="POST" description="Performs the terminate action on all instances of this agreement collection."/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://occi.provider.com/agreement/{agreement_id}">
+                <Method name="GET" description="Retrieves this agreement instance."/>
+                <Method name="POST" description="Updates partially this agreement instance."/>
+                <Method name="PUT" description="Creates/Updates a agreement instance."/>
+                <Method name="DELETE" description="Deletes this agreement instance."/>
+                <Controller uri="http://occi.provider.com/agreement/{agreement_id}?action=accept" verb="accept">
+                    <Method name="POST" description="Accept an agreement."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/agreement/{agreement_id}?action=reject" verb="reject">
+                    <Method name="POST" description="Reject an agreement."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/agreement/{agreement_id}?action=suspend" verb="suspend">
+                    <Method name="POST" description="Suspend an agreement."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/agreement/{agreement_id}?action=resume" verb="resume">
+                    <Method name="POST" description="Resume an agreement."/>
+                </Controller>
+                <Controller uri="http://occi.provider.com/agreement/{agreement_id}?action=terminate" verb="terminate">
+                    <Method name="POST" description="Terminate an agreement."/>
+                </Controller>
+            </Resource>
+            <Resource uri="http://occi.provider.com/agreement_link">
+                <Method name="GET" description="Retrieves all agreement_link instances."/>
+                <Method name="POST" description="Creates a new agreement_link instance."/>
+                <Method name="DELETE" description="Removes all agreement_link instances."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/agreement_link/{agreement_link_id}">
+                <Method name="GET" description="Retrieves this agreement_link instance."/>
+                <Method name="POST" description="Updates partially this agreement_link instance."/>
+                <Method name="PUT" description="Creates/Updates a agreement_link instance."/>
+                <Method name="DELETE" description="Deletes this agreement_link instance."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/agreement_tpl">
+                <Method name="GET" description="Retrieves all instances having this agreement_tpl mixin."/>
+                <Method name="POST" description="Adds an instance to this agreement_tpl mixin collection."/>
+                <Method name="PUT" description="Updates this agreement_tpl mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this agreement_tpl mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/agreement_term">
+                <Method name="GET" description="Retrieves all instances having this agreement_term mixin."/>
+                <Method name="POST" description="Adds an instance to this agreement_term mixin collection."/>
+                <Method name="PUT" description="Updates this agreement_term mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this agreement_term mixin collection."/>
+            </Resource>
+        </Service>
+        <Service name="Monitoring">
+            <Resource uri="http://occi.provider.com/sensor">
+                <Method name="GET" description="Retrieves all sensor instances."/>
+                <Method name="POST" description="Creates a new sensor instance."/>
+                <Method name="DELETE" description="Removes all sensor instances."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/sensor/{sensor_id}">
+                <Method name="GET" description="Retrieves this sensor instance."/>
+                <Method name="POST" description="Updates partially this sensor instance."/>
+                <Method name="PUT" description="Creates/Updates a sensor instance."/>
+                <Method name="DELETE" description="Deletes this sensor instance."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/collector">
+                <Method name="GET" description="Retrieves all collector instances."/>
+                <Method name="POST" description="Creates a new collector instance."/>
+                <Method name="DELETE" description="Removes all collector instances."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/collector/{collector_id}">
+                <Method name="GET" description="Retrieves this collector instance."/>
+                <Method name="POST" description="Updates partially this collector instance."/>
+                <Method name="PUT" description="Creates/Updates a collector instance."/>
+                <Method name="DELETE" description="Deletes this collector instance."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/metric">
+                <Method name="GET" description="Retrieves all instances having this metric mixin."/>
+                <Method name="POST" description="Adds an instance to this metric mixin collection."/>
+                <Method name="PUT" description="Updates this metric mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this metric mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/aggregator">
+                <Method name="GET" description="Retrieves all instances having this aggregator mixin."/>
+                <Method name="POST" description="Adds an instance to this aggregator mixin collection."/>
+                <Method name="PUT" description="Updates this aggregator mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this aggregator mixin collection."/>
+            </Resource>
+            <Resource uri="http://occi.provider.com/publisher">
+                <Method name="GET" description="Retrieves all instances having this publisher mixin."/>
+                <Method name="POST" description="Adds an instance to this publisher mixin collection."/>
+                <Method name="PUT" description="Updates this publisher mixin collection."/>
+                <Method name="DELETE" description="Removes all instances of this publisher mixin collection."/>
+            </Resource>
+        </Service>
+    </Provider>
+</CloudComputing>

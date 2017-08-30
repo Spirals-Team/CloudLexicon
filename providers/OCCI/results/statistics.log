@@ -1,0 +1,46 @@
+['./datasets/DatasetURIs.csv']
+
+-------------------- API --------------------
+
+Number of providers = 1
+Number of services = 5
+Number of resources = 45
+Number of controllers = 36
+Number of queries = 0
+Number of methods = 204
+ - 33 PUT (16.18%)
+ - 81 POST (39.71%)
+ - 45 DELETE (22.06%)
+ - 45 GET (22.06%)
+
+-------------------- LEXICON --------------------
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+******************************     0 terms are common to 0 of 1 providers      ******************************
+******************************     46 terms are common to 1 of 1 providers      ******************************
+
+Number of terms = 46
+Number of nouns = 32 (69.57%)
+Number of verbs = 14 (30.43%)
+Number of singular terms = 32 (69.57%)
+Number of plural terms = 14 (30.43%)
+Number of lower case terms = 46 (100.00%)
+Number of upper case terms = 0 (0.00%)
+Number of camel case terms = 0 (0.00%)
+Number of hyphen terms = 12 (26.09%)
+Number of underscore terms = 0 (0.00%)
+Number of business terms = 46 (100.00%)
+Number of engineering terms = 0 (0.00%)
+
+
+-------------------- QUALITY --------------------
+
+OCCI is REST ;-)
+scoreRest = 0.823529411765
+OCCI: GOOD API naming or API Naming Uniformity Pattern
+scoreNaming = 1.0
+OCCI: GOOD business API design or Business-Oriented API Naming Pattern 46 (100.00%)
+scoreBusiness = 1.0
+Total score = 0.941176470588

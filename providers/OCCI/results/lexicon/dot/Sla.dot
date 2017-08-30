@@ -1,0 +1,22 @@
+digraph LexiconGraph {
+graph[label="OCCI - Sla", fontsize=24]
+splines=true
+"agreement" [color=blue, fontcolor=blue, shape=doublecircle]
+"agreement_link" [color=blue, fontcolor=blue, shape=doublecircle]
+"agreement_tpl" [color=blue, fontcolor=blue, shape=doublecircle]
+"agreement_term" [color=blue, fontcolor=blue, shape=doublecircle]
+"accept" [color=orange, fontcolor=orange, shape=box]
+"accept" -> "agreement" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"reject" -> "accept" [color=red, fontcolor=red, arrowhead=none, arrowtail=none]
+"reject" [color=orange, fontcolor=orange, shape=box]
+"reject" -> "agreement" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"suspend" [color=orange, fontcolor=orange, shape=box]
+"suspend" -> "agreement" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"resume" [color=orange, fontcolor=orange, shape=box]
+"resume" -> "agreement" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"terminate" [color=orange, fontcolor=orange, shape=box]
+"terminate" -> "agreement" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"agreement" -> "agreement_link" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"agreement" -> "agreement_tpl" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"agreement" -> "agreement_term" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}

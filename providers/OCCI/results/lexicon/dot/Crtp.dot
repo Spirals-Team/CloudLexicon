@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="OCCI - Crtp", fontsize=24]
+splines=true
+"small" [color=blue, fontcolor=blue, shape=doublecircle]
+"medium" [color=blue, fontcolor=blue, shape=doublecircle]
+"large" [color=blue, fontcolor=blue, shape=doublecircle]
+"mem_small" [color=blue, fontcolor=blue, shape=doublecircle]
+"mem_medium" [color=blue, fontcolor=blue, shape=doublecircle]
+"mem_large" [color=blue, fontcolor=blue, shape=doublecircle]
+"small" -> "mem_small" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"medium" -> "mem_medium" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"large" -> "mem_large" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+}
