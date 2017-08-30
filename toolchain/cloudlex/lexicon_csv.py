@@ -66,7 +66,7 @@ def generate_lexicon_csv_for_all_providers(model):
 					providersText += ',"Yes"'
 				else:
 					providersText += ',""'
-			print '"' + term.term + '","' + term.kind() + '","' + term.quantity() + '","' + term.case() + '","' + yes_no(term.contains_hyphens()) + '","' + yes_no(term.contains_underscores()) + '","' + yes_no(term.is_business()) + '","' + str(term.occurrences) + '"' + '","' + str(len(term.providers)) + '"' + providersText
+			print '"' + term.term + '","' + term.kind() + '","' + term.quantity() + '","' + term.case() + '","' + yes_no(term.contains_hyphens()) + '","' + yes_no(term.contains_underscores()) + '","' + yes_no(term.is_business()) + '","' + str(term.occurrences) + '","' + str(len(term.providers)) + '"' + providersText
 
 #
 # Main program
