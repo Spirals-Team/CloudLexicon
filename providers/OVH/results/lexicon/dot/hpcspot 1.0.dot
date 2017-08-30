@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="OVH - hpcspot 1.0", fontsize=24]
+splines=true
+"hpcspot" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "hpcspot" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"consumption" -> "hpcspot" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"consumption" [color=blue, fontcolor=blue, shape=ellipse]
+}

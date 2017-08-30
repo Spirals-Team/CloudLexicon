@@ -1,0 +1,21 @@
+digraph LexiconGraph {
+graph[label="OVH - license worklight 1.0", fontsize=24]
+splines=true
+"worklight" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "worklight" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"tasks" -> "worklight" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"tasks" [color=blue, fontcolor=blue, shape=ellipse]
+"allowedDestinationIp" -> "worklight" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"allowedDestinationIp" [color=blue, fontcolor=blue, shape=ellipse]
+"confirmTermination" -> "worklight" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"confirmTermination" [color=blue, fontcolor=blue, shape=ellipse]
+"terminate" [color=orange, fontcolor=orange, shape=box]
+"terminate" -> "worklight" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"canLicenseBeMovedTo" -> "worklight" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"canLicenseBeMovedTo" [color=blue, fontcolor=blue, shape=ellipse]
+"changeIp" [color=orange, fontcolor=orange, shape=box]
+"changeIp" -> "worklight" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"orderableVersions" -> "worklight" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"orderableVersions" [color=blue, fontcolor=blue, shape=ellipse]
+}

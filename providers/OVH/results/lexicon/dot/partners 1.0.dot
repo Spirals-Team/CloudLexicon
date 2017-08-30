@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="OVH - partners 1.0", fontsize=24]
+splines=true
+"company" [color=blue, fontcolor=blue, shape=doublecircle]
+"application" -> "company" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"application" [color=blue, fontcolor=blue, shape=ellipse]
+"contact" -> "company" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"contact" [color=blue, fontcolor=blue, shape=ellipse]
+}

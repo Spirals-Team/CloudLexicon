@@ -1,0 +1,19 @@
+digraph LexiconGraph {
+graph[label="OVH - paas timeseries 1.0", fontsize=24]
+splines=true
+"timeseries" [color=blue, fontcolor=blue, shape=doublecircle]
+"quota" -> "timeseries" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"quota" [color=blue, fontcolor=blue, shape=ellipse]
+"serviceInfos" -> "timeseries" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"setup" [color=orange, fontcolor=orange, shape=box]
+"setup" -> "timeseries" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"consumption" -> "timeseries" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"consumption" [color=blue, fontcolor=blue, shape=ellipse]
+"key" -> "timeseries" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"key" [color=blue, fontcolor=blue, shape=ellipse]
+"changeContact" [color=orange, fontcolor=orange, shape=box]
+"changeContact" -> "timeseries" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"region" -> "timeseries" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"region" [color=blue, fontcolor=blue, shape=ellipse]
+}

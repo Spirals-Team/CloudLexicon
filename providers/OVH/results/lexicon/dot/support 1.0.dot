@@ -1,0 +1,19 @@
+digraph LexiconGraph {
+graph[label="OVH - support 1.0", fontsize=24]
+splines=true
+"tickets" [color=blue, fontcolor=blue, shape=doublecircle]
+"create" [color=orange, fontcolor=orange, shape=box]
+"create" -> "tickets" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"reply" -> "tickets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"reply" [color=blue, fontcolor=blue, shape=ellipse]
+"messages" -> "tickets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"messages" [color=blue, fontcolor=blue, shape=ellipse]
+"reopen" -> "tickets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"reopen" [color=blue, fontcolor=blue, shape=ellipse]
+"close" -> "tickets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"close" [color=blue, fontcolor=blue, shape=ellipse]
+"canBeScored" -> "tickets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"canBeScored" [color=blue, fontcolor=blue, shape=ellipse]
+"score" -> "tickets" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"score" [color=blue, fontcolor=blue, shape=ellipse]
+}

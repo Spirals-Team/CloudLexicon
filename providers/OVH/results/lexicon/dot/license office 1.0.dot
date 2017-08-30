@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="OVH - license office 1.0", fontsize=24]
+splines=true
+"office" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "office" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"usageStatistics" -> "office" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"usageStatistics" [color=blue, fontcolor=blue, shape=ellipse]
+"pendingTask" -> "office" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"pendingTask" [color=blue, fontcolor=blue, shape=ellipse]
+"domain" -> "office" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"domain" [color=blue, fontcolor=blue, shape=ellipse]
+"user" -> "office" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"user" [color=blue, fontcolor=blue, shape=ellipse]
+"changePassword" [color=orange, fontcolor=orange, shape=box]
+"changePassword" -> "user" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

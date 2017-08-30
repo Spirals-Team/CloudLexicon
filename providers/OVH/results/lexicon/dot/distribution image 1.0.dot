@@ -1,0 +1,4 @@
+digraph LexiconGraph {
+graph[label="OVH - distribution image 1.0", fontsize=24]
+splines=true
+}

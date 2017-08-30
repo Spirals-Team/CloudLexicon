@@ -1,0 +1,15 @@
+digraph LexiconGraph {
+graph[label="OVH - license sqlserver 1.0", fontsize=24]
+splines=true
+"sqlserver" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "sqlserver" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"tasks" -> "sqlserver" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"tasks" [color=blue, fontcolor=blue, shape=ellipse]
+"confirmTermination" -> "sqlserver" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"confirmTermination" [color=blue, fontcolor=blue, shape=ellipse]
+"terminate" [color=orange, fontcolor=orange, shape=box]
+"terminate" -> "sqlserver" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"orderableVersions" -> "sqlserver" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"orderableVersions" [color=blue, fontcolor=blue, shape=ellipse]
+}

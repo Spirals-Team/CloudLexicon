@@ -1,0 +1,23 @@
+digraph LexiconGraph {
+graph[label="OVH - license virtuozzo 1.0", fontsize=24]
+splines=true
+"virtuozzo" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "virtuozzo" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"tasks" -> "virtuozzo" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"tasks" [color=blue, fontcolor=blue, shape=ellipse]
+"allowedDestinationIp" -> "virtuozzo" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"allowedDestinationIp" [color=blue, fontcolor=blue, shape=ellipse]
+"confirmTermination" -> "virtuozzo" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"confirmTermination" [color=blue, fontcolor=blue, shape=ellipse]
+"terminate" [color=orange, fontcolor=orange, shape=box]
+"terminate" -> "virtuozzo" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"canLicenseBeMovedTo" -> "virtuozzo" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"canLicenseBeMovedTo" [color=blue, fontcolor=blue, shape=ellipse]
+"changeIp" [color=orange, fontcolor=orange, shape=box]
+"changeIp" -> "virtuozzo" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"option" -> "virtuozzo" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"option" [color=blue, fontcolor=blue, shape=ellipse]
+"orderableVersions" -> "virtuozzo" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"orderableVersions" [color=blue, fontcolor=blue, shape=ellipse]
+}

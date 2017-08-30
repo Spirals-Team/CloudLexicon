@@ -1,0 +1,19 @@
+digraph LexiconGraph {
+graph[label="OVH - license windows 1.0", fontsize=24]
+splines=true
+"windows" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "windows" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"tasks" -> "windows" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"tasks" [color=blue, fontcolor=blue, shape=ellipse]
+"confirmTermination" -> "windows" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"confirmTermination" [color=blue, fontcolor=blue, shape=ellipse]
+"terminate" [color=orange, fontcolor=orange, shape=box]
+"terminate" -> "windows" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"sqlServer" -> "windows" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"sqlServer" [color=blue, fontcolor=blue, shape=ellipse]
+"option" -> "windows" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"option" [color=blue, fontcolor=blue, shape=ellipse]
+"orderableVersions" -> "windows" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"orderableVersions" [color=blue, fontcolor=blue, shape=ellipse]
+}

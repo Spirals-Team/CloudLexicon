@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="OVH - metrics 1.0", fontsize=24]
+splines=true
+"metrics" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "metrics" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"confirmTermination" -> "metrics" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"confirmTermination" [color=blue, fontcolor=blue, shape=ellipse]
+"terminate" [color=orange, fontcolor=orange, shape=box]
+"terminate" -> "metrics" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"changeContact" [color=orange, fontcolor=orange, shape=box]
+"changeContact" -> "metrics" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"token" -> "metrics" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"token" [color=blue, fontcolor=blue, shape=ellipse]
+"consumption" -> "metrics" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"consumption" [color=blue, fontcolor=blue, shape=ellipse]
+}

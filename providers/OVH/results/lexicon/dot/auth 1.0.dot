@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="OVH - auth 1.0", fontsize=24]
+splines=true
+"auth" [color=blue, fontcolor=blue, shape=doublecircle]
+"currentCredential" -> "auth" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"currentCredential" [color=blue, fontcolor=blue, shape=ellipse]
+"time" -> "auth" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"time" [color=blue, fontcolor=blue, shape=ellipse]
+"logout" [color=orange, fontcolor=orange, shape=box]
+"logout" -> "auth" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"credential" -> "auth" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"credential" [color=blue, fontcolor=blue, shape=ellipse]
+}

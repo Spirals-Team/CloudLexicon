@@ -1,0 +1,20 @@
+digraph LexiconGraph {
+graph[label="OVH - freefax 1.0", fontsize=24]
+splines=true
+"freefax" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "freefax" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"voicemail" -> "freefax" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"voicemail" [color=blue, fontcolor=blue, shape=ellipse]
+"changeRouting" [color=orange, fontcolor=orange, shape=box]
+"changeRouting" -> "voicemail" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"changePassword" [color=orange, fontcolor=orange, shape=box]
+"changePassword" -> "voicemail" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"routing" -> "voicemail" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"routing" [color=blue, fontcolor=blue, shape=ellipse]
+"changePassword" -> "freefax" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"mainService" -> "freefax" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"mainService" [color=blue, fontcolor=blue, shape=ellipse]
+"credits" -> "freefax" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"credits" [color=blue, fontcolor=blue, shape=ellipse]
+}

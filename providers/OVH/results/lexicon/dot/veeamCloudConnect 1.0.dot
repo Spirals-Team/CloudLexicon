@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="OVH - veeamCloudConnect 1.0", fontsize=24]
+splines=true
+"veeamCloudConnect" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "veeamCloudConnect" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"orderableUpgrade" [color=orange, fontcolor=orange, shape=box]
+"orderableUpgrade" -> "veeamCloudConnect" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"backupRepository" -> "veeamCloudConnect" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"backupRepository" [color=blue, fontcolor=blue, shape=ellipse]
+"upgradeQuota" [color=orange, fontcolor=orange, shape=box]
+"upgradeQuota" -> "backupRepository" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"capabilities" -> "veeamCloudConnect" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"capabilities" [color=blue, fontcolor=blue, shape=ellipse]
+"task" -> "veeamCloudConnect" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"task" [color=blue, fontcolor=blue, shape=ellipse]
+}

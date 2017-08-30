@@ -1,0 +1,7 @@
+digraph LexiconGraph {
+graph[label="OVH - email imapCopy 1.0", fontsize=24]
+splines=true
+"imapCopy" [color=blue, fontcolor=blue, shape=doublecircle]
+"task" -> "imapCopy" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"task" [color=blue, fontcolor=blue, shape=ellipse]
+}

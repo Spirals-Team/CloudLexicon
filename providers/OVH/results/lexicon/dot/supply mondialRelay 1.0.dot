@@ -1,0 +1,5 @@
+digraph LexiconGraph {
+graph[label="OVH - supply mondialRelay 1.0", fontsize=24]
+splines=true
+"mondialRelay" [color=blue, fontcolor=blue, shape=doublecircle]
+}

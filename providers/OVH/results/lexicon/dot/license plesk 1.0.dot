@@ -1,0 +1,23 @@
+digraph LexiconGraph {
+graph[label="OVH - license plesk 1.0", fontsize=24]
+splines=true
+"plesk" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "plesk" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"tasks" -> "plesk" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"tasks" [color=blue, fontcolor=blue, shape=ellipse]
+"allowedDestinationIp" -> "plesk" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"allowedDestinationIp" [color=blue, fontcolor=blue, shape=ellipse]
+"confirmTermination" -> "plesk" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"confirmTermination" [color=blue, fontcolor=blue, shape=ellipse]
+"terminate" [color=orange, fontcolor=orange, shape=box]
+"terminate" -> "plesk" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"canLicenseBeMovedTo" -> "plesk" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"canLicenseBeMovedTo" [color=blue, fontcolor=blue, shape=ellipse]
+"changeIp" [color=orange, fontcolor=orange, shape=box]
+"changeIp" -> "plesk" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"option" -> "plesk" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"option" [color=blue, fontcolor=blue, shape=ellipse]
+"orderableVersions" -> "plesk" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"orderableVersions" [color=blue, fontcolor=blue, shape=ellipse]
+}

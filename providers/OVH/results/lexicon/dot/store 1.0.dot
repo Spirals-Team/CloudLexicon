@@ -1,0 +1,14 @@
+digraph LexiconGraph {
+graph[label="OVH - store 1.0", fontsize=24]
+splines=true
+"document" [color=blue, fontcolor=blue, shape=doublecircle]
+"contact" [color=blue, fontcolor=blue, shape=doublecircle]
+"partner" [color=blue, fontcolor=blue, shape=doublecircle]
+"cors" -> "document" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"cors" [color=blue, fontcolor=blue, shape=ellipse]
+"document" -> "contact" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"document" -> "partner" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"product" -> "partner" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"product" [color=blue, fontcolor=blue, shape=ellipse]
+"document" -> "product" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+}

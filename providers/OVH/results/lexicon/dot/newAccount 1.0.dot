@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="OVH - newAccount 1.0", fontsize=24]
+splines=true
+"newAccount" [color=blue, fontcolor=blue, shape=doublecircle]
+"area" -> "newAccount" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"area" [color=blue, fontcolor=blue, shape=ellipse]
+"creationRules" -> "newAccount" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"creationRules" [color=blue, fontcolor=blue, shape=ellipse]
+"corporationType" -> "newAccount" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"corporationType" [color=blue, fontcolor=blue, shape=ellipse]
+"legalform" -> "newAccount" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"legalform" [color=blue, fontcolor=blue, shape=ellipse]
+"rules" -> "newAccount" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"rules" [color=blue, fontcolor=blue, shape=ellipse]
+"countries" -> "newAccount" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"countries" [color=blue, fontcolor=blue, shape=ellipse]
+}

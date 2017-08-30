@@ -1,0 +1,9 @@
+digraph LexiconGraph {
+graph[label="OVH - allDom 1.0", fontsize=24]
+splines=true
+"allDom" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "allDom" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"domain" -> "allDom" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"domain" [color=blue, fontcolor=blue, shape=ellipse]
+}

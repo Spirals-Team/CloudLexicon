@@ -1,0 +1,23 @@
+digraph LexiconGraph {
+graph[label="OVH - saas csp2 1.0", fontsize=24]
+splines=true
+"csp2" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "csp2" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"usageStatistics" -> "csp2" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"usageStatistics" [color=blue, fontcolor=blue, shape=ellipse]
+"changeAdministratorPassword" [color=orange, fontcolor=orange, shape=box]
+"changeAdministratorPassword" -> "csp2" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"configureDomain" [color=orange, fontcolor=orange, shape=box]
+"configureDomain" -> "csp2" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"task" -> "csp2" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"task" [color=blue, fontcolor=blue, shape=ellipse]
+"orderableLicenses" -> "csp2" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"orderableLicenses" [color=blue, fontcolor=blue, shape=ellipse]
+"billingPeriodPeaks" -> "csp2" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"billingPeriodPeaks" [color=blue, fontcolor=blue, shape=ellipse]
+"subscription" -> "csp2" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"subscription" [color=blue, fontcolor=blue, shape=ellipse]
+"changeQuantity" [color=orange, fontcolor=orange, shape=box]
+"changeQuantity" -> "subscription" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

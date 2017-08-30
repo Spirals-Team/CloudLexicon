@@ -1,0 +1,22 @@
+digraph LexiconGraph {
+graph[label="OVH - caas registry 1.0", fontsize=24]
+splines=true
+"registry" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "registry" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"users" -> "registry" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"users" [color=blue, fontcolor=blue, shape=ellipse]
+"changePassword" [color=orange, fontcolor=orange, shape=box]
+"changePassword" -> "users" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"changeContact" [color=orange, fontcolor=orange, shape=box]
+"changeContact" -> "registry" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"namespaces" -> "registry" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"namespaces" [color=blue, fontcolor=blue, shape=ellipse]
+"images" -> "namespaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"images" [color=blue, fontcolor=blue, shape=ellipse]
+"permissions" -> "images" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"permissions" [color=blue, fontcolor=blue, shape=ellipse]
+"tags" -> "images" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"tags" [color=blue, fontcolor=blue, shape=ellipse]
+"permissions" -> "namespaces" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+}

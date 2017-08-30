@@ -1,0 +1,11 @@
+digraph LexiconGraph {
+graph[label="OVH - cdn webstorage 1.0", fontsize=24]
+splines=true
+"webstorage" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "webstorage" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"statistics" -> "webstorage" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"statistics" [color=blue, fontcolor=blue, shape=ellipse]
+"credentials" -> "webstorage" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"credentials" [color=blue, fontcolor=blue, shape=ellipse]
+}

@@ -1,0 +1,13 @@
+digraph LexiconGraph {
+graph[label="OVH - dedicated installationTemplate 1.0", fontsize=24]
+splines=true
+"dedicated" [color=blue, fontcolor=blue, shape=doublecircle]
+"installationTemplate" [color=orange, fontcolor=orange, shape=box]
+"installationTemplate" -> "dedicated" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"partitionScheme" -> "dedicated" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"partitionScheme" [color=blue, fontcolor=blue, shape=ellipse]
+"partition" -> "partitionScheme" [color=grey, fontcolor=grey, arrowhead=none, arrowtail=none, style=dashed]
+"partition" [color=blue, fontcolor=blue, shape=ellipse]
+"hardwareRaid" -> "partitionScheme" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"hardwareRaid" [color=blue, fontcolor=blue, shape=ellipse]
+}

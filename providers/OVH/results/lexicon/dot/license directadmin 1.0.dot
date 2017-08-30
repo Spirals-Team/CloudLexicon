@@ -1,0 +1,23 @@
+digraph LexiconGraph {
+graph[label="OVH - license directadmin 1.0", fontsize=24]
+splines=true
+"directadmin" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "directadmin" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"tasks" -> "directadmin" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"tasks" [color=blue, fontcolor=blue, shape=ellipse]
+"allowedDestinationIp" -> "directadmin" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"allowedDestinationIp" [color=blue, fontcolor=blue, shape=ellipse]
+"confirmTermination" -> "directadmin" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"confirmTermination" [color=blue, fontcolor=blue, shape=ellipse]
+"terminate" [color=orange, fontcolor=orange, shape=box]
+"terminate" -> "directadmin" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"canLicenseBeMovedTo" -> "directadmin" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"canLicenseBeMovedTo" [color=blue, fontcolor=blue, shape=ellipse]
+"changeIp" [color=orange, fontcolor=orange, shape=box]
+"changeIp" -> "directadmin" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"changeOs" [color=orange, fontcolor=orange, shape=box]
+"changeOs" -> "directadmin" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"orderableVersions" -> "directadmin" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"orderableVersions" [color=blue, fontcolor=blue, shape=ellipse]
+}

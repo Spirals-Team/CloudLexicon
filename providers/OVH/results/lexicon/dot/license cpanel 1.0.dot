@@ -1,0 +1,21 @@
+digraph LexiconGraph {
+graph[label="OVH - license cpanel 1.0", fontsize=24]
+splines=true
+"cpanel" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "cpanel" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"tasks" -> "cpanel" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"tasks" [color=blue, fontcolor=blue, shape=ellipse]
+"allowedDestinationIp" -> "cpanel" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"allowedDestinationIp" [color=blue, fontcolor=blue, shape=ellipse]
+"confirmTermination" -> "cpanel" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"confirmTermination" [color=blue, fontcolor=blue, shape=ellipse]
+"terminate" [color=orange, fontcolor=orange, shape=box]
+"terminate" -> "cpanel" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"canLicenseBeMovedTo" -> "cpanel" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"canLicenseBeMovedTo" [color=blue, fontcolor=blue, shape=ellipse]
+"changeIp" [color=orange, fontcolor=orange, shape=box]
+"changeIp" -> "cpanel" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"orderableVersions" -> "cpanel" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"orderableVersions" [color=blue, fontcolor=blue, shape=ellipse]
+}

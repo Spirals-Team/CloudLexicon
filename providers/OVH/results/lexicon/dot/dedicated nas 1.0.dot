@@ -1,0 +1,17 @@
+digraph LexiconGraph {
+graph[label="OVH - dedicated nas 1.0", fontsize=24]
+splines=true
+"nas" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "nas" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"task" -> "nas" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"task" [color=blue, fontcolor=blue, shape=ellipse]
+"partition" -> "nas" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"partition" [color=blue, fontcolor=blue, shape=ellipse]
+"quota" -> "partition" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"quota" [color=blue, fontcolor=blue, shape=ellipse]
+"authorizableIps" -> "partition" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"authorizableIps" [color=blue, fontcolor=blue, shape=ellipse]
+"access" [color=orange, fontcolor=orange, shape=box]
+"access" -> "partition" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

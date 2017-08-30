@@ -1,0 +1,21 @@
+digraph LexiconGraph {
+graph[label="OVH - dedicated housing 1.0", fontsize=24]
+splines=true
+"housing" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "housing" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"backupFTP" -> "housing" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"backupFTP" [color=blue, fontcolor=blue, shape=ellipse]
+"password" -> "backupFTP" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"password" [color=blue, fontcolor=blue, shape=ellipse]
+"authorizableBlocks" -> "backupFTP" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"authorizableBlocks" [color=blue, fontcolor=blue, shape=ellipse]
+"access" [color=orange, fontcolor=orange, shape=box]
+"access" -> "backupFTP" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"APC" -> "housing" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"APC" [color=blue, fontcolor=blue, shape=ellipse]
+"task" -> "housing" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"task" [color=blue, fontcolor=blue, shape=ellipse]
+"cancel" [color=orange, fontcolor=orange, shape=box]
+"cancel" -> "task" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+}

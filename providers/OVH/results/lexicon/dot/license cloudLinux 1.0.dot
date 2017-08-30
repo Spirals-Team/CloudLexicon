@@ -1,0 +1,15 @@
+digraph LexiconGraph {
+graph[label="OVH - license cloudLinux 1.0", fontsize=24]
+splines=true
+"cloudLinux" [color=blue, fontcolor=blue, shape=doublecircle]
+"serviceInfos" -> "cloudLinux" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"serviceInfos" [color=blue, fontcolor=blue, shape=ellipse]
+"tasks" -> "cloudLinux" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"tasks" [color=blue, fontcolor=blue, shape=ellipse]
+"confirmTermination" -> "cloudLinux" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"confirmTermination" [color=blue, fontcolor=blue, shape=ellipse]
+"terminate" [color=orange, fontcolor=orange, shape=box]
+"terminate" -> "cloudLinux" [color=orange, fontcolor=orange, arrowhead=diamond, arrowtail=none]
+"orderableVersions" -> "cloudLinux" [color=blue, fontcolor=blue, arrowhead=diamond, arrowtail=none]
+"orderableVersions" [color=blue, fontcolor=blue, shape=ellipse]
+}
